@@ -1,0 +1,268 @@
+[
+  {
+    "id" : "BRCBO",
+    "type" : "CodeSystem",
+    "url" : "http://www.saude.gov.br/fhir/r4/CodeSystem/BRCBO",
+    "version" : "1.0.0",
+    "name" : "BRCBO"
+  },
+  {
+    "id" : "BRCIAP2",
+    "type" : "CodeSystem",
+    "url" : "http://www.saude.gov.br/fhir/r4/CodeSystem/BRCIAP2",
+    "version" : "1.0.0",
+    "name" : "BRCIAP2"
+  },
+  {
+    "id" : "BRCID10",
+    "type" : "CodeSystem",
+    "url" : "http://www.saude.gov.br/fhir/r4/CodeSystem/BRCID10",
+    "version" : "1.0.0",
+    "name" : "BRCID10"
+  },
+  {
+    "id" : "BRObmAMPP",
+    "type" : "CodeSystem",
+    "url" : "http://www.saude.gov.br/fhir/r4/CodeSystem/BRObmAMPP",
+    "version" : "1.0.0",
+    "name" : "BRObmAMPP"
+  },
+  {
+    "id" : "BRObmANVISA",
+    "type" : "CodeSystem",
+    "url" : "http://www.saude.gov.br/fhir/r4/CodeSystem/BRObmANVISA",
+    "version" : "1.0.0",
+    "name" : "BRObmANVISA"
+  },
+  {
+    "id" : "BRObmCATMAT",
+    "type" : "CodeSystem",
+    "url" : "http://www.saude.gov.br/fhir/r4/CodeSystem/BRObmCATMAT",
+    "version" : "1.0.0",
+    "name" : "BRObmCATMAT"
+  },
+  {
+    "id" : "BRObmEAN",
+    "type" : "CodeSystem",
+    "url" : "http://www.saude.gov.br/fhir/r4/CodeSystem/BRObmEAN",
+    "version" : "1.0.0",
+    "name" : "BRObmEAN"
+  },
+  {
+    "id" : "BRObmVMP",
+    "type" : "CodeSystem",
+    "url" : "http://www.saude.gov.br/fhir/r4/CodeSystem/BRObmVMP",
+    "version" : "1.0.0",
+    "name" : "BRObmVMP"
+  },
+  {
+    "id" : "codesystem-medication-dispense-type",
+    "type" : "CodeSystem",
+    "url" : "http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoDispensacaoRealizada",
+    "version" : "1.0.0",
+    "name" : "CodeSystem-BRTipoDispensacaoRealizada"
+  },
+  {
+    "id" : "BRTipoDocumento",
+    "type" : "CodeSystem",
+    "url" : "http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoDocumento",
+    "version" : "1.0.0",
+    "name" : "BRTipoDocumento"
+  },
+  {
+    "id" : "BRUnidadeMedida",
+    "type" : "CodeSystem",
+    "url" : "http://www.saude.gov.br/fhir/r4/CodeSystem/BRUnidadeMedida",
+    "version" : "1.0.0",
+    "name" : "BRUnidadeMedida"
+  },
+  {
+    "id" : "BRViaAdministracao",
+    "type" : "CodeSystem",
+    "url" : "http://www.saude.gov.br/fhir/r4/CodeSystem/BRViaAdministracao",
+    "version" : "1.0.0",
+    "name" : "BRViaAdministracao"
+  },
+  {
+    "id" : "br.gov.saude.redfm.fhir",
+    "type" : "ImplementationGuide",
+    "url" : "http://www.saude.gov.br/fhir/r4/ImplementationGuide/br.gov.saude.redfm.fhir",
+    "version" : "1.0.0",
+    "name" : "REDFMRNDSIG"
+  },
+  {
+    "id" : "RNDSLotacaoProfissional",
+    "type" : "StructureDefinition",
+    "url" : "http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSLotacaoProfissional",
+    "version" : "1.0.0",
+    "name" : "RNDSLotacaoProfissional"
+  },
+  {
+    "id" : "RNDSMedicamento",
+    "type" : "StructureDefinition",
+    "url" : "http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSMedicamento",
+    "version" : "1.0.0",
+    "name" : "RNDSMedicamento"
+  },
+  {
+    "id" : "RNDSMedicamentoDispensado",
+    "type" : "StructureDefinition",
+    "url" : "http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSMedicamentoDispensado",
+    "version" : "1.0.0",
+    "name" : "RNDSMedicamentoDispensado"
+  },
+  {
+    "id" : "RNDSMedicamentoDispensadoFornecido",
+    "type" : "StructureDefinition",
+    "url" : "http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSMedicamentoDispensadoFornecido",
+    "version" : "1.0.0",
+    "name" : "RNDSMedicamentoDispensadoFornecido"
+  },
+  {
+    "id" : "RNDSPrescricaoMedicamentoDispensado",
+    "type" : "StructureDefinition",
+    "url" : "http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSPrescricaoMedicamentoDispensado",
+    "version" : "1.0.0",
+    "name" : "RNDSPrescricaoMedicamentoDispensado"
+  },
+  {
+    "id" : "RNDSProfissional",
+    "type" : "StructureDefinition",
+    "url" : "http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSProfissional",
+    "version" : "1.0.0",
+    "name" : "RNDSProfissional"
+  },
+  {
+    "id" : "RNDSRegistroEletronicoDispensacaoFornecimentoMedicamento",
+    "type" : "StructureDefinition",
+    "url" : "http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamento",
+    "version" : "1.0.0",
+    "name" : "RNDSRegistroEletronicoDispensacaoFornecimentoMedicamento"
+  },
+  {
+    "id" : "BROcupacao-1.0",
+    "type" : "ValueSet",
+    "url" : "http://www.saude.gov.br/fhir/r4/ValueSet/BROcupacao-1.0",
+    "version" : "1.0.0",
+    "name" : "BROcupacao"
+  },
+  {
+    "id" : "BRProblemaDiagnostico",
+    "type" : "ValueSet",
+    "url" : "http://www.saude.gov.br/fhir/r4/ValueSet/BRProblemaDiagnostico",
+    "version" : "1.0.0",
+    "name" : "BRProblemaDiagnostico"
+  },
+  {
+    "id" : "BRTerminologiaMedicamento",
+    "type" : "ValueSet",
+    "url" : "http://www.saude.gov.br/fhir/r4/ValueSet/BRTerminologiaMedicamento",
+    "version" : "1.0.0",
+    "name" : "BRTerminologiaMedicamento"
+  },
+  {
+    "id" : "valueset-brtipodispensacaorealizada",
+    "type" : "ValueSet",
+    "url" : "http://www.saude.gov.br/fhir/r4/ValueSet/BRTipoDispensacaoRealizada",
+    "version" : "1.0.0",
+    "name" : "ValueSet-BRTipoDispensacaoRealizada"
+  },
+  {
+    "id" : "BRTipoDocumento-1.0",
+    "type" : "ValueSet",
+    "url" : "http://www.saude.gov.br/fhir/r4/ValueSet/BRTipoDocumento-1.0",
+    "version" : "1.0.0",
+    "name" : "BRTipoDocumento"
+  },
+  {
+    "id" : "BRUnidadeMedidaMedicamento",
+    "type" : "ValueSet",
+    "url" : "http://www.saude.gov.br/fhir/r4/ValueSet/BRUnidadeMedidaMedicamento",
+    "version" : "1.0.0",
+    "name" : "BRUnidadeMedidaMedicamento"
+  },
+  {
+    "id" : "BRViaAdministracao-1.0",
+    "type" : "ValueSet",
+    "url" : "http://www.saude.gov.br/fhir/r4/ValueSet/BRViaAdministracao-1.0",
+    "version" : "1.0.0",
+    "name" : "BRViaAdministracao"
+  },
+  {
+    "id" : "br-core-composition",
+    "type" : "StructureDefinition",
+    "url" : "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-composition",
+    "version" : "1.0.0",
+    "name" : "BRCoreComposition"
+  },
+  {
+    "id" : "br-core-medication",
+    "type" : "StructureDefinition",
+    "url" : "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-medication",
+    "version" : "1.0.0",
+    "name" : "BRCoreMedication"
+  },
+  {
+    "id" : "br-core-organization",
+    "type" : "StructureDefinition",
+    "url" : "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-organization",
+    "version" : "1.0.0",
+    "name" : "BRCoreOrganization"
+  },
+  {
+    "id" : "br-core-practitioner",
+    "type" : "StructureDefinition",
+    "url" : "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-practitioner",
+    "version" : "1.0.0",
+    "name" : "BRCorePractitioner"
+  },
+  {
+    "id" : "br-core-practitionerrole",
+    "type" : "StructureDefinition",
+    "url" : "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-practitionerrole",
+    "version" : "1.0.0",
+    "name" : "BRCorePractitionerRole"
+  },
+  {
+    "id" : "BRConselhoProfissional",
+    "type" : "CodeSystem",
+    "url" : "https://terminologia.saude.gov.br/fhir/CodeSystem/BRConselhoProfissional",
+    "version" : "1.0.0",
+    "name" : "BRConselhoProfissional"
+  },
+  {
+    "id" : "BRCOREN",
+    "type" : "ValueSet",
+    "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BRCOREN",
+    "version" : "1.0.0",
+    "name" : "BRCOREN"
+  },
+  {
+    "id" : "BRCRF",
+    "type" : "ValueSet",
+    "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BRCRF",
+    "version" : "1.0.0",
+    "name" : "BRCRF"
+  },
+  {
+    "id" : "BRCRM",
+    "type" : "ValueSet",
+    "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BRCRM",
+    "version" : "1.0.0",
+    "name" : "BRCRM"
+  },
+  {
+    "id" : "BRCRO",
+    "type" : "ValueSet",
+    "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BRCRO",
+    "version" : "1.0.0",
+    "name" : "BRCRO"
+  },
+  {
+    "id" : "BROutrosProfissionais",
+    "type" : "ValueSet",
+    "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BROutrosProfissionais",
+    "version" : "1.0.0",
+    "name" : "BROutrosProfissionais"
+  }
+]

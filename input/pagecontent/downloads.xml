@@ -4,12 +4,12 @@
 	{% assign excludejson = site.data.info.excludejson | downcase | slice: 0 %}
 	{% assign excludettl = site.data.info.excludettl | downcase | slice: 0 %}
 	<p>
-		Download the entire implementation guide <a href="full-ig.zip">here</a>
+		Faça o download do Guia de Implementação (IG) completo <a href="full-ig.zip">aqui</a>
 	</p>
 	<table>
 		<tbody>
 			<tr>
-				<th>Artifact Definitions</th>
+				<th>Artefatos</th>
 				{% unless excludexml == 'y' %}
 				<td>
 					<a href="definitions.xml.zip">XML</a>
@@ -27,7 +27,7 @@
 				{% endunless %}
 			</tr>
 			<tr>
-				<th>Examples</th>
+				<th>Exemplos</th>
 				{% unless excludexml == 'y' %}
 				<td>
 					<a href="examples.xml.zip">XML</a>

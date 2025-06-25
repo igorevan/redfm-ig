@@ -1,0 +1,735 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://www.saude.gov.br/fhir/r4/CodeSystem/BRConselhoProfissional> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "BRConselhoProfissional"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/StructureDefinition/shareablecodesystem>
+     ] )
+  ] ; # 
+  fhir:language [ fhir:v "pt-BR"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem BRConselhoProfissional</b></p><a name=\"BRConselhoProfissional\"/><a name=\"hcBRConselhoProfissional\"/><a name=\"BRConselhoProfissional-pt-BR\"/><p>This case-sensitive code system <code>https://terminologia.saude.gov.br/fhir/CodeSystem/BRConselhoProfissional</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/crf-ac<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crf-ac\"/></td><td>CRF-AC</td><td>CONSELHO REGIONAL DE FARMÁCIA</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/crf-al<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crf-al\"/></td><td>CRF-AL</td><td>CONSELHO REGIONAL DE FARMÁCIA</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/crf-am<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crf-am\"/></td><td>CRF-AM</td><td>CONSELHO REGIONAL DE FARMÁCIA</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/crf-ap<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crf-ap\"/></td><td>CRF-AP</td><td>CONSELHO REGIONAL DE FARMÁCIA</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/crf-ba<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crf-ba\"/></td><td>CRF-BA</td><td>CONSELHO REGIONAL DE FARMÁCIA</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/crf-ce<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crf-ce\"/></td><td>CRF-CE</td><td>CONSELHO REGIONAL DE FARMÁCIA</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/crf-df<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crf-df\"/></td><td>CRF-DF</td><td>CONSELHO REGIONAL DE FARMÁCIA</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/crf-es<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crf-es\"/></td><td>CRF-ES</td><td>CONSELHO REGIONAL DE FARMÁCIA</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/crf-go<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crf-go\"/></td><td>CRF-GO</td><td>CONSELHO REGIONAL DE FARMÁCIA</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/crf-ma<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crf-ma\"/></td><td>CRF-MA</td><td>CONSELHO REGIONAL DE FARMÁCIA</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/crf-mg<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crf-mg\"/></td><td>CRF-MG</td><td>CONSELHO REGIONAL DE FARMÁCIA</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/crf-ms<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crf-ms\"/></td><td>CRF-MS</td><td>CONSELHO REGIONAL DE FARMÁCIA</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/crf-mt<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crf-mt\"/></td><td>CRF-MT</td><td>CONSELHO REGIONAL DE FARMÁCIA</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/crf-pa<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crf-pa\"/></td><td>CRF-PA</td><td>CONSELHO REGIONAL DE FARMÁCIA</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/crf-pb<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crf-pb\"/></td><td>CRF-PB</td><td>CONSELHO REGIONAL DE FARMÁCIA</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/crf-pe<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crf-pe\"/></td><td>CRF-PE</td><td>CONSELHO REGIONAL DE FARMÁCIA</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/crf-pi<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crf-pi\"/></td><td>CRF-PI</td><td>CONSELHO REGIONAL DE FARMÁCIA</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/crf-pr<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crf-pr\"/></td><td>CRF-PR</td><td>CONSELHO REGIONAL DE FARMÁCIA</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/crf-rj<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crf-rj\"/></td><td>CRF-RJ</td><td>CONSELHO REGIONAL DE FARMÁCIA</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/crf-rn<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crf-rn\"/></td><td>CRF-RN</td><td>CONSELHO REGIONAL DE FARMÁCIA</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/crf-ro<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crf-ro\"/></td><td>CRF-RO</td><td>CONSELHO REGIONAL DE FARMÁCIA</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/crf-rr<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crf-rr\"/></td><td>CRF-RR</td><td>CONSELHO REGIONAL DE FARMÁCIA</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/crf-rs<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crf-rs\"/></td><td>CRF-RS</td><td>CONSELHO REGIONAL DE FARMÁCIA</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/crf-sc<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crf-sc\"/></td><td>CRF-SC</td><td>CONSELHO REGIONAL DE FARMÁCIA</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/crf-se<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crf-se\"/></td><td>CRF-SE</td><td>CONSELHO REGIONAL DE FARMÁCIA</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/crf-sp<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crf-sp\"/></td><td>CRF-SP</td><td>CONSELHO REGIONAL DE FARMÁCIA</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/crf-to<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crf-to\"/></td><td>CRF-TO</td><td>CONSELHO REGIONAL DE FARMÁCIA</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/cro-ac<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47cro-ac\"/></td><td>CRO-AC</td><td>CONSELHO REGIONAL DE ODONTOLOGIA</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/cro-al<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47cro-al\"/></td><td>CRO-AL</td><td>CONSELHO REGIONAL DE ODONTOLOGIA</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/cro-am<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47cro-am\"/></td><td>CRO-AM</td><td>CONSELHO REGIONAL DE ODONTOLOGIA</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/cro-ap<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47cro-ap\"/></td><td>CRO-AP</td><td>CONSELHO REGIONAL DE ODONTOLOGIA</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/cro-ba<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47cro-ba\"/></td><td>CRO-BA</td><td>CONSELHO REGIONAL DE ODONTOLOGIA</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/cro-ce<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47cro-ce\"/></td><td>CRO-CE</td><td>CONSELHO REGIONAL DE ODONTOLOGIA</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/cro-df<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47cro-df\"/></td><td>CRO-DF</td><td>CONSELHO REGIONAL DE ODONTOLOGIA</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/cro-es<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47cro-es\"/></td><td>CRO-ES</td><td>CONSELHO REGIONAL DE ODONTOLOGIA</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/cro-go<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47cro-go\"/></td><td>CRO-GO</td><td>CONSELHO REGIONAL DE ODONTOLOGIA</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/cro-ma<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47cro-ma\"/></td><td>CRO-MA</td><td>CONSELHO REGIONAL DE ODONTOLOGIA</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/cro-mg<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47cro-mg\"/></td><td>CRO-MG</td><td>CONSELHO REGIONAL DE ODONTOLOGIA</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/cro-ms<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47cro-ms\"/></td><td>CRO-MS</td><td>CONSELHO REGIONAL DE ODONTOLOGIA</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/cro-mt<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47cro-mt\"/></td><td>CRO-MT</td><td>CONSELHO REGIONAL DE ODONTOLOGIA</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/cro-pa<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47cro-pa\"/></td><td>CRO-PA</td><td>CONSELHO REGIONAL DE ODONTOLOGIA</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/cro-pb<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47cro-pb\"/></td><td>CRO-PB</td><td>CONSELHO REGIONAL DE ODONTOLOGIA</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/cro-pe<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47cro-pe\"/></td><td>CRO-PE</td><td>CONSELHO REGIONAL DE ODONTOLOGIA</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/cro-pi<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47cro-pi\"/></td><td>CRO-PI</td><td>CONSELHO REGIONAL DE ODONTOLOGIA</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/cro-pr<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47cro-pr\"/></td><td>CRO-PR</td><td>CONSELHO REGIONAL DE ODONTOLOGIA</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/cro-rj<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47cro-rj\"/></td><td>CRO-RJ</td><td>CONSELHO REGIONAL DE ODONTOLOGIA</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/cro-rn<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47cro-rn\"/></td><td>CRO-RN</td><td>CONSELHO REGIONAL DE ODONTOLOGIA</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/cro-ro<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47cro-ro\"/></td><td>CRO-RO</td><td>CONSELHO REGIONAL DE ODONTOLOGIA</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/cro-rr<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47cro-rr\"/></td><td>CRO-RR</td><td>CONSELHO REGIONAL DE ODONTOLOGIA</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/cro-rs<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47cro-rs\"/></td><td>CRO-RS</td><td>CONSELHO REGIONAL DE ODONTOLOGIA</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/cro-sc<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47cro-sc\"/></td><td>CRO-SC</td><td>CONSELHO REGIONAL DE ODONTOLOGIA</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/cro-se<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47cro-se\"/></td><td>CRO-SE</td><td>CONSELHO REGIONAL DE ODONTOLOGIA</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/cro-sp<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47cro-sp\"/></td><td>CRO-SP</td><td>CONSELHO REGIONAL DE ODONTOLOGIA</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/cro-to<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47cro-to\"/></td><td>CRO-TO</td><td>CONSELHO REGIONAL DE ODONTOLOGIA</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/coren-ac<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47coren-ac\"/></td><td>COREN-AC</td><td>CONSELHO REGIONAL DE ENFERMAGEM</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/coren-al<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47coren-al\"/></td><td>COREN-AL</td><td>CONSELHO REGIONAL DE ENFERMAGEM</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/coren-am<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47coren-am\"/></td><td>COREN-AM</td><td>CONSELHO REGIONAL DE ENFERMAGEM</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/coren-ap<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47coren-ap\"/></td><td>COREN-AP</td><td>CONSELHO REGIONAL DE ENFERMAGEM</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/coren-ba<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47coren-ba\"/></td><td>COREN-BA</td><td>CONSELHO REGIONAL DE ENFERMAGEM</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/coren-ce<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47coren-ce\"/></td><td>COREN-CE</td><td>CONSELHO REGIONAL DE ENFERMAGEM</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/coren-df<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47coren-df\"/></td><td>COREN-DF</td><td>CONSELHO REGIONAL DE ENFERMAGEM</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/coren-es<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47coren-es\"/></td><td>COREN-ES</td><td>CONSELHO REGIONAL DE ENFERMAGEM</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/coren-go<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47coren-go\"/></td><td>COREN-GO</td><td>CONSELHO REGIONAL DE ENFERMAGEM</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/coren-ma<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47coren-ma\"/></td><td>COREN-MA</td><td>CONSELHO REGIONAL DE ENFERMAGEM</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/coren-mg<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47coren-mg\"/></td><td>COREN-MG</td><td>CONSELHO REGIONAL DE ENFERMAGEM</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/coren-ms<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47coren-ms\"/></td><td>COREN-MS</td><td>CONSELHO REGIONAL DE ENFERMAGEM</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/coren-mt<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47coren-mt\"/></td><td>COREN-MT</td><td>CONSELHO REGIONAL DE ENFERMAGEM</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/coren-pa<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47coren-pa\"/></td><td>COREN-PA</td><td>CONSELHO REGIONAL DE ENFERMAGEM</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/coren-pb<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47coren-pb\"/></td><td>COREN-PB</td><td>CONSELHO REGIONAL DE ENFERMAGEM</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/coren-pe<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47coren-pe\"/></td><td>COREN-PE</td><td>CONSELHO REGIONAL DE ENFERMAGEM</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/coren-pi<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47coren-pi\"/></td><td>COREN-PI</td><td>CONSELHO REGIONAL DE ENFERMAGEM</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/coren-pr<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47coren-pr\"/></td><td>COREN-PR</td><td>CONSELHO REGIONAL DE ENFERMAGEM</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/coren-rj<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47coren-rj\"/></td><td>COREN-RJ</td><td>CONSELHO REGIONAL DE ENFERMAGEM</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/coren-rn<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47coren-rn\"/></td><td>COREN-RN</td><td>CONSELHO REGIONAL DE ENFERMAGEM</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/coren-ro<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47coren-ro\"/></td><td>COREN-RO</td><td>CONSELHO REGIONAL DE ENFERMAGEM</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/coren-rr<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47coren-rr\"/></td><td>COREN-RR</td><td>CONSELHO REGIONAL DE ENFERMAGEM</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/coren-rs<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47coren-rs\"/></td><td>COREN-RS</td><td>CONSELHO REGIONAL DE ENFERMAGEM</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/coren-sc<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47coren-sc\"/></td><td>COREN-SC</td><td>CONSELHO REGIONAL DE ENFERMAGEM</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/coren-se<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47coren-se\"/></td><td>COREN-SE</td><td>CONSELHO REGIONAL DE ENFERMAGEM</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/coren-sp<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47coren-sp\"/></td><td>COREN-SP</td><td>CONSELHO REGIONAL DE ENFERMAGEM</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/coren-to<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47coren-to\"/></td><td>COREN-TO</td><td>CONSELHO REGIONAL DE ENFERMAGEM</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/crm-ac<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crm-ac\"/></td><td>CRM-AC</td><td>CONSELHO REGIONAL DE MEDICINA</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/crm-al<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crm-al\"/></td><td>CRM-AL</td><td>CONSELHO REGIONAL DE MEDICINA</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/crm-am<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crm-am\"/></td><td>CRM-AM</td><td>CONSELHO REGIONAL DE MEDICINA</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/crm-ap<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crm-ap\"/></td><td>CRM-AP</td><td>CONSELHO REGIONAL DE MEDICINA</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/crm-ba<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crm-ba\"/></td><td>CRM-BA</td><td>CONSELHO REGIONAL DE MEDICINA</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/crm-ce<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crm-ce\"/></td><td>CRM-CE</td><td>CONSELHO REGIONAL DE MEDICINA</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/crm-df<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crm-df\"/></td><td>CRM-DF</td><td>CONSELHO REGIONAL DE MEDICINA</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/crm-es<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crm-es\"/></td><td>CRM-ES</td><td>CONSELHO REGIONAL DE MEDICINA</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/crm-go<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crm-go\"/></td><td>CRM-GO</td><td>CONSELHO REGIONAL DE MEDICINA</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/crm-ma<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crm-ma\"/></td><td>CRM-MA</td><td>CONSELHO REGIONAL DE MEDICINA</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/crm-mg<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crm-mg\"/></td><td>CRM-MG</td><td>CONSELHO REGIONAL DE MEDICINA</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/crm-ms<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crm-ms\"/></td><td>CRM-MS</td><td>CONSELHO REGIONAL DE MEDICINA</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/crm-mt<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crm-mt\"/></td><td>CRM-MT</td><td>CONSELHO REGIONAL DE MEDICINA</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/crm-pa<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crm-pa\"/></td><td>CRM-PA</td><td>CONSELHO REGIONAL DE MEDICINA</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/crm-pb<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crm-pb\"/></td><td>CRM-PB</td><td>CONSELHO REGIONAL DE MEDICINA</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/crm-pe<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crm-pe\"/></td><td>CRM-PE</td><td>CONSELHO REGIONAL DE MEDICINA</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/crm-pi<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crm-pi\"/></td><td>CRM-PI</td><td>CONSELHO REGIONAL DE MEDICINA</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/crm-pr<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crm-pr\"/></td><td>CRM-PR</td><td>CONSELHO REGIONAL DE MEDICINA</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/crm-rj<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crm-rj\"/></td><td>CRM-RJ</td><td>CONSELHO REGIONAL DE MEDICINA</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/crm-rn<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crm-rn\"/></td><td>CRM-RN</td><td>CONSELHO REGIONAL DE MEDICINA</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/crm-ro<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crm-ro\"/></td><td>CRM-RO</td><td>CONSELHO REGIONAL DE MEDICINA</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/crm-rr<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crm-rr\"/></td><td>CRM-RR</td><td>CONSELHO REGIONAL DE MEDICINA</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/crm-rs<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crm-rs\"/></td><td>CRM-RS</td><td>CONSELHO REGIONAL DE MEDICINA</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/crm-sc<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crm-sc\"/></td><td>CRM-SC</td><td>CONSELHO REGIONAL DE MEDICINA</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/crm-se<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crm-se\"/></td><td>CRM-SE</td><td>CONSELHO REGIONAL DE MEDICINA</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/crm-sp<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crm-sp\"/></td><td>CRM-SP</td><td>CONSELHO REGIONAL DE MEDICINA</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/crm-to<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crm-to\"/></td><td>CRM-TO</td><td>CONSELHO REGIONAL DE MEDICINA</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/crp-ac-ro<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crp-ac-ro\"/></td><td>CRP-AC-RO</td><td>CONSELHO REGIONAL DE PSICOLOGIA</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/crp-al<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crp-al\"/></td><td>CRP-AL</td><td>CONSELHO REGIONAL DE PSICOLOGIA</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/crp-am-rr<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crp-am-rr\"/></td><td>CRP-AM-RR</td><td>CONSELHO REGIONAL DE PSICOLOGIA</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/crp-ba<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crp-ba\"/></td><td>CRP-BA</td><td>CONSELHO REGIONAL DE PSICOLOGIA</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/crp-ce<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crp-ce\"/></td><td>CRP-CE</td><td>CONSELHO REGIONAL DE PSICOLOGIA</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/crp-df<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crp-df\"/></td><td>CRP-DF</td><td>CONSELHO REGIONAL DE PSICOLOGIA</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/crp-es<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crp-es\"/></td><td>CRP-ES</td><td>CONSELHO REGIONAL DE PSICOLOGIA</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/crp-go<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crp-go\"/></td><td>CRP-GO</td><td>CONSELHO REGIONAL DE PSICOLOGIA</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/crp-ma<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crp-ma\"/></td><td>CRP-MA</td><td>CONSELHO REGIONAL DE PSICOLOGIA</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/crp-mg<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crp-mg\"/></td><td>CRP-MG</td><td>CONSELHO REGIONAL DE PSICOLOGIA</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/crp-ms<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crp-ms\"/></td><td>CRP-MS</td><td>CONSELHO REGIONAL DE PSICOLOGIA</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/crp-mt<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crp-mt\"/></td><td>CRP-MT</td><td>CONSELHO REGIONAL DE PSICOLOGIA</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/crp-pa-ap<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crp-pa-ap\"/></td><td>CRP-PA-AP</td><td>CONSELHO REGIONAL DE PSICOLOGIA</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/crp-pb<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crp-pb\"/></td><td>CRP-PB</td><td>CONSELHO REGIONAL DE PSICOLOGIA</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/crp-pe<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crp-pe\"/></td><td>CRP-PE</td><td>CONSELHO REGIONAL DE PSICOLOGIA</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/crp-pi<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crp-pi\"/></td><td>CRP-PI</td><td>CONSELHO REGIONAL DE PSICOLOGIA</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/crp-pr<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crp-pr\"/></td><td>CRP-PR</td><td>CONSELHO REGIONAL DE PSICOLOGIA</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/crp-rj<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crp-rj\"/></td><td>CRP-RJ</td><td>CONSELHO REGIONAL DE PSICOLOGIA</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/crp-rn<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crp-rn\"/></td><td>CRP-RN</td><td>CONSELHO REGIONAL DE PSICOLOGIA</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/crp-rs<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crp-rs\"/></td><td>CRP-RS</td><td>CONSELHO REGIONAL DE PSICOLOGIA</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/crp-sc<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crp-sc\"/></td><td>CRP-SC</td><td>CONSELHO REGIONAL DE PSICOLOGIA</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/crp-se<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crp-se\"/></td><td>CRP-SE</td><td>CONSELHO REGIONAL DE PSICOLOGIA</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/crp-sp<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crp-sp\"/></td><td>CRP-SP</td><td>CONSELHO REGIONAL DE PSICOLOGIA</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/crp-to<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crp-to\"/></td><td>CRP-TO</td><td>CONSELHO REGIONAL DE PSICOLOGIA</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/crefito-ba<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crefito-ba\"/></td><td>CREFITO-BA</td><td>CONSELHO REGIONAS DE FISIOTERAPIA E TERAPIA OCUPACIONAL</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/crefito-ce<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crefito-ce\"/></td><td>CREFITO-CE</td><td>CONSELHO REGIONAS DE FISIOTERAPIA E TERAPIA OCUPACIONAL</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/crefito-es<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crefito-es\"/></td><td>CREFITO-ES</td><td>CONSELHO REGIONAS DE FISIOTERAPIA E TERAPIA OCUPACIONAL</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/crefito-go-df<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crefito-go-df\"/></td><td>CREFITO-GO-DF</td><td>CONSELHO REGIONAS DE FISIOTERAPIA E TERAPIA OCUPACIONAL</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/crefito-ma<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crefito-ma\"/></td><td>CREFITO-MA</td><td>CONSELHO REGIONAS DE FISIOTERAPIA E TERAPIA OCUPACIONAL</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/crefito-mg<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crefito-mg\"/></td><td>CREFITO-MG</td><td>CONSELHO REGIONAS DE FISIOTERAPIA E TERAPIA OCUPACIONAL</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/crefito-ms<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crefito-ms\"/></td><td>CREFITO-MS</td><td>CONSELHO REGIONAS DE FISIOTERAPIA E TERAPIA OCUPACIONAL</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/crefito-mt<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crefito-mt\"/></td><td>CREFITO-MT</td><td>CONSELHO REGIONAS DE FISIOTERAPIA E TERAPIA OCUPACIONAL</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/crefito-pa-am-to-rr-ap<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crefito-pa-am-to-rr-ap\"/></td><td>CREFITO-PA-AM-TO-RR-AP</td><td>CONSELHO REGIONAS DE FISIOTERAPIA E TERAPIA OCUPACIONAL</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/crefito-pe-pb-al-rn<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crefito-pe-pb-al-rn\"/></td><td>CREFITO-PE-PB-AL-RN</td><td>CONSELHO REGIONAS DE FISIOTERAPIA E TERAPIA OCUPACIONAL</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/crefito-pi<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crefito-pi\"/></td><td>CREFITO-PI</td><td>CONSELHO REGIONAS DE FISIOTERAPIA E TERAPIA OCUPACIONAL</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/crefito-pr<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crefito-pr\"/></td><td>CREFITO-PR</td><td>CONSELHO REGIONAS DE FISIOTERAPIA E TERAPIA OCUPACIONAL</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/crefito-rj<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crefito-rj\"/></td><td>CREFITO-RJ</td><td>CONSELHO REGIONAS DE FISIOTERAPIA E TERAPIA OCUPACIONAL</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/crefito-ro-ac<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crefito-ro-ac\"/></td><td>CREFITO-RO-AC</td><td>CONSELHO REGIONAS DE FISIOTERAPIA E TERAPIA OCUPACIONAL</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/crefito-rs<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crefito-rs\"/></td><td>CREFITO-RS</td><td>CONSELHO REGIONAS DE FISIOTERAPIA E TERAPIA OCUPACIONAL</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/crefito-sc<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crefito-sc\"/></td><td>CREFITO-SC</td><td>CONSELHO REGIONAS DE FISIOTERAPIA E TERAPIA OCUPACIONAL</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/crefito-se<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crefito-se\"/></td><td>CREFITO-SE</td><td>CONSELHO REGIONAS DE FISIOTERAPIA E TERAPIA OCUPACIONAL</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/crefito-sp<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crefito-sp\"/></td><td>CREFITO-SP</td><td>CONSELHO REGIONAS DE FISIOTERAPIA E TERAPIA OCUPACIONAL</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/crn-al<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crn-al\"/></td><td>CRN-AL</td><td>CONSELHO REGIONAL DE NUTRICIONISTA</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/crn-ba-se<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crn-ba-se\"/></td><td>CRN-BA-SE</td><td>CONSELHO REGIONAL DE NUTRICIONISTA</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/crn-ce-ma-pi<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crn-ce-ma-pi\"/></td><td>CRN-CE-MA_PI</td><td>CONSELHO REGIONAL DE NUTRICIONISTA</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/crn-df-go-mt-to<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crn-df-go-mt-to\"/></td><td>CRN-DF-GO-MT-TO</td><td>CONSELHO REGIONAL DE NUTRICIONISTA</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/crn-pa-ac-am-ap-ro-rr<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crn-pa-ac-am-ap-ro-rr\"/></td><td>CRN-PA-AC-AM-AP-RO-RR</td><td>CONSELHO REGIONAL DE NUTRICIONISTA</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/crn-pe-al-pb-rn<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crn-pe-al-pb-rn\"/></td><td>CRN-PE-AL-PB-RN</td><td>CONSELHO REGIONAL DE NUTRICIONISTA</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/crn-pr<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crn-pr\"/></td><td>CRN-PR</td><td>CONSELHO REGIONAL DE NUTRICIONISTA</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/crn-rj-es<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crn-rj-es\"/></td><td>CRN-RJ-ES</td><td>CONSELHO REGIONAL DE NUTRICIONISTA</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/crn-rs<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crn-rs\"/></td><td>CRN-RS</td><td>CONSELHO REGIONAL DE NUTRICIONISTA</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/crn-sc<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crn-sc\"/></td><td>CRN-SC</td><td>CONSELHO REGIONAL DE NUTRICIONISTA</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/crn-sp-ms<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crn-sp-ms\"/></td><td>CRN-SP-MS</td><td>CONSELHO REGIONAL DE NUTRICIONISTA</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/crefono-am-ac-ap-pa-ro-rr<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crefono-am-ac-ap-pa-ro-rr\"/></td><td>CREFONO-AM-AC-AP-PA-RO-RR</td><td>CONSELHO REGIONAL DE FONOAUDIOLOGIA</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/crefono-ce-ma-pi-rn<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crefono-ce-ma-pi-rn\"/></td><td>CREFONO-CE-MA-PI-RN</td><td>CONSELHO REGIONAL DE FONOAUDIOLOGIA</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/crefono-go-df-ms-mt-to<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crefono-go-df-ms-mt-to\"/></td><td>CREFONO-GO-DF-MS-MT-TO</td><td>CONSELHO REGIONAL DE FONOAUDIOLOGIA</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/crefono-mg-es<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crefono-mg-es\"/></td><td>CREFONO-MG-ES</td><td>CONSELHO REGIONAL DE FONOAUDIOLOGIA</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/crefono-pe-al-ba-pb-se<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crefono-pe-al-ba-pb-se\"/></td><td>CREFONO-PE-AL-BA-PB-SE</td><td>CONSELHO REGIONAL DE FONOAUDIOLOGIA</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/crefono-pr-sc<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crefono-pr-sc\"/></td><td>CREFONO-PR-SC</td><td>CONSELHO REGIONAL DE FONOAUDIOLOGIA</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/crefono-rj<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crefono-rj\"/></td><td>CREFONO-RJ</td><td>CONSELHO REGIONAL DE FONOAUDIOLOGIA</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/crefono-rs<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crefono-rs\"/></td><td>CREFONO-RS</td><td>CONSELHO REGIONAL DE FONOAUDIOLOGIA</td></tr><tr><td style=\"white-space:nowrap\">https://saude.gov.br/sid/crefono-sp<a name=\"BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crefono-sp\"/></td><td>CREFONO-SP</td><td>CONSELHO REGIONAL DE FONOAUDIOLOGIA</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://terminologia.saude.gov.br/fhir/CodeSystem/BRConselhoProfissional"^^xsd:anyURI] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "https://saude.gov.br/sid/codesystem"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "BRConselhoProfissional" ]
+  ] ) ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "BRConselhoProfissional"] ; # 
+  fhir:title [ fhir:v "Conselhos profissionais de saúde do Brasil"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2023-07-18T13:05:57+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Ministério da Saúde do Brasil"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Ministério da Saúde do Brasil" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://www.saude.gov.br" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Esse CodeSystem inclui os conselhos profissionais de saúde do Brasil, conforme a Resolução CNS 251/1997."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "BR" ]
+     ] )
+  ] ) ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "170"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/crf-ac" ] ;
+     fhir:display [ fhir:v "CRF-AC" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE FARMÁCIA" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/crf-al" ] ;
+     fhir:display [ fhir:v "CRF-AL" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE FARMÁCIA" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/crf-am" ] ;
+     fhir:display [ fhir:v "CRF-AM" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE FARMÁCIA" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/crf-ap" ] ;
+     fhir:display [ fhir:v "CRF-AP" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE FARMÁCIA" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/crf-ba" ] ;
+     fhir:display [ fhir:v "CRF-BA" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE FARMÁCIA" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/crf-ce" ] ;
+     fhir:display [ fhir:v "CRF-CE" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE FARMÁCIA" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/crf-df" ] ;
+     fhir:display [ fhir:v "CRF-DF" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE FARMÁCIA" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/crf-es" ] ;
+     fhir:display [ fhir:v "CRF-ES" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE FARMÁCIA" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/crf-go" ] ;
+     fhir:display [ fhir:v "CRF-GO" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE FARMÁCIA" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/crf-ma" ] ;
+     fhir:display [ fhir:v "CRF-MA" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE FARMÁCIA" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/crf-mg" ] ;
+     fhir:display [ fhir:v "CRF-MG" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE FARMÁCIA" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/crf-ms" ] ;
+     fhir:display [ fhir:v "CRF-MS" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE FARMÁCIA" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/crf-mt" ] ;
+     fhir:display [ fhir:v "CRF-MT" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE FARMÁCIA" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/crf-pa" ] ;
+     fhir:display [ fhir:v "CRF-PA" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE FARMÁCIA" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/crf-pb" ] ;
+     fhir:display [ fhir:v "CRF-PB" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE FARMÁCIA" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/crf-pe" ] ;
+     fhir:display [ fhir:v "CRF-PE" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE FARMÁCIA" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/crf-pi" ] ;
+     fhir:display [ fhir:v "CRF-PI" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE FARMÁCIA" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/crf-pr" ] ;
+     fhir:display [ fhir:v "CRF-PR" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE FARMÁCIA" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/crf-rj" ] ;
+     fhir:display [ fhir:v "CRF-RJ" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE FARMÁCIA" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/crf-rn" ] ;
+     fhir:display [ fhir:v "CRF-RN" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE FARMÁCIA" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/crf-ro" ] ;
+     fhir:display [ fhir:v "CRF-RO" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE FARMÁCIA" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/crf-rr" ] ;
+     fhir:display [ fhir:v "CRF-RR" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE FARMÁCIA" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/crf-rs" ] ;
+     fhir:display [ fhir:v "CRF-RS" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE FARMÁCIA" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/crf-sc" ] ;
+     fhir:display [ fhir:v "CRF-SC" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE FARMÁCIA" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/crf-se" ] ;
+     fhir:display [ fhir:v "CRF-SE" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE FARMÁCIA" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/crf-sp" ] ;
+     fhir:display [ fhir:v "CRF-SP" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE FARMÁCIA" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/crf-to" ] ;
+     fhir:display [ fhir:v "CRF-TO" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE FARMÁCIA" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/cro-ac" ] ;
+     fhir:display [ fhir:v "CRO-AC" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE ODONTOLOGIA" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/cro-al" ] ;
+     fhir:display [ fhir:v "CRO-AL" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE ODONTOLOGIA" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/cro-am" ] ;
+     fhir:display [ fhir:v "CRO-AM" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE ODONTOLOGIA" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/cro-ap" ] ;
+     fhir:display [ fhir:v "CRO-AP" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE ODONTOLOGIA" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/cro-ba" ] ;
+     fhir:display [ fhir:v "CRO-BA" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE ODONTOLOGIA" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/cro-ce" ] ;
+     fhir:display [ fhir:v "CRO-CE" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE ODONTOLOGIA" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/cro-df" ] ;
+     fhir:display [ fhir:v "CRO-DF" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE ODONTOLOGIA" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/cro-es" ] ;
+     fhir:display [ fhir:v "CRO-ES" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE ODONTOLOGIA" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/cro-go" ] ;
+     fhir:display [ fhir:v "CRO-GO" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE ODONTOLOGIA" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/cro-ma" ] ;
+     fhir:display [ fhir:v "CRO-MA" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE ODONTOLOGIA" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/cro-mg" ] ;
+     fhir:display [ fhir:v "CRO-MG" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE ODONTOLOGIA" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/cro-ms" ] ;
+     fhir:display [ fhir:v "CRO-MS" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE ODONTOLOGIA" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/cro-mt" ] ;
+     fhir:display [ fhir:v "CRO-MT" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE ODONTOLOGIA" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/cro-pa" ] ;
+     fhir:display [ fhir:v "CRO-PA" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE ODONTOLOGIA" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/cro-pb" ] ;
+     fhir:display [ fhir:v "CRO-PB" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE ODONTOLOGIA" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/cro-pe" ] ;
+     fhir:display [ fhir:v "CRO-PE" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE ODONTOLOGIA" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/cro-pi" ] ;
+     fhir:display [ fhir:v "CRO-PI" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE ODONTOLOGIA" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/cro-pr" ] ;
+     fhir:display [ fhir:v "CRO-PR" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE ODONTOLOGIA" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/cro-rj" ] ;
+     fhir:display [ fhir:v "CRO-RJ" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE ODONTOLOGIA" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/cro-rn" ] ;
+     fhir:display [ fhir:v "CRO-RN" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE ODONTOLOGIA" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/cro-ro" ] ;
+     fhir:display [ fhir:v "CRO-RO" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE ODONTOLOGIA" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/cro-rr" ] ;
+     fhir:display [ fhir:v "CRO-RR" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE ODONTOLOGIA" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/cro-rs" ] ;
+     fhir:display [ fhir:v "CRO-RS" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE ODONTOLOGIA" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/cro-sc" ] ;
+     fhir:display [ fhir:v "CRO-SC" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE ODONTOLOGIA" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/cro-se" ] ;
+     fhir:display [ fhir:v "CRO-SE" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE ODONTOLOGIA" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/cro-sp" ] ;
+     fhir:display [ fhir:v "CRO-SP" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE ODONTOLOGIA" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/cro-to" ] ;
+     fhir:display [ fhir:v "CRO-TO" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE ODONTOLOGIA" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/coren-ac" ] ;
+     fhir:display [ fhir:v "COREN-AC" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE ENFERMAGEM" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/coren-al" ] ;
+     fhir:display [ fhir:v "COREN-AL" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE ENFERMAGEM" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/coren-am" ] ;
+     fhir:display [ fhir:v "COREN-AM" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE ENFERMAGEM" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/coren-ap" ] ;
+     fhir:display [ fhir:v "COREN-AP" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE ENFERMAGEM" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/coren-ba" ] ;
+     fhir:display [ fhir:v "COREN-BA" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE ENFERMAGEM" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/coren-ce" ] ;
+     fhir:display [ fhir:v "COREN-CE" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE ENFERMAGEM" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/coren-df" ] ;
+     fhir:display [ fhir:v "COREN-DF" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE ENFERMAGEM" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/coren-es" ] ;
+     fhir:display [ fhir:v "COREN-ES" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE ENFERMAGEM" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/coren-go" ] ;
+     fhir:display [ fhir:v "COREN-GO" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE ENFERMAGEM" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/coren-ma" ] ;
+     fhir:display [ fhir:v "COREN-MA" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE ENFERMAGEM" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/coren-mg" ] ;
+     fhir:display [ fhir:v "COREN-MG" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE ENFERMAGEM" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/coren-ms" ] ;
+     fhir:display [ fhir:v "COREN-MS" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE ENFERMAGEM" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/coren-mt" ] ;
+     fhir:display [ fhir:v "COREN-MT" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE ENFERMAGEM" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/coren-pa" ] ;
+     fhir:display [ fhir:v "COREN-PA" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE ENFERMAGEM" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/coren-pb" ] ;
+     fhir:display [ fhir:v "COREN-PB" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE ENFERMAGEM" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/coren-pe" ] ;
+     fhir:display [ fhir:v "COREN-PE" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE ENFERMAGEM" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/coren-pi" ] ;
+     fhir:display [ fhir:v "COREN-PI" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE ENFERMAGEM" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/coren-pr" ] ;
+     fhir:display [ fhir:v "COREN-PR" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE ENFERMAGEM" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/coren-rj" ] ;
+     fhir:display [ fhir:v "COREN-RJ" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE ENFERMAGEM" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/coren-rn" ] ;
+     fhir:display [ fhir:v "COREN-RN" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE ENFERMAGEM" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/coren-ro" ] ;
+     fhir:display [ fhir:v "COREN-RO" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE ENFERMAGEM" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/coren-rr" ] ;
+     fhir:display [ fhir:v "COREN-RR" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE ENFERMAGEM" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/coren-rs" ] ;
+     fhir:display [ fhir:v "COREN-RS" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE ENFERMAGEM" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/coren-sc" ] ;
+     fhir:display [ fhir:v "COREN-SC" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE ENFERMAGEM" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/coren-se" ] ;
+     fhir:display [ fhir:v "COREN-SE" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE ENFERMAGEM" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/coren-sp" ] ;
+     fhir:display [ fhir:v "COREN-SP" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE ENFERMAGEM" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/coren-to" ] ;
+     fhir:display [ fhir:v "COREN-TO" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE ENFERMAGEM" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/crm-ac" ] ;
+     fhir:display [ fhir:v "CRM-AC" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE MEDICINA" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/crm-al" ] ;
+     fhir:display [ fhir:v "CRM-AL" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE MEDICINA" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/crm-am" ] ;
+     fhir:display [ fhir:v "CRM-AM" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE MEDICINA" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/crm-ap" ] ;
+     fhir:display [ fhir:v "CRM-AP" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE MEDICINA" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/crm-ba" ] ;
+     fhir:display [ fhir:v "CRM-BA" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE MEDICINA" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/crm-ce" ] ;
+     fhir:display [ fhir:v "CRM-CE" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE MEDICINA" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/crm-df" ] ;
+     fhir:display [ fhir:v "CRM-DF" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE MEDICINA" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/crm-es" ] ;
+     fhir:display [ fhir:v "CRM-ES" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE MEDICINA" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/crm-go" ] ;
+     fhir:display [ fhir:v "CRM-GO" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE MEDICINA" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/crm-ma" ] ;
+     fhir:display [ fhir:v "CRM-MA" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE MEDICINA" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/crm-mg" ] ;
+     fhir:display [ fhir:v "CRM-MG" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE MEDICINA" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/crm-ms" ] ;
+     fhir:display [ fhir:v "CRM-MS" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE MEDICINA" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/crm-mt" ] ;
+     fhir:display [ fhir:v "CRM-MT" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE MEDICINA" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/crm-pa" ] ;
+     fhir:display [ fhir:v "CRM-PA" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE MEDICINA" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/crm-pb" ] ;
+     fhir:display [ fhir:v "CRM-PB" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE MEDICINA" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/crm-pe" ] ;
+     fhir:display [ fhir:v "CRM-PE" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE MEDICINA" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/crm-pi" ] ;
+     fhir:display [ fhir:v "CRM-PI" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE MEDICINA" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/crm-pr" ] ;
+     fhir:display [ fhir:v "CRM-PR" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE MEDICINA" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/crm-rj" ] ;
+     fhir:display [ fhir:v "CRM-RJ" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE MEDICINA" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/crm-rn" ] ;
+     fhir:display [ fhir:v "CRM-RN" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE MEDICINA" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/crm-ro" ] ;
+     fhir:display [ fhir:v "CRM-RO" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE MEDICINA" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/crm-rr" ] ;
+     fhir:display [ fhir:v "CRM-RR" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE MEDICINA" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/crm-rs" ] ;
+     fhir:display [ fhir:v "CRM-RS" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE MEDICINA" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/crm-sc" ] ;
+     fhir:display [ fhir:v "CRM-SC" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE MEDICINA" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/crm-se" ] ;
+     fhir:display [ fhir:v "CRM-SE" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE MEDICINA" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/crm-sp" ] ;
+     fhir:display [ fhir:v "CRM-SP" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE MEDICINA" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/crm-to" ] ;
+     fhir:display [ fhir:v "CRM-TO" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE MEDICINA" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/crp-ac-ro" ] ;
+     fhir:display [ fhir:v "CRP-AC-RO" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE PSICOLOGIA" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/crp-al" ] ;
+     fhir:display [ fhir:v "CRP-AL" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE PSICOLOGIA" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/crp-am-rr" ] ;
+     fhir:display [ fhir:v "CRP-AM-RR" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE PSICOLOGIA" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/crp-ba" ] ;
+     fhir:display [ fhir:v "CRP-BA" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE PSICOLOGIA" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/crp-ce" ] ;
+     fhir:display [ fhir:v "CRP-CE" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE PSICOLOGIA" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/crp-df" ] ;
+     fhir:display [ fhir:v "CRP-DF" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE PSICOLOGIA" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/crp-es" ] ;
+     fhir:display [ fhir:v "CRP-ES" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE PSICOLOGIA" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/crp-go" ] ;
+     fhir:display [ fhir:v "CRP-GO" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE PSICOLOGIA" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/crp-ma" ] ;
+     fhir:display [ fhir:v "CRP-MA" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE PSICOLOGIA" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/crp-mg" ] ;
+     fhir:display [ fhir:v "CRP-MG" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE PSICOLOGIA" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/crp-ms" ] ;
+     fhir:display [ fhir:v "CRP-MS" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE PSICOLOGIA" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/crp-mt" ] ;
+     fhir:display [ fhir:v "CRP-MT" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE PSICOLOGIA" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/crp-pa-ap" ] ;
+     fhir:display [ fhir:v "CRP-PA-AP" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE PSICOLOGIA" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/crp-pb" ] ;
+     fhir:display [ fhir:v "CRP-PB" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE PSICOLOGIA" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/crp-pe" ] ;
+     fhir:display [ fhir:v "CRP-PE" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE PSICOLOGIA" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/crp-pi" ] ;
+     fhir:display [ fhir:v "CRP-PI" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE PSICOLOGIA" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/crp-pr" ] ;
+     fhir:display [ fhir:v "CRP-PR" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE PSICOLOGIA" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/crp-rj" ] ;
+     fhir:display [ fhir:v "CRP-RJ" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE PSICOLOGIA" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/crp-rn" ] ;
+     fhir:display [ fhir:v "CRP-RN" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE PSICOLOGIA" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/crp-rs" ] ;
+     fhir:display [ fhir:v "CRP-RS" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE PSICOLOGIA" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/crp-sc" ] ;
+     fhir:display [ fhir:v "CRP-SC" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE PSICOLOGIA" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/crp-se" ] ;
+     fhir:display [ fhir:v "CRP-SE" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE PSICOLOGIA" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/crp-sp" ] ;
+     fhir:display [ fhir:v "CRP-SP" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE PSICOLOGIA" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/crp-to" ] ;
+     fhir:display [ fhir:v "CRP-TO" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE PSICOLOGIA" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/crefito-ba" ] ;
+     fhir:display [ fhir:v "CREFITO-BA" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAS DE FISIOTERAPIA E TERAPIA OCUPACIONAL" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/crefito-ce" ] ;
+     fhir:display [ fhir:v "CREFITO-CE" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAS DE FISIOTERAPIA E TERAPIA OCUPACIONAL" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/crefito-es" ] ;
+     fhir:display [ fhir:v "CREFITO-ES" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAS DE FISIOTERAPIA E TERAPIA OCUPACIONAL" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/crefito-go-df" ] ;
+     fhir:display [ fhir:v "CREFITO-GO-DF" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAS DE FISIOTERAPIA E TERAPIA OCUPACIONAL" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/crefito-ma" ] ;
+     fhir:display [ fhir:v "CREFITO-MA" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAS DE FISIOTERAPIA E TERAPIA OCUPACIONAL" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/crefito-mg" ] ;
+     fhir:display [ fhir:v "CREFITO-MG" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAS DE FISIOTERAPIA E TERAPIA OCUPACIONAL" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/crefito-ms" ] ;
+     fhir:display [ fhir:v "CREFITO-MS" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAS DE FISIOTERAPIA E TERAPIA OCUPACIONAL" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/crefito-mt" ] ;
+     fhir:display [ fhir:v "CREFITO-MT" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAS DE FISIOTERAPIA E TERAPIA OCUPACIONAL" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/crefito-pa-am-to-rr-ap" ] ;
+     fhir:display [ fhir:v "CREFITO-PA-AM-TO-RR-AP" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAS DE FISIOTERAPIA E TERAPIA OCUPACIONAL" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/crefito-pe-pb-al-rn" ] ;
+     fhir:display [ fhir:v "CREFITO-PE-PB-AL-RN" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAS DE FISIOTERAPIA E TERAPIA OCUPACIONAL" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/crefito-pi" ] ;
+     fhir:display [ fhir:v "CREFITO-PI" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAS DE FISIOTERAPIA E TERAPIA OCUPACIONAL" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/crefito-pr" ] ;
+     fhir:display [ fhir:v "CREFITO-PR" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAS DE FISIOTERAPIA E TERAPIA OCUPACIONAL" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/crefito-rj" ] ;
+     fhir:display [ fhir:v "CREFITO-RJ" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAS DE FISIOTERAPIA E TERAPIA OCUPACIONAL" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/crefito-ro-ac" ] ;
+     fhir:display [ fhir:v "CREFITO-RO-AC" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAS DE FISIOTERAPIA E TERAPIA OCUPACIONAL" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/crefito-rs" ] ;
+     fhir:display [ fhir:v "CREFITO-RS" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAS DE FISIOTERAPIA E TERAPIA OCUPACIONAL" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/crefito-sc" ] ;
+     fhir:display [ fhir:v "CREFITO-SC" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAS DE FISIOTERAPIA E TERAPIA OCUPACIONAL" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/crefito-se" ] ;
+     fhir:display [ fhir:v "CREFITO-SE" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAS DE FISIOTERAPIA E TERAPIA OCUPACIONAL" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/crefito-sp" ] ;
+     fhir:display [ fhir:v "CREFITO-SP" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAS DE FISIOTERAPIA E TERAPIA OCUPACIONAL" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/crn-al" ] ;
+     fhir:display [ fhir:v "CRN-AL" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE NUTRICIONISTA" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/crn-ba-se" ] ;
+     fhir:display [ fhir:v "CRN-BA-SE" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE NUTRICIONISTA" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/crn-ce-ma-pi" ] ;
+     fhir:display [ fhir:v "CRN-CE-MA_PI" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE NUTRICIONISTA" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/crn-df-go-mt-to" ] ;
+     fhir:display [ fhir:v "CRN-DF-GO-MT-TO" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE NUTRICIONISTA" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/crn-pa-ac-am-ap-ro-rr" ] ;
+     fhir:display [ fhir:v "CRN-PA-AC-AM-AP-RO-RR" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE NUTRICIONISTA" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/crn-pe-al-pb-rn" ] ;
+     fhir:display [ fhir:v "CRN-PE-AL-PB-RN" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE NUTRICIONISTA" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/crn-pr" ] ;
+     fhir:display [ fhir:v "CRN-PR" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE NUTRICIONISTA" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/crn-rj-es" ] ;
+     fhir:display [ fhir:v "CRN-RJ-ES" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE NUTRICIONISTA" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/crn-rs" ] ;
+     fhir:display [ fhir:v "CRN-RS" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE NUTRICIONISTA" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/crn-sc" ] ;
+     fhir:display [ fhir:v "CRN-SC" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE NUTRICIONISTA" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/crn-sp-ms" ] ;
+     fhir:display [ fhir:v "CRN-SP-MS" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE NUTRICIONISTA" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/crefono-am-ac-ap-pa-ro-rr" ] ;
+     fhir:display [ fhir:v "CREFONO-AM-AC-AP-PA-RO-RR" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE FONOAUDIOLOGIA" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/crefono-ce-ma-pi-rn" ] ;
+     fhir:display [ fhir:v "CREFONO-CE-MA-PI-RN" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE FONOAUDIOLOGIA" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/crefono-go-df-ms-mt-to" ] ;
+     fhir:display [ fhir:v "CREFONO-GO-DF-MS-MT-TO" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE FONOAUDIOLOGIA" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/crefono-mg-es" ] ;
+     fhir:display [ fhir:v "CREFONO-MG-ES" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE FONOAUDIOLOGIA" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/crefono-pe-al-ba-pb-se" ] ;
+     fhir:display [ fhir:v "CREFONO-PE-AL-BA-PB-SE" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE FONOAUDIOLOGIA" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/crefono-pr-sc" ] ;
+     fhir:display [ fhir:v "CREFONO-PR-SC" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE FONOAUDIOLOGIA" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/crefono-rj" ] ;
+     fhir:display [ fhir:v "CREFONO-RJ" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE FONOAUDIOLOGIA" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/crefono-rs" ] ;
+     fhir:display [ fhir:v "CREFONO-RS" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE FONOAUDIOLOGIA" ]
+  ] [
+     fhir:code [ fhir:v "https://saude.gov.br/sid/crefono-sp" ] ;
+     fhir:display [ fhir:v "CREFONO-SP" ] ;
+     fhir:definition [ fhir:v "CONSELHO REGIONAL DE FONOAUDIOLOGIA" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

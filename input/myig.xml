@@ -1,5 +1,5 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
-  <id value="br.gov.saude.rira.fhir" />
+  <id value="br.gov.saude.redfm.fhir" />
   <language value="pt-BR" />
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
     <valueCode value="informative" />
@@ -7,10 +7,11 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
     <valueInteger value="1" />
   </extension>
-  <url value="http://www.saude.gov.br/fhir/r4/ImplementationGuide/br.gov.saude.rira.fhir" />
+  <url value="http://www.saude.gov.br/fhir/r4/ImplementationGuide/br.gov.saude.redfm.fhir" />
   <version value="1.0.0" />
-  <name value="RIRARNDSIG" />
-  <title value="Guia de Implementação da Regulação Assistencial (RIRA) da RNDS" />
+  <name value="REDFMRNDSIG" />
+  <title
+    value="Guia de Implementação do Registro Eletrônico de Dispensação ou Fornecimento de Medicamento (REDFM) da RNDS" />
   <status value="draft" />
   <experimental value="false" />
   <publisher value="Ministério da Saúde do Brasil" />
@@ -28,7 +29,7 @@
       <code value="BR" />
     </coding>
   </jurisdiction>
-  <packageId value="br.gov.saude.rira.fhir" />
+  <packageId value="br.gov.saude.redfm.fhir" />
   <license value="CC0-1.0" />
   <fhirVersion value="4.0.1" />
   <!-- <dependsOn id="hl7tx">
@@ -53,45 +54,51 @@
   <definition>
     <resource>
       <reference>
-        <reference value="Bundle/Example-RIRA-Attended" />
+        <reference value="Bundle/Example-REDFM-1" />
       </reference>
-      <name value="Bundle de exemplo do RIRA (Atendido/Internado)" />
+      <name value="Bundle de exemplo do REDFM (1)" />
       <description
-        value="Bundle de exemplo do Registro de Regulação Assistencial (RIRA) Atendido/Internado
-    (Attended)" />
+        value="Bundle de exemplo do Registro Eletrônico de Dispensação ou Fornecimento de Medicamento
+    (REDFM)" />
       <exampleCanonical
-        value="http://www.saude.gov.br/fhir/r4/StructureDefinition/BRRegulacaoAssistencial" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Bundle/Example-RIRA-Booked" />
-      </reference>
-      <name value="Bundle de exemplo do RIRA (Agendado)" />
-      <description
-        value="Bundle de exemplo do Registro de Regulação Assistencial (RIRA) Agendado (Booked)" />
-      <exampleCanonical
-        value="http://www.saude.gov.br/fhir/r4/StructureDefinition/BRRegulacaoAssistencial" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Bundle/Example-RIRA-Cancelled" />
-      </reference>
-      <name value="Bundle de exemplo do RIRA (Negado/Cancelado)" />
-      <description
-        value="Bundle de exemplo do Registro de Regulação Assistencial (RIRA) Negado/Cancelado (Cancelled)"
+        value="http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamento"
       />
-      <exampleCanonical
-        value="http://www.saude.gov.br/fhir/r4/StructureDefinition/BRRegulacaoAssistencial" />
     </resource>
     <resource>
       <reference>
-        <reference value="Bundle/Example-RIRA-Pending" />
+        <reference value="Bundle/Example-REDFM-2" />
       </reference>
-      <name value="Bundle de exemplo do RIRA (Pendente)" />
+      <name value="Bundle de exemplo do REDFM (2)" />
       <description
-        value="Bundle de exemplo do Registro de Regulação Assistencial (RIRA) Pendente (Pending)" />
+        value="Bundle de exemplo do Registro Eletrônico de Dispensação ou Fornecimento de Medicamento
+    (REDFM)" />
       <exampleCanonical
-        value="http://www.saude.gov.br/fhir/r4/StructureDefinition/BRRegulacaoAssistencial" />
+        value="http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamento"
+      />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Bundle/Example-REDFM-3" />
+      </reference>
+      <name value="Bundle de exemplo do REDFM (3)" />
+      <description
+        value="Bundle de exemplo do Registro Eletrônico de Dispensação ou Fornecimento de Medicamento
+    (REDFM)" />
+      <exampleCanonical
+        value="http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamento"
+      />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Bundle/Example-REDFM-4" />
+      </reference>
+      <name value="Bundle de exemplo do REDFM (4)" />
+      <description
+        value="Bundle de exemplo do Registro Eletrônico de Dispensação ou Fornecimento de Medicamento
+    (REDFM)" />
+      <exampleCanonical
+        value="http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamento"
+      />
     </resource>
     <page>
       <nameUrl value="toc.html" />

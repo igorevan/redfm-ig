@@ -5475,6 +5475,22 @@
     <display value="Linfoma não-Hodgkin, grandes células, folicular" />
   </concept>
   <concept>
+    <code value="C823" />
+    <display value="Linfoma folicular grau IIIa" />
+  </concept>
+  <concept>
+    <code value="C824" />
+    <display value="Linfoma folicular grau IIIb" />
+  </concept>
+  <concept>
+    <code value="C825" />
+    <display value="Linfoma difuso do centro do folículo" />
+  </concept>
+  <concept>
+    <code value="C826" />
+    <display value="Linfoma cutâneo do centro do folículo" />
+  </concept>
+  <concept>
     <code value="C827" />
     <display value="Outros tipos de linfoma não-hodgkin, folicular" />
   </concept>
@@ -24570,6 +24586,22 @@
     <display value="Doença renal em estádio final" />
   </concept>
   <concept>
+    <code value="N182" />
+    <display value="DRC estágio 2" />
+  </concept>
+  <concept>
+    <code value="N183" />
+    <display value="DRC estágio 3" />
+  </concept>
+  <concept>
+    <code value="N184" />
+    <display value="DRC estágio 4" />
+  </concept>
+  <concept>
+    <code value="N185" />
+    <display value="DRC estágio 5" />
+  </concept>
+  <concept>
     <code value="N188" />
     <display value="Outra insuficiência renal crônica" />
   </concept>
@@ -40108,6 +40140,14 @@
       value="Síndrome respiratória aguda grave [Severe acute respiratory syndrome) [SARS], não especificada" />
   </concept>
   <concept>
+    <code value="U099" />
+    <display value="Condição de saúde posterior à covid-19, não especificada" />
+  </concept>
+  <concept>
+    <code value="U109" />
+    <display value="Síndrome inflamatória multissistêmica associada à covid-19, não especificada" />
+  </concept>
+  <concept>
     <code value="U80" />
     <display value="Agente resistente à penicilina e antibióticos relacionados" />
   </concept>
@@ -51905,50 +51945,49 @@
   </concept>
   <concept>
     <code value="X730" />
-    <display value="Lesão autoprov. intenc. por disp arma de fogo de &gt; calibre - residência" />
+    <display value="Lesão autoprov. intenc. por disp arma de fogo de > calibre - residência" />
   </concept>
   <concept>
     <code value="X731" />
-    <display
-      value="Lesão autoprov. intenc. por disp arma de fogo de &gt; calibre - habitação coletiva" />
+    <display value="Lesão autoprov. intenc. por disp arma de fogo de > calibre - habitação coletiva" />
   </concept>
   <concept>
     <code value="X732" />
     <display
-      value="Lesão autoprov. intenc. por disp arma de fogo de &gt; calibre - esc, out. instit. e área admin. pública" />
+      value="Lesão autoprov. intenc. por disp arma de fogo de > calibre - esc, out. instit. e área admin. pública" />
   </concept>
   <concept>
     <code value="X733" />
     <display
-      value="Lesão autoprov. intenc. por disp arma de fogo de &gt; calibre - área p/a prática de esporte e atletismo" />
+      value="Lesão autoprov. intenc. por disp arma de fogo de > calibre - área p/a prática de esporte e atletismo" />
   </concept>
   <concept>
     <code value="X734" />
-    <display value="Lesão autoprov. intenc. por disp arma de fogo de &gt; calibre - rua e estrada" />
+    <display value="Lesão autoprov. intenc. por disp arma de fogo de > calibre - rua e estrada" />
   </concept>
   <concept>
     <code value="X735" />
     <display
-      value="Lesão autoprov. intenc. por disp arma de fogo de &gt; calibre - áreas de comércio e de serviços" />
+      value="Lesão autoprov. intenc. por disp arma de fogo de > calibre - áreas de comércio e de serviços" />
   </concept>
   <concept>
     <code value="X736" />
     <display
-      value="Lesão autoprov. intenc. por disp arma de fogo de &gt; calibre - áreas industriais e em construção" />
+      value="Lesão autoprov. intenc. por disp arma de fogo de > calibre - áreas industriais e em construção" />
   </concept>
   <concept>
     <code value="X737" />
-    <display value="Lesão autoprov. intenc. por disp arma de fogo de &gt; calibre - fazenda" />
+    <display value="Lesão autoprov. intenc. por disp arma de fogo de > calibre - fazenda" />
   </concept>
   <concept>
     <code value="X738" />
     <display
-      value="Lesão autoprov. intenc. por disp arma de fogo de &gt; calibre - outros locais especificados" />
+      value="Lesão autoprov. intenc. por disp arma de fogo de > calibre - outros locais especificados" />
   </concept>
   <concept>
     <code value="X739" />
     <display
-      value="Lesão autoprov. intenc. por disp arma de fogo de &gt; calibre - local não especificado" />
+      value="Lesão autoprov. intenc. por disp arma de fogo de > calibre - local não especificado" />
   </concept>
   <concept>
     <code value="X74" />
@@ -52937,50 +52976,49 @@
   </concept>
   <concept>
     <code value="X940" />
-    <display value="Agressão por meio de disparo de arma de fogo de &gt; calibre - residência" />
+    <display value="Agressão por meio de disparo de arma de fogo de > calibre - residência" />
   </concept>
   <concept>
     <code value="X941" />
-    <display
-      value="Agressão por meio de disparo de arma de fogo de &gt; calibre - habitação coletiva" />
+    <display value="Agressão por meio de disparo de arma de fogo de > calibre - habitação coletiva" />
   </concept>
   <concept>
     <code value="X942" />
     <display
-      value="Agressão por meio de disparo de arma de fogo de &gt; calibre - escolas, out. inst. e área de adm. públ." />
+      value="Agressão por meio de disparo de arma de fogo de > calibre - escolas, out. inst. e área de adm. públ." />
   </concept>
   <concept>
     <code value="X943" />
     <display
-      value="Agressão por meio de disparo de arma de fogo de &gt; calibre - área p/a prática de esportes e atletismo" />
+      value="Agressão por meio de disparo de arma de fogo de > calibre - área p/a prática de esportes e atletismo" />
   </concept>
   <concept>
     <code value="X944" />
-    <display value="Agressão por meio de disparo de arma de fogo de &gt; calibre - rua e estrada" />
+    <display value="Agressão por meio de disparo de arma de fogo de > calibre - rua e estrada" />
   </concept>
   <concept>
     <code value="X945" />
     <display
-      value="Agressão por meio de disparo de arma de fogo de &gt; calibre - áreas de comércio e de serviços" />
+      value="Agressão por meio de disparo de arma de fogo de > calibre - áreas de comércio e de serviços" />
   </concept>
   <concept>
     <code value="X946" />
     <display
-      value="Agressão por meio de disparo de arma de fogo de &gt; calibre - áreas industriais e em construção" />
+      value="Agressão por meio de disparo de arma de fogo de > calibre - áreas industriais e em construção" />
   </concept>
   <concept>
     <code value="X947" />
-    <display value="Agressão por meio de disparo de arma de fogo de &gt; calibre - fazenda" />
+    <display value="Agressão por meio de disparo de arma de fogo de > calibre - fazenda" />
   </concept>
   <concept>
     <code value="X948" />
     <display
-      value="Agressão por meio de disparo de arma de fogo de &gt; calibre - outros locais especificados" />
+      value="Agressão por meio de disparo de arma de fogo de > calibre - outros locais especificados" />
   </concept>
   <concept>
     <code value="X949" />
     <display
-      value="Agressão por meio de disparo de arma de fogo de &gt; calibre - local não especificado" />
+      value="Agressão por meio de disparo de arma de fogo de > calibre - local não especificado" />
   </concept>
   <concept>
     <code value="X95" />

@@ -1,0 +1,196 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "Example-REDFM-4",
+  "identifier" : {
+    "system" : "http://www.saude.gov.br/fhir/r4/NamingSystem/BRRNDS-1964",
+    "value" : "73549927"
+  },
+  "type" : "document",
+  "timestamp" : "2024-12-30T14:59:51.244-03:00",
+  "entry" : [{
+    "fullUrl" : "urn:uuid:58e54a1d-550e-48bc-9e09-6230c972078a",
+    "resource" : {
+      "resourceType" : "Composition",
+      "id" : "58e54a1d-550e-48bc-9e09-6230c972078a",
+      "meta" : {
+        "profile" : ["http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamento"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Composition_58e54a1d-550e-48bc-9e09-6230c972078a\"> </a><p class=\"res-header-id\"><b>Narrativa gerada: Composition 58e54a1d-550e-48bc-9e09-6230c972078a</b></p><a name=\"58e54a1d-550e-48bc-9e09-6230c972078a\"> </a><a name=\"hc58e54a1d-550e-48bc-9e09-6230c972078a\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Perfil: <a href=\"StructureDefinition-RNDSRegistroEletronicoDispensacaoFornecimentoMedicamento.html\">Registro Eletrônico de Dispensação ou Fornecimento de Medicamento (REDFM)</a></p></div><p><b>status</b>: Final</p><p><b>type</b>: <span title=\"Códigos:{http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoDocumento REDFM}\">Registro Eletrônico de Dispensação ou Fornecimento de Medicamentos</span></p><p><b>date</b>: 2024-12-30 11:46:12-0300</p><p><b>author</b>: Identifier: <code>http://www.saude.gov.br/fhir/r4/StructureDefinition/BREstabelecimentoSaude-1.0</code>/5354072</p><p><b>title</b>: Registro Eletrônico de Dispensação ou Fornecimento de Medicamentos</p></div>"
+      },
+      "status" : "final",
+      "type" : {
+        "coding" : [{
+          "system" : "http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoDocumento",
+          "code" : "REDFM"
+        }]
+      },
+      "subject" : {
+        "identifier" : {
+          "system" : "http://www.saude.gov.br/fhir/r4/StructureDefinition/BRIndividuo-1.0",
+          "value" : "70835645231"
+        }
+      },
+      "date" : "2024-12-30T11:46:12.742-03:00",
+      "author" : [{
+        "identifier" : {
+          "system" : "http://www.saude.gov.br/fhir/r4/StructureDefinition/BREstabelecimentoSaude-1.0",
+          "value" : "5354072"
+        }
+      }],
+      "title" : "Registro Eletrônico de Dispensação ou Fornecimento de Medicamentos",
+      "section" : [{
+        "title" : "Medicamentos Dispensados",
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "56445-0"
+          }]
+        },
+        "entry" : [{
+          "reference" : "urn:uuid:a54219b8-f741-4c47-b662-e4f8dfa49ab6",
+          "display" : "Amoxicilina 500 mg cápsula"
+        }]
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:a54219b8-f741-4c47-b662-e4f8dfa49ab6",
+    "resource" : {
+      "resourceType" : "MedicationDispense",
+      "meta" : {
+        "lastUpdated" : "2024-10-31T11:46:12.742-03:00",
+        "profile" : ["http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSMedicamentoDispensadoFornecido"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"MedicationDispense_null\"> </a><p class=\"res-header-id\"><b>Narrativa gerada: MedicationDispense </b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Última atualização: 2024-10-31 11:46:12-0300</p><p style=\"margin-bottom: 0px\">Perfil: <a href=\"StructureDefinition-RNDSMedicamentoDispensadoFornecido.html\">Dispensação ou Fornecimento Eletrônico de Medicamento</a></p></div><p><b>identifier</b>: <code>http://www.saude.gov.br/fhir/r4/NamingSystem/dispensed-item-id</code>/e6f89964-b218-4fb3-9603-e0897c5c2181</p><p><b>status</b>: Completed</p><p><b>category</b>: <span title=\"Códigos:{http://terminology.hl7.org/CodeSystem/medicationrequest-category community}\">Community</span></p><p><b>medication</b>: <a href=\"Bundle-Example-REDFM-1.html#urn-uuid-6a78998d-4e0e-4d84-8047-f88d275184f1\">Bundle: identifier = http://www.saude.gov.br/fhir/r4/NamingSystem/BRRNDS-1964#73549927; type = document; timestamp = 2024-12-30 14:59:51-0300</a></p><p><b>subject</b>: Identifier: <code>http://www.saude.gov.br/fhir/r4/StructureDefinition/BRIndividuo-1.0</code>/712176901347489</p><blockquote><p><b>performer</b></p><blockquote><p><b>id</b></p>organization</blockquote><p><b>actor</b>: Identifier: <code>http://www.saude.gov.br/fhir/r4/StructureDefinition/BREstabelecimentoSaude-1.0</code>/5354072</p></blockquote><blockquote><p><b>performer</b></p><blockquote><p><b>id</b></p>pharmacist</blockquote><p><b>function</b>: <span title=\"Códigos:{http://www.saude.gov.br/fhir/r4/CodeSystem/BRCBO 223405}\">FARMACEUTICO</span></p><p><b>actor</b>: <a href=\"#hcnull/pharmacist-crf\">Practitioner: identifier = Pharmacist license number\u00a0(use:\u00a0official,\u00a0)</a></p></blockquote><p><b>authorizingPrescription</b>: Identifier: <code>http://www.saude.gov.br/fhir/r4/NamingSystem/prescription-item-id</code>/7533883524545825524443455</p><p><b>type</b>: <span title=\"Códigos:{http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoDispensacaoRealizada fully-dispensing}\">Fully Dispensing</span></p><p><b>quantity</b>: 30 Cápsula</p><p><b>whenHandedOver</b>: 2024-12-10 11:46:12-0300</p><p><b>receiver</b>: Identifier: <code>http://www.saude.gov.br/fhir/r4/StructureDefinition/BRIndividuo-1.0</code>/712176901347489</p><hr/><blockquote><p class=\"res-header-id\"><b>Narrativa gerada: Practitioner #pharmacist-crf</b></p><a name=\"null/pharmacist-crf\"> </a><a name=\"hcnull/pharmacist-crf\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Perfil: <a href=\"StructureDefinition-RNDSProfissional.html\">Profissional</a></p></div><p><b>identifier</b>: Pharmacist license number/154735\u00a0(utilização:\u00a0official,\u00a0)</p><p><b>active</b>: true</p></blockquote></div>"
+      },
+      "contained" : [{
+        "resourceType" : "Practitioner",
+        "id" : "pharmacist-crf",
+        "meta" : {
+          "profile" : ["http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSProfissional"]
+        },
+        "identifier" : [{
+          "use" : "official",
+          "type" : {
+            "coding" : [{
+              "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+              "code" : "RPH"
+            }]
+          },
+          "system" : "https://saude.gov.br/sid/crf-sp",
+          "value" : "154735"
+        }],
+        "active" : true
+      }],
+      "identifier" : [{
+        "system" : "http://www.saude.gov.br/fhir/r4/NamingSystem/dispensed-item-id",
+        "value" : "e6f89964-b218-4fb3-9603-e0897c5c2181"
+      }],
+      "status" : "completed",
+      "category" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
+          "code" : "community"
+        }]
+      },
+      "medicationReference" : {
+        "reference" : "urn:uuid:6a78998d-4e0e-4d84-8047-f88d275184f1"
+      },
+      "subject" : {
+        "identifier" : {
+          "system" : "http://www.saude.gov.br/fhir/r4/StructureDefinition/BRIndividuo-1.0",
+          "value" : "712176901347489"
+        }
+      },
+      "performer" : [{
+        "id" : "organization",
+        "actor" : {
+          "identifier" : {
+            "system" : "http://www.saude.gov.br/fhir/r4/StructureDefinition/BREstabelecimentoSaude-1.0",
+            "value" : "5354072"
+          }
+        }
+      },
+      {
+        "id" : "pharmacist",
+        "function" : {
+          "coding" : [{
+            "system" : "http://www.saude.gov.br/fhir/r4/CodeSystem/BRCBO",
+            "code" : "223405"
+          }]
+        },
+        "actor" : {
+          "reference" : "#pharmacist-crf",
+          "identifier" : {
+            "system" : "http://www.saude.gov.br/fhir/r4/StructureDefinition/BRProfissional-1.0",
+            "value" : "704200519817090"
+          }
+        }
+      }],
+      "authorizingPrescription" : [{
+        "id" : "in-rnds",
+        "identifier" : {
+          "system" : "http://www.saude.gov.br/fhir/r4/NamingSystem/prescription-item-id",
+          "value" : "7533883524545825524443455"
+        }
+      }],
+      "type" : {
+        "coding" : [{
+          "system" : "http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoDispensacaoRealizada",
+          "code" : "fully-dispensing"
+        }]
+      },
+      "quantity" : {
+        "value" : 30,
+        "unit" : "Cápsula"
+      },
+      "whenHandedOver" : "2024-12-10T11:46:12.742-03:00",
+      "receiver" : [{
+        "identifier" : {
+          "system" : "http://www.saude.gov.br/fhir/r4/StructureDefinition/BRIndividuo-1.0",
+          "value" : "712176901347489"
+        }
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:6a78998d-4e0e-4d84-8047-f88d275184f1",
+    "resource" : {
+      "resourceType" : "Medication",
+      "meta" : {
+        "profile" : ["http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSMedicamentoDispensado"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Medication_null\"> </a><p class=\"res-header-id\"><b>Narrativa gerada: Medication </b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Perfil: <a href=\"StructureDefinition-RNDSMedicamentoDispensado.html\">Medicamento Dispensado</a></p></div><p><b>code</b>: <span title=\"Códigos:{http://www.saude.gov.br/fhir/r4/CodeSystem/BRObmVMP @brasil12898180271}\">Amoxicilina 500 mg cápsula</span></p><p><b>manufacturer</b>: Identifier: <code>http://www.saude.gov.br/fhir/r4/StructureDefinition/BRProfissional-1.0</code>/704200519817090</p><p><b>form</b>: <span title=\"Códigos:{http://www.saude.gov.br/fhir/r4/CodeSystem/BRUnidadeMedida 13}\">Cápsula</span></p><h3>Batches</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>LotNumber</b></td><td><b>ExpirationDate</b></td></tr><tr><td style=\"display: none\">*</td><td>587AT765H</td><td>2025-10-31</td></tr></table></div>"
+      },
+      "code" : {
+        "coding" : [{
+          "system" : "http://www.saude.gov.br/fhir/r4/CodeSystem/BRObmVMP",
+          "code" : "@brasil12898180271",
+          "display" : "Amoxicilina 500 mg cápsula"
+        }]
+      },
+      "manufacturer" : {
+        "identifier" : {
+          "system" : "http://www.saude.gov.br/fhir/r4/StructureDefinition/BRProfissional-1.0",
+          "value" : "704200519817090"
+        }
+      },
+      "form" : {
+        "coding" : [{
+          "system" : "http://www.saude.gov.br/fhir/r4/CodeSystem/BRUnidadeMedida",
+          "code" : "13"
+        }]
+      },
+      "batch" : {
+        "lotNumber" : "587AT765H",
+        "expirationDate" : "2025-10-31"
+      }
+    }
+  }]
+}

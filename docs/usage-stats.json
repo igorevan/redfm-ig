@@ -1,0 +1,108 @@
+{
+  "package": "br.gov.saude.redfm.fhir",
+  "version": "1.0.0",
+  "fhirVersion": "4.0.1",
+  "jurisdiction": "BR",
+  "extensions": [],
+  "profiles": {
+    "PractitionerRole": [
+      {
+        "url": "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-practitionerrole",
+        "title": "BR Core PractitionerRole"
+      }
+    ],
+    "Medication": [
+      {
+        "url": "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-medication",
+        "title": "BR Core Medication"
+      }
+    ],
+    "MedicationDispense": [
+      {
+        "url": "http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSMedicamentoDispensadoFornecido",
+        "title": "Dispensação ou Fornecimento Eletrônico de Medicamento"
+      }
+    ],
+    "MedicationRequest": [
+      {
+        "url": "http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSPrescricaoMedicamentoDispensado",
+        "title": "Prescrição Eletrônica de Medicamento (Contida na Dispensação)"
+      }
+    ],
+    "Practitioner": [
+      {
+        "url": "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-practitioner",
+        "title": "BR Core Practitioner"
+      }
+    ],
+    "Composition": [
+      {
+        "url": "http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamento",
+        "title": "Registro Eletrônico de Dispensação ou Fornecimento de Medicamento (REDFM)"
+      },
+      {
+        "url": "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-composition",
+        "title": "BR Core Composition"
+      }
+    ],
+    "Organization": [
+      {
+        "url": "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-organization",
+        "title": "BR Core Organization"
+      }
+    ]
+  },
+  "usage": {
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm": [
+      "CodeSystem",
+      "ImplementationGuide",
+      "StructureDefinition",
+      "ValueSet"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status": [
+      "CodeSystem",
+      "ImplementationGuide",
+      "ImplementationGuide.definition.page",
+      "ImplementationGuide.definition.page.page",
+      "StructureDefinition",
+      "ValueSet"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name": [
+      "ImplementationGuide.definition.page",
+      "ImplementationGuide.definition.page.page"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment": [
+      "ImplementationGuide.dependsOn"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
+      "ImplementationGuide.definition.resource"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version": [
+      "StructureDefinition.snapshot"
+    ]
+  }
+}

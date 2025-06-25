@@ -1,0 +1,13 @@
+URL,Version,Status,OIDs,Name,Title,Descriptino,Uses,Used,Sources
+http://www.saude.gov.br/fhir/r4/ValueSet/BROcupacao-1.0,1.0.0,active,,BROcupacao,Classificação Brasileira de Ocupações (CBO),"Classifica as profissões do mercado de trabalho brasileiro.",,"Internal"
+http://www.saude.gov.br/fhir/r4/ValueSet/BRProblemaDiagnostico,1.0.0,draft,,BRProblemaDiagnostico,Classificação Internacional de Doenças (Atenção Primária),"Código Internacional de Atenção Primária (CIAP2) e Classificação Internacional de Doenças (CID10)",,"Internal"
+http://www.saude.gov.br/fhir/r4/ValueSet/BRTerminologiaMedicamento,1.0.0,active,,BRTerminologiaMedicamento,Terminologia dos medicamentos,"ValueSet utilizado para definir a terminologia de um dado medicamento.",,"Internal"
+http://www.saude.gov.br/fhir/r4/ValueSet/BRTipoDispensacaoRealizada,1.0.0,draft,,ValueSet-BRTipoDispensacaoRealizada,Tipo de Dispensação Realizada,"Indica o tipo de dispensação que foi realizada",,"Internal"
+http://www.saude.gov.br/fhir/r4/ValueSet/BRTipoDocumento-1.0,1.0.0,active,,BRTipoDocumento,Tipo de Documento,"Classifica o tipo de documento que está sendo trafegado.",,"Internal"
+http://www.saude.gov.br/fhir/r4/ValueSet/BRUnidadeMedidaMedicamento,1.0.0,active,,BRUnidadeMedidaMedicamento,Unidade de Medida de Medicamento,"ValueSet utilizado para definir a unidade de medida de medicamentos sob informações do fabricante.",,"Internal"
+http://www.saude.gov.br/fhir/r4/ValueSet/BRViaAdministracao-1.0,1.0.0,active,,BRViaAdministracao,Via de Administração,"Via de administração de um imunobiológico.",,"Internal"
+https://terminologia.saude.gov.br/fhir/ValueSet/BRCOREN,1.0.0,draft,,BRCOREN,Conselhos regionais de Enfermagem do Brasil,"Conjunto de todos os conselhos regionais de enfermagem do Brasil",,"Internal"
+https://terminologia.saude.gov.br/fhir/ValueSet/BRCRF,1.0.0,draft,,BRCRF,Conselhos regionais de Farmácia do Brasil,"Conjunto de todos os conselhos regionais de farmácia do Brasil",,"Internal"
+https://terminologia.saude.gov.br/fhir/ValueSet/BRCRM,1.0.0,draft,,BRCRM,Conselhos regionais de Medicina do Brasil,"Conjunto de todos os conselhos regionais de medicina do Brasil",,"Internal"
+https://terminologia.saude.gov.br/fhir/ValueSet/BRCRO,1.0.0,draft,,BRCRO,Conselhos regionais de Odontologia do Brasil,"Conjunto de todos os conselhos regionais de farmácia do Brasil",,"Internal"
+https://terminologia.saude.gov.br/fhir/ValueSet/BROutrosProfissionais,1.0.0,draft,,BROutrosProfissionais,Conselhos regionais de outros profissionais da saúde do Brasil,"Conjunto de todos os conselhos regionais de outros profissionais da saúde do Brasil",,"Internal"

@@ -1,0 +1,40 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "RNDSMedicamentoDispensado",
+  "language": "pt-BR",
+  "url": "http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSMedicamentoDispensado",
+  "name": "RNDSMedicamentoDispensado",
+  "title": "Medicamento Dispensado",
+  "status": "draft",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Medication",
+  "baseDefinition": "http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSMedicamento",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Medication.manufacturer",
+        "path": "Medication.manufacturer",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Medication.batch",
+        "path": "Medication.batch",
+        "min": 1
+      },
+      {
+        "id": "Medication.batch.lotNumber",
+        "path": "Medication.batch.lotNumber",
+        "min": 1
+      },
+      {
+        "id": "Medication.batch.expirationDate",
+        "path": "Medication.batch.expirationDate",
+        "min": 1
+      }
+    ]
+  }
+}

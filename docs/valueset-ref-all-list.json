@@ -1,0 +1,906 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/additional-instruction-codes",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SNOMEDCTAdditionalDosageInstructions",
+      "title" : "SNOMED CT Additional Dosage Instructions",
+      "description" : "This value set includes all SNOMED CT Additional Dosage Instructions.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.95"],
+      "sources" : ["2.16.840.1.113883.4.642.3.95"],
+      "uses" : {
+      },
+      "StructureDefinition-RNDSPrescricaoMedicamentoDispensado.html" : "Prescrição Eletrônica de Medicamento (Contida na Dispensação)",
+      "StructureDefinition-RNDSMedicamentoDispensadoFornecido.html" : "Dispensação ou Fornecimento Eletrônico de Medicamento"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/administration-method-codes",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SNOMEDCTAdministrationMethodCodes",
+      "title" : "SNOMED CT Administration Method Codes",
+      "description" : "This value set includes some method codes from SNOMED CT - provided as an exemplar",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.97"],
+      "sources" : ["2.16.840.1.113883.4.642.3.97"],
+      "uses" : {
+      },
+      "StructureDefinition-RNDSPrescricaoMedicamentoDispensado.html" : "Prescrição Eletrônica de Medicamento (Contida na Dispensação)",
+      "StructureDefinition-RNDSMedicamentoDispensadoFornecido.html" : "Dispensação ou Fornecimento Eletrônico de Medicamento"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/administrative-gender",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "AdministrativeGender",
+      "title" : "AdministrativeGender",
+      "description" : "The gender of a person used for administrative purposes.",
+      "systems" : ["http://hl7.org/fhir/administrative-gender"],
+      "oids" : ["2.16.840.1.113883.4.642.3.1"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1"],
+      "uses" : {
+      },
+      "StructureDefinition-RNDSMedicamentoDispensadoFornecido.html" : "Dispensação ou Fornecimento Eletrônico de Medicamento",
+      "StructureDefinition-RNDSProfissional.html" : "Profissional",
+      "StructureDefinition-br-core-practitioner.html" : "BR Core Practitioner"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/approach-site-codes",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SNOMEDCTAnatomicalStructureForAdministrationSiteCodes",
+      "title" : "SNOMED CT Anatomical Structure for Administration Site Codes",
+      "description" : "This value set includes Anatomical Structure codes from SNOMED CT - provided as an exemplar.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.346"],
+      "sources" : ["2.16.840.1.113883.4.642.3.346"],
+      "uses" : {
+      },
+      "StructureDefinition-RNDSPrescricaoMedicamentoDispensado.html" : "Prescrição Eletrônica de Medicamento (Contida na Dispensação)",
+      "StructureDefinition-RNDSMedicamentoDispensadoFornecido.html" : "Dispensação ou Fornecimento Eletrônico de Medicamento"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/c80-practice-codes",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "PracticeSettingCodeValueSet",
+      "title" : "Practice Setting Code Value Set",
+      "description" : "This is the code representing the clinical specialty of the clinician or provider who interacted with, treated, or provided a service to/for the patient. The value set used for clinical specialty has been limited by HITSP to the value set reproduced from HITSP C80 Table 2-149 Clinical Specialty Value Set Definition.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.3.88.12.80.72"],
+      "sources" : ["2.16.840.1.113883.3.88.12.80.72"],
+      "uses" : {
+      },
+      "StructureDefinition-br-core-practitionerrole.html" : "BR Core PractitionerRole",
+      "StructureDefinition-RNDSMedicamentoDispensadoFornecido.html" : "Dispensação ou Fornecimento Eletrônico de Medicamento",
+      "StructureDefinition-RNDSLotacaoProfissional.html" : "Lotação Profissional"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/common-tags",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "CommonTags",
+      "title" : "Common Tags",
+      "description" : "Common Tag Codes defined by FHIR project",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/common-tags"],
+      "oids" : ["2.16.840.1.113883.4.642.3.79"],
+      "sources" : ["2.16.840.1.113883.4.642.3.79"],
+      "uses" : {
+      },
+      "StructureDefinition-RNDSMedicamentoDispensadoFornecido.html" : "Dispensação ou Fornecimento Eletrônico de Medicamento"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/composition-attestation-mode",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "CompositionAttestationMode",
+      "title" : "CompositionAttestationMode",
+      "description" : "The way in which a person authenticated a composition.",
+      "systems" : ["http://hl7.org/fhir/composition-attestation-mode"],
+      "oids" : ["2.16.840.1.113883.4.642.3.238"],
+      "sources" : ["2.16.840.1.113883.4.642.3.238"],
+      "uses" : {
+      },
+      "StructureDefinition-br-core-composition.html" : "BR Core Composition",
+      "StructureDefinition-RNDSRegistroEletronicoDispensacaoFornecimentoMedicamento.html" : "Registro Eletrônico de Dispensação ou Fornecimento de Medicamento (REDFM)"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/composition-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "CompositionStatus",
+      "title" : "CompositionStatus",
+      "description" : "The workflow/clinical status of the composition.",
+      "systems" : ["http://hl7.org/fhir/composition-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.241"],
+      "sources" : ["2.16.840.1.113883.4.642.3.241"],
+      "uses" : {
+      },
+      "StructureDefinition-br-core-composition.html" : "BR Core Composition",
+      "StructureDefinition-RNDSRegistroEletronicoDispensacaoFornecimentoMedicamento.html" : "Registro Eletrônico de Dispensação ou Fornecimento de Medicamento (REDFM)"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/contactentity-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ContactEntityType",
+      "title" : "Contact entity type",
+      "description" : "This example value set defines a set of codes that can be used to indicate the purpose for which you would contact a contact party.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/contactentity-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.416"],
+      "sources" : ["2.16.840.1.113883.4.642.3.416"],
+      "uses" : {
+      },
+      "StructureDefinition-br-core-organization.html" : "BR Core Organization"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/days-of-week",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "DaysOfWeek",
+      "title" : "DaysOfWeek",
+      "description" : "The days of the week.",
+      "systems" : ["http://hl7.org/fhir/days-of-week"],
+      "oids" : ["2.16.840.1.113883.4.642.3.512"],
+      "sources" : ["2.16.840.1.113883.4.642.3.512"],
+      "uses" : {
+      },
+      "StructureDefinition-br-core-practitionerrole.html" : "BR Core PractitionerRole",
+      "StructureDefinition-RNDSMedicamentoDispensadoFornecido.html" : "Dispensação ou Fornecimento Eletrônico de Medicamento",
+      "StructureDefinition-RNDSLotacaoProfissional.html" : "Lotação Profissional"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/doc-section-codes",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "DocumentSectionCodes",
+      "title" : "Document Section Codes",
+      "description" : "Document section codes (LOINC codes used in CCDA sections).",
+      "systems" : ["http://loinc.org"],
+      "oids" : ["2.16.840.1.113883.4.642.3.237"],
+      "sources" : ["2.16.840.1.113883.4.642.3.237"],
+      "uses" : {
+      },
+      "StructureDefinition-br-core-composition.html" : "BR Core Composition",
+      "StructureDefinition-RNDSRegistroEletronicoDispensacaoFornecimentoMedicamento.html" : "Registro Eletrônico de Dispensação ou Fornecimento de Medicamento (REDFM)"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/doc-typecodes",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "FHIRDocumentTypeCodes",
+      "title" : "FHIR Document Type Codes",
+      "description" : "FHIR Document Codes - all LOINC codes where scale type = 'DOC'.",
+      "systems" : ["http://loinc.org"],
+      "oids" : ["2.16.840.1.113883.4.642.3.240"],
+      "sources" : ["2.16.840.1.113883.4.642.3.240"],
+      "uses" : {
+      },
+      "StructureDefinition-br-core-composition.html" : "BR Core Composition"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/document-classcodes",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "DocumentClassValueSet",
+      "title" : "Document Class Value Set",
+      "description" : "This is the code specifying the high-level kind of document (e.g. Prescription, Discharge Summary, Report, etc.). Note: Class code for documents comes from LOINC, and is based upon one of the following:The type of service described by the document. It is described at a very high level in Section 7.3 of the LOINC Manual. The type study performed. It was determined by identifying modalities for study reports. The section of the chart where the document is placed. It was determined from the SETs created for Claims Attachment requests.",
+      "systems" : ["http://loinc.org"],
+      "oids" : ["2.16.840.1.113883.3.88.12.80.46"],
+      "sources" : ["2.16.840.1.113883.3.88.12.80.46"],
+      "uses" : {
+      },
+      "StructureDefinition-br-core-composition.html" : "BR Core Composition",
+      "StructureDefinition-RNDSRegistroEletronicoDispensacaoFornecimentoMedicamento.html" : "Registro Eletrônico de Dispensação ou Fornecimento de Medicamento (REDFM)"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/document-relationship-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "DocumentRelationshipType",
+      "title" : "DocumentRelationshipType",
+      "description" : "The type of relationship between documents.",
+      "systems" : ["http://hl7.org/fhir/document-relationship-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.244"],
+      "sources" : ["2.16.840.1.113883.4.642.3.244"],
+      "uses" : {
+      },
+      "StructureDefinition-br-core-composition.html" : "BR Core Composition",
+      "StructureDefinition-RNDSRegistroEletronicoDispensacaoFornecimentoMedicamento.html" : "Registro Eletrônico de Dispensação ou Fornecimento de Medicamento (REDFM)"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/dose-rate-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "DoseAndRateType",
+      "title" : "DoseAndRateType",
+      "description" : "The kind of dose or rate specified.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/dose-rate-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.981"],
+      "sources" : ["2.16.840.1.113883.4.642.3.981"],
+      "uses" : {
+      },
+      "StructureDefinition-RNDSPrescricaoMedicamentoDispensado.html" : "Prescrição Eletrônica de Medicamento (Contida na Dispensação)",
+      "StructureDefinition-RNDSMedicamentoDispensadoFornecido.html" : "Dispensação ou Fornecimento Eletrônico de Medicamento"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/identifier-type",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "Identifier Type Codes",
+      "title" : "IdentifierType",
+      "description" : "A coded type for an identifier that can be used to determine which identifier to use for a specific purpose.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0203"],
+      "oids" : ["2.16.840.1.113883.4.642.3.45"],
+      "sources" : ["2.16.840.1.113883.4.642.3.45"],
+      "uses" : {
+      },
+      "StructureDefinition-RNDSRegistroEletronicoDispensacaoFornecimentoMedicamento.html" : "Registro Eletrônico de Dispensação ou Fornecimento de Medicamento (REDFM)",
+      "StructureDefinition-RNDSPrescricaoMedicamentoDispensado.html" : "Prescrição Eletrônica de Medicamento (Contida na Dispensação)",
+      "StructureDefinition-br-core-organization.html" : "BR Core Organization",
+      "StructureDefinition-br-core-practitionerrole.html" : "BR Core PractitionerRole",
+      "StructureDefinition-RNDSMedicamentoDispensadoFornecido.html" : "Dispensação ou Fornecimento Eletrônico de Medicamento",
+      "StructureDefinition-RNDSLotacaoProfissional.html" : "Lotação Profissional"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/identifier-use",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "IdentifierUse",
+      "title" : "IdentifierUse",
+      "description" : "Identifies the purpose for this identifier, if known .",
+      "systems" : ["http://hl7.org/fhir/identifier-use"],
+      "oids" : ["2.16.840.1.113883.4.642.3.57"],
+      "sources" : ["2.16.840.1.113883.4.642.3.57"],
+      "uses" : {
+      },
+      "StructureDefinition-RNDSRegistroEletronicoDispensacaoFornecimentoMedicamento.html" : "Registro Eletrônico de Dispensação ou Fornecimento de Medicamento (REDFM)",
+      "StructureDefinition-RNDSPrescricaoMedicamentoDispensado.html" : "Prescrição Eletrônica de Medicamento (Contida na Dispensação)",
+      "StructureDefinition-br-core-organization.html" : "BR Core Organization",
+      "StructureDefinition-br-core-practitionerrole.html" : "BR Core PractitionerRole",
+      "StructureDefinition-RNDSMedicamentoDispensadoFornecido.html" : "Dispensação ou Fornecimento Eletrônico de Medicamento",
+      "StructureDefinition-RNDSProfissional.html" : "Profissional",
+      "StructureDefinition-br-core-practitioner.html" : "BR Core Practitioner",
+      "StructureDefinition-RNDSLotacaoProfissional.html" : "Lotação Profissional"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/languages",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "CommonLanguages",
+      "title" : "Common Languages",
+      "description" : "This value set includes common codes from BCP-47 (http://tools.ietf.org/html/bcp47)",
+      "systems" : ["urn:ietf:bcp:47"],
+      "oids" : ["2.16.840.1.113883.4.642.3.20"],
+      "sources" : ["2.16.840.1.113883.4.642.3.20"],
+      "uses" : {
+      },
+      "StructureDefinition-br-core-composition.html" : "BR Core Composition",
+      "StructureDefinition-br-core-medication.html" : "BR Core Medication",
+      "StructureDefinition-RNDSRegistroEletronicoDispensacaoFornecimentoMedicamento.html" : "Registro Eletrônico de Dispensação ou Fornecimento de Medicamento (REDFM)",
+      "StructureDefinition-RNDSPrescricaoMedicamentoDispensado.html" : "Prescrição Eletrônica de Medicamento (Contida na Dispensação)",
+      "StructureDefinition-br-core-organization.html" : "BR Core Organization",
+      "StructureDefinition-br-core-practitionerrole.html" : "BR Core PractitionerRole",
+      "StructureDefinition-RNDSMedicamentoDispensadoFornecido.html" : "Dispensação ou Fornecimento Eletrônico de Medicamento",
+      "StructureDefinition-RNDSProfissional.html" : "Profissional",
+      "StructureDefinition-br-core-practitioner.html" : "BR Core Practitioner",
+      "StructureDefinition-RNDSLotacaoProfissional.html" : "Lotação Profissional",
+      "StructureDefinition-RNDSMedicamento.html" : "Medicamento",
+      "StructureDefinition-RNDSMedicamentoDispensado.html" : "Medicamento Dispensado"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/list-empty-reason",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ListEmptyReasons",
+      "title" : "List Empty Reasons",
+      "description" : "General reasons for a list to be empty. Reasons are either related to a summary list (i.e. problem or medication list) or to a workflow related list (i.e. consultation list).",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/list-empty-reason"],
+      "oids" : ["2.16.840.1.113883.4.642.3.322"],
+      "sources" : ["2.16.840.1.113883.4.642.3.322"],
+      "uses" : {
+      },
+      "StructureDefinition-br-core-composition.html" : "BR Core Composition",
+      "StructureDefinition-RNDSRegistroEletronicoDispensacaoFornecimentoMedicamento.html" : "Registro Eletrônico de Dispensação ou Fornecimento de Medicamento (REDFM)"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/list-mode",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ListMode",
+      "title" : "ListMode",
+      "description" : "The processing mode that applies to this list.",
+      "systems" : ["http://hl7.org/fhir/list-mode"],
+      "oids" : ["2.16.840.1.113883.4.642.3.318"],
+      "sources" : ["2.16.840.1.113883.4.642.3.318"],
+      "uses" : {
+      },
+      "StructureDefinition-br-core-composition.html" : "BR Core Composition",
+      "StructureDefinition-RNDSRegistroEletronicoDispensacaoFornecimentoMedicamento.html" : "Registro Eletrônico de Dispensação ou Fornecimento de Medicamento (REDFM)"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medication-as-needed-reason",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SNOMEDCTMedicationAsNeededReasonCodes",
+      "title" : "SNOMED CT Medication As Needed Reason Codes",
+      "description" : "This value set includes all clinical findings from SNOMED CT - provided as an exemplar value set.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.96"],
+      "sources" : ["2.16.840.1.113883.4.642.3.96"],
+      "uses" : {
+      },
+      "StructureDefinition-RNDSPrescricaoMedicamentoDispensado.html" : "Prescrição Eletrônica de Medicamento (Contida na Dispensação)",
+      "StructureDefinition-RNDSMedicamentoDispensadoFornecido.html" : "Dispensação ou Fornecimento Eletrônico de Medicamento"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medication-codes",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SNOMEDCTMedicationCodes",
+      "title" : "SNOMED CT Medication Codes",
+      "description" : "This value set includes all drug or medicament substance codes and all pharmaceutical/biologic products from SNOMED CT - provided as an exemplar value set.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.375"],
+      "sources" : ["2.16.840.1.113883.4.642.3.375"],
+      "uses" : {
+      },
+      "StructureDefinition-br-core-medication.html" : "BR Core Medication"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medication-form-codes",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SNOMEDCTFormCodes",
+      "title" : "SNOMED CT Form Codes",
+      "description" : "This value set includes all dose form codes from SNOMED CT - provided as an exemplar.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.374"],
+      "sources" : ["2.16.840.1.113883.4.642.3.374"],
+      "uses" : {
+      },
+      "StructureDefinition-br-core-medication.html" : "BR Core Medication"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medication-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "Medication Status Codes",
+      "title" : "Medication  status  codes",
+      "description" : "Medication Status Codes",
+      "systems" : ["http://hl7.org/fhir/CodeSystem/medication-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.376"],
+      "sources" : ["2.16.840.1.113883.4.642.3.376"],
+      "uses" : {
+      },
+      "StructureDefinition-br-core-medication.html" : "BR Core Medication",
+      "StructureDefinition-RNDSMedicamento.html" : "Medicamento",
+      "StructureDefinition-RNDSMedicamentoDispensado.html" : "Medicamento Dispensado"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medicationdispense-category",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "MedicationDispense Category Codes",
+      "title" : "Medication dispense  category  codes",
+      "description" : "MedicationDispense Category Codes",
+      "systems" : [
+        "http://terminology.hl7.org/fhir/CodeSystem/medicationdispense-category"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.1314"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1314"],
+      "uses" : {
+      },
+      "StructureDefinition-RNDSMedicamentoDispensadoFornecido.html" : "Dispensação ou Fornecimento Eletrônico de Medicamento"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medicationdispense-performer-function",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "MedicationDispense Performer Function Codes",
+      "title" : "Medication dispense  performer  function  codes",
+      "description" : "MedicationDispense Performer Function Codes",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/medicationdispense-performer-function"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.1318"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1318"],
+      "uses" : {
+      },
+      "StructureDefinition-RNDSMedicamentoDispensadoFornecido.html" : "Dispensação ou Fornecimento Eletrônico de Medicamento"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medicationdispense-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "MedicationDispense Status Codes",
+      "title" : "Medication dispense  status  codes",
+      "description" : "MedicationDispense Status Codes",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/medicationdispense-status"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.1312"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1312"],
+      "uses" : {
+      },
+      "StructureDefinition-RNDSMedicamentoDispensadoFornecido.html" : "Dispensação ou Fornecimento Eletrônico de Medicamento"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medicationdispense-status-reason",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "MedicationDispense Status Reason Codes",
+      "title" : "Medication dispense  status  reason  codes",
+      "description" : "MedicationDispense Status Codes",
+      "systems" : [
+        "http://terminology.hl7.org/fhir/CodeSystem/medicationdispense-status-reason"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.1316"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1316"],
+      "uses" : {
+      },
+      "StructureDefinition-RNDSMedicamentoDispensadoFornecido.html" : "Dispensação ou Fornecimento Eletrônico de Medicamento"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medicationrequest-category",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "medicationRequest Category Codes",
+      "title" : "Medication request  category  codes",
+      "description" : "MedicationRequest Category Codes",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/medicationrequest-category"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.1322"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1322"],
+      "uses" : {
+      },
+      "StructureDefinition-RNDSPrescricaoMedicamentoDispensado.html" : "Prescrição Eletrônica de Medicamento (Contida na Dispensação)",
+      "StructureDefinition-RNDSMedicamentoDispensadoFornecido.html" : "Dispensação ou Fornecimento Eletrônico de Medicamento"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medicationrequest-course-of-therapy",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "medicationRequest Course of Therapy Codes",
+      "title" : "Medication request  course of  therapy  codes",
+      "description" : "MedicationRequest Course of Therapy Codes",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.1326"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1326"],
+      "uses" : {
+      },
+      "StructureDefinition-RNDSPrescricaoMedicamentoDispensado.html" : "Prescrição Eletrônica de Medicamento (Contida na Dispensação)",
+      "StructureDefinition-RNDSMedicamentoDispensadoFornecido.html" : "Dispensação ou Fornecimento Eletrônico de Medicamento"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medicationrequest-intent",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "medicationRequest Intent",
+      "title" : "Medication request  intent",
+      "description" : "MedicationRequest Intent Codes",
+      "systems" : ["http://hl7.org/fhir/CodeSystem/medicationrequest-intent"],
+      "oids" : ["2.16.840.1.113883.4.642.3.1321"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1321"],
+      "uses" : {
+      },
+      "StructureDefinition-RNDSPrescricaoMedicamentoDispensado.html" : "Prescrição Eletrônica de Medicamento (Contida na Dispensação)",
+      "StructureDefinition-RNDSMedicamentoDispensadoFornecido.html" : "Dispensação ou Fornecimento Eletrônico de Medicamento"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medicationrequest-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "medicationrequest Status",
+      "title" : "Medicationrequest  status",
+      "description" : "MedicationRequest Status Codes",
+      "systems" : ["http://hl7.org/fhir/CodeSystem/medicationrequest-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.1320"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1320"],
+      "uses" : {
+      },
+      "StructureDefinition-RNDSPrescricaoMedicamentoDispensado.html" : "Prescrição Eletrônica de Medicamento (Contida na Dispensação)",
+      "StructureDefinition-RNDSMedicamentoDispensadoFornecido.html" : "Dispensação ou Fornecimento Eletrônico de Medicamento"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medicationrequest-status-reason",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "medicationRequest Status Reason Codes",
+      "title" : "Medication request  status  reason  codes",
+      "description" : "MedicationRequest Status Reason Codes",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/medicationrequest-status-reason"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.1324"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1324"],
+      "uses" : {
+      },
+      "StructureDefinition-RNDSPrescricaoMedicamentoDispensado.html" : "Prescrição Eletrônica de Medicamento (Contida na Dispensação)",
+      "StructureDefinition-RNDSMedicamentoDispensadoFornecido.html" : "Dispensação ou Fornecimento Eletrônico de Medicamento"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/name-use",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "NameUse",
+      "title" : "NameUse",
+      "description" : "The use of a human name.",
+      "systems" : ["http://hl7.org/fhir/name-use"],
+      "oids" : ["2.16.840.1.113883.4.642.3.65"],
+      "sources" : ["2.16.840.1.113883.4.642.3.65"],
+      "uses" : {
+      },
+      "StructureDefinition-RNDSMedicamentoDispensadoFornecido.html" : "Dispensação ou Fornecimento Eletrônico de Medicamento",
+      "StructureDefinition-RNDSProfissional.html" : "Profissional",
+      "StructureDefinition-br-core-practitioner.html" : "BR Core Practitioner"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/organization-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "OrganizationType",
+      "title" : "Organization type",
+      "description" : "This example value set defines a set of codes that can be used to indicate a type of organization.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/organization-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.414"],
+      "sources" : ["2.16.840.1.113883.4.642.3.414"],
+      "uses" : {
+      },
+      "StructureDefinition-br-core-organization.html" : "BR Core Organization"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/performer-role",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ProcedurePerformerRoleCodes",
+      "title" : "Procedure Performer Role Codes",
+      "description" : "This example value set defines the set of codes that can be used to indicate a role of a procedure performer.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.433"],
+      "sources" : ["2.16.840.1.113883.4.642.3.433"],
+      "uses" : {
+      },
+      "StructureDefinition-RNDSPrescricaoMedicamentoDispensado.html" : "Prescrição Eletrônica de Medicamento (Contida na Dispensação)",
+      "StructureDefinition-RNDSMedicamentoDispensadoFornecido.html" : "Dispensação ou Fornecimento Eletrônico de Medicamento"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/quantity-comparator",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "QuantityComparator",
+      "title" : "QuantityComparator",
+      "description" : "How the Quantity should be understood and represented.",
+      "systems" : ["http://hl7.org/fhir/quantity-comparator"],
+      "oids" : ["2.16.840.1.113883.4.642.3.59"],
+      "sources" : ["2.16.840.1.113883.4.642.3.59"],
+      "uses" : {
+      },
+      "StructureDefinition-RNDSPrescricaoMedicamentoDispensado.html" : "Prescrição Eletrônica de Medicamento (Contida na Dispensação)",
+      "StructureDefinition-RNDSMedicamentoDispensadoFornecido.html" : "Dispensação ou Fornecimento Eletrônico de Medicamento"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/request-priority",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "RequestPriority",
+      "title" : "Request priority",
+      "description" : "The clinical priority of a diagnostic order.",
+      "systems" : ["http://hl7.org/fhir/request-priority"],
+      "oids" : ["2.16.840.1.113883.4.642.3.115"],
+      "sources" : ["2.16.840.1.113883.4.642.3.115"],
+      "uses" : {
+      },
+      "StructureDefinition-RNDSPrescricaoMedicamentoDispensado.html" : "Prescrição Eletrônica de Medicamento (Contida na Dispensação)",
+      "StructureDefinition-RNDSMedicamentoDispensadoFornecido.html" : "Dispensação ou Fornecimento Eletrônico de Medicamento"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/resource-types",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "ResourceType",
+      "title" : "ResourceType",
+      "description" : "One of the resource types defined as part of this version of FHIR.",
+      "systems" : ["http://hl7.org/fhir/resource-types"],
+      "oids" : ["2.16.840.1.113883.4.642.3.27"],
+      "sources" : ["2.16.840.1.113883.4.642.3.27"],
+      "uses" : {
+      },
+      "StructureDefinition-br-core-composition.html" : "BR Core Composition",
+      "StructureDefinition-RNDSRegistroEletronicoDispensacaoFornecimentoMedicamento.html" : "Registro Eletrônico de Dispensação ou Fornecimento de Medicamento (REDFM)",
+      "StructureDefinition-RNDSPrescricaoMedicamentoDispensado.html" : "Prescrição Eletrônica de Medicamento (Contida na Dispensação)",
+      "StructureDefinition-br-core-organization.html" : "BR Core Organization",
+      "StructureDefinition-RNDSMedicamentoDispensadoFornecido.html" : "Dispensação ou Fornecimento Eletrônico de Medicamento",
+      "StructureDefinition-RNDSProfissional.html" : "Profissional",
+      "StructureDefinition-br-core-practitioner.html" : "BR Core Practitioner"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/security-labels",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "All Security Labels",
+      "title" : "SecurityLabels",
+      "description" : "A single value set for all security labels defined by FHIR.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "http://terminology.hl7.org/CodeSystem/v3-ActUSPrivacyLaw",
+        "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+        "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "http://terminology.hl7.org/CodeSystem/v3-Confidentiality"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.47"],
+      "sources" : ["2.16.840.1.113883.4.642.3.47"],
+      "uses" : {
+      },
+      "StructureDefinition-RNDSMedicamentoDispensadoFornecido.html" : "Dispensação ou Fornecimento Eletrônico de Medicamento"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v2-0203",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "Hl7VSIdentifierType",
+      "title" : "hl7VS-identifierType",
+      "description" : "Concepts specifying types of identififiers, as used in person and organization identification datatypes in HL7 Version 2 standards.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0203"],
+      "oids" : ["2.16.840.1.113883.21.120"],
+      "sources" : ["2.16.840.1.113883.21.120"],
+      "uses" : {
+      },
+      "StructureDefinition-RNDSProfissional.html" : "Profissional",
+      "StructureDefinition-RNDSMedicamentoDispensadoFornecido.html" : "Dispensação ou Fornecimento Eletrônico de Medicamento",
+      "StructureDefinition-br-core-practitioner.html" : "BR Core Practitioner"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v3-ActCode",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "ActCode",
+      "title" : "v3 Code System ActCode",
+      "description" : "A code specifying the particular kind of Act that the Act-instance represents within its class.  Constraints:\r\nThe kind of Act (e.g. physical examination, serum potassium, inpatient encounter, charge financial transaction, etc.) is specified with a code from one of several, typically external, coding systems.  The coding system will depend on the class of Act, such as LOINC for observations, etc. Conceptually, the Act.code must be a specialization of the Act.classCode. This is why the structure of ActClass domain should be reflected in the superstructure of the ActCode domain and then individual codes or externally referenced vocabularies subordinated under these domains that reflect the ActClass structure. Act.classCode and Act.code are not modifiers of each other but the Act.code concept should really imply the Act.classCode concept. For a negative example, it is not appropriate to use an Act.code \"potassium\" together with and Act.classCode for \"laboratory observation\" to somehow mean \"potassium laboratory observation\" and then use the same Act.code for \"potassium\" together with Act.classCode for \"medication\" to mean \"substitution of potassium\". This mutually modifying use of Act.code and Act.classCode is not permitted.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActCode"],
+      "uses" : {
+      },
+      "StructureDefinition-br-core-composition.html" : "BR Core Composition",
+      "StructureDefinition-RNDSRegistroEletronicoDispensacaoFornecimentoMedicamento.html" : "Registro Eletrônico de Dispensação ou Fornecimento de Medicamento (REDFM)"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v3-ActSubstanceAdminSubstitutionCode",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "ActSubstanceAdminSubstitutionCode",
+      "title" : "ActSubstanceAdminSubstitutionCode",
+      "description" : "***No description***",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-substanceAdminSubstitution"
+      ],
+      "oids" : ["2.16.840.1.113883.1.11.16621"],
+      "sources" : ["2.16.840.1.113883.1.11.16621"],
+      "uses" : {
+      },
+      "StructureDefinition-RNDSPrescricaoMedicamentoDispensado.html" : "Prescrição Eletrônica de Medicamento (Contida na Dispensação)",
+      "StructureDefinition-RNDSMedicamentoDispensadoFornecido.html" : "Dispensação ou Fornecimento Eletrônico de Medicamento"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v3-ConfidentialityClassification",
+      "version" : "2014-03-26",
+      "status" : "active",
+      "name" : "v3.ConfidentialityClassification",
+      "title" : "V3 Value SetConfidentialityClassification",
+      "description" : " Set of codes used to value Act.Confidentiality and Role.Confidentiality attribute in accordance with the definition for concept domain \"Confidentiality\".",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-Confidentiality"],
+      "oids" : ["2.16.840.1.113883.1.11.10228"],
+      "sources" : ["2.16.840.1.113883.1.11.10228"],
+      "uses" : {
+      },
+      "StructureDefinition-br-core-composition.html" : "BR Core Composition",
+      "StructureDefinition-RNDSRegistroEletronicoDispensacaoFornecimentoMedicamento.html" : "Registro Eletrônico de Dispensação ou Fornecimento de Medicamento (REDFM)"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v3-SubstanceAdminSubstitutionReason",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "SubstanceAdminSubstitutionReason",
+      "title" : "SubstanceAdminSubstitutionReason",
+      "description" : "***No description***",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActReason"],
+      "oids" : ["2.16.840.1.113883.1.11.19377"],
+      "sources" : ["2.16.840.1.113883.1.11.19377"],
+      "uses" : {
+      },
+      "StructureDefinition-RNDSPrescricaoMedicamentoDispensado.html" : "Prescrição Eletrônica de Medicamento (Contida na Dispensação)",
+      "StructureDefinition-RNDSMedicamentoDispensadoFornecido.html" : "Dispensação ou Fornecimento Eletrônico de Medicamento"
+    },
+    {
+      "url" : "http://www.saude.gov.br/fhir/r4/ValueSet/BROcupacao-1.0",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "BROcupacao",
+      "title" : "Classificação Brasileira de Ocupações (CBO)",
+      "description" : "Classifica as profissões do mercado de trabalho brasileiro.",
+      "systems" : ["http://www.saude.gov.br/fhir/r4/CodeSystem/BRCBO"],
+      "uses" : {
+      },
+      "StructureDefinition-br-core-practitionerrole.html" : "BR Core PractitionerRole",
+      "StructureDefinition-RNDSMedicamentoDispensadoFornecido.html" : "Dispensação ou Fornecimento Eletrônico de Medicamento",
+      "StructureDefinition-RNDSProfissional.html" : "Profissional",
+      "StructureDefinition-br-core-practitioner.html" : "BR Core Practitioner",
+      "StructureDefinition-RNDSLotacaoProfissional.html" : "Lotação Profissional"
+    },
+    {
+      "url" : "http://www.saude.gov.br/fhir/r4/ValueSet/BRProblemaDiagnostico",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "BRProblemaDiagnostico",
+      "title" : "Classificação Internacional de Doenças (Atenção Primária)",
+      "description" : "Código Internacional de Atenção Primária (CIAP2) e Classificação Internacional de Doenças (CID10)",
+      "systems" : [
+        "http://www.saude.gov.br/fhir/r4/CodeSystem/BRCID10",
+        "http://www.saude.gov.br/fhir/r4/CodeSystem/BRCIAP2"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-RNDSPrescricaoMedicamentoDispensado.html" : "Prescrição Eletrônica de Medicamento (Contida na Dispensação)",
+      "StructureDefinition-RNDSMedicamentoDispensadoFornecido.html" : "Dispensação ou Fornecimento Eletrônico de Medicamento"
+    },
+    {
+      "url" : "http://www.saude.gov.br/fhir/r4/ValueSet/BRTerminologiaMedicamento",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "BRTerminologiaMedicamento",
+      "title" : "Terminologia dos medicamentos",
+      "description" : "ValueSet utilizado para definir a terminologia de um dado medicamento.",
+      "systems" : [
+        "http://www.saude.gov.br/fhir/r4/CodeSystem/BRObmCATMAT",
+        "http://www.saude.gov.br/fhir/r4/CodeSystem/BRObmAMPP",
+        "http://www.saude.gov.br/fhir/r4/CodeSystem/BRObmANVISA",
+        "http://www.saude.gov.br/fhir/r4/CodeSystem/BRObmVMP",
+        "http://www.saude.gov.br/fhir/r4/CodeSystem/BRObmEAN"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-RNDSPrescricaoMedicamentoDispensado.html" : "Prescrição Eletrônica de Medicamento (Contida na Dispensação)",
+      "StructureDefinition-RNDSMedicamentoDispensadoFornecido.html" : "Dispensação ou Fornecimento Eletrônico de Medicamento",
+      "StructureDefinition-RNDSMedicamento.html" : "Medicamento",
+      "StructureDefinition-RNDSMedicamentoDispensado.html" : "Medicamento Dispensado"
+    },
+    {
+      "url" : "http://www.saude.gov.br/fhir/r4/ValueSet/BRTipoDispensacaoRealizada",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "ValueSet-BRTipoDispensacaoRealizada",
+      "title" : "Tipo de Dispensação Realizada",
+      "description" : "Indica o tipo de dispensação que foi realizada",
+      "systems" : [
+        "http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoDispensacaoRealizada"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-RNDSMedicamentoDispensadoFornecido.html" : "Dispensação ou Fornecimento Eletrônico de Medicamento"
+    },
+    {
+      "url" : "http://www.saude.gov.br/fhir/r4/ValueSet/BRTipoDocumento-1.0",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "BRTipoDocumento",
+      "title" : "Tipo de Documento",
+      "description" : "Classifica o tipo de documento que está sendo trafegado.",
+      "systems" : ["http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoDocumento"],
+      "uses" : {
+      },
+      "StructureDefinition-RNDSRegistroEletronicoDispensacaoFornecimentoMedicamento.html" : "Registro Eletrônico de Dispensação ou Fornecimento de Medicamento (REDFM)"
+    },
+    {
+      "url" : "http://www.saude.gov.br/fhir/r4/ValueSet/BRUnidadeMedidaMedicamento",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "BRUnidadeMedidaMedicamento",
+      "title" : "Unidade de Medida de Medicamento",
+      "description" : "ValueSet utilizado para definir a unidade de medida de medicamentos sob informações do fabricante.",
+      "systems" : ["http://www.saude.gov.br/fhir/r4/CodeSystem/BRUnidadeMedida"],
+      "uses" : {
+      },
+      "StructureDefinition-RNDSMedicamento.html" : "Medicamento",
+      "StructureDefinition-RNDSMedicamentoDispensado.html" : "Medicamento Dispensado"
+    },
+    {
+      "url" : "http://www.saude.gov.br/fhir/r4/ValueSet/BRViaAdministracao-1.0",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "BRViaAdministracao",
+      "title" : "Via de Administração",
+      "description" : "Via de administração de um imunobiológico.",
+      "systems" : [
+        "http://www.saude.gov.br/fhir/r4/CodeSystem/BRViaAdministracao"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-RNDSPrescricaoMedicamentoDispensado.html" : "Prescrição Eletrônica de Medicamento (Contida na Dispensação)",
+      "StructureDefinition-RNDSMedicamentoDispensadoFornecido.html" : "Dispensação ou Fornecimento Eletrônico de Medicamento"
+    },
+    {
+      "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BRCOREN",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "BRCOREN",
+      "title" : "Conselhos regionais de Enfermagem do Brasil",
+      "description" : "Conjunto de todos os conselhos regionais de enfermagem do Brasil",
+      "systems" : [
+        "https://terminologia.saude.gov.br/fhir/CodeSystem/BRConselhoProfissional"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-RNDSMedicamentoDispensadoFornecido.html" : "Dispensação ou Fornecimento Eletrônico de Medicamento",
+      "StructureDefinition-RNDSProfissional.html" : "Profissional",
+      "StructureDefinition-br-core-practitioner.html" : "BR Core Practitioner"
+    },
+    {
+      "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BRCRF",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "BRCRF",
+      "title" : "Conselhos regionais de Farmácia do Brasil",
+      "description" : "Conjunto de todos os conselhos regionais de farmácia do Brasil",
+      "systems" : [
+        "https://terminologia.saude.gov.br/fhir/CodeSystem/BRConselhoProfissional"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-RNDSMedicamentoDispensadoFornecido.html" : "Dispensação ou Fornecimento Eletrônico de Medicamento",
+      "StructureDefinition-RNDSProfissional.html" : "Profissional",
+      "StructureDefinition-br-core-practitioner.html" : "BR Core Practitioner"
+    },
+    {
+      "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BRCRM",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "BRCRM",
+      "title" : "Conselhos regionais de Medicina do Brasil",
+      "description" : "Conjunto de todos os conselhos regionais de medicina do Brasil",
+      "systems" : [
+        "https://terminologia.saude.gov.br/fhir/CodeSystem/BRConselhoProfissional"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-RNDSMedicamentoDispensadoFornecido.html" : "Dispensação ou Fornecimento Eletrônico de Medicamento",
+      "StructureDefinition-RNDSProfissional.html" : "Profissional",
+      "StructureDefinition-br-core-practitioner.html" : "BR Core Practitioner"
+    },
+    {
+      "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BRCRO",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "BRCRO",
+      "title" : "Conselhos regionais de Odontologia do Brasil",
+      "description" : "Conjunto de todos os conselhos regionais de farmácia do Brasil",
+      "systems" : [
+        "https://terminologia.saude.gov.br/fhir/CodeSystem/BRConselhoProfissional"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-RNDSMedicamentoDispensadoFornecido.html" : "Dispensação ou Fornecimento Eletrônico de Medicamento",
+      "StructureDefinition-RNDSProfissional.html" : "Profissional",
+      "StructureDefinition-br-core-practitioner.html" : "BR Core Practitioner"
+    },
+    {
+      "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BROutrosProfissionais",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "BROutrosProfissionais",
+      "title" : "Conselhos regionais de outros profissionais da saúde do Brasil",
+      "description" : "Conjunto de todos os conselhos regionais de outros profissionais da saúde do Brasil",
+      "systems" : [
+        "https://terminologia.saude.gov.br/fhir/CodeSystem/BRConselhoProfissional"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-RNDSMedicamentoDispensadoFornecido.html" : "Dispensação ou Fornecimento Eletrônico de Medicamento",
+      "StructureDefinition-RNDSProfissional.html" : "Profissional",
+      "StructureDefinition-br-core-practitioner.html" : "BR Core Practitioner"
+    }
+  ]
+}

@@ -1,0 +1,135 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://www.saude.gov.br/fhir/r4/ValueSet/BROcupacao-1.0",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "BROcupacao",
+      "title" : "Classificação Brasileira de Ocupações (CBO)",
+      "description" : "Classifica as profissões do mercado de trabalho brasileiro.",
+      "systems" : ["http://www.saude.gov.br/fhir/r4/CodeSystem/BRCBO"]
+    },
+    {
+      "url" : "http://www.saude.gov.br/fhir/r4/ValueSet/BRProblemaDiagnostico",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "BRProblemaDiagnostico",
+      "title" : "Classificação Internacional de Doenças (Atenção Primária)",
+      "description" : "Código Internacional de Atenção Primária (CIAP2) e Classificação Internacional de Doenças (CID10)",
+      "systems" : [
+        "http://www.saude.gov.br/fhir/r4/CodeSystem/BRCID10",
+        "http://www.saude.gov.br/fhir/r4/CodeSystem/BRCIAP2"
+      ]
+    },
+    {
+      "url" : "http://www.saude.gov.br/fhir/r4/ValueSet/BRTerminologiaMedicamento",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "BRTerminologiaMedicamento",
+      "title" : "Terminologia dos medicamentos",
+      "description" : "ValueSet utilizado para definir a terminologia de um dado medicamento.",
+      "systems" : [
+        "http://www.saude.gov.br/fhir/r4/CodeSystem/BRObmCATMAT",
+        "http://www.saude.gov.br/fhir/r4/CodeSystem/BRObmAMPP",
+        "http://www.saude.gov.br/fhir/r4/CodeSystem/BRObmANVISA",
+        "http://www.saude.gov.br/fhir/r4/CodeSystem/BRObmVMP",
+        "http://www.saude.gov.br/fhir/r4/CodeSystem/BRObmEAN"
+      ]
+    },
+    {
+      "url" : "http://www.saude.gov.br/fhir/r4/ValueSet/BRTipoDispensacaoRealizada",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "ValueSet-BRTipoDispensacaoRealizada",
+      "title" : "Tipo de Dispensação Realizada",
+      "description" : "Indica o tipo de dispensação que foi realizada",
+      "systems" : [
+        "http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoDispensacaoRealizada"
+      ]
+    },
+    {
+      "url" : "http://www.saude.gov.br/fhir/r4/ValueSet/BRTipoDocumento-1.0",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "BRTipoDocumento",
+      "title" : "Tipo de Documento",
+      "description" : "Classifica o tipo de documento que está sendo trafegado.",
+      "systems" : ["http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoDocumento"]
+    },
+    {
+      "url" : "http://www.saude.gov.br/fhir/r4/ValueSet/BRUnidadeMedidaMedicamento",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "BRUnidadeMedidaMedicamento",
+      "title" : "Unidade de Medida de Medicamento",
+      "description" : "ValueSet utilizado para definir a unidade de medida de medicamentos sob informações do fabricante.",
+      "systems" : ["http://www.saude.gov.br/fhir/r4/CodeSystem/BRUnidadeMedida"]
+    },
+    {
+      "url" : "http://www.saude.gov.br/fhir/r4/ValueSet/BRViaAdministracao-1.0",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "BRViaAdministracao",
+      "title" : "Via de Administração",
+      "description" : "Via de administração de um imunobiológico.",
+      "systems" : [
+        "http://www.saude.gov.br/fhir/r4/CodeSystem/BRViaAdministracao"
+      ]
+    },
+    {
+      "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BRCOREN",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "BRCOREN",
+      "title" : "Conselhos regionais de Enfermagem do Brasil",
+      "description" : "Conjunto de todos os conselhos regionais de enfermagem do Brasil",
+      "systems" : [
+        "https://terminologia.saude.gov.br/fhir/CodeSystem/BRConselhoProfissional"
+      ]
+    },
+    {
+      "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BRCRF",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "BRCRF",
+      "title" : "Conselhos regionais de Farmácia do Brasil",
+      "description" : "Conjunto de todos os conselhos regionais de farmácia do Brasil",
+      "systems" : [
+        "https://terminologia.saude.gov.br/fhir/CodeSystem/BRConselhoProfissional"
+      ]
+    },
+    {
+      "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BRCRM",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "BRCRM",
+      "title" : "Conselhos regionais de Medicina do Brasil",
+      "description" : "Conjunto de todos os conselhos regionais de medicina do Brasil",
+      "systems" : [
+        "https://terminologia.saude.gov.br/fhir/CodeSystem/BRConselhoProfissional"
+      ]
+    },
+    {
+      "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BRCRO",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "BRCRO",
+      "title" : "Conselhos regionais de Odontologia do Brasil",
+      "description" : "Conjunto de todos os conselhos regionais de farmácia do Brasil",
+      "systems" : [
+        "https://terminologia.saude.gov.br/fhir/CodeSystem/BRConselhoProfissional"
+      ]
+    },
+    {
+      "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BROutrosProfissionais",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "BROutrosProfissionais",
+      "title" : "Conselhos regionais de outros profissionais da saúde do Brasil",
+      "description" : "Conjunto de todos os conselhos regionais de outros profissionais da saúde do Brasil",
+      "systems" : [
+        "https://terminologia.saude.gov.br/fhir/CodeSystem/BRConselhoProfissional"
+      ]
+    }
+  ]
+}

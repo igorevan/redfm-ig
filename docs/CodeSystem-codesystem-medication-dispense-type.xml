@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="codesystem-medication-dispense-type"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/StructureDefinition/shareablecodesystem"/>
+  </meta>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en"><p class="res-header-id"><b>Narrativa gerada: CodeSystem codesystem-medication-dispense-type</b></p><a name="codesystem-medication-dispense-type"> </a><a name="hccodesystem-medication-dispense-type"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Língua: en</p><p style="margin-bottom: 0px">Perfil: <a href="http://hl7.org/fhir/R4/shareablecodesystem.html">Shareable CodeSystem</a></p></div><p>Este case-sensitive sistema de código <code>http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoDispensacaoRealizada</code> define o seguinte códigos:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td></tr><tr><td style="white-space:nowrap">fully-dispensing<a name="codesystem-medication-dispense-type-fully-dispensing"> </a></td><td>Fully Dispensing</td></tr><tr><td style="white-space:nowrap">medication-return<a name="codesystem-medication-dispense-type-medication-return"> </a></td><td>Medication Return</td></tr><tr><td style="white-space:nowrap">partial-dispensing<a name="codesystem-medication-dispense-type-partial-dispensing"> </a></td><td>Partial Dispensing</td></tr><tr><td style="white-space:nowrap">not-dispensed<a name="codesystem-medication-dispense-type-not-dispensed"> </a></td><td>Not Dipensed</td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="1">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="http://www.saude.gov.br/fhir/r4/ImplementationGuide/br.gov.saude.redfm.fhir"/>
+      </extension>
+    </valueInteger>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="informative">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="http://www.saude.gov.br/fhir/r4/ImplementationGuide/br.gov.saude.redfm.fhir"/>
+      </extension>
+    </valueCode>
+  </extension>
+  <url value="http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoDispensacaoRealizada"/>
+  <version value="1.0.0"/>
+  <name value="CodeSystem-BRTipoDispensacaoRealizada"/>
+  <title value="Tipo de Dispensação Realizada"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2024-12-10"/>
+  <publisher value="Ministério da Saúde do Brasil"/>
+  <contact>
+    <name value="Ministério da Saúde do Brasil"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.saude.gov.br"/>
+    </telecom>
+  </contact>
+  <description value="Indica o tipo de dispensação que foi realizada"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BR"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <valueSet value="http://www.saude.gov.br/fhir/r4/ValueSet/BRSituacaoDispensacao"/>
+  <content value="complete"/>
+  <concept>
+    <code value="fully-dispensing"/>
+    <display value="Fully Dispensing"/>
+  </concept>
+  <concept>
+    <code value="medication-return"/>
+    <display value="Medication Return"/>
+  </concept>
+  <concept>
+    <code value="partial-dispensing"/>
+    <display value="Partial Dispensing"/>
+  </concept>
+  <concept>
+    <code value="not-dispensed"/>
+    <display value="Not Dipensed"/>
+  </concept>
+</CodeSystem>

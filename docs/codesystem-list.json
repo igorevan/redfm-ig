@@ -1,0 +1,108 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://www.saude.gov.br/fhir/r4/CodeSystem/BRCBO",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "BRCBO",
+      "title" : "Classificação Brasileira de Ocupações (CBO)",
+      "description" : "Classifica as profissões do mercado de trabalho brasileiro."
+    },
+    {
+      "url" : "http://www.saude.gov.br/fhir/r4/CodeSystem/BRCIAP2",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "BRCIAP2",
+      "title" : "Classificação Internacional de Atenção Primária - Segunda Edição (CIAP2)",
+      "description" : "Classifica os problemas identificados no contato assistencial pelos profissionais de saúde, os motivos da contato assistencial e as respostas propostas pela equipe seguindo a sistematização SOAP."
+    },
+    {
+      "url" : "http://www.saude.gov.br/fhir/r4/CodeSystem/BRCID10",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "BRCID10",
+      "title" : "Classificação Internacional de Doenças - Décima Revisão (CID-10)",
+      "description" : "Classifica as doenças e outros problemas em saúde registrados em diversos tipos de documentos clínicos."
+    },
+    {
+      "url" : "http://www.saude.gov.br/fhir/r4/CodeSystem/BRObmAMPP",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "BRObmAMPP",
+      "title" : "Terminologia de Produto Medicinal Comercial com Apresentação (AMPP) na Ontologia Brasileira de Medicamentos (OBM)",
+      "description" : "Apresenta o Terminologia de Produto Medicinal Comercial com Apresentação (AMPP) e seu Código na Ontologia Brasileira de Medicamentos (OBM)"
+    },
+    {
+      "url" : "http://www.saude.gov.br/fhir/r4/CodeSystem/BRObmANVISA",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "BRObmANVISA",
+      "title" : "Terminologia de Produto Medicinal Comercial com Apresentação (AMPP) na Agência Nacional de Vigilância Sanitária (Anvisa)",
+      "description" : "Apresenta o Produto Medicinal Comercial com Apresentação (AMPP) e seu Código de Registro na Agência Nacional de Vigilância Sanitária (Anvisa)"
+    },
+    {
+      "url" : "http://www.saude.gov.br/fhir/r4/CodeSystem/BRObmCATMAT",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "BRObmCATMAT",
+      "title" : "Terminologia de Produto Medicinal Virtual (VMP) no Catálogo de Materiais (CATMAT)",
+      "description" : "Apresenta o Produto Medicinal Virtual (VMP) e seu código no Catálogo de Materiais (CATMAT)"
+    },
+    {
+      "url" : "http://www.saude.gov.br/fhir/r4/CodeSystem/BRObmEAN",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "BRObmEAN",
+      "title" : "Terminologia de Produto Medicinal Virtual (VMP) na GS1.org",
+      "description" : "Apresenta o Produto Medicinal Virtual (VMP) e seu Número Europeu do Artigo (EAN) na GS1.org"
+    },
+    {
+      "url" : "http://www.saude.gov.br/fhir/r4/CodeSystem/BRObmVMP",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "BRObmVMP",
+      "title" : "Terminologia de Produto Medicinal Virtual (VMP) na Ontologia Brasileira de Medicamentos (OBM)",
+      "description" : "Apresenta o Produto Medicinal Virtual (VMP) e seu Código na Ontologia Brasileira de Medicamentos (OBM)"
+    },
+    {
+      "url" : "http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoDispensacaoRealizada",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "CodeSystem-BRTipoDispensacaoRealizada",
+      "title" : "Tipo de Dispensação Realizada",
+      "description" : "Indica o tipo de dispensação que foi realizada"
+    },
+    {
+      "url" : "http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoDocumento",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "BRTipoDocumento",
+      "title" : "Tipo de Documento",
+      "description" : "Classificação dos tipos de documentos compartilhados no Brasil."
+    },
+    {
+      "url" : "http://www.saude.gov.br/fhir/r4/CodeSystem/BRUnidadeMedida",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "BRUnidadeMedida",
+      "title" : "Unidade de Medida",
+      "description" : "CodeSystem utilizado para definir a unidade de medida de um medicamento prescrito, para consumo ou especificação do fabricante."
+    },
+    {
+      "url" : "http://www.saude.gov.br/fhir/r4/CodeSystem/BRViaAdministracao",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "BRViaAdministracao",
+      "title" : "Via de Administração",
+      "description" : "Classifica a via na qual foi administrada uma substância em um indivíduo."
+    },
+    {
+      "url" : "https://terminologia.saude.gov.br/fhir/CodeSystem/BRConselhoProfissional",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "BRConselhoProfissional",
+      "title" : "Conselhos profissionais de saúde do Brasil",
+      "description" : "Esse CodeSystem inclui os conselhos profissionais de saúde do Brasil, conforme a Resolução CNS 251/1997."
+    }
+  ]
+}

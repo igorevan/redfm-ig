@@ -1,0 +1,324 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://www.saude.gov.br/fhir/r4/Bundle/Example-REDFM-3> a fhir:Bundle ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "Example-REDFM-3"] ; # 
+  fhir:identifier [
+     fhir:system [ fhir:v "http://www.saude.gov.br/fhir/r4/NamingSystem/BRRNDS-1964"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "73549927" ]
+  ] ; # 
+  fhir:type [ fhir:v "document"] ; # 
+  fhir:timestamp [ fhir:v "2024-12-30T14:59:51.244-03:00"^^xsd:dateTime] ; # 
+  fhir:entry ( [
+     fhir:fullUrl [ fhir:v "urn:uuid:58e54a1d-550e-48bc-9e09-6230c972078a"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:58e54a1d-550e-48bc-9e09-6230c972078a> )
+  ] [
+     fhir:fullUrl [ fhir:v "urn:uuid:a54219b8-f741-4c47-b662-e4f8dfa49ab6"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:a54219b8-f741-4c47-b662-e4f8dfa49ab6> )
+  ] [
+     fhir:fullUrl [ fhir:v "urn:uuid:6a78998d-4e0e-4d84-8047-f88d275184f1"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:6a78998d-4e0e-4d84-8047-f88d275184f1> )
+  ] ) . # 
+
+<urn:uuid:58e54a1d-550e-48bc-9e09-6230c972078a> a fhir:Composition ;
+  fhir:id [ fhir:v "58e54a1d-550e-48bc-9e09-6230c972078a"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamento"^^xsd:anyURI ;
+       fhir:link <http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamento>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Composition_58e54a1d-550e-48bc-9e09-6230c972078a\"> </a><p class=\"res-header-id\"><b>Narrativa gerada: Composition 58e54a1d-550e-48bc-9e09-6230c972078a</b></p><a name=\"58e54a1d-550e-48bc-9e09-6230c972078a\"> </a><a name=\"hc58e54a1d-550e-48bc-9e09-6230c972078a\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Perfil: <a href=\"StructureDefinition-RNDSRegistroEletronicoDispensacaoFornecimentoMedicamento.html\">Registro Eletrônico de Dispensação ou Fornecimento de Medicamento (REDFM)</a></p></div><p><b>status</b>: Final</p><p><b>type</b>: <span title=\"Códigos:{http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoDocumento REDFM}\">Registro Eletrônico de Dispensação ou Fornecimento de Medicamentos</span></p><p><b>date</b>: 2024-12-30 11:46:12-0300</p><p><b>author</b>: Identifier: <code>http://www.saude.gov.br/fhir/r4/StructureDefinition/BREstabelecimentoSaude-1.0</code>/5354072</p><p><b>title</b>: Registro Eletrônico de Dispensação ou Fornecimento de Medicamentos</p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:type [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoDocumento"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "REDFM" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:identifier [
+       fhir:system [ fhir:v "http://www.saude.gov.br/fhir/r4/StructureDefinition/BRIndividuo-1.0"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "70835645231" ]
+     ]
+  ] ; # 
+  fhir:date [ fhir:v "2024-12-30T11:46:12.742-03:00"^^xsd:dateTime] ; # 
+  fhir:author ( [
+     fhir:identifier [
+       fhir:system [ fhir:v "http://www.saude.gov.br/fhir/r4/StructureDefinition/BREstabelecimentoSaude-1.0"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "5354072" ]
+     ]
+  ] ) ; # 
+  fhir:title [ fhir:v "Registro Eletrônico de Dispensação ou Fornecimento de Medicamentos"] ; # 
+  fhir:section ( [
+     fhir:title [ fhir:v "Medicamentos Dispensados" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a loinc:56445-0 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "56445-0" ]
+       ] )
+     ] ;
+     fhir:entry ( [
+       fhir:reference [ fhir:v "urn:uuid:a54219b8-f741-4c47-b662-e4f8dfa49ab6" ] ;
+       fhir:display [ fhir:v "Amoxicilina 500 mg cápsula" ]
+     ] )
+  ] ) . # 
+
+<urn:uuid:a54219b8-f741-4c47-b662-e4f8dfa49ab6> a fhir:MedicationDispense ;
+  fhir:meta [
+     fhir:lastUpdated [ fhir:v "2024-10-31T11:46:12.742-03:00"^^xsd:dateTime ] ;
+     fhir:profile ( [
+       fhir:v "http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSMedicamentoDispensadoFornecido"^^xsd:anyURI ;
+       fhir:link <http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSMedicamentoDispensadoFornecido>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"MedicationDispense_null\"> </a><p class=\"res-header-id\"><b>Narrativa gerada: MedicationDispense </b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Última atualização: 2024-10-31 11:46:12-0300</p><p style=\"margin-bottom: 0px\">Perfil: <a href=\"StructureDefinition-RNDSMedicamentoDispensadoFornecido.html\">Dispensação ou Fornecimento Eletrônico de Medicamento</a></p></div><p><b>identifier</b>: <code>http://www.saude.gov.br/fhir/r4/NamingSystem/dispensed-item-id</code>/e6f89964-b218-4fb3-9603-e0897c5c2181</p><p><b>status</b>: Completed</p><p><b>category</b>: <span title=\"Códigos:{http://terminology.hl7.org/CodeSystem/medicationrequest-category community}\">Community</span></p><p><b>medication</b>: <a href=\"Bundle-Example-REDFM-1.html#urn-uuid-6a78998d-4e0e-4d84-8047-f88d275184f1\">Bundle: identifier = http://www.saude.gov.br/fhir/r4/NamingSystem/BRRNDS-1964#73549927; type = document; timestamp = 2024-12-30 14:59:51-0300</a></p><p><b>subject</b>: Identifier: <code>http://www.saude.gov.br/fhir/r4/StructureDefinition/BRIndividuo-1.0</code>/712176901347489</p><p><b>supportingInformation</b>: </p><ul><li><a href=\"#hcnull/prescriber-identifier\">Referência para a identificação do Profissional que prescreveu o medicamento.</a></li><li><a href=\"#hcnull/prescriber-specialty\">Referência para a Especialidade do profissional que prescreveu o medicamento.</a></li></ul><blockquote><p><b>performer</b></p><blockquote><p><b>id</b></p>organization</blockquote><p><b>actor</b>: Identifier: <code>http://www.saude.gov.br/fhir/r4/StructureDefinition/BREstabelecimentoSaude-1.0</code>/5354072</p></blockquote><blockquote><p><b>performer</b></p><blockquote><p><b>id</b></p>other-practitioner</blockquote><p><b>function</b>: <span title=\"Códigos:{http://www.saude.gov.br/fhir/r4/CodeSystem/BRCBO 322230}\">AUXILIAR DE ENFERMAGEM</span></p><p><b>actor</b>: Identifier: <code>http://www.saude.gov.br/fhir/r4/StructureDefinition/BRProfissional-1.0</code>/704200519817090</p></blockquote><p><b>authorizingPrescription</b>: <a href=\"#hcnull/prescription\">MedicationRequest: identifier = http://www.saude.gov.br/fhir/r4/NamingSystem/prescription-item-id#e6f89964-b218-4fb3-9603-e0897c5c2181,http://www.saude.gov.br/fhir/r4/NamingSystem/sncr-number#563BFD7432; status = active; intent = order; medication[x] = Amoxicilina 500 mg cápsula; authoredOn = 2024-10-31 11:46:12-0300; reasonCode = Hipertensão essencial (primária)</a></p><p><b>type</b>: <span title=\"Códigos:{http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoDispensacaoRealizada fully-dispensing}\">Fully Dispensing</span></p><p><b>quantity</b>: 30 Cápsula</p><p><b>whenHandedOver</b>: 2024-12-10 11:46:12-0300</p><p><b>receiver</b>: Identifier: <code>http://www.saude.gov.br/fhir/r4/StructureDefinition/BRIndividuo-1.0</code>/712176901347489</p><hr/><blockquote><p class=\"res-header-id\"><b>Narrativa gerada: MedicationRequest #prescription</b></p><a name=\"null/prescription\"> </a><a name=\"hcnull/prescription\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Perfil: <a href=\"StructureDefinition-RNDSPrescricaoMedicamentoDispensado.html\">Prescrição Eletrônica de Medicamento (Contida na Dispensação)</a></p></div><p><b>identifier</b>: <code>http://www.saude.gov.br/fhir/r4/NamingSystem/prescription-item-id</code>/e6f89964-b218-4fb3-9603-e0897c5c2181, <code>http://www.saude.gov.br/fhir/r4/NamingSystem/sncr-number</code>/563BFD7432</p><p><b>status</b>: Active</p><p><b>intent</b>: Order</p><p><b>medication</b>: <span title=\"Códigos:{http://www.saude.gov.br/fhir/r4/CodeSystem/BRObmVMP @brasil12898180271}\">Amoxicilina 500 mg cápsula</span></p><p><b>subject</b>: Identifier: <code>http://www.saude.gov.br/fhir/r4/StructureDefinition/BRIndividuo-1.0</code>/712176901347489</p><p><b>authoredOn</b>: 2024-10-31 11:46:12-0300</p><p><b>requester</b>: <a href=\"PractitionerRole/prescriber-info\">PractitionerRole/prescriber-info</a></p><p><b>reasonCode</b>: <span title=\"Códigos:{http://www.saude.gov.br/fhir/r4/CodeSystem/BRCID10 I10}\">Hipertensão essencial (primária)</span></p><blockquote><p><b>dosageInstruction</b></p><p><b>route</b>: <span title=\"Códigos:{http://www.saude.gov.br/fhir/r4/CodeSystem/BRViaAdministracao 10907}\">Oral</span></p><h3>DoseAndRates</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Dose[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>1 Comprimido<span style=\"background: LightGoldenRodYellow\"> (Detalhes: Unidade de Medida código13 = 'Cápsula')</span></td></tr></table></blockquote></blockquote><hr/><blockquote><p class=\"res-header-id\"><b>Narrativa gerada: Practitioner #prescriber-identifier</b></p><a name=\"null/prescriber-identifier\"> </a><a name=\"hcnull/prescriber-identifier\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Perfil: <a href=\"StructureDefinition-RNDSProfissional.html\">Profissional</a></p></div><p><b>identifier</b>: Medical License number/154735 (utilização: official, ), Doctor number/873456 (utilização: secondary, )</p><p><b>active</b>: true</p></blockquote><hr/><blockquote><p class=\"res-header-id\"><b>Narrativa gerada: PractitionerRole #prescriber-specialty</b></p><a name=\"null/prescriber-specialty\"> </a><a name=\"hcnull/prescriber-specialty\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Perfil: <a href=\"StructureDefinition-RNDSLotacaoProfissional.html\">Lotação Profissional</a></p></div><p><b>active</b>: true</p><p><b>practitioner</b>: Identifier: <code>http://www.saude.gov.br/fhir/r4/StructureDefinition/BRProfissional-1.0</code>/704200519817090</p><p><b>organization</b>: Identifier: <code>http://www.saude.gov.br/fhir/r4/StructureDefinition/BREstabelecimentoSaude-1.0</code>/6156002</p><p><b>code</b>: <span title=\"Códigos:{http://www.saude.gov.br/fhir/r4/CodeSystem/BRCBO 225110}\">MEDICO ALERGISTA E IMUNOLOGISTA</span></p></blockquote></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:contained ( [
+     a fhir:MedicationRequest ;
+     fhir:id [ fhir:v "prescription" ] ;
+     fhir:meta [
+       fhir:profile ( [
+         fhir:v "http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSPrescricaoMedicamentoDispensado"^^xsd:anyURI ;
+         fhir:link <http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSPrescricaoMedicamentoDispensado>
+       ] )
+     ] ;
+     fhir:identifier ( [
+       fhir:system [ fhir:v "http://www.saude.gov.br/fhir/r4/NamingSystem/prescription-item-id"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "e6f89964-b218-4fb3-9603-e0897c5c2181" ]
+     ] [
+       fhir:system [ fhir:v "http://www.saude.gov.br/fhir/r4/NamingSystem/sncr-number"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "563BFD7432" ]
+     ] ) ;
+     fhir:status [ fhir:v "active" ] ;
+     fhir:intent [ fhir:v "order" ] ;
+     fhir:medication [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://www.saude.gov.br/fhir/r4/CodeSystem/BRObmVMP"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "@brasil12898180271" ] ;
+         fhir:display [ fhir:v "Amoxicilina 500 mg cápsula" ]
+       ] )
+     ] ;
+     fhir:subject [
+       fhir:identifier [
+         fhir:system [ fhir:v "http://www.saude.gov.br/fhir/r4/StructureDefinition/BRIndividuo-1.0"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "712176901347489" ]
+       ]
+     ] ;
+     fhir:authoredOn [ fhir:v "2024-10-31T11:46:12.742-03:00"^^xsd:dateTime ] ;
+     fhir:requester [
+       fhir:link <http://www.saude.gov.br/fhir/r4/PractitionerRole/prescriber-info> ;
+       fhir:reference [ fhir:v "PractitionerRole/prescriber-info" ] ;
+       fhir:identifier [
+         fhir:system [ fhir:v "http://www.saude.gov.br/fhir/r4/StructureDefinition/BRProfissional-1.0"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "704200519817090" ]
+       ]
+     ] ;
+     fhir:reasonCode ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://www.saude.gov.br/fhir/r4/CodeSystem/BRCID10"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "I10" ]
+       ] )
+     ] ) ;
+     fhir:dosageInstruction ( [
+       fhir:route [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://www.saude.gov.br/fhir/r4/CodeSystem/BRViaAdministracao"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "10907" ] ;
+           fhir:display [ fhir:v "Oral" ]
+         ] )
+       ] ;
+       fhir:doseAndRate ( [
+         fhir:dose [
+           a fhir:Quantity ;
+           fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+           fhir:unit [ fhir:v "Comprimido" ] ;
+           fhir:system [ fhir:v "http://www.saude.gov.br/fhir/r4/CodeSystem/BRUnidadeMedida"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "13" ]
+         ]
+       ] )
+     ] )
+  ] [
+     a fhir:Practitioner ;
+     fhir:id [ fhir:v "prescriber-identifier" ] ;
+     fhir:meta [
+       fhir:profile ( [
+         fhir:v "http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSProfissional"^^xsd:anyURI ;
+         fhir:link <http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSProfissional>
+       ] )
+     ] ;
+     fhir:identifier ( [
+       fhir:use [ fhir:v "official" ] ;
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "MD" ]
+         ] )
+       ] ;
+       fhir:system [ fhir:v "https://saude.gov.br/sid/crm-sp"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "154735" ]
+     ] [
+       fhir:use [ fhir:v "secondary" ] ;
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "DN" ]
+         ] )
+       ] ;
+       fhir:system [ fhir:v "https://saude.gov.br/sid/rqe"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "873456" ]
+     ] ) ;
+     fhir:active [ fhir:v true ]
+  ] [
+     a fhir:PractitionerRole ;
+     fhir:id [ fhir:v "prescriber-specialty" ] ;
+     fhir:meta [
+       fhir:profile ( [
+         fhir:v "http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSLotacaoProfissional"^^xsd:anyURI ;
+         fhir:link <http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSLotacaoProfissional>
+       ] )
+     ] ;
+     fhir:active [ fhir:v true ] ;
+     fhir:practitioner [
+       fhir:identifier [
+         fhir:system [ fhir:v "http://www.saude.gov.br/fhir/r4/StructureDefinition/BRProfissional-1.0"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "704200519817090" ]
+       ]
+     ] ;
+     fhir:organization [
+       fhir:identifier [
+         fhir:system [ fhir:v "http://www.saude.gov.br/fhir/r4/StructureDefinition/BREstabelecimentoSaude-1.0"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "6156002" ]
+       ]
+     ] ;
+     fhir:code ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://www.saude.gov.br/fhir/r4/CodeSystem/BRCBO"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "225110" ]
+       ] )
+     ] )
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://www.saude.gov.br/fhir/r4/NamingSystem/dispensed-item-id"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "e6f89964-b218-4fb3-9603-e0897c5c2181" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "completed"] ; # 
+  fhir:category [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/medicationrequest-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "community" ]
+     ] )
+  ] ; # 
+  fhir:medication [
+     a fhir:Reference ;
+     fhir:reference [ fhir:v "urn:uuid:6a78998d-4e0e-4d84-8047-f88d275184f1" ]
+  ] ; # 
+  fhir:subject [
+     fhir:identifier [
+       fhir:system [ fhir:v "http://www.saude.gov.br/fhir/r4/StructureDefinition/BRIndividuo-1.0"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "712176901347489" ]
+     ]
+  ] ; # 
+  fhir:supportingInformation ( [
+     fhir:reference [ fhir:v "#prescriber-identifier" ] ;
+     fhir:display [ fhir:v "Referência para a identificação do Profissional que prescreveu o medicamento." ]
+  ] [
+     fhir:reference [ fhir:v "#prescriber-specialty" ] ;
+     fhir:display [ fhir:v "Referência para a Especialidade do profissional que prescreveu o medicamento." ]
+  ] ) ; # 
+  fhir:performer ( [
+     fhir:id [ fhir:v "organization" ] ;
+     fhir:actor [
+       fhir:identifier [
+         fhir:system [ fhir:v "http://www.saude.gov.br/fhir/r4/StructureDefinition/BREstabelecimentoSaude-1.0"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "5354072" ]
+       ]
+     ]
+  ] [
+     fhir:id [ fhir:v "other-practitioner" ] ;
+     fhir:function [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://www.saude.gov.br/fhir/r4/CodeSystem/BRCBO"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "322230" ]
+       ] )
+     ] ;
+     fhir:actor [
+       fhir:identifier [
+         fhir:system [ fhir:v "http://www.saude.gov.br/fhir/r4/StructureDefinition/BRProfissional-1.0"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "704200519817090" ]
+       ]
+     ]
+  ] ) ; # 
+  fhir:authorizingPrescription ( [
+     fhir:id [ fhir:v "out-of-rnds" ] ;
+     fhir:reference [ fhir:v "#prescription" ]
+  ] ) ; # 
+  fhir:type [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoDispensacaoRealizada"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "fully-dispensing" ]
+     ] )
+  ] ; # 
+  fhir:quantity [
+     fhir:value [ fhir:v "30"^^xsd:decimal ] ;
+     fhir:unit [ fhir:v "Cápsula" ]
+  ] ; # 
+  fhir:whenHandedOver [ fhir:v "2024-12-10T11:46:12.742-03:00"^^xsd:dateTime] ; # 
+  fhir:receiver ( [
+     fhir:identifier [
+       fhir:system [ fhir:v "http://www.saude.gov.br/fhir/r4/StructureDefinition/BRIndividuo-1.0"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "712176901347489" ]
+     ]
+  ] ) . # 
+
+<urn:uuid:6a78998d-4e0e-4d84-8047-f88d275184f1> a fhir:Medication ;
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSMedicamentoDispensado"^^xsd:anyURI ;
+       fhir:link <http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSMedicamentoDispensado>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Medication_null\"> </a><p class=\"res-header-id\"><b>Narrativa gerada: Medication </b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Perfil: <a href=\"StructureDefinition-RNDSMedicamentoDispensado.html\">Medicamento Dispensado</a></p></div><p><b>code</b>: <span title=\"Códigos:{http://www.saude.gov.br/fhir/r4/CodeSystem/BRObmVMP @brasil12898180271}\">Amoxicilina 500 mg cápsula</span></p><p><b>manufacturer</b>: Identifier: <code>http://www.saude.gov.br/fhir/r4/StructureDefinition/BRProfissional-1.0</code>/704200519817090</p><p><b>form</b>: <span title=\"Códigos:{http://www.saude.gov.br/fhir/r4/CodeSystem/BRUnidadeMedida 13}\">Cápsula</span></p><h3>Batches</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>LotNumber</b></td><td><b>ExpirationDate</b></td></tr><tr><td style=\"display: none\">*</td><td>587AT765H</td><td>2025-10-31</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://www.saude.gov.br/fhir/r4/CodeSystem/BRObmVMP"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "@brasil12898180271" ] ;
+       fhir:display [ fhir:v "Amoxicilina 500 mg cápsula" ]
+     ] )
+  ] ; # 
+  fhir:manufacturer [
+     fhir:identifier [
+       fhir:system [ fhir:v "http://www.saude.gov.br/fhir/r4/StructureDefinition/BRProfissional-1.0"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "704200519817090" ]
+     ]
+  ] ; # 
+  fhir:form [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://www.saude.gov.br/fhir/r4/CodeSystem/BRUnidadeMedida"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "13" ]
+     ] )
+  ] ; # 
+  fhir:batch [
+     fhir:lotNumber [ fhir:v "587AT765H" ] ;
+     fhir:expirationDate [ fhir:v "2025-10-31"^^xsd:date ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

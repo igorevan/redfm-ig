@@ -1,0 +1,15 @@
+{
+  "url" : "http://www.saude.gov.br/fhir/r4/ImplementationGuide/br.gov.saude.redfm.fhir",
+  "name" : "REDFMRNDSIG",
+  "title" : "Guia de Implementação do Registro Eletrônico de Dispensação ou Fornecimento de Medicamento (REDFM) da RNDS",
+  "description" : "Guia de Implementação da Rede Nacional de Dados em Saúde (RNDS)",
+  "status" : "draft",
+  "package-id" : "br.gov.saude.redfm.fhir",
+  "ig-ver" : "1.0.0",
+  "date" : "Wed, 25 Jun, 2025 14:13:29 -0300",
+  "dateISO8601" : "2025-06-25T14:13:29-03:00",
+  "exception" : "unexpected non-end of element null::a  at line 3 column 57",
+  "version" : "4.0.1",
+  "tool" : "5.0.0 (3)",
+  "maxMemory" : 4596725760
+}
