@@ -5,11 +5,12 @@
   <version value="0.9" />
   <name value="BRObmCATMAT" />
   <title value="Terminologia de Produto Medicinal Virtual (VMP) no Catálogo de Materiais (CATMAT)" />
-  <status value="draft" />
+  <status value="active" />
   <experimental value="false" />
   <date value="2022-04-06T12:48:11.6743763+03:00" />
   <publisher value="Ministério da Saúde do Brasil" />
-  <description value="Apresenta o Produto Medicinal Virtual (VMP) e seu código no Catálogo de Materiais (CATMAT)" />
+  <description
+    value="Apresenta o Produto Medicinal Virtual (VMP) e seu código no Catálogo de Materiais (CATMAT)" />
   <caseSensitive value="true" />
   <content value="complete" />
   <concept>
@@ -18,7 +19,8 @@
   </concept>
   <concept>
     <code value="BR0260160-2E" />
-    <display value="Imunoglobulina humana anti-hepatite B 500 unidades internacionais/10 mL solução para injeção; frasco-ampola" />
+    <display
+      value="Imunoglobulina humana anti-hepatite B 500 unidades internacionais/10 mL solução para injeção; frasco-ampola" />
   </concept>
   <concept>
     <code value="BR0266532-1" />
@@ -46,23 +48,28 @@
   </concept>
   <concept>
     <code value="BR0266627" />
-    <display value="Alfaepoetina 1.000 unidades internacionais/1 mL solução para injeção; frasco-ampola" />
+    <display
+      value="Alfaepoetina 1.000 unidades internacionais/1 mL solução para injeção; frasco-ampola" />
   </concept>
   <concept>
     <code value="BR0266627E" />
-    <display value="Alfaepoetina 1.000 unidades internacionais/1 mL solução para injeção; frasco-ampola" />
+    <display
+      value="Alfaepoetina 1.000 unidades internacionais/1 mL solução para injeção; frasco-ampola" />
   </concept>
   <concept>
     <code value="BR0266629" />
-    <display value="Alfaepoetina 4.000 unidades internacionais/1 mL solução para injeção; frasco-ampola" />
+    <display
+      value="Alfaepoetina 4.000 unidades internacionais/1 mL solução para injeção; frasco-ampola" />
   </concept>
   <concept>
     <code value="BR0266629E" />
-    <display value="Alfaepoetina 4.000 unidades internacionais/1 mL solução para injeção; frasco-ampola" />
+    <display
+      value="Alfaepoetina 4.000 unidades internacionais/1 mL solução para injeção; frasco-ampola" />
   </concept>
   <concept>
     <code value="BR0266630" />
-    <display value="Alfaepoetina 10.000 unidades internacionais/1 mL solução para injeção; frasco-ampola" />
+    <display
+      value="Alfaepoetina 10.000 unidades internacionais/1 mL solução para injeção; frasco-ampola" />
   </concept>
   <concept>
     <code value="BR0266665" />
@@ -162,31 +169,38 @@
   </concept>
   <concept>
     <code value="BR0266762-1" />
-    <display value="Alfainterferona 2a 3.000.000 unidades internacionais/0,5 mL solução para injeção; seringa preenchida" />
+    <display
+      value="Alfainterferona 2a 3.000.000 unidades internacionais/0,5 mL solução para injeção; seringa preenchida" />
   </concept>
   <concept>
     <code value="BR0266765" />
-    <display value="Alfainterferona 2b 5.000.000 unidades internacionais pó e diluente para solução para injeção; frasco-ampola" />
+    <display
+      value="Alfainterferona 2b 5.000.000 unidades internacionais pó e diluente para solução para injeção; frasco-ampola" />
   </concept>
   <concept>
     <code value="BR0266765E" />
-    <display value="Alfainterferona 2b 5.000.000 unidades internacionais pó e diluente para solução para injeção; frasco-ampola" />
+    <display
+      value="Alfainterferona 2b 5.000.000 unidades internacionais pó e diluente para solução para injeção; frasco-ampola" />
   </concept>
   <concept>
     <code value="BR0266766" />
-    <display value="Alfainterferona 2b 10.000.000 unidades internacionais pó e diluente para solução para injeção; frasco-ampola" />
+    <display
+      value="Alfainterferona 2b 10.000.000 unidades internacionais pó e diluente para solução para injeção; frasco-ampola" />
   </concept>
   <concept>
     <code value="BR0266766E" />
-    <display value="Alfainterferona 2b 10.000.000 unidades internacionais pó e diluente para solução para injeção; frasco-ampola" />
+    <display
+      value="Alfainterferona 2b 10.000.000 unidades internacionais pó e diluente para solução para injeção; frasco-ampola" />
   </concept>
   <concept>
     <code value="BR0266767" />
-    <display value="Alfainterferona 2b 3.000.000 unidades internacionais pó e diluente para solução para injeção; frasco-ampola" />
+    <display
+      value="Alfainterferona 2b 3.000.000 unidades internacionais pó e diluente para solução para injeção; frasco-ampola" />
   </concept>
   <concept>
     <code value="BR0266767E" />
-    <display value="Alfainterferona 2b 3.000.000 unidades internacionais pó e diluente para solução para injeção; frasco-ampola" />
+    <display
+      value="Alfainterferona 2b 3.000.000 unidades internacionais pó e diluente para solução para injeção; frasco-ampola" />
   </concept>
   <concept>
     <code value="BR0266788-1" />
@@ -206,7 +220,8 @@
   </concept>
   <concept>
     <code value="BR0266820" />
-    <display value="Imunoglobulina Humana 5 g pó e diluente para solução para injeção; frasco-ampola" />
+    <display
+      value="Imunoglobulina Humana 5 g pó e diluente para solução para injeção; frasco-ampola" />
   </concept>
   <concept>
     <code value="BR0266822E" />
@@ -218,7 +233,8 @@
   </concept>
   <concept>
     <code value="BR0266827" />
-    <display value="Imunoglobulina anti-Rho (D) 1.500 unidades internacionais/2 mL solução para injeção; frasco-ampola" />
+    <display
+      value="Imunoglobulina anti-Rho (D) 1.500 unidades internacionais/2 mL solução para injeção; frasco-ampola" />
   </concept>
   <concept>
     <code value="BR0266863-1" />
@@ -234,11 +250,13 @@
   </concept>
   <concept>
     <code value="BR0266962" />
-    <display value="Somatropina 4 unidades internacionais pó para solução para injeção; frasco-ampola" />
+    <display
+      value="Somatropina 4 unidades internacionais pó para solução para injeção; frasco-ampola" />
   </concept>
   <concept>
     <code value="BR0266962E" />
-    <display value="Somatropina 4 unidades internacionais pó para solução para injeção; frasco-ampola" />
+    <display
+      value="Somatropina 4 unidades internacionais pó para solução para injeção; frasco-ampola" />
   </concept>
   <concept>
     <code value="BR0266963" />
@@ -246,7 +264,8 @@
   </concept>
   <concept>
     <code value="BR0266963E" />
-    <display value="Somatropina 12 unidades internacionais pó para solução para injeção; frasco-ampola" />
+    <display
+      value="Somatropina 12 unidades internacionais pó para solução para injeção; frasco-ampola" />
   </concept>
   <concept>
     <code value="BR0267077" />
@@ -258,7 +277,8 @@
   </concept>
   <concept>
     <code value="BR0267079" />
-    <display value="Alfaepoetina 3.000 unidades internacionais/1 mL solução para injeção; frasco-ampola" />
+    <display
+      value="Alfaepoetina 3.000 unidades internacionais/1 mL solução para injeção; frasco-ampola" />
   </concept>
   <concept>
     <code value="BR0267081" />
@@ -458,11 +478,13 @@
   </concept>
   <concept>
     <code value="BR0267328" />
-    <display value="Fosfato de Sódio Monobásico 160 mg/mL + Fosfato de Sódio Dibásico 60 mg/mL solução retal" />
+    <display
+      value="Fosfato de Sódio Monobásico 160 mg/mL + Fosfato de Sódio Dibásico 60 mg/mL solução retal" />
   </concept>
   <concept>
     <code value="BR0267328-1" />
-    <display value="Fosfato de Sódio Monobásico 160 mg/mL + Fosfato de Sódio Dibásico 60 mg/mL solução retal" />
+    <display
+      value="Fosfato de Sódio Monobásico 160 mg/mL + Fosfato de Sódio Dibásico 60 mg/mL solução retal" />
   </concept>
   <concept>
     <code value="BR0267355" />
@@ -546,27 +568,33 @@
   </concept>
   <concept>
     <code value="BR0267471" />
-    <display value="Alfapeginterferona 2b 177,6 microgramas pó e diluente para solução para injeção; frasco-ampola" />
+    <display
+      value="Alfapeginterferona 2b 177,6 microgramas pó e diluente para solução para injeção; frasco-ampola" />
   </concept>
   <concept>
     <code value="BR0267471E" />
-    <display value="Alfapeginterferona 2b 177,6 microgramas pó e diluente para solução para injeção; frasco-ampola" />
+    <display
+      value="Alfapeginterferona 2b 177,6 microgramas pó e diluente para solução para injeção; frasco-ampola" />
   </concept>
   <concept>
     <code value="BR0267472" />
-    <display value="Alfapeginterferona 2b 118,4 microgramas pó e diluente para solução para injeção; frasco-ampola" />
+    <display
+      value="Alfapeginterferona 2b 118,4 microgramas pó e diluente para solução para injeção; frasco-ampola" />
   </concept>
   <concept>
     <code value="BR0267472E" />
-    <display value="Alfapeginterferona 2b 118,4 microgramas pó e diluente para solução para injeção; frasco-ampola" />
+    <display
+      value="Alfapeginterferona 2b 118,4 microgramas pó e diluente para solução para injeção; frasco-ampola" />
   </concept>
   <concept>
     <code value="BR0267473" />
-    <display value="Alfapeginterferona 2b 148 microgramas pó e diluente para solução para injeção; frasco-ampola" />
+    <display
+      value="Alfapeginterferona 2b 148 microgramas pó e diluente para solução para injeção; frasco-ampola" />
   </concept>
   <concept>
     <code value="BR0267473E" />
-    <display value="Alfapeginterferona 2b 148 microgramas pó e diluente para solução para injeção; frasco-ampola" />
+    <display
+      value="Alfapeginterferona 2b 148 microgramas pó e diluente para solução para injeção; frasco-ampola" />
   </concept>
   <concept>
     <code value="BR0267501" />
@@ -1370,7 +1398,8 @@
   </concept>
   <concept>
     <code value="BR0268118" />
-    <display value="Filgrastim 300 microgramas/1 mL (30 milhões de unidades internacionais/1 mL) solução para injeção; ampola" />
+    <display
+      value="Filgrastim 300 microgramas/1 mL (30 milhões de unidades internacionais/1 mL) solução para injeção; ampola" />
   </concept>
   <concept>
     <code value="BR0268118E" />
@@ -1882,7 +1911,8 @@
   </concept>
   <concept>
     <code value="BR0268380" />
-    <display value="Alprostadil 20 microgramas pó e diluente para solução para injeção; frasco-ampola" />
+    <display
+      value="Alprostadil 20 microgramas pó e diluente para solução para injeção; frasco-ampola" />
   </concept>
   <concept>
     <code value="BR0268381-1" />
@@ -1902,7 +1932,8 @@
   </concept>
   <concept>
     <code value="BR0268390" />
-    <display value="Glicose 20 g + Cloreto de Sódio 3,5 g + Citrato de Sódio 2,5 g + Cloreto de Potássio 1,5 g pó para solução oral" />
+    <display
+      value="Glicose 20 g + Cloreto de Sódio 3,5 g + Citrato de Sódio 2,5 g + Cloreto de Potássio 1,5 g pó para solução oral" />
   </concept>
   <concept>
     <code value="BR0268393" />
@@ -2054,7 +2085,8 @@
   </concept>
   <concept>
     <code value="BR0268463" />
-    <display value="Heparina Sódica 5.000 unidades internacionais/0,25 mL solução para injeção; ampola" />
+    <display
+      value="Heparina Sódica 5.000 unidades internacionais/0,25 mL solução para injeção; ampola" />
   </concept>
   <concept>
     <code value="BR0268469" />
@@ -2254,7 +2286,8 @@
   </concept>
   <concept>
     <code value="BR0268691" />
-    <display value="Concentrado de Complexo Protrombínico 510 unidades internacionais pó e diluente para solução para injeção; frasco-ampola" />
+    <display
+      value="Concentrado de Complexo Protrombínico 510 unidades internacionais pó e diluente para solução para injeção; frasco-ampola" />
   </concept>
   <concept>
     <code value="BR0268808" />
@@ -2402,7 +2435,8 @@
   </concept>
   <concept>
     <code value="BR0268971" />
-    <display value="Polimixina B 500.000 unidades internacionais pó para solução para injeção; frasco-ampola" />
+    <display
+      value="Polimixina B 500.000 unidades internacionais pó para solução para injeção; frasco-ampola" />
   </concept>
   <concept>
     <code value="BR0268972" />
@@ -2570,7 +2604,8 @@
   </concept>
   <concept>
     <code value="BR0269833" />
-    <display value="Prilocaína 54 mg/1,8 mL + Felipressina 0,054 unidades internacionais/1,8 mL solução para injeção; carpule" />
+    <display
+      value="Prilocaína 54 mg/1,8 mL + Felipressina 0,054 unidades internacionais/1,8 mL solução para injeção; carpule" />
   </concept>
   <concept>
     <code value="BR0269835-1" />
@@ -2626,11 +2661,13 @@
   </concept>
   <concept>
     <code value="BR0269851" />
-    <display value="Lidocaína 20 mg/mL (2%) + Epinefrina 0,01 mg/mL (1:100.000) solução para injeção 1,8 mL; carpule" />
+    <display
+      value="Lidocaína 20 mg/mL (2%) + Epinefrina 0,01 mg/mL (1:100.000) solução para injeção 1,8 mL; carpule" />
   </concept>
   <concept>
     <code value="BR0269872" />
-    <display value="Hidrocortisona 5 mg/g (0,5%) + Lidocaína 20 mg/g (2%) + Subgalato de Bismuto 20 mg/g (2%) + Óxido de Zinco 100 mg/g (10%) pomada" />
+    <display
+      value="Hidrocortisona 5 mg/g (0,5%) + Lidocaína 20 mg/g (2%) + Subgalato de Bismuto 20 mg/g (2%) + Óxido de Zinco 100 mg/g (10%) pomada" />
   </concept>
   <concept>
     <code value="BR0269881-2" />
@@ -2678,7 +2715,8 @@
   </concept>
   <concept>
     <code value="BR0269977" />
-    <display value="Omeprazol 20 mg cápsula gastrorresistente e Claritromicina 500 mg comprimido e Amoxicilina 500 mg cápsula" />
+    <display
+      value="Omeprazol 20 mg cápsula gastrorresistente e Claritromicina 500 mg comprimido e Amoxicilina 500 mg cápsula" />
   </concept>
   <concept>
     <code value="BR0269986-1" />
@@ -2814,11 +2852,13 @@
   </concept>
   <concept>
     <code value="BR0270095" />
-    <display value="Bupivacaína 20 mg/4 mL + Glicose 320 mg/4 mL solução para injeção; frasco-ampola" />
+    <display
+      value="Bupivacaína 20 mg/4 mL + Glicose 320 mg/4 mL solução para injeção; frasco-ampola" />
   </concept>
   <concept>
     <code value="BR0270096" />
-    <display value="Bupivacaína 100 mg/20 mL (0,5%) + Epinefrina 100 microgramas/20 mL (1:200.000) solução para injeção; frasco-ampola" />
+    <display
+      value="Bupivacaína 100 mg/20 mL (0,5%) + Epinefrina 100 microgramas/20 mL (1:200.000) solução para injeção; frasco-ampola" />
   </concept>
   <concept>
     <code value="BR0270114-1" />
@@ -2898,7 +2938,8 @@
   </concept>
   <concept>
     <code value="BR0270220" />
-    <display value="Succinato Sódico de Hidrocortisona 100 mg pó para solução para injeção; frasco-ampola" />
+    <display
+      value="Succinato Sódico de Hidrocortisona 100 mg pó para solução para injeção; frasco-ampola" />
   </concept>
   <concept>
     <code value="BR0270224" />
@@ -2906,15 +2947,18 @@
   </concept>
   <concept>
     <code value="BR0270228" />
-    <display value="Polimixina B 10.000 unidades internacionais/mL + Neomicina 5 mg/mL + Hidrocortisona 10 mg/mL suspensão otológica" />
+    <display
+      value="Polimixina B 10.000 unidades internacionais/mL + Neomicina 5 mg/mL + Hidrocortisona 10 mg/mL suspensão otológica" />
   </concept>
   <concept>
     <code value="BR0270229" />
-    <display value="Polimixina B 11.000 unidades internacionais/mL + Neomicina 3,85 mg/mL + Fluocinolona 0,275 mg/mL + Lidocaína 20 mg/mL solução otológica" />
+    <display
+      value="Polimixina B 11.000 unidades internacionais/mL + Neomicina 3,85 mg/mL + Fluocinolona 0,275 mg/mL + Lidocaína 20 mg/mL solução otológica" />
   </concept>
   <concept>
     <code value="BR0270231" />
-    <display value="Dexametasona 1 mg/g + Neomicina 5 mg/g + Polimixina B 6.000 unidades internacionais/g pomada oftálmica" />
+    <display
+      value="Dexametasona 1 mg/g + Neomicina 5 mg/g + Polimixina B 6.000 unidades internacionais/g pomada oftálmica" />
   </concept>
   <concept>
     <code value="BR0270366" />
@@ -2986,7 +3030,8 @@
   </concept>
   <concept>
     <code value="BR0270456" />
-    <display value="Dexametasona 0,05 mg/mL + Cloranfenicol 5 mg/mL + Tetrizolina 0,25 mg/mL solução oftálmica" />
+    <display
+      value="Dexametasona 0,05 mg/mL + Cloranfenicol 5 mg/mL + Tetrizolina 0,25 mg/mL solução oftálmica" />
   </concept>
   <concept>
     <code value="BR0270457" />
@@ -2994,7 +3039,8 @@
   </concept>
   <concept>
     <code value="BR0270458" />
-    <display value="Nafazolina 0,75 mg/mL + Dexametasona 0,5 mg/mL + Neomicina 5 mg/mL solução spray" />
+    <display
+      value="Nafazolina 0,75 mg/mL + Dexametasona 0,5 mg/mL + Neomicina 5 mg/mL solução spray" />
   </concept>
   <concept>
     <code value="BR0270494" />
@@ -3046,7 +3092,8 @@
   </concept>
   <concept>
     <code value="BR0270590" />
-    <display value="Dipropionato de Betametasona 5 mg/1 mL + Fosfato Dissódico de Betametasona 2 mg/1 mL suspensão para injeção; ampola" />
+    <display
+      value="Dipropionato de Betametasona 5 mg/1 mL + Fosfato Dissódico de Betametasona 2 mg/1 mL suspensão para injeção; ampola" />
   </concept>
   <concept>
     <code value="BR0270591" />
@@ -3054,7 +3101,8 @@
   </concept>
   <concept>
     <code value="BR0270593" />
-    <display value="Cetoconazol 20 mg/g + Dipropionato de Betametasona 0,5 mg/g + Neomicina 2,5 mg/g creme" />
+    <display
+      value="Cetoconazol 20 mg/g + Dipropionato de Betametasona 0,5 mg/g + Neomicina 2,5 mg/g creme" />
   </concept>
   <concept>
     <code value="BR0270596" />
@@ -3062,15 +3110,18 @@
   </concept>
   <concept>
     <code value="BR0270597" />
-    <display value="Fosfato Dissódico de Betametasona 3 mg/1 mL + Acetato de Betametasona 3 mg/1 mL suspensão para injeção; ampola" />
+    <display
+      value="Fosfato Dissódico de Betametasona 3 mg/1 mL + Acetato de Betametasona 3 mg/1 mL suspensão para injeção; ampola" />
   </concept>
   <concept>
     <code value="BR0270602" />
-    <display value="Valerato de Betametasona 0,5 mg/g + Gentamicina 1 mg/g + Tolnaftato 10 mg/g + Clioquinol 10 mg/g creme" />
+    <display
+      value="Valerato de Betametasona 0,5 mg/g + Gentamicina 1 mg/g + Tolnaftato 10 mg/g + Clioquinol 10 mg/g creme" />
   </concept>
   <concept>
     <code value="BR0270602-1" />
-    <display value="Valerato de Betametasona 0,5 mg/g + Gentamicina 1 mg/g + Tolnaftato 10 mg/g + Clioquinol 10 mg/g creme" />
+    <display
+      value="Valerato de Betametasona 0,5 mg/g + Gentamicina 1 mg/g + Tolnaftato 10 mg/g + Clioquinol 10 mg/g creme" />
   </concept>
   <concept>
     <code value="BR0270605" />
@@ -3086,23 +3137,28 @@
   </concept>
   <concept>
     <code value="BR0270612" />
-    <display value="Benzilpenicilina Benzatina 1.200.000 unidades internacionais pó para suspensão para injeção; frasco-ampola" />
+    <display
+      value="Benzilpenicilina Benzatina 1.200.000 unidades internacionais pó para suspensão para injeção; frasco-ampola" />
   </concept>
   <concept>
     <code value="BR0270613" />
-    <display value="Benzilpenicilina Benzatina 600.000 unidades internacionais pó para suspensão para injeção; frasco-ampola" />
+    <display
+      value="Benzilpenicilina Benzatina 600.000 unidades internacionais pó para suspensão para injeção; frasco-ampola" />
   </concept>
   <concept>
     <code value="BR0270614" />
-    <display value="Benzilpenicilina Procaína 300.000 unidades internacionais + Benzilpenicilina Potássica 100.000 unidades internacionais pó para suspensão para injeção; frasco-ampola" />
+    <display
+      value="Benzilpenicilina Procaína 300.000 unidades internacionais + Benzilpenicilina Potássica 100.000 unidades internacionais pó para suspensão para injeção; frasco-ampola" />
   </concept>
   <concept>
     <code value="BR0270615" />
-    <display value="Benzilpenicilina Potássica 1.000.000 unidades internacionais/2 mL solução para injeção; frasco-ampola" />
+    <display
+      value="Benzilpenicilina Potássica 1.000.000 unidades internacionais/2 mL solução para injeção; frasco-ampola" />
   </concept>
   <concept>
     <code value="BR0270616" />
-    <display value="Benzilpenicilina Potássica 5.000.000 unidades internacionais pó para solução para injeção; frasco-ampola" />
+    <display
+      value="Benzilpenicilina Potássica 5.000.000 unidades internacionais pó para solução para injeção; frasco-ampola" />
   </concept>
   <concept>
     <code value="BR0270620" />
@@ -3126,7 +3182,8 @@
   </concept>
   <concept>
     <code value="BR0270711" />
-    <display value="Lansoprazol 30 mg cápsula gastrorresistente e Claritromicina 500 mg comprimido e Amoxicilina 500 mg cápsula" />
+    <display
+      value="Lansoprazol 30 mg cápsula gastrorresistente e Claritromicina 500 mg comprimido e Amoxicilina 500 mg cápsula" />
   </concept>
   <concept>
     <code value="BR0270713" />
@@ -3198,7 +3255,8 @@
   </concept>
   <concept>
     <code value="BR0270813-2" />
-    <display value="Cianocobalamina 5 mg/2 mL + Tiamina 100 mg/2 mL + Piridoxina 100 mg/2 mL solução para injeção; ampola" />
+    <display
+      value="Cianocobalamina 5 mg/2 mL + Tiamina 100 mg/2 mL + Piridoxina 100 mg/2 mL solução para injeção; ampola" />
   </concept>
   <concept>
     <code value="BR0270833" />
@@ -3234,15 +3292,18 @@
   </concept>
   <concept>
     <code value="BR0270889" />
-    <display value="Escina 10 mg/g + Polissulfato de Escina Sódica 10 mg/g + Salicilato de Dietilamina 50 mg/g gel" />
+    <display
+      value="Escina 10 mg/g + Polissulfato de Escina Sódica 10 mg/g + Salicilato de Dietilamina 50 mg/g gel" />
   </concept>
   <concept>
     <code value="BR0270889-1" />
-    <display value="Escina 10 mg/g + Polissulfato de Escina Sódica 10 mg/g + Salicilato de Dietilamina 50 mg/g gel" />
+    <display
+      value="Escina 10 mg/g + Polissulfato de Escina Sódica 10 mg/g + Salicilato de Dietilamina 50 mg/g gel" />
   </concept>
   <concept>
     <code value="BR0270893" />
-    <display value="Carbonato de Cálcio 1,25 g (Cálcio 500 mg) + Colecalciferol 200 unidades internacionais comprimido" />
+    <display
+      value="Carbonato de Cálcio 1,25 g (Cálcio 500 mg) + Colecalciferol 200 unidades internacionais comprimido" />
   </concept>
   <concept>
     <code value="BR0270895-1" />
@@ -3270,11 +3331,13 @@
   </concept>
   <concept>
     <code value="BR0270917" />
-    <display value="Paracetamol 300 mg + Diclofenaco Sódico 50 mg + Carisoprodol 125 mg + Cafeína 30 mg comprimido" />
+    <display
+      value="Paracetamol 300 mg + Diclofenaco Sódico 50 mg + Carisoprodol 125 mg + Cafeína 30 mg comprimido" />
   </concept>
   <concept>
     <code value="BR0270965" />
-    <display value="Ácido Acetilsalicílico 100 mg + Carbonato de Magnésio 30 mg + Glicinato de Alumínio 15 mg comprimido" />
+    <display
+      value="Ácido Acetilsalicílico 100 mg + Carbonato de Magnésio 30 mg + Glicinato de Alumínio 15 mg comprimido" />
   </concept>
   <concept>
     <code value="BR0270971" />
@@ -3338,11 +3401,13 @@
   </concept>
   <concept>
     <code value="BR0271064" />
-    <display value="Hidróxido de Alumínio 40 mg/mL + Hidróxido de Magnésio 30 mg/mL + Simeticona 5 mg/mL suspensão oral" />
+    <display
+      value="Hidróxido de Alumínio 40 mg/mL + Hidróxido de Magnésio 30 mg/mL + Simeticona 5 mg/mL suspensão oral" />
   </concept>
   <concept>
     <code value="BR0271064-1" />
-    <display value="Hidróxido de Alumínio 40 mg/mL + Hidróxido de Magnésio 30 mg/mL + Simeticona 5 mg/mL suspensão oral" />
+    <display
+      value="Hidróxido de Alumínio 40 mg/mL + Hidróxido de Magnésio 30 mg/mL + Simeticona 5 mg/mL suspensão oral" />
   </concept>
   <concept>
     <code value="BR0271077" />
@@ -3358,7 +3423,8 @@
   </concept>
   <concept>
     <code value="BR0271099" />
-    <display value="Amoxicilina 500 mg + Ácido Clavulânico 100 mg pó para solução para injeção; frasco-ampola" />
+    <display
+      value="Amoxicilina 500 mg + Ácido Clavulânico 100 mg pó para solução para injeção; frasco-ampola" />
   </concept>
   <concept>
     <code value="BR0271101" />
@@ -3570,7 +3636,8 @@
   </concept>
   <concept>
     <code value="BR0271355" />
-    <display value="Metronidazol 100 mg/g + Nistatina 20.000 unidades internacionais/g creme vaginal" />
+    <display
+      value="Metronidazol 100 mg/g + Nistatina 20.000 unidades internacionais/g creme vaginal" />
   </concept>
   <concept>
     <code value="BR0271356" />
@@ -3666,11 +3733,13 @@
   </concept>
   <concept>
     <code value="BR0271599" />
-    <display value="Succinato Sódico de Metilprednisolona 500 mg pó para solução para injeção; frasco-ampola" />
+    <display
+      value="Succinato Sódico de Metilprednisolona 500 mg pó para solução para injeção; frasco-ampola" />
   </concept>
   <concept>
     <code value="BR0271600" />
-    <display value="Succinato Sódico de Metilprednisolona 125 mg pó para solução para injeção; frasco-ampola" />
+    <display
+      value="Succinato Sódico de Metilprednisolona 125 mg pó para solução para injeção; frasco-ampola" />
   </concept>
   <concept>
     <code value="BR0271604" />
@@ -3822,11 +3891,13 @@
   </concept>
   <concept>
     <code value="BR0271724" />
-    <display value="Piperacilina 2 g + Tazobactam 250 mg pó para solução para injeção; frasco-ampola" />
+    <display
+      value="Piperacilina 2 g + Tazobactam 250 mg pó para solução para injeção; frasco-ampola" />
   </concept>
   <concept>
     <code value="BR0271725" />
-    <display value="Piperacilina 4 g + Tazobactam 500 mg pó para solução para injeção; frasco-ampola" />
+    <display
+      value="Piperacilina 4 g + Tazobactam 500 mg pó para solução para injeção; frasco-ampola" />
   </concept>
   <concept>
     <code value="BR0271727" />
@@ -4178,11 +4249,13 @@
   </concept>
   <concept>
     <code value="BR0272334-1" />
-    <display value="Dimenidrinato 50 mg/1 mL + Piridoxina 50 mg/1 mL solução para injeção; frasco-ampola" />
+    <display
+      value="Dimenidrinato 50 mg/1 mL + Piridoxina 50 mg/1 mL solução para injeção; frasco-ampola" />
   </concept>
   <concept>
     <code value="BR0272334-2" />
-    <display value="Dimenidrinato 500 mg/10 mL + Piridoxina 500 mg/10 mL solução para injeção; ampola" />
+    <display
+      value="Dimenidrinato 500 mg/10 mL + Piridoxina 500 mg/10 mL solução para injeção; ampola" />
   </concept>
   <concept>
     <code value="BR0272335" />
@@ -4190,7 +4263,8 @@
   </concept>
   <concept>
     <code value="BR0272336" />
-    <display value="Dimenidrinato 30 mg/10 mL + Piridoxina 50 mg/10 mL + Glicose 1 g/10 mL + Frutose 1 g/10 mL solução para injeção; ampola" />
+    <display
+      value="Dimenidrinato 30 mg/10 mL + Piridoxina 50 mg/10 mL + Glicose 1 g/10 mL + Frutose 1 g/10 mL solução para injeção; ampola" />
   </concept>
   <concept>
     <code value="BR0272337" />
@@ -4282,7 +4356,8 @@
   </concept>
   <concept>
     <code value="BR0272410" />
-    <display value="Fluocinolona 0,25 mg/mL + Nafazolina 0,5 mg/mL + Zinco 4 mg/mL + Neomicina 7 mg/mL solução oftálmica" />
+    <display
+      value="Fluocinolona 0,25 mg/mL + Nafazolina 0,5 mg/mL + Zinco 4 mg/mL + Neomicina 7 mg/mL solução oftálmica" />
   </concept>
   <concept>
     <code value="BR0272411" />
@@ -4362,11 +4437,13 @@
   </concept>
   <concept>
     <code value="BR0272469" />
-    <display value="Dalteparina Sódica 5.000 unidades internacionais /0,2 mL solução para injeção; seringa preenchida" />
+    <display
+      value="Dalteparina Sódica 5.000 unidades internacionais /0,2 mL solução para injeção; seringa preenchida" />
   </concept>
   <concept>
     <code value="BR0272470" />
-    <display value="Dalteparina Sódica 2.500 unidades internacionais /0,2 mL solução para injeção; seringa preenchida" />
+    <display
+      value="Dalteparina Sódica 2.500 unidades internacionais /0,2 mL solução para injeção; seringa preenchida" />
   </concept>
   <concept>
     <code value="BR0272471E" />
@@ -4430,15 +4507,18 @@
   </concept>
   <concept>
     <code value="BR0272567" />
-    <display value="Retinol 5.500 unidades internacionais/mL + Colecalciferol 2.200 unidades internacionais/mL solução oral" />
+    <display
+      value="Retinol 5.500 unidades internacionais/mL + Colecalciferol 2.200 unidades internacionais/mL solução oral" />
   </concept>
   <concept>
     <code value="BR0272568" />
-    <display value="Retinol 50.000 unidades internacionais/mL + Colecalciferol 10.000 unidades internacionais/mL solução oral" />
+    <display
+      value="Retinol 50.000 unidades internacionais/mL + Colecalciferol 10.000 unidades internacionais/mL solução oral" />
   </concept>
   <concept>
     <code value="BR0272568-2" />
-    <display value="Retinol 50.000 unidades internacionais/mL + Colecalciferol 10.000 unidades internacionais/mL solução oral" />
+    <display
+      value="Retinol 50.000 unidades internacionais/mL + Colecalciferol 10.000 unidades internacionais/mL solução oral" />
   </concept>
   <concept>
     <code value="BR0272572" />
@@ -4602,7 +4682,8 @@
   </concept>
   <concept>
     <code value="BR0272796" />
-    <display value="Heparina Sódica 25.000 unidades internacionais/5 mL solução para injeção; frasco-ampola" />
+    <display
+      value="Heparina Sódica 25.000 unidades internacionais/5 mL solução para injeção; frasco-ampola" />
   </concept>
   <concept>
     <code value="BR0272807" />
@@ -4842,7 +4923,8 @@
   </concept>
   <concept>
     <code value="BR0272974" />
-    <display value="Fenoximetilpenicilina Potássica 1.200.000 unidades internacionais solução para injeção; frasco-ampola" />
+    <display
+      value="Fenoximetilpenicilina Potássica 1.200.000 unidades internacionais solução para injeção; frasco-ampola" />
   </concept>
   <concept>
     <code value="BR0272979" />
@@ -4894,7 +4976,8 @@
   </concept>
   <concept>
     <code value="BR0273132" />
-    <display value="Cloridrato de Difenidramina 10 mg/mL + Calamina 80 mg/mL + Cânfora 1 mg/mL loção" />
+    <display
+      value="Cloridrato de Difenidramina 10 mg/mL + Calamina 80 mg/mL + Cânfora 1 mg/mL loção" />
   </concept>
   <concept>
     <code value="BR0273137" />
@@ -5154,7 +5237,8 @@
   </concept>
   <concept>
     <code value="BR0273579" />
-    <display value="Cloridrato de Difenidramina 1,5 mg/mL + Paracetamol 12 mg/mL + Pseudoefedrina 1,5 mg/mL + Dropropizina 1,5 mg/mL xarope" />
+    <display
+      value="Cloridrato de Difenidramina 1,5 mg/mL + Paracetamol 12 mg/mL + Pseudoefedrina 1,5 mg/mL + Dropropizina 1,5 mg/mL xarope" />
   </concept>
   <concept>
     <code value="BR0273589" />
@@ -5194,7 +5278,8 @@
   </concept>
   <concept>
     <code value="BR0273642" />
-    <display value="Hidróxido de Alumínio 200 mg + Hidróxido de Magnésio 200 mg comprimido mastigável" />
+    <display
+      value="Hidróxido de Alumínio 200 mg + Hidróxido de Magnésio 200 mg comprimido mastigável" />
   </concept>
   <concept>
     <code value="BR0273664" />
@@ -5394,7 +5479,8 @@
   </concept>
   <concept>
     <code value="BR0274393" />
-    <display value="Brometo de Ipratrópio 20 microgramas/dose + Salbutamol 100 microgramas/dose suspensão aerossol" />
+    <display
+      value="Brometo de Ipratrópio 20 microgramas/dose + Salbutamol 100 microgramas/dose suspensão aerossol" />
   </concept>
   <concept>
     <code value="BR0274438" />
@@ -5482,11 +5568,13 @@
   </concept>
   <concept>
     <code value="BR0274918-1" />
-    <display value="Retinol 10.000 unidades internacionais/g + Aminoácidos 25 mg/g + Metionina 5 mg/g + Cloranfenicol 5 mg/g pomada oftálmica" />
+    <display
+      value="Retinol 10.000 unidades internacionais/g + Aminoácidos 25 mg/g + Metionina 5 mg/g + Cloranfenicol 5 mg/g pomada oftálmica" />
   </concept>
   <concept>
     <code value="BR0274918-2" />
-    <display value="Retinol 10.000 unidades internacionais/g + Aminoácidos 25 mg/g + Metionina 5 mg/g + Cloranfenicol 5 mg/g pomada oftálmica" />
+    <display
+      value="Retinol 10.000 unidades internacionais/g + Aminoácidos 25 mg/g + Metionina 5 mg/g + Cloranfenicol 5 mg/g pomada oftálmica" />
   </concept>
   <concept>
     <code value="BR0274921" />
@@ -5498,7 +5586,8 @@
   </concept>
   <concept>
     <code value="BR0274936" />
-    <display value="Triancinolona Acetonida 1 mg/g + Neomicina 2,5 mg/g + Gramicidina 0,25 mg/g + Nistatina 100.000 unidades internacionais/g pomada" />
+    <display
+      value="Triancinolona Acetonida 1 mg/g + Neomicina 2,5 mg/g + Gramicidina 0,25 mg/g + Nistatina 100.000 unidades internacionais/g pomada" />
   </concept>
   <concept>
     <code value="BR0274989" />
@@ -5558,7 +5647,8 @@
   </concept>
   <concept>
     <code value="BR0275402" />
-    <display value="Lidocaína 200 mg/20 mL (1%) + Epinefrina 100 microgramas/20 mL (1:200.000) solução para injeção; frasco-ampola" />
+    <display
+      value="Lidocaína 200 mg/20 mL (1%) + Epinefrina 100 microgramas/20 mL (1:200.000) solução para injeção; frasco-ampola" />
   </concept>
   <concept>
     <code value="BR0275422" />
@@ -5586,15 +5676,18 @@
   </concept>
   <concept>
     <code value="BR0275475" />
-    <display value="Dipirona 500 mg/1,5 mL + Prometazina 5 mg/1,5 mL + Adifenina 10 mg/1,5 mL solução oral" />
+    <display
+      value="Dipirona 500 mg/1,5 mL + Prometazina 5 mg/1,5 mL + Adifenina 10 mg/1,5 mL solução oral" />
   </concept>
   <concept>
     <code value="BR0275475-1" />
-    <display value="Dipirona 500 mg/1,5 mL + Prometazina 5 mg/1,5 mL + Adifenina 10 mg/1,5 mL solução oral" />
+    <display
+      value="Dipirona 500 mg/1,5 mL + Prometazina 5 mg/1,5 mL + Adifenina 10 mg/1,5 mL solução oral" />
   </concept>
   <concept>
     <code value="BR0275475-2" />
-    <display value="Dipirona 500 mg/1,5 mL + Prometazina 5 mg/1,5 mL + Adifenina 10 mg/1,5 mL solução oral" />
+    <display
+      value="Dipirona 500 mg/1,5 mL + Prometazina 5 mg/1,5 mL + Adifenina 10 mg/1,5 mL solução oral" />
   </concept>
   <concept>
     <code value="BR0275475-3" />
@@ -5602,7 +5695,8 @@
   </concept>
   <concept>
     <code value="BR0275476" />
-    <display value="Dipirona 750 mg/ 2 mL +  Prometazina 25 mg/ 2 mL + Adifenina 25 mg/ 2 mL solução para injeção; ampola" />
+    <display
+      value="Dipirona 750 mg/ 2 mL +  Prometazina 25 mg/ 2 mL + Adifenina 25 mg/ 2 mL solução para injeção; ampola" />
   </concept>
   <concept>
     <code value="BR0275478" />
@@ -5610,7 +5704,8 @@
   </concept>
   <concept>
     <code value="BR0275651" />
-    <display value="Alfacoriogonadotropina 6.500 unidades internacionais (250 microgramas)/0,5 mL solução para injeção; seringa preenchida" />
+    <display
+      value="Alfacoriogonadotropina 6.500 unidades internacionais (250 microgramas)/0,5 mL solução para injeção; seringa preenchida" />
   </concept>
   <concept>
     <code value="BR0275852-1" />
@@ -5622,7 +5717,8 @@
   </concept>
   <concept>
     <code value="BR0275884" />
-    <display value="Colistimetato de Sódio 1.000.000 unidades internacionais pó para solução; frasco-ampola" />
+    <display
+      value="Colistimetato de Sódio 1.000.000 unidades internacionais pó para solução; frasco-ampola" />
   </concept>
   <concept>
     <code value="BR0275888" />
@@ -5678,7 +5774,8 @@
   </concept>
   <concept>
     <code value="BR0276235" />
-    <display value="Insulina Lispro Bifásica (25/75) 100 unidades/mL suspensão para injeção 3 mL; carpule" />
+    <display
+      value="Insulina Lispro Bifásica (25/75) 100 unidades/mL suspensão para injeção 3 mL; carpule" />
   </concept>
   <concept>
     <code value="BR0276258" />
@@ -5722,7 +5819,8 @@
   </concept>
   <concept>
     <code value="BR0276332" />
-    <display value="Picossulfato de Sódio 0,334 mg/mL + Óleo Mineral 282,25 mg/mL + Ágar-Ágar 2,72 mg/mL emulsão oral" />
+    <display
+      value="Picossulfato de Sódio 0,334 mg/mL + Óleo Mineral 282,25 mg/mL + Ágar-Ágar 2,72 mg/mL emulsão oral" />
   </concept>
   <concept>
     <code value="BR0276333" />
@@ -5854,7 +5952,8 @@
   </concept>
   <concept>
     <code value="BR0276867-1" />
-    <display value="Secnidazol 1 g comprimido e Tioconazol 20 mg/g + Tinidazol 30 mg/g creme vaginal" />
+    <display
+      value="Secnidazol 1 g comprimido e Tioconazol 20 mg/g + Tinidazol 30 mg/g creme vaginal" />
   </concept>
   <concept>
     <code value="BR0276871-1" />
@@ -5906,15 +6005,18 @@
   </concept>
   <concept>
     <code value="BR0277434E" />
-    <display value="Betainterferona 1a 12.000.000 unidades internacionais (44 microgramas)/0,5 mL solução para injeção; seringa preenchida" />
+    <display
+      value="Betainterferona 1a 12.000.000 unidades internacionais (44 microgramas)/0,5 mL solução para injeção; seringa preenchida" />
   </concept>
   <concept>
     <code value="BR0277435E" />
-    <display value="Betainterferona 1a 6.000.000 unidades internacionais (22 microgramas)/0,5 mL solução para injeção; seringa preenchida" />
+    <display
+      value="Betainterferona 1a 6.000.000 unidades internacionais (22 microgramas)/0,5 mL solução para injeção; seringa preenchida" />
   </concept>
   <concept>
     <code value="BR0277438E" />
-    <display value="Betainterferona 1b 9.600.000 unidades internacionais (300 microgramas) pó para solução para injeção; frasco-ampola" />
+    <display
+      value="Betainterferona 1b 9.600.000 unidades internacionais (300 microgramas) pó para solução para injeção; frasco-ampola" />
   </concept>
   <concept>
     <code value="BR0277513" />
@@ -6018,7 +6120,8 @@
   </concept>
   <concept>
     <code value="BR0278429-1" />
-    <display value="Bupivacaína 50 mg/20 mL (0,25%) + Epinefrina 100 microgramas/20 mL (1:200.000) solução para injeção; frasco-ampola" />
+    <display
+      value="Bupivacaína 50 mg/20 mL (0,25%) + Epinefrina 100 microgramas/20 mL (1:200.000) solução para injeção; frasco-ampola" />
   </concept>
   <concept>
     <code value="BR0278482" />
@@ -6078,7 +6181,8 @@
   </concept>
   <concept>
     <code value="BR0279118" />
-    <display value="Ticarcilina 3 g + Clavulanato de Potássio 100 mg pó para solução para injeção; frasco-ampola" />
+    <display
+      value="Ticarcilina 3 g + Clavulanato de Potássio 100 mg pó para solução para injeção; frasco-ampola" />
   </concept>
   <concept>
     <code value="BR0279269" />
@@ -6102,7 +6206,8 @@
   </concept>
   <concept>
     <code value="BR0279298" />
-    <display value="Fenoterol 0,1 mg /dose + Brometo de Ipratrópio 0,04 mg/dose solução aerossol; inalador" />
+    <display
+      value="Fenoterol 0,1 mg /dose + Brometo de Ipratrópio 0,04 mg/dose solução aerossol; inalador" />
   </concept>
   <concept>
     <code value="BR0279338-1" />
@@ -6118,27 +6223,33 @@
   </concept>
   <concept>
     <code value="BR0279493-1" />
-    <display value="Retinol 5.000 unidades internacionais/g + Colecalciferol 900 unidades internacionais/g + Óxido de Zinco 150 mg/g pomada" />
+    <display
+      value="Retinol 5.000 unidades internacionais/g + Colecalciferol 900 unidades internacionais/g + Óxido de Zinco 150 mg/g pomada" />
   </concept>
   <concept>
     <code value="BR0279493-2" />
-    <display value="Retinol 5.000 unidades internacionais/g + Colecalciferol 900 unidades internacionais/g + Óxido de Zinco 150 mg/g pomada" />
+    <display
+      value="Retinol 5.000 unidades internacionais/g + Colecalciferol 900 unidades internacionais/g + Óxido de Zinco 150 mg/g pomada" />
   </concept>
   <concept>
     <code value="BR0279493-3" />
-    <display value="Retinol 5.000 unidades internacionais/g + Colecalciferol 900 unidades internacionais/g + Óxido de Zinco 150 mg/g pomada" />
+    <display
+      value="Retinol 5.000 unidades internacionais/g + Colecalciferol 900 unidades internacionais/g + Óxido de Zinco 150 mg/g pomada" />
   </concept>
   <concept>
     <code value="BR0279493-4" />
-    <display value="Retinol 5.000 unidades internacionais/g + Colecalciferol 900 unidades internacionais/g + Óxido de Zinco 150 mg/g pomada" />
+    <display
+      value="Retinol 5.000 unidades internacionais/g + Colecalciferol 900 unidades internacionais/g + Óxido de Zinco 150 mg/g pomada" />
   </concept>
   <concept>
     <code value="BR0279493-5" />
-    <display value="Retinol 5.000 unidades internacionais/g + Colecalciferol 900 unidades internacionais/g + Óxido de Zinco 150 mg/g pomada" />
+    <display
+      value="Retinol 5.000 unidades internacionais/g + Colecalciferol 900 unidades internacionais/g + Óxido de Zinco 150 mg/g pomada" />
   </concept>
   <concept>
     <code value="BR0279493-6" />
-    <display value="Retinol 5.000 unidades internacionais/g + Colecalciferol 900 unidades internacionais/g + Óxido de Zinco 150 mg/g pomada" />
+    <display
+      value="Retinol 5.000 unidades internacionais/g + Colecalciferol 900 unidades internacionais/g + Óxido de Zinco 150 mg/g pomada" />
   </concept>
   <concept>
     <code value="BR0280115" />
@@ -6186,7 +6297,8 @@
   </concept>
   <concept>
     <code value="BR0280881" />
-    <display value="Propionato de Fluticasona 250 microgramas/dose + Salmeterol 25 microgramas/dose suspensão aerossol; inalador" />
+    <display
+      value="Propionato de Fluticasona 250 microgramas/dose + Salmeterol 25 microgramas/dose suspensão aerossol; inalador" />
   </concept>
   <concept>
     <code value="BR0280883" />
@@ -6274,7 +6386,8 @@
   </concept>
   <concept>
     <code value="BR0282757" />
-    <display value="Propionato de Testosterona 30 mg/1 mL + Fempropionato de Testosterona 60 mg/1 mL + Isocaproato de Testosterona 60 mg/1 mL + Decanoato de Testosterona 100 mg/1 mL solução para injeção; ampola" />
+    <display
+      value="Propionato de Testosterona 30 mg/1 mL + Fempropionato de Testosterona 60 mg/1 mL + Isocaproato de Testosterona 60 mg/1 mL + Decanoato de Testosterona 100 mg/1 mL solução para injeção; ampola" />
   </concept>
   <concept>
     <code value="BR0282881" />
@@ -6334,7 +6447,8 @@
   </concept>
   <concept>
     <code value="BR0284429" />
-    <display value="Beclometasona 50 microgramas/dose + Salbutamol 100 microgramas/dose suspensão aerossol; inalador" />
+    <display
+      value="Beclometasona 50 microgramas/dose + Salbutamol 100 microgramas/dose suspensão aerossol; inalador" />
   </concept>
   <concept>
     <code value="BR0284435-1" />
@@ -6378,23 +6492,28 @@
   </concept>
   <concept>
     <code value="BR0284838" />
-    <display value="Alfafolitropina 37,5 unidades internacionais pó para solução para injeção; frasco-ampola" />
+    <display
+      value="Alfafolitropina 37,5 unidades internacionais pó para solução para injeção; frasco-ampola" />
   </concept>
   <concept>
     <code value="BR0284839" />
-    <display value="Alfafolitropina 75 unidades internacionais pó para solução para injeção; frasco-ampola" />
+    <display
+      value="Alfafolitropina 75 unidades internacionais pó para solução para injeção; frasco-ampola" />
   </concept>
   <concept>
     <code value="BR0284840" />
-    <display value="Alfafolitropina 150 unidades internacionais pó para solução para injeção; frasco-ampola" />
+    <display
+      value="Alfafolitropina 150 unidades internacionais pó para solução para injeção; frasco-ampola" />
   </concept>
   <concept>
     <code value="BR0284841" />
-    <display value="Alfafolitropina 450 unidades internacionais pó para solução para injeção; frasco-ampola" />
+    <display
+      value="Alfafolitropina 450 unidades internacionais pó para solução para injeção; frasco-ampola" />
   </concept>
   <concept>
     <code value="BR0284842" />
-    <display value="Alfafolitropina 1.050 unidades internacionais/2 mL solução para injeção; seringa preenchida" />
+    <display
+      value="Alfafolitropina 1.050 unidades internacionais/2 mL solução para injeção; seringa preenchida" />
   </concept>
   <concept>
     <code value="BR0285007" />
@@ -6622,7 +6741,8 @@
   </concept>
   <concept>
     <code value="BR0291019-1" />
-    <display value="Hialuronidase 100 UTR/mL + Lidocaína 50 mg/mL + Neomicina 5 mg/mL solução otológica" />
+    <display
+      value="Hialuronidase 100 UTR/mL + Lidocaína 50 mg/mL + Neomicina 5 mg/mL solução otológica" />
   </concept>
   <concept>
     <code value="BR0291174" />
@@ -6870,15 +6990,18 @@
   </concept>
   <concept>
     <code value="BR0292372E" />
-    <display value="Toxina Botulínica do Tipo A 100 unidades pó para solução para injeção; frasco-ampola" />
+    <display
+      value="Toxina Botulínica do Tipo A 100 unidades pó para solução para injeção; frasco-ampola" />
   </concept>
   <concept>
     <code value="BR0292373" />
-    <display value="Toxina Botulínica do Tipo A 500 unidades pó para solução para injeção; frasco-ampola" />
+    <display
+      value="Toxina Botulínica do Tipo A 500 unidades pó para solução para injeção; frasco-ampola" />
   </concept>
   <concept>
     <code value="BR0292373E" />
-    <display value="Toxina Botulínica do Tipo A 500 unidades pó para solução para injeção; frasco-ampola" />
+    <display
+      value="Toxina Botulínica do Tipo A 500 unidades pó para solução para injeção; frasco-ampola" />
   </concept>
   <concept>
     <code value="BR0292380" />
@@ -6950,7 +7073,8 @@
   </concept>
   <concept>
     <code value="BR0292427" />
-    <display value="Fosfato Dissódico de Dexametasona 10 mg/2,5 mL solução para injeção; frasco-ampola" />
+    <display
+      value="Fosfato Dissódico de Dexametasona 10 mg/2,5 mL solução para injeção; frasco-ampola" />
   </concept>
   <concept>
     <code value="BR0292468" />
@@ -7002,7 +7126,8 @@
   </concept>
   <concept>
     <code value="BR0293839" />
-    <display value="Glicose 20 g + Cloreto de Sódio 3,5 g + Citrato de Sódio 2,5 g + Cloreto de Potássio 1,5 g pó para solução oral" />
+    <display
+      value="Glicose 20 g + Cloreto de Sódio 3,5 g + Citrato de Sódio 2,5 g + Cloreto de Potássio 1,5 g pó para solução oral" />
   </concept>
   <concept>
     <code value="BR0293879" />
@@ -7026,7 +7151,8 @@
   </concept>
   <concept>
     <code value="BR0293981" />
-    <display value="Macrogol 13,12 g + Bicarbonato de Sódio 0,17 g + Cloreto de Sódio 0,35 g + Cloreto de Potássio 0,04 g pó para solução oral" />
+    <display
+      value="Macrogol 13,12 g + Bicarbonato de Sódio 0,17 g + Cloreto de Sódio 0,35 g + Cloreto de Potássio 0,04 g pó para solução oral" />
   </concept>
   <concept>
     <code value="BR0294094" />
@@ -7082,7 +7208,8 @@
   </concept>
   <concept>
     <code value="BR0294774" />
-    <display value="Alfaepoetina 40.000 unidades internacionais/1 mL solução para injeção; seringa preenchida" />
+    <display
+      value="Alfaepoetina 40.000 unidades internacionais/1 mL solução para injeção; seringa preenchida" />
   </concept>
   <concept>
     <code value="BR0294881E" />
@@ -7222,23 +7349,28 @@
   </concept>
   <concept>
     <code value="BR0296792-1" />
-    <display value="Propionato de Fluticasona 250 microgramas/dose + Salmeterol 50 microgramas/dose pó para inalação; inalador" />
+    <display
+      value="Propionato de Fluticasona 250 microgramas/dose + Salmeterol 50 microgramas/dose pó para inalação; inalador" />
   </concept>
   <concept>
     <code value="BR0296792-2" />
-    <display value="Propionato de Fluticasona 250 microgramas/dose + Salmeterol 50 microgramas/dose suspensão aerossol" />
+    <display
+      value="Propionato de Fluticasona 250 microgramas/dose + Salmeterol 50 microgramas/dose suspensão aerossol" />
   </concept>
   <concept>
     <code value="BR0296792-3" />
-    <display value="Propionato de Fluticasona 250 microgramas/dose + Salmeterol 50 microgramas/dose pó para inalação; inalador" />
+    <display
+      value="Propionato de Fluticasona 250 microgramas/dose + Salmeterol 50 microgramas/dose pó para inalação; inalador" />
   </concept>
   <concept>
     <code value="BR0296793-1" />
-    <display value="Propionato de Fluticasona 500 microgramas/dose + Salmeterol 50 microgramas/dose pó para inalação; inalador" />
+    <display
+      value="Propionato de Fluticasona 500 microgramas/dose + Salmeterol 50 microgramas/dose pó para inalação; inalador" />
   </concept>
   <concept>
     <code value="BR0296793-2" />
-    <display value="Propionato de Fluticasona 500 microgramas/dose + Salmeterol 50 microgramas/dose suspensão aerossol" />
+    <display
+      value="Propionato de Fluticasona 500 microgramas/dose + Salmeterol 50 microgramas/dose suspensão aerossol" />
   </concept>
   <concept>
     <code value="BR0296825" />
@@ -7246,7 +7378,8 @@
   </concept>
   <concept>
     <code value="BR0296876" />
-    <display value="Carbonato de Cálcio 1,25 g (Cálcio 500 mg) + Colecalciferol 400 unidades internacionais comprimido" />
+    <display
+      value="Carbonato de Cálcio 1,25 g (Cálcio 500 mg) + Colecalciferol 400 unidades internacionais comprimido" />
   </concept>
   <concept>
     <code value="BR0296940" />
@@ -7298,7 +7431,8 @@
   </concept>
   <concept>
     <code value="BR0298530" />
-    <display value="Estradiol 50 microgramas/24 horas + Acetato de Noretisterona 170 microgramas/24 horas adesivo transdérmico" />
+    <display
+      value="Estradiol 50 microgramas/24 horas + Acetato de Noretisterona 170 microgramas/24 horas adesivo transdérmico" />
   </concept>
   <concept>
     <code value="BR0298574-1" />
@@ -7458,7 +7592,8 @@
   </concept>
   <concept>
     <code value="BR0301748" />
-    <display value="Paracetamol 400 mg + Fenilefrina 20 mg comprimido e Paracetamol 400 mg + Carbinoxamina 4 mg comprimido" />
+    <display
+      value="Paracetamol 400 mg + Fenilefrina 20 mg comprimido e Paracetamol 400 mg + Carbinoxamina 4 mg comprimido" />
   </concept>
   <concept>
     <code value="BR0302442" />
@@ -7574,11 +7709,13 @@
   </concept>
   <concept>
     <code value="BR0305264" />
-    <display value="Levobupivacaína 100 mg/20 mL (0,5%) + Epinefrina 100 microgramas/20 mL (1:200.000) solução para injeção; frasco-ampola" />
+    <display
+      value="Levobupivacaína 100 mg/20 mL (0,5%) + Epinefrina 100 microgramas/20 mL (1:200.000) solução para injeção; frasco-ampola" />
   </concept>
   <concept>
     <code value="BR0305265" />
-    <display value="Levobupivacaína 150 mg/20 mL (0,75%) + Epinefrina 100 microgramas/20 mL (1:200.000) solução para injeção; frasco-ampola" />
+    <display
+      value="Levobupivacaína 150 mg/20 mL (0,75%) + Epinefrina 100 microgramas/20 mL (1:200.000) solução para injeção; frasco-ampola" />
   </concept>
   <concept>
     <code value="BR0305270" />
@@ -7690,11 +7827,13 @@
   </concept>
   <concept>
     <code value="BR0305652" />
-    <display value="Formoterol 12 microgramas/dose + Budesonida 400 microgramas/dose pó para inalação" />
+    <display
+      value="Formoterol 12 microgramas/dose + Budesonida 400 microgramas/dose pó para inalação" />
   </concept>
   <concept>
     <code value="BR0305652E" />
-    <display value="Formoterol 12 microgramas/dose + Budesonida 400 microgramas/dose pó para inalação" />
+    <display
+      value="Formoterol 12 microgramas/dose + Budesonida 400 microgramas/dose pó para inalação" />
   </concept>
   <concept>
     <code value="BR0305714" />
@@ -7754,7 +7893,8 @@
   </concept>
   <concept>
     <code value="BR0306361" />
-    <display value="Carbonato de Cálcio 1,5 g (Cálcio 600 mg) + Colecalciferol 400 unidades internacionais comprimido" />
+    <display
+      value="Carbonato de Cálcio 1,5 g (Cálcio 600 mg) + Colecalciferol 400 unidades internacionais comprimido" />
   </concept>
   <concept>
     <code value="BR0306465" />
@@ -7866,11 +8006,13 @@
   </concept>
   <concept>
     <code value="BR0308802-1" />
-    <display value="Fator VIII 500 unidades internacionais pó para solução para injeção; frasco-ampola" />
+    <display
+      value="Fator VIII 500 unidades internacionais pó para solução para injeção; frasco-ampola" />
   </concept>
   <concept>
     <code value="BR0308805" />
-    <display value="Fator IX 500 unidades internacionais pó para solução para injeção; frasco-ampola" />
+    <display
+      value="Fator IX 500 unidades internacionais pó para solução para injeção; frasco-ampola" />
   </concept>
   <concept>
     <code value="BR0308874" />
@@ -7910,7 +8052,8 @@
   </concept>
   <concept>
     <code value="BR0308885" />
-    <display value="Sulfametoxazol 400 mg/5 mL + Trimetoprima 80 mg/5 mL solução para injeção; ampola" />
+    <display
+      value="Sulfametoxazol 400 mg/5 mL + Trimetoprima 80 mg/5 mL solução para injeção; ampola" />
   </concept>
   <concept>
     <code value="BR0309040" />
@@ -7926,11 +8069,13 @@
   </concept>
   <concept>
     <code value="BR0309095" />
-    <display value="Formoterol 6 microgramas/dose + Budesonida 200 microgramas/dose pó para inalação; inalador" />
+    <display
+      value="Formoterol 6 microgramas/dose + Budesonida 200 microgramas/dose pó para inalação; inalador" />
   </concept>
   <concept>
     <code value="BR0309097" />
-    <display value="Formoterol 6 microgramas/dose + Budesonida 100 microgramas/dose pó para inalação; inalador" />
+    <display
+      value="Formoterol 6 microgramas/dose + Budesonida 100 microgramas/dose pó para inalação; inalador" />
   </concept>
   <concept>
     <code value="BR0309432" />
@@ -8130,7 +8275,8 @@
   </concept>
   <concept>
     <code value="BR0318943" />
-    <display value="Cloreto de Sódio 9 mg/mL (0,9%) + Cloreto de Benzalcônio 0,1 mg/mL (0,01%) + Nafazolina 0,5 mg/mL (0,05%) solução nasal" />
+    <display
+      value="Cloreto de Sódio 9 mg/mL (0,9%) + Cloreto de Benzalcônio 0,1 mg/mL (0,01%) + Nafazolina 0,5 mg/mL (0,05%) solução nasal" />
   </concept>
   <concept>
     <code value="BR0318945" />
@@ -8206,7 +8352,8 @@
   </concept>
   <concept>
     <code value="BR0321234-1" />
-    <display value="Dexametasona 1 mg/mL + Neomicina 3,5 mg/mL + Polimixina B 6.000 unidades internacionais/mL solução oftálmica" />
+    <display
+      value="Dexametasona 1 mg/mL + Neomicina 3,5 mg/mL + Polimixina B 6.000 unidades internacionais/mL solução oftálmica" />
   </concept>
   <concept>
     <code value="BR0321804" />
@@ -8214,7 +8361,8 @@
   </concept>
   <concept>
     <code value="BR0322033" />
-    <display value="Alfalutropina 75 unidades internacionais pó para solução para injeção; frasco-ampola" />
+    <display
+      value="Alfalutropina 75 unidades internacionais pó para solução para injeção; frasco-ampola" />
   </concept>
   <concept>
     <code value="BR0322254" />
@@ -8242,7 +8390,8 @@
   </concept>
   <concept>
     <code value="BR0324358" />
-    <display value="Anfotericina B Complexo Lipídico 100 mg/20 mL suspensão para injeção; frasco-ampola" />
+    <display
+      value="Anfotericina B Complexo Lipídico 100 mg/20 mL suspensão para injeção; frasco-ampola" />
   </concept>
   <concept>
     <code value="BR0324414" />
@@ -8314,7 +8463,8 @@
   </concept>
   <concept>
     <code value="BR0327766-1" />
-    <display value="Carbonato de Cálcio 1,5 g (Cálcio 600 mg) + Colecalciferol 200 unidades internacionais comprimido" />
+    <display
+      value="Carbonato de Cálcio 1,5 g (Cálcio 600 mg) + Colecalciferol 200 unidades internacionais comprimido" />
   </concept>
   <concept>
     <code value="BR0327792" />
@@ -8430,7 +8580,8 @@
   </concept>
   <concept>
     <code value="BR0331223-1" />
-    <display value="Teriparatida 600 microgramas/2,4 mL solução para injeção; dispositivo para injeção" />
+    <display
+      value="Teriparatida 600 microgramas/2,4 mL solução para injeção; dispositivo para injeção" />
   </concept>
   <concept>
     <code value="BR0331296" />
@@ -8482,7 +8633,8 @@
   </concept>
   <concept>
     <code value="BR0332426" />
-    <display value="Hidróxido de Alumínio 37 mg/mL + Hidróxido de Magnésio 35,6 mg/mL suspensão oral" />
+    <display
+      value="Hidróxido de Alumínio 37 mg/mL + Hidróxido de Magnésio 35,6 mg/mL suspensão oral" />
   </concept>
   <concept>
     <code value="BR0332468-1" />
@@ -8514,11 +8666,13 @@
   </concept>
   <concept>
     <code value="BR0332788" />
-    <display value="Propionato de Fluticasona 125 microgramas/dose + Salmeterol 25 microgramas/dose suspensão aerossol; inalador" />
+    <display
+      value="Propionato de Fluticasona 125 microgramas/dose + Salmeterol 25 microgramas/dose suspensão aerossol; inalador" />
   </concept>
   <concept>
     <code value="BR0332789" />
-    <display value="Propionato de Fluticasona 50 microgramas/dose + Salmeterol 25 microgramas/dose suspensão aerossol; inalador" />
+    <display
+      value="Propionato de Fluticasona 50 microgramas/dose + Salmeterol 25 microgramas/dose suspensão aerossol; inalador" />
   </concept>
   <concept>
     <code value="BR0332794" />
@@ -8702,7 +8856,8 @@
   </concept>
   <concept>
     <code value="BR0337472" />
-    <display value="Insulina Detemir 100 unidades/mL solução para injeção 3 mL; dispositivo para injeção" />
+    <display
+      value="Insulina Detemir 100 unidades/mL solução para injeção 3 mL; dispositivo para injeção" />
   </concept>
   <concept>
     <code value="BR0337473" />
@@ -8710,11 +8865,13 @@
   </concept>
   <concept>
     <code value="BR0337478-1" />
-    <display value="Propionato de Fluticasona 100 microgramas/dose + Salmeterol 50 microgramas/dose pó para inalação; inalador" />
+    <display
+      value="Propionato de Fluticasona 100 microgramas/dose + Salmeterol 50 microgramas/dose pó para inalação; inalador" />
   </concept>
   <concept>
     <code value="BR0337478-2" />
-    <display value="Propionato de Fluticasona 100 microgramas/dose + Salmeterol 50 microgramas/dose pó para inalação; inalador" />
+    <display
+      value="Propionato de Fluticasona 100 microgramas/dose + Salmeterol 50 microgramas/dose pó para inalação; inalador" />
   </concept>
   <concept>
     <code value="BR0337678" />
@@ -8762,11 +8919,13 @@
   </concept>
   <concept>
     <code value="BR0338888E" />
-    <display value="Calcitonina (Salmão) 50 unidades internacionais/1 mL solução para injeção; ampola" />
+    <display
+      value="Calcitonina (Salmão) 50 unidades internacionais/1 mL solução para injeção; ampola" />
   </concept>
   <concept>
     <code value="BR0338890E" />
-    <display value="Calcitonina (Salmão) 100 unidades internacionais/1 mL solução para injeção; ampola" />
+    <display
+      value="Calcitonina (Salmão) 100 unidades internacionais/1 mL solução para injeção; ampola" />
   </concept>
   <concept>
     <code value="BR0339534" />
@@ -8998,7 +9157,8 @@
   </concept>
   <concept>
     <code value="BR0342134" />
-    <display value="Succinato Sódico de Hidrocortisona 500 mg pó para solução para injeção; frasco-ampola" />
+    <display
+      value="Succinato Sódico de Hidrocortisona 500 mg pó para solução para injeção; frasco-ampola" />
   </concept>
   <concept>
     <code value="BR0342153" />
@@ -9022,7 +9182,8 @@
   </concept>
   <concept>
     <code value="BR0342258" />
-    <display value="Imipeném 500 mg + Cilastatina 500 mg pó para solução para injeção; frasco-ampola" />
+    <display
+      value="Imipeném 500 mg + Cilastatina 500 mg pó para solução para injeção; frasco-ampola" />
   </concept>
   <concept>
     <code value="BR0342319" />
@@ -9066,7 +9227,8 @@
   </concept>
   <concept>
     <code value="BR0342680" />
-    <display value="Acetato de Triptorrelina 11,25 mg/2 mL suspensão para injeção; seringa preenchida" />
+    <display
+      value="Acetato de Triptorrelina 11,25 mg/2 mL suspensão para injeção; seringa preenchida" />
   </concept>
   <concept>
     <code value="BR0342680E" />
@@ -9074,7 +9236,8 @@
   </concept>
   <concept>
     <code value="BR0342682" />
-    <display value="Acetato de Triptorrelina 3,75 mg pó e diluente para suspensão para injeção; seringa preenchida" />
+    <display
+      value="Acetato de Triptorrelina 3,75 mg pó e diluente para suspensão para injeção; seringa preenchida" />
   </concept>
   <concept>
     <code value="BR0342682E" />
@@ -9242,7 +9405,8 @@
   </concept>
   <concept>
     <code value="BR0346580" />
-    <display value="Fator VIII 250 unidades internacionais pó e diluente para solução para injeção; frasco-ampola" />
+    <display
+      value="Fator VIII 250 unidades internacionais pó e diluente para solução para injeção; frasco-ampola" />
   </concept>
   <concept>
     <code value="BR0346586-1" />
@@ -9258,11 +9422,13 @@
   </concept>
   <concept>
     <code value="BR0349475" />
-    <display value="Salicilato de Metila 0,02 mL/g + Terebenthina 0,05 mL/g + Cânfora 30mg/g  + Mentol 5 mg/g pomada" />
+    <display
+      value="Salicilato de Metila 0,02 mL/g + Terebenthina 0,05 mL/g + Cânfora 30mg/g  + Mentol 5 mg/g pomada" />
   </concept>
   <concept>
     <code value="BR0349475-1" />
-    <display value="Salicilato de Metila 0,02 mL/g + Terebenthina 0,05 mL/g + Cânfora 30mg/g  + Mentol 5 mg/g pomada" />
+    <display
+      value="Salicilato de Metila 0,02 mL/g + Terebenthina 0,05 mL/g + Cânfora 30mg/g  + Mentol 5 mg/g pomada" />
   </concept>
   <concept>
     <code value="BR0350587-1" />
@@ -9374,7 +9540,8 @@
   </concept>
   <concept>
     <code value="BR0352411" />
-    <display value="Beclometasona 400 microgramas/mL + Salbutamol 800 microgramas/mL suspensão para inalação 2 mL; flaconete" />
+    <display
+      value="Beclometasona 400 microgramas/mL + Salbutamol 800 microgramas/mL suspensão para inalação 2 mL; flaconete" />
   </concept>
   <concept>
     <code value="BR0352414E" />
@@ -9546,7 +9713,8 @@
   </concept>
   <concept>
     <code value="BR0357071" />
-    <display value="Citrato de Cálcio 2.370 mg (Cálcio 500 mg) + Colecalciferol 200 unidades internacionais pó para suspensão oral" />
+    <display
+      value="Citrato de Cálcio 2.370 mg (Cálcio 500 mg) + Colecalciferol 200 unidades internacionais pó para suspensão oral" />
   </concept>
   <concept>
     <code value="BR0357118" />
@@ -9690,11 +9858,13 @@
   </concept>
   <concept>
     <code value="BR0363560" />
-    <display value="Diclofenaco Sódico 50 mg + Tiamina 50 mg + Piridoxina 50 mg + Cianocobalamina 1 mg comprimido" />
+    <display
+      value="Diclofenaco Sódico 50 mg + Tiamina 50 mg + Piridoxina 50 mg + Cianocobalamina 1 mg comprimido" />
   </concept>
   <concept>
     <code value="BR0363561" />
-    <display value="Hidroxocobalamina 5 mg/1 mL solução para injeção; ampola e Dipirona 500 mg/1 mL + Dexametasona 1,5 mg/1 mL solução para injeção; ampola" />
+    <display
+      value="Hidroxocobalamina 5 mg/1 mL solução para injeção; ampola e Dipirona 500 mg/1 mL + Dexametasona 1,5 mg/1 mL solução para injeção; ampola" />
   </concept>
   <concept>
     <code value="BR0363597-1" />
@@ -9722,7 +9892,8 @@
   </concept>
   <concept>
     <code value="BR0364037" />
-    <display value="Rifampicina 150 mg + Isoniazida 75 mg + Pirazinamida 400 mg + Etambutol 275 mg comprimido" />
+    <display
+      value="Rifampicina 150 mg + Isoniazida 75 mg + Pirazinamida 400 mg + Etambutol 275 mg comprimido" />
   </concept>
   <concept>
     <code value="BR0364324" />
@@ -9850,7 +10021,8 @@
   </concept>
   <concept>
     <code value="BR0368168" />
-    <display value="Fosfato Dissódico de Dexametasona 2 mg/1 mL + Acetato de Dexametasona 8 mg/1 mL suspensão para injeção; ampola" />
+    <display
+      value="Fosfato Dissódico de Dexametasona 2 mg/1 mL + Acetato de Dexametasona 8 mg/1 mL suspensão para injeção; ampola" />
   </concept>
   <concept>
     <code value="BR0368612" />
@@ -10118,7 +10290,8 @@
   </concept>
   <concept>
     <code value="BR0380017" />
-    <display value="Insulina Glulisina 100 unidades internacionais/mL solução para injeção 3 mL; carpule" />
+    <display
+      value="Insulina Glulisina 100 unidades internacionais/mL solução para injeção 3 mL; carpule" />
   </concept>
   <concept>
     <code value="BR0380419" />
@@ -10138,7 +10311,8 @@
   </concept>
   <concept>
     <code value="BR0380865" />
-    <display value="Polimixina B 10.000 unidades internacionais/mL + Neomicina 3,5 mg/mL + Fluocinolona 0,25 mg/mL + Lidocaína 20 mg/mL solução otológica" />
+    <display
+      value="Polimixina B 10.000 unidades internacionais/mL + Neomicina 3,5 mg/mL + Fluocinolona 0,25 mg/mL + Lidocaína 20 mg/mL solução otológica" />
   </concept>
   <concept>
     <code value="BR0381063" />
@@ -10214,11 +10388,13 @@
   </concept>
   <concept>
     <code value="BR0383688" />
-    <display value="Insulina Asparte bifásica (30/70) 100 unidades/mL suspensão para injeção 3 mL; carpule" />
+    <display
+      value="Insulina Asparte bifásica (30/70) 100 unidades/mL suspensão para injeção 3 mL; carpule" />
   </concept>
   <concept>
     <code value="BR0383688-1" />
-    <display value="Insulina Asparte bifásica (30/70) 100 unidades/mL suspensão para injeção 3 mL; dispositivo para injeção" />
+    <display
+      value="Insulina Asparte bifásica (30/70) 100 unidades/mL suspensão para injeção 3 mL; dispositivo para injeção" />
   </concept>
   <concept>
     <code value="BR0383786" />
@@ -10238,7 +10414,8 @@
   </concept>
   <concept>
     <code value="BR0383791" />
-    <display value="Ácido Alendrônico 70 mg + Colecalciferol 2.800 unidades internacionais comprimido" />
+    <display
+      value="Ácido Alendrônico 70 mg + Colecalciferol 2.800 unidades internacionais comprimido" />
   </concept>
   <concept>
     <code value="BR0384297" />
@@ -10302,7 +10479,8 @@
   </concept>
   <concept>
     <code value="BR0386482" />
-    <display value="Fosfato de Cálcio Tribásico 1.661 g (Cálcio 600 mg) + Colecalciferol 400 unidades internacionais comprimido" />
+    <display
+      value="Fosfato de Cálcio Tribásico 1.661 g (Cálcio 600 mg) + Colecalciferol 400 unidades internacionais comprimido" />
   </concept>
   <concept>
     <code value="BR0386846" />
@@ -10446,11 +10624,13 @@
   </concept>
   <concept>
     <code value="BR0389957-1" />
-    <display value="Dipirona 300 mg + Escopolamina 6,5 microgramas + Hiosciamina 104 microgramas + Homatropina 1 mg comprimido" />
+    <display
+      value="Dipirona 300 mg + Escopolamina 6,5 microgramas + Hiosciamina 104 microgramas + Homatropina 1 mg comprimido" />
   </concept>
   <concept>
     <code value="BR0389957-2" />
-    <display value="Dipirona 300 mg/mL + Escopolamina 6,5 microgramas/mL + Hiosciamina 104 microgramas/mL + Homatropina 1 mg/mL solução oral" />
+    <display
+      value="Dipirona 300 mg/mL + Escopolamina 6,5 microgramas/mL + Hiosciamina 104 microgramas/mL + Homatropina 1 mg/mL solução oral" />
   </concept>
   <concept>
     <code value="BR0390005" />
@@ -10506,15 +10686,18 @@
   </concept>
   <concept>
     <code value="BR0390598-1" />
-    <display value="Fator VIII (Recombinante) 250 unidades internacionais pó para solução para injeção; frasco-ampola" />
+    <display
+      value="Fator VIII (Recombinante) 250 unidades internacionais pó para solução para injeção; frasco-ampola" />
   </concept>
   <concept>
     <code value="BR0390598-2" />
-    <display value="Fator VIII (Recombinante) 500 unidades internacionais pó para solução para injeção; frasco-ampola" />
+    <display
+      value="Fator VIII (Recombinante) 500 unidades internacionais pó para solução para injeção; frasco-ampola" />
   </concept>
   <concept>
     <code value="BR0390598-3" />
-    <display value="Fator VIII (Recombinante) 1.000 unidades internacionais pó para solução para injeção; frasco-ampola" />
+    <display
+      value="Fator VIII (Recombinante) 1.000 unidades internacionais pó para solução para injeção; frasco-ampola" />
   </concept>
   <concept>
     <code value="BR0390643" />
@@ -10522,7 +10705,8 @@
   </concept>
   <concept>
     <code value="BR0391324" />
-    <display value="Hidroquinona 40 mg/g + Tretinoína 0,5 mg/g + Fluocinolona Acetonida 0,1 mg/g creme" />
+    <display
+      value="Hidroquinona 40 mg/g + Tretinoína 0,5 mg/g + Fluocinolona Acetonida 0,1 mg/g creme" />
   </concept>
   <concept>
     <code value="BR0391336" />
@@ -10582,7 +10766,8 @@
   </concept>
   <concept>
     <code value="BR0392593" />
-    <display value="Hidróxido de Alumínio 178 mg + Hidróxido de Magnésio 185 mg + Carbonato de Cálcio 231,5 mg pastilha" />
+    <display
+      value="Hidróxido de Alumínio 178 mg + Hidróxido de Magnésio 185 mg + Carbonato de Cálcio 231,5 mg pastilha" />
   </concept>
   <concept>
     <code value="BR0392617" />
@@ -10714,7 +10899,8 @@
   </concept>
   <concept>
     <code value="BR0394026" />
-    <display value="Levobupivacaína 50 mg/20 mL (0,25%) + Epinefrina 100 microgramas/20 mL (1:200.000) solução para injeção; frasco-ampola" />
+    <display
+      value="Levobupivacaína 50 mg/20 mL (0,25%) + Epinefrina 100 microgramas/20 mL (1:200.000) solução para injeção; frasco-ampola" />
   </concept>
   <concept>
     <code value="BR0394103" />
@@ -10734,15 +10920,18 @@
   </concept>
   <concept>
     <code value="BR0394310" />
-    <display value="Betainterferona 1a 6.000.000 unidades internacionais (22 microgramas)/0,5 mL solução para injeção; seringa preenchida" />
+    <display
+      value="Betainterferona 1a 6.000.000 unidades internacionais (22 microgramas)/0,5 mL solução para injeção; seringa preenchida" />
   </concept>
   <concept>
     <code value="BR0394311" />
-    <display value="Betainterferona 1a 12.000.000 unidades internacionais (44 microgramas)/0,5 mL solução para injeção; seringa preenchida" />
+    <display
+      value="Betainterferona 1a 12.000.000 unidades internacionais (44 microgramas)/0,5 mL solução para injeção; seringa preenchida" />
   </concept>
   <concept>
     <code value="BR0394314" />
-    <display value="Betainterferona 1a 6.000.000 unidades internacionais (30 microgramas) solução para injeção; frasco-ampola" />
+    <display
+      value="Betainterferona 1a 6.000.000 unidades internacionais (30 microgramas) solução para injeção; frasco-ampola" />
   </concept>
   <concept>
     <code value="BR0394650" />
@@ -10758,11 +10947,13 @@
   </concept>
   <concept>
     <code value="BR0394675-1" />
-    <display value="Cloreto de Sódio 6,371 mg/mL + Acetato de Sódio 3,95 mg/mL + Cloreto de Potássio 0,746 mg/mL + Cloreto de Cálcio 0,515 mg/mL + Cloreto de Magnésio 0,305 mg/mL + Citrato de Sódio 1,67 mg/mL solução oftálmica 250 mL; bolsa" />
+    <display
+      value="Cloreto de Sódio 6,371 mg/mL + Acetato de Sódio 3,95 mg/mL + Cloreto de Potássio 0,746 mg/mL + Cloreto de Cálcio 0,515 mg/mL + Cloreto de Magnésio 0,305 mg/mL + Citrato de Sódio 1,67 mg/mL solução oftálmica 250 mL; bolsa" />
   </concept>
   <concept>
     <code value="BR0394675-2" />
-    <display value="Cloreto de Sódio 6,371 mg/mL + Acetato de Sódio 3,95 mg/mL + Cloreto de Potássio 0,746 mg/mL + Cloreto de Cálcio 0,515 mg/mL + Cloreto de Magnésio 0,305 mg/mL + Citrato de Sódio 1,67 mg/mL solução oftálmica 500 mL; bolsa" />
+    <display
+      value="Cloreto de Sódio 6,371 mg/mL + Acetato de Sódio 3,95 mg/mL + Cloreto de Potássio 0,746 mg/mL + Cloreto de Cálcio 0,515 mg/mL + Cloreto de Magnésio 0,305 mg/mL + Citrato de Sódio 1,67 mg/mL solução oftálmica 500 mL; bolsa" />
   </concept>
   <concept>
     <code value="BR0394677E" />
@@ -10870,11 +11061,13 @@
   </concept>
   <concept>
     <code value="BR0395519" />
-    <display value="Ibuprofeno 400 mg + Paracetamol 400 mg + Carisoprodol 200 mg + Piridoxina 50 mg  cápsula" />
+    <display
+      value="Ibuprofeno 400 mg + Paracetamol 400 mg + Carisoprodol 200 mg + Piridoxina 50 mg  cápsula" />
   </concept>
   <concept>
     <code value="BR0395520" />
-    <display value="Aspartato de Magnésio 50 mg + Carbonato de Cálcio 1,25 g (Cálcio 500 mg) + Ranitidina 150 mg + Colecalciferol 400 unidades internacionais cápsula" />
+    <display
+      value="Aspartato de Magnésio 50 mg + Carbonato de Cálcio 1,25 g (Cálcio 500 mg) + Ranitidina 150 mg + Colecalciferol 400 unidades internacionais cápsula" />
   </concept>
   <concept>
     <code value="BR0395558" />
@@ -10890,7 +11083,8 @@
   </concept>
   <concept>
     <code value="BR0395602" />
-    <display value="Ácido Gamaminobutírico 100 mg/mL + Lisina 100 mg/mL + Tiamina 4 mg/mL + Piridoxina 8 mg/mL + Cálcio 8 mg/mL xarope" />
+    <display
+      value="Ácido Gamaminobutírico 100 mg/mL + Lisina 100 mg/mL + Tiamina 4 mg/mL + Piridoxina 8 mg/mL + Cálcio 8 mg/mL xarope" />
   </concept>
   <concept>
     <code value="BR0395608" />
@@ -10910,7 +11104,8 @@
   </concept>
   <concept>
     <code value="BR0395627" />
-    <display value="Polimixina B 10.000 unidades internacionais/mL + Neomicina 10 mg/mL + Fludrocortisona 1 mg/mL + Lidocaína 40 mg/mL solução otológica" />
+    <display
+      value="Polimixina B 10.000 unidades internacionais/mL + Neomicina 10 mg/mL + Fludrocortisona 1 mg/mL + Lidocaína 40 mg/mL solução otológica" />
   </concept>
   <concept>
     <code value="BR0395716" />
@@ -10938,11 +11133,13 @@
   </concept>
   <concept>
     <code value="BR0395726-1" />
-    <display value="Oxomemazina 0,332 mg/mL + Guaifenesina 6,66 mg/mL + Benzoato de Sódio 6,66 mg/mL + Paracetamol 6,66 mg/mL xarope" />
+    <display
+      value="Oxomemazina 0,332 mg/mL + Guaifenesina 6,66 mg/mL + Benzoato de Sódio 6,66 mg/mL + Paracetamol 6,66 mg/mL xarope" />
   </concept>
   <concept>
     <code value="BR0395726-2" />
-    <display value="Oxomemazina 0,332 mg/mL + Guaifenesina 6,66 mg/mL + Benzoato de Sódio 6,66 mg/mL + Paracetamol 6,66 mg/mL xarope" />
+    <display
+      value="Oxomemazina 0,332 mg/mL + Guaifenesina 6,66 mg/mL + Benzoato de Sódio 6,66 mg/mL + Paracetamol 6,66 mg/mL xarope" />
   </concept>
   <concept>
     <code value="BR0395730-1" />
@@ -10958,7 +11155,8 @@
   </concept>
   <concept>
     <code value="BR0395797" />
-    <display value="Levonorgestrel 0,05 mg + Etinilestradiol 0,03 mg comprimido e Levonorgestrel 0,075 mg + Etinilestradiol 0,04 mg comprimido e Levonorgestrel 0,125 mg + Etinilestradiol 0,03 mg comprimido" />
+    <display
+      value="Levonorgestrel 0,05 mg + Etinilestradiol 0,03 mg comprimido e Levonorgestrel 0,075 mg + Etinilestradiol 0,04 mg comprimido e Levonorgestrel 0,125 mg + Etinilestradiol 0,03 mg comprimido" />
   </concept>
   <concept>
     <code value="BR0395807" />
@@ -10966,7 +11164,8 @@
   </concept>
   <concept>
     <code value="BR0395836" />
-    <display value="Metronidazol 250 mg/g + Nistatina 100.000 unidades internacionais/g + Cloreto de Benzalcônio 1,25 mg/g creme vaginal" />
+    <display
+      value="Metronidazol 250 mg/g + Nistatina 100.000 unidades internacionais/g + Cloreto de Benzalcônio 1,25 mg/g creme vaginal" />
   </concept>
   <concept>
     <code value="BR0395837" />
@@ -10998,7 +11197,8 @@
   </concept>
   <concept>
     <code value="BR0395947" />
-    <display value="Ácido Cítrico 70 mg/mL + Citrato de Sódio 98 mg/mL + Citrato de Potássio 108 mg/mL xarope" />
+    <display
+      value="Ácido Cítrico 70 mg/mL + Citrato de Sódio 98 mg/mL + Citrato de Potássio 108 mg/mL xarope" />
   </concept>
   <concept>
     <code value="BR0395949" />
@@ -11022,7 +11222,8 @@
   </concept>
   <concept>
     <code value="BR0396051" />
-    <display value="Insulina Asparte 100 unidades/mL solução para injeção 3 mL; dispositivo para injeção" />
+    <display
+      value="Insulina Asparte 100 unidades/mL solução para injeção 3 mL; dispositivo para injeção" />
   </concept>
   <concept>
     <code value="BR0396081" />
@@ -11126,19 +11327,23 @@
   </concept>
   <concept>
     <code value="BR0397542" />
-    <display value="Alfafolitropina 300 unidades internacionais (22 microgramas)/0,5 mL solução para injeção; dispositivo para injeção" />
+    <display
+      value="Alfafolitropina 300 unidades internacionais (22 microgramas)/0,5 mL solução para injeção; dispositivo para injeção" />
   </concept>
   <concept>
     <code value="BR0397543" />
-    <display value="Alfafolitropina 450 unidades internacionais (33 microgramas)/0,75 mL solução para injeção; dispositivo para injeção" />
+    <display
+      value="Alfafolitropina 450 unidades internacionais (33 microgramas)/0,75 mL solução para injeção; dispositivo para injeção" />
   </concept>
   <concept>
     <code value="BR0397544" />
-    <display value="Alfafolitropina 900 unidades internacionais (66 microgramas)/1,5 mL solução para injeção; dispositivo para injeção" />
+    <display
+      value="Alfafolitropina 900 unidades internacionais (66 microgramas)/1,5 mL solução para injeção; dispositivo para injeção" />
   </concept>
   <concept>
     <code value="BR0397549" />
-    <display value="Menotropina 75 unidades internacionais pó para solução para injeção; frasco-ampola" />
+    <display
+      value="Menotropina 75 unidades internacionais pó para solução para injeção; frasco-ampola" />
   </concept>
   <concept>
     <code value="BR0397566" />
@@ -11154,7 +11359,8 @@
   </concept>
   <concept>
     <code value="BR0397910" />
-    <display value="Queratina 20 mg + Cistina 20 mg + Ácido paraminobenzóico 20 mg + Levedura 100 mg + Tiamina 60 mg + Pantotenato de Cálcio 60 mg cápsula" />
+    <display
+      value="Queratina 20 mg + Cistina 20 mg + Ácido paraminobenzóico 20 mg + Levedura 100 mg + Tiamina 60 mg + Pantotenato de Cálcio 60 mg cápsula" />
   </concept>
   <concept>
     <code value="BR0397912" />
@@ -11162,7 +11368,8 @@
   </concept>
   <concept>
     <code value="BR0398187" />
-    <display value="Retinol 3.000 unidades internacionais/mL + Colecalciferol 800 unidades internacionais/mL solução oral" />
+    <display
+      value="Retinol 3.000 unidades internacionais/mL + Colecalciferol 800 unidades internacionais/mL solução oral" />
   </concept>
   <concept>
     <code value="BR0398268" />
@@ -11190,11 +11397,13 @@
   </concept>
   <concept>
     <code value="BR0398707" />
-    <display value="Bleomicina 15 unidades internacionais pó para solução para injeção; frasco-ampola" />
+    <display
+      value="Bleomicina 15 unidades internacionais pó para solução para injeção; frasco-ampola" />
   </concept>
   <concept>
     <code value="BR0398711" />
-    <display value="Propionato de Fluticasona 125 microgramas/dose + Salmeterol 25 microgramas/dose suspensão aerossol; inalador" />
+    <display
+      value="Propionato de Fluticasona 125 microgramas/dose + Salmeterol 25 microgramas/dose suspensão aerossol; inalador" />
   </concept>
   <concept>
     <code value="BR0398939" />
@@ -11202,11 +11411,13 @@
   </concept>
   <concept>
     <code value="BR0399010" />
-    <display value="Insulina Glargina 100 unidades/mL solução para injeção 3 mL; dispositivo para injeção" />
+    <display
+      value="Insulina Glargina 100 unidades/mL solução para injeção 3 mL; dispositivo para injeção" />
   </concept>
   <concept>
     <code value="BR0399052" />
-    <display value="Carbonato de Magnésio 67 mg + Carbonato de Bismuto 3,3 mg + Carbonato de Cálcio 521 mg + Bicarbonato de Sódio 63,7 mg pastilha" />
+    <display
+      value="Carbonato de Magnésio 67 mg + Carbonato de Bismuto 3,3 mg + Carbonato de Cálcio 521 mg + Bicarbonato de Sódio 63,7 mg pastilha" />
   </concept>
   <concept>
     <code value="BR0399065" />
@@ -11342,15 +11553,18 @@
   </concept>
   <concept>
     <code value="BR0401324" />
-    <display value="Insulina Lispro Bifásica (50/50) 100 unidades/mL suspensão para injeção 3 mL; carpule" />
+    <display
+      value="Insulina Lispro Bifásica (50/50) 100 unidades/mL suspensão para injeção 3 mL; carpule" />
   </concept>
   <concept>
     <code value="BR0401325" />
-    <display value="Insulina Lispro Bifásica (50/50) 100 unidades/mL suspensão para injeção 3 mL; dispositivo para injeção" />
+    <display
+      value="Insulina Lispro Bifásica (50/50) 100 unidades/mL suspensão para injeção 3 mL; dispositivo para injeção" />
   </concept>
   <concept>
     <code value="BR0401411" />
-    <display value="Óxido de Zinco 100 mg/g + Colecalciferol  400 unidades internacionais/g + Retinol 1.000 unidades internacionais/g pomada" />
+    <display
+      value="Óxido de Zinco 100 mg/g + Colecalciferol  400 unidades internacionais/g + Retinol 1.000 unidades internacionais/g pomada" />
   </concept>
   <concept>
     <code value="BR0401579" />
@@ -11362,7 +11576,8 @@
   </concept>
   <concept>
     <code value="BR0401891" />
-    <display value="Cianocobalamina 1 mg/1 mL solução para injeção; ampola e Tiamina 100 mg/1 mL + Piridoxina 100 mg/1 mL solução para injeção; ampola" />
+    <display
+      value="Cianocobalamina 1 mg/1 mL solução para injeção; ampola e Tiamina 100 mg/1 mL + Piridoxina 100 mg/1 mL solução para injeção; ampola" />
   </concept>
   <concept>
     <code value="BR0402195" />
@@ -11374,7 +11589,8 @@
   </concept>
   <concept>
     <code value="BR0402531" />
-    <display value="Betafolitropina 300 unidades internacionais/0,48 mL solução para injeção; carpule" />
+    <display
+      value="Betafolitropina 300 unidades internacionais/0,48 mL solução para injeção; carpule" />
   </concept>
   <concept>
     <code value="BR0402625" />
@@ -11394,11 +11610,13 @@
   </concept>
   <concept>
     <code value="BR0403359-1" />
-    <display value="Insulina Glulisina 100 unidades internacionais/mL solução para injeção 3 mL; carpule" />
+    <display
+      value="Insulina Glulisina 100 unidades internacionais/mL solução para injeção 3 mL; carpule" />
   </concept>
   <concept>
     <code value="BR0403359-2" />
-    <display value="Insulina Glulisina 100 unidades internacionais/mL solução para injeção 10 mL; frasco-ampola" />
+    <display
+      value="Insulina Glulisina 100 unidades internacionais/mL solução para injeção 10 mL; frasco-ampola" />
   </concept>
   <concept>
     <code value="BR0403473" />
@@ -11522,7 +11740,8 @@
   </concept>
   <concept>
     <code value="BR0405965" />
-    <display value="Insulina Lispro Bifásica (25/75) 100 unidades/mL suspensão para injeção 3 mL; dispositivo para injeção" />
+    <display
+      value="Insulina Lispro Bifásica (25/75) 100 unidades/mL suspensão para injeção 3 mL; dispositivo para injeção" />
   </concept>
   <concept>
     <code value="BR0405997" />
@@ -11534,7 +11753,8 @@
   </concept>
   <concept>
     <code value="BR0405998" />
-    <display value="Insulina Lispro 100 unidades/mL solução para injeção 3 mL; dispositivo para injeção" />
+    <display
+      value="Insulina Lispro 100 unidades/mL solução para injeção 3 mL; dispositivo para injeção" />
   </concept>
   <concept>
     <code value="BR0406013" />
@@ -11570,7 +11790,8 @@
   </concept>
   <concept>
     <code value="BR0406485" />
-    <display value="Betaepoetina Metoxipolietilenoglicol 50 microgramas/0,3 mL solução para injeção; seringa preenchida" />
+    <display
+      value="Betaepoetina Metoxipolietilenoglicol 50 microgramas/0,3 mL solução para injeção; seringa preenchida" />
   </concept>
   <concept>
     <code value="BR0406487" />
@@ -11586,7 +11807,8 @@
   </concept>
   <concept>
     <code value="BR0406520E" />
-    <display value="Alfaepoetina 3.000 unidades internacionais/1 mL solução para injeção; frasco-ampola" />
+    <display
+      value="Alfaepoetina 3.000 unidades internacionais/1 mL solução para injeção; frasco-ampola" />
   </concept>
   <concept>
     <code value="BR0406602" />
@@ -11602,7 +11824,8 @@
   </concept>
   <concept>
     <code value="BR0406953" />
-    <display value="Carbonato de Cálcio 50 mg + Colecalciferol 0,25 unidades internacionais pastilha" />
+    <display
+      value="Carbonato de Cálcio 50 mg + Colecalciferol 0,25 unidades internacionais pastilha" />
   </concept>
   <concept>
     <code value="BR0406975" />
@@ -11622,11 +11845,13 @@
   </concept>
   <concept>
     <code value="BR0407013" />
-    <display value="Mentol 150 mg/g + Cânfora 100 mg/g  + Salicilato de Metila 80 mg/g + Óleo de Eucalipto 50 mg/g pomada" />
+    <display
+      value="Mentol 150 mg/g + Cânfora 100 mg/g  + Salicilato de Metila 80 mg/g + Óleo de Eucalipto 50 mg/g pomada" />
   </concept>
   <concept>
     <code value="BR0407013-1" />
-    <display value="Mentol 150 mg/g + Cânfora 100 mg/g  + Salicilato de Metila 80 mg/g + Óleo de Eucalipto 50 mg/g pomada" />
+    <display
+      value="Mentol 150 mg/g + Cânfora 100 mg/g  + Salicilato de Metila 80 mg/g + Óleo de Eucalipto 50 mg/g pomada" />
   </concept>
   <concept>
     <code value="BR0407030-1" />
@@ -11678,7 +11903,8 @@
   </concept>
   <concept>
     <code value="BR0407441" />
-    <display value="Beclometasona 100 microgramas/dose + Formoterol 6 microgramas/dose solução aerossol; inalador" />
+    <display
+      value="Beclometasona 100 microgramas/dose + Formoterol 6 microgramas/dose solução aerossol; inalador" />
   </concept>
   <concept>
     <code value="BR0407531" />
@@ -11870,7 +12096,8 @@
   </concept>
   <concept>
     <code value="BR0413882" />
-    <display value="Ácido Alendrônico 70 mg + Colecalciferol 5.600 unidades internacionais comprimido" />
+    <display
+      value="Ácido Alendrônico 70 mg + Colecalciferol 5.600 unidades internacionais comprimido" />
   </concept>
   <concept>
     <code value="BR0414431" />
@@ -11926,11 +12153,13 @@
   </concept>
   <concept>
     <code value="BR0415213" />
-    <display value="Ácido Alendrônico 70 mg comprimido e Carbonato de Cálcio 1,25 g (Cálcio 500 mg) + Colecalciferol 200 unidades internacionais comprimido" />
+    <display
+      value="Ácido Alendrônico 70 mg comprimido e Carbonato de Cálcio 1,25 g (Cálcio 500 mg) + Colecalciferol 200 unidades internacionais comprimido" />
   </concept>
   <concept>
     <code value="BR0415504" />
-    <display value="Extrato de Allii cepae L. 100 mg/g + Alantoína 10 mg/g + Heparina Sódica 0,4 mg/g gel" />
+    <display
+      value="Extrato de Allii cepae L. 100 mg/g + Alantoína 10 mg/g + Heparina Sódica 0,4 mg/g gel" />
   </concept>
   <concept>
     <code value="BR0415509" />
@@ -11946,7 +12175,8 @@
   </concept>
   <concept>
     <code value="BR0416528" />
-    <display value="Eritropoietina (Humana Recombinante) 4.000 unidades internacionais pó para suspensão para injeção; ampola" />
+    <display
+      value="Eritropoietina (Humana Recombinante) 4.000 unidades internacionais pó para suspensão para injeção; ampola" />
   </concept>
   <concept>
     <code value="BR0416618" />
@@ -11954,7 +12184,8 @@
   </concept>
   <concept>
     <code value="BR0416731" />
-    <display value="Medroxiprogesterona 25 mg/0,5 mL + Estradiol 5 mg/0,5 mL suspensão para injeção; ampola" />
+    <display
+      value="Medroxiprogesterona 25 mg/0,5 mL + Estradiol 5 mg/0,5 mL suspensão para injeção; ampola" />
   </concept>
   <concept>
     <code value="BR0416784" />
@@ -11990,7 +12221,8 @@
   </concept>
   <concept>
     <code value="BR0420469" />
-    <display value="Heparina Sódica 50 unidades internacionais/g + Nicotinato de Benzila 2 mg/g pomada" />
+    <display
+      value="Heparina Sódica 50 unidades internacionais/g + Nicotinato de Benzila 2 mg/g pomada" />
   </concept>
   <concept>
     <code value="BR0420599" />
@@ -11998,7 +12230,8 @@
   </concept>
   <concept>
     <code value="BR0421127" />
-    <display value="Metoprolol 100 mg + Hidroclorotiazida 12,5 mg comprimido de liberação pronlongada" />
+    <display
+      value="Metoprolol 100 mg + Hidroclorotiazida 12,5 mg comprimido de liberação pronlongada" />
   </concept>
   <concept>
     <code value="BR0421223" />
@@ -12010,7 +12243,8 @@
   </concept>
   <concept>
     <code value="BR0421665" />
-    <display value="Bisglicinato Ferroso 30 mg/mL (Ferro 6 mg/mL) + Ácido Fólico 0,2 mg/mL solução oral" />
+    <display
+      value="Bisglicinato Ferroso 30 mg/mL (Ferro 6 mg/mL) + Ácido Fólico 0,2 mg/mL solução oral" />
   </concept>
   <concept>
     <code value="BR0422070" />
@@ -12082,7 +12316,8 @@
   </concept>
   <concept>
     <code value="BR0426931" />
-    <display value="Cassia angustifolia 240 mg + Tamarindus indica 11,7 mg + Cassia fistula 11,7 mg +  Coriandrum sativum 5,4 mg cápsula" />
+    <display
+      value="Cassia angustifolia 240 mg + Tamarindus indica 11,7 mg + Cassia fistula 11,7 mg +  Coriandrum sativum 5,4 mg cápsula" />
   </concept>
   <concept>
     <code value="BR0427335" />
@@ -12166,11 +12401,13 @@
   </concept>
   <concept>
     <code value="BR0429151" />
-    <display value="Ácido Gamaminobutírico 50 mg + Lisina 50 mg + Tiamina 2 mg + Piridoxina 4 mg + Cálcio 4 mg comprimido" />
+    <display
+      value="Ácido Gamaminobutírico 50 mg + Lisina 50 mg + Tiamina 2 mg + Piridoxina 4 mg + Cálcio 4 mg comprimido" />
   </concept>
   <concept>
     <code value="BR0429217" />
-    <display value="Fator VIII 1.000 unidades internacionais + Fator von Willebrand 2.400 unidades internacionais pó e diluente para solução para injeção; frasco-ampola" />
+    <display
+      value="Fator VIII 1.000 unidades internacionais + Fator von Willebrand 2.400 unidades internacionais pó e diluente para solução para injeção; frasco-ampola" />
   </concept>
   <concept>
     <code value="BR0429549" />
@@ -12234,7 +12471,8 @@
   </concept>
   <concept>
     <code value="BR0431311" />
-    <display value="Hidróxido de Alumínio 37 mg/mL + Hidróxido de Magnésio 40 mg/mL + Simeticona 5 mg/mL suspensão oral" />
+    <display
+      value="Hidróxido de Alumínio 37 mg/mL + Hidróxido de Magnésio 40 mg/mL + Simeticona 5 mg/mL suspensão oral" />
   </concept>
   <concept>
     <code value="BR0431312" />
@@ -12322,7 +12560,8 @@
   </concept>
   <concept>
     <code value="BR0432784" />
-    <display value="Pertuzumabe 420 mg/14 mL solução para injeção; frasco-ampola e Trastuzumabe 440 mg pó e diluente para solução para injeção; frasco-ampola" />
+    <display
+      value="Pertuzumabe 420 mg/14 mL solução para injeção; frasco-ampola e Trastuzumabe 440 mg pó e diluente para solução para injeção; frasco-ampola" />
   </concept>
   <concept>
     <code value="BR0432908" />
@@ -12334,7 +12573,8 @@
   </concept>
   <concept>
     <code value="BR0432995" />
-    <display value="Mometasona 200 microgramas/dose + Formoterol 5 microgramas/dose suspensão aerossol" />
+    <display
+      value="Mometasona 200 microgramas/dose + Formoterol 5 microgramas/dose suspensão aerossol" />
   </concept>
   <concept>
     <code value="BR0433019" />
@@ -12354,7 +12594,8 @@
   </concept>
   <concept>
     <code value="BR0433100" />
-    <display value="Furoato de Fluticasona 100 microgramas/dose + Vilanterol 25 microgramas/dose pó para inalação; inalador" />
+    <display
+      value="Furoato de Fluticasona 100 microgramas/dose + Vilanterol 25 microgramas/dose pó para inalação; inalador" />
   </concept>
   <concept>
     <code value="BR0433148" />
@@ -12378,7 +12619,8 @@
   </concept>
   <concept>
     <code value="BR0433428" />
-    <display value="Retinol 5.000 unidades internacionais + Piridoxina 100 mg + Racealfatocoferol 300 mg cápsula" />
+    <display
+      value="Retinol 5.000 unidades internacionais + Piridoxina 100 mg + Racealfatocoferol 300 mg cápsula" />
   </concept>
   <concept>
     <code value="BR0433494" />
@@ -12470,7 +12712,8 @@
   </concept>
   <concept>
     <code value="BR0434946" />
-    <display value="Retinol 20.000 unidades internacionais/mL + Colecalciferol 1.600 unidades internacionais/mL + Racealfatocoferol 30 mg/mL solução oral" />
+    <display
+      value="Retinol 20.000 unidades internacionais/mL + Colecalciferol 1.600 unidades internacionais/mL + Racealfatocoferol 30 mg/mL solução oral" />
   </concept>
   <concept>
     <code value="BR0435101" />
@@ -12478,7 +12721,8 @@
   </concept>
   <concept>
     <code value="BR0435102" />
-    <display value="Paracetamol 500 mg + Amitriptilina 25 mg + Ciclobenzaprina 5 mg + Meloxicam 7,5 mg cápsula" />
+    <display
+      value="Paracetamol 500 mg + Amitriptilina 25 mg + Ciclobenzaprina 5 mg + Meloxicam 7,5 mg cápsula" />
   </concept>
   <concept>
     <code value="BR0435105" />
@@ -12538,7 +12782,8 @@
   </concept>
   <concept>
     <code value="BR0436480" />
-    <display value="Furoato de Fluticasona 200 microgramas/dose + Vilanterol 25 microgramas/dose pó para inalação" />
+    <display
+      value="Furoato de Fluticasona 200 microgramas/dose + Vilanterol 25 microgramas/dose pó para inalação" />
   </concept>
   <concept>
     <code value="BR0436500" />
@@ -12602,11 +12847,13 @@
   </concept>
   <concept>
     <code value="BR0437989" />
-    <display value="Indacaterol 110 microgramas + Glicopirrônio 50 microgramas cápsula para inalação; inalador" />
+    <display
+      value="Indacaterol 110 microgramas + Glicopirrônio 50 microgramas cápsula para inalação; inalador" />
   </concept>
   <concept>
     <code value="BR0437993" />
-    <display value="Brometo de Umeclidíno 62,5 microgramas/dose + Vilanterol 25 microgramas/dose pó para inalação; inalador" />
+    <display
+      value="Brometo de Umeclidíno 62,5 microgramas/dose + Vilanterol 25 microgramas/dose pó para inalação; inalador" />
   </concept>
   <concept>
     <code value="BR0437994" />
@@ -12626,7 +12873,8 @@
   </concept>
   <concept>
     <code value="BR0609095E" />
-    <display value="Formoterol 6 microgramas/dose + Budesonida 200 microgramas/dose pó para inalação; inalador" />
+    <display
+      value="Formoterol 6 microgramas/dose + Budesonida 200 microgramas/dose pó para inalação; inalador" />
   </concept>
   <concept>
     <code value="BR3933803" />
@@ -12690,7 +12938,8 @@
   </concept>
   <concept>
     <code value="BR0270846U0005" />
-    <display value="Estradiol 5 mg/1 mL + Enantato de Noretisterona 50 mg/1 mL solução para injeção; ampola" />
+    <display
+      value="Estradiol 5 mg/1 mL + Enantato de Noretisterona 50 mg/1 mL solução para injeção; ampola" />
   </concept>
   <concept>
     <code value="BR0267671U0042" />
@@ -12746,19 +12995,23 @@
   </concept>
   <concept>
     <code value="BR0271154U0063" />
-    <display value="Insulina Humana Regular 100 unidades internacionais/mL solução para injeção 10 mL; frasco-ampola" />
+    <display
+      value="Insulina Humana Regular 100 unidades internacionais/mL solução para injeção 10 mL; frasco-ampola" />
   </concept>
   <concept>
     <code value="BR0271154U0137" />
-    <display value="Insulina Humana Regular 100 unidades internacionais/mL solução para injeção 3 mL; carpule" />
+    <display
+      value="Insulina Humana Regular 100 unidades internacionais/mL solução para injeção 3 mL; carpule" />
   </concept>
   <concept>
     <code value="BR0271157U0063" />
-    <display value="Insulina Humana NPH 100 unidades internacionais/mL suspensão para injeção 10 mL; frasco-ampola" />
+    <display
+      value="Insulina Humana NPH 100 unidades internacionais/mL suspensão para injeção 10 mL; frasco-ampola" />
   </concept>
   <concept>
     <code value="BR0271157U0137" />
-    <display value="Insulina Humana NPH 100 unidades internacionais/mL suspensão para injeção 3 mL; carpule" />
+    <display
+      value="Insulina Humana NPH 100 unidades internacionais/mL suspensão para injeção 3 mL; carpule" />
   </concept>
   <concept>
     <code value="BR0368922-1" />
@@ -12918,7 +13171,8 @@
   </concept>
   <concept>
     <code value="BR0266628" />
-    <display value="Alfaepoetina 2.000 unidades internacionais/1 mL solução para injeção; frasco-ampola" />
+    <display
+      value="Alfaepoetina 2.000 unidades internacionais/1 mL solução para injeção; frasco-ampola" />
   </concept>
   <concept>
     <code value="BR0271356-1" />
@@ -12930,7 +13184,8 @@
   </concept>
   <concept>
     <code value="BR0271100" />
-    <display value="Amoxicilina 1 g + Ácido Clavulânico 200 mg pó e diluente para solução para injeção; frasco-ampola" />
+    <display
+      value="Amoxicilina 1 g + Ácido Clavulânico 200 mg pó e diluente para solução para injeção; frasco-ampola" />
   </concept>
   <concept>
     <code value="BR0437411" />
@@ -12946,7 +13201,8 @@
   </concept>
   <concept>
     <code value="BR0394316" />
-    <display value="Betainterferona 1b 9.600.000 unidades internacionais (300 microgramas) pó para solução para injeção; frasco-ampola" />
+    <display
+      value="Betainterferona 1b 9.600.000 unidades internacionais (300 microgramas) pó para solução para injeção; frasco-ampola" />
   </concept>
   <concept>
     <code value="BR0349666" />
@@ -12954,11 +13210,13 @@
   </concept>
   <concept>
     <code value="BR0404846" />
-    <display value="Somatropina 12 unidades internacionais pó para solução para injeção; frasco-ampola" />
+    <display
+      value="Somatropina 12 unidades internacionais pó para solução para injeção; frasco-ampola" />
   </concept>
   <concept>
     <code value="BR0318989" />
-    <display value="Somatropina 16 unidades internacionais pó e diluente para solução para injeção; frasco-ampola" />
+    <display
+      value="Somatropina 16 unidades internacionais pó e diluente para solução para injeção; frasco-ampola" />
   </concept>
   <concept>
     <code value="BR0406930" />
@@ -12966,7 +13224,8 @@
   </concept>
   <concept>
     <code value="BR0318990" />
-    <display value="Somatropina 36 unidades internacionais pó e diluente para solução para injeção; frasco-ampola" />
+    <display
+      value="Somatropina 36 unidades internacionais pó e diluente para solução para injeção; frasco-ampola" />
   </concept>
   <concept>
     <code value="BR0308890" />
@@ -12982,6 +13241,7 @@
   </concept>
   <concept>
     <code value="BR0277433" />
-    <display value="Betainterferona 1a 6.000.000 unidades internacionais (30 microgramas) solução para injeção; frasco-ampola" />
+    <display
+      value="Betainterferona 1a 6.000.000 unidades internacionais (30 microgramas) solução para injeção; frasco-ampola" />
   </concept>
 </CodeSystem>

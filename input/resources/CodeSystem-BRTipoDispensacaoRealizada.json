@@ -9,7 +9,7 @@
   "version": "1.0.0",
   "name": "CodeSystem-BRTipoDispensacaoRealizada",
   "title": "Tipo de Dispensação Realizada",
-  "status": "draft",
+  "status": "active",
   "experimental": false,
   "date": "2024-12-10",
   "publisher": "Ministério da Saúde do Brasil",

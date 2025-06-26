@@ -6,6 +6,7 @@
   "name": "BRCoreComposition",
   "title": "BR Core Composition",
   "status": "active",
+  "publisher": "Ministério da Saúde do Brasil",
   "description": "Este perfil representa as restrições aplicadas ao recurso br-core-composition",
   "fhirVersion": "4.0.1",
   "kind": "resource",

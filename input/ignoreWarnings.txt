@@ -19,8 +19,3 @@ The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced
 %StructureDefinition/BREstabelecimentoSaude-1.0%
 %StructureDefinition/BRPessoaJuridicaProfissionalLiberal-1.0%
 %StructureDefinition/BRLotacaoProfissional-1.0%
-
-# Errors related to the RNDS CodeSystem specifications
-
-# Errors related to the RNDS specifications
-

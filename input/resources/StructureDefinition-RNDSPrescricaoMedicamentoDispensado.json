@@ -6,7 +6,7 @@
   "version": "1.0.0",
   "name": "RNDSPrescricaoMedicamentoDispensado",
   "title": "Prescrição Eletrônica de Medicamento (Contida na Dispensação)",
-  "status": "draft",
+  "status": "active",
   "date": "2024-12-14",
   "publisher": "Ministério da Saúde do Brasil",
   "description": "Dados da prescrição a serem informados durante a dispensação caso o registro não esteja na RNDS.",

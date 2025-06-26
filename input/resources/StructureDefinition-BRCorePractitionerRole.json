@@ -6,6 +6,7 @@
   "name": "BRCorePractitionerRole",
   "title": "BR Core PractitionerRole",
   "status": "active",
+  "publisher": "Ministério da Saúde do Brasil",
   "description": "Este perfil restringe o recurso [PractitionerRole](hl7.org/fhir/R4/practitionerrole.html) que representa um conjunto específico de funções/locais/especialidades/serviços que um profissional pode desempenhar em uma organização por um período de tempo.",
   "fhirVersion": "4.0.1",
   "kind": "resource",

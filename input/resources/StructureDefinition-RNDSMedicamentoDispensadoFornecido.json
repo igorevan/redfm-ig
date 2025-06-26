@@ -6,9 +6,10 @@
   "version": "1.0.0",
   "name": "RNDSMedicamentoDispensadoFornecido",
   "title": "Dispensação ou Fornecimento Eletrônico de Medicamento",
-  "status": "draft",
+  "status": "active",
   "date": "2024-12-16",
   "publisher": "Ministério da Saúde do Brasil",
+  "description": "Dispensação ou Fornecimento Eletrônico de Medicamento",
   "fhirVersion": "4.0.1",
   "mapping": [
     {

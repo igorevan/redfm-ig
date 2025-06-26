@@ -6,6 +6,8 @@
   "name": "BRCoreMedication",
   "title": "BR Core Medication",
   "status": "active",
+  "publisher": "Ministério da Saúde do Brasil",
+  "description": "Medicamento BR Core",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
