@@ -1,0 +1,17 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "rnds-paciente",
+  "language": "pt-BR",
+  "url": "http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSPaciente",
+  "name": "RNDSPaciente",
+  "title": "RNDS Paciente",
+  "status": "active",
+  "publisher": "Ministério da Saúde do Brasil",
+  "description": "RNDS Paciente",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Patient",
+  "baseDefinition": "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-patient",
+  "derivation": "constraint"
+}

@@ -16,7 +16,7 @@
   "name": "BRConselhoProfissional",
   "title": "Conselhos profissionais de saúde do Brasil",
   "status": "active",
-  "experimental": true,
+  "experimental": false,
   "date": "2023-07-18T13:05:57+00:00",
   "publisher": "Ministério do Saúde do Brasil",
   "contact": [

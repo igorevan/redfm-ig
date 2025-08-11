@@ -1,0 +1,18 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "RNDSEstabelecimentoSaude",
+  "language": "pt-BR",
+  "url": "http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSEstabelecimentoSaude",
+  "version": "1.0.0",
+  "name": "RNDSEstabelecimentoSaude",
+  "title": "Estabelecimento de Saúde",
+  "status": "active",
+  "publisher": "Ministério da Saúde do Brasil",
+  "description": "Estabelecimento de Saúde",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Organization",
+  "baseDefinition": "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-organization",
+  "derivation": "constraint"
+}

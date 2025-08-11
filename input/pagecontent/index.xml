@@ -1,6 +1,7 @@
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas/R4/fhir-single.xsd">
   <!-- The spaces between the open and close "a" tag are mandatory.  (Cuz HTML renderers are dumb...) -->
+
   <a name="intro"> </a>
   <h3>Introdução</h3>
   <p> Este Guia de Implementação (IG) tem o objetivo de orientar Estados, Municípios, Distrito
@@ -36,6 +37,18 @@
     informações ocorre por meio de serviços (<i>web services</i>) <a
       href="https://pt.wikipedia.org/wiki/REST">RESTful</a>, desenvolvidos de acordo com o padrão <a
       href="https://hl7.org/FHIR/">FHIR R4</a>.</p>
+
+  <a name="flow"> </a>
+  <h3>Fluxo para Integração com a RNDS</h3>
+  <p>Abaixo você encontra um material com o fluxo oficial para integração com a RNDS.</p>
+  <iframe
+    src="https://mobileapps.saude.gov.br/portal-servicos/files/f3bd659c8c8ae3ee966e575fde27eb58/0e3affbe4f1b86b50ae78ab652b2ebaa_pgst0fpqe.pdf"
+    width="100%" height="600px">
+    Seu navegador não suporta visualização de PDF. <a
+      href="https://mobileapps.saude.gov.br/portal-servicos/files/f3bd659c8c8ae3ee966e575fde27eb58/0e3affbe4f1b86b50ae78ab652b2ebaa_pgst0fpqe.pdf">Clique
+      aqui para abrir</a>.
+  </iframe>
+
   <a name="walkthrough"> </a>
   <h3>Roteiro</h3>
   <ul>

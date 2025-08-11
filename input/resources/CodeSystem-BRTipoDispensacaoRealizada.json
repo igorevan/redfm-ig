@@ -1,13 +1,13 @@
 {
   "resourceType": "CodeSystem",
-  "id": "codesystem-medication-dispense-type",
+  "id": "BRTipoDispensacaoRealizada",
   "language": "en",
   "meta": {
     "profile": ["http://hl7.org/fhir/StructureDefinition/shareablecodesystem"]
   },
   "url": "http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoDispensacaoRealizada",
   "version": "1.0.0",
-  "name": "CodeSystem-BRTipoDispensacaoRealizada",
+  "name": "BRTipoDispensacaoRealizada",
   "title": "Tipo de Dispensação Realizada",
   "status": "active",
   "experimental": false,

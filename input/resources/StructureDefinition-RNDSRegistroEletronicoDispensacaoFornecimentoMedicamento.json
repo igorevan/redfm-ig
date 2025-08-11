@@ -3,6 +3,7 @@
   "id": "RNDSRegistroEletronicoDispensacaoFornecimentoMedicamento",
   "language": "pt-BR",
   "url": "http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamento",
+  "version": "1.0.0",
   "name": "RNDSRegistroEletronicoDispensacaoFornecimentoMedicamento",
   "title": "Registro Eletrônico de Dispensação ou Fornecimento de Medicamento (REDFM)",
   "status": "active",

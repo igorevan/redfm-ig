@@ -19,3 +19,7 @@ The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced
 %StructureDefinition/BREstabelecimentoSaude-1.0%
 %StructureDefinition/BRPessoaJuridicaProfissionalLiberal-1.0%
 %StructureDefinition/BRLotacaoProfissional-1.0%
+
+Errors related to the RNDS CodeSystem specifications
+Esta propriedade tem apenas um código ('healthcare') e não um URI, pelo que não tem um significado claramente definido no ecossistema terminológico
+Esta propriedade tem apenas um código ('regulated') e não um URI, pelo que não tem um significado claramente definido no ecossistema terminológico

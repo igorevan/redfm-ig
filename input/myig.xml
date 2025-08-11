@@ -12,7 +12,7 @@
   <name value="REDFMRNDSIG" />
   <title
     value="Guia de Implementação do Registro Eletrônico de Dispensação ou Fornecimento de Medicamento (REDFM) da RNDS" />
-  <status value="draft" />
+  <status value="active" />
   <experimental value="false" />
   <publisher value="Ministério da Saúde do Brasil" />
   <contact>
@@ -52,6 +52,13 @@
     <version value="5.1.0" />
   </dependsOn> -->
   <definition>
+    <resource>
+      <reference>
+        <reference
+          value="StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamento" />
+      </reference>
+      <name value="Registro Eletrônico de Dispensação ou Fornecimento de Medicamento (REDFM)" />
+    </resource>
     <resource>
       <reference>
         <reference value="Bundle/Example-REDFM-1" />
