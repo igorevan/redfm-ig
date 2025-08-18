@@ -31,9 +31,9 @@
   fhir:version [ fhir:v "1.0.0"] ; # 
   fhir:name [ fhir:v "REDFMRNDSIG"] ; # 
   fhir:title [ fhir:v "Guia de Implementação do Registro Eletrônico de Dispensação ou Fornecimento de Medicamento (REDFM) da RNDS"] ; # 
-  fhir:status [ fhir:v "draft"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
   fhir:experimental [ fhir:v false] ; # 
-  fhir:date [ fhir:v "2025-06-25T14:13:05-03:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-08-18T16:48:33-03:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Ministério da Saúde do Brasil"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Ministério da Saúde do Brasil" ] ;
@@ -66,7 +66,7 @@
        fhir:link <http://terminology.hl7.org/ImplementationGuide/hl7.terminology>
      ] ;
      fhir:packageId [ fhir:v "hl7.terminology.r4" ] ;
-     fhir:version [ fhir:v "6.4.0" ]
+     fhir:version [ fhir:v "6.5.0" ]
   ] [
      fhir:id [ fhir:v "hl7ext" ] ;
      fhir:extension ( [
@@ -478,7 +478,7 @@
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency"^^xsd:anyURI ] ;
        fhir:value [
          a fhir:code ;
-         fhir:v "hl7.fhir.uv.tools.r4#0.5.0"
+         fhir:v "hl7.fhir.uv.tools.r4#0.7.1"
        ]
      ] [
        fhir:extension ( [
@@ -876,6 +876,20 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamento> ;
+         fhir:reference [ fhir:v "StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamento" ]
+       ] ;
+       fhir:name [ fhir:v "Registro Eletrônico de Dispensação ou Fornecimento de Medicamento (REDFM)" ] ;
+       fhir:description [ fhir:v "Registro Eletrônico de Dispensação ou Fornecimento de Medicamento (REDFM)" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
            fhir:v "Bundle"
          ]
        ] ) ;
@@ -1082,8 +1096,8 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://www.saude.gov.br/fhir/r4/CodeSystem/codesystem-medication-dispense-type> ;
-         fhir:reference [ fhir:v "CodeSystem/codesystem-medication-dispense-type" ]
+         fhir:link <http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoDispensacaoRealizada> ;
+         fhir:reference [ fhir:v "CodeSystem/BRTipoDispensacaoRealizada" ]
        ] ;
        fhir:name [ fhir:v "Tipo de Dispensação Realizada" ] ;
        fhir:description [ fhir:v "Indica o tipo de dispensação que foi realizada" ]
@@ -1155,7 +1169,8 @@
          fhir:link <http://www.saude.gov.br/fhir/r4/StructureDefinition/br-core-medication> ;
          fhir:reference [ fhir:v "StructureDefinition/br-core-medication" ]
        ] ;
-       fhir:name [ fhir:v "BR Core Medication" ]
+       fhir:name [ fhir:v "BR Core Medication" ] ;
+       fhir:description [ fhir:v "Medicamento BR Core" ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
@@ -1197,7 +1212,21 @@
          fhir:reference [ fhir:v "StructureDefinition/br-core-practitionerrole" ]
        ] ;
        fhir:name [ fhir:v "BR Core PractitionerRole" ] ;
-       fhir:description [ fhir:v "Este perfil restringe o recurso [PractitionerRole](hl7.org/fhir/R4/practitionerrole.html) que representa um conjunto específico de funções/locais/especialidades/serviços que um profissional pode desempenhar em uma organização por um período de tempo." ]
+       fhir:description [ fhir:v "Este perfil restringe o recurso [PractitionerRole](https://hl7.org/fhir/R4/practitionerrole.html) que representa um conjunto específico de funções/locais/especialidades/serviços que um profissional pode desempenhar em uma organização por um período de tempo." ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSEstabelecimentoSaude> ;
+         fhir:reference [ fhir:v "StructureDefinition/RNDSEstabelecimentoSaude" ]
+       ] ;
+       fhir:name [ fhir:v "Estabelecimento de Saúde" ] ;
+       fhir:description [ fhir:v "Estabelecimento de Saúde" ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
@@ -1210,7 +1239,8 @@
          fhir:link <http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSLotacaoProfissional> ;
          fhir:reference [ fhir:v "StructureDefinition/RNDSLotacaoProfissional" ]
        ] ;
-       fhir:name [ fhir:v "Lotação Profissional" ]
+       fhir:name [ fhir:v "Lotação Profissional" ] ;
+       fhir:description [ fhir:v "Lotação Profissional" ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
@@ -1223,7 +1253,8 @@
          fhir:link <http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSMedicamento> ;
          fhir:reference [ fhir:v "StructureDefinition/RNDSMedicamento" ]
        ] ;
-       fhir:name [ fhir:v "Medicamento" ]
+       fhir:name [ fhir:v "Medicamento" ] ;
+       fhir:description [ fhir:v "Medicamento" ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
@@ -1236,7 +1267,8 @@
          fhir:link <http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSMedicamentoDispensado> ;
          fhir:reference [ fhir:v "StructureDefinition/RNDSMedicamentoDispensado" ]
        ] ;
-       fhir:name [ fhir:v "Medicamento Dispensado" ]
+       fhir:name [ fhir:v "Medicamento Dispensado" ] ;
+       fhir:description [ fhir:v "Medicamento Dispensado" ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
@@ -1249,7 +1281,8 @@
          fhir:link <http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSMedicamentoDispensadoFornecido> ;
          fhir:reference [ fhir:v "StructureDefinition/RNDSMedicamentoDispensadoFornecido" ]
        ] ;
-       fhir:name [ fhir:v "Dispensação ou Fornecimento Eletrônico de Medicamento" ]
+       fhir:name [ fhir:v "Dispensação ou Fornecimento Eletrônico de Medicamento" ] ;
+       fhir:description [ fhir:v "Dispensação ou Fornecimento Eletrônico de Medicamento" ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
@@ -1276,7 +1309,8 @@
          fhir:link <http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSProfissional> ;
          fhir:reference [ fhir:v "StructureDefinition/RNDSProfissional" ]
        ] ;
-       fhir:name [ fhir:v "Profissional" ]
+       fhir:name [ fhir:v "Profissional" ] ;
+       fhir:description [ fhir:v "Profissional" ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
@@ -1286,10 +1320,39 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamento> ;
-         fhir:reference [ fhir:v "StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamento" ]
+         fhir:link <http://www.saude.gov.br/fhir/r4/StructureDefinition/br-core-healthcareservice> ;
+         fhir:reference [ fhir:v "StructureDefinition/br-core-healthcareservice" ]
        ] ;
-       fhir:name [ fhir:v "Registro Eletrônico de Dispensação ou Fornecimento de Medicamento (REDFM)" ]
+       fhir:name [ fhir:v "br-core-healthcareservice" ] ;
+       fhir:description [ fhir:v "BR Core Healthcare Service" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/StructureDefinition/br-core-location> ;
+         fhir:reference [ fhir:v "StructureDefinition/br-core-location" ]
+       ] ;
+       fhir:name [ fhir:v "br-core-location" ] ;
+       fhir:description [ fhir:v "BR Core Location" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/StructureDefinition/br-core-relatedperson> ;
+         fhir:reference [ fhir:v "StructureDefinition/br-core-relatedperson" ]
+       ] ;
+       fhir:name [ fhir:v "BRCoreRelatedPerson" ] ;
+       fhir:description [ fhir:v "O recurso [br-core-relatedperson](https://saude.gov.br/fhir/StructureDefinition/br-core-relatedperson.html) contém as informações sobre uma pessoa envolvida no cuidado de um paciente, mas que não é alvo de cuidados de saúde nem tem responsabilidade formal no processo de cuidado. \n\nA pessoa representada pelo recurso [br-core-relatedperson](https://saude.gov.br/fhir/StructureDefinition/br-core-relatedperson.html) normalmente tem um relacionamento profissional pessoal ou não específico de cuidado em saúde com o paciente. O recurso [br-core-relatedperson](https://saude.gov.br/fhir/StructureDefinition/br-core-relatedperson.html) é usado principalmente para atribuição de informações, já que geralmente é uma fonte de informações sobre o paciente. Para manter informações sobre pessoas para fins de contato para um paciente, use um elemento br-core-patien.contact. Alguns indivíduos podem ser representados simultaneamente como  um patient.contact e [br-core-relatedperson](https://saude.gov.br/fhir/StructureDefinition/br-core-relatedperson.html).\n\nExemplos de pessoas que podem ser um [br-core-relatedperson](https://saude.gov.br/fhir/StructureDefinition/br-core-relatedperson.html):\n-	Esposa ou marido de um paciente\n-	Parentes ou amigos de um paciente\n-	Um vizinho que leva um paciente para o hospital\n-	O dono ou treinador de um cavalo\n-	Um advogado ou tutor do paciente\n-	Um cão-guia" ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
@@ -1411,8 +1474,8 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://www.saude.gov.br/fhir/r4/ValueSet/valueset-brtipodispensacaorealizada> ;
-         fhir:reference [ fhir:v "ValueSet/valueset-brtipodispensacaorealizada" ]
+         fhir:link <http://www.saude.gov.br/fhir/r4/ValueSet/BRTipoDispensacaoRealizada> ;
+         fhir:reference [ fhir:v "ValueSet/BRTipoDispensacaoRealizada" ]
        ] ;
        fhir:name [ fhir:v "Tipo de Dispensação Realizada" ] ;
        fhir:description [ fhir:v "Indica o tipo de dispensação que foi realizada" ]

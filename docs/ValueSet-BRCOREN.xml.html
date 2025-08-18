@@ -32,10 +32,10 @@
     <![endif]-->
 
     <!-- Favicons -->
-    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
-    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
-    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
-    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
     <link rel="shortcut icon" href="assets/ico/favicon.png"/>
   </head>
   <body onload="document.body.style.opacity='1'">
@@ -43,8 +43,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"11.13"}
-    h3,h4,h5,h6{--heading-prefix:"11.13"}</style>
+    <style type="text/css">h2{--heading-prefix:"11.17"}
+    h3,h4,h5,h6{--heading-prefix:"11.17"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -227,10 +227,15 @@
   <table class="colsi">
     <tr>
 
-      <td colspan="2">
+      <td colspan="1">
         
           <i>Page standards status:</i> <a href="http://hl7.org/fhir/R4/versions.html#std-process" title="Standard Status">Informative</a>
           
+        
+      </td>
+
+      <td>
+        <a href="http://hl7.org/fhir/versions.html#maturity">Maturity Level</a>: 1
         
       </td>
 
@@ -251,22 +256,38 @@
   &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.meta">meta</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>
              <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/StructureDefinition/shareablevalueset&quot;/&gt;
-  &lt;/meta&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.meta">meta</a>&gt;
   &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;pt-BR&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.text">text</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;extensions&quot;/&gt;
-    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p class=&quot;res-header-id&quot;&gt;&lt;b&gt;Generated Narrative: ValueSet BRCOREN&lt;/b&gt;&lt;/p&gt;&lt;a name=&quot;BRCOREN&quot;/&gt;&lt;a name=&quot;hcBRCOREN&quot;/&gt;&lt;a name=&quot;BRCOREN-pt-BR&quot;/&gt;&lt;ul&gt;&lt;li&gt;Include these codes as defined in &lt;a href=&quot;CodeSystem-BRConselhoProfissional.html&quot;&gt;&lt;code&gt;https://terminologia.saude.gov.br/fhir/CodeSystem/BRConselhoProfissional&lt;/code&gt;&lt;/a&gt;&lt;table class=&quot;none&quot;&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Definition&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-BRConselhoProfissional.html#BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47coren-ac&quot;&gt;https://saude.gov.br/sid/coren-ac&lt;/a&gt;&lt;/td&gt;&lt;td&gt;COREN-AC&lt;/td&gt;&lt;td&gt;CONSELHO REGIONAL DE ENFERMAGEM&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-BRConselhoProfissional.html#BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47coren-al&quot;&gt;https://saude.gov.br/sid/coren-al&lt;/a&gt;&lt;/td&gt;&lt;td&gt;COREN-AL&lt;/td&gt;&lt;td&gt;CONSELHO REGIONAL DE ENFERMAGEM&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-BRConselhoProfissional.html#BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47coren-am&quot;&gt;https://saude.gov.br/sid/coren-am&lt;/a&gt;&lt;/td&gt;&lt;td&gt;COREN-AM&lt;/td&gt;&lt;td&gt;CONSELHO REGIONAL DE ENFERMAGEM&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-BRConselhoProfissional.html#BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47coren-ap&quot;&gt;https://saude.gov.br/sid/coren-ap&lt;/a&gt;&lt;/td&gt;&lt;td&gt;COREN-AP&lt;/td&gt;&lt;td&gt;CONSELHO REGIONAL DE ENFERMAGEM&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-BRConselhoProfissional.html#BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47coren-ba&quot;&gt;https://saude.gov.br/sid/coren-ba&lt;/a&gt;&lt;/td&gt;&lt;td&gt;COREN-BA&lt;/td&gt;&lt;td&gt;CONSELHO REGIONAL DE ENFERMAGEM&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-BRConselhoProfissional.html#BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47coren-ce&quot;&gt;https://saude.gov.br/sid/coren-ce&lt;/a&gt;&lt;/td&gt;&lt;td&gt;COREN-CE&lt;/td&gt;&lt;td&gt;CONSELHO REGIONAL DE ENFERMAGEM&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-BRConselhoProfissional.html#BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47coren-df&quot;&gt;https://saude.gov.br/sid/coren-df&lt;/a&gt;&lt;/td&gt;&lt;td&gt;COREN-DF&lt;/td&gt;&lt;td&gt;CONSELHO REGIONAL DE ENFERMAGEM&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-BRConselhoProfissional.html#BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47coren-es&quot;&gt;https://saude.gov.br/sid/coren-es&lt;/a&gt;&lt;/td&gt;&lt;td&gt;COREN-ES&lt;/td&gt;&lt;td&gt;CONSELHO REGIONAL DE ENFERMAGEM&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-BRConselhoProfissional.html#BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47coren-go&quot;&gt;https://saude.gov.br/sid/coren-go&lt;/a&gt;&lt;/td&gt;&lt;td&gt;COREN-GO&lt;/td&gt;&lt;td&gt;CONSELHO REGIONAL DE ENFERMAGEM&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-BRConselhoProfissional.html#BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47coren-ma&quot;&gt;https://saude.gov.br/sid/coren-ma&lt;/a&gt;&lt;/td&gt;&lt;td&gt;COREN-MA&lt;/td&gt;&lt;td&gt;CONSELHO REGIONAL DE ENFERMAGEM&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-BRConselhoProfissional.html#BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47coren-mg&quot;&gt;https://saude.gov.br/sid/coren-mg&lt;/a&gt;&lt;/td&gt;&lt;td&gt;COREN-MG&lt;/td&gt;&lt;td&gt;CONSELHO REGIONAL DE ENFERMAGEM&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-BRConselhoProfissional.html#BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47coren-ms&quot;&gt;https://saude.gov.br/sid/coren-ms&lt;/a&gt;&lt;/td&gt;&lt;td&gt;COREN-MS&lt;/td&gt;&lt;td&gt;CONSELHO REGIONAL DE ENFERMAGEM&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-BRConselhoProfissional.html#BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47coren-mt&quot;&gt;https://saude.gov.br/sid/coren-mt&lt;/a&gt;&lt;/td&gt;&lt;td&gt;COREN-MT&lt;/td&gt;&lt;td&gt;CONSELHO REGIONAL DE ENFERMAGEM&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-BRConselhoProfissional.html#BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47coren-pa&quot;&gt;https://saude.gov.br/sid/coren-pa&lt;/a&gt;&lt;/td&gt;&lt;td&gt;COREN-PA&lt;/td&gt;&lt;td&gt;CONSELHO REGIONAL DE ENFERMAGEM&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-BRConselhoProfissional.html#BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47coren-pb&quot;&gt;https://saude.gov.br/sid/coren-pb&lt;/a&gt;&lt;/td&gt;&lt;td&gt;COREN-PB&lt;/td&gt;&lt;td&gt;CONSELHO REGIONAL DE ENFERMAGEM&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-BRConselhoProfissional.html#BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47coren-pe&quot;&gt;https://saude.gov.br/sid/coren-pe&lt;/a&gt;&lt;/td&gt;&lt;td&gt;COREN-PE&lt;/td&gt;&lt;td&gt;CONSELHO REGIONAL DE ENFERMAGEM&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-BRConselhoProfissional.html#BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47coren-pi&quot;&gt;https://saude.gov.br/sid/coren-pi&lt;/a&gt;&lt;/td&gt;&lt;td&gt;COREN-PI&lt;/td&gt;&lt;td&gt;CONSELHO REGIONAL DE ENFERMAGEM&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-BRConselhoProfissional.html#BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47coren-pr&quot;&gt;https://saude.gov.br/sid/coren-pr&lt;/a&gt;&lt;/td&gt;&lt;td&gt;COREN-PR&lt;/td&gt;&lt;td&gt;CONSELHO REGIONAL DE ENFERMAGEM&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-BRConselhoProfissional.html#BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47coren-rj&quot;&gt;https://saude.gov.br/sid/coren-rj&lt;/a&gt;&lt;/td&gt;&lt;td&gt;COREN-RJ&lt;/td&gt;&lt;td&gt;CONSELHO REGIONAL DE ENFERMAGEM&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-BRConselhoProfissional.html#BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47coren-rn&quot;&gt;https://saude.gov.br/sid/coren-rn&lt;/a&gt;&lt;/td&gt;&lt;td&gt;COREN-RN&lt;/td&gt;&lt;td&gt;CONSELHO REGIONAL DE ENFERMAGEM&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-BRConselhoProfissional.html#BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47coren-ro&quot;&gt;https://saude.gov.br/sid/coren-ro&lt;/a&gt;&lt;/td&gt;&lt;td&gt;COREN-RO&lt;/td&gt;&lt;td&gt;CONSELHO REGIONAL DE ENFERMAGEM&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-BRConselhoProfissional.html#BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47coren-rr&quot;&gt;https://saude.gov.br/sid/coren-rr&lt;/a&gt;&lt;/td&gt;&lt;td&gt;COREN-RR&lt;/td&gt;&lt;td&gt;CONSELHO REGIONAL DE ENFERMAGEM&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-BRConselhoProfissional.html#BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47coren-rs&quot;&gt;https://saude.gov.br/sid/coren-rs&lt;/a&gt;&lt;/td&gt;&lt;td&gt;COREN-RS&lt;/td&gt;&lt;td&gt;CONSELHO REGIONAL DE ENFERMAGEM&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-BRConselhoProfissional.html#BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47coren-sc&quot;&gt;https://saude.gov.br/sid/coren-sc&lt;/a&gt;&lt;/td&gt;&lt;td&gt;COREN-SC&lt;/td&gt;&lt;td&gt;CONSELHO REGIONAL DE ENFERMAGEM&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-BRConselhoProfissional.html#BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47coren-se&quot;&gt;https://saude.gov.br/sid/coren-se&lt;/a&gt;&lt;/td&gt;&lt;td&gt;COREN-SE&lt;/td&gt;&lt;td&gt;CONSELHO REGIONAL DE ENFERMAGEM&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-BRConselhoProfissional.html#BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47coren-sp&quot;&gt;https://saude.gov.br/sid/coren-sp&lt;/a&gt;&lt;/td&gt;&lt;td&gt;COREN-SP&lt;/td&gt;&lt;td&gt;CONSELHO REGIONAL DE ENFERMAGEM&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-BRConselhoProfissional.html#BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47coren-to&quot;&gt;https://saude.gov.br/sid/coren-to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;COREN-TO&lt;/td&gt;&lt;td&gt;CONSELHO REGIONAL DE ENFERMAGEM&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;<a name="end-xhtml"></a>
-  &lt;/text&gt;
+    &lt;div xml:lang=&quot;pt-BR&quot; xmlns=&quot;http://www.w3.org/1999/xhtml&quot; lang=&quot;pt-BR&quot;&gt;&lt;p class=&quot;res-header-id&quot;&gt;&lt;b&gt;Narrativa gerada: ValueSet BRCOREN&lt;/b&gt;&lt;/p&gt;&lt;a name=&quot;BRCOREN&quot;&gt; &lt;/a&gt;&lt;a name=&quot;hcBRCOREN&quot;&gt; &lt;/a&gt;&lt;div style=&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%&quot;&gt;&lt;p style=&quot;margin-bottom: 0px&quot;&gt;Língua: pt-BR&lt;/p&gt;&lt;p style=&quot;margin-bottom: 0px&quot;&gt;Perfil: &lt;a href=&quot;http://hl7.org/fhir/R4/shareablevalueset.html&quot;&gt;Shareable ValueSet&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;ul&gt;&lt;li&gt;Include estes códigos, tal como definidos em &lt;a href=&quot;CodeSystem-BRConselhoProfissional.html&quot;&gt;&lt;code&gt;https://terminologia.saude.gov.br/fhir/CodeSystem/BRConselhoProfissional&lt;/code&gt;&lt;/a&gt;&lt;table class=&quot;none&quot;&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;&lt;b&gt;Código&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Ecrã&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Definição&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-BRConselhoProfissional.html#BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47coren-ac&quot;&gt;https://saude.gov.br/sid/coren-ac&lt;/a&gt;&lt;/td&gt;&lt;td&gt;COREN-AC&lt;/td&gt;&lt;td&gt;CONSELHO REGIONAL DE ENFERMAGEM&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-BRConselhoProfissional.html#BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47coren-al&quot;&gt;https://saude.gov.br/sid/coren-al&lt;/a&gt;&lt;/td&gt;&lt;td&gt;COREN-AL&lt;/td&gt;&lt;td&gt;CONSELHO REGIONAL DE ENFERMAGEM&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-BRConselhoProfissional.html#BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47coren-am&quot;&gt;https://saude.gov.br/sid/coren-am&lt;/a&gt;&lt;/td&gt;&lt;td&gt;COREN-AM&lt;/td&gt;&lt;td&gt;CONSELHO REGIONAL DE ENFERMAGEM&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-BRConselhoProfissional.html#BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47coren-ap&quot;&gt;https://saude.gov.br/sid/coren-ap&lt;/a&gt;&lt;/td&gt;&lt;td&gt;COREN-AP&lt;/td&gt;&lt;td&gt;CONSELHO REGIONAL DE ENFERMAGEM&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-BRConselhoProfissional.html#BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47coren-ba&quot;&gt;https://saude.gov.br/sid/coren-ba&lt;/a&gt;&lt;/td&gt;&lt;td&gt;COREN-BA&lt;/td&gt;&lt;td&gt;CONSELHO REGIONAL DE ENFERMAGEM&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-BRConselhoProfissional.html#BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47coren-ce&quot;&gt;https://saude.gov.br/sid/coren-ce&lt;/a&gt;&lt;/td&gt;&lt;td&gt;COREN-CE&lt;/td&gt;&lt;td&gt;CONSELHO REGIONAL DE ENFERMAGEM&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-BRConselhoProfissional.html#BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47coren-df&quot;&gt;https://saude.gov.br/sid/coren-df&lt;/a&gt;&lt;/td&gt;&lt;td&gt;COREN-DF&lt;/td&gt;&lt;td&gt;CONSELHO REGIONAL DE ENFERMAGEM&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-BRConselhoProfissional.html#BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47coren-es&quot;&gt;https://saude.gov.br/sid/coren-es&lt;/a&gt;&lt;/td&gt;&lt;td&gt;COREN-ES&lt;/td&gt;&lt;td&gt;CONSELHO REGIONAL DE ENFERMAGEM&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-BRConselhoProfissional.html#BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47coren-go&quot;&gt;https://saude.gov.br/sid/coren-go&lt;/a&gt;&lt;/td&gt;&lt;td&gt;COREN-GO&lt;/td&gt;&lt;td&gt;CONSELHO REGIONAL DE ENFERMAGEM&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-BRConselhoProfissional.html#BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47coren-ma&quot;&gt;https://saude.gov.br/sid/coren-ma&lt;/a&gt;&lt;/td&gt;&lt;td&gt;COREN-MA&lt;/td&gt;&lt;td&gt;CONSELHO REGIONAL DE ENFERMAGEM&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-BRConselhoProfissional.html#BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47coren-mg&quot;&gt;https://saude.gov.br/sid/coren-mg&lt;/a&gt;&lt;/td&gt;&lt;td&gt;COREN-MG&lt;/td&gt;&lt;td&gt;CONSELHO REGIONAL DE ENFERMAGEM&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-BRConselhoProfissional.html#BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47coren-ms&quot;&gt;https://saude.gov.br/sid/coren-ms&lt;/a&gt;&lt;/td&gt;&lt;td&gt;COREN-MS&lt;/td&gt;&lt;td&gt;CONSELHO REGIONAL DE ENFERMAGEM&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-BRConselhoProfissional.html#BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47coren-mt&quot;&gt;https://saude.gov.br/sid/coren-mt&lt;/a&gt;&lt;/td&gt;&lt;td&gt;COREN-MT&lt;/td&gt;&lt;td&gt;CONSELHO REGIONAL DE ENFERMAGEM&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-BRConselhoProfissional.html#BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47coren-pa&quot;&gt;https://saude.gov.br/sid/coren-pa&lt;/a&gt;&lt;/td&gt;&lt;td&gt;COREN-PA&lt;/td&gt;&lt;td&gt;CONSELHO REGIONAL DE ENFERMAGEM&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-BRConselhoProfissional.html#BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47coren-pb&quot;&gt;https://saude.gov.br/sid/coren-pb&lt;/a&gt;&lt;/td&gt;&lt;td&gt;COREN-PB&lt;/td&gt;&lt;td&gt;CONSELHO REGIONAL DE ENFERMAGEM&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-BRConselhoProfissional.html#BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47coren-pe&quot;&gt;https://saude.gov.br/sid/coren-pe&lt;/a&gt;&lt;/td&gt;&lt;td&gt;COREN-PE&lt;/td&gt;&lt;td&gt;CONSELHO REGIONAL DE ENFERMAGEM&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-BRConselhoProfissional.html#BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47coren-pi&quot;&gt;https://saude.gov.br/sid/coren-pi&lt;/a&gt;&lt;/td&gt;&lt;td&gt;COREN-PI&lt;/td&gt;&lt;td&gt;CONSELHO REGIONAL DE ENFERMAGEM&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-BRConselhoProfissional.html#BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47coren-pr&quot;&gt;https://saude.gov.br/sid/coren-pr&lt;/a&gt;&lt;/td&gt;&lt;td&gt;COREN-PR&lt;/td&gt;&lt;td&gt;CONSELHO REGIONAL DE ENFERMAGEM&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-BRConselhoProfissional.html#BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47coren-rj&quot;&gt;https://saude.gov.br/sid/coren-rj&lt;/a&gt;&lt;/td&gt;&lt;td&gt;COREN-RJ&lt;/td&gt;&lt;td&gt;CONSELHO REGIONAL DE ENFERMAGEM&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-BRConselhoProfissional.html#BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47coren-rn&quot;&gt;https://saude.gov.br/sid/coren-rn&lt;/a&gt;&lt;/td&gt;&lt;td&gt;COREN-RN&lt;/td&gt;&lt;td&gt;CONSELHO REGIONAL DE ENFERMAGEM&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-BRConselhoProfissional.html#BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47coren-ro&quot;&gt;https://saude.gov.br/sid/coren-ro&lt;/a&gt;&lt;/td&gt;&lt;td&gt;COREN-RO&lt;/td&gt;&lt;td&gt;CONSELHO REGIONAL DE ENFERMAGEM&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-BRConselhoProfissional.html#BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47coren-rr&quot;&gt;https://saude.gov.br/sid/coren-rr&lt;/a&gt;&lt;/td&gt;&lt;td&gt;COREN-RR&lt;/td&gt;&lt;td&gt;CONSELHO REGIONAL DE ENFERMAGEM&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-BRConselhoProfissional.html#BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47coren-rs&quot;&gt;https://saude.gov.br/sid/coren-rs&lt;/a&gt;&lt;/td&gt;&lt;td&gt;COREN-RS&lt;/td&gt;&lt;td&gt;CONSELHO REGIONAL DE ENFERMAGEM&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-BRConselhoProfissional.html#BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47coren-sc&quot;&gt;https://saude.gov.br/sid/coren-sc&lt;/a&gt;&lt;/td&gt;&lt;td&gt;COREN-SC&lt;/td&gt;&lt;td&gt;CONSELHO REGIONAL DE ENFERMAGEM&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-BRConselhoProfissional.html#BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47coren-se&quot;&gt;https://saude.gov.br/sid/coren-se&lt;/a&gt;&lt;/td&gt;&lt;td&gt;COREN-SE&lt;/td&gt;&lt;td&gt;CONSELHO REGIONAL DE ENFERMAGEM&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-BRConselhoProfissional.html#BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47coren-sp&quot;&gt;https://saude.gov.br/sid/coren-sp&lt;/a&gt;&lt;/td&gt;&lt;td&gt;COREN-SP&lt;/td&gt;&lt;td&gt;CONSELHO REGIONAL DE ENFERMAGEM&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-BRConselhoProfissional.html#BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47coren-to&quot;&gt;https://saude.gov.br/sid/coren-to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;COREN-TO&lt;/td&gt;&lt;td&gt;CONSELHO REGIONAL DE ENFERMAGEM&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+  &lt;/<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.text">text</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.extension">extension</a>
+             <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm&quot;&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueInteger</a> <a href="http://hl7.org/fhir/R4/datatypes.html#integer">value</a>=&quot;1&quot;&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#integer#integer.extension">extension</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom&quot;&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCanonical</a>
+                        <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://www.saude.gov.br/fhir/r4/ImplementationGuide/br.gov.saude.redfm.fhir&quot;/&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#integer#integer.extension">extension</a>&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueInteger</a>&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.extension">extension</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.extension">extension</a>
+             <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status&quot;&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;informative&quot;&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#code#code.extension">extension</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom&quot;&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCanonical</a>
+                        <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://www.saude.gov.br/fhir/r4/ImplementationGuide/br.gov.saude.redfm.fhir&quot;/&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#code#code.extension">extension</a>&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.extension">extension</a>&gt;
   &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.url">url</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://terminologia.saude.gov.br/fhir/ValueSet/BRCOREN&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.identifier">identifier</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://saude.gov.br/sid/valueset&quot;/&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;BRCOREN&quot;/&gt;
-  &lt;/identifier&gt;
   &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.version">version</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;1.0.0&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;BRCOREN&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.title">title</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Conselhos regionais de Enfermagem do Brasil&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;draft&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.experimental">experimental</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;active&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.experimental">experimental</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2023-07-18T13:52:24+00:00&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.publisher">publisher</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Ministério da Saúde do Brasil&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.contact">contact</a>&gt;
@@ -274,16 +295,16 @@
     &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;url&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;http://www.saude.gov.br&quot;/&gt;
-    &lt;/telecom&gt;
-  &lt;/contact&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.contact">contact</a>&gt;
   &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.description">description</a>
                <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>=&quot;Conjunto de todos os conselhos regionais de enfermagem do Brasil&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.jurisdiction">jurisdiction</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;urn:iso:std:iso:3166&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;BR&quot;/&gt;
-    &lt;/coding&gt;
-  &lt;/jurisdiction&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.jurisdiction">jurisdiction</a>&gt;
   &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.purpose">purpose</a>
            <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>=&quot;O propósito deste conjunto é agrupar todos os conselhos regionais de enfermagem para fins de validação do identificador profissional do enfermeiro&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.copyright">copyright</a> <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>=&quot;CC-1.0&quot;/&gt;
@@ -294,114 +315,114 @@
       &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;https://saude.gov.br/sid/coren-ac&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;COREN-AC&quot;/&gt;
-      &lt;/concept&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;https://saude.gov.br/sid/coren-al&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;COREN-AL&quot;/&gt;
-      &lt;/concept&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;https://saude.gov.br/sid/coren-am&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;COREN-AM&quot;/&gt;
-      &lt;/concept&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;https://saude.gov.br/sid/coren-ap&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;COREN-AP&quot;/&gt;
-      &lt;/concept&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;https://saude.gov.br/sid/coren-ba&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;COREN-BA&quot;/&gt;
-      &lt;/concept&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;https://saude.gov.br/sid/coren-ce&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;COREN-CE&quot;/&gt;
-      &lt;/concept&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;https://saude.gov.br/sid/coren-df&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;COREN-DF&quot;/&gt;
-      &lt;/concept&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;https://saude.gov.br/sid/coren-es&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;COREN-ES&quot;/&gt;
-      &lt;/concept&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;https://saude.gov.br/sid/coren-go&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;COREN-GO&quot;/&gt;
-      &lt;/concept&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;https://saude.gov.br/sid/coren-ma&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;COREN-MA&quot;/&gt;
-      &lt;/concept&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;https://saude.gov.br/sid/coren-mg&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;COREN-MG&quot;/&gt;
-      &lt;/concept&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;https://saude.gov.br/sid/coren-ms&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;COREN-MS&quot;/&gt;
-      &lt;/concept&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;https://saude.gov.br/sid/coren-mt&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;COREN-MT&quot;/&gt;
-      &lt;/concept&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;https://saude.gov.br/sid/coren-pa&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;COREN-PA&quot;/&gt;
-      &lt;/concept&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;https://saude.gov.br/sid/coren-pb&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;COREN-PB&quot;/&gt;
-      &lt;/concept&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;https://saude.gov.br/sid/coren-pe&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;COREN-PE&quot;/&gt;
-      &lt;/concept&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;https://saude.gov.br/sid/coren-pi&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;COREN-PI&quot;/&gt;
-      &lt;/concept&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;https://saude.gov.br/sid/coren-pr&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;COREN-PR&quot;/&gt;
-      &lt;/concept&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;https://saude.gov.br/sid/coren-rj&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;COREN-RJ&quot;/&gt;
-      &lt;/concept&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;https://saude.gov.br/sid/coren-rn&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;COREN-RN&quot;/&gt;
-      &lt;/concept&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;https://saude.gov.br/sid/coren-ro&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;COREN-RO&quot;/&gt;
-      &lt;/concept&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;https://saude.gov.br/sid/coren-rr&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;COREN-RR&quot;/&gt;
-      &lt;/concept&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;https://saude.gov.br/sid/coren-rs&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;COREN-RS&quot;/&gt;
-      &lt;/concept&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;https://saude.gov.br/sid/coren-sc&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;COREN-SC&quot;/&gt;
-      &lt;/concept&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;https://saude.gov.br/sid/coren-se&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;COREN-SE&quot;/&gt;
-      &lt;/concept&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;https://saude.gov.br/sid/coren-sp&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;COREN-SP&quot;/&gt;
-      &lt;/concept&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;https://saude.gov.br/sid/coren-to&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;COREN-TO&quot;/&gt;
-      &lt;/concept&gt;
-    &lt;/include&gt;
-  &lt;/compose&gt;
-&lt;/ValueSet&gt;</code></pre>
+      &lt;/<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include">include</a>&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose">compose</a>&gt;
+&lt;/<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet">ValueSet</a>&gt;</code></pre>
 
 
   <!-- insert notes if present -->
@@ -447,7 +468,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.saude.gov.br">Ministério da Saúde do Brasil</a>.  Package br.gov.saude.redfm.fhir#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jun 25, 2025 14:13-0300">2025-06-25</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.saude.gov.br">Ministério da Saúde do Brasil</a>.  Package br.gov.saude.redfm.fhir#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Aug 18, 2025 16:48-0300">2025-08-18</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

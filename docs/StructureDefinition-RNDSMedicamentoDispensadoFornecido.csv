@@ -25,7 +25,7 @@ anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 Order","",0,1,"","","","MedicationRequest {[CanonicalType[http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSPrescricaoMedicamentoDispensado]]} {[]}
 ","Ordering of medication for patient or group","An order or request for both supply of the medication and the instructions for administration of the medication to a patient. The resource is called ""MedicationRequest"" rather than ""MedicationPrescription"" or ""MedicationOrder"" to generalize the use across inpatient and outpatient settings, including care plans, etc., and to harmonize with workflow patterns.","This should never be done when the content can be identified properly, as once identification is lost, it is extremely difficult (and context dependent) to restore it again. Contained resources may have profiles and tags In their meta elements, but SHALL NOT have security labels.","","","","","","","","",,,,,"",,,,"DomainResource.contained",0,*,"","","Request","Entity. Role, or Act","CombinedMedicationRequest"
 "MedicationDispense.contained:prescriptionDetails.id","MedicationDispense.contained.id","","","",1,1,"","","Y","id {[]} {[]}
-","Logical id of this artifact","The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes.","The only time that a resource does not have an id is when it is being submitted to the server using a create operation.","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""prescription""/>","","","","",,,,,"",,,,"Resource.id",0,1,"",""
+","Logical id of this artifact","The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes.","The only time that a resource does not have an id is when it is being submitted to the server using a create operation.","","","","<valueId xmlns=""http://hl7.org/fhir"" value=""prescription""/>","","","","",,,,,"",,,,"Resource.id",0,1,"",""
 "MedicationDispense.contained:prescriptionDetails.meta","MedicationDispense.contained.meta","","","",1,1,"","","Y","Meta {[]} {[]}
 ","Metadata about the resource","The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content might not always be associated with version changes to the resource.","","","","","","","","","",,,,,"",,,,"Resource.meta",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -698,7 +698,7 @@ Drug Utilization Review (DUR)Alert","",0,*,"","","","Reference {[]} {[CanonicalT
 "MedicationDispense.contained:prescriberIdentifier","MedicationDispense.contained","prescriberIdentifier","","",0,1,"","","","Practitioner {[CanonicalType[http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSProfissional]]} {[]}
 ","A person with a  formal responsibility in the provisioning of healthcare or related services","A person who is directly or indirectly involved in the provisioning of healthcare.","This should never be done when the content can be identified properly, as once identification is lost, it is extremely difficult (and context dependent) to restore it again. Contained resources may have profiles and tags In their meta elements, but SHALL NOT have security labels.","","","","","","","","",,,,,"",,,,"DomainResource.contained",0,*,"","","Entity. Role, or Act","Role","PRD (as one example)"
 "MedicationDispense.contained:prescriberIdentifier.id","MedicationDispense.contained.id","","","",1,1,"","","Y","id {[]} {[]}
-","Identificador Lógico do Artefato","Identificador Lógico do Artefato","The only time that a resource does not have an id is when it is being submitted to the server using a create operation.","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""prescriber-identifier""/>","","","","",,,,,"",,,,"Resource.id",0,1,"",""
+","Identificador Lógico do Artefato","Identificador Lógico do Artefato","The only time that a resource does not have an id is when it is being submitted to the server using a create operation.","","","","<valueId xmlns=""http://hl7.org/fhir"" value=""prescriber-identifier""/>","","","","",,,,,"",,,,"Resource.id",0,1,"",""
 "MedicationDispense.contained:prescriberIdentifier.meta","MedicationDispense.contained.meta","","","",1,1,"","","Y","Meta {[]} {[]}
 ","Metadados do Artefato","Metadados que descrevem o artefato","","","","","","","","","",,,,,"",,,,"Resource.meta",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -752,7 +752,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Identificadores do profissional","Identificadores do profissional","","Often, specific identities are assigned for the agent.","","","","","","","",,,,,"","pattern:type}
 ","",,"open","Practitioner.identifier",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","./id","FiveWs.identifier","PRD-7 (or XCN.1)"
-"MedicationDispense.contained:prescriberIdentifier.identifier:cns","MedicationDispense.contained.identifier","cns","","",0,1,"","","Y","Identifier {[]} {[]}
+"MedicationDispense.contained:prescriberIdentifier.identifier:cns","MedicationDispense.contained.identifier","cns","","",0,1,"Y","","Y","Identifier {[]} {[]}
 ","Identificador do profissional","Identificador do profissional","","Often, specific identities are assigned for the agent.","","","","","","","",,,,,"",,,,"Practitioner.identifier",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","./id","FiveWs.identifier","PRD-7 (or XCN.1)"
 "MedicationDispense.contained:prescriberIdentifier.identifier:cns.id","MedicationDispense.contained.identifier.id","","","",0,1,"","","","string {[]} {[]}
@@ -845,7 +845,7 @@ Reference is intended to point to a structure that can potentially be expressed 
 "MedicationDispense.contained:prescriberIdentifier.identifier:cns.assigner.display","MedicationDispense.contained.identifier.assigner.display","","","",0,1,"","","Y","string {[]} {[]}
 ","Nome da entidade que atribuiu o identificador do profissional","Plain text narrative that identifies the resource in addition to the resource reference.","This is generally not the same as the Resource.text of the referenced resource.  The purpose is to identify what's being referenced, not to fully describe it.","","","","","","","","",,,,,"",,,,"Reference.display",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","N/A"
-"MedicationDispense.contained:prescriberIdentifier.identifier:cpf","MedicationDispense.contained.identifier","cpf","","",0,1,"","","Y","Identifier {[]} {[]}
+"MedicationDispense.contained:prescriberIdentifier.identifier:cpf","MedicationDispense.contained.identifier","cpf","","",0,1,"Y","","Y","Identifier {[]} {[]}
 ","Identificador do profissional","Identificador do profissional","","Often, specific identities are assigned for the agent.","","","","","","","",,,,,"",,,,"Practitioner.identifier",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","./id","FiveWs.identifier","PRD-7 (or XCN.1)"
 "MedicationDispense.contained:prescriberIdentifier.identifier:cpf.id","MedicationDispense.contained.identifier.id","","","",0,1,"","","","string {[]} {[]}
@@ -938,7 +938,7 @@ Reference is intended to point to a structure that can potentially be expressed 
 "MedicationDispense.contained:prescriberIdentifier.identifier:cpf.assigner.display","MedicationDispense.contained.identifier.assigner.display","","","",0,1,"","","Y","string {[]} {[]}
 ","Nome da entidade que atribuiu o identificador do profissional","Plain text narrative that identifies the resource in addition to the resource reference.","This is generally not the same as the Resource.text of the referenced resource.  The purpose is to identify what's being referenced, not to fully describe it.","","","","","","","","",,,,,"",,,,"Reference.display",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","N/A"
-"MedicationDispense.contained:prescriberIdentifier.identifier:identificadorMedico","MedicationDispense.contained.identifier","identificadorMedico","","",0,1,"","","Y","Identifier {[]} {[]}
+"MedicationDispense.contained:prescriberIdentifier.identifier:identificadorMedico","MedicationDispense.contained.identifier","identificadorMedico","","",0,1,"Y","","Y","Identifier {[]} {[]}
 ","Identificador do médico","Identificador do médico","","Often, specific identities are assigned for the agent.","","","","","","","",,,,,"",,,,"Practitioner.identifier",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","./id","FiveWs.identifier","PRD-7 (or XCN.1)"
 "MedicationDispense.contained:prescriberIdentifier.identifier:identificadorMedico.id","MedicationDispense.contained.identifier.id","","","",0,1,"","","","string {[]} {[]}
@@ -1031,7 +1031,7 @@ Reference is intended to point to a structure that can potentially be expressed 
 "MedicationDispense.contained:prescriberIdentifier.identifier:identificadorMedico.assigner.display","MedicationDispense.contained.identifier.assigner.display","","","",0,1,"","","Y","string {[]} {[]}
 ","Nome da entidade que atribuiu o identificador do médico","Plain text narrative that identifies the resource in addition to the resource reference.","This is generally not the same as the Resource.text of the referenced resource.  The purpose is to identify what's being referenced, not to fully describe it.","","","","","","","","",,,,,"",,,,"Reference.display",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","N/A"
-"MedicationDispense.contained:prescriberIdentifier.identifier:identificadorFarmaceutico","MedicationDispense.contained.identifier","identificadorFarmaceutico","","",0,1,"","","Y","Identifier {[]} {[]}
+"MedicationDispense.contained:prescriberIdentifier.identifier:identificadorFarmaceutico","MedicationDispense.contained.identifier","identificadorFarmaceutico","","",0,1,"Y","","Y","Identifier {[]} {[]}
 ","Identificador do farmacêutico","Identificador do farmacêutico","","Often, specific identities are assigned for the agent.","","","","","","","",,,,,"",,,,"Practitioner.identifier",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","./id","FiveWs.identifier","PRD-7 (or XCN.1)"
 "MedicationDispense.contained:prescriberIdentifier.identifier:identificadorFarmaceutico.id","MedicationDispense.contained.identifier.id","","","",0,1,"","","","string {[]} {[]}
@@ -1124,7 +1124,7 @@ Reference is intended to point to a structure that can potentially be expressed 
 "MedicationDispense.contained:prescriberIdentifier.identifier:identificadorFarmaceutico.assigner.display","MedicationDispense.contained.identifier.assigner.display","","","",0,1,"","","Y","string {[]} {[]}
 ","Nome da entidade que atribuiu o identificador do farmacêutico","Plain text narrative that identifies the resource in addition to the resource reference.","This is generally not the same as the Resource.text of the referenced resource.  The purpose is to identify what's being referenced, not to fully describe it.","","","","","","","","",,,,,"",,,,"Reference.display",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","N/A"
-"MedicationDispense.contained:prescriberIdentifier.identifier:identificadorOdontologo","MedicationDispense.contained.identifier","identificadorOdontologo","","",0,1,"","","Y","Identifier {[]} {[]}
+"MedicationDispense.contained:prescriberIdentifier.identifier:identificadorOdontologo","MedicationDispense.contained.identifier","identificadorOdontologo","","",0,1,"Y","","Y","Identifier {[]} {[]}
 ","Identificador do odontólogo","Identificador do odontólogo","","Often, specific identities are assigned for the agent.","","","","","","","",,,,,"",,,,"Practitioner.identifier",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","./id","FiveWs.identifier","PRD-7 (or XCN.1)"
 "MedicationDispense.contained:prescriberIdentifier.identifier:identificadorOdontologo.id","MedicationDispense.contained.identifier.id","","","",0,1,"","","","string {[]} {[]}
@@ -1217,7 +1217,7 @@ Reference is intended to point to a structure that can potentially be expressed 
 "MedicationDispense.contained:prescriberIdentifier.identifier:identificadorOdontologo.assigner.display","MedicationDispense.contained.identifier.assigner.display","","","",0,1,"","","Y","string {[]} {[]}
 ","Nome da entidade que atribuiu o identificador do odontólogo","Plain text narrative that identifies the resource in addition to the resource reference.","This is generally not the same as the Resource.text of the referenced resource.  The purpose is to identify what's being referenced, not to fully describe it.","","","","","","","","",,,,,"",,,,"Reference.display",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","N/A"
-"MedicationDispense.contained:prescriberIdentifier.identifier:identificadorEnfermeiro","MedicationDispense.contained.identifier","identificadorEnfermeiro","","",0,1,"","","Y","Identifier {[]} {[]}
+"MedicationDispense.contained:prescriberIdentifier.identifier:identificadorEnfermeiro","MedicationDispense.contained.identifier","identificadorEnfermeiro","","",0,1,"Y","","Y","Identifier {[]} {[]}
 ","Identificador do enfermeiro","Identificador do enfermeiro","","Often, specific identities are assigned for the agent.","","","","","","","",,,,,"",,,,"Practitioner.identifier",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","./id","FiveWs.identifier","PRD-7 (or XCN.1)"
 "MedicationDispense.contained:prescriberIdentifier.identifier:identificadorEnfermeiro.id","MedicationDispense.contained.identifier.id","","","",0,1,"","","","string {[]} {[]}
@@ -1310,7 +1310,7 @@ Reference is intended to point to a structure that can potentially be expressed 
 "MedicationDispense.contained:prescriberIdentifier.identifier:identificadorEnfermeiro.assigner.display","MedicationDispense.contained.identifier.assigner.display","","","",0,1,"","","Y","string {[]} {[]}
 ","Nome da entidade que atribuiu o identificador do enfermeiro","Plain text narrative that identifies the resource in addition to the resource reference.","This is generally not the same as the Resource.text of the referenced resource.  The purpose is to identify what's being referenced, not to fully describe it.","","","","","","","","",,,,,"",,,,"Reference.display",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","N/A"
-"MedicationDispense.contained:prescriberIdentifier.identifier:identificadorOutrosProfissionais","MedicationDispense.contained.identifier","identificadorOutrosProfissionais","","",0,1,"","","Y","Identifier {[]} {[]}
+"MedicationDispense.contained:prescriberIdentifier.identifier:identificadorOutrosProfissionais","MedicationDispense.contained.identifier","identificadorOutrosProfissionais","","",0,1,"Y","","Y","Identifier {[]} {[]}
 ","Identificador de outros profissionais","Identificador de outros profissionais","","Often, specific identities are assigned for the agent.","","","","","","","",,,,,"",,,,"Practitioner.identifier",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","./id","FiveWs.identifier","PRD-7 (or XCN.1)"
 "MedicationDispense.contained:prescriberIdentifier.identifier:identificadorOutrosProfissionais.id","MedicationDispense.contained.identifier.id","","","",0,1,"","","","string {[]} {[]}
@@ -1402,7 +1402,7 @@ Reference is intended to point to a structure that can potentially be expressed 
 "MedicationDispense.contained:prescriberIdentifier.identifier:identificadorOutrosProfissionais.assigner.display","MedicationDispense.contained.identifier.assigner.display","","","",0,1,"","","Y","string {[]} {[]}
 ","Nome da entidade que atribuiu o identificador de outros profissionais","Plain text narrative that identifies the resource in addition to the resource reference.","This is generally not the same as the Resource.text of the referenced resource.  The purpose is to identify what's being referenced, not to fully describe it.","","","","","","","","",,,,,"",,,,"Reference.display",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","N/A"
-"MedicationDispense.contained:prescriberIdentifier.identifier:rqeMedico","MedicationDispense.contained.identifier","rqeMedico","","",0,1,"","","Y","Identifier {[]} {[]}
+"MedicationDispense.contained:prescriberIdentifier.identifier:rqeMedico","MedicationDispense.contained.identifier","rqeMedico","","",0,1,"Y","","Y","Identifier {[]} {[]}
 ","Identificadores do profissional","Identificadores do profissional","","Often, specific identities are assigned for the agent.","","","","","","","",,,,,"",,,,"Practitioner.identifier",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","./id","FiveWs.identifier","PRD-7 (or XCN.1)"
 "MedicationDispense.contained:prescriberIdentifier.identifier:rqeMedico.id","MedicationDispense.contained.identifier.id","","","",0,1,"","","","string {[]} {[]}
@@ -1587,7 +1587,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "MedicationDispense.contained:prescriberSpecialty","MedicationDispense.contained","prescriberSpecialty","","",0,1,"","","","PractitionerRole {[CanonicalType[http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSLotacaoProfissional]]} {[]}
 ","Roles/organizations the practitioner is associated with","A specific set of Roles/Locations/specialties/services that a practitioner may perform at an organization for a period of time.","This should never be done when the content can be identified properly, as once identification is lost, it is extremely difficult (and context dependent) to restore it again. Contained resources may have profiles and tags In their meta elements, but SHALL NOT have security labels.","","","","","","","","",,,,,"",,,,"DomainResource.contained",0,*,"","","Entity. Role, or Act","Role","PRD (as one example)"
 "MedicationDispense.contained:prescriberSpecialty.id","MedicationDispense.contained.id","","","",1,1,"","","Y","id {[]} {[]}
-","ID lógico deste artefato","ID lógico deste artefato","The only time that a resource does not have an id is when it is being submitted to the server using a create operation.","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""prescriber-specialty""/>","","","","",,,,,"",,,,"Resource.id",0,1,"",""
+","ID lógico deste artefato","ID lógico deste artefato","The only time that a resource does not have an id is when it is being submitted to the server using a create operation.","","","","<valueId xmlns=""http://hl7.org/fhir"" value=""prescriber-specialty""/>","","","","",,,,,"",,,,"Resource.id",0,1,"",""
 "MedicationDispense.contained:prescriberSpecialty.meta","MedicationDispense.contained.meta","","","",1,1,"","","Y","Meta {[]} {[]}
 ","Metadados sobre o recurso","Metadados sobre o recurso","","","","","","","","","",,,,,"",,,,"Resource.meta",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -1777,7 +1777,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "MedicationDispense.contained:pharmacistIdentifier","MedicationDispense.contained","pharmacistIdentifier","","",0,1,"","","","Practitioner {[CanonicalType[http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSProfissional]]} {[]}
 ","A person with a  formal responsibility in the provisioning of healthcare or related services","A person who is directly or indirectly involved in the provisioning of healthcare.","This should never be done when the content can be identified properly, as once identification is lost, it is extremely difficult (and context dependent) to restore it again. Contained resources may have profiles and tags In their meta elements, but SHALL NOT have security labels.","","","","","","","","",,,,,"",,,,"DomainResource.contained",0,*,"","","Entity. Role, or Act","Role","PRD (as one example)"
 "MedicationDispense.contained:pharmacistIdentifier.id","MedicationDispense.contained.id","","","",1,1,"","","Y","id {[]} {[]}
-","Identificador Lógico do Artefato","Identificador Lógico do Artefato","The only time that a resource does not have an id is when it is being submitted to the server using a create operation.","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""pharmacist-crf""/>","","","","",,,,,"",,,,"Resource.id",0,1,"",""
+","Identificador Lógico do Artefato","Identificador Lógico do Artefato","The only time that a resource does not have an id is when it is being submitted to the server using a create operation.","","","","<valueId xmlns=""http://hl7.org/fhir"" value=""pharmacist-crf""/>","","","","",,,,,"",,,,"Resource.id",0,1,"",""
 "MedicationDispense.contained:pharmacistIdentifier.meta","MedicationDispense.contained.meta","","","",0,1,"","","Y","Meta {[]} {[]}
 ","Metadados do Artefato","Metadados que descrevem o artefato","","","","","","","","","",,,,,"",,,,"Resource.meta",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -1804,7 +1804,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Identificadores do profissional","Identificadores do profissional","","Often, specific identities are assigned for the agent.","","","","","","","",,,,,"","pattern:type}
 ","",,"open","Practitioner.identifier",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","./id","FiveWs.identifier","PRD-7 (or XCN.1)"
-"MedicationDispense.contained:pharmacistIdentifier.identifier:cns","MedicationDispense.contained.identifier","cns","","",0,1,"","","Y","Identifier {[]} {[]}
+"MedicationDispense.contained:pharmacistIdentifier.identifier:cns","MedicationDispense.contained.identifier","cns","","",0,1,"Y","","Y","Identifier {[]} {[]}
 ","Identificador do profissional","Identificador do profissional","","Often, specific identities are assigned for the agent.","","","","","","","",,,,,"",,,,"Practitioner.identifier",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","./id","FiveWs.identifier","PRD-7 (or XCN.1)"
 "MedicationDispense.contained:pharmacistIdentifier.identifier:cns.id","MedicationDispense.contained.identifier.id","","","",0,1,"","","","string {[]} {[]}
@@ -1897,7 +1897,7 @@ Reference is intended to point to a structure that can potentially be expressed 
 "MedicationDispense.contained:pharmacistIdentifier.identifier:cns.assigner.display","MedicationDispense.contained.identifier.assigner.display","","","",0,1,"","","Y","string {[]} {[]}
 ","Nome da entidade que atribuiu o identificador do profissional","Plain text narrative that identifies the resource in addition to the resource reference.","This is generally not the same as the Resource.text of the referenced resource.  The purpose is to identify what's being referenced, not to fully describe it.","","","","","","","","",,,,,"",,,,"Reference.display",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","N/A"
-"MedicationDispense.contained:pharmacistIdentifier.identifier:cpf","MedicationDispense.contained.identifier","cpf","","",0,1,"","","Y","Identifier {[]} {[]}
+"MedicationDispense.contained:pharmacistIdentifier.identifier:cpf","MedicationDispense.contained.identifier","cpf","","",0,1,"Y","","Y","Identifier {[]} {[]}
 ","Identificador do profissional","Identificador do profissional","","Often, specific identities are assigned for the agent.","","","","","","","",,,,,"",,,,"Practitioner.identifier",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","./id","FiveWs.identifier","PRD-7 (or XCN.1)"
 "MedicationDispense.contained:pharmacistIdentifier.identifier:cpf.id","MedicationDispense.contained.identifier.id","","","",0,1,"","","","string {[]} {[]}
@@ -1990,7 +1990,7 @@ Reference is intended to point to a structure that can potentially be expressed 
 "MedicationDispense.contained:pharmacistIdentifier.identifier:cpf.assigner.display","MedicationDispense.contained.identifier.assigner.display","","","",0,1,"","","Y","string {[]} {[]}
 ","Nome da entidade que atribuiu o identificador do profissional","Plain text narrative that identifies the resource in addition to the resource reference.","This is generally not the same as the Resource.text of the referenced resource.  The purpose is to identify what's being referenced, not to fully describe it.","","","","","","","","",,,,,"",,,,"Reference.display",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","N/A"
-"MedicationDispense.contained:pharmacistIdentifier.identifier:identificadorMedico","MedicationDispense.contained.identifier","identificadorMedico","","",0,1,"","","Y","Identifier {[]} {[]}
+"MedicationDispense.contained:pharmacistIdentifier.identifier:identificadorMedico","MedicationDispense.contained.identifier","identificadorMedico","","",0,1,"Y","","Y","Identifier {[]} {[]}
 ","Identificador do médico","Identificador do médico","","Often, specific identities are assigned for the agent.","","","","","","","",,,,,"",,,,"Practitioner.identifier",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","./id","FiveWs.identifier","PRD-7 (or XCN.1)"
 "MedicationDispense.contained:pharmacistIdentifier.identifier:identificadorMedico.id","MedicationDispense.contained.identifier.id","","","",0,1,"","","","string {[]} {[]}
@@ -2083,7 +2083,7 @@ Reference is intended to point to a structure that can potentially be expressed 
 "MedicationDispense.contained:pharmacistIdentifier.identifier:identificadorMedico.assigner.display","MedicationDispense.contained.identifier.assigner.display","","","",0,1,"","","Y","string {[]} {[]}
 ","Nome da entidade que atribuiu o identificador do médico","Plain text narrative that identifies the resource in addition to the resource reference.","This is generally not the same as the Resource.text of the referenced resource.  The purpose is to identify what's being referenced, not to fully describe it.","","","","","","","","",,,,,"",,,,"Reference.display",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","N/A"
-"MedicationDispense.contained:pharmacistIdentifier.identifier:identificadorFarmaceutico","MedicationDispense.contained.identifier","identificadorFarmaceutico","","",1,1,"","","Y","Identifier {[]} {[]}
+"MedicationDispense.contained:pharmacistIdentifier.identifier:identificadorFarmaceutico","MedicationDispense.contained.identifier","identificadorFarmaceutico","","",1,1,"Y","","Y","Identifier {[]} {[]}
 ","Identificador do farmacêutico","Identificador do farmacêutico","","Often, specific identities are assigned for the agent.","","","","","","","",,,,,"",,,,"Practitioner.identifier",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","./id","FiveWs.identifier","PRD-7 (or XCN.1)"
 "MedicationDispense.contained:pharmacistIdentifier.identifier:identificadorFarmaceutico.id","MedicationDispense.contained.identifier.id","","","",0,1,"","","","string {[]} {[]}
@@ -2176,7 +2176,7 @@ Reference is intended to point to a structure that can potentially be expressed 
 "MedicationDispense.contained:pharmacistIdentifier.identifier:identificadorFarmaceutico.assigner.display","MedicationDispense.contained.identifier.assigner.display","","","",0,1,"","","Y","string {[]} {[]}
 ","Nome da entidade que atribuiu o identificador do farmacêutico","Plain text narrative that identifies the resource in addition to the resource reference.","This is generally not the same as the Resource.text of the referenced resource.  The purpose is to identify what's being referenced, not to fully describe it.","","","","","","","","",,,,,"",,,,"Reference.display",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","N/A"
-"MedicationDispense.contained:pharmacistIdentifier.identifier:identificadorOdontologo","MedicationDispense.contained.identifier","identificadorOdontologo","","",0,1,"","","Y","Identifier {[]} {[]}
+"MedicationDispense.contained:pharmacistIdentifier.identifier:identificadorOdontologo","MedicationDispense.contained.identifier","identificadorOdontologo","","",0,1,"Y","","Y","Identifier {[]} {[]}
 ","Identificador do odontólogo","Identificador do odontólogo","","Often, specific identities are assigned for the agent.","","","","","","","",,,,,"",,,,"Practitioner.identifier",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","./id","FiveWs.identifier","PRD-7 (or XCN.1)"
 "MedicationDispense.contained:pharmacistIdentifier.identifier:identificadorOdontologo.id","MedicationDispense.contained.identifier.id","","","",0,1,"","","","string {[]} {[]}
@@ -2269,7 +2269,7 @@ Reference is intended to point to a structure that can potentially be expressed 
 "MedicationDispense.contained:pharmacistIdentifier.identifier:identificadorOdontologo.assigner.display","MedicationDispense.contained.identifier.assigner.display","","","",0,1,"","","Y","string {[]} {[]}
 ","Nome da entidade que atribuiu o identificador do odontólogo","Plain text narrative that identifies the resource in addition to the resource reference.","This is generally not the same as the Resource.text of the referenced resource.  The purpose is to identify what's being referenced, not to fully describe it.","","","","","","","","",,,,,"",,,,"Reference.display",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","N/A"
-"MedicationDispense.contained:pharmacistIdentifier.identifier:identificadorEnfermeiro","MedicationDispense.contained.identifier","identificadorEnfermeiro","","",0,1,"","","Y","Identifier {[]} {[]}
+"MedicationDispense.contained:pharmacistIdentifier.identifier:identificadorEnfermeiro","MedicationDispense.contained.identifier","identificadorEnfermeiro","","",0,1,"Y","","Y","Identifier {[]} {[]}
 ","Identificador do enfermeiro","Identificador do enfermeiro","","Often, specific identities are assigned for the agent.","","","","","","","",,,,,"",,,,"Practitioner.identifier",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","./id","FiveWs.identifier","PRD-7 (or XCN.1)"
 "MedicationDispense.contained:pharmacistIdentifier.identifier:identificadorEnfermeiro.id","MedicationDispense.contained.identifier.id","","","",0,1,"","","","string {[]} {[]}
@@ -2362,7 +2362,7 @@ Reference is intended to point to a structure that can potentially be expressed 
 "MedicationDispense.contained:pharmacistIdentifier.identifier:identificadorEnfermeiro.assigner.display","MedicationDispense.contained.identifier.assigner.display","","","",0,1,"","","Y","string {[]} {[]}
 ","Nome da entidade que atribuiu o identificador do enfermeiro","Plain text narrative that identifies the resource in addition to the resource reference.","This is generally not the same as the Resource.text of the referenced resource.  The purpose is to identify what's being referenced, not to fully describe it.","","","","","","","","",,,,,"",,,,"Reference.display",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","N/A"
-"MedicationDispense.contained:pharmacistIdentifier.identifier:identificadorOutrosProfissionais","MedicationDispense.contained.identifier","identificadorOutrosProfissionais","","",0,1,"","","Y","Identifier {[]} {[]}
+"MedicationDispense.contained:pharmacistIdentifier.identifier:identificadorOutrosProfissionais","MedicationDispense.contained.identifier","identificadorOutrosProfissionais","","",0,1,"Y","","Y","Identifier {[]} {[]}
 ","Identificador de outros profissionais","Identificador de outros profissionais","","Often, specific identities are assigned for the agent.","","","","","","","",,,,,"",,,,"Practitioner.identifier",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","./id","FiveWs.identifier","PRD-7 (or XCN.1)"
 "MedicationDispense.contained:pharmacistIdentifier.identifier:identificadorOutrosProfissionais.id","MedicationDispense.contained.identifier.id","","","",0,1,"","","","string {[]} {[]}
@@ -2454,7 +2454,7 @@ Reference is intended to point to a structure that can potentially be expressed 
 "MedicationDispense.contained:pharmacistIdentifier.identifier:identificadorOutrosProfissionais.assigner.display","MedicationDispense.contained.identifier.assigner.display","","","",0,1,"","","Y","string {[]} {[]}
 ","Nome da entidade que atribuiu o identificador de outros profissionais","Plain text narrative that identifies the resource in addition to the resource reference.","This is generally not the same as the Resource.text of the referenced resource.  The purpose is to identify what's being referenced, not to fully describe it.","","","","","","","","",,,,,"",,,,"Reference.display",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","N/A"
-"MedicationDispense.contained:pharmacistIdentifier.identifier:rqeMedico","MedicationDispense.contained.identifier","rqeMedico","","",0,1,"","","Y","Identifier {[]} {[]}
+"MedicationDispense.contained:pharmacistIdentifier.identifier:rqeMedico","MedicationDispense.contained.identifier","rqeMedico","","",0,1,"Y","","Y","Identifier {[]} {[]}
 ","Identificadores do profissional","Identificadores do profissional","","Often, specific identities are assigned for the agent.","","","","","","","",,,,,"",,,,"Practitioner.identifier",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","./id","FiveWs.identifier","PRD-7 (or XCN.1)"
 "MedicationDispense.contained:pharmacistIdentifier.identifier:rqeMedico.id","MedicationDispense.contained.identifier.id","","","",0,1,"","","","string {[]} {[]}
@@ -2890,7 +2890,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "MedicationDispense.performer.actor","MedicationDispense.performer.actor","","","",1,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Practitioner], CanonicalType[http://hl7.org/fhir/StructureDefinition/PractitionerRole], CanonicalType[http://hl7.org/fhir/StructureDefinition/Organization], CanonicalType[http://hl7.org/fhir/StructureDefinition/Patient], CanonicalType[http://hl7.org/fhir/StructureDefinition/Device], CanonicalType[http://hl7.org/fhir/StructureDefinition/RelatedPerson]]}
 ","Individual who was performing","The device, practitioner, etc. who performed the action.  It should be assumed that the actor is the dispenser of the medication.","","","","","","","","","",,,,,"",,,,"MedicationDispense.performer.actor",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.performer.actor",".role"
-"MedicationDispense.performer:organization","MedicationDispense.performer","organization","","",1,1,"","","","BackboneElement {[]} {[]}
+"MedicationDispense.performer:organization","MedicationDispense.performer","organization","","",1,1,"Y","","","BackboneElement {[]} {[]}
 ","Estabelecimento onde ocorreu a dispensação ou fornecimento de medicamento.","Indicates who or what performed the event.","","","","","","","","","",,,,,"",,,,"MedicationDispense.performer",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.performer",".participation[typeCode=PRF]"
 "MedicationDispense.performer:organization.id","MedicationDispense.performer.id","","","",1,1,"","","","string {[]} {[]}
@@ -2964,7 +2964,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "MedicationDispense.performer:organization.actor.display","MedicationDispense.performer.actor.display","","","",0,1,"","","Y","string {[]} {[]}
 ","Text alternative for the resource","Plain text narrative that identifies the resource in addition to the resource reference.","This is generally not the same as the Resource.text of the referenced resource.  The purpose is to identify what's being referenced, not to fully describe it.","","","","","","","","",,,,,"",,,,"Reference.display",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","N/A"
-"MedicationDispense.performer:pharmacist","MedicationDispense.performer","pharmacist","","",0,1,"","","","BackboneElement {[]} {[]}
+"MedicationDispense.performer:pharmacist","MedicationDispense.performer","pharmacist","","",0,1,"Y","","","BackboneElement {[]} {[]}
 ","Farmacêutico que realizou a dispensação do medicamento","Indicates who or what performed the event.","","","","","","","","","",,,,,"",,,,"MedicationDispense.performer",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.performer",".participation[typeCode=PRF]"
 "MedicationDispense.performer:pharmacist.id","MedicationDispense.performer.id","","","",1,1,"","","","string {[]} {[]}
@@ -3073,7 +3073,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "MedicationDispense.performer:pharmacist.actor.display","MedicationDispense.performer.actor.display","","","",0,1,"","","Y","string {[]} {[]}
 ","Text alternative for the resource","Plain text narrative that identifies the resource in addition to the resource reference.","This is generally not the same as the Resource.text of the referenced resource.  The purpose is to identify what's being referenced, not to fully describe it.","","","","","","","","",,,,,"",,,,"Reference.display",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","N/A"
-"MedicationDispense.performer:otherPractitioner","MedicationDispense.performer","otherPractitioner","","",0,1,"","","","BackboneElement {[]} {[]}
+"MedicationDispense.performer:otherPractitioner","MedicationDispense.performer","otherPractitioner","","",0,1,"Y","","","BackboneElement {[]} {[]}
 ","Profissional que realizou o fornecimento do medicamento","Indicates who or what performed the event.","","","","","","","","","",,,,,"",,,,"MedicationDispense.performer",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.performer",".participation[typeCode=PRF]"
 "MedicationDispense.performer:otherPractitioner.id","MedicationDispense.performer.id","","","",1,1,"","","","string {[]} {[]}
@@ -3136,7 +3136,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Medication order that authorizes the dispense","Indicates the medication order that is being dispensed against.","Maps to basedOn in Event logical model.","","","","","","","","",,,,,"","value:id}
 ","",,"open","MedicationDispense.authorizingPrescription",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.basedOn",".outboundRelationship[typeCode=FLFS].target[moodCode=RQO]","CombinedMedicationDispense.inFulfillmentOf","ORC-2 Placer Order Number"
-"MedicationDispense.authorizingPrescription:prescriptionInRNDS","MedicationDispense.authorizingPrescription","prescriptionInRNDS","","",0,1,"","","","Reference {[]} {[CanonicalType[http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSPrescricaoMedicamentoDispensado]]}
+"MedicationDispense.authorizingPrescription:prescriptionInRNDS","MedicationDispense.authorizingPrescription","prescriptionInRNDS","","",0,1,"Y","","","Reference {[]} {[CanonicalType[http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSPrescricaoMedicamentoDispensado]]}
 ","Medication order that authorizes the dispense","Indicates the medication order that is being dispensed against.","Maps to basedOn in Event logical model.","","","","","","","","",,,,,"",,,,"MedicationDispense.authorizingPrescription",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.basedOn",".outboundRelationship[typeCode=FLFS].target[moodCode=RQO]","CombinedMedicationDispense.inFulfillmentOf","ORC-2 Placer Order Number"
 "MedicationDispense.authorizingPrescription:prescriptionInRNDS.id","MedicationDispense.authorizingPrescription.id","","","",0,1,"","","","string {[]} {[]}
@@ -3192,7 +3192,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "MedicationDispense.authorizingPrescription:prescriptionInRNDS.display","MedicationDispense.authorizingPrescription.display","","","",0,1,"","","Y","string {[]} {[]}
 ","Text alternative for the resource","Plain text narrative that identifies the resource in addition to the resource reference.","This is generally not the same as the Resource.text of the referenced resource.  The purpose is to identify what's being referenced, not to fully describe it.","","","","","","","","",,,,,"",,,,"Reference.display",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","N/A"
-"MedicationDispense.authorizingPrescription:prescriptionOutOfRNDS","MedicationDispense.authorizingPrescription","prescriptionOutOfRNDS","","",0,1,"","","","Reference {[]} {[CanonicalType[http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSPrescricaoMedicamentoDispensado]]}
+"MedicationDispense.authorizingPrescription:prescriptionOutOfRNDS","MedicationDispense.authorizingPrescription","prescriptionOutOfRNDS","","",0,1,"Y","","","Reference {[]} {[CanonicalType[http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSPrescricaoMedicamentoDispensado]]}
 ","Medication order that authorizes the dispense","Indicates the medication order that is being dispensed against.","Maps to basedOn in Event logical model.","","","","","","","","",,,,,"",,,,"MedicationDispense.authorizingPrescription",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.basedOn",".outboundRelationship[typeCode=FLFS].target[moodCode=RQO]","CombinedMedicationDispense.inFulfillmentOf","ORC-2 Placer Order Number"
 "MedicationDispense.authorizingPrescription:prescriptionOutOfRNDS.id","MedicationDispense.authorizingPrescription.id","","","",0,1,"","","","string {[]} {[]}

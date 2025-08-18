@@ -3,7 +3,7 @@
   "id": "br-core-healthcareservice",
   "language": "pt-BR",
   "url": "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-healthcareservice",
-  "name": "br-core-healthcareservice",
+  "name": "BRCoreHealthcareService",
   "title": "br-core-healthcareservice",
   "status": "active",
   "publisher": "Ministério da Saúde do Brasil",

@@ -30,7 +30,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Identificadores do profissional","Identificadores do profissional","","Often, specific identities are assigned for the agent.","","","","","","","",,,,,"","pattern:type}
 ","",,"open","Practitioner.identifier",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","PRD-7 (or XCN.1)","./id","./Identifiers","FiveWs.identifier"
-"Practitioner.identifier:cns","Practitioner.identifier","cns","","",0,1,"","","Y","Identifier {[]} {[]}
+"Practitioner.identifier:cns","Practitioner.identifier","cns","","",0,1,"Y","","Y","Identifier {[]} {[]}
 ","Identificador do profissional","Identificador do profissional","","Often, specific identities are assigned for the agent.","","","","","","","",,,,,"",,,,"Practitioner.identifier",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","PRD-7 (or XCN.1)","./id","./Identifiers","FiveWs.identifier"
 "Practitioner.identifier:cns.id","Practitioner.identifier.id","","","",0,1,"","","","string {[]} {[]}
@@ -123,7 +123,7 @@ Reference is intended to point to a structure that can potentially be expressed 
 "Practitioner.identifier:cns.assigner.display","Practitioner.identifier.assigner.display","","","",0,1,"","","Y","string {[]} {[]}
 ","Nome da entidade que atribuiu o identificador do profissional","Plain text narrative that identifies the resource in addition to the resource reference.","This is generally not the same as the Resource.text of the referenced resource.  The purpose is to identify what's being referenced, not to fully describe it.","","","","","","","","",,,,,"",,,,"Reference.display",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","N/A"
-"Practitioner.identifier:cpf","Practitioner.identifier","cpf","","",0,1,"","","Y","Identifier {[]} {[]}
+"Practitioner.identifier:cpf","Practitioner.identifier","cpf","","",0,1,"Y","","Y","Identifier {[]} {[]}
 ","Identificador do profissional","Identificador do profissional","","Often, specific identities are assigned for the agent.","","","","","","","",,,,,"",,,,"Practitioner.identifier",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","PRD-7 (or XCN.1)","./id","./Identifiers","FiveWs.identifier"
 "Practitioner.identifier:cpf.id","Practitioner.identifier.id","","","",0,1,"","","","string {[]} {[]}
@@ -216,7 +216,7 @@ Reference is intended to point to a structure that can potentially be expressed 
 "Practitioner.identifier:cpf.assigner.display","Practitioner.identifier.assigner.display","","","",0,1,"","","Y","string {[]} {[]}
 ","Nome da entidade que atribuiu o identificador do profissional","Plain text narrative that identifies the resource in addition to the resource reference.","This is generally not the same as the Resource.text of the referenced resource.  The purpose is to identify what's being referenced, not to fully describe it.","","","","","","","","",,,,,"",,,,"Reference.display",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","N/A"
-"Practitioner.identifier:identificadorMedico","Practitioner.identifier","identificadorMedico","","",0,1,"","","Y","Identifier {[]} {[]}
+"Practitioner.identifier:identificadorMedico","Practitioner.identifier","identificadorMedico","","",0,1,"Y","","Y","Identifier {[]} {[]}
 ","Identificador do médico","Identificador do médico","","Often, specific identities are assigned for the agent.","","","","","","","",,,,,"",,,,"Practitioner.identifier",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","PRD-7 (or XCN.1)","./id","./Identifiers","FiveWs.identifier"
 "Practitioner.identifier:identificadorMedico.id","Practitioner.identifier.id","","","",0,1,"","","","string {[]} {[]}
@@ -309,7 +309,7 @@ Reference is intended to point to a structure that can potentially be expressed 
 "Practitioner.identifier:identificadorMedico.assigner.display","Practitioner.identifier.assigner.display","","","",0,1,"","","Y","string {[]} {[]}
 ","Nome da entidade que atribuiu o identificador do médico","Plain text narrative that identifies the resource in addition to the resource reference.","This is generally not the same as the Resource.text of the referenced resource.  The purpose is to identify what's being referenced, not to fully describe it.","","","","","","","","",,,,,"",,,,"Reference.display",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","N/A"
-"Practitioner.identifier:identificadorFarmaceutico","Practitioner.identifier","identificadorFarmaceutico","","",0,1,"","","Y","Identifier {[]} {[]}
+"Practitioner.identifier:identificadorFarmaceutico","Practitioner.identifier","identificadorFarmaceutico","","",0,1,"Y","","Y","Identifier {[]} {[]}
 ","Identificador do farmacêutico","Identificador do farmacêutico","","Often, specific identities are assigned for the agent.","","","","","","","",,,,,"",,,,"Practitioner.identifier",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","PRD-7 (or XCN.1)","./id","./Identifiers","FiveWs.identifier"
 "Practitioner.identifier:identificadorFarmaceutico.id","Practitioner.identifier.id","","","",0,1,"","","","string {[]} {[]}
@@ -402,7 +402,7 @@ Reference is intended to point to a structure that can potentially be expressed 
 "Practitioner.identifier:identificadorFarmaceutico.assigner.display","Practitioner.identifier.assigner.display","","","",0,1,"","","Y","string {[]} {[]}
 ","Nome da entidade que atribuiu o identificador do farmacêutico","Plain text narrative that identifies the resource in addition to the resource reference.","This is generally not the same as the Resource.text of the referenced resource.  The purpose is to identify what's being referenced, not to fully describe it.","","","","","","","","",,,,,"",,,,"Reference.display",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","N/A"
-"Practitioner.identifier:identificadorOdontologo","Practitioner.identifier","identificadorOdontologo","","",0,1,"","","Y","Identifier {[]} {[]}
+"Practitioner.identifier:identificadorOdontologo","Practitioner.identifier","identificadorOdontologo","","",0,1,"Y","","Y","Identifier {[]} {[]}
 ","Identificador do odontólogo","Identificador do odontólogo","","Often, specific identities are assigned for the agent.","","","","","","","",,,,,"",,,,"Practitioner.identifier",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","PRD-7 (or XCN.1)","./id","./Identifiers","FiveWs.identifier"
 "Practitioner.identifier:identificadorOdontologo.id","Practitioner.identifier.id","","","",0,1,"","","","string {[]} {[]}
@@ -495,7 +495,7 @@ Reference is intended to point to a structure that can potentially be expressed 
 "Practitioner.identifier:identificadorOdontologo.assigner.display","Practitioner.identifier.assigner.display","","","",0,1,"","","Y","string {[]} {[]}
 ","Nome da entidade que atribuiu o identificador do odontólogo","Plain text narrative that identifies the resource in addition to the resource reference.","This is generally not the same as the Resource.text of the referenced resource.  The purpose is to identify what's being referenced, not to fully describe it.","","","","","","","","",,,,,"",,,,"Reference.display",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","N/A"
-"Practitioner.identifier:identificadorEnfermeiro","Practitioner.identifier","identificadorEnfermeiro","","",0,1,"","","Y","Identifier {[]} {[]}
+"Practitioner.identifier:identificadorEnfermeiro","Practitioner.identifier","identificadorEnfermeiro","","",0,1,"Y","","Y","Identifier {[]} {[]}
 ","Identificador do enfermeiro","Identificador do enfermeiro","","Often, specific identities are assigned for the agent.","","","","","","","",,,,,"",,,,"Practitioner.identifier",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","PRD-7 (or XCN.1)","./id","./Identifiers","FiveWs.identifier"
 "Practitioner.identifier:identificadorEnfermeiro.id","Practitioner.identifier.id","","","",0,1,"","","","string {[]} {[]}
@@ -588,7 +588,7 @@ Reference is intended to point to a structure that can potentially be expressed 
 "Practitioner.identifier:identificadorEnfermeiro.assigner.display","Practitioner.identifier.assigner.display","","","",0,1,"","","Y","string {[]} {[]}
 ","Nome da entidade que atribuiu o identificador do enfermeiro","Plain text narrative that identifies the resource in addition to the resource reference.","This is generally not the same as the Resource.text of the referenced resource.  The purpose is to identify what's being referenced, not to fully describe it.","","","","","","","","",,,,,"",,,,"Reference.display",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","N/A"
-"Practitioner.identifier:identificadorOutrosProfissionais","Practitioner.identifier","identificadorOutrosProfissionais","","",0,1,"","","Y","Identifier {[]} {[]}
+"Practitioner.identifier:identificadorOutrosProfissionais","Practitioner.identifier","identificadorOutrosProfissionais","","",0,1,"Y","","Y","Identifier {[]} {[]}
 ","Identificador de outros profissionais","Identificador de outros profissionais","","Often, specific identities are assigned for the agent.","","","","","","","",,,,,"",,,,"Practitioner.identifier",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","PRD-7 (or XCN.1)","./id","./Identifiers","FiveWs.identifier"
 "Practitioner.identifier:identificadorOutrosProfissionais.id","Practitioner.identifier.id","","","",0,1,"","","","string {[]} {[]}
@@ -680,7 +680,7 @@ Reference is intended to point to a structure that can potentially be expressed 
 "Practitioner.identifier:identificadorOutrosProfissionais.assigner.display","Practitioner.identifier.assigner.display","","","",0,1,"","","Y","string {[]} {[]}
 ","Nome da entidade que atribuiu o identificador de outros profissionais","Plain text narrative that identifies the resource in addition to the resource reference.","This is generally not the same as the Resource.text of the referenced resource.  The purpose is to identify what's being referenced, not to fully describe it.","","","","","","","","",,,,,"",,,,"Reference.display",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","N/A"
-"Practitioner.identifier:rqeMedico","Practitioner.identifier","rqeMedico","","",0,1,"","","Y","Identifier {[]} {[]}
+"Practitioner.identifier:rqeMedico","Practitioner.identifier","rqeMedico","","",0,1,"Y","","Y","Identifier {[]} {[]}
 ","Identificadores do profissional","Identificadores do profissional","","Often, specific identities are assigned for the agent.","","","","","","","",,,,,"",,,,"Practitioner.identifier",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","PRD-7 (or XCN.1)","./id","./Identifiers","FiveWs.identifier"
 "Practitioner.identifier:rqeMedico.id","Practitioner.identifier.id","","","",0,1,"","","","string {[]} {[]}

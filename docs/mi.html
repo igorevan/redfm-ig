@@ -30,10 +30,10 @@
     <![endif]-->
 
     <!-- Favicons -->
-    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
-    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
-    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
-    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
     <link rel="shortcut icon" href="assets/ico/favicon.png"/>
   </head>
   <body onload="document.body.style.opacity='1'">
@@ -198,30 +198,39 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </table>
 
   
-  <div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown-toc"><p>Contents:</p><ul><li><a href="#contexto">Contexto</a></li><li><a href="#objetivo">Objetivo</a></li><li><a href="#marcos">Marcos Legais</a></li><li><a href="#mi">Modelo de Informação</a></li><li><a href="#blocos">Blocos do Modelo de Informação</a></li></ul></div>
+  <div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown-toc"><p>Contents:</p><ul><li><a href="#publico">Público Alvo</a></li><li><a href="#objetivo">Objetivo</a></li><li><a href="#marcos">Marcos Legais</a></li><li><a href="#mi">Modelo de Informação</a></li><li><a href="#blocos">Blocos do Modelo de Informação</a></li></ul></div>
   <!-- The spaces between the open and close "a" tag are mandatory.  (Cuz HTML renderers are dumb...) -->
 
-  <a name="contexto">  </a>
-  <h3>Contexto</h3>
+  <a name="publico">  </a>
+  <h3>Público Alvo</h3>
+  <p>O público-alvo do guia do Registro Eletrônico de Dispensação ou Fornecimento
+    de Medicamentos (REDFM) são os gestores e profissionais ligados aos Estados, Municípios, Distrito Federal,
+    estabelecimentos de saúde e empresas privadas que desenvolvem e fornecem soluções e softwares na área da saúde. Eles
+    são responsáveis por implementar e operar sistemas de interoperabilidade com a RNDS.</p>
+  <p>Este grupo engloba:</p>
 
+  <ul>
+    <li><b>Gestores de estabelecimentos de saúde</b>, que precisam entender os processos de credenciamento e acesso aos
+      serviços da RNDS.</li>
+    <li><b>Desenvolvedores de software e integradores</b>, que necessitam das orientações técnicas para garantir a
+      conformidade
+      dos sistemas.</li>
+    <li><b>Profissionais de saúde e técnicos envolvidos</b> na transmissão e recepção de informações de prescrição de
+      medicamentos.</li>
+  </ul>
 
   <a name="objetivo">  </a>
   <h3>Objetivo</h3>
-
-
-  <ul>
-    <li>Proporcionar a continuidade do cuidado;</li>
-    <li>Qualificar a atenção em saúde e a segurança do indivíduo;</li>
-    <li>Fortalecer a coordenação do cuidado;</li>
-    <li>Otimizar o uso de recursos públicos;</li>
-    <li>Fortalecer a Rede Nacional de Dados em Saúde (RNDS) e a qualidade das informações prestadas;</li>
-    <li>Facilitar a coleta, agregação, tratamento e análise de dados para tomada de decisão e produção de conhecimento.
-    </li>
-  </ul>
+  <p>O objetivo desse guia é de orientá-los sobre as especificações técnicas, requisitos de segurança, fluxos de
+    integração e interoperabilidade para o envio e gestão do Registro Eletrônico de Dispensação ou Fornecimento de
+    Medicamentos (REDFM) na plataforma RNDS, promovendo maior qualidade e eficiência na área da saúde.</p>
 
   <a name="marcos">  </a>
   <h3>Marcos Legais</h3>
-
+  <p>A <a href="https://bvsms.saude.gov.br/bvs/saudelegis/gm/2024/prt6100_18_12_2024.html">Portaria
+      GM/MS Nº 6.100, de 17 de dezembro de 2024</a>, institui os modelos de informação de Registro Eletrônico da
+    Prescrição de Medicamentos (REPM) e de Registro Eletrônico de Dispensação ou Fornecimento de Medicamentos (REDFM) no
+    âmbito da Rede Nacional de Dados em Saúde (RNDS).</p>
 
   <a name="mi">  </a>
   <h3>Modelo de Informação</h3>
@@ -277,6 +286,48 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     Segue abaixo o modelo de informação para o REDFM:
   </p>
 
+  <a name="identificacao-1">  </a>
+  <h4>Identificação da dispensação ou fornecimento de medicamento</h4>
+
+  <table class="grid">
+    <thead>
+      <tr style="background-color: #538ce9">
+        <th>Nível</th>
+        <th>Ocorrência</th>
+        <th>Seção/Item</th>
+        <th>Tipo de Dado</th>
+        <th>Conceito</th>
+        <th>Definição de uso do elemento</th>
+        <th>Conteúdo (ValueSet/CodeSystem)</th>
+        <th>Recurso FHIR</th>
+      </tr>
+    </thead>
+    <thead>
+      <tr style="background-color: #4dbf4d">
+        <td>1</td>
+        <td>1..1</td>
+        <td>Identificação da dispensação ou fornecimento de medicamento</td>
+        <td>Seção</td>
+        <td/>
+        <td/>
+        <td/>
+        <td/>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>2</td>
+        <td>1..1</td>
+        <td>Identificação do registro eletrônico da dispensação ou fornecimento de medicamento no sistema de origem</td>
+        <td>Texto</td>
+        <td>Id no sistema de origem</td>
+        <td>O identificador único do registro de regulação no sistema de origem</td>
+        <td/>
+        <td><i>Bundle</i> de envio</td>
+      </tr>
+    </tbody>
+  </table>
+
 </div>
 </div>
         </div>  <!-- /inner-wrapper -->
@@ -316,7 +367,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.saude.gov.br">Ministério da Saúde do Brasil</a>.  Package br.gov.saude.redfm.fhir#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jun 25, 2025 14:13-0300">2025-06-25</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.saude.gov.br">Ministério da Saúde do Brasil</a>.  Package br.gov.saude.redfm.fhir#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Aug 18, 2025 16:48-0300">2025-08-18</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

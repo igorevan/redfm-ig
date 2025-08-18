@@ -6,12 +6,6 @@
     "profile": ["http://hl7.org/fhir/StructureDefinition/shareablecodesystem"]
   },
   "url": "https://terminologia.saude.gov.br/fhir/CodeSystem/BRConselhoProfissional",
-  "identifier": [
-    {
-      "system": "https://saude.gov.br/sid/codesystem",
-      "value": "BRConselhoProfissional"
-    }
-  ],
   "version": "0.1.5",
   "name": "BRConselhoProfissional",
   "title": "Conselhos profissionais de saúde do Brasil",

@@ -56,11 +56,11 @@
     "name" : "BRObmVMP"
   },
   {
-    "id" : "codesystem-medication-dispense-type",
+    "id" : "BRTipoDispensacaoRealizada",
     "type" : "CodeSystem",
     "url" : "http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoDispensacaoRealizada",
     "version" : "1.0.0",
-    "name" : "CodeSystem-BRTipoDispensacaoRealizada"
+    "name" : "BRTipoDispensacaoRealizada"
   },
   {
     "id" : "BRTipoDocumento",
@@ -89,6 +89,13 @@
     "url" : "http://www.saude.gov.br/fhir/r4/ImplementationGuide/br.gov.saude.redfm.fhir",
     "version" : "1.0.0",
     "name" : "REDFMRNDSIG"
+  },
+  {
+    "id" : "RNDSEstabelecimentoSaude",
+    "type" : "StructureDefinition",
+    "url" : "http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSEstabelecimentoSaude",
+    "version" : "1.0.0",
+    "name" : "RNDSEstabelecimentoSaude"
   },
   {
     "id" : "RNDSLotacaoProfissional",
@@ -161,11 +168,11 @@
     "name" : "BRTerminologiaMedicamento"
   },
   {
-    "id" : "valueset-brtipodispensacaorealizada",
+    "id" : "BRTipoDispensacaoRealizada",
     "type" : "ValueSet",
     "url" : "http://www.saude.gov.br/fhir/r4/ValueSet/BRTipoDispensacaoRealizada",
     "version" : "1.0.0",
-    "name" : "ValueSet-BRTipoDispensacaoRealizada"
+    "name" : "BRTipoDispensacaoRealizada"
   },
   {
     "id" : "BRTipoDocumento-1.0",
@@ -196,6 +203,20 @@
     "name" : "BRCoreComposition"
   },
   {
+    "id" : "br-core-healthcareservice",
+    "type" : "StructureDefinition",
+    "url" : "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-healthcareservice",
+    "version" : "1.0.0",
+    "name" : "BRCoreHealthcareService"
+  },
+  {
+    "id" : "br-core-location",
+    "type" : "StructureDefinition",
+    "url" : "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-location",
+    "version" : "1.0.0",
+    "name" : "BRCoreLocation"
+  },
+  {
     "id" : "br-core-medication",
     "type" : "StructureDefinition",
     "url" : "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-medication",
@@ -222,6 +243,13 @@
     "url" : "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-practitionerrole",
     "version" : "1.0.0",
     "name" : "BRCorePractitionerRole"
+  },
+  {
+    "id" : "br-core-relatedperson",
+    "type" : "StructureDefinition",
+    "url" : "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-relatedperson",
+    "version" : "1.0.0",
+    "name" : "BRCoreRelatedPerson"
   },
   {
     "id" : "BRConselhoProfissional",

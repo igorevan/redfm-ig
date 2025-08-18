@@ -3,7 +3,7 @@
   "id": "br-core-location",
   "language": "pt-BR",
   "url": "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-location",
-  "name": "br-core-location",
+  "name": "BRCoreLocation",
   "title": "br-core-location",
   "status": "active",
   "publisher": "Ministério da Saúde do Brasil",

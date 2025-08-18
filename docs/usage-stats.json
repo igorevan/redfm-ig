@@ -5,6 +5,12 @@
   "jurisdiction": "BR",
   "extensions": [],
   "profiles": {
+    "Organization": [
+      {
+        "url": "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-organization",
+        "title": "BR Core Organization"
+      }
+    ],
     "PractitionerRole": [
       {
         "url": "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-practitionerrole",
@@ -45,10 +51,22 @@
         "title": "BR Core Composition"
       }
     ],
-    "Organization": [
+    "HealthcareService": [
       {
-        "url": "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-organization",
-        "title": "BR Core Organization"
+        "url": "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-healthcareservice",
+        "title": "br-core-healthcareservice"
+      }
+    ],
+    "Location": [
+      {
+        "url": "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-location",
+        "title": "br-core-location"
+      }
+    ],
+    "RelatedPerson": [
+      {
+        "url": "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-relatedperson",
+        "title": "BRCoreRelatedPerson"
       }
     ]
   },
@@ -76,6 +94,10 @@
       "ImplementationGuide",
       "StructureDefinition",
       "ValueSet"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
+      "StructureDefinition.differential.element.type",
+      "StructureDefinition.snapshot.element.type"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status": [
       "CodeSystem",

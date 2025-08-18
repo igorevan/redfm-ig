@@ -18,9 +18,9 @@
   "version" : "1.0.0",
   "name" : "REDFMRNDSIG",
   "title" : "Guia de Implementação do Registro Eletrônico de Dispensação ou Fornecimento de Medicamento (REDFM) da RNDS",
-  "status" : "draft",
+  "status" : "active",
   "experimental" : false,
-  "date" : "2025-06-25T14:13:05-03:00",
+  "date" : "2025-08-18T16:48:33-03:00",
   "publisher" : "Ministério da Saúde do Brasil",
   "contact" : [{
     "name" : "Ministério da Saúde do Brasil",
@@ -47,7 +47,7 @@
     }],
     "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
     "packageId" : "hl7.terminology.r4",
-    "version" : "6.4.0"
+    "version" : "6.5.0"
   },
   {
     "id" : "hl7ext",
@@ -348,7 +348,7 @@
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
-      "valueCode" : "hl7.fhir.uv.tools.r4#0.5.0"
+      "valueCode" : "hl7.fhir.uv.tools.r4#0.7.1"
     },
     {
       "extension" : [{
@@ -639,6 +639,17 @@
     "resource" : [{
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamento"
+      },
+      "name" : "Registro Eletrônico de Dispensação ou Fornecimento de Medicamento (REDFM)",
+      "description" : "Registro Eletrônico de Dispensação ou Fornecimento de Medicamento (REDFM)"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Bundle"
       }],
       "reference" : {
@@ -789,7 +800,7 @@
         "valueString" : "CodeSystem"
       }],
       "reference" : {
-        "reference" : "CodeSystem/codesystem-medication-dispense-type"
+        "reference" : "CodeSystem/BRTipoDispensacaoRealizada"
       },
       "name" : "Tipo de Dispensação Realizada",
       "description" : "Indica o tipo de dispensação que foi realizada"
@@ -846,7 +857,8 @@
       "reference" : {
         "reference" : "StructureDefinition/br-core-medication"
       },
-      "name" : "BR Core Medication"
+      "name" : "BR Core Medication",
+      "description" : "Medicamento BR Core"
     },
     {
       "extension" : [{
@@ -879,7 +891,18 @@
         "reference" : "StructureDefinition/br-core-practitionerrole"
       },
       "name" : "BR Core PractitionerRole",
-      "description" : "Este perfil restringe o recurso [PractitionerRole](hl7.org/fhir/R4/practitionerrole.html) que representa um conjunto específico de funções/locais/especialidades/serviços que um profissional pode desempenhar em uma organização por um período de tempo."
+      "description" : "Este perfil restringe o recurso [PractitionerRole](https://hl7.org/fhir/R4/practitionerrole.html) que representa um conjunto específico de funções/locais/especialidades/serviços que um profissional pode desempenhar em uma organização por um período de tempo."
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/RNDSEstabelecimentoSaude"
+      },
+      "name" : "Estabelecimento de Saúde",
+      "description" : "Estabelecimento de Saúde"
     },
     {
       "extension" : [{
@@ -889,7 +912,8 @@
       "reference" : {
         "reference" : "StructureDefinition/RNDSLotacaoProfissional"
       },
-      "name" : "Lotação Profissional"
+      "name" : "Lotação Profissional",
+      "description" : "Lotação Profissional"
     },
     {
       "extension" : [{
@@ -899,7 +923,8 @@
       "reference" : {
         "reference" : "StructureDefinition/RNDSMedicamento"
       },
-      "name" : "Medicamento"
+      "name" : "Medicamento",
+      "description" : "Medicamento"
     },
     {
       "extension" : [{
@@ -909,7 +934,8 @@
       "reference" : {
         "reference" : "StructureDefinition/RNDSMedicamentoDispensado"
       },
-      "name" : "Medicamento Dispensado"
+      "name" : "Medicamento Dispensado",
+      "description" : "Medicamento Dispensado"
     },
     {
       "extension" : [{
@@ -919,7 +945,8 @@
       "reference" : {
         "reference" : "StructureDefinition/RNDSMedicamentoDispensadoFornecido"
       },
-      "name" : "Dispensação ou Fornecimento Eletrônico de Medicamento"
+      "name" : "Dispensação ou Fornecimento Eletrônico de Medicamento",
+      "description" : "Dispensação ou Fornecimento Eletrônico de Medicamento"
     },
     {
       "extension" : [{
@@ -940,7 +967,8 @@
       "reference" : {
         "reference" : "StructureDefinition/RNDSProfissional"
       },
-      "name" : "Profissional"
+      "name" : "Profissional",
+      "description" : "Profissional"
     },
     {
       "extension" : [{
@@ -948,9 +976,32 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamento"
+        "reference" : "StructureDefinition/br-core-healthcareservice"
       },
-      "name" : "Registro Eletrônico de Dispensação ou Fornecimento de Medicamento (REDFM)"
+      "name" : "br-core-healthcareservice",
+      "description" : "BR Core Healthcare Service"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/br-core-location"
+      },
+      "name" : "br-core-location",
+      "description" : "BR Core Location"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/br-core-relatedperson"
+      },
+      "name" : "BRCoreRelatedPerson",
+      "description" : "O recurso [br-core-relatedperson](https://saude.gov.br/fhir/StructureDefinition/br-core-relatedperson.html) contém as informações sobre uma pessoa envolvida no cuidado de um paciente, mas que não é alvo de cuidados de saúde nem tem responsabilidade formal no processo de cuidado. \n\nA pessoa representada pelo recurso [br-core-relatedperson](https://saude.gov.br/fhir/StructureDefinition/br-core-relatedperson.html) normalmente tem um relacionamento profissional pessoal ou não específico de cuidado em saúde com o paciente. O recurso [br-core-relatedperson](https://saude.gov.br/fhir/StructureDefinition/br-core-relatedperson.html) é usado principalmente para atribuição de informações, já que geralmente é uma fonte de informações sobre o paciente. Para manter informações sobre pessoas para fins de contato para um paciente, use um elemento br-core-patien.contact. Alguns indivíduos podem ser representados simultaneamente como  um patient.contact e [br-core-relatedperson](https://saude.gov.br/fhir/StructureDefinition/br-core-relatedperson.html).\n\nExemplos de pessoas que podem ser um [br-core-relatedperson](https://saude.gov.br/fhir/StructureDefinition/br-core-relatedperson.html):\n-\tEsposa ou marido de um paciente\n-\tParentes ou amigos de um paciente\n-\tUm vizinho que leva um paciente para o hospital\n-\tO dono ou treinador de um cavalo\n-\tUm advogado ou tutor do paciente\n-\tUm cão-guia"
     },
     {
       "extension" : [{
@@ -1046,7 +1097,7 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/valueset-brtipodispensacaorealizada"
+        "reference" : "ValueSet/BRTipoDispensacaoRealizada"
       },
       "name" : "Tipo de Dispensação Realizada",
       "description" : "Indica o tipo de dispensação que foi realizada"

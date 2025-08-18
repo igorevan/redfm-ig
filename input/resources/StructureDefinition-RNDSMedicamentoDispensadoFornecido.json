@@ -130,7 +130,7 @@
         "id": "MedicationDispense.contained:prescriptionDetails.id",
         "path": "MedicationDispense.contained.id",
         "min": 1,
-        "fixedString": "prescription"
+        "fixedId": "prescription"
       },
       {
         "id": "MedicationDispense.contained:prescriptionDetails.meta",
@@ -161,7 +161,7 @@
         "id": "MedicationDispense.contained:prescriberIdentifier.id",
         "path": "MedicationDispense.contained.id",
         "min": 1,
-        "fixedString": "prescriber-identifier"
+        "fixedId": "prescriber-identifier"
       },
       {
         "id": "MedicationDispense.contained:prescriberIdentifier.meta",
@@ -214,7 +214,7 @@
         "id": "MedicationDispense.contained:prescriberSpecialty.id",
         "path": "MedicationDispense.contained.id",
         "min": 1,
-        "fixedString": "prescriber-specialty"
+        "fixedId": "prescriber-specialty"
       },
       {
         "id": "MedicationDispense.contained:prescriberSpecialty.meta",
@@ -245,7 +245,7 @@
         "id": "MedicationDispense.contained:pharmacistIdentifier.id",
         "path": "MedicationDispense.contained.id",
         "min": 1,
-        "fixedString": "pharmacist-crf"
+        "fixedId": "pharmacist-crf"
       },
       {
         "id": "MedicationDispense.contained:pharmacistIdentifier.identifier",
@@ -459,7 +459,8 @@
         "sliceName": "organization",
         "short": "Estabelecimento onde ocorreu a dispensação ou fornecimento de medicamento.",
         "min": 1,
-        "max": "1"
+        "max": "1",
+        "mustSupport": true
       },
       {
         "id": "MedicationDispense.performer:organization.id",
@@ -500,7 +501,8 @@
         "path": "MedicationDispense.performer",
         "sliceName": "pharmacist",
         "short": "Farmacêutico que realizou a dispensação do medicamento",
-        "max": "1"
+        "max": "1",
+        "mustSupport": true
       },
       {
         "id": "MedicationDispense.performer:pharmacist.id",
@@ -580,7 +582,8 @@
         "path": "MedicationDispense.performer",
         "sliceName": "otherPractitioner",
         "short": "Profissional que realizou o fornecimento do medicamento",
-        "max": "1"
+        "max": "1",
+        "mustSupport": true
       },
       {
         "id": "MedicationDispense.performer:otherPractitioner.id",
@@ -662,7 +665,8 @@
               "http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSPrescricaoMedicamentoDispensado"
             ]
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "MedicationDispense.authorizingPrescription:prescriptionInRNDS.id",
@@ -702,7 +706,8 @@
               "http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSPrescricaoMedicamentoDispensado"
             ]
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "MedicationDispense.authorizingPrescription:prescriptionOutOfRNDS.id",

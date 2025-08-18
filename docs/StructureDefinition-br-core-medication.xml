@@ -48,7 +48,7 @@
   <name value="BRCoreMedication"/>
   <title value="BR Core Medication"/>
   <status value="active"/>
-  <date value="2025-06-25T14:13:05-03:00"/>
+  <date value="2025-08-18T16:48:33-03:00"/>
   <publisher value="Ministério da Saúde do Brasil"/>
   <contact>
     <name value="Ministério da Saúde do Brasil"/>
@@ -57,6 +57,7 @@
       <value value="http://www.saude.gov.br"/>
     </telecom>
   </contact>
+  <description value="Medicamento BR Core"/>
   <jurisdiction>
     <coding>
       <system value="urn:iso:std:iso:3166"/>

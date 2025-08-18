@@ -86,7 +86,8 @@
         "sliceName": "cns",
         "short": "Identificador do profissional",
         "definition": "Identificador do profissional",
-        "max": "1"
+        "max": "1",
+        "mustSupport": true
       },
       {
         "id": "Practitioner.identifier:cns.id",
@@ -244,7 +245,8 @@
         "sliceName": "cpf",
         "short": "Identificador do profissional",
         "definition": "Identificador do profissional",
-        "max": "1"
+        "max": "1",
+        "mustSupport": true
       },
       {
         "id": "Practitioner.identifier:cpf.id",
@@ -402,7 +404,8 @@
         "sliceName": "identificadorMedico",
         "short": "Identificador do médico",
         "definition": "Identificador do médico",
-        "max": "1"
+        "max": "1",
+        "mustSupport": true
       },
       {
         "id": "Practitioner.identifier:identificadorMedico.id",
@@ -565,7 +568,8 @@
         "sliceName": "identificadorFarmaceutico",
         "short": "Identificador do farmacêutico",
         "definition": "Identificador do farmacêutico",
-        "max": "1"
+        "max": "1",
+        "mustSupport": true
       },
       {
         "id": "Practitioner.identifier:identificadorFarmaceutico.id",
@@ -728,7 +732,8 @@
         "sliceName": "identificadorOdontologo",
         "short": "Identificador do odontólogo",
         "definition": "Identificador do odontólogo",
-        "max": "1"
+        "max": "1",
+        "mustSupport": true
       },
       {
         "id": "Practitioner.identifier:identificadorOdontologo.id",
@@ -891,7 +896,8 @@
         "sliceName": "identificadorEnfermeiro",
         "short": "Identificador do enfermeiro",
         "definition": "Identificador do enfermeiro",
-        "max": "1"
+        "max": "1",
+        "mustSupport": true
       },
       {
         "id": "Practitioner.identifier:identificadorEnfermeiro.id",
@@ -1053,7 +1059,8 @@
         "sliceName": "identificadorOutrosProfissionais",
         "short": "Identificador de outros profissionais",
         "definition": "Identificador de outros profissionais",
-        "max": "1"
+        "max": "1",
+        "mustSupport": true
       },
       {
         "id": "Practitioner.identifier:identificadorOutrosProfissionais.id",

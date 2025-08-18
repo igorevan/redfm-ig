@@ -1,13 +1,13 @@
 {
   "resourceType": "ValueSet",
-  "id": "valueset-brtipodispensacaorealizada",
+  "id": "BRTipoDispensacaoRealizada",
   "language": "pt-BR",
   "meta": {
     "profile": ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
   },
   "url": "http://www.saude.gov.br/fhir/r4/ValueSet/BRTipoDispensacaoRealizada",
   "version": "1.0.0",
-  "name": "ValueSet-BRTipoDispensacaoRealizada",
+  "name": "BRTipoDispensacaoRealizada",
   "title": "Tipo de Dispensação Realizada",
   "status": "active",
   "experimental": false,

@@ -31,7 +31,7 @@
   "name" : "BRCoreMedication",
   "title" : "BR Core Medication",
   "status" : "active",
-  "date" : "2025-06-25T14:13:05-03:00",
+  "date" : "2025-08-18T16:48:33-03:00",
   "publisher" : "Ministério da Saúde do Brasil",
   "contact" : [{
     "name" : "Ministério da Saúde do Brasil",
@@ -40,6 +40,7 @@
       "value" : "http://www.saude.gov.br"
     }]
   }],
+  "description" : "Medicamento BR Core",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

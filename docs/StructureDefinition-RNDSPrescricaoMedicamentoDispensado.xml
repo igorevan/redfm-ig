@@ -150,7 +150,7 @@ O prescritor deve inserir uma dosagem de item de medicamento. O uso de um valor 
   <version value="1.0.0"/>
   <name value="RNDSPrescricaoMedicamentoDispensado"/>
   <title value="Prescrição Eletrônica de Medicamento (Contida na Dispensação)"/>
-  <status value="draft"/>
+  <status value="active"/>
   <date value="2024-12-14"/>
   <publisher value="Ministério da Saúde do Brasil"/>
   <contact>

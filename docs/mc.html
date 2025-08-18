@@ -30,10 +30,10 @@
     <![endif]-->
 
     <!-- Favicons -->
-    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
-    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
-    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
-    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
     <link rel="shortcut icon" href="assets/ico/favicon.png"/>
   </head>
   <body onload="document.body.style.opacity='1'">
@@ -213,7 +213,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
   <a name="bundle-redfm">  </a>
   <h3>Bundle de Envio do REDFM</h3>
-  <p> O diagrama abaixo apresenta o pacote <i>Bundle</i> no qual é condensado o REDFM, referenciando
+  <p>O diagrama abaixo apresenta o pacote <i>Bundle</i> no qual é condensado o REDFM, referenciando
     todos os dados relevantes para caracterizar um Registro Eletrônico de Dispensação ou
     Fornecimento de Medicamento.</p>
   <p>
@@ -232,16 +232,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <a name="recursos">  </a>
   <h3>Recursos FHIR</h3>
 
-
   <p>Perfis dos tipos <i>ValueSet</i> e <i>CodeSystem</i> estão associados a recursos
-    terminológicos. No contexto do REDFM e nos domínios utilizados, foram criados <i>
-      CodeSystems</i> específicos definidos pelo <a href="https://www.gov.br/saude/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/cgsd">Comitê
+    terminológicos. No contexto do REDFM e nos domínios utilizados, foram criados <i>CodeSystems</i> específicos
+    definidos pelo <a href="https://www.gov.br/saude/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/cgsd">Comitê
       Gestor de Saúde Digital (CGSD)</a>.</p>
 
   <p>Vale destacar que os perfis terminológicos podem passar por atualizações e versionamentos com
     periodicidade específica de cada domínio, por isso é importante acompanhar a disponibilização
-    dessas atualizações no projeto <a href="https://simplifier.net/redenacionaldedadosemsaude">RNDS
-      no Simplifier</a>.</p>
+    dessas atualizações no projeto <a href="https://simplifier.net/redenacionaldedadosemsaude">RNDS no Simplifier</a>.
+  </p>
 
   <p>Note que na estrutura dos perfis há elementos com bindings para <i>ValueSets</i> que apontam
     para <i>CodeSystems</i>. Já no JSON (<code>Bundle</code>), o elemento “<i>system</i>” sempre
@@ -288,7 +287,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.saude.gov.br">Ministério da Saúde do Brasil</a>.  Package br.gov.saude.redfm.fhir#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jun 25, 2025 14:13-0300">2025-06-25</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.saude.gov.br">Ministério da Saúde do Brasil</a>.  Package br.gov.saude.redfm.fhir#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Aug 18, 2025 16:48-0300">2025-08-18</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

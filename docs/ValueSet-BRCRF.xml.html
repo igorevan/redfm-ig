@@ -32,10 +32,10 @@
     <![endif]-->
 
     <!-- Favicons -->
-    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
-    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
-    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
-    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
     <link rel="shortcut icon" href="assets/ico/favicon.png"/>
   </head>
   <body onload="document.body.style.opacity='1'">
@@ -43,8 +43,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"11.14"}
-    h3,h4,h5,h6{--heading-prefix:"11.14"}</style>
+    <style type="text/css">h2{--heading-prefix:"11.18"}
+    h3,h4,h5,h6{--heading-prefix:"11.18"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -227,10 +227,15 @@
   <table class="colsi">
     <tr>
 
-      <td colspan="2">
+      <td colspan="1">
         
           <i>Page standards status:</i> <a href="http://hl7.org/fhir/R4/versions.html#std-process" title="Standard Status">Informative</a>
           
+        
+      </td>
+
+      <td>
+        <a href="http://hl7.org/fhir/versions.html#maturity">Maturity Level</a>: 1
         
       </td>
 
@@ -251,22 +256,38 @@
   &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.meta">meta</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>
              <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/StructureDefinition/shareablevalueset&quot;/&gt;
-  &lt;/meta&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.meta">meta</a>&gt;
   &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;pt-BR&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.text">text</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;extensions&quot;/&gt;
-    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p class=&quot;res-header-id&quot;&gt;&lt;b&gt;Generated Narrative: ValueSet BRCRF&lt;/b&gt;&lt;/p&gt;&lt;a name=&quot;BRCRF&quot;/&gt;&lt;a name=&quot;hcBRCRF&quot;/&gt;&lt;a name=&quot;BRCRF-pt-BR&quot;/&gt;&lt;ul&gt;&lt;li&gt;Include these codes as defined in &lt;a href=&quot;CodeSystem-BRConselhoProfissional.html&quot;&gt;&lt;code&gt;https://terminologia.saude.gov.br/fhir/CodeSystem/BRConselhoProfissional&lt;/code&gt;&lt;/a&gt;&lt;table class=&quot;none&quot;&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Definition&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-BRConselhoProfissional.html#BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crf-ac&quot;&gt;https://saude.gov.br/sid/crf-ac&lt;/a&gt;&lt;/td&gt;&lt;td&gt;CRF-AC&lt;/td&gt;&lt;td&gt;CONSELHO REGIONAL DE FARMÁCIA&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-BRConselhoProfissional.html#BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crf-al&quot;&gt;https://saude.gov.br/sid/crf-al&lt;/a&gt;&lt;/td&gt;&lt;td&gt;CRF-AL&lt;/td&gt;&lt;td&gt;CONSELHO REGIONAL DE FARMÁCIA&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-BRConselhoProfissional.html#BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crf-am&quot;&gt;https://saude.gov.br/sid/crf-am&lt;/a&gt;&lt;/td&gt;&lt;td&gt;CRF-AM&lt;/td&gt;&lt;td&gt;CONSELHO REGIONAL DE FARMÁCIA&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-BRConselhoProfissional.html#BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crf-ap&quot;&gt;https://saude.gov.br/sid/crf-ap&lt;/a&gt;&lt;/td&gt;&lt;td&gt;CRF-AP&lt;/td&gt;&lt;td&gt;CONSELHO REGIONAL DE FARMÁCIA&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-BRConselhoProfissional.html#BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crf-ba&quot;&gt;https://saude.gov.br/sid/crf-ba&lt;/a&gt;&lt;/td&gt;&lt;td&gt;CRF-BA&lt;/td&gt;&lt;td&gt;CONSELHO REGIONAL DE FARMÁCIA&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-BRConselhoProfissional.html#BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crf-ce&quot;&gt;https://saude.gov.br/sid/crf-ce&lt;/a&gt;&lt;/td&gt;&lt;td&gt;CRF-CE&lt;/td&gt;&lt;td&gt;CONSELHO REGIONAL DE FARMÁCIA&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-BRConselhoProfissional.html#BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crf-df&quot;&gt;https://saude.gov.br/sid/crf-df&lt;/a&gt;&lt;/td&gt;&lt;td&gt;CRF-DF&lt;/td&gt;&lt;td&gt;CONSELHO REGIONAL DE FARMÁCIA&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-BRConselhoProfissional.html#BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crf-es&quot;&gt;https://saude.gov.br/sid/crf-es&lt;/a&gt;&lt;/td&gt;&lt;td&gt;CRF-ES&lt;/td&gt;&lt;td&gt;CONSELHO REGIONAL DE FARMÁCIA&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-BRConselhoProfissional.html#BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crf-go&quot;&gt;https://saude.gov.br/sid/crf-go&lt;/a&gt;&lt;/td&gt;&lt;td&gt;CRF-GO&lt;/td&gt;&lt;td&gt;CONSELHO REGIONAL DE FARMÁCIA&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-BRConselhoProfissional.html#BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crf-ma&quot;&gt;https://saude.gov.br/sid/crf-ma&lt;/a&gt;&lt;/td&gt;&lt;td&gt;CRF-MA&lt;/td&gt;&lt;td&gt;CONSELHO REGIONAL DE FARMÁCIA&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-BRConselhoProfissional.html#BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crf-mg&quot;&gt;https://saude.gov.br/sid/crf-mg&lt;/a&gt;&lt;/td&gt;&lt;td&gt;CRF-MG&lt;/td&gt;&lt;td&gt;CONSELHO REGIONAL DE FARMÁCIA&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-BRConselhoProfissional.html#BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crf-ms&quot;&gt;https://saude.gov.br/sid/crf-ms&lt;/a&gt;&lt;/td&gt;&lt;td&gt;CRF-MS&lt;/td&gt;&lt;td&gt;CONSELHO REGIONAL DE FARMÁCIA&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-BRConselhoProfissional.html#BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crf-mt&quot;&gt;https://saude.gov.br/sid/crf-mt&lt;/a&gt;&lt;/td&gt;&lt;td&gt;CRF-MT&lt;/td&gt;&lt;td&gt;CONSELHO REGIONAL DE FARMÁCIA&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-BRConselhoProfissional.html#BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crf-pa&quot;&gt;https://saude.gov.br/sid/crf-pa&lt;/a&gt;&lt;/td&gt;&lt;td&gt;CRF-PA&lt;/td&gt;&lt;td&gt;CONSELHO REGIONAL DE FARMÁCIA&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-BRConselhoProfissional.html#BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crf-pb&quot;&gt;https://saude.gov.br/sid/crf-pb&lt;/a&gt;&lt;/td&gt;&lt;td&gt;CRF-PB&lt;/td&gt;&lt;td&gt;CONSELHO REGIONAL DE FARMÁCIA&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-BRConselhoProfissional.html#BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crf-pe&quot;&gt;https://saude.gov.br/sid/crf-pe&lt;/a&gt;&lt;/td&gt;&lt;td&gt;CRF-PE&lt;/td&gt;&lt;td&gt;CONSELHO REGIONAL DE FARMÁCIA&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-BRConselhoProfissional.html#BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crf-pi&quot;&gt;https://saude.gov.br/sid/crf-pi&lt;/a&gt;&lt;/td&gt;&lt;td&gt;CRF-PI&lt;/td&gt;&lt;td&gt;CONSELHO REGIONAL DE FARMÁCIA&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-BRConselhoProfissional.html#BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crf-pr&quot;&gt;https://saude.gov.br/sid/crf-pr&lt;/a&gt;&lt;/td&gt;&lt;td&gt;CRF-PR&lt;/td&gt;&lt;td&gt;CONSELHO REGIONAL DE FARMÁCIA&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-BRConselhoProfissional.html#BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crf-rj&quot;&gt;https://saude.gov.br/sid/crf-rj&lt;/a&gt;&lt;/td&gt;&lt;td&gt;CRF-RJ&lt;/td&gt;&lt;td&gt;CONSELHO REGIONAL DE FARMÁCIA&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-BRConselhoProfissional.html#BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crf-rn&quot;&gt;https://saude.gov.br/sid/crf-rn&lt;/a&gt;&lt;/td&gt;&lt;td&gt;CRF-RN&lt;/td&gt;&lt;td&gt;CONSELHO REGIONAL DE FARMÁCIA&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-BRConselhoProfissional.html#BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crf-ro&quot;&gt;https://saude.gov.br/sid/crf-ro&lt;/a&gt;&lt;/td&gt;&lt;td&gt;CRF-RO&lt;/td&gt;&lt;td&gt;CONSELHO REGIONAL DE FARMÁCIA&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-BRConselhoProfissional.html#BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crf-rr&quot;&gt;https://saude.gov.br/sid/crf-rr&lt;/a&gt;&lt;/td&gt;&lt;td&gt;CRF-RR&lt;/td&gt;&lt;td&gt;CONSELHO REGIONAL DE FARMÁCIA&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-BRConselhoProfissional.html#BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crf-rs&quot;&gt;https://saude.gov.br/sid/crf-rs&lt;/a&gt;&lt;/td&gt;&lt;td&gt;CRF-RS&lt;/td&gt;&lt;td&gt;CONSELHO REGIONAL DE FARMÁCIA&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-BRConselhoProfissional.html#BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crf-sc&quot;&gt;https://saude.gov.br/sid/crf-sc&lt;/a&gt;&lt;/td&gt;&lt;td&gt;CRF-SC&lt;/td&gt;&lt;td&gt;CONSELHO REGIONAL DE FARMÁCIA&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-BRConselhoProfissional.html#BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crf-se&quot;&gt;https://saude.gov.br/sid/crf-se&lt;/a&gt;&lt;/td&gt;&lt;td&gt;CRF-SE&lt;/td&gt;&lt;td&gt;CONSELHO REGIONAL DE FARMÁCIA&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-BRConselhoProfissional.html#BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crf-sp&quot;&gt;https://saude.gov.br/sid/crf-sp&lt;/a&gt;&lt;/td&gt;&lt;td&gt;CRF-SP&lt;/td&gt;&lt;td&gt;CONSELHO REGIONAL DE FARMÁCIA&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-BRConselhoProfissional.html#BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crf-to&quot;&gt;https://saude.gov.br/sid/crf-to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;CRF-TO&lt;/td&gt;&lt;td&gt;CONSELHO REGIONAL DE FARMÁCIA&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;<a name="end-xhtml"></a>
-  &lt;/text&gt;
+    &lt;div xml:lang=&quot;pt-BR&quot; xmlns=&quot;http://www.w3.org/1999/xhtml&quot; lang=&quot;pt-BR&quot;&gt;&lt;p class=&quot;res-header-id&quot;&gt;&lt;b&gt;Narrativa gerada: ValueSet BRCRF&lt;/b&gt;&lt;/p&gt;&lt;a name=&quot;BRCRF&quot;&gt; &lt;/a&gt;&lt;a name=&quot;hcBRCRF&quot;&gt; &lt;/a&gt;&lt;div style=&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%&quot;&gt;&lt;p style=&quot;margin-bottom: 0px&quot;&gt;Língua: pt-BR&lt;/p&gt;&lt;p style=&quot;margin-bottom: 0px&quot;&gt;Perfil: &lt;a href=&quot;http://hl7.org/fhir/R4/shareablevalueset.html&quot;&gt;Shareable ValueSet&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;ul&gt;&lt;li&gt;Include estes códigos, tal como definidos em &lt;a href=&quot;CodeSystem-BRConselhoProfissional.html&quot;&gt;&lt;code&gt;https://terminologia.saude.gov.br/fhir/CodeSystem/BRConselhoProfissional&lt;/code&gt;&lt;/a&gt;&lt;table class=&quot;none&quot;&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;&lt;b&gt;Código&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Ecrã&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Definição&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-BRConselhoProfissional.html#BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crf-ac&quot;&gt;https://saude.gov.br/sid/crf-ac&lt;/a&gt;&lt;/td&gt;&lt;td&gt;CRF-AC&lt;/td&gt;&lt;td&gt;CONSELHO REGIONAL DE FARMÁCIA&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-BRConselhoProfissional.html#BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crf-al&quot;&gt;https://saude.gov.br/sid/crf-al&lt;/a&gt;&lt;/td&gt;&lt;td&gt;CRF-AL&lt;/td&gt;&lt;td&gt;CONSELHO REGIONAL DE FARMÁCIA&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-BRConselhoProfissional.html#BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crf-am&quot;&gt;https://saude.gov.br/sid/crf-am&lt;/a&gt;&lt;/td&gt;&lt;td&gt;CRF-AM&lt;/td&gt;&lt;td&gt;CONSELHO REGIONAL DE FARMÁCIA&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-BRConselhoProfissional.html#BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crf-ap&quot;&gt;https://saude.gov.br/sid/crf-ap&lt;/a&gt;&lt;/td&gt;&lt;td&gt;CRF-AP&lt;/td&gt;&lt;td&gt;CONSELHO REGIONAL DE FARMÁCIA&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-BRConselhoProfissional.html#BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crf-ba&quot;&gt;https://saude.gov.br/sid/crf-ba&lt;/a&gt;&lt;/td&gt;&lt;td&gt;CRF-BA&lt;/td&gt;&lt;td&gt;CONSELHO REGIONAL DE FARMÁCIA&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-BRConselhoProfissional.html#BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crf-ce&quot;&gt;https://saude.gov.br/sid/crf-ce&lt;/a&gt;&lt;/td&gt;&lt;td&gt;CRF-CE&lt;/td&gt;&lt;td&gt;CONSELHO REGIONAL DE FARMÁCIA&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-BRConselhoProfissional.html#BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crf-df&quot;&gt;https://saude.gov.br/sid/crf-df&lt;/a&gt;&lt;/td&gt;&lt;td&gt;CRF-DF&lt;/td&gt;&lt;td&gt;CONSELHO REGIONAL DE FARMÁCIA&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-BRConselhoProfissional.html#BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crf-es&quot;&gt;https://saude.gov.br/sid/crf-es&lt;/a&gt;&lt;/td&gt;&lt;td&gt;CRF-ES&lt;/td&gt;&lt;td&gt;CONSELHO REGIONAL DE FARMÁCIA&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-BRConselhoProfissional.html#BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crf-go&quot;&gt;https://saude.gov.br/sid/crf-go&lt;/a&gt;&lt;/td&gt;&lt;td&gt;CRF-GO&lt;/td&gt;&lt;td&gt;CONSELHO REGIONAL DE FARMÁCIA&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-BRConselhoProfissional.html#BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crf-ma&quot;&gt;https://saude.gov.br/sid/crf-ma&lt;/a&gt;&lt;/td&gt;&lt;td&gt;CRF-MA&lt;/td&gt;&lt;td&gt;CONSELHO REGIONAL DE FARMÁCIA&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-BRConselhoProfissional.html#BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crf-mg&quot;&gt;https://saude.gov.br/sid/crf-mg&lt;/a&gt;&lt;/td&gt;&lt;td&gt;CRF-MG&lt;/td&gt;&lt;td&gt;CONSELHO REGIONAL DE FARMÁCIA&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-BRConselhoProfissional.html#BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crf-ms&quot;&gt;https://saude.gov.br/sid/crf-ms&lt;/a&gt;&lt;/td&gt;&lt;td&gt;CRF-MS&lt;/td&gt;&lt;td&gt;CONSELHO REGIONAL DE FARMÁCIA&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-BRConselhoProfissional.html#BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crf-mt&quot;&gt;https://saude.gov.br/sid/crf-mt&lt;/a&gt;&lt;/td&gt;&lt;td&gt;CRF-MT&lt;/td&gt;&lt;td&gt;CONSELHO REGIONAL DE FARMÁCIA&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-BRConselhoProfissional.html#BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crf-pa&quot;&gt;https://saude.gov.br/sid/crf-pa&lt;/a&gt;&lt;/td&gt;&lt;td&gt;CRF-PA&lt;/td&gt;&lt;td&gt;CONSELHO REGIONAL DE FARMÁCIA&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-BRConselhoProfissional.html#BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crf-pb&quot;&gt;https://saude.gov.br/sid/crf-pb&lt;/a&gt;&lt;/td&gt;&lt;td&gt;CRF-PB&lt;/td&gt;&lt;td&gt;CONSELHO REGIONAL DE FARMÁCIA&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-BRConselhoProfissional.html#BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crf-pe&quot;&gt;https://saude.gov.br/sid/crf-pe&lt;/a&gt;&lt;/td&gt;&lt;td&gt;CRF-PE&lt;/td&gt;&lt;td&gt;CONSELHO REGIONAL DE FARMÁCIA&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-BRConselhoProfissional.html#BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crf-pi&quot;&gt;https://saude.gov.br/sid/crf-pi&lt;/a&gt;&lt;/td&gt;&lt;td&gt;CRF-PI&lt;/td&gt;&lt;td&gt;CONSELHO REGIONAL DE FARMÁCIA&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-BRConselhoProfissional.html#BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crf-pr&quot;&gt;https://saude.gov.br/sid/crf-pr&lt;/a&gt;&lt;/td&gt;&lt;td&gt;CRF-PR&lt;/td&gt;&lt;td&gt;CONSELHO REGIONAL DE FARMÁCIA&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-BRConselhoProfissional.html#BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crf-rj&quot;&gt;https://saude.gov.br/sid/crf-rj&lt;/a&gt;&lt;/td&gt;&lt;td&gt;CRF-RJ&lt;/td&gt;&lt;td&gt;CONSELHO REGIONAL DE FARMÁCIA&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-BRConselhoProfissional.html#BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crf-rn&quot;&gt;https://saude.gov.br/sid/crf-rn&lt;/a&gt;&lt;/td&gt;&lt;td&gt;CRF-RN&lt;/td&gt;&lt;td&gt;CONSELHO REGIONAL DE FARMÁCIA&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-BRConselhoProfissional.html#BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crf-ro&quot;&gt;https://saude.gov.br/sid/crf-ro&lt;/a&gt;&lt;/td&gt;&lt;td&gt;CRF-RO&lt;/td&gt;&lt;td&gt;CONSELHO REGIONAL DE FARMÁCIA&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-BRConselhoProfissional.html#BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crf-rr&quot;&gt;https://saude.gov.br/sid/crf-rr&lt;/a&gt;&lt;/td&gt;&lt;td&gt;CRF-RR&lt;/td&gt;&lt;td&gt;CONSELHO REGIONAL DE FARMÁCIA&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-BRConselhoProfissional.html#BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crf-rs&quot;&gt;https://saude.gov.br/sid/crf-rs&lt;/a&gt;&lt;/td&gt;&lt;td&gt;CRF-RS&lt;/td&gt;&lt;td&gt;CONSELHO REGIONAL DE FARMÁCIA&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-BRConselhoProfissional.html#BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crf-sc&quot;&gt;https://saude.gov.br/sid/crf-sc&lt;/a&gt;&lt;/td&gt;&lt;td&gt;CRF-SC&lt;/td&gt;&lt;td&gt;CONSELHO REGIONAL DE FARMÁCIA&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-BRConselhoProfissional.html#BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crf-se&quot;&gt;https://saude.gov.br/sid/crf-se&lt;/a&gt;&lt;/td&gt;&lt;td&gt;CRF-SE&lt;/td&gt;&lt;td&gt;CONSELHO REGIONAL DE FARMÁCIA&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-BRConselhoProfissional.html#BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crf-sp&quot;&gt;https://saude.gov.br/sid/crf-sp&lt;/a&gt;&lt;/td&gt;&lt;td&gt;CRF-SP&lt;/td&gt;&lt;td&gt;CONSELHO REGIONAL DE FARMÁCIA&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-BRConselhoProfissional.html#BRConselhoProfissional-https.58.47.47saude.46gov.46br.47sid.47crf-to&quot;&gt;https://saude.gov.br/sid/crf-to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;CRF-TO&lt;/td&gt;&lt;td&gt;CONSELHO REGIONAL DE FARMÁCIA&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+  &lt;/<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.text">text</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.extension">extension</a>
+             <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm&quot;&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueInteger</a> <a href="http://hl7.org/fhir/R4/datatypes.html#integer">value</a>=&quot;1&quot;&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#integer#integer.extension">extension</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom&quot;&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCanonical</a>
+                        <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://www.saude.gov.br/fhir/r4/ImplementationGuide/br.gov.saude.redfm.fhir&quot;/&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#integer#integer.extension">extension</a>&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueInteger</a>&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.extension">extension</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.extension">extension</a>
+             <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status&quot;&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;informative&quot;&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#code#code.extension">extension</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom&quot;&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCanonical</a>
+                        <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://www.saude.gov.br/fhir/r4/ImplementationGuide/br.gov.saude.redfm.fhir&quot;/&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#code#code.extension">extension</a>&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.extension">extension</a>&gt;
   &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.url">url</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://terminologia.saude.gov.br/fhir/ValueSet/BRCRF&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.identifier">identifier</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://saude.gov.br/sid/valueset&quot;/&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;BRCRF&quot;/&gt;
-  &lt;/identifier&gt;
   &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.version">version</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;1.0.0&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;BRCRF&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.title">title</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Conselhos regionais de Farmácia do Brasil&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;draft&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.experimental">experimental</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;active&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.experimental">experimental</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2023-07-18T13:52:24+00:00&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.publisher">publisher</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Ministério da Saúde do Brasil&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.contact">contact</a>&gt;
@@ -274,16 +295,16 @@
     &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;url&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;http://www.saude.gov.br&quot;/&gt;
-    &lt;/telecom&gt;
-  &lt;/contact&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.contact">contact</a>&gt;
   &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.description">description</a>
                <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>=&quot;Conjunto de todos os conselhos regionais de farmácia do Brasil&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.jurisdiction">jurisdiction</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;urn:iso:std:iso:3166&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;BR&quot;/&gt;
-    &lt;/coding&gt;
-  &lt;/jurisdiction&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.jurisdiction">jurisdiction</a>&gt;
   &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.purpose">purpose</a>
            <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>=&quot;O propósito deste conjunto é agrupar todos os conselhos regionais de farmácia para fins de validação do identificador profissional do farmacêutico&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.copyright">copyright</a> <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>=&quot;CC-1.0&quot;/&gt;
@@ -294,114 +315,114 @@
       &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;https://saude.gov.br/sid/crf-ac&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;CRF-AC&quot;/&gt;
-      &lt;/concept&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;https://saude.gov.br/sid/crf-al&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;CRF-AL&quot;/&gt;
-      &lt;/concept&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;https://saude.gov.br/sid/crf-am&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;CRF-AM&quot;/&gt;
-      &lt;/concept&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;https://saude.gov.br/sid/crf-ap&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;CRF-AP&quot;/&gt;
-      &lt;/concept&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;https://saude.gov.br/sid/crf-ba&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;CRF-BA&quot;/&gt;
-      &lt;/concept&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;https://saude.gov.br/sid/crf-ce&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;CRF-CE&quot;/&gt;
-      &lt;/concept&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;https://saude.gov.br/sid/crf-df&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;CRF-DF&quot;/&gt;
-      &lt;/concept&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;https://saude.gov.br/sid/crf-es&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;CRF-ES&quot;/&gt;
-      &lt;/concept&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;https://saude.gov.br/sid/crf-go&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;CRF-GO&quot;/&gt;
-      &lt;/concept&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;https://saude.gov.br/sid/crf-ma&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;CRF-MA&quot;/&gt;
-      &lt;/concept&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;https://saude.gov.br/sid/crf-mg&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;CRF-MG&quot;/&gt;
-      &lt;/concept&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;https://saude.gov.br/sid/crf-ms&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;CRF-MS&quot;/&gt;
-      &lt;/concept&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;https://saude.gov.br/sid/crf-mt&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;CRF-MT&quot;/&gt;
-      &lt;/concept&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;https://saude.gov.br/sid/crf-pa&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;CRF-PA&quot;/&gt;
-      &lt;/concept&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;https://saude.gov.br/sid/crf-pb&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;CRF-PB&quot;/&gt;
-      &lt;/concept&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;https://saude.gov.br/sid/crf-pe&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;CRF-PE&quot;/&gt;
-      &lt;/concept&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;https://saude.gov.br/sid/crf-pi&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;CRF-PI&quot;/&gt;
-      &lt;/concept&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;https://saude.gov.br/sid/crf-pr&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;CRF-PR&quot;/&gt;
-      &lt;/concept&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;https://saude.gov.br/sid/crf-rj&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;CRF-RJ&quot;/&gt;
-      &lt;/concept&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;https://saude.gov.br/sid/crf-rn&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;CRF-RN&quot;/&gt;
-      &lt;/concept&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;https://saude.gov.br/sid/crf-ro&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;CRF-RO&quot;/&gt;
-      &lt;/concept&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;https://saude.gov.br/sid/crf-rr&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;CRF-RR&quot;/&gt;
-      &lt;/concept&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;https://saude.gov.br/sid/crf-rs&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;CRF-RS&quot;/&gt;
-      &lt;/concept&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;https://saude.gov.br/sid/crf-sc&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;CRF-SC&quot;/&gt;
-      &lt;/concept&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;https://saude.gov.br/sid/crf-se&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;CRF-SE&quot;/&gt;
-      &lt;/concept&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;https://saude.gov.br/sid/crf-sp&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;CRF-SP&quot;/&gt;
-      &lt;/concept&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;https://saude.gov.br/sid/crf-to&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;CRF-TO&quot;/&gt;
-      &lt;/concept&gt;
-    &lt;/include&gt;
-  &lt;/compose&gt;
-&lt;/ValueSet&gt;</code></pre>
+      &lt;/<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include">include</a>&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose">compose</a>&gt;
+&lt;/<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet">ValueSet</a>&gt;</code></pre>
 
 
   <!-- insert notes if present -->
@@ -447,7 +468,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.saude.gov.br">Ministério da Saúde do Brasil</a>.  Package br.gov.saude.redfm.fhir#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jun 25, 2025 14:13-0300">2025-06-25</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.saude.gov.br">Ministério da Saúde do Brasil</a>.  Package br.gov.saude.redfm.fhir#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Aug 18, 2025 16:48-0300">2025-08-18</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

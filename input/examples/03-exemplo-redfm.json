@@ -112,7 +112,7 @@
             },
             "authoredOn": "2024-10-31T11:46:12.742-03:00",
             "requester": {
-              "reference": "PractitionerRole/prescriber-info",
+              "reference": "Practitioner",
               "identifier": {
                 "system": "http://www.saude.gov.br/fhir/r4/StructureDefinition/BRProfissional-1.0",
                 "value": "704200519817090"

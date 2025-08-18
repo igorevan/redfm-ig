@@ -17,9 +17,9 @@
   <version value="1.0.0"/>
   <name value="REDFMRNDSIG"/>
   <title value="Guia de Implementação do Registro Eletrônico de Dispensação ou Fornecimento de Medicamento (REDFM) da RNDS"/>
-  <status value="draft"/>
+  <status value="active"/>
   <experimental value="false"/>
-  <date value="2025-06-25T14:13:05-03:00"/>
+  <date value="2025-08-18T16:48:33-03:00"/>
   <publisher value="Ministério da Saúde do Brasil"/>
   <contact>
     <name value="Ministério da Saúde do Brasil"/>
@@ -44,7 +44,7 @@
     </extension>
     <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
     <packageId value="hl7.terminology.r4"/>
-    <version value="6.4.0"/>
+    <version value="6.5.0"/>
   </dependsOn>
   <dependsOn id="hl7ext">
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
@@ -264,7 +264,7 @@
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency">
-      <valueCode value="hl7.fhir.uv.tools.r4#0.5.0"/>
+      <valueCode value="hl7.fhir.uv.tools.r4#0.7.1"/>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
@@ -476,6 +476,16 @@
     </extension>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamento"/>
+      </reference>
+      <name value="Registro Eletrônico de Dispensação ou Fornecimento de Medicamento (REDFM)"/>
+      <description value="Registro Eletrônico de Dispensação ou Fornecimento de Medicamento (REDFM)"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Bundle"/>
       </extension>
       <reference>
@@ -613,7 +623,7 @@
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
-        <reference value="CodeSystem/codesystem-medication-dispense-type"/>
+        <reference value="CodeSystem/BRTipoDispensacaoRealizada"/>
       </reference>
       <name value="Tipo de Dispensação Realizada"/>
       <description value="Indica o tipo de dispensação que foi realizada"/>
@@ -666,6 +676,7 @@
         <reference value="StructureDefinition/br-core-medication"/>
       </reference>
       <name value="BR Core Medication"/>
+      <description value="Medicamento BR Core"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -695,7 +706,17 @@
         <reference value="StructureDefinition/br-core-practitionerrole"/>
       </reference>
       <name value="BR Core PractitionerRole"/>
-      <description value="Este perfil restringe o recurso [PractitionerRole](hl7.org/fhir/R4/practitionerrole.html) que representa um conjunto específico de funções/locais/especialidades/serviços que um profissional pode desempenhar em uma organização por um período de tempo."/>
+      <description value="Este perfil restringe o recurso [PractitionerRole](https://hl7.org/fhir/R4/practitionerrole.html) que representa um conjunto específico de funções/locais/especialidades/serviços que um profissional pode desempenhar em uma organização por um período de tempo."/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/RNDSEstabelecimentoSaude"/>
+      </reference>
+      <name value="Estabelecimento de Saúde"/>
+      <description value="Estabelecimento de Saúde"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -705,6 +726,7 @@
         <reference value="StructureDefinition/RNDSLotacaoProfissional"/>
       </reference>
       <name value="Lotação Profissional"/>
+      <description value="Lotação Profissional"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -714,6 +736,7 @@
         <reference value="StructureDefinition/RNDSMedicamento"/>
       </reference>
       <name value="Medicamento"/>
+      <description value="Medicamento"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -723,6 +746,7 @@
         <reference value="StructureDefinition/RNDSMedicamentoDispensado"/>
       </reference>
       <name value="Medicamento Dispensado"/>
+      <description value="Medicamento Dispensado"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -732,6 +756,7 @@
         <reference value="StructureDefinition/RNDSMedicamentoDispensadoFornecido"/>
       </reference>
       <name value="Dispensação ou Fornecimento Eletrônico de Medicamento"/>
+      <description value="Dispensação ou Fornecimento Eletrônico de Medicamento"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -751,15 +776,37 @@
         <reference value="StructureDefinition/RNDSProfissional"/>
       </reference>
       <name value="Profissional"/>
+      <description value="Profissional"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamento"/>
+        <reference value="StructureDefinition/br-core-healthcareservice"/>
       </reference>
-      <name value="Registro Eletrônico de Dispensação ou Fornecimento de Medicamento (REDFM)"/>
+      <name value="br-core-healthcareservice"/>
+      <description value="BR Core Healthcare Service"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/br-core-location"/>
+      </reference>
+      <name value="br-core-location"/>
+      <description value="BR Core Location"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/br-core-relatedperson"/>
+      </reference>
+      <name value="BRCoreRelatedPerson"/>
+      <description value="O recurso [br-core-relatedperson](https://saude.gov.br/fhir/StructureDefinition/br-core-relatedperson.html) contém as informações sobre uma pessoa envolvida no cuidado de um paciente, mas que não é alvo de cuidados de saúde nem tem responsabilidade formal no processo de cuidado. &#xA;&#xA;A pessoa representada pelo recurso [br-core-relatedperson](https://saude.gov.br/fhir/StructureDefinition/br-core-relatedperson.html) normalmente tem um relacionamento profissional pessoal ou não específico de cuidado em saúde com o paciente. O recurso [br-core-relatedperson](https://saude.gov.br/fhir/StructureDefinition/br-core-relatedperson.html) é usado principalmente para atribuição de informações, já que geralmente é uma fonte de informações sobre o paciente. Para manter informações sobre pessoas para fins de contato para um paciente, use um elemento br-core-patien.contact. Alguns indivíduos podem ser representados simultaneamente como  um patient.contact e [br-core-relatedperson](https://saude.gov.br/fhir/StructureDefinition/br-core-relatedperson.html).&#xA;&#xA;Exemplos de pessoas que podem ser um [br-core-relatedperson](https://saude.gov.br/fhir/StructureDefinition/br-core-relatedperson.html):&#xA;-&#x9;Esposa ou marido de um paciente&#xA;-&#x9;Parentes ou amigos de um paciente&#xA;-&#x9;Um vizinho que leva um paciente para o hospital&#xA;-&#x9;O dono ou treinador de um cavalo&#xA;-&#x9;Um advogado ou tutor do paciente&#xA;-&#x9;Um cão-guia"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -846,7 +893,7 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/valueset-brtipodispensacaorealizada"/>
+        <reference value="ValueSet/BRTipoDispensacaoRealizada"/>
       </reference>
       <name value="Tipo de Dispensação Realizada"/>
       <description value="Indica o tipo de dispensação que foi realizada"/>

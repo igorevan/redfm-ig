@@ -15,7 +15,6 @@
   "publisher": "Ministério da Saúde do Brasil",
   "description": "Indica o tipo de dispensação que foi realizada",
   "caseSensitive": true,
-  "valueSet": "http://www.saude.gov.br/fhir/r4/ValueSet/BRSituacaoDispensacao",
   "content": "complete",
   "concept": [
     {

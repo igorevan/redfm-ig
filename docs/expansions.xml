@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="57b1e2dd-1c43-4fe3-b979-f7741c967384"/>
+  <id value="69a3d430-b86c-48b9-b316-2c733c878208"/>
   <meta>
-    <lastUpdated value="2025-06-25T14:13:29.643-03:00"/>
+    <lastUpdated value="2025-08-18T16:48:55.475-03:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -284,15 +284,11 @@
           </div>
         </text>
         <url value="https://terminologia.saude.gov.br/fhir/ValueSet/BRCOREN"/>
-        <identifier>
-          <system value="https://saude.gov.br/sid/valueset"/>
-          <value value="BRCOREN"/>
-        </identifier>
         <version value="1.0.0"/>
         <name value="BRCOREN"/>
         <title value="Conselhos regionais de Enfermagem do Brasil"/>
-        <status value="draft"/>
-        <experimental value="true"/>
+        <status value="active"/>
+        <experimental value="false"/>
         <date value="2023-07-18T13:52:24+00:00"/>
         <jurisdiction>
           <coding>
@@ -301,14 +297,10 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:464d6890-c93b-4307-870d-9430ab1331ac"/>
-          <timestamp value="2025-06-25T14:17:15-03:00"/>
+          <identifier value="urn:uuid:5a0c6617-3741-46c8-9d7e-37f26da1ca40"/>
+          <timestamp value="2025-08-18T16:52:51-03:00"/>
           <total value="27"/>
           <offset value="0"/>
-          <parameter>
-            <name value="displayLanguage"/>
-            <valueCode value="pt-BR"/>
-          </parameter>
           <parameter>
             <name value="count"/>
             <valueInteger value="1000"/>
@@ -742,15 +734,11 @@
           </div>
         </text>
         <url value="https://terminologia.saude.gov.br/fhir/ValueSet/BRCRF"/>
-        <identifier>
-          <system value="https://saude.gov.br/sid/valueset"/>
-          <value value="BRCRF"/>
-        </identifier>
         <version value="1.0.0"/>
         <name value="BRCRF"/>
         <title value="Conselhos regionais de Farmácia do Brasil"/>
-        <status value="draft"/>
-        <experimental value="true"/>
+        <status value="active"/>
+        <experimental value="false"/>
         <date value="2023-07-18T13:52:24+00:00"/>
         <jurisdiction>
           <coding>
@@ -759,14 +747,10 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:447a65f0-17d0-4308-89ea-bcbf724b3658"/>
-          <timestamp value="2025-06-25T14:17:15-03:00"/>
+          <identifier value="urn:uuid:cd387b88-8d21-43e9-ad34-6aac3954be47"/>
+          <timestamp value="2025-08-18T16:52:51-03:00"/>
           <total value="27"/>
           <offset value="0"/>
-          <parameter>
-            <name value="displayLanguage"/>
-            <valueCode value="pt-BR"/>
-          </parameter>
           <parameter>
             <name value="count"/>
             <valueInteger value="1000"/>
@@ -1200,15 +1184,11 @@
           </div>
         </text>
         <url value="https://terminologia.saude.gov.br/fhir/ValueSet/BRCRM"/>
-        <identifier>
-          <system value="https://saude.gov.br/sid/valueset"/>
-          <value value="BRCRM"/>
-        </identifier>
         <version value="1.0.0"/>
         <name value="BRCRM"/>
         <title value="Conselhos regionais de Medicina do Brasil"/>
-        <status value="draft"/>
-        <experimental value="true"/>
+        <status value="active"/>
+        <experimental value="false"/>
         <date value="2023-07-18T13:52:24+00:00"/>
         <jurisdiction>
           <coding>
@@ -1217,14 +1197,10 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:d6e52f8c-634b-464e-b5f2-a4811189d4a6"/>
-          <timestamp value="2025-06-25T14:17:16-03:00"/>
+          <identifier value="urn:uuid:611cd8d9-fe0c-419c-be38-0d4f62059581"/>
+          <timestamp value="2025-08-18T16:52:51-03:00"/>
           <total value="27"/>
           <offset value="0"/>
-          <parameter>
-            <name value="displayLanguage"/>
-            <valueCode value="pt-BR"/>
-          </parameter>
           <parameter>
             <name value="count"/>
             <valueInteger value="1000"/>
@@ -1658,15 +1634,11 @@
           </div>
         </text>
         <url value="https://terminologia.saude.gov.br/fhir/ValueSet/BRCRO"/>
-        <identifier>
-          <system value="https://saude.gov.br/sid/valueset"/>
-          <value value="BRCRO"/>
-        </identifier>
         <version value="1.0.0"/>
         <name value="BRCRO"/>
         <title value="Conselhos regionais de Odontologia do Brasil"/>
-        <status value="draft"/>
-        <experimental value="true"/>
+        <status value="active"/>
+        <experimental value="false"/>
         <date value="2023-07-18T13:52:24+00:00"/>
         <jurisdiction>
           <coding>
@@ -1675,14 +1647,10 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:d67b43c2-1066-4b40-87af-c4e5bf61a148"/>
-          <timestamp value="2025-06-25T14:17:16-03:00"/>
+          <identifier value="urn:uuid:9d18ffb6-0230-4eef-9967-26b3da46b33b"/>
+          <timestamp value="2025-08-18T16:52:51-03:00"/>
           <total value="27"/>
           <offset value="0"/>
-          <parameter>
-            <name value="displayLanguage"/>
-            <valueCode value="pt-BR"/>
-          </parameter>
           <parameter>
             <name value="count"/>
             <valueInteger value="1000"/>
@@ -9881,14 +9849,10 @@
         </jurisdiction>
         <immutable value="false"/>
         <expansion>
-          <identifier value="urn:uuid:28d2bb00-c428-411c-bc20-fa194c0551e5"/>
-          <timestamp value="2025-06-25T14:17:16-03:00"/>
+          <identifier value="urn:uuid:cdece230-ec92-4919-9c51-519e69f7463b"/>
+          <timestamp value="2025-08-18T16:52:51-03:00"/>
           <total value="2714"/>
           <offset value="0"/>
-          <parameter>
-            <name value="displayLanguage"/>
-            <valueCode value="pt-BR"/>
-          </parameter>
           <parameter>
             <name value="count"/>
             <valueInteger value="1000"/>
@@ -15502,15 +15466,11 @@
           </div>
         </text>
         <url value="https://terminologia.saude.gov.br/fhir/ValueSet/BROutrosProfissionais"/>
-        <identifier>
-          <system value="https://saude.gov.br/sid/valueset"/>
-          <value value="BROutrosProfissionais"/>
-        </identifier>
         <version value="1.0.0"/>
         <name value="BROutrosProfissionais"/>
         <title value="Conselhos regionais de outros profissionais da saúde do Brasil"/>
-        <status value="draft"/>
-        <experimental value="true"/>
+        <status value="active"/>
+        <experimental value="false"/>
         <date value="2023-07-18T13:52:24+00:00"/>
         <jurisdiction>
           <coding>
@@ -15519,14 +15479,10 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:359eb939-2ddc-4068-9d33-e9e2e021ccb9"/>
-          <timestamp value="2025-06-25T14:17:17-03:00"/>
+          <identifier value="urn:uuid:4ce64f5c-f292-4f4d-8c27-2417a25de3c6"/>
+          <timestamp value="2025-08-18T16:52:53-03:00"/>
           <total value="62"/>
           <offset value="0"/>
-          <parameter>
-            <name value="displayLanguage"/>
-            <valueCode value="pt-BR"/>
-          </parameter>
           <parameter>
             <name value="count"/>
             <valueInteger value="1000"/>
@@ -15870,7 +15826,7 @@
           <div xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-BR" lang="pt-BR">
             <p class="res-header-id"/>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansão efectuada internamente com base em 
-              <a href="CodeSystem-codesystem-medication-dispense-type.html">codesystem Tipo de Dispensação Realizada v1.0.0 (CodeSystem)</a>
+              <a href="CodeSystem-BRTipoDispensacaoRealizada.html">codesystem Tipo de Dispensação Realizada v1.0.0 (CodeSystem)</a>
             </p>
             <p>Este conjunto de valores contém 4 conceitos</p>
             <table class="codes">
@@ -15888,7 +15844,7 @@
               <tr>
                 <td style="white-space:nowrap">
                   <a name="x-http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoDispensacaoRealizada-fully-dispensing"> </a>  
-                  <a href="CodeSystem-codesystem-medication-dispense-type.html#codesystem-medication-dispense-type-fully-dispensing">fully-dispensing</a>
+                  <a href="CodeSystem-BRTipoDispensacaoRealizada.html#BRTipoDispensacaoRealizada-fully-dispensing">fully-dispensing</a>
                 </td>
                 <td>http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoDispensacaoRealizada</td>
                 <td>Fully Dispensing</td>
@@ -15896,7 +15852,7 @@
               <tr>
                 <td style="white-space:nowrap">
                   <a name="x-http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoDispensacaoRealizada-medication-return"> </a>  
-                  <a href="CodeSystem-codesystem-medication-dispense-type.html#codesystem-medication-dispense-type-medication-return">medication-return</a>
+                  <a href="CodeSystem-BRTipoDispensacaoRealizada.html#BRTipoDispensacaoRealizada-medication-return">medication-return</a>
                 </td>
                 <td>http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoDispensacaoRealizada</td>
                 <td>Medication Return</td>
@@ -15904,7 +15860,7 @@
               <tr>
                 <td style="white-space:nowrap">
                   <a name="x-http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoDispensacaoRealizada-partial-dispensing"> </a>  
-                  <a href="CodeSystem-codesystem-medication-dispense-type.html#codesystem-medication-dispense-type-partial-dispensing">partial-dispensing</a>
+                  <a href="CodeSystem-BRTipoDispensacaoRealizada.html#BRTipoDispensacaoRealizada-partial-dispensing">partial-dispensing</a>
                 </td>
                 <td>http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoDispensacaoRealizada</td>
                 <td>Partial Dispensing</td>
@@ -15912,7 +15868,7 @@
               <tr>
                 <td style="white-space:nowrap">
                   <a name="x-http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoDispensacaoRealizada-not-dispensed"> </a>  
-                  <a href="CodeSystem-codesystem-medication-dispense-type.html#codesystem-medication-dispense-type-not-dispensed">not-dispensed</a>
+                  <a href="CodeSystem-BRTipoDispensacaoRealizada.html#BRTipoDispensacaoRealizada-not-dispensed">not-dispensed</a>
                 </td>
                 <td>http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoDispensacaoRealizada</td>
                 <td>Not Dipensed</td>
@@ -15922,9 +15878,9 @@
         </text>
         <url value="http://www.saude.gov.br/fhir/r4/ValueSet/BRTipoDispensacaoRealizada"/>
         <version value="1.0.0"/>
-        <name value="ValueSet-BRTipoDispensacaoRealizada"/>
+        <name value="BRTipoDispensacaoRealizada"/>
         <title value="Tipo de Dispensação Realizada"/>
-        <status value="draft"/>
+        <status value="active"/>
         <experimental value="false"/>
         <date value="2024-12-10"/>
         <jurisdiction>
@@ -15934,14 +15890,10 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:a4278454-1398-44c7-b367-1e69aa33fa7d"/>
-          <timestamp value="2025-06-25T14:17:18-03:00"/>
+          <identifier value="urn:uuid:a5c7ed9c-83ad-4a80-b8ca-c66d879e5d87"/>
+          <timestamp value="2025-08-18T16:52:53-03:00"/>
           <total value="4"/>
           <offset value="0"/>
-          <parameter>
-            <name value="displayLanguage"/>
-            <valueCode value="pt-BR"/>
-          </parameter>
           <parameter>
             <name value="count"/>
             <valueInteger value="1000"/>
@@ -16127,14 +16079,10 @@
         </jurisdiction>
         <immutable value="false"/>
         <expansion>
-          <identifier value="urn:uuid:e7773cf9-69e2-4972-b6b2-5af73ce62e3e"/>
-          <timestamp value="2025-06-25T14:17:18-03:00"/>
+          <identifier value="urn:uuid:823ade88-27a2-44e5-870c-81318996e923"/>
+          <timestamp value="2025-08-18T16:52:53-03:00"/>
           <total value="11"/>
           <offset value="0"/>
-          <parameter>
-            <name value="displayLanguage"/>
-            <valueCode value="pt-BR"/>
-          </parameter>
           <parameter>
             <name value="count"/>
             <valueInteger value="1000"/>
@@ -16861,14 +16809,10 @@
         </jurisdiction>
         <immutable value="false"/>
         <expansion>
-          <identifier value="urn:uuid:c307f17b-b189-4e95-abc0-2d09bec76e4f"/>
-          <timestamp value="2025-06-25T14:17:18-03:00"/>
+          <identifier value="urn:uuid:20b84390-8d85-4ca2-bfbe-eb94fa281f90"/>
+          <timestamp value="2025-08-18T16:52:53-03:00"/>
           <total value="76"/>
           <offset value="0"/>
-          <parameter>
-            <name value="displayLanguage"/>
-            <valueCode value="pt-BR"/>
-          </parameter>
           <parameter>
             <name value="count"/>
             <valueInteger value="1000"/>
@@ -17872,14 +17816,10 @@
         </jurisdiction>
         <immutable value="false"/>
         <expansion>
-          <identifier value="urn:uuid:9496bfe6-15e7-4790-a89e-2431bb26f781"/>
-          <timestamp value="2025-06-25T14:17:18-03:00"/>
+          <identifier value="urn:uuid:99674209-8cd9-4afb-947b-314f42230864"/>
+          <timestamp value="2025-08-18T16:52:53-03:00"/>
           <total value="70"/>
           <offset value="0"/>
-          <parameter>
-            <name value="displayLanguage"/>
-            <valueCode value="pt-BR"/>
-          </parameter>
           <parameter>
             <name value="count"/>
             <valueInteger value="1000"/>

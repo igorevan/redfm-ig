@@ -1,0 +1,147 @@
+REDFMRNDSIG : Validation Results
+=========================================
+
+err = 37, warn = 4, info = 5
+IG Publisher Version: 2.0.13
+Generated Mon Aug 18 16:54:13 GMT-03:00 2025. FHIR version 4.0.1 for br.gov.saude.redfm.fhir#1.0.0 (canonical = http://www.saude.gov.br/fhir/r4)
+ Build Errors : 0 / 0 / 0
+ /home/igor/redfm-ig/input/examples/01-exemplo-redfm : 2 / 2 / 2
+ /home/igor/redfm-ig/input/examples/02-exemplo-redfm : 2 / 2 / 2
+ /home/igor/redfm-ig/input/examples/03-exemplo-redfm : 2 / 2 / 2
+ /home/igor/redfm-ig/input/examples/04-exemplo-redfm : 2 / 2 / 2
+ /home/igor/redfm-ig/input/myig : 0 / 0 / 1
+ /home/igor/redfm-ig/input/resources/CodeSystem-BRCBO : 0 / 0 / 3
+ /home/igor/redfm-ig/input/resources/CodeSystem-BRCIAP2 : 0 / 0 / 1
+ /home/igor/redfm-ig/input/resources/CodeSystem-BRCID10 : 0 / 0 / 1
+ /home/igor/redfm-ig/input/resources/CodeSystem-BRConselhoProfissional : 2 / 0 / 1
+ /home/igor/redfm-ig/input/resources/CodeSystem-BRObmAMPP : 0 / 0 / 1
+ /home/igor/redfm-ig/input/resources/CodeSystem-BRObmANVISA : 0 / 0 / 1
+ /home/igor/redfm-ig/input/resources/CodeSystem-BRObmCATMAT : 0 / 0 / 1
+ /home/igor/redfm-ig/input/resources/CodeSystem-BRObmEAN : 0 / 0 / 1
+ /home/igor/redfm-ig/input/resources/CodeSystem-BRObmVMP : 0 / 0 / 1
+ /home/igor/redfm-ig/input/resources/CodeSystem-BRTipoDispensacaoRealizada : 0 / 0 / 1
+ /home/igor/redfm-ig/input/resources/CodeSystem-BRTipoDocumento : 0 / 0 / 1
+ /home/igor/redfm-ig/input/resources/CodeSystem-BRUnidadeMedida : 0 / 0 / 1
+ /home/igor/redfm-ig/input/resources/CodeSystem-BRViaAdministracao : 0 / 0 / 1
+ /home/igor/redfm-ig/input/resources/StructureDefinition-BRCoreComposition : 2 / 26 / 2
+ /home/igor/redfm-ig/input/resources/StructureDefinition-BRCoreMedication : 2 / 1 / 1
+ /home/igor/redfm-ig/input/resources/StructureDefinition-BRCoreOrganization : 2 / 1 / 1
+ /home/igor/redfm-ig/input/resources/StructureDefinition-BRCorePractitioner : 2 / 1 / 3
+ /home/igor/redfm-ig/input/resources/StructureDefinition-BRCorePractitionerRole : 2 / 1 / 1
+ /home/igor/redfm-ig/input/resources/StructureDefinition-RNDSEstabelecimentoSaude : 0 / 1 / 1
+ /home/igor/redfm-ig/input/resources/StructureDefinition-RNDSLotacaoProfissional : 0 / 10 / 2
+ /home/igor/redfm-ig/input/resources/StructureDefinition-RNDSMedicamento : 0 / 1 / 1
+ /home/igor/redfm-ig/input/resources/StructureDefinition-RNDSMedicamentoDispensado : 0 / 0 / 2
+ /home/igor/redfm-ig/input/resources/StructureDefinition-RNDSMedicamentoDispensadoFornecido : 0 / 47 / 6
+ /home/igor/redfm-ig/input/resources/StructureDefinition-RNDSPrescricaoMedicamentoDispensado : 0 / 15 / 2
+ /home/igor/redfm-ig/input/resources/StructureDefinition-RNDSProfissional : 0 / 2 / 3
+ /home/igor/redfm-ig/input/resources/StructureDefinition-RNDSRegistroEletronicoDispensacaoFornecimentoMedicamento : 1 / 23 / 1
+ /home/igor/redfm-ig/input/resources/StructureDefinition-br-core-healthcareservice : 2 / 1 / 1
+ /home/igor/redfm-ig/input/resources/StructureDefinition-br-core-location : 2 / 1 / 1
+ /home/igor/redfm-ig/input/resources/StructureDefinition-br-core-relatedperson : 2 / 6 / 1
+ /home/igor/redfm-ig/input/resources/ValueSet-BRCOREN : 2 / 0 / 1
+ /home/igor/redfm-ig/input/resources/ValueSet-BRCRF : 2 / 0 / 1
+ /home/igor/redfm-ig/input/resources/ValueSet-BRCRM : 2 / 0 / 1
+ /home/igor/redfm-ig/input/resources/ValueSet-BRCRO : 2 / 0 / 1
+ /home/igor/redfm-ig/input/resources/ValueSet-BROcupacao-1.0 : 0 / 0 / 2
+ /home/igor/redfm-ig/input/resources/ValueSet-BROutrosProfissionais : 2 / 0 / 1
+ /home/igor/redfm-ig/input/resources/ValueSet-BRProblemaDiagnostico : 0 / 1 / 1
+ /home/igor/redfm-ig/input/resources/ValueSet-BRTerminologiaMedicamento : 0 / 1 / 1
+ /home/igor/redfm-ig/input/resources/ValueSet-BRTipoDispensacaoRealizada : 0 / 0 / 1
+ /home/igor/redfm-ig/input/resources/ValueSet-BRTipoDocumento-1.0 : 0 / 0 / 1
+ /home/igor/redfm-ig/input/resources/ValueSet-BRUnidadeMedidaMedicamento : 0 / 0 / 1
+ /home/igor/redfm-ig/input/resources/ValueSet-BRViaAdministracao-1.0 : 0 / 0 / 1
+</table>
+== n/a ==
+== input/examples/01-exemplo-redfm.json ==
+ERROR: Bundle/Example-REDFM-1: Bundle.entry[0].resource.section[0].entry[0]: Não foi possível encontrar uma correspondência de perfil para urn:uuid:a54219b8-f741-4c47-b662-e4f8dfa49ab6 entre as opções: http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSMedicamentoDispensadoFornecido
+INFORMATION: Bundle/Example-REDFM-1: Bundle.entry[0].resource.section[0].entry[0]: Detalhes para urn:uuid:a54219b8-f741-4c47-b662-e4f8dfa49ab6 que correspondem ao perfil http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSMedicamentoDispensadoFornecido|1.0.0
+ERROR: Bundle/Example-REDFM-1: Bundle.entry[0].resource.section[0].code: Nenhuma das codificações fornecidas faz parte do conjunto de valores 'Document Section Codes' (http://hl7.org/fhir/ValueSet/doc-section-codes|4.0.1) e é necessária uma codificação deste conjunto de valores) (códigos = http://loinc.org#56445-0)
+== input/examples/02-exemplo-redfm.json ==
+ERROR: Bundle/Example-REDFM-2: Bundle.entry[0].resource.section[0].entry[0]: Não foi possível encontrar uma correspondência de perfil para urn:uuid:a54219b8-f741-4c47-b662-e4f8dfa49ab6 entre as opções: http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSMedicamentoDispensadoFornecido
+INFORMATION: Bundle/Example-REDFM-2: Bundle.entry[0].resource.section[0].entry[0]: Detalhes para urn:uuid:a54219b8-f741-4c47-b662-e4f8dfa49ab6 que correspondem ao perfil http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSMedicamentoDispensadoFornecido|1.0.0
+ERROR: Bundle/Example-REDFM-2: Bundle.entry[0].resource.section[0].code: Nenhuma das codificações fornecidas faz parte do conjunto de valores 'Document Section Codes' (http://hl7.org/fhir/ValueSet/doc-section-codes|4.0.1) e é necessária uma codificação deste conjunto de valores) (códigos = http://loinc.org#56445-0)
+== input/examples/03-exemplo-redfm.json ==
+ERROR: Bundle/Example-REDFM-3: Bundle.entry[0].resource.section[0].entry[0]: Não foi possível encontrar uma correspondência de perfil para urn:uuid:a54219b8-f741-4c47-b662-e4f8dfa49ab6 entre as opções: http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSMedicamentoDispensadoFornecido
+INFORMATION: Bundle/Example-REDFM-3: Bundle.entry[0].resource.section[0].entry[0]: Detalhes para urn:uuid:a54219b8-f741-4c47-b662-e4f8dfa49ab6 que correspondem ao perfil http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSMedicamentoDispensadoFornecido|1.0.0
+ERROR: Bundle/Example-REDFM-3: Bundle.entry[0].resource.section[0].code: Nenhuma das codificações fornecidas faz parte do conjunto de valores 'Document Section Codes' (http://hl7.org/fhir/ValueSet/doc-section-codes|4.0.1) e é necessária uma codificação deste conjunto de valores) (códigos = http://loinc.org#56445-0)
+== input/examples/04-exemplo-redfm.json ==
+ERROR: Bundle/Example-REDFM-4: Bundle.entry[0].resource.section[0].entry[0]: Não foi possível encontrar uma correspondência de perfil para urn:uuid:a54219b8-f741-4c47-b662-e4f8dfa49ab6 entre as opções: http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSMedicamentoDispensadoFornecido
+INFORMATION: Bundle/Example-REDFM-4: Bundle.entry[0].resource.section[0].entry[0]: Detalhes para urn:uuid:a54219b8-f741-4c47-b662-e4f8dfa49ab6 que correspondem ao perfil http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSMedicamentoDispensadoFornecido|1.0.0
+ERROR: Bundle/Example-REDFM-4: Bundle.entry[0].resource.section[0].code: Nenhuma das codificações fornecidas faz parte do conjunto de valores 'Document Section Codes' (http://hl7.org/fhir/ValueSet/doc-section-codes|4.0.1) e é necessária uma codificação deste conjunto de valores) (códigos = http://loinc.org#56445-0)
+== input/myig.xml ==
+== input/resources/CodeSystem-BRCBO.xml ==
+== input/resources/CodeSystem-BRCIAP2.xml ==
+== input/resources/CodeSystem-BRCID10.xml ==
+== input/resources/CodeSystem-BRConselhoProfissional.json ==
+ERROR: CodeSystem.where(url = 'https://terminologia.saude.gov.br/fhir/CodeSystem/BRConselhoProfissional'): Conformance resource /home/igor/redfm-ig/input/resources/CodeSystem-BRConselhoProfissional.json - the canonical URL (http://www.saude.gov.br/fhir/r4/CodeSystem/BRConselhoProfissional) does not match the URL (https://terminologia.saude.gov.br/fhir/CodeSystem/BRConselhoProfissional)
+ERROR: /home/igor/redfm-ig/input/resources/CodeSystem-BRConselhoProfissional: URL Mismatch http://www.saude.gov.br/fhir/r4/CodeSystem/BRConselhoProfissional vs https://terminologia.saude.gov.br/fhir/CodeSystem/BRConselhoProfissional
+== input/resources/CodeSystem-BRObmAMPP.xml ==
+== input/resources/CodeSystem-BRObmANVISA.xml ==
+== input/resources/CodeSystem-BRObmCATMAT.xml ==
+== input/resources/CodeSystem-BRObmEAN.xml ==
+== input/resources/CodeSystem-BRObmVMP.xml ==
+== input/resources/CodeSystem-BRTipoDispensacaoRealizada.json ==
+== input/resources/CodeSystem-BRTipoDocumento.xml ==
+== input/resources/CodeSystem-BRUnidadeMedida.xml ==
+== input/resources/CodeSystem-BRViaAdministracao.xml ==
+== input/resources/StructureDefinition-BRCoreComposition.json ==
+ERROR: StructureDefinition.where(url = 'https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-composition'): Conformance resource /home/igor/redfm-ig/input/resources/StructureDefinition-BRCoreComposition.json - the canonical URL (http://www.saude.gov.br/fhir/r4/StructureDefinition/br-core-composition) does not match the URL (https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-composition)
+ERROR: /home/igor/redfm-ig/input/resources/StructureDefinition-BRCoreComposition: URL Mismatch http://www.saude.gov.br/fhir/r4/StructureDefinition/br-core-composition vs https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-composition
+== input/resources/StructureDefinition-BRCoreMedication.json ==
+ERROR: StructureDefinition.where(url = 'https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-medication'): Conformance resource /home/igor/redfm-ig/input/resources/StructureDefinition-BRCoreMedication.json - the canonical URL (http://www.saude.gov.br/fhir/r4/StructureDefinition/br-core-medication) does not match the URL (https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-medication)
+ERROR: /home/igor/redfm-ig/input/resources/StructureDefinition-BRCoreMedication: URL Mismatch http://www.saude.gov.br/fhir/r4/StructureDefinition/br-core-medication vs https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-medication
+== input/resources/StructureDefinition-BRCoreOrganization.json ==
+ERROR: StructureDefinition.where(url = 'https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-organization'): Conformance resource /home/igor/redfm-ig/input/resources/StructureDefinition-BRCoreOrganization.json - the canonical URL (http://www.saude.gov.br/fhir/r4/StructureDefinition/br-core-organization) does not match the URL (https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-organization)
+ERROR: /home/igor/redfm-ig/input/resources/StructureDefinition-BRCoreOrganization: URL Mismatch http://www.saude.gov.br/fhir/r4/StructureDefinition/br-core-organization vs https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-organization
+== input/resources/StructureDefinition-BRCorePractitioner.json ==
+ERROR: StructureDefinition.where(url = 'https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-practitioner'): Conformance resource /home/igor/redfm-ig/input/resources/StructureDefinition-BRCorePractitioner.json - the canonical URL (http://www.saude.gov.br/fhir/r4/StructureDefinition/br-core-practitioner) does not match the URL (https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-practitioner)
+ERROR: /home/igor/redfm-ig/input/resources/StructureDefinition-BRCorePractitioner: URL Mismatch http://www.saude.gov.br/fhir/r4/StructureDefinition/br-core-practitioner vs https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-practitioner
+== input/resources/StructureDefinition-BRCorePractitionerRole.json ==
+ERROR: StructureDefinition.where(url = 'https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-practitionerrole'): Conformance resource /home/igor/redfm-ig/input/resources/StructureDefinition-BRCorePractitionerRole.json - the canonical URL (http://www.saude.gov.br/fhir/r4/StructureDefinition/br-core-practitionerrole) does not match the URL (https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-practitionerrole)
+ERROR: /home/igor/redfm-ig/input/resources/StructureDefinition-BRCorePractitionerRole: URL Mismatch http://www.saude.gov.br/fhir/r4/StructureDefinition/br-core-practitionerrole vs https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-practitionerrole
+== input/resources/StructureDefinition-RNDSEstabelecimentoSaude.json ==
+== input/resources/StructureDefinition-RNDSLotacaoProfissional.json ==
+== input/resources/StructureDefinition-RNDSMedicamento.json ==
+== input/resources/StructureDefinition-RNDSMedicamentoDispensado.json ==
+== input/resources/StructureDefinition-RNDSMedicamentoDispensadoFornecido.json ==
+WARNING: StructureDefinition/RNDSMedicamentoDispensadoFornecido: StructureDefinition.snapshot.element[361].pattern.ofType(CodeableConcept).coding[0]: A codificação não tem sistema. Um código sem sistema não tem um significado definido e não pode ser validado. Deve ser fornecido um sistema
+WARNING: StructureDefinition/RNDSMedicamentoDispensadoFornecido: StructureDefinition.snapshot.element[671].pattern.ofType(CodeableConcept).coding[0]: A codificação não tem sistema. Um código sem sistema não tem um significado definido e não pode ser validado. Deve ser fornecido um sistema
+INFORMATION: StructureDefinition/RNDSMedicamentoDispensadoFornecido: StructureDefinition.snapshot.element[924].mapping[0].map: O valor da cadeia de caracteres contém texto que se assemelha a etiquetas HTML incorporadas. Se este conteúdo for transformado em HTML sem um pós-processamento adequado, pode constituir um risco para a segurança
+== input/resources/StructureDefinition-RNDSPrescricaoMedicamentoDispensado.json ==
+== input/resources/StructureDefinition-RNDSProfissional.json ==
+WARNING: StructureDefinition/RNDSProfissional: StructureDefinition.snapshot.element[170].pattern.ofType(CodeableConcept).coding[0]: A codificação não tem sistema. Um código sem sistema não tem um significado definido e não pode ser validado. Deve ser fornecido um sistema
+WARNING: StructureDefinition/RNDSProfissional: StructureDefinition.differential.element[2].pattern.ofType(CodeableConcept).coding[0]: A codificação não tem sistema. Um código sem sistema não tem um significado definido e não pode ser validado. Deve ser fornecido um sistema
+== input/resources/StructureDefinition-RNDSRegistroEletronicoDispensacaoFornecimentoMedicamento.json ==
+ERROR: Registro Eletrônico de Dispensação ou Fornecimento de Medicamento (REDFM).section.Composition.section.code: Binding http://hl7.org/fhir/ValueSet/document-classcodes is not a subset of binding http://hl7.org/fhir/ValueSet/doc-section-codes because The codes '15508-5,47039-3,26441-6,34775-7,26442-4,34109-9,29752-3,29750-7,11543-6,29751-5,11485-0,27896-0,56445-0,18761-7,27895-2,28619-5,11486-8,34117-2,34133-9,34748-4,18842-5,27898-6,29749-9,56447-6,18748-4,57133-1,27897-8,57017-6,11488-4,57016-8,28570-0,47046-8,18726-0,53576-5,47045-0,47049-2,26436-6,47042-7,28634-4,11506-3,11504-8,34121-4,34122-2,34140-4' are not in the base valueset
+== input/resources/StructureDefinition-br-core-healthcareservice.json ==
+ERROR: StructureDefinition.where(url = 'https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-healthcareservice'): Conformance resource /home/igor/redfm-ig/input/resources/StructureDefinition-br-core-healthcareservice.json - the canonical URL (http://www.saude.gov.br/fhir/r4/StructureDefinition/br-core-healthcareservice) does not match the URL (https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-healthcareservice)
+ERROR: /home/igor/redfm-ig/input/resources/StructureDefinition-br-core-healthcareservice: URL Mismatch http://www.saude.gov.br/fhir/r4/StructureDefinition/br-core-healthcareservice vs https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-healthcareservice
+== input/resources/StructureDefinition-br-core-location.json ==
+ERROR: StructureDefinition.where(url = 'https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-location'): Conformance resource /home/igor/redfm-ig/input/resources/StructureDefinition-br-core-location.json - the canonical URL (http://www.saude.gov.br/fhir/r4/StructureDefinition/br-core-location) does not match the URL (https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-location)
+ERROR: /home/igor/redfm-ig/input/resources/StructureDefinition-br-core-location: URL Mismatch http://www.saude.gov.br/fhir/r4/StructureDefinition/br-core-location vs https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-location
+== input/resources/StructureDefinition-br-core-relatedperson.json ==
+ERROR: StructureDefinition.where(url = 'https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-relatedperson'): Conformance resource /home/igor/redfm-ig/input/resources/StructureDefinition-br-core-relatedperson.json - the canonical URL (http://www.saude.gov.br/fhir/r4/StructureDefinition/br-core-relatedperson) does not match the URL (https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-relatedperson)
+ERROR: /home/igor/redfm-ig/input/resources/StructureDefinition-br-core-relatedperson: URL Mismatch http://www.saude.gov.br/fhir/r4/StructureDefinition/br-core-relatedperson vs https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-relatedperson
+== input/resources/ValueSet-BRCOREN.json ==
+ERROR: ValueSet.where(url = 'https://terminologia.saude.gov.br/fhir/ValueSet/BRCOREN'): Conformance resource /home/igor/redfm-ig/input/resources/ValueSet-BRCOREN.json - the canonical URL (http://www.saude.gov.br/fhir/r4/ValueSet/BRCOREN) does not match the URL (https://terminologia.saude.gov.br/fhir/ValueSet/BRCOREN)
+ERROR: /home/igor/redfm-ig/input/resources/ValueSet-BRCOREN: URL Mismatch http://www.saude.gov.br/fhir/r4/ValueSet/BRCOREN vs https://terminologia.saude.gov.br/fhir/ValueSet/BRCOREN
+== input/resources/ValueSet-BRCRF.json ==
+ERROR: ValueSet.where(url = 'https://terminologia.saude.gov.br/fhir/ValueSet/BRCRF'): Conformance resource /home/igor/redfm-ig/input/resources/ValueSet-BRCRF.json - the canonical URL (http://www.saude.gov.br/fhir/r4/ValueSet/BRCRF) does not match the URL (https://terminologia.saude.gov.br/fhir/ValueSet/BRCRF)
+ERROR: /home/igor/redfm-ig/input/resources/ValueSet-BRCRF: URL Mismatch http://www.saude.gov.br/fhir/r4/ValueSet/BRCRF vs https://terminologia.saude.gov.br/fhir/ValueSet/BRCRF
+== input/resources/ValueSet-BRCRM.json ==
+ERROR: ValueSet.where(url = 'https://terminologia.saude.gov.br/fhir/ValueSet/BRCRM'): Conformance resource /home/igor/redfm-ig/input/resources/ValueSet-BRCRM.json - the canonical URL (http://www.saude.gov.br/fhir/r4/ValueSet/BRCRM) does not match the URL (https://terminologia.saude.gov.br/fhir/ValueSet/BRCRM)
+ERROR: /home/igor/redfm-ig/input/resources/ValueSet-BRCRM: URL Mismatch http://www.saude.gov.br/fhir/r4/ValueSet/BRCRM vs https://terminologia.saude.gov.br/fhir/ValueSet/BRCRM
+== input/resources/ValueSet-BRCRO.json ==
+ERROR: ValueSet.where(url = 'https://terminologia.saude.gov.br/fhir/ValueSet/BRCRO'): Conformance resource /home/igor/redfm-ig/input/resources/ValueSet-BRCRO.json - the canonical URL (http://www.saude.gov.br/fhir/r4/ValueSet/BRCRO) does not match the URL (https://terminologia.saude.gov.br/fhir/ValueSet/BRCRO)
+ERROR: /home/igor/redfm-ig/input/resources/ValueSet-BRCRO: URL Mismatch http://www.saude.gov.br/fhir/r4/ValueSet/BRCRO vs https://terminologia.saude.gov.br/fhir/ValueSet/BRCRO
+== input/resources/ValueSet-BROcupacao-1.0.xml ==
+== input/resources/ValueSet-BROutrosProfissionais.json ==
+ERROR: ValueSet.where(url = 'https://terminologia.saude.gov.br/fhir/ValueSet/BROutrosProfissionais'): Conformance resource /home/igor/redfm-ig/input/resources/ValueSet-BROutrosProfissionais.json - the canonical URL (http://www.saude.gov.br/fhir/r4/ValueSet/BROutrosProfissionais) does not match the URL (https://terminologia.saude.gov.br/fhir/ValueSet/BROutrosProfissionais)
+ERROR: /home/igor/redfm-ig/input/resources/ValueSet-BROutrosProfissionais: URL Mismatch http://www.saude.gov.br/fhir/r4/ValueSet/BROutrosProfissionais vs https://terminologia.saude.gov.br/fhir/ValueSet/BROutrosProfissionais
+== input/resources/ValueSet-BRProblemaDiagnostico.xml ==
+== input/resources/ValueSet-BRTerminologiaMedicamento.xml ==
+== input/resources/ValueSet-BRTipoDispensacaoRealizada.json ==
+== input/resources/ValueSet-BRTipoDocumento-1.0.xml ==
+== input/resources/ValueSet-BRUnidadeMedidaMedicamento.xml ==
+== input/resources/ValueSet-BRViaAdministracao-1.0.xml ==
