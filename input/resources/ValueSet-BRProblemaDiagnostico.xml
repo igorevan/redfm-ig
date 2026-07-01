@@ -15,11 +15,9 @@
   <compose>
     <include>
       <system value="http://www.saude.gov.br/fhir/r4/CodeSystem/BRCID10" />
-      <version value="*" />
     </include>
     <include>
       <system value="http://www.saude.gov.br/fhir/r4/CodeSystem/BRCIAP2" />
-      <version value="*" />
     </include>
   </compose>
 </ValueSet>

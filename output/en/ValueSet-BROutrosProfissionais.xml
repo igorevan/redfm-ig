@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="BROutrosProfissionais"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+  </meta>
+  <language value="en"/>
+  <text>
+    <status value="extensions"/>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="ehr"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="1">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0/ImplementationGuide/br.gov.saude.redfm.fhir"/>
+      </extension>
+    </valueInteger>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="normative">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0/ImplementationGuide/br.gov.saude.redfm.fhir"/>
+      </extension>
+    </valueCode>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+    <valueCode value="4.0.1"/>
+  </extension>
+  <url value="https://terminologia.saude.gov.br/fhir/ValueSet/BROutrosProfissionais"/>
+  <version value="1.0.0-release"/>
+  <name value="BROutrosProfissionais"/>
+  <title value="Conselhos regionais de outros profissionais da saúde do Brasil"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2023-07-18T13:52:24+00:00"/>
+  <publisher value="Ministério da Saúde do Brasil"/>
+  <contact>
+    <name value="Ministério da Saúde do Brasil"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.saude.gov.br"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="cgiis.datasus@saude.gov.br"/>
+    </telecom>
+  </contact>
+  <description value="Conjunto de todos os conselhos regionais de outros profissionais da saúde do Brasil"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BR"/>
+    </coding>
+  </jurisdiction>
+  <purpose value="O propósito deste conjunto é agrupar todos os conselhos regionais da categoria de outros profissionais da saúde para fins de validação do identificador profissional"/>
+  <copyright value="CC-1.0"/>
+  <compose>
+    <include>
+      <system value="https://terminologia.saude.gov.br/fhir/CodeSystem/BRConselhoProfissional"/>
+      <concept>
+        <code value="https://saude.gov.br/sid/crp-ac-ro"/>
+        <display value="CRP-AC-RO"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/crp-al"/>
+        <display value="CRP-AL"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/crp-am-rr"/>
+        <display value="CRP-AM-RR"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/crp-ba"/>
+        <display value="CRP-BA"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/crp-ce"/>
+        <display value="CRP-CE"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/crp-df"/>
+        <display value="CRP-DF"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/crp-es"/>
+        <display value="CRP-ES"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/crp-go"/>
+        <display value="CRP-GO"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/crp-ma"/>
+        <display value="CRP-MA"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/crp-mg"/>
+        <display value="CRP-MG"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/crp-ms"/>
+        <display value="CRP-MS"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/crp-mt"/>
+        <display value="CRP-MT"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/crp-pa-ap"/>
+        <display value="CRP-PA-AP"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/crp-pb"/>
+        <display value="CRP-PB"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/crp-pe"/>
+        <display value="CRP-PE"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/crp-pi"/>
+        <display value="CRP-PI"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/crp-pr"/>
+        <display value="CRP-PR"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/crp-rj"/>
+        <display value="CRP-RJ"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/crp-rn"/>
+        <display value="CRP-RN"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/crp-rs"/>
+        <display value="CRP-RS"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/crp-sc"/>
+        <display value="CRP-SC"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/crp-se"/>
+        <display value="CRP-SE"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/crp-sp"/>
+        <display value="CRP-SP"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/crp-to"/>
+        <display value="CRP-TO"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/crefito-ba"/>
+        <display value="CREFITO-BA"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/crefito-ce"/>
+        <display value="CREFITO-CE"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/crefito-es"/>
+        <display value="CREFITO-ES"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/crefito-go-df"/>
+        <display value="CREFITO-GO-DF"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/crefito-ma"/>
+        <display value="CREFITO-MA"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/crefito-mg"/>
+        <display value="CREFITO-MG"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/crefito-ms"/>
+        <display value="CREFITO-MS"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/crefito-mt"/>
+        <display value="CREFITO-MT"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/crefito-pa-am-to-rr-ap"/>
+        <display value="CREFITO-PA-AM-TO-RR-AP"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/crefito-pe-pb-al-rn"/>
+        <display value="CREFITO-PE-PB-AL-RN"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/crefito-pi"/>
+        <display value="CREFITO-PI"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/crefito-pr"/>
+        <display value="CREFITO-PR"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/crefito-rj"/>
+        <display value="CREFITO-RJ"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/crefito-ro-ac"/>
+        <display value="CREFITO-RO-AC"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/crefito-rs"/>
+        <display value="CREFITO-RS"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/crefito-sc"/>
+        <display value="CREFITO-SC"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/crefito-se"/>
+        <display value="CREFITO-SE"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/crefito-sp"/>
+        <display value="CREFITO-SP"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/crn-al"/>
+        <display value="CRN-AL"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/crn-ba-se"/>
+        <display value="CRN-BA-SE"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/crn-ce-ma-pi"/>
+        <display value="CRN-CE-MA-PI"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/crn-df-go-mt-to"/>
+        <display value="CRN-DF-GO-MT-TO"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/crn-pa-ac-am-ap-ro-rr"/>
+        <display value="CRN-PA-AC-AM-AP-RO-RR"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/crn-pe-al-pb-rn"/>
+        <display value="CRN-PE-AL-PB-RN"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/crn-pr"/>
+        <display value="CRN-PR"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/crn-rj-es"/>
+        <display value="CRN-RJ-ES"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/crn-rs"/>
+        <display value="CRN-RS"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/crn-sc"/>
+        <display value="CRN-SC"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/crn-sp-ms"/>
+        <display value="CRN-SP-MS"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/crefono-am-ac-ap-pa-ro-rr"/>
+        <display value="CREFONO-AM-AC-AP-PA-RO-RR"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/crefono-ce-ma-pi-rn"/>
+        <display value="CREFONO-CE-MA-PI-RN"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/crefono-go-df-ms-mt-to"/>
+        <display value="CREFONO-GO-DF-MS-MT-TO"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/crefono-mg-es"/>
+        <display value="CREFONO-MG-ES"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/crefono-pe-al-ba-pb-se"/>
+        <display value="CREFONO-PE-AL-BA-PB-SE"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/crefono-pr-sc"/>
+        <display value="CREFONO-PR-SC"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/crefono-rj"/>
+        <display value="CREFONO-RJ"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/crefono-rs"/>
+        <display value="CREFONO-RS"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/crefono-sp"/>
+        <display value="CREFONO-SP"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

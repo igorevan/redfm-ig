@@ -4,7 +4,7 @@
   <url value="http://www.saude.gov.br/fhir/r4/CodeSystem/BRViaAdministracao" />
   <version value="02.00" />
   <name value="BRViaAdministracao" />
-  <title value="Via de Administração" />
+  <title value="Via de Administração (CodeSystem)" />
   <status value="active" />
   <experimental value="false" />
   <date value="2020-03-11T18:28:42.5310735+00:00" />

@@ -15,7 +15,6 @@
   <compose>
     <include>
       <system value="http://www.saude.gov.br/fhir/r4/CodeSystem/BRUnidadeMedida" />
-      <version value="*" />
     </include>
   </compose>
 </ValueSet>

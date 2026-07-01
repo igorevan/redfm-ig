@@ -8,7 +8,7 @@
   "url": "http://www.saude.gov.br/fhir/r4/ValueSet/BRTipoDispensacaoRealizada",
   "version": "1.0.0",
   "name": "BRTipoDispensacaoRealizada",
-  "title": "Tipo de Dispensação Realizada",
+  "title": "Tipo de Dispensação Realizada (ValueSet)",
   "status": "active",
   "experimental": false,
   "date": "2024-12-10",

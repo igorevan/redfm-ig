@@ -1,0 +1,213 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0/ValueSet/BRCOREN> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "BRCOREN"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://hl7.org/fhir/StructureDefinition/shareablevalueset" ;
+       fhir:index -1 ;
+       fhir:link <http://hl7.org/fhir/StructureDefinition/shareablevalueset>
+     ]
+  ] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ]
+  ] ;
+  fhir:DomainResource.extension [
+     fhir:index -1 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg" ] ;
+     fhir:Extension.valueCode [ fhir:value "ehr" ]
+  ], [
+     fhir:index -1 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm" ] ;
+     fhir:Extension.valueInteger [
+       fhir:value "1"^^xsd:integer ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom" ] ;
+         fhir:Extension.valueCanonical [
+           fhir:value "https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0/ImplementationGuide/br.gov.saude.redfm.fhir" ;
+           fhir:link <https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0/ImplementationGuide/br.gov.saude.redfm.fhir>
+         ]
+       ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status" ] ;
+     fhir:Extension.valueCode [
+       fhir:value "normative" ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom" ] ;
+         fhir:Extension.valueCanonical [
+           fhir:value "https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0/ImplementationGuide/br.gov.saude.redfm.fhir" ;
+           fhir:link <https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0/ImplementationGuide/br.gov.saude.redfm.fhir>
+         ]
+       ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version" ] ;
+     fhir:Extension.valueCode [ fhir:value "4.0.1" ]
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://terminologia.saude.gov.br/fhir/ValueSet/BRCOREN"] ;
+  fhir:ValueSet.version [ fhir:value "1.0.0-release"] ;
+  fhir:ValueSet.name [ fhir:value "BRCOREN"] ;
+  fhir:ValueSet.title [ fhir:value "Conselhos regionais de Enfermagem do Brasil"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:ValueSet.date [ fhir:value "2023-07-18T13:52:24+00:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "Ministério da Saúde do Brasil"] ;
+  fhir:ValueSet.contact [
+     fhir:index -1 ;
+     fhir:ContactDetail.name [ fhir:value "Ministério da Saúde do Brasil" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "http://www.saude.gov.br" ]
+     ], [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "cgiis.datasus@saude.gov.br" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "Conjunto de todos os conselhos regionais de enfermagem do Brasil"] ;
+  fhir:ValueSet.jurisdiction [
+     fhir:index -1 ;
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "BR" ]
+     ]
+  ] ;
+  fhir:ValueSet.purpose [ fhir:value "O propósito deste conjunto é agrupar todos os conselhos regionais de enfermagem para fins de validação do identificador profissional do enfermeiro"] ;
+  fhir:ValueSet.copyright [ fhir:value "CC-1.0"] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index -1 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://terminologia.saude.gov.br/fhir/CodeSystem/BRConselhoProfissional" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "https://saude.gov.br/sid/coren-ac" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "COREN-AC" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "https://saude.gov.br/sid/coren-al" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "COREN-AL" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "https://saude.gov.br/sid/coren-am" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "COREN-AM" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "https://saude.gov.br/sid/coren-ap" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "COREN-AP" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "https://saude.gov.br/sid/coren-ba" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "COREN-BA" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "https://saude.gov.br/sid/coren-ce" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "COREN-CE" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "https://saude.gov.br/sid/coren-df" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "COREN-DF" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "https://saude.gov.br/sid/coren-es" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "COREN-ES" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "https://saude.gov.br/sid/coren-go" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "COREN-GO" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "https://saude.gov.br/sid/coren-ma" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "COREN-MA" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "https://saude.gov.br/sid/coren-mg" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "COREN-MG" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "https://saude.gov.br/sid/coren-ms" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "COREN-MS" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "https://saude.gov.br/sid/coren-mt" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "COREN-MT" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "https://saude.gov.br/sid/coren-pa" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "COREN-PA" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "https://saude.gov.br/sid/coren-pb" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "COREN-PB" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "https://saude.gov.br/sid/coren-pe" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "COREN-PE" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "https://saude.gov.br/sid/coren-pi" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "COREN-PI" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "https://saude.gov.br/sid/coren-pr" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "COREN-PR" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "https://saude.gov.br/sid/coren-rj" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "COREN-RJ" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "https://saude.gov.br/sid/coren-rn" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "COREN-RN" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "https://saude.gov.br/sid/coren-ro" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "COREN-RO" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "https://saude.gov.br/sid/coren-rr" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "COREN-RR" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "https://saude.gov.br/sid/coren-rs" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "COREN-RS" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "https://saude.gov.br/sid/coren-sc" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "COREN-SC" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "https://saude.gov.br/sid/coren-se" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "COREN-SE" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "https://saude.gov.br/sid/coren-sp" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "COREN-SP" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "https://saude.gov.br/sid/coren-to" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "COREN-TO" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0/ValueSet/BRCOREN.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

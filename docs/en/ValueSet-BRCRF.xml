@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="BRCRF"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+  </meta>
+  <language value="en"/>
+  <text>
+    <status value="extensions"/>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="ehr"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="1">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0/ImplementationGuide/br.gov.saude.redfm.fhir"/>
+      </extension>
+    </valueInteger>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="normative">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0/ImplementationGuide/br.gov.saude.redfm.fhir"/>
+      </extension>
+    </valueCode>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+    <valueCode value="4.0.1"/>
+  </extension>
+  <url value="https://terminologia.saude.gov.br/fhir/ValueSet/BRCRF"/>
+  <version value="1.0.0-release"/>
+  <name value="BRCRF"/>
+  <title value="Conselhos regionais de Farmácia do Brasil"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2023-07-18T13:52:24+00:00"/>
+  <publisher value="Ministério da Saúde do Brasil"/>
+  <contact>
+    <name value="Ministério da Saúde do Brasil"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.saude.gov.br"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="cgiis.datasus@saude.gov.br"/>
+    </telecom>
+  </contact>
+  <description value="Conjunto de todos os conselhos regionais de farmácia do Brasil"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BR"/>
+    </coding>
+  </jurisdiction>
+  <purpose value="O propósito deste conjunto é agrupar todos os conselhos regionais de farmácia para fins de validação do identificador profissional do farmacêutico"/>
+  <copyright value="CC-1.0"/>
+  <compose>
+    <include>
+      <system value="https://terminologia.saude.gov.br/fhir/CodeSystem/BRConselhoProfissional"/>
+      <concept>
+        <code value="https://saude.gov.br/sid/crf-ac"/>
+        <display value="CRF-AC"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/crf-al"/>
+        <display value="CRF-AL"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/crf-am"/>
+        <display value="CRF-AM"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/crf-ap"/>
+        <display value="CRF-AP"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/crf-ba"/>
+        <display value="CRF-BA"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/crf-ce"/>
+        <display value="CRF-CE"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/crf-df"/>
+        <display value="CRF-DF"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/crf-es"/>
+        <display value="CRF-ES"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/crf-go"/>
+        <display value="CRF-GO"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/crf-ma"/>
+        <display value="CRF-MA"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/crf-mg"/>
+        <display value="CRF-MG"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/crf-ms"/>
+        <display value="CRF-MS"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/crf-mt"/>
+        <display value="CRF-MT"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/crf-pa"/>
+        <display value="CRF-PA"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/crf-pb"/>
+        <display value="CRF-PB"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/crf-pe"/>
+        <display value="CRF-PE"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/crf-pi"/>
+        <display value="CRF-PI"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/crf-pr"/>
+        <display value="CRF-PR"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/crf-rj"/>
+        <display value="CRF-RJ"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/crf-rn"/>
+        <display value="CRF-RN"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/crf-ro"/>
+        <display value="CRF-RO"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/crf-rr"/>
+        <display value="CRF-RR"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/crf-rs"/>
+        <display value="CRF-RS"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/crf-sc"/>
+        <display value="CRF-SC"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/crf-se"/>
+        <display value="CRF-SE"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/crf-sp"/>
+        <display value="CRF-SP"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/crf-to"/>
+        <display value="CRF-TO"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

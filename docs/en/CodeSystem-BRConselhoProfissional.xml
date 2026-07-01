@@ -1,0 +1,911 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="BRConselhoProfissional"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/StructureDefinition/shareablecodesystem"/>
+  </meta>
+  <language value="en"/>
+  <text>
+    <status value="generated"/>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="ehr"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="1">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0/ImplementationGuide/br.gov.saude.redfm.fhir"/>
+      </extension>
+    </valueInteger>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="normative">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0/ImplementationGuide/br.gov.saude.redfm.fhir"/>
+      </extension>
+    </valueCode>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+    <valueCode value="4.0.1"/>
+  </extension>
+  <url value="https://terminologia.saude.gov.br/fhir/CodeSystem/BRConselhoProfissional"/>
+  <version value="1.0.0-release"/>
+  <name value="BRConselhoProfissional"/>
+  <title value="Conselhos profissionais de saúde do Brasil"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2023-07-18T13:05:57+00:00"/>
+  <publisher value="Ministério da Saúde do Brasil"/>
+  <contact>
+    <name value="Ministério da Saúde do Brasil"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.saude.gov.br"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="cgiis.datasus@saude.gov.br"/>
+    </telecom>
+  </contact>
+  <description value="Esse CodeSystem inclui os conselhos profissionais de saúde do Brasil, conforme a Resolução CNS 251/1997."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BR"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="170"/>
+  <concept>
+    <code value="https://saude.gov.br/sid/crf-ac"/>
+    <display value="CRF-AC"/>
+    <definition value="CONSELHO REGIONAL DE FARMÁCIA"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/crf-al"/>
+    <display value="CRF-AL"/>
+    <definition value="CONSELHO REGIONAL DE FARMÁCIA"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/crf-am"/>
+    <display value="CRF-AM"/>
+    <definition value="CONSELHO REGIONAL DE FARMÁCIA"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/crf-ap"/>
+    <display value="CRF-AP"/>
+    <definition value="CONSELHO REGIONAL DE FARMÁCIA"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/crf-ba"/>
+    <display value="CRF-BA"/>
+    <definition value="CONSELHO REGIONAL DE FARMÁCIA"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/crf-ce"/>
+    <display value="CRF-CE"/>
+    <definition value="CONSELHO REGIONAL DE FARMÁCIA"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/crf-df"/>
+    <display value="CRF-DF"/>
+    <definition value="CONSELHO REGIONAL DE FARMÁCIA"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/crf-es"/>
+    <display value="CRF-ES"/>
+    <definition value="CONSELHO REGIONAL DE FARMÁCIA"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/crf-go"/>
+    <display value="CRF-GO"/>
+    <definition value="CONSELHO REGIONAL DE FARMÁCIA"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/crf-ma"/>
+    <display value="CRF-MA"/>
+    <definition value="CONSELHO REGIONAL DE FARMÁCIA"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/crf-mg"/>
+    <display value="CRF-MG"/>
+    <definition value="CONSELHO REGIONAL DE FARMÁCIA"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/crf-ms"/>
+    <display value="CRF-MS"/>
+    <definition value="CONSELHO REGIONAL DE FARMÁCIA"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/crf-mt"/>
+    <display value="CRF-MT"/>
+    <definition value="CONSELHO REGIONAL DE FARMÁCIA"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/crf-pa"/>
+    <display value="CRF-PA"/>
+    <definition value="CONSELHO REGIONAL DE FARMÁCIA"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/crf-pb"/>
+    <display value="CRF-PB"/>
+    <definition value="CONSELHO REGIONAL DE FARMÁCIA"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/crf-pe"/>
+    <display value="CRF-PE"/>
+    <definition value="CONSELHO REGIONAL DE FARMÁCIA"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/crf-pi"/>
+    <display value="CRF-PI"/>
+    <definition value="CONSELHO REGIONAL DE FARMÁCIA"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/crf-pr"/>
+    <display value="CRF-PR"/>
+    <definition value="CONSELHO REGIONAL DE FARMÁCIA"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/crf-rj"/>
+    <display value="CRF-RJ"/>
+    <definition value="CONSELHO REGIONAL DE FARMÁCIA"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/crf-rn"/>
+    <display value="CRF-RN"/>
+    <definition value="CONSELHO REGIONAL DE FARMÁCIA"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/crf-ro"/>
+    <display value="CRF-RO"/>
+    <definition value="CONSELHO REGIONAL DE FARMÁCIA"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/crf-rr"/>
+    <display value="CRF-RR"/>
+    <definition value="CONSELHO REGIONAL DE FARMÁCIA"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/crf-rs"/>
+    <display value="CRF-RS"/>
+    <definition value="CONSELHO REGIONAL DE FARMÁCIA"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/crf-sc"/>
+    <display value="CRF-SC"/>
+    <definition value="CONSELHO REGIONAL DE FARMÁCIA"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/crf-se"/>
+    <display value="CRF-SE"/>
+    <definition value="CONSELHO REGIONAL DE FARMÁCIA"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/crf-sp"/>
+    <display value="CRF-SP"/>
+    <definition value="CONSELHO REGIONAL DE FARMÁCIA"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/crf-to"/>
+    <display value="CRF-TO"/>
+    <definition value="CONSELHO REGIONAL DE FARMÁCIA"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/cro-ac"/>
+    <display value="CRO-AC"/>
+    <definition value="CONSELHO REGIONAL DE ODONTOLOGIA"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/cro-al"/>
+    <display value="CRO-AL"/>
+    <definition value="CONSELHO REGIONAL DE ODONTOLOGIA"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/cro-am"/>
+    <display value="CRO-AM"/>
+    <definition value="CONSELHO REGIONAL DE ODONTOLOGIA"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/cro-ap"/>
+    <display value="CRO-AP"/>
+    <definition value="CONSELHO REGIONAL DE ODONTOLOGIA"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/cro-ba"/>
+    <display value="CRO-BA"/>
+    <definition value="CONSELHO REGIONAL DE ODONTOLOGIA"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/cro-ce"/>
+    <display value="CRO-CE"/>
+    <definition value="CONSELHO REGIONAL DE ODONTOLOGIA"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/cro-df"/>
+    <display value="CRO-DF"/>
+    <definition value="CONSELHO REGIONAL DE ODONTOLOGIA"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/cro-es"/>
+    <display value="CRO-ES"/>
+    <definition value="CONSELHO REGIONAL DE ODONTOLOGIA"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/cro-go"/>
+    <display value="CRO-GO"/>
+    <definition value="CONSELHO REGIONAL DE ODONTOLOGIA"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/cro-ma"/>
+    <display value="CRO-MA"/>
+    <definition value="CONSELHO REGIONAL DE ODONTOLOGIA"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/cro-mg"/>
+    <display value="CRO-MG"/>
+    <definition value="CONSELHO REGIONAL DE ODONTOLOGIA"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/cro-ms"/>
+    <display value="CRO-MS"/>
+    <definition value="CONSELHO REGIONAL DE ODONTOLOGIA"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/cro-mt"/>
+    <display value="CRO-MT"/>
+    <definition value="CONSELHO REGIONAL DE ODONTOLOGIA"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/cro-pa"/>
+    <display value="CRO-PA"/>
+    <definition value="CONSELHO REGIONAL DE ODONTOLOGIA"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/cro-pb"/>
+    <display value="CRO-PB"/>
+    <definition value="CONSELHO REGIONAL DE ODONTOLOGIA"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/cro-pe"/>
+    <display value="CRO-PE"/>
+    <definition value="CONSELHO REGIONAL DE ODONTOLOGIA"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/cro-pi"/>
+    <display value="CRO-PI"/>
+    <definition value="CONSELHO REGIONAL DE ODONTOLOGIA"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/cro-pr"/>
+    <display value="CRO-PR"/>
+    <definition value="CONSELHO REGIONAL DE ODONTOLOGIA"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/cro-rj"/>
+    <display value="CRO-RJ"/>
+    <definition value="CONSELHO REGIONAL DE ODONTOLOGIA"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/cro-rn"/>
+    <display value="CRO-RN"/>
+    <definition value="CONSELHO REGIONAL DE ODONTOLOGIA"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/cro-ro"/>
+    <display value="CRO-RO"/>
+    <definition value="CONSELHO REGIONAL DE ODONTOLOGIA"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/cro-rr"/>
+    <display value="CRO-RR"/>
+    <definition value="CONSELHO REGIONAL DE ODONTOLOGIA"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/cro-rs"/>
+    <display value="CRO-RS"/>
+    <definition value="CONSELHO REGIONAL DE ODONTOLOGIA"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/cro-sc"/>
+    <display value="CRO-SC"/>
+    <definition value="CONSELHO REGIONAL DE ODONTOLOGIA"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/cro-se"/>
+    <display value="CRO-SE"/>
+    <definition value="CONSELHO REGIONAL DE ODONTOLOGIA"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/cro-sp"/>
+    <display value="CRO-SP"/>
+    <definition value="CONSELHO REGIONAL DE ODONTOLOGIA"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/cro-to"/>
+    <display value="CRO-TO"/>
+    <definition value="CONSELHO REGIONAL DE ODONTOLOGIA"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/coren-ac"/>
+    <display value="COREN-AC"/>
+    <definition value="CONSELHO REGIONAL DE ENFERMAGEM"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/coren-al"/>
+    <display value="COREN-AL"/>
+    <definition value="CONSELHO REGIONAL DE ENFERMAGEM"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/coren-am"/>
+    <display value="COREN-AM"/>
+    <definition value="CONSELHO REGIONAL DE ENFERMAGEM"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/coren-ap"/>
+    <display value="COREN-AP"/>
+    <definition value="CONSELHO REGIONAL DE ENFERMAGEM"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/coren-ba"/>
+    <display value="COREN-BA"/>
+    <definition value="CONSELHO REGIONAL DE ENFERMAGEM"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/coren-ce"/>
+    <display value="COREN-CE"/>
+    <definition value="CONSELHO REGIONAL DE ENFERMAGEM"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/coren-df"/>
+    <display value="COREN-DF"/>
+    <definition value="CONSELHO REGIONAL DE ENFERMAGEM"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/coren-es"/>
+    <display value="COREN-ES"/>
+    <definition value="CONSELHO REGIONAL DE ENFERMAGEM"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/coren-go"/>
+    <display value="COREN-GO"/>
+    <definition value="CONSELHO REGIONAL DE ENFERMAGEM"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/coren-ma"/>
+    <display value="COREN-MA"/>
+    <definition value="CONSELHO REGIONAL DE ENFERMAGEM"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/coren-mg"/>
+    <display value="COREN-MG"/>
+    <definition value="CONSELHO REGIONAL DE ENFERMAGEM"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/coren-ms"/>
+    <display value="COREN-MS"/>
+    <definition value="CONSELHO REGIONAL DE ENFERMAGEM"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/coren-mt"/>
+    <display value="COREN-MT"/>
+    <definition value="CONSELHO REGIONAL DE ENFERMAGEM"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/coren-pa"/>
+    <display value="COREN-PA"/>
+    <definition value="CONSELHO REGIONAL DE ENFERMAGEM"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/coren-pb"/>
+    <display value="COREN-PB"/>
+    <definition value="CONSELHO REGIONAL DE ENFERMAGEM"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/coren-pe"/>
+    <display value="COREN-PE"/>
+    <definition value="CONSELHO REGIONAL DE ENFERMAGEM"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/coren-pi"/>
+    <display value="COREN-PI"/>
+    <definition value="CONSELHO REGIONAL DE ENFERMAGEM"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/coren-pr"/>
+    <display value="COREN-PR"/>
+    <definition value="CONSELHO REGIONAL DE ENFERMAGEM"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/coren-rj"/>
+    <display value="COREN-RJ"/>
+    <definition value="CONSELHO REGIONAL DE ENFERMAGEM"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/coren-rn"/>
+    <display value="COREN-RN"/>
+    <definition value="CONSELHO REGIONAL DE ENFERMAGEM"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/coren-ro"/>
+    <display value="COREN-RO"/>
+    <definition value="CONSELHO REGIONAL DE ENFERMAGEM"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/coren-rr"/>
+    <display value="COREN-RR"/>
+    <definition value="CONSELHO REGIONAL DE ENFERMAGEM"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/coren-rs"/>
+    <display value="COREN-RS"/>
+    <definition value="CONSELHO REGIONAL DE ENFERMAGEM"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/coren-sc"/>
+    <display value="COREN-SC"/>
+    <definition value="CONSELHO REGIONAL DE ENFERMAGEM"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/coren-se"/>
+    <display value="COREN-SE"/>
+    <definition value="CONSELHO REGIONAL DE ENFERMAGEM"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/coren-sp"/>
+    <display value="COREN-SP"/>
+    <definition value="CONSELHO REGIONAL DE ENFERMAGEM"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/coren-to"/>
+    <display value="COREN-TO"/>
+    <definition value="CONSELHO REGIONAL DE ENFERMAGEM"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/crm-ac"/>
+    <display value="CRM-AC"/>
+    <definition value="CONSELHO REGIONAL DE MEDICINA"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/crm-al"/>
+    <display value="CRM-AL"/>
+    <definition value="CONSELHO REGIONAL DE MEDICINA"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/crm-am"/>
+    <display value="CRM-AM"/>
+    <definition value="CONSELHO REGIONAL DE MEDICINA"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/crm-ap"/>
+    <display value="CRM-AP"/>
+    <definition value="CONSELHO REGIONAL DE MEDICINA"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/crm-ba"/>
+    <display value="CRM-BA"/>
+    <definition value="CONSELHO REGIONAL DE MEDICINA"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/crm-ce"/>
+    <display value="CRM-CE"/>
+    <definition value="CONSELHO REGIONAL DE MEDICINA"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/crm-df"/>
+    <display value="CRM-DF"/>
+    <definition value="CONSELHO REGIONAL DE MEDICINA"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/crm-es"/>
+    <display value="CRM-ES"/>
+    <definition value="CONSELHO REGIONAL DE MEDICINA"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/crm-go"/>
+    <display value="CRM-GO"/>
+    <definition value="CONSELHO REGIONAL DE MEDICINA"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/crm-ma"/>
+    <display value="CRM-MA"/>
+    <definition value="CONSELHO REGIONAL DE MEDICINA"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/crm-mg"/>
+    <display value="CRM-MG"/>
+    <definition value="CONSELHO REGIONAL DE MEDICINA"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/crm-ms"/>
+    <display value="CRM-MS"/>
+    <definition value="CONSELHO REGIONAL DE MEDICINA"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/crm-mt"/>
+    <display value="CRM-MT"/>
+    <definition value="CONSELHO REGIONAL DE MEDICINA"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/crm-pa"/>
+    <display value="CRM-PA"/>
+    <definition value="CONSELHO REGIONAL DE MEDICINA"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/crm-pb"/>
+    <display value="CRM-PB"/>
+    <definition value="CONSELHO REGIONAL DE MEDICINA"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/crm-pe"/>
+    <display value="CRM-PE"/>
+    <definition value="CONSELHO REGIONAL DE MEDICINA"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/crm-pi"/>
+    <display value="CRM-PI"/>
+    <definition value="CONSELHO REGIONAL DE MEDICINA"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/crm-pr"/>
+    <display value="CRM-PR"/>
+    <definition value="CONSELHO REGIONAL DE MEDICINA"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/crm-rj"/>
+    <display value="CRM-RJ"/>
+    <definition value="CONSELHO REGIONAL DE MEDICINA"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/crm-rn"/>
+    <display value="CRM-RN"/>
+    <definition value="CONSELHO REGIONAL DE MEDICINA"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/crm-ro"/>
+    <display value="CRM-RO"/>
+    <definition value="CONSELHO REGIONAL DE MEDICINA"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/crm-rr"/>
+    <display value="CRM-RR"/>
+    <definition value="CONSELHO REGIONAL DE MEDICINA"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/crm-rs"/>
+    <display value="CRM-RS"/>
+    <definition value="CONSELHO REGIONAL DE MEDICINA"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/crm-sc"/>
+    <display value="CRM-SC"/>
+    <definition value="CONSELHO REGIONAL DE MEDICINA"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/crm-se"/>
+    <display value="CRM-SE"/>
+    <definition value="CONSELHO REGIONAL DE MEDICINA"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/crm-sp"/>
+    <display value="CRM-SP"/>
+    <definition value="CONSELHO REGIONAL DE MEDICINA"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/crm-to"/>
+    <display value="CRM-TO"/>
+    <definition value="CONSELHO REGIONAL DE MEDICINA"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/crp-ac-ro"/>
+    <display value="CRP-AC-RO"/>
+    <definition value="CONSELHO REGIONAL DE PSICOLOGIA"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/crp-al"/>
+    <display value="CRP-AL"/>
+    <definition value="CONSELHO REGIONAL DE PSICOLOGIA"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/crp-am-rr"/>
+    <display value="CRP-AM-RR"/>
+    <definition value="CONSELHO REGIONAL DE PSICOLOGIA"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/crp-ba"/>
+    <display value="CRP-BA"/>
+    <definition value="CONSELHO REGIONAL DE PSICOLOGIA"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/crp-ce"/>
+    <display value="CRP-CE"/>
+    <definition value="CONSELHO REGIONAL DE PSICOLOGIA"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/crp-df"/>
+    <display value="CRP-DF"/>
+    <definition value="CONSELHO REGIONAL DE PSICOLOGIA"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/crp-es"/>
+    <display value="CRP-ES"/>
+    <definition value="CONSELHO REGIONAL DE PSICOLOGIA"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/crp-go"/>
+    <display value="CRP-GO"/>
+    <definition value="CONSELHO REGIONAL DE PSICOLOGIA"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/crp-ma"/>
+    <display value="CRP-MA"/>
+    <definition value="CONSELHO REGIONAL DE PSICOLOGIA"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/crp-mg"/>
+    <display value="CRP-MG"/>
+    <definition value="CONSELHO REGIONAL DE PSICOLOGIA"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/crp-ms"/>
+    <display value="CRP-MS"/>
+    <definition value="CONSELHO REGIONAL DE PSICOLOGIA"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/crp-mt"/>
+    <display value="CRP-MT"/>
+    <definition value="CONSELHO REGIONAL DE PSICOLOGIA"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/crp-pa-ap"/>
+    <display value="CRP-PA-AP"/>
+    <definition value="CONSELHO REGIONAL DE PSICOLOGIA"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/crp-pb"/>
+    <display value="CRP-PB"/>
+    <definition value="CONSELHO REGIONAL DE PSICOLOGIA"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/crp-pe"/>
+    <display value="CRP-PE"/>
+    <definition value="CONSELHO REGIONAL DE PSICOLOGIA"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/crp-pi"/>
+    <display value="CRP-PI"/>
+    <definition value="CONSELHO REGIONAL DE PSICOLOGIA"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/crp-pr"/>
+    <display value="CRP-PR"/>
+    <definition value="CONSELHO REGIONAL DE PSICOLOGIA"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/crp-rj"/>
+    <display value="CRP-RJ"/>
+    <definition value="CONSELHO REGIONAL DE PSICOLOGIA"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/crp-rn"/>
+    <display value="CRP-RN"/>
+    <definition value="CONSELHO REGIONAL DE PSICOLOGIA"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/crp-rs"/>
+    <display value="CRP-RS"/>
+    <definition value="CONSELHO REGIONAL DE PSICOLOGIA"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/crp-sc"/>
+    <display value="CRP-SC"/>
+    <definition value="CONSELHO REGIONAL DE PSICOLOGIA"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/crp-se"/>
+    <display value="CRP-SE"/>
+    <definition value="CONSELHO REGIONAL DE PSICOLOGIA"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/crp-sp"/>
+    <display value="CRP-SP"/>
+    <definition value="CONSELHO REGIONAL DE PSICOLOGIA"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/crp-to"/>
+    <display value="CRP-TO"/>
+    <definition value="CONSELHO REGIONAL DE PSICOLOGIA"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/crefito-ba"/>
+    <display value="CREFITO-BA"/>
+    <definition value="CONSELHO REGIONAS DE FISIOTERAPIA E TERAPIA OCUPACIONAL"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/crefito-ce"/>
+    <display value="CREFITO-CE"/>
+    <definition value="CONSELHO REGIONAS DE FISIOTERAPIA E TERAPIA OCUPACIONAL"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/crefito-es"/>
+    <display value="CREFITO-ES"/>
+    <definition value="CONSELHO REGIONAS DE FISIOTERAPIA E TERAPIA OCUPACIONAL"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/crefito-go-df"/>
+    <display value="CREFITO-GO-DF"/>
+    <definition value="CONSELHO REGIONAS DE FISIOTERAPIA E TERAPIA OCUPACIONAL"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/crefito-ma"/>
+    <display value="CREFITO-MA"/>
+    <definition value="CONSELHO REGIONAS DE FISIOTERAPIA E TERAPIA OCUPACIONAL"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/crefito-mg"/>
+    <display value="CREFITO-MG"/>
+    <definition value="CONSELHO REGIONAS DE FISIOTERAPIA E TERAPIA OCUPACIONAL"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/crefito-ms"/>
+    <display value="CREFITO-MS"/>
+    <definition value="CONSELHO REGIONAS DE FISIOTERAPIA E TERAPIA OCUPACIONAL"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/crefito-mt"/>
+    <display value="CREFITO-MT"/>
+    <definition value="CONSELHO REGIONAS DE FISIOTERAPIA E TERAPIA OCUPACIONAL"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/crefito-pa-am-to-rr-ap"/>
+    <display value="CREFITO-PA-AM-TO-RR-AP"/>
+    <definition value="CONSELHO REGIONAS DE FISIOTERAPIA E TERAPIA OCUPACIONAL"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/crefito-pe-pb-al-rn"/>
+    <display value="CREFITO-PE-PB-AL-RN"/>
+    <definition value="CONSELHO REGIONAS DE FISIOTERAPIA E TERAPIA OCUPACIONAL"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/crefito-pi"/>
+    <display value="CREFITO-PI"/>
+    <definition value="CONSELHO REGIONAS DE FISIOTERAPIA E TERAPIA OCUPACIONAL"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/crefito-pr"/>
+    <display value="CREFITO-PR"/>
+    <definition value="CONSELHO REGIONAS DE FISIOTERAPIA E TERAPIA OCUPACIONAL"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/crefito-rj"/>
+    <display value="CREFITO-RJ"/>
+    <definition value="CONSELHO REGIONAS DE FISIOTERAPIA E TERAPIA OCUPACIONAL"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/crefito-ro-ac"/>
+    <display value="CREFITO-RO-AC"/>
+    <definition value="CONSELHO REGIONAS DE FISIOTERAPIA E TERAPIA OCUPACIONAL"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/crefito-rs"/>
+    <display value="CREFITO-RS"/>
+    <definition value="CONSELHO REGIONAS DE FISIOTERAPIA E TERAPIA OCUPACIONAL"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/crefito-sc"/>
+    <display value="CREFITO-SC"/>
+    <definition value="CONSELHO REGIONAS DE FISIOTERAPIA E TERAPIA OCUPACIONAL"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/crefito-se"/>
+    <display value="CREFITO-SE"/>
+    <definition value="CONSELHO REGIONAS DE FISIOTERAPIA E TERAPIA OCUPACIONAL"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/crefito-sp"/>
+    <display value="CREFITO-SP"/>
+    <definition value="CONSELHO REGIONAS DE FISIOTERAPIA E TERAPIA OCUPACIONAL"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/crn-al"/>
+    <display value="CRN-AL"/>
+    <definition value="CONSELHO REGIONAL DE NUTRICIONISTA"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/crn-ba-se"/>
+    <display value="CRN-BA-SE"/>
+    <definition value="CONSELHO REGIONAL DE NUTRICIONISTA"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/crn-ce-ma-pi"/>
+    <display value="CRN-CE-MA_PI"/>
+    <definition value="CONSELHO REGIONAL DE NUTRICIONISTA"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/crn-df-go-mt-to"/>
+    <display value="CRN-DF-GO-MT-TO"/>
+    <definition value="CONSELHO REGIONAL DE NUTRICIONISTA"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/crn-pa-ac-am-ap-ro-rr"/>
+    <display value="CRN-PA-AC-AM-AP-RO-RR"/>
+    <definition value="CONSELHO REGIONAL DE NUTRICIONISTA"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/crn-pe-al-pb-rn"/>
+    <display value="CRN-PE-AL-PB-RN"/>
+    <definition value="CONSELHO REGIONAL DE NUTRICIONISTA"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/crn-pr"/>
+    <display value="CRN-PR"/>
+    <definition value="CONSELHO REGIONAL DE NUTRICIONISTA"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/crn-rj-es"/>
+    <display value="CRN-RJ-ES"/>
+    <definition value="CONSELHO REGIONAL DE NUTRICIONISTA"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/crn-rs"/>
+    <display value="CRN-RS"/>
+    <definition value="CONSELHO REGIONAL DE NUTRICIONISTA"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/crn-sc"/>
+    <display value="CRN-SC"/>
+    <definition value="CONSELHO REGIONAL DE NUTRICIONISTA"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/crn-sp-ms"/>
+    <display value="CRN-SP-MS"/>
+    <definition value="CONSELHO REGIONAL DE NUTRICIONISTA"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/crefono-am-ac-ap-pa-ro-rr"/>
+    <display value="CREFONO-AM-AC-AP-PA-RO-RR"/>
+    <definition value="CONSELHO REGIONAL DE FONOAUDIOLOGIA"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/crefono-ce-ma-pi-rn"/>
+    <display value="CREFONO-CE-MA-PI-RN"/>
+    <definition value="CONSELHO REGIONAL DE FONOAUDIOLOGIA"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/crefono-go-df-ms-mt-to"/>
+    <display value="CREFONO-GO-DF-MS-MT-TO"/>
+    <definition value="CONSELHO REGIONAL DE FONOAUDIOLOGIA"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/crefono-mg-es"/>
+    <display value="CREFONO-MG-ES"/>
+    <definition value="CONSELHO REGIONAL DE FONOAUDIOLOGIA"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/crefono-pe-al-ba-pb-se"/>
+    <display value="CREFONO-PE-AL-BA-PB-SE"/>
+    <definition value="CONSELHO REGIONAL DE FONOAUDIOLOGIA"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/crefono-pr-sc"/>
+    <display value="CREFONO-PR-SC"/>
+    <definition value="CONSELHO REGIONAL DE FONOAUDIOLOGIA"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/crefono-rj"/>
+    <display value="CREFONO-RJ"/>
+    <definition value="CONSELHO REGIONAL DE FONOAUDIOLOGIA"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/crefono-rs"/>
+    <display value="CREFONO-RS"/>
+    <definition value="CONSELHO REGIONAL DE FONOAUDIOLOGIA"/>
+  </concept>
+  <concept>
+    <code value="https://saude.gov.br/sid/crefono-sp"/>
+    <display value="CREFONO-SP"/>
+    <definition value="CONSELHO REGIONAL DE FONOAUDIOLOGIA"/>
+  </concept>
+</CodeSystem>

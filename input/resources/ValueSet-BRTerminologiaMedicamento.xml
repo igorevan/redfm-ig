@@ -14,23 +14,18 @@
   <compose>
     <include>
       <system value="http://www.saude.gov.br/fhir/r4/CodeSystem/BRObmCATMAT" />
-      <version value="*" />
     </include>
     <include>
       <system value="http://www.saude.gov.br/fhir/r4/CodeSystem/BRObmEAN" />
-      <version value="*" />
     </include>
     <include>
       <system value="http://www.saude.gov.br/fhir/r4/CodeSystem/BRObmANVISA" />
-      <version value="*" />
     </include>
     <include>
       <system value="http://www.saude.gov.br/fhir/r4/CodeSystem/BRObmAMPP" />
-      <version value="*" />
     </include>
     <include>
       <system value="http://www.saude.gov.br/fhir/r4/CodeSystem/BRObmVMP" />
-      <version value="*" />
     </include>
   </compose>
 </ValueSet>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="BRCOREN"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+  </meta>
+  <language value="en"/>
+  <text>
+    <status value="extensions"/>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="ehr"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="1">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0/ImplementationGuide/br.gov.saude.redfm.fhir"/>
+      </extension>
+    </valueInteger>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="normative">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0/ImplementationGuide/br.gov.saude.redfm.fhir"/>
+      </extension>
+    </valueCode>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+    <valueCode value="4.0.1"/>
+  </extension>
+  <url value="https://terminologia.saude.gov.br/fhir/ValueSet/BRCOREN"/>
+  <version value="1.0.0-release"/>
+  <name value="BRCOREN"/>
+  <title value="Conselhos regionais de Enfermagem do Brasil"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2023-07-18T13:52:24+00:00"/>
+  <publisher value="Ministério da Saúde do Brasil"/>
+  <contact>
+    <name value="Ministério da Saúde do Brasil"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.saude.gov.br"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="cgiis.datasus@saude.gov.br"/>
+    </telecom>
+  </contact>
+  <description value="Conjunto de todos os conselhos regionais de enfermagem do Brasil"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BR"/>
+    </coding>
+  </jurisdiction>
+  <purpose value="O propósito deste conjunto é agrupar todos os conselhos regionais de enfermagem para fins de validação do identificador profissional do enfermeiro"/>
+  <copyright value="CC-1.0"/>
+  <compose>
+    <include>
+      <system value="https://terminologia.saude.gov.br/fhir/CodeSystem/BRConselhoProfissional"/>
+      <concept>
+        <code value="https://saude.gov.br/sid/coren-ac"/>
+        <display value="COREN-AC"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/coren-al"/>
+        <display value="COREN-AL"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/coren-am"/>
+        <display value="COREN-AM"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/coren-ap"/>
+        <display value="COREN-AP"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/coren-ba"/>
+        <display value="COREN-BA"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/coren-ce"/>
+        <display value="COREN-CE"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/coren-df"/>
+        <display value="COREN-DF"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/coren-es"/>
+        <display value="COREN-ES"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/coren-go"/>
+        <display value="COREN-GO"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/coren-ma"/>
+        <display value="COREN-MA"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/coren-mg"/>
+        <display value="COREN-MG"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/coren-ms"/>
+        <display value="COREN-MS"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/coren-mt"/>
+        <display value="COREN-MT"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/coren-pa"/>
+        <display value="COREN-PA"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/coren-pb"/>
+        <display value="COREN-PB"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/coren-pe"/>
+        <display value="COREN-PE"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/coren-pi"/>
+        <display value="COREN-PI"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/coren-pr"/>
+        <display value="COREN-PR"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/coren-rj"/>
+        <display value="COREN-RJ"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/coren-rn"/>
+        <display value="COREN-RN"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/coren-ro"/>
+        <display value="COREN-RO"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/coren-rr"/>
+        <display value="COREN-RR"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/coren-rs"/>
+        <display value="COREN-RS"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/coren-sc"/>
+        <display value="COREN-SC"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/coren-se"/>
+        <display value="COREN-SE"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/coren-sp"/>
+        <display value="COREN-SP"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/coren-to"/>
+        <display value="COREN-TO"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

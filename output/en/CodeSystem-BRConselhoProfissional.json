@@ -1,0 +1,918 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "BRConselhoProfissional",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablecodesystem"]
+  },
+  "language" : "en",
+  "text" : {
+    "status" : "generated"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+    "valueCode" : "ehr"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 1,
+    "_valueInteger" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0/ImplementationGuide/br.gov.saude.redfm.fhir"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "normative",
+    "_valueCode" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0/ImplementationGuide/br.gov.saude.redfm.fhir"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+    "valueCode" : "4.0.1"
+  }],
+  "url" : "https://terminologia.saude.gov.br/fhir/CodeSystem/BRConselhoProfissional",
+  "version" : "1.0.0-release",
+  "name" : "BRConselhoProfissional",
+  "title" : "Conselhos profissionais de saúde do Brasil",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2023-07-18T13:05:57+00:00",
+  "publisher" : "Ministério da Saúde do Brasil",
+  "contact" : [{
+    "name" : "Ministério da Saúde do Brasil",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.saude.gov.br"
+    },
+    {
+      "system" : "email",
+      "value" : "cgiis.datasus@saude.gov.br"
+    }]
+  }],
+  "description" : "Esse CodeSystem inclui os conselhos profissionais de saúde do Brasil, conforme a Resolução CNS 251/1997.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BR"
+    }]
+  }],
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 170,
+  "concept" : [{
+    "code" : "https://saude.gov.br/sid/crf-ac",
+    "display" : "CRF-AC",
+    "definition" : "CONSELHO REGIONAL DE FARMÁCIA"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/crf-al",
+    "display" : "CRF-AL",
+    "definition" : "CONSELHO REGIONAL DE FARMÁCIA"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/crf-am",
+    "display" : "CRF-AM",
+    "definition" : "CONSELHO REGIONAL DE FARMÁCIA"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/crf-ap",
+    "display" : "CRF-AP",
+    "definition" : "CONSELHO REGIONAL DE FARMÁCIA"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/crf-ba",
+    "display" : "CRF-BA",
+    "definition" : "CONSELHO REGIONAL DE FARMÁCIA"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/crf-ce",
+    "display" : "CRF-CE",
+    "definition" : "CONSELHO REGIONAL DE FARMÁCIA"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/crf-df",
+    "display" : "CRF-DF",
+    "definition" : "CONSELHO REGIONAL DE FARMÁCIA"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/crf-es",
+    "display" : "CRF-ES",
+    "definition" : "CONSELHO REGIONAL DE FARMÁCIA"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/crf-go",
+    "display" : "CRF-GO",
+    "definition" : "CONSELHO REGIONAL DE FARMÁCIA"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/crf-ma",
+    "display" : "CRF-MA",
+    "definition" : "CONSELHO REGIONAL DE FARMÁCIA"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/crf-mg",
+    "display" : "CRF-MG",
+    "definition" : "CONSELHO REGIONAL DE FARMÁCIA"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/crf-ms",
+    "display" : "CRF-MS",
+    "definition" : "CONSELHO REGIONAL DE FARMÁCIA"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/crf-mt",
+    "display" : "CRF-MT",
+    "definition" : "CONSELHO REGIONAL DE FARMÁCIA"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/crf-pa",
+    "display" : "CRF-PA",
+    "definition" : "CONSELHO REGIONAL DE FARMÁCIA"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/crf-pb",
+    "display" : "CRF-PB",
+    "definition" : "CONSELHO REGIONAL DE FARMÁCIA"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/crf-pe",
+    "display" : "CRF-PE",
+    "definition" : "CONSELHO REGIONAL DE FARMÁCIA"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/crf-pi",
+    "display" : "CRF-PI",
+    "definition" : "CONSELHO REGIONAL DE FARMÁCIA"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/crf-pr",
+    "display" : "CRF-PR",
+    "definition" : "CONSELHO REGIONAL DE FARMÁCIA"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/crf-rj",
+    "display" : "CRF-RJ",
+    "definition" : "CONSELHO REGIONAL DE FARMÁCIA"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/crf-rn",
+    "display" : "CRF-RN",
+    "definition" : "CONSELHO REGIONAL DE FARMÁCIA"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/crf-ro",
+    "display" : "CRF-RO",
+    "definition" : "CONSELHO REGIONAL DE FARMÁCIA"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/crf-rr",
+    "display" : "CRF-RR",
+    "definition" : "CONSELHO REGIONAL DE FARMÁCIA"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/crf-rs",
+    "display" : "CRF-RS",
+    "definition" : "CONSELHO REGIONAL DE FARMÁCIA"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/crf-sc",
+    "display" : "CRF-SC",
+    "definition" : "CONSELHO REGIONAL DE FARMÁCIA"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/crf-se",
+    "display" : "CRF-SE",
+    "definition" : "CONSELHO REGIONAL DE FARMÁCIA"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/crf-sp",
+    "display" : "CRF-SP",
+    "definition" : "CONSELHO REGIONAL DE FARMÁCIA"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/crf-to",
+    "display" : "CRF-TO",
+    "definition" : "CONSELHO REGIONAL DE FARMÁCIA"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/cro-ac",
+    "display" : "CRO-AC",
+    "definition" : "CONSELHO REGIONAL DE ODONTOLOGIA"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/cro-al",
+    "display" : "CRO-AL",
+    "definition" : "CONSELHO REGIONAL DE ODONTOLOGIA"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/cro-am",
+    "display" : "CRO-AM",
+    "definition" : "CONSELHO REGIONAL DE ODONTOLOGIA"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/cro-ap",
+    "display" : "CRO-AP",
+    "definition" : "CONSELHO REGIONAL DE ODONTOLOGIA"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/cro-ba",
+    "display" : "CRO-BA",
+    "definition" : "CONSELHO REGIONAL DE ODONTOLOGIA"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/cro-ce",
+    "display" : "CRO-CE",
+    "definition" : "CONSELHO REGIONAL DE ODONTOLOGIA"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/cro-df",
+    "display" : "CRO-DF",
+    "definition" : "CONSELHO REGIONAL DE ODONTOLOGIA"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/cro-es",
+    "display" : "CRO-ES",
+    "definition" : "CONSELHO REGIONAL DE ODONTOLOGIA"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/cro-go",
+    "display" : "CRO-GO",
+    "definition" : "CONSELHO REGIONAL DE ODONTOLOGIA"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/cro-ma",
+    "display" : "CRO-MA",
+    "definition" : "CONSELHO REGIONAL DE ODONTOLOGIA"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/cro-mg",
+    "display" : "CRO-MG",
+    "definition" : "CONSELHO REGIONAL DE ODONTOLOGIA"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/cro-ms",
+    "display" : "CRO-MS",
+    "definition" : "CONSELHO REGIONAL DE ODONTOLOGIA"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/cro-mt",
+    "display" : "CRO-MT",
+    "definition" : "CONSELHO REGIONAL DE ODONTOLOGIA"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/cro-pa",
+    "display" : "CRO-PA",
+    "definition" : "CONSELHO REGIONAL DE ODONTOLOGIA"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/cro-pb",
+    "display" : "CRO-PB",
+    "definition" : "CONSELHO REGIONAL DE ODONTOLOGIA"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/cro-pe",
+    "display" : "CRO-PE",
+    "definition" : "CONSELHO REGIONAL DE ODONTOLOGIA"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/cro-pi",
+    "display" : "CRO-PI",
+    "definition" : "CONSELHO REGIONAL DE ODONTOLOGIA"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/cro-pr",
+    "display" : "CRO-PR",
+    "definition" : "CONSELHO REGIONAL DE ODONTOLOGIA"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/cro-rj",
+    "display" : "CRO-RJ",
+    "definition" : "CONSELHO REGIONAL DE ODONTOLOGIA"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/cro-rn",
+    "display" : "CRO-RN",
+    "definition" : "CONSELHO REGIONAL DE ODONTOLOGIA"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/cro-ro",
+    "display" : "CRO-RO",
+    "definition" : "CONSELHO REGIONAL DE ODONTOLOGIA"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/cro-rr",
+    "display" : "CRO-RR",
+    "definition" : "CONSELHO REGIONAL DE ODONTOLOGIA"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/cro-rs",
+    "display" : "CRO-RS",
+    "definition" : "CONSELHO REGIONAL DE ODONTOLOGIA"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/cro-sc",
+    "display" : "CRO-SC",
+    "definition" : "CONSELHO REGIONAL DE ODONTOLOGIA"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/cro-se",
+    "display" : "CRO-SE",
+    "definition" : "CONSELHO REGIONAL DE ODONTOLOGIA"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/cro-sp",
+    "display" : "CRO-SP",
+    "definition" : "CONSELHO REGIONAL DE ODONTOLOGIA"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/cro-to",
+    "display" : "CRO-TO",
+    "definition" : "CONSELHO REGIONAL DE ODONTOLOGIA"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/coren-ac",
+    "display" : "COREN-AC",
+    "definition" : "CONSELHO REGIONAL DE ENFERMAGEM"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/coren-al",
+    "display" : "COREN-AL",
+    "definition" : "CONSELHO REGIONAL DE ENFERMAGEM"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/coren-am",
+    "display" : "COREN-AM",
+    "definition" : "CONSELHO REGIONAL DE ENFERMAGEM"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/coren-ap",
+    "display" : "COREN-AP",
+    "definition" : "CONSELHO REGIONAL DE ENFERMAGEM"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/coren-ba",
+    "display" : "COREN-BA",
+    "definition" : "CONSELHO REGIONAL DE ENFERMAGEM"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/coren-ce",
+    "display" : "COREN-CE",
+    "definition" : "CONSELHO REGIONAL DE ENFERMAGEM"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/coren-df",
+    "display" : "COREN-DF",
+    "definition" : "CONSELHO REGIONAL DE ENFERMAGEM"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/coren-es",
+    "display" : "COREN-ES",
+    "definition" : "CONSELHO REGIONAL DE ENFERMAGEM"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/coren-go",
+    "display" : "COREN-GO",
+    "definition" : "CONSELHO REGIONAL DE ENFERMAGEM"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/coren-ma",
+    "display" : "COREN-MA",
+    "definition" : "CONSELHO REGIONAL DE ENFERMAGEM"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/coren-mg",
+    "display" : "COREN-MG",
+    "definition" : "CONSELHO REGIONAL DE ENFERMAGEM"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/coren-ms",
+    "display" : "COREN-MS",
+    "definition" : "CONSELHO REGIONAL DE ENFERMAGEM"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/coren-mt",
+    "display" : "COREN-MT",
+    "definition" : "CONSELHO REGIONAL DE ENFERMAGEM"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/coren-pa",
+    "display" : "COREN-PA",
+    "definition" : "CONSELHO REGIONAL DE ENFERMAGEM"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/coren-pb",
+    "display" : "COREN-PB",
+    "definition" : "CONSELHO REGIONAL DE ENFERMAGEM"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/coren-pe",
+    "display" : "COREN-PE",
+    "definition" : "CONSELHO REGIONAL DE ENFERMAGEM"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/coren-pi",
+    "display" : "COREN-PI",
+    "definition" : "CONSELHO REGIONAL DE ENFERMAGEM"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/coren-pr",
+    "display" : "COREN-PR",
+    "definition" : "CONSELHO REGIONAL DE ENFERMAGEM"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/coren-rj",
+    "display" : "COREN-RJ",
+    "definition" : "CONSELHO REGIONAL DE ENFERMAGEM"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/coren-rn",
+    "display" : "COREN-RN",
+    "definition" : "CONSELHO REGIONAL DE ENFERMAGEM"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/coren-ro",
+    "display" : "COREN-RO",
+    "definition" : "CONSELHO REGIONAL DE ENFERMAGEM"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/coren-rr",
+    "display" : "COREN-RR",
+    "definition" : "CONSELHO REGIONAL DE ENFERMAGEM"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/coren-rs",
+    "display" : "COREN-RS",
+    "definition" : "CONSELHO REGIONAL DE ENFERMAGEM"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/coren-sc",
+    "display" : "COREN-SC",
+    "definition" : "CONSELHO REGIONAL DE ENFERMAGEM"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/coren-se",
+    "display" : "COREN-SE",
+    "definition" : "CONSELHO REGIONAL DE ENFERMAGEM"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/coren-sp",
+    "display" : "COREN-SP",
+    "definition" : "CONSELHO REGIONAL DE ENFERMAGEM"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/coren-to",
+    "display" : "COREN-TO",
+    "definition" : "CONSELHO REGIONAL DE ENFERMAGEM"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/crm-ac",
+    "display" : "CRM-AC",
+    "definition" : "CONSELHO REGIONAL DE MEDICINA"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/crm-al",
+    "display" : "CRM-AL",
+    "definition" : "CONSELHO REGIONAL DE MEDICINA"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/crm-am",
+    "display" : "CRM-AM",
+    "definition" : "CONSELHO REGIONAL DE MEDICINA"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/crm-ap",
+    "display" : "CRM-AP",
+    "definition" : "CONSELHO REGIONAL DE MEDICINA"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/crm-ba",
+    "display" : "CRM-BA",
+    "definition" : "CONSELHO REGIONAL DE MEDICINA"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/crm-ce",
+    "display" : "CRM-CE",
+    "definition" : "CONSELHO REGIONAL DE MEDICINA"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/crm-df",
+    "display" : "CRM-DF",
+    "definition" : "CONSELHO REGIONAL DE MEDICINA"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/crm-es",
+    "display" : "CRM-ES",
+    "definition" : "CONSELHO REGIONAL DE MEDICINA"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/crm-go",
+    "display" : "CRM-GO",
+    "definition" : "CONSELHO REGIONAL DE MEDICINA"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/crm-ma",
+    "display" : "CRM-MA",
+    "definition" : "CONSELHO REGIONAL DE MEDICINA"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/crm-mg",
+    "display" : "CRM-MG",
+    "definition" : "CONSELHO REGIONAL DE MEDICINA"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/crm-ms",
+    "display" : "CRM-MS",
+    "definition" : "CONSELHO REGIONAL DE MEDICINA"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/crm-mt",
+    "display" : "CRM-MT",
+    "definition" : "CONSELHO REGIONAL DE MEDICINA"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/crm-pa",
+    "display" : "CRM-PA",
+    "definition" : "CONSELHO REGIONAL DE MEDICINA"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/crm-pb",
+    "display" : "CRM-PB",
+    "definition" : "CONSELHO REGIONAL DE MEDICINA"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/crm-pe",
+    "display" : "CRM-PE",
+    "definition" : "CONSELHO REGIONAL DE MEDICINA"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/crm-pi",
+    "display" : "CRM-PI",
+    "definition" : "CONSELHO REGIONAL DE MEDICINA"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/crm-pr",
+    "display" : "CRM-PR",
+    "definition" : "CONSELHO REGIONAL DE MEDICINA"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/crm-rj",
+    "display" : "CRM-RJ",
+    "definition" : "CONSELHO REGIONAL DE MEDICINA"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/crm-rn",
+    "display" : "CRM-RN",
+    "definition" : "CONSELHO REGIONAL DE MEDICINA"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/crm-ro",
+    "display" : "CRM-RO",
+    "definition" : "CONSELHO REGIONAL DE MEDICINA"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/crm-rr",
+    "display" : "CRM-RR",
+    "definition" : "CONSELHO REGIONAL DE MEDICINA"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/crm-rs",
+    "display" : "CRM-RS",
+    "definition" : "CONSELHO REGIONAL DE MEDICINA"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/crm-sc",
+    "display" : "CRM-SC",
+    "definition" : "CONSELHO REGIONAL DE MEDICINA"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/crm-se",
+    "display" : "CRM-SE",
+    "definition" : "CONSELHO REGIONAL DE MEDICINA"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/crm-sp",
+    "display" : "CRM-SP",
+    "definition" : "CONSELHO REGIONAL DE MEDICINA"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/crm-to",
+    "display" : "CRM-TO",
+    "definition" : "CONSELHO REGIONAL DE MEDICINA"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/crp-ac-ro",
+    "display" : "CRP-AC-RO",
+    "definition" : "CONSELHO REGIONAL DE PSICOLOGIA"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/crp-al",
+    "display" : "CRP-AL",
+    "definition" : "CONSELHO REGIONAL DE PSICOLOGIA"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/crp-am-rr",
+    "display" : "CRP-AM-RR",
+    "definition" : "CONSELHO REGIONAL DE PSICOLOGIA"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/crp-ba",
+    "display" : "CRP-BA",
+    "definition" : "CONSELHO REGIONAL DE PSICOLOGIA"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/crp-ce",
+    "display" : "CRP-CE",
+    "definition" : "CONSELHO REGIONAL DE PSICOLOGIA"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/crp-df",
+    "display" : "CRP-DF",
+    "definition" : "CONSELHO REGIONAL DE PSICOLOGIA"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/crp-es",
+    "display" : "CRP-ES",
+    "definition" : "CONSELHO REGIONAL DE PSICOLOGIA"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/crp-go",
+    "display" : "CRP-GO",
+    "definition" : "CONSELHO REGIONAL DE PSICOLOGIA"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/crp-ma",
+    "display" : "CRP-MA",
+    "definition" : "CONSELHO REGIONAL DE PSICOLOGIA"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/crp-mg",
+    "display" : "CRP-MG",
+    "definition" : "CONSELHO REGIONAL DE PSICOLOGIA"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/crp-ms",
+    "display" : "CRP-MS",
+    "definition" : "CONSELHO REGIONAL DE PSICOLOGIA"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/crp-mt",
+    "display" : "CRP-MT",
+    "definition" : "CONSELHO REGIONAL DE PSICOLOGIA"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/crp-pa-ap",
+    "display" : "CRP-PA-AP",
+    "definition" : "CONSELHO REGIONAL DE PSICOLOGIA"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/crp-pb",
+    "display" : "CRP-PB",
+    "definition" : "CONSELHO REGIONAL DE PSICOLOGIA"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/crp-pe",
+    "display" : "CRP-PE",
+    "definition" : "CONSELHO REGIONAL DE PSICOLOGIA"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/crp-pi",
+    "display" : "CRP-PI",
+    "definition" : "CONSELHO REGIONAL DE PSICOLOGIA"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/crp-pr",
+    "display" : "CRP-PR",
+    "definition" : "CONSELHO REGIONAL DE PSICOLOGIA"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/crp-rj",
+    "display" : "CRP-RJ",
+    "definition" : "CONSELHO REGIONAL DE PSICOLOGIA"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/crp-rn",
+    "display" : "CRP-RN",
+    "definition" : "CONSELHO REGIONAL DE PSICOLOGIA"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/crp-rs",
+    "display" : "CRP-RS",
+    "definition" : "CONSELHO REGIONAL DE PSICOLOGIA"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/crp-sc",
+    "display" : "CRP-SC",
+    "definition" : "CONSELHO REGIONAL DE PSICOLOGIA"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/crp-se",
+    "display" : "CRP-SE",
+    "definition" : "CONSELHO REGIONAL DE PSICOLOGIA"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/crp-sp",
+    "display" : "CRP-SP",
+    "definition" : "CONSELHO REGIONAL DE PSICOLOGIA"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/crp-to",
+    "display" : "CRP-TO",
+    "definition" : "CONSELHO REGIONAL DE PSICOLOGIA"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/crefito-ba",
+    "display" : "CREFITO-BA",
+    "definition" : "CONSELHO REGIONAS DE FISIOTERAPIA E TERAPIA OCUPACIONAL"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/crefito-ce",
+    "display" : "CREFITO-CE",
+    "definition" : "CONSELHO REGIONAS DE FISIOTERAPIA E TERAPIA OCUPACIONAL"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/crefito-es",
+    "display" : "CREFITO-ES",
+    "definition" : "CONSELHO REGIONAS DE FISIOTERAPIA E TERAPIA OCUPACIONAL"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/crefito-go-df",
+    "display" : "CREFITO-GO-DF",
+    "definition" : "CONSELHO REGIONAS DE FISIOTERAPIA E TERAPIA OCUPACIONAL"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/crefito-ma",
+    "display" : "CREFITO-MA",
+    "definition" : "CONSELHO REGIONAS DE FISIOTERAPIA E TERAPIA OCUPACIONAL"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/crefito-mg",
+    "display" : "CREFITO-MG",
+    "definition" : "CONSELHO REGIONAS DE FISIOTERAPIA E TERAPIA OCUPACIONAL"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/crefito-ms",
+    "display" : "CREFITO-MS",
+    "definition" : "CONSELHO REGIONAS DE FISIOTERAPIA E TERAPIA OCUPACIONAL"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/crefito-mt",
+    "display" : "CREFITO-MT",
+    "definition" : "CONSELHO REGIONAS DE FISIOTERAPIA E TERAPIA OCUPACIONAL"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/crefito-pa-am-to-rr-ap",
+    "display" : "CREFITO-PA-AM-TO-RR-AP",
+    "definition" : "CONSELHO REGIONAS DE FISIOTERAPIA E TERAPIA OCUPACIONAL"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/crefito-pe-pb-al-rn",
+    "display" : "CREFITO-PE-PB-AL-RN",
+    "definition" : "CONSELHO REGIONAS DE FISIOTERAPIA E TERAPIA OCUPACIONAL"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/crefito-pi",
+    "display" : "CREFITO-PI",
+    "definition" : "CONSELHO REGIONAS DE FISIOTERAPIA E TERAPIA OCUPACIONAL"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/crefito-pr",
+    "display" : "CREFITO-PR",
+    "definition" : "CONSELHO REGIONAS DE FISIOTERAPIA E TERAPIA OCUPACIONAL"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/crefito-rj",
+    "display" : "CREFITO-RJ",
+    "definition" : "CONSELHO REGIONAS DE FISIOTERAPIA E TERAPIA OCUPACIONAL"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/crefito-ro-ac",
+    "display" : "CREFITO-RO-AC",
+    "definition" : "CONSELHO REGIONAS DE FISIOTERAPIA E TERAPIA OCUPACIONAL"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/crefito-rs",
+    "display" : "CREFITO-RS",
+    "definition" : "CONSELHO REGIONAS DE FISIOTERAPIA E TERAPIA OCUPACIONAL"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/crefito-sc",
+    "display" : "CREFITO-SC",
+    "definition" : "CONSELHO REGIONAS DE FISIOTERAPIA E TERAPIA OCUPACIONAL"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/crefito-se",
+    "display" : "CREFITO-SE",
+    "definition" : "CONSELHO REGIONAS DE FISIOTERAPIA E TERAPIA OCUPACIONAL"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/crefito-sp",
+    "display" : "CREFITO-SP",
+    "definition" : "CONSELHO REGIONAS DE FISIOTERAPIA E TERAPIA OCUPACIONAL"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/crn-al",
+    "display" : "CRN-AL",
+    "definition" : "CONSELHO REGIONAL DE NUTRICIONISTA"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/crn-ba-se",
+    "display" : "CRN-BA-SE",
+    "definition" : "CONSELHO REGIONAL DE NUTRICIONISTA"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/crn-ce-ma-pi",
+    "display" : "CRN-CE-MA_PI",
+    "definition" : "CONSELHO REGIONAL DE NUTRICIONISTA"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/crn-df-go-mt-to",
+    "display" : "CRN-DF-GO-MT-TO",
+    "definition" : "CONSELHO REGIONAL DE NUTRICIONISTA"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/crn-pa-ac-am-ap-ro-rr",
+    "display" : "CRN-PA-AC-AM-AP-RO-RR",
+    "definition" : "CONSELHO REGIONAL DE NUTRICIONISTA"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/crn-pe-al-pb-rn",
+    "display" : "CRN-PE-AL-PB-RN",
+    "definition" : "CONSELHO REGIONAL DE NUTRICIONISTA"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/crn-pr",
+    "display" : "CRN-PR",
+    "definition" : "CONSELHO REGIONAL DE NUTRICIONISTA"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/crn-rj-es",
+    "display" : "CRN-RJ-ES",
+    "definition" : "CONSELHO REGIONAL DE NUTRICIONISTA"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/crn-rs",
+    "display" : "CRN-RS",
+    "definition" : "CONSELHO REGIONAL DE NUTRICIONISTA"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/crn-sc",
+    "display" : "CRN-SC",
+    "definition" : "CONSELHO REGIONAL DE NUTRICIONISTA"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/crn-sp-ms",
+    "display" : "CRN-SP-MS",
+    "definition" : "CONSELHO REGIONAL DE NUTRICIONISTA"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/crefono-am-ac-ap-pa-ro-rr",
+    "display" : "CREFONO-AM-AC-AP-PA-RO-RR",
+    "definition" : "CONSELHO REGIONAL DE FONOAUDIOLOGIA"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/crefono-ce-ma-pi-rn",
+    "display" : "CREFONO-CE-MA-PI-RN",
+    "definition" : "CONSELHO REGIONAL DE FONOAUDIOLOGIA"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/crefono-go-df-ms-mt-to",
+    "display" : "CREFONO-GO-DF-MS-MT-TO",
+    "definition" : "CONSELHO REGIONAL DE FONOAUDIOLOGIA"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/crefono-mg-es",
+    "display" : "CREFONO-MG-ES",
+    "definition" : "CONSELHO REGIONAL DE FONOAUDIOLOGIA"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/crefono-pe-al-ba-pb-se",
+    "display" : "CREFONO-PE-AL-BA-PB-SE",
+    "definition" : "CONSELHO REGIONAL DE FONOAUDIOLOGIA"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/crefono-pr-sc",
+    "display" : "CREFONO-PR-SC",
+    "definition" : "CONSELHO REGIONAL DE FONOAUDIOLOGIA"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/crefono-rj",
+    "display" : "CREFONO-RJ",
+    "definition" : "CONSELHO REGIONAL DE FONOAUDIOLOGIA"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/crefono-rs",
+    "display" : "CREFONO-RS",
+    "definition" : "CONSELHO REGIONAL DE FONOAUDIOLOGIA"
+  },
+  {
+    "code" : "https://saude.gov.br/sid/crefono-sp",
+    "display" : "CREFONO-SP",
+    "definition" : "CONSELHO REGIONAL DE FONOAUDIOLOGIA"
+  }]
+}

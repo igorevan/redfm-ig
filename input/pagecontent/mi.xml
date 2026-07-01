@@ -64,7 +64,7 @@
       <b>Coluna 4</b> - Tipo de dado: descreve o tipo de dado a ser preenchido;
     </li>
     <li>
-      <b>Coluna 5</b> - Conceito: apresenta as definições do elemento;
+      <b>Coluna 5</b> - Conceito/Observações: apresenta as definições do elemento;
     </li>
     <li>
       <b>Coluna 6</b> - Definição de uso do elemento: Observações e regras de negócio relacionadas
@@ -97,10 +97,7 @@
         <th>Ocorrência</th>
         <th>Seção/Item</th>
         <th>Tipo de Dado</th>
-        <th>Conceito</th>
-        <th>Definição de uso do elemento</th>
-        <th>Conteúdo (ValueSet/CodeSystem)</th>
-        <th>Recurso FHIR</th>
+        <th>Conceito/Observações</th>
       </tr>
     </thead>
     <thead>
@@ -110,9 +107,6 @@
         <td>Identificação da dispensação ou fornecimento de medicamento</td>
         <td>Seção</td>
         <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
       </tr>
     </thead>
     <tbody>
@@ -121,10 +115,360 @@
         <td>1..1</td>
         <td>Identificação do registro eletrônico da dispensação ou fornecimento de medicamento no sistema de origem</td>
         <td>Texto</td>
-        <td>Id no sistema de origem</td>
-        <td>O identificador único do registro de regulação no sistema de origem</td>
+        <td>ID no sistema de origem</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <a name="identificacao-individuo"> </a>
+  <h4>Identificação do indivíduo</h4>
+
+  <table class="grid">
+    <thead>
+      <tr style="background-color: #538ce9;">
+        <th>Nível</th>
+        <th>Ocorrência</th>
+        <th>Seção/Item</th>
+        <th>Tipo de Dado</th>
+        <th>Conceito/Observações</th>
+      </tr>
+    </thead>
+    <thead>
+      <tr style="background-color: #4dbf4d">
+        <td>1</td>
+        <td>1..1</td>
+        <td>Identificação do indivíduo</td>
         <td></td>
-        <td><i>Bundle</i> de envio</td>
+        <td>Bloco de informações referentes ao indivíduo ao qual o medicamento foi prescrito</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>2</td>
+        <td>1..1</td>
+        <td>Identificação do indivíduo constante na prescrição</td>
+        <td>Número</td>
+        <td>Número do Cadastro de Pessoa Física - CPF ou Cartão Nacional de Saúde - CNS</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <a name="identificacao-descricao"> </a>
+  <h4>Descrição da dispensação ou fornecimento de medicamento</h4>
+
+  <table class="grid">
+    <thead>
+      <tr style="background-color: #538ce9">
+        <th>Nível</th>
+        <th>Ocorrência</th>
+        <th>Seção/Item</th>
+        <th>Tipo de Dado</th>
+        <th>Conceito/Observações</th>
+      </tr>
+    </thead>
+    <thead>
+      <tr style="background-color: #4dbf4d">
+        <td>1</td>
+        <td>1..1</td>
+        <td>Descrição da dispensação ou fornecimento de medicamento</td>
+        <td>Seção</td>
+        <td>Bloco de informações referentes ao medicamento dispensado ou fornecido e
+          profissional responsável</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>2</td>
+        <td>1..1</td>
+        <td>Inscrição no Cadastro Nacional de Estabelecimento de Saúde</td>
+        <td>Número</td>
+        <td>Quando exigido por legislação, por meio do Número do Cadastro de Pessoa Física - CPF ou Cartão Nacional de
+          Saúde - CNS</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>1..1</td>
+        <td>Data e hora</td>
+        <td>Data</td>
+        <td>Data e hora da dispensação ou fornecimento do medicamento</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>1..N</td>
+        <td>Medicamento dispensado ou fornecido</td>
+        <td>Codificado</td>
+        <td>Código do medicamento conforme Ontologia Brasileira de Medicamento- OBM</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>1..1</td>
+        <td>Quantidade do medicamento dispensado ou fornecido</td>
+        <td>Número</td>
+        <td>Quantidade do medicamento dispensado ou fornecido</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>1..1</td>
+        <td>Laboratorio ou fabricante do medicamento</td>
+        <td>Número</td>
+        <td>Identificação do laboratório ou fabricante do medicamento dispensado ou fornecido</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>1..1</td>
+        <td>Código do lote do medicamento</td>
+        <td>Texto</td>
+        <td>Código do lote do medicamento dispensado ou fornecido</td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>1..1</td>
+        <td>Data de validade do medicamento</td>
+        <td>Data</td>
+        <td>Data de validade do medicamento dispensado ou fornecido</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>0..1</td>
+        <td>Indicação de registro de estorno</td>
+        <td>Codificado</td>
+        <td>Indicação de registro de estorno</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>0..1</td>
+        <td>Justificativa do não atendimento da prescrição</td>
+        <td>Texto</td>
+        <td>Na hipótese de não atendimento da prescrição, a justificativa que a motivou</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>0..1</td>
+        <td>Justificativa do atendimento parcial da prescrição</td>
+        <td>Texto</td>
+        <td>Na hipótese de atendimento parcial da prescrição, a justificativa que a motivou</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>0..1</td>
+        <td>Identificação do profissional responsável pela dispensação</td>
+        <td>Número</td>
+        <td>Número do Cadastro de Pessoa Física - CPF ou Cartão Nacional de Saúde - CNS.<br />É necessário informar o
+          profissional responsável pela dispensação ou o profissional responsável pelo fornecimento</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>1..1</td>
+        <td>Unidade Federativa do conselho profissional</td>
+        <td>Texto</td>
+        <td>Sigla da Unidade Federativa onde o profissional possui registro</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>1..1</td>
+        <td>Número do registro no Conselho Regional de Farmácia</td>
+        <td>Número</td>
+        <td>Número de registro do profissional no respectivo conselho</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>1..1</td>
+        <td>Ocupação do profissional responsável pela dispensação</td>
+        <td>Codificado</td>
+        <td>Código referente à Ocupação do Profissional de acordo com a Classificação Brasileira de Ocupações - CBO</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>1..1</td>
+        <td>Assinatura eletrônica do responsável pela dispensação</td>
+        <td></td>
+        <td>Assinatura eletrônica conforme regras definidas pelo DATASUS</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>0..1</td>
+        <td>Identificação do profissional responsável pelo fornecimento</td>
+        <td>Número</td>
+        <td>Número do Cadastro de Pessoa Física - CPF ou Cartão Nacional de Saúde - CNS.<br />É necessário informar o
+          profissional responsável pela dispensação ou o profissional responsável pelo fornecimento</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>1..1</td>
+        <td>Ocupação do profissional responsável pelo fornecimento</td>
+        <td>Codificado</td>
+        <td>Código referente à Ocupação do Profissional de acordo com a Classificação Brasileira de Ocupações - CBO</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>1..1</td>
+        <td>Assinatura eletrônica do responsável pelo fornecimento</td>
+        <td></td>
+        <td>Assinatura eletrônica conforme regras definidas pelo DATASUS</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <a name="identificacao-2"> </a>
+  <h4>Identificação do individuo responsável pela retirada ou compra do medicamento</h4>
+
+  <table class="grid">
+    <thead>
+      <tr style="background-color: #538ce9;">
+        <th>Nível</th>
+        <th>Ocorrência</th>
+        <th>Seção/Item</th>
+        <th>Tipo de Dado</th>
+        <th>Conceito/Observações</th>
+      </tr>
+    </thead>
+    <thead>
+      <tr style="background-color: #4dbf4d">
+        <td>1</td>
+        <td>1..1</td>
+        <td>Identificação do individuo responsável pela retirada ou compra do
+          medicamento</td>
+        <td>Seção</td>
+        <td>Bloco de informações referentes ao indivíduo responsável pela retirada ou
+          compra do medicamento prescrito</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>2</td>
+        <td>1..1</td>
+        <td>Identificação do indivíduo responsável pela retirada ou compra do medicamento</td>
+        <td>Número</td>
+        <td>Quando exigido por legislação, por meio do Número do Cadastro de Pessoa Física - CPF ou Cartão
+          Nacional de Saúde - CNS</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <a name="identificacao-3"> </a>
+  <h4>Identificação da prescrição de medicamento</h4>
+
+  <table class="grid">
+    <thead>
+      <tr style="background-color: #538ce9;">
+        <th>Nível</th>
+        <th>Ocorrência</th>
+        <th>Seção/Item</th>
+        <th>Tipo de Dado</th>
+        <th>Conceito/Observações</th>
+      </tr>
+    </thead>
+    <thead>
+      <tr style="background-color: #4dbf4d">
+        <td>1</td>
+        <td>1..1</td>
+        <td>Identificação da prescrição de medicamento</td>
+        <td>Seção</td>
+        <td></td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>2</td>
+        <td>0..1</td>
+        <td>Identificação da prescrição na Rede Nacional de Dados em Saúde- RNDS</td>
+        <td>Texto</td>
+        <td>Identificação da prescrição gerada pela RNDS<br />É necessário informa o Número de Identificação da
+          Prescrição na RNDS ou os Dados da Prescrição</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>0..1</td>
+        <td>Identificação do profissional responsável pela prescrição</td>
+        <td>Número</td>
+        <td>Número do Cadastro de Pessoa Física - CPF ou Cartão Nacional de Saúde - CNS</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>1..1</td>
+        <td>Sigla do conselho profissional ou Registro Único emitido pelo Ministério da Saúde (RMS)</td>
+        <td>Texto</td>
+        <td>Registro Único do MInistério da Saúde para médico intercambista participante do Projeto Mais Médicos
+          para o Brasil</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>1..1</td>
+        <td>Unidade Federativa do conselho profissional ou RMS</td>
+        <td>Texto</td>
+        <td>Sigla da Unidade Federativa onde o profissional possui registro</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>1..1</td>
+        <td>Número do conselho profissional ou RMS</td>
+        <td>Número</td>
+        <td>Número de registro do profissional no respectivo conselho ou Ministério da Saúde</td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>0..1</td>
+        <td>Número de Registro de Qualificação de Especialista (RQE)</td>
+        <td>Número</td>
+        <td>Número do Registro de Qualificação de Especialista emitido pelo respectivo conselho</td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>0..1</td>
+        <td>Especialidade profissional</td>
+        <td>Codificado</td>
+        <td>Código referente à Especialidade do Profissional de acordo com a Classificação Brasileira de Ocupações
+          - CBO</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>1..1</td>
+        <td>Inscrição no Cadastro Nacional de Estabelecimento de Saúde</td>
+        <td>Número</td>
+        <td>Número do Cadastro Nacional de Estabelecimentos de Saúde - CNES</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>1..1</td>
+        <td>Data e hora da emissão da prescrição</td>
+        <td>Data</td>
+        <td>Data e hora em que a prescrição de medicamento foi emitida</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>1..1</td>
+        <td>Motivo de a prescrição ser realizada</td>
+        <td>Codificado</td>
+        <td>Conforme Classificação Internacional de Doenças - CID ou Classificação Internacional de Atenção
+          Primária - CIAP</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>0..1</td>
+        <td>Número da receita</td>
+        <td>Número</td>
+        <td>Número da receita emitido no Sistema Nacional de Controle de Receituários - SNCR</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>1..N</td>
+        <td>Medicamento prescrito</td>
+        <td>Codificado</td>
+        <td>Código do medicamento conforme Ontologia Brasileira de Medicamento- OBM</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>1..1</td>
+        <td>Via de administração</td>
+        <td>Codificado</td>
+        <td>Via de Administração do Medicamento Prescrito</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>1..1</td>
+        <td>Quantidade da dose do medicamento</td>
+        <td>Número</td>
+        <td>Quantidade da dose do medicamento prescrito</td>
       </tr>
     </tbody>
   </table>

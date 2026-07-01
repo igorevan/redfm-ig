@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="BRCRO"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+  </meta>
+  <language value="en"/>
+  <text>
+    <status value="extensions"/>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="ehr"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="1">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0/ImplementationGuide/br.gov.saude.redfm.fhir"/>
+      </extension>
+    </valueInteger>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="normative">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0/ImplementationGuide/br.gov.saude.redfm.fhir"/>
+      </extension>
+    </valueCode>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+    <valueCode value="4.0.1"/>
+  </extension>
+  <url value="https://terminologia.saude.gov.br/fhir/ValueSet/BRCRO"/>
+  <version value="1.0.0-release"/>
+  <name value="BRCRO"/>
+  <title value="Conselhos regionais de Odontologia do Brasil"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2023-07-18T13:52:24+00:00"/>
+  <publisher value="Ministério da Saúde do Brasil"/>
+  <contact>
+    <name value="Ministério da Saúde do Brasil"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.saude.gov.br"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="cgiis.datasus@saude.gov.br"/>
+    </telecom>
+  </contact>
+  <description value="Conjunto de todos os conselhos regionais de farmácia do Brasil"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BR"/>
+    </coding>
+  </jurisdiction>
+  <purpose value="O propósito deste conjunto é agrupar todos os conselhos regionais de farmácia para fins de validação do identificador profissional do odontólogo"/>
+  <copyright value="CC-1.0"/>
+  <compose>
+    <include>
+      <system value="https://terminologia.saude.gov.br/fhir/CodeSystem/BRConselhoProfissional"/>
+      <concept>
+        <code value="https://saude.gov.br/sid/cro-ac"/>
+        <display value="CRO-AC"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/cro-al"/>
+        <display value="CRO-AL"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/cro-am"/>
+        <display value="CRO-AM"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/cro-ap"/>
+        <display value="CRO-AP"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/cro-ba"/>
+        <display value="CRO-BA"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/cro-ce"/>
+        <display value="CRO-CE"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/cro-df"/>
+        <display value="CRO-DF"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/cro-es"/>
+        <display value="CRO-ES"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/cro-go"/>
+        <display value="CRO-GO"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/cro-ma"/>
+        <display value="CRO-MA"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/cro-mg"/>
+        <display value="CRO-MG"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/cro-ms"/>
+        <display value="CRO-MS"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/cro-mt"/>
+        <display value="CRO-MT"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/cro-pa"/>
+        <display value="CRO-PA"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/cro-pb"/>
+        <display value="CRO-PB"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/cro-pe"/>
+        <display value="CRO-PE"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/cro-pi"/>
+        <display value="CRO-PI"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/cro-pr"/>
+        <display value="CRO-PR"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/cro-rj"/>
+        <display value="CRO-RJ"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/cro-rn"/>
+        <display value="CRO-RN"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/cro-ro"/>
+        <display value="CRO-RO"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/cro-rr"/>
+        <display value="CRO-RR"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/cro-rs"/>
+        <display value="CRO-RS"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/cro-sc"/>
+        <display value="CRO-SC"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/cro-se"/>
+        <display value="CRO-SE"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/cro-sp"/>
+        <display value="CRO-SP"/>
+      </concept>
+      <concept>
+        <code value="https://saude.gov.br/sid/cro-to"/>
+        <display value="CRO-TO"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

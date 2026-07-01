@@ -1,0 +1,180 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "BRCRF",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
+  },
+  "language" : "en",
+  "text" : {
+    "status" : "extensions"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+    "valueCode" : "ehr"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 1,
+    "_valueInteger" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0/ImplementationGuide/br.gov.saude.redfm.fhir"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "normative",
+    "_valueCode" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0/ImplementationGuide/br.gov.saude.redfm.fhir"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+    "valueCode" : "4.0.1"
+  }],
+  "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BRCRF",
+  "version" : "1.0.0-release",
+  "name" : "BRCRF",
+  "title" : "Conselhos regionais de Farmácia do Brasil",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2023-07-18T13:52:24+00:00",
+  "publisher" : "Ministério da Saúde do Brasil",
+  "contact" : [{
+    "name" : "Ministério da Saúde do Brasil",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.saude.gov.br"
+    },
+    {
+      "system" : "email",
+      "value" : "cgiis.datasus@saude.gov.br"
+    }]
+  }],
+  "description" : "Conjunto de todos os conselhos regionais de farmácia do Brasil",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BR"
+    }]
+  }],
+  "purpose" : "O propósito deste conjunto é agrupar todos os conselhos regionais de farmácia para fins de validação do identificador profissional do farmacêutico",
+  "copyright" : "CC-1.0",
+  "compose" : {
+    "include" : [{
+      "system" : "https://terminologia.saude.gov.br/fhir/CodeSystem/BRConselhoProfissional",
+      "concept" : [{
+        "code" : "https://saude.gov.br/sid/crf-ac",
+        "display" : "CRF-AC"
+      },
+      {
+        "code" : "https://saude.gov.br/sid/crf-al",
+        "display" : "CRF-AL"
+      },
+      {
+        "code" : "https://saude.gov.br/sid/crf-am",
+        "display" : "CRF-AM"
+      },
+      {
+        "code" : "https://saude.gov.br/sid/crf-ap",
+        "display" : "CRF-AP"
+      },
+      {
+        "code" : "https://saude.gov.br/sid/crf-ba",
+        "display" : "CRF-BA"
+      },
+      {
+        "code" : "https://saude.gov.br/sid/crf-ce",
+        "display" : "CRF-CE"
+      },
+      {
+        "code" : "https://saude.gov.br/sid/crf-df",
+        "display" : "CRF-DF"
+      },
+      {
+        "code" : "https://saude.gov.br/sid/crf-es",
+        "display" : "CRF-ES"
+      },
+      {
+        "code" : "https://saude.gov.br/sid/crf-go",
+        "display" : "CRF-GO"
+      },
+      {
+        "code" : "https://saude.gov.br/sid/crf-ma",
+        "display" : "CRF-MA"
+      },
+      {
+        "code" : "https://saude.gov.br/sid/crf-mg",
+        "display" : "CRF-MG"
+      },
+      {
+        "code" : "https://saude.gov.br/sid/crf-ms",
+        "display" : "CRF-MS"
+      },
+      {
+        "code" : "https://saude.gov.br/sid/crf-mt",
+        "display" : "CRF-MT"
+      },
+      {
+        "code" : "https://saude.gov.br/sid/crf-pa",
+        "display" : "CRF-PA"
+      },
+      {
+        "code" : "https://saude.gov.br/sid/crf-pb",
+        "display" : "CRF-PB"
+      },
+      {
+        "code" : "https://saude.gov.br/sid/crf-pe",
+        "display" : "CRF-PE"
+      },
+      {
+        "code" : "https://saude.gov.br/sid/crf-pi",
+        "display" : "CRF-PI"
+      },
+      {
+        "code" : "https://saude.gov.br/sid/crf-pr",
+        "display" : "CRF-PR"
+      },
+      {
+        "code" : "https://saude.gov.br/sid/crf-rj",
+        "display" : "CRF-RJ"
+      },
+      {
+        "code" : "https://saude.gov.br/sid/crf-rn",
+        "display" : "CRF-RN"
+      },
+      {
+        "code" : "https://saude.gov.br/sid/crf-ro",
+        "display" : "CRF-RO"
+      },
+      {
+        "code" : "https://saude.gov.br/sid/crf-rr",
+        "display" : "CRF-RR"
+      },
+      {
+        "code" : "https://saude.gov.br/sid/crf-rs",
+        "display" : "CRF-RS"
+      },
+      {
+        "code" : "https://saude.gov.br/sid/crf-sc",
+        "display" : "CRF-SC"
+      },
+      {
+        "code" : "https://saude.gov.br/sid/crf-se",
+        "display" : "CRF-SE"
+      },
+      {
+        "code" : "https://saude.gov.br/sid/crf-sp",
+        "display" : "CRF-SP"
+      },
+      {
+        "code" : "https://saude.gov.br/sid/crf-to",
+        "display" : "CRF-TO"
+      }]
+    }]
+  }
+}

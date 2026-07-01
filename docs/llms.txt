@@ -1,0 +1,84 @@
+# br.gov.saude.redfm.fhir#1.0.0-release: Guia de Implementação do Registro Eletrônico de Dispensação ou Fornecimento de Medicamento (REDFM) da RNDS(en)
+
+## Pages
+
+* [Principal](en/index.md)
+* [Credenciamento](en/credenciamento.md)
+* [Modelo Computacional](en/mc.md)
+* [Downloads](en/downloads.md)
+* [Suporte da RNDS](en/suporte.md)
+* [Feedback](en/forms.md)
+* [Abstract](en/abstract.md)
+* [Lives](en/lives.md)
+* [Integração](en/integracao.md)
+* [Artifacts Summary](en/artifacts.md)
+* [Histórico de mudanças](en/changes.md)
+* [Exemplos](en/exemplos.md)
+* [Modelo de Informação](en/mi.md)
+
+## Resources
+
+### CodeSystems
+
+* [Classificação Brasileira de Ocupações - CBO (CodeSystem)](en/CodeSystem-BRCBO.md)
+* [Classificação Internacional de Atenção Primária - Segunda Edição (CIAP2)](en/CodeSystem-BRCIAP2.md)
+* [Classificação Internacional de Doenças - Décima Revisão (CID-10)](en/CodeSystem-BRCID10.md)
+* [Conselhos profissionais de saúde do Brasil](en/CodeSystem-BRConselhoProfissional.md)
+* [Terminologia de Produto Medicinal Comercial com Apresentação (AMPP) na Ontologia Brasileira de Medicamentos (OBM)](en/CodeSystem-BRObmAMPP.md)
+* [Terminologia de Produto Medicinal Comercial com Apresentação (AMPP) na Agência Nacional de Vigilância Sanitária (Anvisa)](en/CodeSystem-BRObmANVISA.md)
+* [Terminologia de Produto Medicinal Virtual (VMP) no Catálogo de Materiais (CATMAT)](en/CodeSystem-BRObmCATMAT.md)
+* [Terminologia de Produto Medicinal Virtual (VMP) na GS1.org](en/CodeSystem-BRObmEAN.md)
+* [Terminologia de Produto Medicinal Virtual (VMP) na Ontologia Brasileira de Medicamentos (OBM)](en/CodeSystem-BRObmVMP.md)
+* [Tipo de Dispensação Realizada (CodeSystem)](en/CodeSystem-BRTipoDispensacaoRealizada.md)
+* [Tipo de Documento (CodeSystem)](en/CodeSystem-BRTipoDocumento.md)
+* [Unidade de Medida](en/CodeSystem-BRUnidadeMedida.md)
+* [Via de Administração (CodeSystem)](en/CodeSystem-BRViaAdministracao.md)
+
+### ValueSets
+
+* [Conselhos regionais de Enfermagem do Brasil](en/ValueSet-BRCOREN.md)
+* [Conselhos regionais de Farmácia do Brasil](en/ValueSet-BRCRF.md)
+* [Conselhos regionais de Medicina do Brasil](en/ValueSet-BRCRM.md)
+* [Conselhos regionais de Odontologia do Brasil](en/ValueSet-BRCRO.md)
+* [Classificação Brasileira de Ocupações - CBO (ValueSet)](en/ValueSet-BROcupacao-1.0.md)
+* [Conselhos regionais de outros profissionais da saúde do Brasil](en/ValueSet-BROutrosProfissionais.md)
+* [Classificação Internacional de Doenças (Atenção Primária)](en/ValueSet-BRProblemaDiagnostico.md)
+* [Terminologia dos medicamentos](en/ValueSet-BRTerminologiaMedicamento.md)
+* [Tipo de Dispensação Realizada (ValueSet)](en/ValueSet-BRTipoDispensacaoRealizada.md)
+* [Tipo de Documento (ValueSet)](en/ValueSet-BRTipoDocumento-1.0.md)
+* [Unidade de Medida de Medicamento](en/ValueSet-BRUnidadeMedidaMedicamento.md)
+* [Via de Administração (ValueSet)](en/ValueSet-BRViaAdministracao-1.0.md)
+
+### Resource Profiles
+
+* [Estabelecimento de Saúde](en/StructureDefinition-RNDSEstabelecimentoSaude.md)
+* [Lotação Profissional](en/StructureDefinition-RNDSLotacaoProfissional.md)
+* [Medicamento](en/StructureDefinition-RNDSMedicamento.md)
+* [Medicamento Dispensado](en/StructureDefinition-RNDSMedicamentoDispensado.md)
+* [Dispensação ou Fornecimento Eletrônico de Medicamento](en/StructureDefinition-RNDSMedicamentoDispensadoFornecido.md)
+* [Prescrição Eletrônica de Medicamento (Contida na Dispensação)](en/StructureDefinition-RNDSPrescricaoMedicamentoDispensado.md)
+* [Profissional](en/StructureDefinition-RNDSProfissional.md)
+* [Registro Eletrônico de Dispensação ou Fornecimento de Medicamento (REDFM)](en/StructureDefinition-RNDSRegistroEletronicoDispensacaoFornecimentoMedicamento.md)
+* [BR Core Composition](en/StructureDefinition-br-core-composition.md)
+* [br-core-healthcareservice](en/StructureDefinition-br-core-healthcareservice.md)
+* [br-core-location](en/StructureDefinition-br-core-location.md)
+* [BR Core Medication](en/StructureDefinition-br-core-medication.md)
+* [BR Core Organization](en/StructureDefinition-br-core-organization.md)
+* [BR Core Practitioner](en/StructureDefinition-br-core-practitioner.md)
+* [BR Core PractitionerRole](en/StructureDefinition-br-core-practitionerrole.md)
+* [BRCoreRelatedPerson](en/StructureDefinition-br-core-relatedperson.md)
+
+### ImplementationGuides
+
+* [Guia de Implementação do Registro Eletrônico de Dispensação ou Fornecimento de Medicamento (REDFM) da RNDS](en/ImplementationGuide-br.gov.saude.redfm.fhir.md)
+
+### Examples
+
+* [01-redfm-completo-com-prescricao-dispensador-farmaceutico (Bundle)](en/Bundle-01-redfm-completo-com-prescricao-dispensador-farmaceutico.md)
+* [02-redfm-completo-substituicao (Bundle)](en/Bundle-02-redfm-completo-substituicao.md)
+* [03-redfm-completo-com-prescricao-fornecedor-nao-farmaceutico (Bundle)](en/Bundle-03-redfm-completo-com-prescricao-fornecedor-nao-farmaceutico.md)
+* [04-redfm-parcial-com-prescricao-fornecedor-nao-farmaceutico (Bundle)](en/Bundle-04-redfm-parcial-com-prescricao-fornecedor-nao-farmaceutico.md)
+* [05-redfm-nao-dispensado-com-prescricao (Bundle)](en/Bundle-05-redfm-nao-dispensado-com-prescricao.md)
+* [07-redfm-completo-sem-prescricao-fornecedor-nao-farmaceutico (Bundle)](en/Bundle-07-redfm-completo-sem-prescricao-fornecedor-nao-farmaceutico.md)
+* [08-redfm-completo-sem-prescricao-dispensador-farmaceutico (Bundle)](en/Bundle-08-redfm-completo-sem-prescricao-dispensador-farmaceutico.md)
+* [06-redfm-nao-dispensado-e-dispensado-com-prescricao-dispensador-farmaceutico (Bundle)](en/Bundle-06-redfm-nao-dispensado-e-dispensado-com-prescricao-dispensador-farmaceutico.md)

@@ -1,0 +1,205 @@
+# Conselhos regionais de Medicina do Brasil - Guia de Implementação do Registro Eletrônico de Dispensação ou Fornecimento de Medicamento (REDFM) da RNDS v1.0.0-release
+
+## ValueSet: Conselhos regionais de Medicina do Brasil 
+
+ 
+Conjunto de todos os conselhos regionais de medicina do Brasil 
+
+ **References** 
+
+* [BR Core Practitioner](StructureDefinition-br-core-practitioner.md)
+
+### Logical Definition (CLD)
+
+ 
+
+### Expansion
+
+-------
+
+ [Description of the above table(s)](http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#terminology). 
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "ValueSet",
+  "id" : "BRCRM",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
+  },
+  "language" : "pt-BR",
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+    "valueCode" : "ehr"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 1,
+    "_valueInteger" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0/ImplementationGuide/br.gov.saude.redfm.fhir"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "normative",
+    "_valueCode" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0/ImplementationGuide/br.gov.saude.redfm.fhir"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+    "valueCode" : "4.0.1"
+  }],
+  "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BRCRM",
+  "version" : "1.0.0-release",
+  "name" : "BRCRM",
+  "title" : "Conselhos regionais de Medicina do Brasil",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2023-07-18T13:52:24+00:00",
+  "publisher" : "Ministério da Saúde do Brasil",
+  "contact" : [{
+    "name" : "Ministério da Saúde do Brasil",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.saude.gov.br"
+    },
+    {
+      "system" : "email",
+      "value" : "cgiis.datasus@saude.gov.br"
+    }]
+  }],
+  "description" : "Conjunto de todos os conselhos regionais de medicina do Brasil",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BR"
+    }]
+  }],
+  "purpose" : "O propósito deste conjunto é agrupar todos os conselhos regionais de medicina para fins de validação do identificador profissional do médico",
+  "copyright" : "CC-1.0",
+  "compose" : {
+    "include" : [{
+      "system" : "https://terminologia.saude.gov.br/fhir/CodeSystem/BRConselhoProfissional",
+      "concept" : [{
+        "code" : "https://saude.gov.br/sid/crm-ac",
+        "display" : "CRM-AC"
+      },
+      {
+        "code" : "https://saude.gov.br/sid/crm-al",
+        "display" : "CRM-AL"
+      },
+      {
+        "code" : "https://saude.gov.br/sid/crm-am",
+        "display" : "CRM-AM"
+      },
+      {
+        "code" : "https://saude.gov.br/sid/crm-ap",
+        "display" : "CRM-AP"
+      },
+      {
+        "code" : "https://saude.gov.br/sid/crm-ba",
+        "display" : "CRM-BA"
+      },
+      {
+        "code" : "https://saude.gov.br/sid/crm-ce",
+        "display" : "CRM-CE"
+      },
+      {
+        "code" : "https://saude.gov.br/sid/crm-df",
+        "display" : "CRM-DF"
+      },
+      {
+        "code" : "https://saude.gov.br/sid/crm-es",
+        "display" : "CRM-ES"
+      },
+      {
+        "code" : "https://saude.gov.br/sid/crm-go",
+        "display" : "CRM-GO"
+      },
+      {
+        "code" : "https://saude.gov.br/sid/crm-ma",
+        "display" : "CRM-MA"
+      },
+      {
+        "code" : "https://saude.gov.br/sid/crm-mg",
+        "display" : "CRM-MG"
+      },
+      {
+        "code" : "https://saude.gov.br/sid/crm-ms",
+        "display" : "CRM-MS"
+      },
+      {
+        "code" : "https://saude.gov.br/sid/crm-mt",
+        "display" : "CRM-MT"
+      },
+      {
+        "code" : "https://saude.gov.br/sid/crm-pa",
+        "display" : "CRM-PA"
+      },
+      {
+        "code" : "https://saude.gov.br/sid/crm-pb",
+        "display" : "CRM-PB"
+      },
+      {
+        "code" : "https://saude.gov.br/sid/crm-pe",
+        "display" : "CRM-PE"
+      },
+      {
+        "code" : "https://saude.gov.br/sid/crm-pi",
+        "display" : "CRM-PI"
+      },
+      {
+        "code" : "https://saude.gov.br/sid/crm-pr",
+        "display" : "CRM-PR"
+      },
+      {
+        "code" : "https://saude.gov.br/sid/crm-rj",
+        "display" : "CRM-RJ"
+      },
+      {
+        "code" : "https://saude.gov.br/sid/crm-rn",
+        "display" : "CRM-RN"
+      },
+      {
+        "code" : "https://saude.gov.br/sid/crm-ro",
+        "display" : "CRM-RO"
+      },
+      {
+        "code" : "https://saude.gov.br/sid/crm-rr",
+        "display" : "CRM-RR"
+      },
+      {
+        "code" : "https://saude.gov.br/sid/crm-rs",
+        "display" : "CRM-RS"
+      },
+      {
+        "code" : "https://saude.gov.br/sid/crm-sc",
+        "display" : "CRM-SC"
+      },
+      {
+        "code" : "https://saude.gov.br/sid/crm-se",
+        "display" : "CRM-SE"
+      },
+      {
+        "code" : "https://saude.gov.br/sid/crm-sp",
+        "display" : "CRM-SP"
+      },
+      {
+        "code" : "https://saude.gov.br/sid/crm-to",
+        "display" : "CRM-TO"
+      }]
+    }]
+  }
+}
+
+```

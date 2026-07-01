@@ -1,0 +1,353 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0/ValueSet/BROutrosProfissionais> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "BROutrosProfissionais"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://hl7.org/fhir/StructureDefinition/shareablevalueset" ;
+       fhir:index -1 ;
+       fhir:link <http://hl7.org/fhir/StructureDefinition/shareablevalueset>
+     ]
+  ] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ]
+  ] ;
+  fhir:DomainResource.extension [
+     fhir:index -1 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg" ] ;
+     fhir:Extension.valueCode [ fhir:value "ehr" ]
+  ], [
+     fhir:index -1 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm" ] ;
+     fhir:Extension.valueInteger [
+       fhir:value "1"^^xsd:integer ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom" ] ;
+         fhir:Extension.valueCanonical [
+           fhir:value "https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0/ImplementationGuide/br.gov.saude.redfm.fhir" ;
+           fhir:link <https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0/ImplementationGuide/br.gov.saude.redfm.fhir>
+         ]
+       ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status" ] ;
+     fhir:Extension.valueCode [
+       fhir:value "normative" ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom" ] ;
+         fhir:Extension.valueCanonical [
+           fhir:value "https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0/ImplementationGuide/br.gov.saude.redfm.fhir" ;
+           fhir:link <https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0/ImplementationGuide/br.gov.saude.redfm.fhir>
+         ]
+       ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version" ] ;
+     fhir:Extension.valueCode [ fhir:value "4.0.1" ]
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://terminologia.saude.gov.br/fhir/ValueSet/BROutrosProfissionais"] ;
+  fhir:ValueSet.version [ fhir:value "1.0.0-release"] ;
+  fhir:ValueSet.name [ fhir:value "BROutrosProfissionais"] ;
+  fhir:ValueSet.title [ fhir:value "Conselhos regionais de outros profissionais da saúde do Brasil"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:ValueSet.date [ fhir:value "2023-07-18T13:52:24+00:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "Ministério da Saúde do Brasil"] ;
+  fhir:ValueSet.contact [
+     fhir:index -1 ;
+     fhir:ContactDetail.name [ fhir:value "Ministério da Saúde do Brasil" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "http://www.saude.gov.br" ]
+     ], [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "cgiis.datasus@saude.gov.br" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "Conjunto de todos os conselhos regionais de outros profissionais da saúde do Brasil"] ;
+  fhir:ValueSet.jurisdiction [
+     fhir:index -1 ;
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "BR" ]
+     ]
+  ] ;
+  fhir:ValueSet.purpose [ fhir:value "O propósito deste conjunto é agrupar todos os conselhos regionais da categoria de outros profissionais da saúde para fins de validação do identificador profissional"] ;
+  fhir:ValueSet.copyright [ fhir:value "CC-1.0"] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index -1 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://terminologia.saude.gov.br/fhir/CodeSystem/BRConselhoProfissional" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "https://saude.gov.br/sid/crp-ac-ro" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "CRP-AC-RO" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "https://saude.gov.br/sid/crp-al" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "CRP-AL" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "https://saude.gov.br/sid/crp-am-rr" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "CRP-AM-RR" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "https://saude.gov.br/sid/crp-ba" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "CRP-BA" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "https://saude.gov.br/sid/crp-ce" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "CRP-CE" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "https://saude.gov.br/sid/crp-df" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "CRP-DF" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "https://saude.gov.br/sid/crp-es" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "CRP-ES" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "https://saude.gov.br/sid/crp-go" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "CRP-GO" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "https://saude.gov.br/sid/crp-ma" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "CRP-MA" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "https://saude.gov.br/sid/crp-mg" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "CRP-MG" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "https://saude.gov.br/sid/crp-ms" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "CRP-MS" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "https://saude.gov.br/sid/crp-mt" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "CRP-MT" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "https://saude.gov.br/sid/crp-pa-ap" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "CRP-PA-AP" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "https://saude.gov.br/sid/crp-pb" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "CRP-PB" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "https://saude.gov.br/sid/crp-pe" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "CRP-PE" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "https://saude.gov.br/sid/crp-pi" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "CRP-PI" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "https://saude.gov.br/sid/crp-pr" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "CRP-PR" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "https://saude.gov.br/sid/crp-rj" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "CRP-RJ" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "https://saude.gov.br/sid/crp-rn" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "CRP-RN" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "https://saude.gov.br/sid/crp-rs" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "CRP-RS" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "https://saude.gov.br/sid/crp-sc" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "CRP-SC" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "https://saude.gov.br/sid/crp-se" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "CRP-SE" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "https://saude.gov.br/sid/crp-sp" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "CRP-SP" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "https://saude.gov.br/sid/crp-to" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "CRP-TO" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "https://saude.gov.br/sid/crefito-ba" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "CREFITO-BA" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "https://saude.gov.br/sid/crefito-ce" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "CREFITO-CE" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "https://saude.gov.br/sid/crefito-es" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "CREFITO-ES" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "https://saude.gov.br/sid/crefito-go-df" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "CREFITO-GO-DF" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "https://saude.gov.br/sid/crefito-ma" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "CREFITO-MA" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "https://saude.gov.br/sid/crefito-mg" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "CREFITO-MG" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "https://saude.gov.br/sid/crefito-ms" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "CREFITO-MS" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "https://saude.gov.br/sid/crefito-mt" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "CREFITO-MT" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "https://saude.gov.br/sid/crefito-pa-am-to-rr-ap" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "CREFITO-PA-AM-TO-RR-AP" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "https://saude.gov.br/sid/crefito-pe-pb-al-rn" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "CREFITO-PE-PB-AL-RN" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "https://saude.gov.br/sid/crefito-pi" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "CREFITO-PI" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "https://saude.gov.br/sid/crefito-pr" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "CREFITO-PR" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "https://saude.gov.br/sid/crefito-rj" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "CREFITO-RJ" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "https://saude.gov.br/sid/crefito-ro-ac" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "CREFITO-RO-AC" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "https://saude.gov.br/sid/crefito-rs" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "CREFITO-RS" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "https://saude.gov.br/sid/crefito-sc" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "CREFITO-SC" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "https://saude.gov.br/sid/crefito-se" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "CREFITO-SE" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "https://saude.gov.br/sid/crefito-sp" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "CREFITO-SP" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "https://saude.gov.br/sid/crn-al" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "CRN-AL" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "https://saude.gov.br/sid/crn-ba-se" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "CRN-BA-SE" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "https://saude.gov.br/sid/crn-ce-ma-pi" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "CRN-CE-MA-PI" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "https://saude.gov.br/sid/crn-df-go-mt-to" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "CRN-DF-GO-MT-TO" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "https://saude.gov.br/sid/crn-pa-ac-am-ap-ro-rr" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "CRN-PA-AC-AM-AP-RO-RR" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "https://saude.gov.br/sid/crn-pe-al-pb-rn" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "CRN-PE-AL-PB-RN" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "https://saude.gov.br/sid/crn-pr" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "CRN-PR" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "https://saude.gov.br/sid/crn-rj-es" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "CRN-RJ-ES" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "https://saude.gov.br/sid/crn-rs" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "CRN-RS" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "https://saude.gov.br/sid/crn-sc" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "CRN-SC" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "https://saude.gov.br/sid/crn-sp-ms" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "CRN-SP-MS" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "https://saude.gov.br/sid/crefono-am-ac-ap-pa-ro-rr" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "CREFONO-AM-AC-AP-PA-RO-RR" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "https://saude.gov.br/sid/crefono-ce-ma-pi-rn" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "CREFONO-CE-MA-PI-RN" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "https://saude.gov.br/sid/crefono-go-df-ms-mt-to" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "CREFONO-GO-DF-MS-MT-TO" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "https://saude.gov.br/sid/crefono-mg-es" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "CREFONO-MG-ES" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "https://saude.gov.br/sid/crefono-pe-al-ba-pb-se" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "CREFONO-PE-AL-BA-PB-SE" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "https://saude.gov.br/sid/crefono-pr-sc" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "CREFONO-PR-SC" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "https://saude.gov.br/sid/crefono-rj" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "CREFONO-RJ" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "https://saude.gov.br/sid/crefono-rs" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "CREFONO-RS" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "https://saude.gov.br/sid/crefono-sp" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "CREFONO-SP" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0/ValueSet/BROutrosProfissionais.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,14 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="br.gov.saude.redfm.fhir" />
   <language value="pt-BR" />
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-    <valueCode value="informative" />
+    <valueCode value="normative" />
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
     <valueInteger value="1" />
   </extension>
-  <url value="http://www.saude.gov.br/fhir/r4/ImplementationGuide/br.gov.saude.redfm.fhir" />
-  <version value="1.0.0" />
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="ehr" />
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+    <valueCode value="4.0.1" />
+  </extension>
+  <url
+    value="https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0/ImplementationGuide/br.gov.saude.redfm.fhir" />
+  <version value="1.0.0-release" />
   <name value="REDFMRNDSIG" />
   <title
     value="Guia de Implementação do Registro Eletrônico de Dispensação ou Fornecimento de Medicamento (REDFM) da RNDS" />
@@ -20,6 +28,10 @@
     <telecom>
       <system value="url" />
       <value value="http://www.saude.gov.br" />
+    </telecom>
+    <telecom>
+      <system value="email" />
+      <value value="cgiis.datasus@saude.gov.br" />
     </telecom>
   </contact>
   <description value="Guia de Implementação da Rede Nacional de Dados em Saúde (RNDS)" />
@@ -61,7 +73,7 @@
     </resource>
     <resource>
       <reference>
-        <reference value="Bundle/Example-REDFM-1" />
+        <reference value="Bundle/01-redfm-completo-com-prescricao-dispensador-farmaceutico" />
       </reference>
       <name value="Bundle de exemplo do REDFM (1)" />
       <description
@@ -73,7 +85,7 @@
     </resource>
     <resource>
       <reference>
-        <reference value="Bundle/Example-REDFM-2" />
+        <reference value="Bundle/02-redfm-completo-substituicao" />
       </reference>
       <name value="Bundle de exemplo do REDFM (2)" />
       <description
@@ -85,7 +97,7 @@
     </resource>
     <resource>
       <reference>
-        <reference value="Bundle/Example-REDFM-3" />
+        <reference value="Bundle/03-redfm-completo-com-prescricao-fornecedor-nao-farmaceutico" />
       </reference>
       <name value="Bundle de exemplo do REDFM (3)" />
       <description
@@ -97,9 +109,58 @@
     </resource>
     <resource>
       <reference>
-        <reference value="Bundle/Example-REDFM-4" />
+        <reference value="Bundle/04-redfm-parcial-com-prescricao-fornecedor-nao-farmaceutico" />
       </reference>
       <name value="Bundle de exemplo do REDFM (4)" />
+      <description
+        value="Bundle de exemplo do Registro Eletrônico de Dispensação ou Fornecimento de Medicamento
+    (REDFM)" />
+      <exampleCanonical
+        value="http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamento"
+      />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Bundle/05-redfm-nao-dispensado-com-prescricao" />
+      </reference>
+      <name value="Bundle de exemplo do REDFM (5)" />
+      <description
+        value="Bundle de exemplo do Registro Eletrônico de Dispensação ou Fornecimento de Medicamento
+    (REDFM)" />
+      <exampleCanonical
+        value="http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamento"
+      />
+    </resource>
+    <resource>
+      <reference>
+        <reference
+          value="Bundle/06-redfm-nao-dispensado-e-dispensado-com-prescricao-dispensador-farmaceutico" />
+      </reference>
+      <name value="Bundle de exemplo do REDFM (6)" />
+      <description
+        value="Bundle de exemplo do Registro Eletrônico de Dispensação ou Fornecimento de Medicamento
+    (REDFM)" />
+      <exampleCanonical
+        value="http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamento"
+      />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Bundle/07-redfm-completo-sem-prescricao-fornecedor-nao-farmaceutico" />
+      </reference>
+      <name value="Bundle de exemplo do REDFM (7)" />
+      <description
+        value="Bundle de exemplo do Registro Eletrônico de Dispensação ou Fornecimento de Medicamento
+    (REDFM)" />
+      <exampleCanonical
+        value="http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamento"
+      />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Bundle/08-redfm-completo-sem-prescricao-dispensador-farmaceutico" />
+      </reference>
+      <name value="Bundle de exemplo do REDFM (8)" />
       <description
         value="Bundle de exemplo do Registro Eletrônico de Dispensação ou Fornecimento de Medicamento
     (REDFM)" />
@@ -122,13 +183,8 @@
         <generation value="html" />
       </page>
       <page>
-        <nameUrl value="seguranca.html" />
-        <title value="Segurança" />
-        <generation value="html" />
-      </page>
-      <page>
-        <nameUrl value="integracao.html" />
-        <title value="Integração" />
+        <nameUrl value="lives.html" />
+        <title value="Lives" />
         <generation value="html" />
       </page>
       <page>
@@ -137,8 +193,8 @@
         <generation value="html" />
       </page>
       <page>
-        <nameUrl value="mc.html" />
-        <title value="Modelo Computacional" />
+        <nameUrl value="integracao.html" />
+        <title value="Integração" />
         <generation value="html" />
       </page>
       <page>
@@ -147,8 +203,18 @@
         <generation value="html" />
       </page>
       <page>
+        <nameUrl value="mc.html" />
+        <title value="Modelo Computacional" />
+        <generation value="html" />
+      </page>
+      <page>
         <nameUrl value="exemplos.html" />
         <title value="Exemplos" />
+        <generation value="html" />
+      </page>
+      <page>
+        <nameUrl value="changes.html" />
+        <title value="Histórico de mudanças" />
         <generation value="html" />
       </page>
       <page>
@@ -157,18 +223,27 @@
         <generation value="html" />
       </page>
       <page>
-        <nameUrl value="changes.html" />
-        <title value="Histórico de mudanças" />
+        <nameUrl value="forms.html" />
+        <title value="Feedback" />
+        <generation value="html" />
+      </page>
+      <page>
+        <nameUrl value="suporte.html" />
+        <title value="Suporte da RNDS" />
         <generation value="html" />
       </page>
     </page>
     <parameter>
       <code value="copyrightyear" />
-      <value value="2023+" />
+      <value value="2026+" />
     </parameter>
     <parameter>
       <code value="releaselabel" />
       <value value="STU1" />
+    </parameter>
+    <parameter>
+      <code value="path-resource" />
+      <value value="input\history" />
     </parameter>
     <parameter>
       <code value="shownav" />
@@ -176,63 +251,83 @@
     </parameter>
     <parameter>
       <code value="path-resource" />
-      <value value="input/capabilities" />
-    </parameter>
-    <parameter>
-      <code value="path-resource" />
-      <value value="input/examples" />
-    </parameter>
-    <parameter>
-      <code value="path-resource" />
-      <value value="input/extensions" />
-    </parameter>
-    <parameter>
-      <code value="path-resource" />
-      <value value="input/models" />
-    </parameter>
-    <parameter>
-      <code value="path-resource" />
-      <value value="input/operations" />
-    </parameter>
-    <parameter>
-      <code value="path-resource" />
-      <value value="input/profiles" />
-    </parameter>
-    <parameter>
-      <code value="path-resource" />
       <value value="input/resources" />
     </parameter>
     <parameter>
-      <code value="path-resource" />
-      <value value="input/vocabulary" />
-    </parameter>
-    <parameter>
-      <code value="path-resource" />
-      <value value="input/maps" />
-    </parameter>
-    <parameter>
-      <code value="path-resource" />
-      <value value="input/testing" />
-    </parameter>
-    <parameter>
-      <code value="path-resource" />
-      <value value="input/history" />
-    </parameter>
-    <parameter>
-      <code value="path-resource" />
-      <value value="fsh-generated/resources" />
-    </parameter>
-    <parameter>
       <code value="path-pages" />
-      <value value="template/config" />
+      <value value="input/pagecontent" />
     </parameter>
     <parameter>
-      <code value="path-pages" />
-      <value value="input/images" />
+      <code value="special-url-base" />
+      <value value="http://www.saude.gov.br/fhir/r4" />
     </parameter>
     <parameter>
-      <code value="path-tx-cache" />
-      <value value="input-cache/txcache" />
+      <code value="special-url" />
+      <value value="https://terminologia.saude.gov.br/fhir/ValueSet/BRCOREN" />
     </parameter>
+    <parameter>
+      <code value="special-url" />
+      <value value="https://terminologia.saude.gov.br/fhir/ValueSet/BRCRF" />
+    </parameter>
+    <parameter>
+      <code value="special-url" />
+      <value value="https://terminologia.saude.gov.br/fhir/ValueSet/BRCRM" />
+    </parameter>
+    <parameter>
+      <code value="special-url" />
+      <value value="https://terminologia.saude.gov.br/fhir/ValueSet/BRCRO" />
+    </parameter>
+    <parameter>
+      <code value="special-url" />
+      <value value="https://terminologia.saude.gov.br/fhir/ValueSet/BROutrosProfissionais" />
+    </parameter>
+    <parameter>
+      <code value="special-url" />
+      <value value="https://terminologia.saude.gov.br/fhir/ValueSet/BROutrosProfissionais" />
+    </parameter>
+    <parameter>
+      <code value="special-url" />
+      <value value="https://terminologia.saude.gov.br/fhir/CodeSystem/BRConselhoProfissional" />
+    </parameter>
+    <parameter>
+      <code value="special-url" />
+      <value value="https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-composition" />
+    </parameter>
+    <parameter>
+      <code value="special-url" />
+      <value value="https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-medication" />
+    </parameter>
+    <parameter>
+      <code value="special-url" />
+      <value value="https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-organization" />
+    </parameter>
+    <parameter>
+      <code value="special-url" />
+      <value value="https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-practitioner" />
+    </parameter>
+    <parameter>
+      <code value="special-url" />
+      <value value="https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-practitionerrole" />
+    </parameter>
+    <parameter>
+      <code value="special-url" />
+      <value value="https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-healthcareservice" />
+    </parameter>
+    <parameter>
+      <code value="special-url" />
+      <value value="https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-location" />
+    </parameter>
+    <parameter>
+      <code value="special-url" />
+      <value value="https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-relatedperson" />
+    </parameter>
+    <!-- <parameter>
+      <code value="special-url-base" />
+      <value value="https://terminologia.saude.gov.br/fhir" />
+    </parameter> -->
+    <!-- <parameter>
+      <code value="special-url-base" />
+      <value value="https://br-core.saude.gov.br/fhir" />
+    </parameter> -->
   </definition>
 </ImplementationGuide>
