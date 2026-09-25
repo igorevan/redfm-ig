@@ -1,0 +1,625 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+    <id value="RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos" />
+    <meta xmlns="http://hl7.org/fhir">
+        <lastUpdated value="2026-06-12T17:00:00-03:00" />
+    </meta>
+    <language value="pt-BR" />
+    <url
+        value="http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos" />
+    <version value="2.0.0" />
+    <name value="RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos" />
+    <title value="Registro Eletrônico de Dispensação ou Fornecimento de Medicamentos - REDFM" />
+    <status value="active" />
+    <date value="2024-12-10" />
+    <publisher value="Ministério da Saúde do Brasil" />
+    <contact>
+        <name value="COPIS - Coordenação de Padrões e Interoperabilidade em Saúde" />
+        <telecom>
+            <system value="url" />
+            <value value="https://webatendimento.saude.gov.br/faq/rnds" />
+        </telecom>
+    </contact>
+    <description
+        value="Documento público que coleta os dados das prescrições de medicamentos realizadas em qualquer estabelecimento de saúde do país, público ou privado." />
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166" />
+            <code value="BR" />
+            <display value="Brazil" />
+        </coding>
+    </jurisdiction>
+    <fhirVersion value="4.0.1" />
+    <kind value="resource" />
+    <abstract value="false" />
+    <type value="Composition" />
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Composition" />
+    <derivation value="constraint" />
+    <differential>
+        <element id="Composition">
+            <path value="Composition" />
+            <constraint>
+                <key value="dfm-1" />
+                <severity value="error" />
+                <human
+                    value="Caso a prescrição não esteja disponível na RNDS é necessário enviar as informações na seção Informações da Prescrição." />
+                <expression
+                    value="Composition.section.entry.resolve().ofType(MedicationDispense).authorizingPrescription.exists(id = 'out-of-rnds') implies Composition.section.code.coding.exists(code = '57828-6')" />
+            </constraint>
+            <constraint>
+                <key value="ident-2" />
+                <severity value="error" />
+                <human
+                    value="O número de CPF ou CNS do indivíduo deve ser igual em seus respecitivos elementos dos recursos (subject.identifier.value)." />
+                <expression
+                    value="section.entry.resolve().all(subject.exists().not() or (subject.identifier.value = %context.subject.identifier.value))" />
+            </constraint>
+            <constraint>
+                <key value="ident-3" />
+                <severity value="error" />
+                <human
+                    value="O número de CPF ou CNS do indivíduo deve ser igual em seus respecitivos elementos dos recursos (subject.identifier.value)." />
+                <expression
+                    value="section.section.entry.resolve().all(subject.exists().not() or (subject.identifier.value = %context.subject.identifier.value))" />
+            </constraint>
+        </element>
+        <element id="Composition.meta">
+            <path value="Composition.meta" />
+            <short value="Metadados sobre o recurso" />
+        </element>
+        <element id="Composition.implicitRules">
+            <path value="Composition.implicitRules" />
+            <short value="Conjunto de regras utilizadas para a elaboração deste conteúdo" />
+        </element>
+        <element id="Composition.language">
+            <path value="Composition.language" />
+            <short value="Idioma do conteúdo do recurso" />
+        </element>
+        <element id="Composition.text">
+            <path value="Composition.text" />
+            <short value="Resumo do recurso para interpretação humana" />
+        </element>
+        <element id="Composition.contained">
+            <path value="Composition.contained" />
+            <short value="Recursos contidos neste artefato" />
+        </element>
+        <element id="Composition.modifierExtension">
+            <path value="Composition.modifierExtension" />
+            <short value="Extensões que não podem ser ignoradas" />
+        </element>
+        <element id="Composition.identifier">
+            <path value="Composition.identifier" />
+            <short value="Identificador independente da versão da Composition" />
+        </element>
+        <element id="Composition.status">
+            <path value="Composition.status" />
+            <short value="Estado do documento: final | entered-in-error" />
+            <mustSupport value="true" />
+            <binding>
+                <strength value="required" />
+                <description value="Estado do Documento" />
+                <valueSet value="http://www.saude.gov.br/fhir/r4/ValueSet/BREstadoDocumento-1.0" />
+            </binding>
+        </element>
+        <element id="Composition.type">
+            <path value="Composition.type" />
+            <short value="Tipo de Documento" />
+            <definition value="Especifica o tipo de documento que está sendo enviado na composição." />
+            <min value="1" />
+            <mustSupport value="true" />
+            <binding>
+                <strength value="required" />
+                <description value="Tipo de Documento" />
+                <valueSet value="http://www.saude.gov.br/fhir/r4/ValueSet/BRTipoDocumento-1.0" />
+            </binding>
+        </element>
+        <element id="Composition.type.id">
+            <path value="Composition.type.id" />
+            <short value="ID exclusivo para referência entre elementos" />
+        </element>
+        <element id="Composition.type.extension">
+            <path value="Composition.type.extension" />
+            <short value="Conteúdo adicional definido por implementações" />
+        </element>
+        <element id="Composition.type.coding">
+            <path value="Composition.type.coding" />
+            <short value="Código definido por uma terminologia" />
+            <min value="1" />
+            <max value="1" />
+        </element>
+        <element id="Composition.type.coding.id">
+            <path value="Composition.type.coding.id" />
+            <short value="ID exclusivo para referência entre elementos" />
+        </element>
+        <element id="Composition.type.coding.extension">
+            <path value="Composition.type.coding.extension" />
+            <short value="Conteúdo adicional definido por implementações" />
+        </element>
+        <element id="Composition.type.coding.system">
+            <path value="Composition.type.coding.system" />
+            <short value="Identificador do sistema de terminologia" />
+            <min value="1" />
+        </element>
+        <element id="Composition.type.coding.version">
+            <path value="Composition.type.coding.version" />
+            <short value="Versão da terminologia" />
+        </element>
+        <element id="Composition.type.coding.code">
+            <path value="Composition.type.coding.code" />
+            <short value="Código conforme terminologia" />
+            <min value="1" />
+        </element>
+        <element id="Composition.type.coding.display">
+            <path value="Composition.type.coding.display" />
+            <short value="Descrição conforme definição da terminologia" />
+        </element>
+        <element id="Composition.type.coding.userSelected">
+            <path value="Composition.type.coding.userSelected" />
+            <short value="Se esta codificação foi escolhida diretamente pelo usuário" />
+        </element>
+        <element id="Composition.type.text">
+            <path value="Composition.type.text" />
+            <short value="Representação em texto livre do conceito" />
+        </element>
+        <element id="Composition.category">
+            <path value="Composition.category" />
+            <short value="Categorização da Composition" />
+        </element>
+        <element id="Composition.subject">
+            <path value="Composition.subject" />
+            <short value="Sobre quem e/ou sobre o que é a Composition" />
+            <definition
+                value="Quem ou o quê a composição se refere. Pode ser um indivíduo, dispositivo, grupos (de indivíduos, dispositivos etc.)." />
+            <comment value="Nesta versão, a RNDS suportará somente indivíduos." />
+            <min value="1" />
+            <type>
+                <code value="Reference" />
+                <targetProfile
+                    value="http://www.saude.gov.br/fhir/r4/StructureDefinition/BRIndividuo-1.0" />
+            </type>
+            <mustSupport value="true" />
+        </element>
+        <element id="Composition.subject.id">
+            <path value="Composition.subject.id" />
+            <short value="ID exclusivo para referência entre elementos" />
+        </element>
+        <element id="Composition.subject.extension">
+            <path value="Composition.subject.extension" />
+            <short value="Conteúdo adicional definido por implementações" />
+        </element>
+        <element id="Composition.subject.reference">
+            <path value="Composition.subject.reference" />
+            <short value="Referência literal, URL relativa, interna ou absoluta" />
+        </element>
+        <element id="Composition.subject.type">
+            <path value="Composition.subject.type" />
+            <short value="Tipo ao qual a referência se refere" />
+        </element>
+        <element id="Composition.subject.identifier">
+            <path value="Composition.subject.identifier" />
+            <short value="Referência lógica, quando a referência literal não é conhecida" />
+            <min value="1" />
+            <constraint>
+                <key value="ident-1" />
+                <severity value="error" />
+                <human
+                    value="O número de CPF ou CNS do indivíduo informado é inválido (subject.identifier.value)." />
+                <expression
+                    value="value.matches('^(?!(\\d)\\1{10})\\d{11}$') or value.matches('^(?!(\\d)\\1{14})[125789]\\d{14}$')" />
+            </constraint>
+        </element>
+        <element id="Composition.subject.identifier.system">
+            <path value="Composition.subject.identifier.system" />
+            <min value="1" />
+        </element>
+        <element id="Composition.subject.identifier.value">
+            <path value="Composition.subject.identifier.value" />
+            <min value="1" />
+        </element>
+        <element id="Composition.subject.display">
+            <path value="Composition.subject.display" />
+            <short value="Texto alternativo para o recurso" />
+        </element>
+        <element id="Composition.encounter">
+            <path value="Composition.encounter" />
+            <short value="Contato assistencial descrito nesta Composition" />
+        </element>
+        <element id="Composition.date">
+            <path value="Composition.date" />
+            <short value="Data/hora de Geração do Documento" />
+            <definition value="Data e hora em que o documento foi gerado." />
+            <constraint>
+                <key value="date-1" />
+                <severity value="error" />
+                <human
+                    value="A data do documento (Composition.date) deve ser no formato 'Ano-Mês-Dia'. Exemplo: 2026-01-01." />
+                <expression
+                    value="$this.toString().matches('^(200[1-9]|20[1-9]\\d|[2-9]\\d{3})-(0[1-9]|1[0-2])-(0[1-9]|[12]\\d|3[01])$')" />
+            </constraint>
+            <mustSupport value="true" />
+        </element>
+        <element id="Composition.author">
+            <path value="Composition.author" />
+            <short value="Quem e/ou o que foi o autor desta Composition" />
+            <max value="1" />
+            <type>
+                <code value="Reference" />
+                <targetProfile
+                    value="http://www.saude.gov.br/fhir/r4/StructureDefinition/BREstabelecimentoSaude-1.0" />
+            </type>
+            <mustSupport value="true" />
+        </element>
+        <element id="Composition.author.identifier">
+            <path value="Composition.author.identifier" />
+            <short value="Referência lógica, quando a referência literal não é conhecida" />
+            <min value="1" />
+            <constraint>
+                <key value="estab-1" />
+                <severity value="error" />
+                <human value="A identificação do estabelecimento de saúde é inválida." />
+                <expression
+                    value="value.matches('^(?!(\\d)\\1{6})\\d{7}$') or value.matches('^(?!(\\d)\\1{10})\\d{11}$') or value.matches('^(?!(\\d)\\1{13})[A-Z0-9]{12}\\d{2}$')" />
+            </constraint>
+        </element>
+        <element id="Composition.author.identifier.system">
+            <path value="Composition.author.identifier.system" />
+            <min value="1" />
+        </element>
+        <element id="Composition.author.identifier.value">
+            <path value="Composition.author.identifier.value" />
+            <min value="1" />
+        </element>
+        <element id="Composition.title">
+            <path value="Composition.title" />
+            <short value="Título do Documento" />
+            <definition value="Título do Documento" />
+            <fixedString value="Registro Eletrônico de Dispensação ou Fornecimento de Medicamentos" />
+        </element>
+        <element id="Composition.relatesTo">
+            <path value="Composition.relatesTo" />
+            <short value="Relacionamentos com outras Compositions/Documents" />
+            <definition
+                value="Indica uma relação entre esse documento e outro documento (ou composição) existente." />
+            <requirements
+                value="Este elemento deve ser utilizado exclusivamente para indicar que este documento substitui (replaces) outro documento / composição; ou seja, é utilizado para cancelar o anterior e passar a considerar este no seu lugar. Este documento receberá um ID próprio; o documento anterior continuará disponível na RNDS e poderá ser recuperado integralmente por referência direta ao seu ID, garantindo a rastreabilidade do processo, mas não estará diretamente disponível na timeline do cidadão." />
+
+            <max value="1" />
+            <mustSupport value="true" />
+        </element>
+        <element id="Composition.relatesTo.code">
+            <path value="Composition.relatesTo.code" />
+            <short value="Tipo de Relacionamento" />
+            <definition
+                value="Indica o tipo de relacionamento que este documento tem com o outro documento (composição)." />
+            <requirements
+                value="O valor é fixado em replaces, pois a substituição de documentos é a única operação permitida na RNDS." />
+            <fixedCode value="replaces" />
+        </element>
+        <element id="Composition.relatesTo.target[x]">
+            <path value="Composition.relatesTo.target[x]" />
+            <short value="Relacionamento alvo" />
+            <definition
+                value="Referência ao documento anterior que este documento está substituindo." />
+            <type>
+                <code value="Reference" />
+                <targetProfile
+                    value="http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos" />
+            </type>
+        </element>
+        <element id="Composition.relatesTo.target[x].reference">
+            <path value="Composition.relatesTo.target[x].reference" />
+            <min value="1" />
+        </element>
+        <element id="Composition.event">
+            <path value="Composition.event" />
+            <short value="Serviços assistenciais documentados" />
+        </element>
+        <element id="Composition.event.id">
+            <path value="Composition.event.id" />
+            <short value="ID exclusivo para referência entre elementos" />
+        </element>
+        <element id="Composition.event.extension">
+            <path value="Composition.event.extension" />
+            <short value="Conteúdo adicional definido por implementações" />
+        </element>
+        <element id="Composition.event.modifierExtension">
+            <path value="Composition.event.modifierExtension" />
+            <short value="Extensões que não podem ser ignoradas mesmo que não sejam reconhecidas" />
+        </element>
+        <element id="Composition.event.code">
+            <path value="Composition.event.code" />
+            <short value="Código(s) aplicável(is) aos eventos documentados" />
+        </element>
+        <element id="Composition.event.period">
+            <path value="Composition.event.period" />
+            <short value="O período de tempo coberto pela composition." />
+        </element>
+        <element id="Composition.event.detail">
+            <path value="Composition.event.detail" />
+            <short value="Referência aos eventos da Composition" />
+        </element>
+        <element id="Composition.section">
+            <path value="Composition.section" />
+            <slicing>
+                <discriminator>
+                    <type value="value" />
+                    <path value="code" />
+                </discriminator>
+                <rules value="open" />
+            </slicing>
+            <short
+                value="A seção inicial da composition a partir da qual as demais seções são definidas" />
+            <min value="1" />
+            <mustSupport value="true" />
+        </element>
+        <element id="Composition.section.id">
+            <path value="Composition.section.id" />
+            <short value="Identificador exclusivo para referência entre elemento" />
+        </element>
+        <element id="Composition.section.extension">
+            <path value="Composition.section.extension" />
+            <short value="Conteúdo adicional definido por implementações" />
+        </element>
+        <element id="Composition.section.modifierExtension">
+            <path value="Composition.section.modifierExtension" />
+            <short value="Extensões que não podem ser ignoradas mesmo que não sejam reconhecidas" />
+        </element>
+        <element id="Composition.section.title">
+            <path value="Composition.section.title" />
+            <short value="Título da seção" />
+        </element>
+        <element id="Composition.section.code">
+            <path value="Composition.section.code" />
+            <short value="Um código que identifica o tipo de conteúdo contido dentro da seção." />
+        </element>
+        <element id="Composition.section.author">
+            <path value="Composition.section.author" />
+            <short value="Quem e/ou o que foi o autor desta seção" />
+        </element>
+        <element id="Composition.section.focus">
+            <path value="Composition.section.focus" />
+            <short value="Quem/o que é a seção" />
+        </element>
+        <element id="Composition.section.text">
+            <path value="Composition.section.text" />
+            <short value="Resumo em texto livre da seção" />
+        </element>
+        <element id="Composition.section.mode">
+            <path value="Composition.section.mode" />
+            <short value="Método de processamento da seção" />
+        </element>
+        <element id="Composition.section.orderedBy">
+            <path value="Composition.section.orderedBy" />
+            <short value="Especifica a ordem dos itens nas sections.entry" />
+        </element>
+        <element id="Composition.section.entry">
+            <path value="Composition.section.entry" />
+            <short
+                value="Uma referência ao recurso a partir  do qual narrativa da seção é derivada." />
+        </element>
+        <element id="Composition.section.emptyReason">
+            <path value="Composition.section.emptyReason" />
+            <short value="Explicação porquê a secção está vazia" />
+        </element>
+        <element id="Composition.section.section">
+            <path value="Composition.section.section" />
+            <short value="Uma subseção aninhada dentro desta seção" />
+            <mustSupport value="true" />
+        </element>
+        <element id="Composition.section:dispensedMedications">
+            <path value="Composition.section" />
+            <sliceName value="dispensedMedications" />
+            <min value="1" />
+            <max value="1" />
+        </element>
+        <element id="Composition.section:dispensedMedications.title">
+            <path value="Composition.section.title" />
+            <min value="1" />
+            <fixedString value="Medicamentos Dispensados" />
+        </element>
+        <element id="Composition.section:dispensedMedications.code">
+            <path value="Composition.section.code" />
+            <min value="1" />
+            <patternCodeableConcept>
+                <coding>
+                    <system value="http://loinc.org" />
+                    <code value="56445-0" />
+                </coding>
+            </patternCodeableConcept>
+            <binding>
+                <strength value="preferred" />
+                <valueSet value="http://hl7.org/fhir/ValueSet/document-classcodes" />
+            </binding>
+        </element>
+        <element id="Composition.section:dispensedMedications.code.coding">
+            <path value="Composition.section.code.coding" />
+            <min value="1" />
+            <max value="1" />
+        </element>
+        <element id="Composition.section:dispensedMedications.code.coding.system">
+            <path value="Composition.section.code.coding.system" />
+            <min value="1" />
+        </element>
+        <element id="Composition.section:dispensedMedications.code.coding.code">
+            <path value="Composition.section.code.coding.code" />
+            <min value="1" />
+            <fixedCode value="56445-0" />
+        </element>
+        <element id="Composition.section:dispensedMedications.entry">
+            <path value="Composition.section.entry" />
+            <min value="1" />
+            <type>
+                <code value="Reference" />
+                <targetProfile
+                    value="http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSDispensacaoMedicamento" />
+            </type>
+        </element>
+        <element id="Composition.section:dispensedMedications.entry.reference">
+            <path value="Composition.section.entry.reference" />
+            <min value="1" />
+        </element>
+        <element id="Composition.section:prescriptionInformation">
+            <path value="Composition.section" />
+            <sliceName value="prescriptionInformation" />
+            <max value="1" />
+        </element>
+        <element id="Composition.section:prescriptionInformation.title">
+            <path value="Composition.section.title" />
+            <min value="1" />
+            <fixedString value="Informações da Prescrição" />
+        </element>
+        <element id="Composition.section:prescriptionInformation.code">
+            <path value="Composition.section.code" />
+            <min value="1" />
+            <patternCodeableConcept>
+                <coding>
+                    <system value="http://loinc.org" />
+                    <code value="57828-6" />
+                </coding>
+            </patternCodeableConcept>
+            <binding>
+                <strength value="preferred" />
+                <valueSet value="http://hl7.org/fhir/ValueSet/document-classcodes" />
+            </binding>
+        </element>
+        <element id="Composition.section:prescriptionInformation.code.coding">
+            <path value="Composition.section.code.coding" />
+            <min value="1" />
+            <max value="1" />
+        </element>
+        <element id="Composition.section:prescriptionInformation.code.coding.system">
+            <path value="Composition.section.code.coding.system" />
+            <min value="1" />
+        </element>
+        <element id="Composition.section:prescriptionInformation.code.coding.code">
+            <path value="Composition.section.code.coding.code" />
+            <min value="1" />
+            <fixedCode value="57828-6" />
+        </element>
+        <element id="Composition.section:prescriptionInformation.section">
+            <path value="Composition.section.section" />
+            <slicing>
+                <discriminator>
+                    <type value="value" />
+                    <path value="code" />
+                </discriminator>
+                <rules value="open" />
+            </slicing>
+            <min value="1" />
+            <mustSupport value="true" />
+        </element>
+        <element id="Composition.section:prescriptionInformation.section:prescriptionReason">
+            <path value="Composition.section.section" />
+            <sliceName value="prescriptionReason" />
+            <min value="1" />
+            <max value="1" />
+        </element>
+        <element id="Composition.section:prescriptionInformation.section:prescriptionReason.title">
+            <path value="Composition.section.section.title" />
+            <min value="1" />
+            <fixedString value="Motivo(s) da Prescrição" />
+        </element>
+        <element id="Composition.section:prescriptionInformation.section:prescriptionReason.code">
+            <path value="Composition.section.section.code" />
+            <min value="1" />
+            <patternCodeableConcept>
+                <coding>
+                    <system value="http://loinc.org" />
+                    <code value="75310-3" />
+                </coding>
+            </patternCodeableConcept>
+            <binding>
+                <strength value="preferred" />
+                <valueSet value="http://hl7.org/fhir/ValueSet/c80-doc-typecodes" />
+            </binding>
+        </element>
+        <element
+            id="Composition.section:prescriptionInformation.section:prescriptionReason.code.coding">
+            <path value="Composition.section.section.code.coding" />
+            <min value="1" />
+        </element>
+        <element
+            id="Composition.section:prescriptionInformation.section:prescriptionReason.code.coding.system">
+            <path value="Composition.section.section.code.coding.system" />
+            <min value="1" />
+        </element>
+        <element
+            id="Composition.section:prescriptionInformation.section:prescriptionReason.code.coding.code">
+            <path value="Composition.section.section.code.coding.code" />
+            <min value="1" />
+            <fixedCode value="75310-3" />
+        </element>
+        <element id="Composition.section:prescriptionInformation.section:prescriptionReason.entry">
+            <path value="Composition.section.section.entry" />
+            <min value="1" />
+            <type>
+                <code value="Reference" />
+                <targetProfile
+                    value="http://www.saude.gov.br/fhir/r4/StructureDefinition/BRProblemaDiagnostico" />
+            </type>
+        </element>
+        <element
+            id="Composition.section:prescriptionInformation.section:prescriptionReason.entry.reference">
+            <path value="Composition.section.section.entry.reference" />
+            <min value="1" />
+        </element>
+        <element id="Composition.section:prescriptionInformation.section:prescriptionMedications">
+            <path value="Composition.section.section" />
+            <sliceName value="prescriptionMedications" />
+            <min value="1" />
+            <max value="1" />
+        </element>
+        <element
+            id="Composition.section:prescriptionInformation.section:prescriptionMedications.title">
+            <path value="Composition.section.section.title" />
+            <min value="1" />
+            <fixedString value="Medicamentos Prescritos" />
+        </element>
+        <element
+            id="Composition.section:prescriptionInformation.section:prescriptionMedications.code">
+            <path value="Composition.section.section.code" />
+            <min value="1" />
+            <patternCodeableConcept>
+                <coding>
+                    <system value="http://loinc.org" />
+                    <code value="57828-6" />
+                </coding>
+            </patternCodeableConcept>
+            <binding>
+                <strength value="preferred" />
+                <valueSet value="http://hl7.org/fhir/ValueSet/c80-doc-typecodes" />
+            </binding>
+        </element>
+        <element
+            id="Composition.section:prescriptionInformation.section:prescriptionMedications.code.coding">
+            <path value="Composition.section.section.code.coding" />
+            <min value="1" />
+        </element>
+        <element
+            id="Composition.section:prescriptionInformation.section:prescriptionMedications.code.coding.system">
+            <path value="Composition.section.section.code.coding.system" />
+            <min value="1" />
+        </element>
+        <element
+            id="Composition.section:prescriptionInformation.section:prescriptionMedications.code.coding.code">
+            <path value="Composition.section.section.code.coding.code" />
+            <min value="1" />
+            <fixedCode value="57828-6" />
+        </element>
+        <element
+            id="Composition.section:prescriptionInformation.section:prescriptionMedications.entry">
+            <path value="Composition.section.section.entry" />
+            <min value="1" />
+            <type>
+                <code value="Reference" />
+                <targetProfile
+                    value="http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSPrescricaoMedicamento" />
+            </type>
+        </element>
+        <element
+            id="Composition.section:prescriptionInformation.section:prescriptionMedications.entry.reference">
+            <path value="Composition.section.section.entry.reference" />
+            <min value="1" />
+        </element>
+    </differential>
+</StructureDefinition>

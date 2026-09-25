@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+    <id value="RNDSEstabelecimentoSaude" />
+    <meta xmlns="http://hl7.org/fhir">
+        <lastUpdated value="2026-06-22T17:00:00-03:00" />
+    </meta>
+    <language value="pt-BR" />
+    <url value="http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSEstabelecimentoSaude" />
+    <version value="1.0.0" />
+    <name value="RNDSEstabelecimentoSaude" />
+    <title value="Estabelecimento de Saúde RNDS" />
+    <status value="active" />
+    <date value="2024-12-10" />
+    <description
+        value="Este perfil representa um agrupamento formal ou informal reconhecido de pessoas ou organizações com o propósito de alcançar alguma forma de ação coletiva. Inclui estabelecimentos de saúde, empresas, instituições, corporações, departamentos, grupos comunitários, grupos de práticas de saúde, planos de saúde, empresas fabricantes de produtos medicinais, entre outros." />
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166" />
+            <code value="BR" />
+            <display value="Brazil" />
+        </coding>
+    </jurisdiction>
+    <fhirVersion value="4.0.1" />
+    <kind value="resource" />
+    <abstract value="false" />
+    <type value="Organization" />
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Organization" />
+    <derivation value="constraint" />
+    <differential>
+        <element id="Organization.meta">
+            <path value="Organization.meta" />
+            <short value="Metadados sobre o recurso" />
+        </element>
+        <element id="Organization.implicitRules">
+            <path value="Organization.implicitRules" />
+            <short value="Conjunto de regras sob as quais este conteúdo foi criado" />
+        </element>
+        <element id="Organization.language">
+            <path value="Organization.language" />
+            <short value="Linguagem do recurso" />
+        </element>
+        <element id="Organization.text">
+            <path value="Organization.text" />
+            <short value="Texto narrativo" />
+        </element>
+        <element id="Organization.contained">
+            <path value="Organization.contained" />
+            <short value="Recursos contidos" />
+        </element>
+        <element id="Organization.extension">
+            <path value="Organization.extension" />
+            <short value="Extenções adicionais" />
+        </element>
+        <element id="Organization.modifierExtension">
+            <path value="Organization.modifierExtension" />
+            <short value="Extensões adicionais" />
+        </element>
+        <element id="Organization.identifier">
+            <path value="Organization.identifier" />
+            <slicing>
+                <discriminator>
+                    <type value="value" />
+                    <path value="system" />
+                </discriminator>
+                <description value="Identificadores nacionais do estabelecimento" />
+                <rules value="open" />
+            </slicing>
+            <short value="Nome da organização nacional" />
+            <definition value="Identifica esta organização em vários sistemas" />
+            <min value="1" />
+        </element>
+        <element id="Organization.identifier:cnes">
+            <path value="Organization.identifier" />
+            <sliceName value="cnes" />
+            <short value="Identificador do estabelecimento" />
+            <definition value="Identificador do estabelecimento" />
+            <min value="1" />
+            <max value="1" />
+            <constraint>
+                <key value="estab-2" />
+                <severity value="error" />
+                <human
+                    value="O número do CNES do estabelecimento de saúde é inválido (Organization.identifier.value). O número deve conter 7 dígitos e não pode conter letras ou caracteres especiais, apenas números." />
+                <expression value="value.matches('^(?!(\\d)\\1{6})\\d{7}$')" />
+            </constraint>
+        </element>
+        <element id="Organization.identifier:cnes.use">
+            <path value="Organization.identifier.use" />
+            <short value="Uso do identificador do estabelecimento" />
+            <definition
+                value="usual: identificador usual do estabelecimento. official: identificador oficial do estabelecimento. temp: identificador temporário do estabelecimento. secondary: identificador secundário do estabelecimento." />
+            <fixedCode value="official" />
+        </element>
+        <element id="Organization.identifier:cnes.type">
+            <path value="Organization.identifier.type" />
+            <short value="Tipo do identificador do estabelecimento" />
+            <definition value="Código que representa o tipo do identificador do estabelecimento" />
+        </element>
+        <element id="Organization.identifier:cnes.type.coding">
+            <path value="Organization.identifier.type.coding" />
+            <short value="Codificação do tipo do identificador do estabelecimento" />
+            <definition
+                value="Codificação que representa o tipo do identificador do estabelecimento" />
+            <min value="1" />
+            <max value="1" />
+        </element>
+        <element id="Organization.identifier:cnes.type.coding.system">
+            <path value="Organization.identifier.type.coding.system" />
+            <short value="Sistema da codificação do tipo do identificador do estabelecimento" />
+            <min value="1" />
+        </element>
+        <element id="Organization.identifier:cnes.type.coding.version">
+            <path value="Organization.identifier.type.coding.version" />
+            <short value="Versão da codificação do tipo do identificador do estabelecimento" />
+        </element>
+        <element id="Organization.identifier:cnes.type.coding.code">
+            <path value="Organization.identifier.type.coding.code" />
+            <short value="Código da codificação do tipo do identificador do estabelecimento" />
+            <min value="1" />
+        </element>
+        <element id="Organization.identifier:cnes.type.coding.display">
+            <path value="Organization.identifier.type.coding.display" />
+            <short value="Texto da codificação do tipo do identificador do estabelecimento" />
+        </element>
+        <element id="Organization.identifier:cnes.type.coding.userSelected">
+            <path value="Organization.identifier.type.coding.userSelected" />
+            <short
+                value="Seleção do usuário da codificação do tipo do identificador do estabelecimento" />
+        </element>
+        <element id="Organization.identifier:cnes.type.text">
+            <path value="Organization.identifier.type.text" />
+            <short value="Texto do tipo do identificador do estabelecimento" />
+        </element>
+        <element id="Organization.identifier:cnes.system">
+            <path value="Organization.identifier.system" />
+            <short value="Sistema do identificador do estabelecimento" />
+            <min value="1" />
+            <fixedUri value="https://saude.gov.br/sid/cnes" />
+        </element>
+        <element id="Organization.identifier:cnes.value">
+            <path value="Organization.identifier.value" />
+            <short value="Valor do identificador do estabelecimento" />
+            <min value="1" />
+        </element>
+        <element id="Organization.identifier:cnes.period">
+            <path value="Organization.identifier.period" />
+            <short value="Período de uso do identificador do estabelecimento" />
+        </element>
+        <element id="Organization.identifier:cnes.assigner">
+            <path value="Organization.identifier.assigner" />
+            <short value="Entidade que atribuiu o identificador do estabelecimento" />
+        </element>
+        <element id="Organization.identifier:cnes.assigner.display">
+            <path value="Organization.identifier.assigner.display" />
+            <short value="Nome da entidade que atribuiu o identificador do estabelecimento" />
+        </element>
+        <element id="Organization.identifier:cpf">
+            <path value="Organization.identifier" />
+            <sliceName value="cpf" />
+            <short value="Identificador do estabelecimento" />
+            <max value="1" />
+            <constraint>
+                <key value="estab-3" />
+                <severity value="error" />
+                <human
+                    value="O número do CPF do estabelecimento de saúde é inválido (Organization.identifier.value). O número deve conter 11 dígitos e não pode conter letras ou caracteres especiais, apenas números." />
+                <expression value="value.matches('^(?!(\\d)\\1{10})\\d{11}$')" />
+            </constraint>
+        </element>
+        <element id="Organization.identifier:cpf.use">
+            <path value="Organization.identifier.use" />
+            <short value="Uso do identificador do estabelecimento" />
+            <definition
+                value="usual: identificador usual do estabelecimento. official: identificador oficial do estabelecimento. temp: identificador temporário do estabelecimento. secondary: identificador secundário do estabelecimento." />
+            <fixedCode value="official" />
+        </element>
+        <element id="Organization.identifier:cpf.type">
+            <path value="Organization.identifier.type" />
+            <short value="Tipo do identificador do estabelecimento" />
+        </element>
+        <element id="Organization.identifier:cpf.type.coding">
+            <path value="Organization.identifier.type.coding" />
+            <short value="Codificação do tipo do identificador do estabelecimento" />
+            <min value="1" />
+            <max value="1" />
+        </element>
+        <element id="Organization.identifier:cpf.type.coding.system">
+            <path value="Organization.identifier.type.coding.system" />
+            <short value="Sistema da codificação do tipo do identificador do estabelecimento" />
+            <min value="1" />
+        </element>
+        <element id="Organization.identifier:cpf.type.coding.version">
+            <path value="Organization.identifier.type.coding.version" />
+            <short value="Versão da codificação do tipo do identificador do estabelecimento" />
+        </element>
+        <element id="Organization.identifier:cpf.type.coding.code">
+            <path value="Organization.identifier.type.coding.code" />
+            <short value="Código da codificação do tipo do identificador do estabelecimento" />
+            <min value="1" />
+        </element>
+        <element id="Organization.identifier:cpf.type.coding.display">
+            <path value="Organization.identifier.type.coding.display" />
+            <short value="Texto da codificação do tipo do identificador do estabelecimento" />
+        </element>
+        <element id="Organization.identifier:cpf.type.coding.userSelected">
+            <path value="Organization.identifier.type.coding.userSelected" />
+            <short
+                value="Seleção do usuário da codificação do tipo do identificador do estabelecimento" />
+        </element>
+        <element id="Organization.identifier:cpf.type.text">
+            <path value="Organization.identifier.type.text" />
+            <short value="Texto do tipo do identificador do estabelecimento" />
+        </element>
+        <element id="Organization.identifier:cpf.system">
+            <path value="Organization.identifier.system" />
+            <short value="Sistema do identificador do estabelecimento" />
+            <min value="1" />
+            <fixedUri value="https://saude.gov.br/sid/cpf" />
+        </element>
+        <element id="Organization.identifier:cpf.value">
+            <path value="Organization.identifier.value" />
+            <short value="Valor do identificador do estabelecimento" />
+            <min value="1" />
+        </element>
+        <element id="Organization.identifier:cpf.period">
+            <path value="Organization.identifier.period" />
+            <short value="Período de uso do identificador do estabelecimento" />
+        </element>
+        <element id="Organization.identifier:cpf.assigner">
+            <path value="Organization.identifier.assigner" />
+            <short value="Entidade que atribuiu o identificador do estabelecimento" />
+        </element>
+        <element id="Organization.identifier:cpf.assigner.display">
+            <path value="Organization.identifier.assigner.display" />
+            <short value="Nome da entidade que atribuiu o identificador do estabelecimento" />
+        </element>
+        <element id="Organization.identifier:cnpj">
+            <path value="Organization.identifier" />
+            <sliceName value="cnpj" />
+            <short value="Identificador do estabelecimento" />
+            <max value="1" />
+            <constraint>
+                <key value="estab-4" />
+                <severity value="error" />
+                <human
+                    value="O número do CNPJ do estabelecimento de saúde é inválido (Organization.identifier.value). O número deve conter 14 caracteres e não pode conter caracteres especiais, apenas números e letras maiúsculas." />
+                <expression value="value.matches('^(?!(\\d)\\1{13})[A-Z0-9]{12}\\d{2}$')" />
+            </constraint>
+        </element>
+        <element id="Organization.identifier:cnpj.use">
+            <path value="Organization.identifier.use" />
+            <short value="Uso do identificador do estabelecimento" />
+            <definition
+                value="usual: identificador usual do estabelecimento. official: identificador oficial do estabelecimento. temp: identificador temporário do estabelecimento. secondary: identificador secundário do estabelecimento." />
+            <fixedCode value="official" />
+        </element>
+        <element id="Organization.identifier:cnpj.type">
+            <path value="Organization.identifier.type" />
+            <short value="Tipo do identificador do estabelecimento" />
+        </element>
+        <element id="Organization.identifier:cnpj.type.id">
+            <path value="Organization.identifier.type.id" />
+            <short value="Id lógico do tipo do identificador do estabelecimento" />
+        </element>
+        <element id="Organization.identifier:cnpj.type.extension">
+            <path value="Organization.identifier.type.extension" />
+            <short value="Extensões do tipo do identificador do estabelecimento" />
+        </element>
+        <element id="Organization.identifier:cnpj.type.coding">
+            <path value="Organization.identifier.type.coding" />
+            <short value="Codificação do tipo do identificador do estabelecimento" />
+            <min value="1" />
+            <max value="1" />
+        </element>
+        <element id="Organization.identifier:cnpj.type.coding.system">
+            <path value="Organization.identifier.type.coding.system" />
+            <short value="Sistema da codificação do tipo do identificador do estabelecimento" />
+            <min value="1" />
+        </element>
+        <element id="Organization.identifier:cnpj.type.coding.version">
+            <path value="Organization.identifier.type.coding.version" />
+            <short value="Versão da codificação do tipo do identificador do estabelecimento" />
+        </element>
+        <element id="Organization.identifier:cnpj.type.coding.code">
+            <path value="Organization.identifier.type.coding.code" />
+            <short value="Código da codificação do tipo do identificador do estabelecimento" />
+            <min value="1" />
+        </element>
+        <element id="Organization.identifier:cnpj.type.coding.display">
+            <path value="Organization.identifier.type.coding.display" />
+            <short value="Texto da codificação do tipo do identificador do estabelecimento" />
+        </element>
+        <element id="Organization.identifier:cnpj.type.coding.userSelected">
+            <path value="Organization.identifier.type.coding.userSelected" />
+            <short
+                value="Seleção do usuário da codificação do tipo do identificador do estabelecimento" />
+        </element>
+        <element id="Organization.identifier:cnpj.type.text">
+            <path value="Organization.identifier.type.text" />
+            <short value="Texto do tipo do identificador do estabelecimento" />
+        </element>
+        <element id="Organization.identifier:cnpj.system">
+            <path value="Organization.identifier.system" />
+            <short value="Sistema do identificador do estabelecimento" />
+            <min value="1" />
+            <fixedUri value="https://saude.gov.br/sid/cnpj" />
+        </element>
+        <element id="Organization.identifier:cnpj.value">
+            <path value="Organization.identifier.value" />
+            <short value="Valor do identificador do estabelecimento" />
+            <min value="1" />
+        </element>
+        <element id="Organization.identifier:cnpj.period">
+            <path value="Organization.identifier.period" />
+            <short value="Período de uso do identificador do estabelecimento" />
+        </element>
+        <element id="Organization.identifier:cnpj.assigner">
+            <path value="Organization.identifier.assigner" />
+            <short value="Entidade que atribuiu o identificador do estabelecimento" />
+        </element>
+        <element id="Organization.identifier:cnpj.assigner.display">
+            <path value="Organization.identifier.assigner.display" />
+            <short value="Nome da entidade que atribuiu o identificador do estabelecimento" />
+        </element>
+        <element id="Organization.active">
+            <path value="Organization.active" />
+            <short value="Estabelecimento de Saúde ainda está em ativo." />
+        </element>
+        <element id="Organization.type">
+            <path value="Organization.type" />
+            <short value="Tipo do Estabelecimento de saúde" />
+        </element>
+        <element id="Organization.name">
+            <path value="Organization.name" />
+            <short value="Nome usado para a organização" />
+        </element>
+        <element id="Organization.alias">
+            <path value="Organization.alias" />
+            <short value="Nome Empresarial" />
+        </element>
+        <element id="Organization.telecom">
+            <path value="Organization.telecom" />
+            <short value="Meio de contato" />
+        </element>
+        <element id="Organization.address">
+            <path value="Organization.address" />
+            <short value="Dados de Endereçamento" />
+        </element>
+        <element id="Organization.partOf">
+            <path value="Organization.partOf" />
+            <short value="CPF/CNPJ do Estabelecimento/Mantenedora" />
+            <definition
+                value="Pessoa Física (CPF) ou Jurídica (CNPJ) proprietária do Estabelecimento de Saúde." />
+        </element>
+        <element id="Organization.contact">
+            <path value="Organization.contact" />
+            <short value="Contato" />
+            <definition value="Contato para a organização para uma determinada finalidade" />
+        </element>
+        <element id="Organization.contact.purpose">
+            <path value="Organization.contact.purpose" />
+            <short value="Tipo de Contato" />
+            <definition
+                value="O tipo de contato Vinculação: ContactEntityType ( extensible ): A finalidade para a qual você entraria em contato com uma parte de contato." />
+        </element>
+        <element id="Organization.contact.name">
+            <path value="Organization.contact.name" />
+            <short value="Nome Associado ao contato" />
+        </element>
+        <element id="Organization.contact.telecom">
+            <path value="Organization.contact.telecom" />
+            <short value="Meio de Contato" />
+            <definition
+                value="Contato, Informação de Contato, Telefone, E-Mail, Correio Eletrônico, Celular, Recado" />
+        </element>
+        <element id="Organization.contact.address">
+            <path value="Organization.contact.address" />
+            <short value="Endereço para contato" />
+        </element>
+        <element id="Organization.endpoint">
+            <path value="Organization.endpoint" />
+            <short value="APIs que disponibilizam acesso aos serviços da organização" />
+        </element>
+    </differential>
+</StructureDefinition>

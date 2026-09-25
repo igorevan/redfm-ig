@@ -7,7 +7,7 @@ Indica o tipo de dispensação que foi realizada
 
  **References** 
 
-* [Dispensação ou Fornecimento Eletrônico de Medicamento](StructureDefinition-RNDSMedicamentoDispensadoFornecido.md)
+* [Dispensação ou Fornecimento de Medicamento](StructureDefinition-RNDSDispensacaoMedicamento.md)
 
 ### Logical Definition (CLD)
 
@@ -41,7 +41,7 @@ Indica o tipo de dispensação que foi realizada
     "_valueInteger" : {
       "extension" : [{
         "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
-        "valueCanonical" : "https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0/ImplementationGuide/br.gov.saude.redfm.fhir"
+        "valueCanonical" : "https://fhir.saude.gov.br/redfm/ImplementationGuide/br.gov.saude.redfm.fhir"
       }]
     }
   },
@@ -51,7 +51,7 @@ Indica o tipo de dispensação que foi realizada
     "_valueCode" : {
       "extension" : [{
         "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
-        "valueCanonical" : "https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0/ImplementationGuide/br.gov.saude.redfm.fhir"
+        "valueCanonical" : "https://fhir.saude.gov.br/redfm/ImplementationGuide/br.gov.saude.redfm.fhir"
       }]
     }
   },

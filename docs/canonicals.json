@@ -20,6 +20,13 @@
   "name" : "BRCID10"
 },
 {
+  "id" : "BRJustificativaIndividuoNaoIdentificado",
+  "type" : "CodeSystem",
+  "url" : "http://www.saude.gov.br/fhir/r4/CodeSystem/BRJustificativaIndividuoNaoIdentificado",
+  "version" : "1.0.0-release",
+  "name" : "BRJustificativaIndividuoNaoIdentificado"
+},
+{
   "id" : "BRObmAMPP",
   "type" : "CodeSystem",
   "url" : "http://www.saude.gov.br/fhir/r4/CodeSystem/BRObmAMPP",
@@ -83,6 +90,27 @@
   "name" : "BRViaAdministracao"
 },
 {
+  "id" : "BRIndividuoNaoIdentificado-1.0",
+  "type" : "StructureDefinition",
+  "url" : "http://www.saude.gov.br/fhir/r4/StructureDefinition/BRIndividuoNaoIdentificado-1.0",
+  "version" : "1.0.0-release",
+  "name" : "BRIndividuoNaoIdentificado"
+},
+{
+  "id" : "BRProblemaDiagnostico",
+  "type" : "StructureDefinition",
+  "url" : "http://www.saude.gov.br/fhir/r4/StructureDefinition/BRProblemaDiagnostico",
+  "version" : "1.0.0-release",
+  "name" : "BRProblemaDiagnostico"
+},
+{
+  "id" : "RNDSDispensacaoMedicamento",
+  "type" : "StructureDefinition",
+  "url" : "http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSDispensacaoMedicamento",
+  "version" : "1.0.0-release",
+  "name" : "RNDSDispensacaoMedicamento"
+},
+{
   "id" : "RNDSEstabelecimentoSaude",
   "type" : "StructureDefinition",
   "url" : "http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSEstabelecimentoSaude",
@@ -104,25 +132,11 @@
   "name" : "RNDSMedicamento"
 },
 {
-  "id" : "RNDSMedicamentoDispensado",
+  "id" : "RNDSPrescricaoMedicamento",
   "type" : "StructureDefinition",
-  "url" : "http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSMedicamentoDispensado",
+  "url" : "http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSPrescricaoMedicamento",
   "version" : "1.0.0-release",
-  "name" : "RNDSMedicamentoDispensado"
-},
-{
-  "id" : "RNDSMedicamentoDispensadoFornecido",
-  "type" : "StructureDefinition",
-  "url" : "http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSMedicamentoDispensadoFornecido",
-  "version" : "1.0.0-release",
-  "name" : "RNDSMedicamentoDispensadoFornecido"
-},
-{
-  "id" : "RNDSPrescricaoMedicamentoDispensado",
-  "type" : "StructureDefinition",
-  "url" : "http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSPrescricaoMedicamentoDispensado",
-  "version" : "1.0.0-release",
-  "name" : "RNDSPrescricaoMedicamentoDispensado"
+  "name" : "RNDSPrescricaoMedicamento"
 },
 {
   "id" : "RNDSProfissional",
@@ -132,11 +146,39 @@
   "name" : "RNDSProfissional"
 },
 {
-  "id" : "RNDSRegistroEletronicoDispensacaoFornecimentoMedicamento",
+  "id" : "RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos",
   "type" : "StructureDefinition",
-  "url" : "http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamento",
+  "url" : "http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos",
   "version" : "1.0.0-release",
-  "name" : "RNDSRegistroEletronicoDispensacaoFornecimentoMedicamento"
+  "name" : "RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos"
+},
+{
+  "id" : "BRCategoriaCondicao",
+  "type" : "ValueSet",
+  "url" : "http://www.saude.gov.br/fhir/r4/ValueSet/BRCategoriaCondicao",
+  "version" : "1.0.0-release",
+  "name" : "BRCategoriaCondicao"
+},
+{
+  "id" : "BREstadoDocumento-1.0",
+  "type" : "ValueSet",
+  "url" : "http://www.saude.gov.br/fhir/r4/ValueSet/BREstadoDocumento-1.0",
+  "version" : "1.0.0-release",
+  "name" : "BREstadoDocumento"
+},
+{
+  "id" : "BREstadoResolucaoDiagnosticoProblema-1.0",
+  "type" : "ValueSet",
+  "url" : "http://www.saude.gov.br/fhir/r4/ValueSet/BREstadoResolucaoDiagnosticoProblema-1.0",
+  "version" : "1.0.0-release",
+  "name" : "BREstadoResolucaoDiagnosticoProblema"
+},
+{
+  "id" : "BRJustificativaIndividuoNaoIdentificado-1.0",
+  "type" : "ValueSet",
+  "url" : "http://www.saude.gov.br/fhir/r4/ValueSet/BRJustificativaIndividuoNaoIdentificado-1.0",
+  "version" : "1.0.0-release",
+  "name" : "BRJustificativaIndividuoNaoIdentificado"
 },
 {
   "id" : "BROcupacao-1.0",
@@ -151,6 +193,13 @@
   "url" : "http://www.saude.gov.br/fhir/r4/ValueSet/BRProblemaDiagnostico",
   "version" : "1.0.0-release",
   "name" : "BRProblemaDiagnostico"
+},
+{
+  "id" : "BRSexo-1.0",
+  "type" : "ValueSet",
+  "url" : "http://www.saude.gov.br/fhir/r4/ValueSet/BRSexo-1.0",
+  "version" : "1.0.0-release",
+  "name" : "BRSexo"
 },
 {
   "id" : "BRTerminologiaMedicamento",
@@ -186,6 +235,13 @@
   "url" : "http://www.saude.gov.br/fhir/r4/ValueSet/BRViaAdministracao-1.0",
   "version" : "1.0.0-release",
   "name" : "BRViaAdministracao"
+},
+{
+  "id" : "RNDSUnidadeMedida",
+  "type" : "ValueSet",
+  "url" : "http://www.saude.gov.br/fhir/r4/ValueSet/RNDSUnidadeMedida",
+  "version" : "1.0.0-release",
+  "name" : "Unidade de Medida RNDS"
 },
 {
   "id" : "br-core-composition",
@@ -246,7 +302,7 @@
 {
   "id" : "br.gov.saude.redfm.fhir",
   "type" : "ImplementationGuide",
-  "url" : "https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0/ImplementationGuide/br.gov.saude.redfm.fhir",
+  "url" : "https://fhir.saude.gov.br/redfm/ImplementationGuide/br.gov.saude.redfm.fhir",
   "version" : "1.0.0-release",
   "name" : "REDFMRNDSIG"
 },

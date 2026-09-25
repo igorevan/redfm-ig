@@ -7,7 +7,7 @@
   "language" : "en",
   "text" : {
     "status" : "generated",
-    "div" : "<div xml:lang=\"en\" xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"en\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem BRTipoDispensacaoRealizada</b></p><a name=\"BRTipoDispensacaoRealizada\"> </a><a name=\"hcBRTipoDispensacaoRealizada\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Língua: en</p><p style=\"margin-bottom: 0px\">Perfil: <a href=\"http://hl7.org/fhir/R4/shareablecodesystem.html\">Shareable CodeSystem</a></p></div><p>Este case-sensitive sistema de código <code>http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoDispensacaoRealizada</code> define o seguinte códigos:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td></tr><tr><td style=\"white-space:nowrap\">fully-dispensing<a name=\"BRTipoDispensacaoRealizada-fully-dispensing\"> </a></td><td>Fully Dispensing</td></tr><tr><td style=\"white-space:nowrap\">medication-return<a name=\"BRTipoDispensacaoRealizada-medication-return\"> </a></td><td>Medication Return</td></tr><tr><td style=\"white-space:nowrap\">partial-dispensing<a name=\"BRTipoDispensacaoRealizada-partial-dispensing\"> </a></td><td>Partial Dispensing</td></tr><tr><td style=\"white-space:nowrap\">not-dispensed<a name=\"BRTipoDispensacaoRealizada-not-dispensed\"> </a></td><td>Not Dipensed</td></tr></table></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem BRTipoDispensacaoRealizada</b></p><a name=\"BRTipoDispensacaoRealizada\"> </a><a name=\"hcBRTipoDispensacaoRealizada\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Língua: en</p><p style=\"margin-bottom: 0px\">Perfil: <a href=\"http://hl7.org/fhir/R4/shareablecodesystem.html\">Shareable CodeSystem</a></p></div><p>Este case-sensitive sistema de código <code>http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoDispensacaoRealizada</code> define o seguinte códigos:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td></tr><tr><td style=\"white-space:nowrap\">fully-dispensing<a name=\"BRTipoDispensacaoRealizada-fully-dispensing\"> </a></td><td>Fully Dispensing</td></tr><tr><td style=\"white-space:nowrap\">medication-return<a name=\"BRTipoDispensacaoRealizada-medication-return\"> </a></td><td>Medication Return</td></tr><tr><td style=\"white-space:nowrap\">partial-dispensing<a name=\"BRTipoDispensacaoRealizada-partial-dispensing\"> </a></td><td>Partial Dispensing</td></tr><tr><td style=\"white-space:nowrap\">not-dispensed<a name=\"BRTipoDispensacaoRealizada-not-dispensed\"> </a></td><td>Not Dipensed</td></tr></table></div>"
   },
   "extension" : [{
     "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
@@ -19,7 +19,7 @@
     "_valueInteger" : {
       "extension" : [{
         "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
-        "valueCanonical" : "https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0/ImplementationGuide/br.gov.saude.redfm.fhir"
+        "valueCanonical" : "https://fhir.saude.gov.br/redfm/ImplementationGuide/br.gov.saude.redfm.fhir"
       }]
     }
   },
@@ -29,7 +29,7 @@
     "_valueCode" : {
       "extension" : [{
         "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
-        "valueCanonical" : "https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0/ImplementationGuide/br.gov.saude.redfm.fhir"
+        "valueCanonical" : "https://fhir.saude.gov.br/redfm/ImplementationGuide/br.gov.saude.redfm.fhir"
       }]
     }
   },

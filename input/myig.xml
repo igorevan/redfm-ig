@@ -15,7 +15,7 @@
     <valueCode value="4.0.1" />
   </extension>
   <url
-    value="https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0/ImplementationGuide/br.gov.saude.redfm.fhir" />
+    value="https://fhir.saude.gov.br/redfm/ImplementationGuide/br.gov.saude.redfm.fhir" />
   <version value="1.0.0-release" />
   <name value="REDFMRNDSIG" />
   <title
@@ -67,105 +67,118 @@
     <resource>
       <reference>
         <reference
-          value="StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamento" />
+          value="StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos" />
       </reference>
       <name value="Registro Eletrônico de Dispensação ou Fornecimento de Medicamento (REDFM)" />
     </resource>
     <resource>
       <reference>
-        <reference value="Bundle/01-redfm-completo-com-prescricao-dispensador-farmaceutico" />
+        <reference value="Bundle/example-redfm-01-prescricao-na-rnds" />
       </reference>
-      <name value="Bundle de exemplo do REDFM (1)" />
+      <name value="Bundle 1 de exemplo do REDFM (Prescrição na RNDS)" />
       <description
-        value="Bundle de exemplo do Registro Eletrônico de Dispensação ou Fornecimento de Medicamento
-    (REDFM)" />
+        value="Bundle de exemplo do REDFM com prescrição realizada na RNDS" />
       <exampleCanonical
-        value="http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamento"
+        value="http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos"
       />
     </resource>
     <resource>
       <reference>
-        <reference value="Bundle/02-redfm-completo-substituicao" />
+        <reference value="Bundle/example-redfm-02-prescricao-fora-rnds" />
       </reference>
-      <name value="Bundle de exemplo do REDFM (2)" />
+      <name value="Bundle 2 de exemplo do REDFM (Prescrição fora da RNDS)" />
       <description
-        value="Bundle de exemplo do Registro Eletrônico de Dispensação ou Fornecimento de Medicamento
-    (REDFM)" />
+        value="Bundle de exemplo do REDFM com prescrição realizada fora da RNDS" />
       <exampleCanonical
-        value="http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamento"
+        value="http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos"
       />
     </resource>
     <resource>
       <reference>
-        <reference value="Bundle/03-redfm-completo-com-prescricao-fornecedor-nao-farmaceutico" />
+        <reference value="Bundle/example-redfm-03-fornecimento-sem-crf" />
       </reference>
-      <name value="Bundle de exemplo do REDFM (3)" />
+      <name value="Bundle 3 de exemplo do REDFM (Fornecimento sem CRF)" />
       <description
-        value="Bundle de exemplo do Registro Eletrônico de Dispensação ou Fornecimento de Medicamento
-    (REDFM)" />
+        value="Bundle de exemplo do REDFM com fornecimento realizado sem CRF" />
       <exampleCanonical
-        value="http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamento"
+        value="http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos"
       />
     </resource>
     <resource>
       <reference>
-        <reference value="Bundle/04-redfm-parcial-com-prescricao-fornecedor-nao-farmaceutico" />
+        <reference value="Bundle/example-redfm-04-fornecedor-e-dispensador" />
       </reference>
-      <name value="Bundle de exemplo do REDFM (4)" />
+      <name value="Bundle 4 de exemplo do REDFM (Fornecedor e Dispensador)" />
       <description
-        value="Bundle de exemplo do Registro Eletrônico de Dispensação ou Fornecimento de Medicamento
-    (REDFM)" />
+        value="Bundle de exemplo do REDFM com fornecedor e dispensador" />
       <exampleCanonical
-        value="http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamento"
+        value="http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos"
       />
     </resource>
     <resource>
       <reference>
-        <reference value="Bundle/05-redfm-nao-dispensado-com-prescricao" />
+        <reference value="Bundle/example-redfm-05-nao-atendida-com-justificativa" />
       </reference>
-      <name value="Bundle de exemplo do REDFM (5)" />
+      <name value="Bundle 5 de exemplo do REDFM (Não Atendida com Justificativa)" />
       <description
-        value="Bundle de exemplo do Registro Eletrônico de Dispensação ou Fornecimento de Medicamento
-    (REDFM)" />
+        value="Bundle de exemplo do REDFM não atendido e com justificativa" />
       <exampleCanonical
-        value="http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamento"
+        value="http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos"
       />
     </resource>
     <resource>
       <reference>
-        <reference
-          value="Bundle/06-redfm-nao-dispensado-e-dispensado-com-prescricao-dispensador-farmaceutico" />
+        <reference value="Bundle/example-redfm-06-parcial-com-justificativa" />
       </reference>
-      <name value="Bundle de exemplo do REDFM (6)" />
+      <name value="Bundle 6 de exemplo do REDFM (Parcial com Justificativa)" />
       <description
-        value="Bundle de exemplo do Registro Eletrônico de Dispensação ou Fornecimento de Medicamento
-    (REDFM)" />
+        value="Bundle de exemplo do REDFM parcial e com justificativa" />
       <exampleCanonical
-        value="http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamento"
+        value="http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos"
       />
     </resource>
     <resource>
       <reference>
-        <reference value="Bundle/07-redfm-completo-sem-prescricao-fornecedor-nao-farmaceutico" />
+        <reference value="Bundle/example-redfm-07-lote-validade" />
       </reference>
-      <name value="Bundle de exemplo do REDFM (7)" />
+      <name value="Bundle 7 de exemplo do REDFM (Lote e Validade)" />
       <description
-        value="Bundle de exemplo do Registro Eletrônico de Dispensação ou Fornecimento de Medicamento
-    (REDFM)" />
+        value="Bundle de exemplo do REDFM com lote e validade" />
       <exampleCanonical
-        value="http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamento"
+        value="http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos"
       />
     </resource>
     <resource>
       <reference>
-        <reference value="Bundle/08-redfm-completo-sem-prescricao-dispensador-farmaceutico" />
+        <reference value="Bundle/example-redfm-08-author-valido-cnpj" />
       </reference>
-      <name value="Bundle de exemplo do REDFM (8)" />
+      <name value="Bundle 8 de exemplo do REDFM (Author válido - CNPJ)" />
       <description
-        value="Bundle de exemplo do Registro Eletrônico de Dispensação ou Fornecimento de Medicamento
-    (REDFM)" />
+        value="Bundle de exemplo do REDFM com author válido - CNPJ" />
       <exampleCanonical
-        value="http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamento"
+        value="http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos"
+      />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Bundle/example-redfm-09-author-valido-cpf" />
+      </reference>
+      <name value="Bundle 9 de exemplo do REDFM (Author válido - CPF)" />
+      <description
+        value="Bundle de exemplo do REDFM com author válido - CPF" />
+      <exampleCanonical
+        value="http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos"
+      />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Bundle/example-redfm-10-ampp-sem-forma-fabricante" />
+      </reference>
+      <name value="Bundle 10 de exemplo do REDFM (AMPP sem forma e com fabricante)" />
+      <description
+        value="Bundle de exemplo do REDFM com AMPP sem forma e com fabricante" />
+      <exampleCanonical
+        value="http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos"
       />
     </resource>
     <page>
@@ -182,11 +195,11 @@
         <title value="Abstract" />
         <generation value="html" />
       </page>
-      <page>
+      <!-- <page>
         <nameUrl value="lives.html" />
         <title value="Lives" />
         <generation value="html" />
-      </page>
+      </page> -->
       <page>
         <nameUrl value="credenciamento.html" />
         <title value="Credenciamento" />

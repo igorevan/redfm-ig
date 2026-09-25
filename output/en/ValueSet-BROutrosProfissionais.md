@@ -7,6 +7,7 @@ Conjunto de todos os conselhos regionais de outros profissionais da saúde do Br
 
  **References** 
 
+* [Profissional RNDS](StructureDefinition-RNDSProfissional.md)
 * [BR Core Practitioner](StructureDefinition-br-core-practitioner.md)
 
 ### Logical Definition (CLD)
@@ -41,7 +42,7 @@ Conjunto de todos os conselhos regionais de outros profissionais da saúde do Br
     "_valueInteger" : {
       "extension" : [{
         "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
-        "valueCanonical" : "https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0/ImplementationGuide/br.gov.saude.redfm.fhir"
+        "valueCanonical" : "https://fhir.saude.gov.br/redfm/ImplementationGuide/br.gov.saude.redfm.fhir"
       }]
     }
   },
@@ -51,7 +52,7 @@ Conjunto de todos os conselhos regionais de outros profissionais da saúde do Br
     "_valueCode" : {
       "extension" : [{
         "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
-        "valueCanonical" : "https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0/ImplementationGuide/br.gov.saude.redfm.fhir"
+        "valueCanonical" : "https://fhir.saude.gov.br/redfm/ImplementationGuide/br.gov.saude.redfm.fhir"
       }]
     }
   },

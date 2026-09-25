@@ -2,10 +2,10 @@
 
 ## Downloads
 
- Faça o download do Guia de Implementação (IG) completo [aqui](full-ig.zip) 
+ Baixe todo o Guia de Implementação [aqui](../full-ig.zip) 
 
-* Artefatos: Exemplos
-  * [XML](definitions.xml.zip): [XML](examples.xml.zip)
-  * [JSON](definitions.json.zip): [JSON](examples.json.zip)
-  * [Turtle](definitions.ttl.zip): [Turtle](examples.ttl.zip)
+* Artifact Definitions: Examples
+  * [XML](../definitions.xml.zip): [XML](../examples.xml.zip)
+  * [JSON](../definitions.json.zip): [JSON](../examples.json.zip)
+  * [Turtle](../definitions.ttl.zip): [Turtle](../examples.ttl.zip)
 

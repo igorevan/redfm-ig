@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="1fe0a2ac-233c-40cd-ae96-ade51f996ad0"/>
+  <id value="2fa931d3-3e5d-40fe-8502-9bc44fa16e42"/>
   <meta>
-    <lastUpdated value="2026-06-30T10:02:10.427-03:00"/>
+    <lastUpdated value="2026-09-25T17:16:20.746-03:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -630,8 +630,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:5ace75de-e4bb-4042-a0b4-fbdd217c5b1b"/>
-          <timestamp value="2026-06-30T10:10:55-03:00"/>
+          <identifier value="urn:uuid:0f71d423-1dd4-411c-ac59-27be7ee91cf6"/>
+          <timestamp value="2026-09-25T17:23:13-03:00"/>
           <total value="27"/>
           <offset value="0"/>
           <parameter>
@@ -1417,8 +1417,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:5ace75de-e4bb-4042-a0b4-fbdd217c5b1b"/>
-          <timestamp value="2026-06-30T10:10:55-03:00"/>
+          <identifier value="urn:uuid:b891d157-9a8c-4bd4-93e6-4d45f1a8c099"/>
+          <timestamp value="2026-09-25T17:23:13-03:00"/>
           <total value="27"/>
           <offset value="0"/>
           <parameter>
@@ -2204,8 +2204,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:67f81bb2-b43c-4b3a-8be9-8ba138c9e702"/>
-          <timestamp value="2026-06-30T10:10:55-03:00"/>
+          <identifier value="urn:uuid:ce05f810-e5bc-4325-99e7-c4d680122935"/>
+          <timestamp value="2026-09-25T17:23:13-03:00"/>
           <total value="27"/>
           <offset value="0"/>
           <parameter>
@@ -2991,8 +2991,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:67f81bb2-b43c-4b3a-8be9-8ba138c9e702"/>
-          <timestamp value="2026-06-30T10:10:55-03:00"/>
+          <identifier value="urn:uuid:d082cf1c-301e-41b1-b12d-bfa7e0c658b2"/>
+          <timestamp value="2026-09-25T17:23:13-03:00"/>
           <total value="27"/>
           <offset value="0"/>
           <parameter>
@@ -3778,8 +3778,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:3de90ddc-80b2-44af-9cd5-ee3997dcbf3b"/>
-          <timestamp value="2026-06-30T10:10:55-03:00"/>
+          <identifier value="urn:uuid:dce7c7c0-8496-46fa-97a7-2e8607c9842f"/>
+          <timestamp value="2026-09-25T17:23:13-03:00"/>
           <total value="27"/>
           <offset value="0"/>
           <parameter>
@@ -4565,8 +4565,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:3de90ddc-80b2-44af-9cd5-ee3997dcbf3b"/>
-          <timestamp value="2026-06-30T10:10:55-03:00"/>
+          <identifier value="urn:uuid:87a7b413-929d-4052-92fa-b0a802ada497"/>
+          <timestamp value="2026-09-25T17:23:13-03:00"/>
           <total value="27"/>
           <offset value="0"/>
           <parameter>
@@ -5352,8 +5352,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:ce345d98-4a7e-486c-a73c-7ffd7a2d1755"/>
-          <timestamp value="2026-06-30T10:10:55-03:00"/>
+          <identifier value="urn:uuid:eca38ecc-05b4-4d7c-a6cf-05fc8551b3c9"/>
+          <timestamp value="2026-09-25T17:23:13-03:00"/>
           <total value="27"/>
           <offset value="0"/>
           <parameter>
@@ -6139,8 +6139,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:ce345d98-4a7e-486c-a73c-7ffd7a2d1755"/>
-          <timestamp value="2026-06-30T10:10:55-03:00"/>
+          <identifier value="urn:uuid:93dc850e-53e0-41a8-944e-1860e5fe8eb5"/>
+          <timestamp value="2026-09-25T17:23:13-03:00"/>
           <total value="27"/>
           <offset value="0"/>
           <parameter>
@@ -6303,6 +6303,1608 @@
     </resource>
   </entry>
   <entry>
+    <fullUrl value="http://www.saude.gov.br/fhir/r4/ValueSet/BRCategoriaCondicao"/>
+    <resource>
+      <ValueSet>
+        <meta>
+          <lastUpdated value="2020-03-11T19:14:51.806+00:00"/>
+        </meta>
+        <language value="en"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" data-fhir="generated">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansão efectuada internamente com base em 
+              <a href="http://terminology.hl7.org/7.4.0/CodeSystem-condition-category.html">codesystem Condition Category Codes v2.0.0 (CodeSystem)</a>
+              <span class="copy-text-inline">
+                <button data-clipboard-text="http://terminology.hl7.org/CodeSystem/condition-category|2.0.0" title="Clique para copiar o URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>Este conjunto de valores contém 2 conceitos</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>Sistema</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Código</b>
+                </td>
+                <td>
+                  <b>Ecrã (en)</b>
+                </td>
+                <td>
+                  <b>Definição</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://terminology.hl7.org/CodeSystem/condition-category-problem-list-item"> </a>
+                  <code>http://terminology.hl7.org/CodeSystem/condition-category</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://terminology.hl7.org/7.4.0/CodeSystem-condition-category.html#condition-category-problem-list-item">problem-list-item</a>
+                </td>
+                <td>Problem List Item</td>
+                <td>An item on a problem list that can be managed over time and can be expressed by a practitioner (e.g. physician, nurse), patient, or related person.</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/condition-category&quot;, &quot;version&quot;: &quot;2.0.0&quot;, &quot;code&quot;: &quot;problem-list-item&quot;, &quot;display&quot;: &quot;Problem List Item&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/condition-category&quot;&gt;&lt;version value=&quot;2.0.0&quot;&gt;&lt;code value=&quot;problem-list-item&quot;&gt;&lt;display value=&quot;Problem List Item&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://terminology.hl7.org/CodeSystem/condition-category-encounter-diagnosis"> </a>
+                  <code>http://terminology.hl7.org/CodeSystem/condition-category</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://terminology.hl7.org/7.4.0/CodeSystem-condition-category.html#condition-category-encounter-diagnosis">encounter-diagnosis</a>
+                </td>
+                <td>Encounter Diagnosis</td>
+                <td>A point in time diagnosis (e.g. from a physician or nurse) in context of an encounter.</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/condition-category&quot;, &quot;version&quot;: &quot;2.0.0&quot;, &quot;code&quot;: &quot;encounter-diagnosis&quot;, &quot;display&quot;: &quot;Encounter Diagnosis&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/condition-category&quot;&gt;&lt;version value=&quot;2.0.0&quot;&gt;&lt;code value=&quot;encounter-diagnosis&quot;&gt;&lt;display value=&quot;Encounter Diagnosis&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://www.saude.gov.br/fhir/r4/ValueSet/BRCategoriaCondicao"/>
+        <version value="1.0.0-release"/>
+        <name value="BRCategoriaCondicao"/>
+        <title value="Classificação de uma condição"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2020-03-11T19:15:12.2909517+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="BR"/>
+          </coding>
+        </jurisdiction>
+        <immutable value="false"/>
+        <expansion>
+          <identifier value="urn:uuid:cb863006-6979-430d-9339-1671ada2ec08"/>
+          <timestamp value="2026-09-25T17:23:13-03:00"/>
+          <total value="2"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://terminology.hl7.org/CodeSystem/condition-category|2.0.0"/>
+          </parameter>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-category"/>
+            <code value="problem-list-item"/>
+            <display value="Problem List Item"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-category"/>
+            <code value="encounter-diagnosis"/>
+            <display value="Encounter Diagnosis"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://www.saude.gov.br/fhir/r4/ValueSet/BRCategoriaCondicao"/>
+    <resource>
+      <ValueSet>
+        <meta>
+          <lastUpdated value="2020-03-11T19:14:51.806+00:00"/>
+        </meta>
+        <language value="en"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" data-fhir="generated">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansão efectuada internamente com base em 
+              <a href="http://terminology.hl7.org/7.4.0/CodeSystem-condition-category.html">codesystem Condition Category Codes v2.0.0 (CodeSystem)</a>
+              <span class="copy-text-inline">
+                <button data-clipboard-text="http://terminology.hl7.org/CodeSystem/condition-category|2.0.0" title="Clique para copiar o URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>Este conjunto de valores contém 2 conceitos</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>Sistema</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Código</b>
+                </td>
+                <td>
+                  <b>Ecrã (en)</b>
+                </td>
+                <td>
+                  <b>Definição</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://terminology.hl7.org/CodeSystem/condition-category-problem-list-item"> </a>
+                  <code>http://terminology.hl7.org/CodeSystem/condition-category</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://terminology.hl7.org/7.4.0/CodeSystem-condition-category.html#condition-category-problem-list-item">problem-list-item</a>
+                </td>
+                <td>Problem List Item</td>
+                <td>An item on a problem list that can be managed over time and can be expressed by a practitioner (e.g. physician, nurse), patient, or related person.</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/condition-category&quot;, &quot;version&quot;: &quot;2.0.0&quot;, &quot;code&quot;: &quot;problem-list-item&quot;, &quot;display&quot;: &quot;Problem List Item&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/condition-category&quot;&gt;&lt;version value=&quot;2.0.0&quot;&gt;&lt;code value=&quot;problem-list-item&quot;&gt;&lt;display value=&quot;Problem List Item&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://terminology.hl7.org/CodeSystem/condition-category-encounter-diagnosis"> </a>
+                  <code>http://terminology.hl7.org/CodeSystem/condition-category</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://terminology.hl7.org/7.4.0/CodeSystem-condition-category.html#condition-category-encounter-diagnosis">encounter-diagnosis</a>
+                </td>
+                <td>Encounter Diagnosis</td>
+                <td>A point in time diagnosis (e.g. from a physician or nurse) in context of an encounter.</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/condition-category&quot;, &quot;version&quot;: &quot;2.0.0&quot;, &quot;code&quot;: &quot;encounter-diagnosis&quot;, &quot;display&quot;: &quot;Encounter Diagnosis&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/condition-category&quot;&gt;&lt;version value=&quot;2.0.0&quot;&gt;&lt;code value=&quot;encounter-diagnosis&quot;&gt;&lt;display value=&quot;Encounter Diagnosis&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://www.saude.gov.br/fhir/r4/ValueSet/BRCategoriaCondicao"/>
+        <version value="1.0.0-release"/>
+        <name value="BRCategoriaCondicao"/>
+        <title value="Classificação de uma condição"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2020-03-11T19:15:12.2909517+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="BR"/>
+          </coding>
+        </jurisdiction>
+        <immutable value="false"/>
+        <expansion>
+          <identifier value="urn:uuid:6c106d81-646f-47a4-8906-14186a3c654a"/>
+          <timestamp value="2026-09-25T17:23:13-03:00"/>
+          <total value="2"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://terminology.hl7.org/CodeSystem/condition-category|2.0.0"/>
+          </parameter>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-category"/>
+            <code value="problem-list-item"/>
+            <display value="Problem List Item"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-category"/>
+            <code value="encounter-diagnosis"/>
+            <display value="Encounter Diagnosis"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://www.saude.gov.br/fhir/r4/ValueSet/BREstadoDocumento-1.0"/>
+    <resource>
+      <ValueSet>
+        <language value="en"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" data-fhir="generated">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansão efectuada internamente com base em 
+              <a href="http://hl7.org/fhir/R4/codesystem-composition-status.html">codesystem CompositionStatus v4.0.1 (CodeSystem)</a>
+              <span class="copy-text-inline">
+                <button data-clipboard-text="http://hl7.org/fhir/composition-status|4.0.1" title="Clique para copiar o URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>Este conjunto de valores contém 4 conceitos</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>Sistema</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Código</b>
+                </td>
+                <td>
+                  <b>Ecrã (en)</b>
+                </td>
+                <td>
+                  <b>Definição</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://hl7.org/fhir/composition-status-preliminary"> </a>
+                  <code>http://hl7.org/fhir/composition-status</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://hl7.org/fhir/R4/codesystem-composition-status.html#composition-status-preliminary">preliminary</a>
+                </td>
+                <td>Preliminary</td>
+                <td>This is a preliminary composition or document (also known as initial or interim). The content may be incomplete or unverified.</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.org/fhir/composition-status&quot;, &quot;version&quot;: &quot;4.0.1&quot;, &quot;code&quot;: &quot;preliminary&quot;, &quot;display&quot;: &quot;Preliminary&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/composition-status&quot;&gt;&lt;version value=&quot;4.0.1&quot;&gt;&lt;code value=&quot;preliminary&quot;&gt;&lt;display value=&quot;Preliminary&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://hl7.org/fhir/composition-status-final"> </a>
+                  <code>http://hl7.org/fhir/composition-status</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://hl7.org/fhir/R4/codesystem-composition-status.html#composition-status-final">final</a>
+                </td>
+                <td>Final</td>
+                <td>This version of the composition is complete and verified by an appropriate person and no further work is planned. Any subsequent updates would be on a new version of the composition.</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.org/fhir/composition-status&quot;, &quot;version&quot;: &quot;4.0.1&quot;, &quot;code&quot;: &quot;final&quot;, &quot;display&quot;: &quot;Final&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/composition-status&quot;&gt;&lt;version value=&quot;4.0.1&quot;&gt;&lt;code value=&quot;final&quot;&gt;&lt;display value=&quot;Final&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://hl7.org/fhir/composition-status-amended"> </a>
+                  <code>http://hl7.org/fhir/composition-status</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://hl7.org/fhir/R4/codesystem-composition-status.html#composition-status-amended">amended</a>
+                </td>
+                <td>Amended</td>
+                <td>The composition content or the referenced resources have been modified (edited or added to) subsequent to being released as &quot;final&quot; and the composition is complete and verified by an authorized person.</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.org/fhir/composition-status&quot;, &quot;version&quot;: &quot;4.0.1&quot;, &quot;code&quot;: &quot;amended&quot;, &quot;display&quot;: &quot;Amended&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/composition-status&quot;&gt;&lt;version value=&quot;4.0.1&quot;&gt;&lt;code value=&quot;amended&quot;&gt;&lt;display value=&quot;Amended&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://hl7.org/fhir/composition-status-entered-in-error"> </a>
+                  <code>http://hl7.org/fhir/composition-status</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://hl7.org/fhir/R4/codesystem-composition-status.html#composition-status-entered-in-error">entered-in-error</a>
+                </td>
+                <td>Entered in error</td>
+                <td>The composition or document was originally created/issued in error, and this is an amendment that marks that the entire series should not be considered as valid.</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.org/fhir/composition-status&quot;, &quot;version&quot;: &quot;4.0.1&quot;, &quot;code&quot;: &quot;entered-in-error&quot;, &quot;display&quot;: &quot;Entered in error&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/composition-status&quot;&gt;&lt;version value=&quot;4.0.1&quot;&gt;&lt;code value=&quot;entered-in-error&quot;&gt;&lt;display value=&quot;Entered in error&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://www.saude.gov.br/fhir/r4/ValueSet/BREstadoDocumento-1.0"/>
+        <version value="1.0.0-release"/>
+        <name value="BREstadoDocumento"/>
+        <title value="Estado do Documento"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2020-03-12T13:26:58.6069366+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="BR"/>
+          </coding>
+        </jurisdiction>
+        <immutable value="false"/>
+        <expansion>
+          <identifier value="urn:uuid:91bc6425-974b-4ef7-bab4-227883a8d7d8"/>
+          <timestamp value="2026-09-25T17:23:13-03:00"/>
+          <total value="4"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="warning-draft"/>
+            <valueUri value="http://hl7.org/fhir/composition-status|4.0.1"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://hl7.org/fhir/composition-status|4.0.1"/>
+          </parameter>
+          <contains>
+            <system value="http://hl7.org/fhir/composition-status"/>
+            <code value="preliminary"/>
+            <display value="Preliminary"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/composition-status"/>
+            <code value="final"/>
+            <display value="Final"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/composition-status"/>
+            <code value="amended"/>
+            <display value="Amended"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/composition-status"/>
+            <code value="entered-in-error"/>
+            <display value="Entered in error"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://www.saude.gov.br/fhir/r4/ValueSet/BREstadoDocumento-1.0"/>
+    <resource>
+      <ValueSet>
+        <language value="en"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" data-fhir="generated">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansão efectuada internamente com base em 
+              <a href="http://hl7.org/fhir/R4/codesystem-composition-status.html">codesystem CompositionStatus v4.0.1 (CodeSystem)</a>
+              <span class="copy-text-inline">
+                <button data-clipboard-text="http://hl7.org/fhir/composition-status|4.0.1" title="Clique para copiar o URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>Este conjunto de valores contém 4 conceitos</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>Sistema</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Código</b>
+                </td>
+                <td>
+                  <b>Ecrã (en)</b>
+                </td>
+                <td>
+                  <b>Definição</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://hl7.org/fhir/composition-status-preliminary"> </a>
+                  <code>http://hl7.org/fhir/composition-status</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://hl7.org/fhir/R4/codesystem-composition-status.html#composition-status-preliminary">preliminary</a>
+                </td>
+                <td>Preliminary</td>
+                <td>This is a preliminary composition or document (also known as initial or interim). The content may be incomplete or unverified.</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.org/fhir/composition-status&quot;, &quot;version&quot;: &quot;4.0.1&quot;, &quot;code&quot;: &quot;preliminary&quot;, &quot;display&quot;: &quot;Preliminary&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/composition-status&quot;&gt;&lt;version value=&quot;4.0.1&quot;&gt;&lt;code value=&quot;preliminary&quot;&gt;&lt;display value=&quot;Preliminary&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://hl7.org/fhir/composition-status-final"> </a>
+                  <code>http://hl7.org/fhir/composition-status</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://hl7.org/fhir/R4/codesystem-composition-status.html#composition-status-final">final</a>
+                </td>
+                <td>Final</td>
+                <td>This version of the composition is complete and verified by an appropriate person and no further work is planned. Any subsequent updates would be on a new version of the composition.</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.org/fhir/composition-status&quot;, &quot;version&quot;: &quot;4.0.1&quot;, &quot;code&quot;: &quot;final&quot;, &quot;display&quot;: &quot;Final&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/composition-status&quot;&gt;&lt;version value=&quot;4.0.1&quot;&gt;&lt;code value=&quot;final&quot;&gt;&lt;display value=&quot;Final&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://hl7.org/fhir/composition-status-amended"> </a>
+                  <code>http://hl7.org/fhir/composition-status</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://hl7.org/fhir/R4/codesystem-composition-status.html#composition-status-amended">amended</a>
+                </td>
+                <td>Amended</td>
+                <td>The composition content or the referenced resources have been modified (edited or added to) subsequent to being released as &quot;final&quot; and the composition is complete and verified by an authorized person.</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.org/fhir/composition-status&quot;, &quot;version&quot;: &quot;4.0.1&quot;, &quot;code&quot;: &quot;amended&quot;, &quot;display&quot;: &quot;Amended&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/composition-status&quot;&gt;&lt;version value=&quot;4.0.1&quot;&gt;&lt;code value=&quot;amended&quot;&gt;&lt;display value=&quot;Amended&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://hl7.org/fhir/composition-status-entered-in-error"> </a>
+                  <code>http://hl7.org/fhir/composition-status</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://hl7.org/fhir/R4/codesystem-composition-status.html#composition-status-entered-in-error">entered-in-error</a>
+                </td>
+                <td>Entered in error</td>
+                <td>The composition or document was originally created/issued in error, and this is an amendment that marks that the entire series should not be considered as valid.</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.org/fhir/composition-status&quot;, &quot;version&quot;: &quot;4.0.1&quot;, &quot;code&quot;: &quot;entered-in-error&quot;, &quot;display&quot;: &quot;Entered in error&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/composition-status&quot;&gt;&lt;version value=&quot;4.0.1&quot;&gt;&lt;code value=&quot;entered-in-error&quot;&gt;&lt;display value=&quot;Entered in error&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://www.saude.gov.br/fhir/r4/ValueSet/BREstadoDocumento-1.0"/>
+        <version value="1.0.0-release"/>
+        <name value="BREstadoDocumento"/>
+        <title value="Estado do Documento"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2020-03-12T13:26:58.6069366+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="BR"/>
+          </coding>
+        </jurisdiction>
+        <immutable value="false"/>
+        <expansion>
+          <identifier value="urn:uuid:dc4b429e-8a46-47dd-9b80-34a66067ee7b"/>
+          <timestamp value="2026-09-25T17:23:13-03:00"/>
+          <total value="4"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="warning-draft"/>
+            <valueUri value="http://hl7.org/fhir/composition-status|4.0.1"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://hl7.org/fhir/composition-status|4.0.1"/>
+          </parameter>
+          <contains>
+            <system value="http://hl7.org/fhir/composition-status"/>
+            <code value="preliminary"/>
+            <display value="Preliminary"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/composition-status"/>
+            <code value="final"/>
+            <display value="Final"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/composition-status"/>
+            <code value="amended"/>
+            <display value="Amended"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/composition-status"/>
+            <code value="entered-in-error"/>
+            <display value="Entered in error"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://www.saude.gov.br/fhir/r4/ValueSet/BREstadoResolucaoDiagnosticoProblema-1.0"/>
+    <resource>
+      <ValueSet>
+        <language value="en"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" data-fhir="generated">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansão efectuada internamente com base em 
+              <a href="http://terminology.hl7.org/7.4.0/CodeSystem-condition-clinical.html">codesystem Condition Clinical Status Codes v3.0.0 (CodeSystem)</a>
+              <span class="copy-text-inline">
+                <button data-clipboard-text="http://terminology.hl7.org/CodeSystem/condition-clinical|3.0.0" title="Clique para copiar o URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>Este conjunto de valores contém 6 conceitos</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>Sistema</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Código</b>
+                </td>
+                <td>
+                  <b>Ecrã (en)</b>
+                </td>
+                <td>
+                  <b>Definição</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://terminology.hl7.org/CodeSystem/condition-clinical-active"> </a>
+                  <code>http://terminology.hl7.org/CodeSystem/condition-clinical</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://terminology.hl7.org/7.4.0/CodeSystem-condition-clinical.html#condition-clinical-active">active</a>
+                </td>
+                <td>Active</td>
+                <td>The subject is currently experiencing the condition or situation, there is evidence of the condition or situation, or considered to be a significant risk.</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/condition-clinical&quot;, &quot;version&quot;: &quot;3.0.0&quot;, &quot;code&quot;: &quot;active&quot;, &quot;display&quot;: &quot;Active&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/condition-clinical&quot;&gt;&lt;version value=&quot;3.0.0&quot;&gt;&lt;code value=&quot;active&quot;&gt;&lt;display value=&quot;Active&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://terminology.hl7.org/CodeSystem/condition-clinical-recurrence"> </a>
+                  <code>http://terminology.hl7.org/CodeSystem/condition-clinical</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://terminology.hl7.org/7.4.0/CodeSystem-condition-clinical.html#condition-clinical-recurrence">recurrence</a>
+                </td>
+                <td>Recurrence</td>
+                <td>The subject is experiencing a reoccurence or repeating of a previously resolved condition or situation, e.g. urinary tract infection, food insecurity.</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/condition-clinical&quot;, &quot;version&quot;: &quot;3.0.0&quot;, &quot;code&quot;: &quot;recurrence&quot;, &quot;display&quot;: &quot;Recurrence&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/condition-clinical&quot;&gt;&lt;version value=&quot;3.0.0&quot;&gt;&lt;code value=&quot;recurrence&quot;&gt;&lt;display value=&quot;Recurrence&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://terminology.hl7.org/CodeSystem/condition-clinical-relapse"> </a>
+                  <code>http://terminology.hl7.org/CodeSystem/condition-clinical</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://terminology.hl7.org/7.4.0/CodeSystem-condition-clinical.html#condition-clinical-relapse">relapse</a>
+                </td>
+                <td>Relapse</td>
+                <td>The subject is experiencing a return of a condition or situation after a period of improvement or remission, e.g. relapse of cancer, alcoholism.</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/condition-clinical&quot;, &quot;version&quot;: &quot;3.0.0&quot;, &quot;code&quot;: &quot;relapse&quot;, &quot;display&quot;: &quot;Relapse&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/condition-clinical&quot;&gt;&lt;version value=&quot;3.0.0&quot;&gt;&lt;code value=&quot;relapse&quot;&gt;&lt;display value=&quot;Relapse&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://terminology.hl7.org/CodeSystem/condition-clinical-inactive"> </a>
+                  <code>http://terminology.hl7.org/CodeSystem/condition-clinical</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://terminology.hl7.org/7.4.0/CodeSystem-condition-clinical.html#condition-clinical-inactive">inactive</a>
+                </td>
+                <td>Inactive</td>
+                <td>The subject is no longer experiencing the condition or situation and there is no longer evidence or appreciable risk of the condition or situation.</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/condition-clinical&quot;, &quot;version&quot;: &quot;3.0.0&quot;, &quot;code&quot;: &quot;inactive&quot;, &quot;display&quot;: &quot;Inactive&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/condition-clinical&quot;&gt;&lt;version value=&quot;3.0.0&quot;&gt;&lt;code value=&quot;inactive&quot;&gt;&lt;display value=&quot;Inactive&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://terminology.hl7.org/CodeSystem/condition-clinical-remission"> </a>
+                  <code>http://terminology.hl7.org/CodeSystem/condition-clinical</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://terminology.hl7.org/7.4.0/CodeSystem-condition-clinical.html#condition-clinical-remission">remission</a>
+                </td>
+                <td>Remission</td>
+                <td>The subject is not presently experiencing the condition or situation, but there is a risk of the condition or situation returning.</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/condition-clinical&quot;, &quot;version&quot;: &quot;3.0.0&quot;, &quot;code&quot;: &quot;remission&quot;, &quot;display&quot;: &quot;Remission&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/condition-clinical&quot;&gt;&lt;version value=&quot;3.0.0&quot;&gt;&lt;code value=&quot;remission&quot;&gt;&lt;display value=&quot;Remission&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://terminology.hl7.org/CodeSystem/condition-clinical-resolved"> </a>
+                  <code>http://terminology.hl7.org/CodeSystem/condition-clinical</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://terminology.hl7.org/7.4.0/CodeSystem-condition-clinical.html#condition-clinical-resolved">resolved</a>
+                </td>
+                <td>Resolved</td>
+                <td>The subject is not presently experiencing the condition or situation and there is a negligible perceived risk of the condition or situation returning.</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/condition-clinical&quot;, &quot;version&quot;: &quot;3.0.0&quot;, &quot;code&quot;: &quot;resolved&quot;, &quot;display&quot;: &quot;Resolved&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/condition-clinical&quot;&gt;&lt;version value=&quot;3.0.0&quot;&gt;&lt;code value=&quot;resolved&quot;&gt;&lt;display value=&quot;Resolved&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://www.saude.gov.br/fhir/r4/ValueSet/BREstadoResolucaoDiagnosticoProblema-1.0"/>
+        <version value="1.0.0-release"/>
+        <name value="BREstadoResolucaoDiagnosticoProblema"/>
+        <title value="Estado da Resolução de Diagnóstico ou Problema"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2020-03-12T13:09:53.3447193+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="BR"/>
+          </coding>
+        </jurisdiction>
+        <immutable value="false"/>
+        <expansion>
+          <identifier value="urn:uuid:3e00c476-f3d4-4f14-9546-0bacd37f2d9e"/>
+          <timestamp value="2026-09-25T17:23:13-03:00"/>
+          <total value="6"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://terminology.hl7.org/CodeSystem/condition-clinical|3.0.0"/>
+          </parameter>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+            <code value="active"/>
+            <display value="Active"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+            <code value="recurrence"/>
+            <display value="Recurrence"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+            <code value="relapse"/>
+            <display value="Relapse"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+            <code value="inactive"/>
+            <display value="Inactive"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+            <code value="remission"/>
+            <display value="Remission"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+            <code value="resolved"/>
+            <display value="Resolved"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://www.saude.gov.br/fhir/r4/ValueSet/BREstadoResolucaoDiagnosticoProblema-1.0"/>
+    <resource>
+      <ValueSet>
+        <language value="en"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" data-fhir="generated">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansão efectuada internamente com base em 
+              <a href="http://terminology.hl7.org/7.4.0/CodeSystem-condition-clinical.html">codesystem Condition Clinical Status Codes v3.0.0 (CodeSystem)</a>
+              <span class="copy-text-inline">
+                <button data-clipboard-text="http://terminology.hl7.org/CodeSystem/condition-clinical|3.0.0" title="Clique para copiar o URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>Este conjunto de valores contém 6 conceitos</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>Sistema</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Código</b>
+                </td>
+                <td>
+                  <b>Ecrã (en)</b>
+                </td>
+                <td>
+                  <b>Definição</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://terminology.hl7.org/CodeSystem/condition-clinical-active"> </a>
+                  <code>http://terminology.hl7.org/CodeSystem/condition-clinical</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://terminology.hl7.org/7.4.0/CodeSystem-condition-clinical.html#condition-clinical-active">active</a>
+                </td>
+                <td>Active</td>
+                <td>The subject is currently experiencing the condition or situation, there is evidence of the condition or situation, or considered to be a significant risk.</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/condition-clinical&quot;, &quot;version&quot;: &quot;3.0.0&quot;, &quot;code&quot;: &quot;active&quot;, &quot;display&quot;: &quot;Active&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/condition-clinical&quot;&gt;&lt;version value=&quot;3.0.0&quot;&gt;&lt;code value=&quot;active&quot;&gt;&lt;display value=&quot;Active&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://terminology.hl7.org/CodeSystem/condition-clinical-recurrence"> </a>
+                  <code>http://terminology.hl7.org/CodeSystem/condition-clinical</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://terminology.hl7.org/7.4.0/CodeSystem-condition-clinical.html#condition-clinical-recurrence">recurrence</a>
+                </td>
+                <td>Recurrence</td>
+                <td>The subject is experiencing a reoccurence or repeating of a previously resolved condition or situation, e.g. urinary tract infection, food insecurity.</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/condition-clinical&quot;, &quot;version&quot;: &quot;3.0.0&quot;, &quot;code&quot;: &quot;recurrence&quot;, &quot;display&quot;: &quot;Recurrence&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/condition-clinical&quot;&gt;&lt;version value=&quot;3.0.0&quot;&gt;&lt;code value=&quot;recurrence&quot;&gt;&lt;display value=&quot;Recurrence&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://terminology.hl7.org/CodeSystem/condition-clinical-relapse"> </a>
+                  <code>http://terminology.hl7.org/CodeSystem/condition-clinical</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://terminology.hl7.org/7.4.0/CodeSystem-condition-clinical.html#condition-clinical-relapse">relapse</a>
+                </td>
+                <td>Relapse</td>
+                <td>The subject is experiencing a return of a condition or situation after a period of improvement or remission, e.g. relapse of cancer, alcoholism.</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/condition-clinical&quot;, &quot;version&quot;: &quot;3.0.0&quot;, &quot;code&quot;: &quot;relapse&quot;, &quot;display&quot;: &quot;Relapse&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/condition-clinical&quot;&gt;&lt;version value=&quot;3.0.0&quot;&gt;&lt;code value=&quot;relapse&quot;&gt;&lt;display value=&quot;Relapse&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://terminology.hl7.org/CodeSystem/condition-clinical-inactive"> </a>
+                  <code>http://terminology.hl7.org/CodeSystem/condition-clinical</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://terminology.hl7.org/7.4.0/CodeSystem-condition-clinical.html#condition-clinical-inactive">inactive</a>
+                </td>
+                <td>Inactive</td>
+                <td>The subject is no longer experiencing the condition or situation and there is no longer evidence or appreciable risk of the condition or situation.</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/condition-clinical&quot;, &quot;version&quot;: &quot;3.0.0&quot;, &quot;code&quot;: &quot;inactive&quot;, &quot;display&quot;: &quot;Inactive&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/condition-clinical&quot;&gt;&lt;version value=&quot;3.0.0&quot;&gt;&lt;code value=&quot;inactive&quot;&gt;&lt;display value=&quot;Inactive&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://terminology.hl7.org/CodeSystem/condition-clinical-remission"> </a>
+                  <code>http://terminology.hl7.org/CodeSystem/condition-clinical</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://terminology.hl7.org/7.4.0/CodeSystem-condition-clinical.html#condition-clinical-remission">remission</a>
+                </td>
+                <td>Remission</td>
+                <td>The subject is not presently experiencing the condition or situation, but there is a risk of the condition or situation returning.</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/condition-clinical&quot;, &quot;version&quot;: &quot;3.0.0&quot;, &quot;code&quot;: &quot;remission&quot;, &quot;display&quot;: &quot;Remission&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/condition-clinical&quot;&gt;&lt;version value=&quot;3.0.0&quot;&gt;&lt;code value=&quot;remission&quot;&gt;&lt;display value=&quot;Remission&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://terminology.hl7.org/CodeSystem/condition-clinical-resolved"> </a>
+                  <code>http://terminology.hl7.org/CodeSystem/condition-clinical</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://terminology.hl7.org/7.4.0/CodeSystem-condition-clinical.html#condition-clinical-resolved">resolved</a>
+                </td>
+                <td>Resolved</td>
+                <td>The subject is not presently experiencing the condition or situation and there is a negligible perceived risk of the condition or situation returning.</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/condition-clinical&quot;, &quot;version&quot;: &quot;3.0.0&quot;, &quot;code&quot;: &quot;resolved&quot;, &quot;display&quot;: &quot;Resolved&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/condition-clinical&quot;&gt;&lt;version value=&quot;3.0.0&quot;&gt;&lt;code value=&quot;resolved&quot;&gt;&lt;display value=&quot;Resolved&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://www.saude.gov.br/fhir/r4/ValueSet/BREstadoResolucaoDiagnosticoProblema-1.0"/>
+        <version value="1.0.0-release"/>
+        <name value="BREstadoResolucaoDiagnosticoProblema"/>
+        <title value="Estado da Resolução de Diagnóstico ou Problema"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2020-03-12T13:09:53.3447193+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="BR"/>
+          </coding>
+        </jurisdiction>
+        <immutable value="false"/>
+        <expansion>
+          <identifier value="urn:uuid:25d312a6-9e1e-4d6c-82ae-d1b0e5a3f19a"/>
+          <timestamp value="2026-09-25T17:23:13-03:00"/>
+          <total value="6"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://terminology.hl7.org/CodeSystem/condition-clinical|3.0.0"/>
+          </parameter>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+            <code value="active"/>
+            <display value="Active"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+            <code value="recurrence"/>
+            <display value="Recurrence"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+            <code value="relapse"/>
+            <display value="Relapse"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+            <code value="inactive"/>
+            <display value="Inactive"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+            <code value="remission"/>
+            <display value="Remission"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+            <code value="resolved"/>
+            <display value="Resolved"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://www.saude.gov.br/fhir/r4/ValueSet/BRJustificativaIndividuoNaoIdentificado-1.0"/>
+    <resource>
+      <ValueSet>
+        <meta>
+          <lastUpdated value="2020-04-07T20:51:20.256+00:00"/>
+        </meta>
+        <language value="pt-BR"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-BR" lang="pt-BR" data-fhir="generated">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansão efectuada internamente com base em 
+              <a href="CodeSystem-BRJustificativaIndividuoNaoIdentificado.html">codesystem Justificativa da Impossibilidade de Identificação do Indivíduo (CodeSystem) v1.0.0-release (CodeSystem)</a>
+              <span class="copy-text-inline">
+                <button data-clipboard-text="http://www.saude.gov.br/fhir/r4/CodeSystem/BRJustificativaIndividuoNaoIdentificado|1.0.0-release" title="Clique para copiar o URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>Este conjunto de valores contém 6 conceitos</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>Sistema</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Código</b>
+                </td>
+                <td>
+                  <b>Ecrã (pt-BR)</b> - Portuguese (Brazil) (pt)
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://www.saude.gov.br/fhir/r4/CodeSystem/BRJustificativaIndividuoNaoIdentificado-01"> </a>
+                  <code>http://www.saude.gov.br/fhir/r4/CodeSystem/BRJustificativaIndividuoNaoIdentificado</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-BRJustificativaIndividuoNaoIdentificado.html#BRJustificativaIndividuoNaoIdentificado-01">01</a>
+                </td>
+                <td>Indivíduo acidentado grave</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://www.saude.gov.br/fhir/r4/CodeSystem/BRJustificativaIndividuoNaoIdentificado&quot;, &quot;version&quot;: &quot;1.0.0-release&quot;, &quot;code&quot;: &quot;01&quot;, &quot;display&quot;: &quot;Indivíduo acidentado grave&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://www.saude.gov.br/fhir/r4/CodeSystem/BRJustificativaIndividuoNaoIdentificado&quot;&gt;&lt;version value=&quot;1.0.0-release&quot;&gt;&lt;code value=&quot;01&quot;&gt;&lt;display value=&quot;Indivíduo acidentado grave&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://www.saude.gov.br/fhir/r4/CodeSystem/BRJustificativaIndividuoNaoIdentificado-02"> </a>
+                  <code>http://www.saude.gov.br/fhir/r4/CodeSystem/BRJustificativaIndividuoNaoIdentificado</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-BRJustificativaIndividuoNaoIdentificado.html#BRJustificativaIndividuoNaoIdentificado-02">02</a>
+                </td>
+                <td>Indivíduo em sofrimento mental encontrado em via pública</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://www.saude.gov.br/fhir/r4/CodeSystem/BRJustificativaIndividuoNaoIdentificado&quot;, &quot;version&quot;: &quot;1.0.0-release&quot;, &quot;code&quot;: &quot;02&quot;, &quot;display&quot;: &quot;Indivíduo em sofrimento mental encontrado em via pública&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://www.saude.gov.br/fhir/r4/CodeSystem/BRJustificativaIndividuoNaoIdentificado&quot;&gt;&lt;version value=&quot;1.0.0-release&quot;&gt;&lt;code value=&quot;02&quot;&gt;&lt;display value=&quot;Indivíduo em sofrimento mental encontrado em via pública&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://www.saude.gov.br/fhir/r4/CodeSystem/BRJustificativaIndividuoNaoIdentificado-03"> </a>
+                  <code>http://www.saude.gov.br/fhir/r4/CodeSystem/BRJustificativaIndividuoNaoIdentificado</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-BRJustificativaIndividuoNaoIdentificado.html#BRJustificativaIndividuoNaoIdentificado-03">03</a>
+                </td>
+                <td>Indivíduo com problema neurológico grave ou comatoso</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://www.saude.gov.br/fhir/r4/CodeSystem/BRJustificativaIndividuoNaoIdentificado&quot;, &quot;version&quot;: &quot;1.0.0-release&quot;, &quot;code&quot;: &quot;03&quot;, &quot;display&quot;: &quot;Indivíduo com problema neurológico grave ou comatoso&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://www.saude.gov.br/fhir/r4/CodeSystem/BRJustificativaIndividuoNaoIdentificado&quot;&gt;&lt;version value=&quot;1.0.0-release&quot;&gt;&lt;code value=&quot;03&quot;&gt;&lt;display value=&quot;Indivíduo com problema neurológico grave ou comatoso&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://www.saude.gov.br/fhir/r4/CodeSystem/BRJustificativaIndividuoNaoIdentificado-04"> </a>
+                  <code>http://www.saude.gov.br/fhir/r4/CodeSystem/BRJustificativaIndividuoNaoIdentificado</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-BRJustificativaIndividuoNaoIdentificado.html#BRJustificativaIndividuoNaoIdentificado-04">04</a>
+                </td>
+                <td>Indivíduo incapacitado por motivos sociais e/ou culturais</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://www.saude.gov.br/fhir/r4/CodeSystem/BRJustificativaIndividuoNaoIdentificado&quot;, &quot;version&quot;: &quot;1.0.0-release&quot;, &quot;code&quot;: &quot;04&quot;, &quot;display&quot;: &quot;Indivíduo incapacitado por motivos sociais e/ou culturais&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://www.saude.gov.br/fhir/r4/CodeSystem/BRJustificativaIndividuoNaoIdentificado&quot;&gt;&lt;version value=&quot;1.0.0-release&quot;&gt;&lt;code value=&quot;04&quot;&gt;&lt;display value=&quot;Indivíduo incapacitado por motivos sociais e/ou culturais&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://www.saude.gov.br/fhir/r4/CodeSystem/BRJustificativaIndividuoNaoIdentificado-05"> </a>
+                  <code>http://www.saude.gov.br/fhir/r4/CodeSystem/BRJustificativaIndividuoNaoIdentificado</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-BRJustificativaIndividuoNaoIdentificado.html#BRJustificativaIndividuoNaoIdentificado-05">05</a>
+                </td>
+                <td>Indivíduo doador de órgãos falecido</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://www.saude.gov.br/fhir/r4/CodeSystem/BRJustificativaIndividuoNaoIdentificado&quot;, &quot;version&quot;: &quot;1.0.0-release&quot;, &quot;code&quot;: &quot;05&quot;, &quot;display&quot;: &quot;Indivíduo doador de órgãos falecido&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://www.saude.gov.br/fhir/r4/CodeSystem/BRJustificativaIndividuoNaoIdentificado&quot;&gt;&lt;version value=&quot;1.0.0-release&quot;&gt;&lt;code value=&quot;05&quot;&gt;&lt;display value=&quot;Indivíduo doador de órgãos falecido&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://www.saude.gov.br/fhir/r4/CodeSystem/BRJustificativaIndividuoNaoIdentificado-99"> </a>
+                  <code>http://www.saude.gov.br/fhir/r4/CodeSystem/BRJustificativaIndividuoNaoIdentificado</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-BRJustificativaIndividuoNaoIdentificado.html#BRJustificativaIndividuoNaoIdentificado-99">99</a>
+                </td>
+                <td>Sem registro no modelo de informação de origem</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://www.saude.gov.br/fhir/r4/CodeSystem/BRJustificativaIndividuoNaoIdentificado&quot;, &quot;version&quot;: &quot;1.0.0-release&quot;, &quot;code&quot;: &quot;99&quot;, &quot;display&quot;: &quot;Sem registro no modelo de informação de origem&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://www.saude.gov.br/fhir/r4/CodeSystem/BRJustificativaIndividuoNaoIdentificado&quot;&gt;&lt;version value=&quot;1.0.0-release&quot;&gt;&lt;code value=&quot;99&quot;&gt;&lt;display value=&quot;Sem registro no modelo de informação de origem&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://www.saude.gov.br/fhir/r4/ValueSet/BRJustificativaIndividuoNaoIdentificado-1.0"/>
+        <version value="1.0.0-release"/>
+        <name value="BRJustificativaIndividuoNaoIdentificado"/>
+        <title value="Justificativa da Impossibilidade de Identificação do Indivíduo (ValueSet)"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2020-04-07T20:51:17.5349531+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="BR"/>
+          </coding>
+        </jurisdiction>
+        <immutable value="false"/>
+        <expansion>
+          <identifier value="urn:uuid:cf316da7-2fd0-47be-80fb-14128a45c239"/>
+          <timestamp value="2026-09-25T17:23:13-03:00"/>
+          <total value="6"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://www.saude.gov.br/fhir/r4/CodeSystem/BRJustificativaIndividuoNaoIdentificado|1.0.0-release"/>
+          </parameter>
+          <contains>
+            <system value="http://www.saude.gov.br/fhir/r4/CodeSystem/BRJustificativaIndividuoNaoIdentificado"/>
+            <code value="01"/>
+            <display value="Indivíduo acidentado grave"/>
+          </contains>
+          <contains>
+            <system value="http://www.saude.gov.br/fhir/r4/CodeSystem/BRJustificativaIndividuoNaoIdentificado"/>
+            <code value="02"/>
+            <display value="Indivíduo em sofrimento mental encontrado em via pública"/>
+          </contains>
+          <contains>
+            <system value="http://www.saude.gov.br/fhir/r4/CodeSystem/BRJustificativaIndividuoNaoIdentificado"/>
+            <code value="03"/>
+            <display value="Indivíduo com problema neurológico grave ou comatoso"/>
+          </contains>
+          <contains>
+            <system value="http://www.saude.gov.br/fhir/r4/CodeSystem/BRJustificativaIndividuoNaoIdentificado"/>
+            <code value="04"/>
+            <display value="Indivíduo incapacitado por motivos sociais e/ou culturais"/>
+          </contains>
+          <contains>
+            <system value="http://www.saude.gov.br/fhir/r4/CodeSystem/BRJustificativaIndividuoNaoIdentificado"/>
+            <code value="05"/>
+            <display value="Indivíduo doador de órgãos falecido"/>
+          </contains>
+          <contains>
+            <system value="http://www.saude.gov.br/fhir/r4/CodeSystem/BRJustificativaIndividuoNaoIdentificado"/>
+            <code value="99"/>
+            <display value="Sem registro no modelo de informação de origem"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://www.saude.gov.br/fhir/r4/ValueSet/BRJustificativaIndividuoNaoIdentificado-1.0"/>
+    <resource>
+      <ValueSet>
+        <meta>
+          <lastUpdated value="2020-04-07T20:51:20.256+00:00"/>
+        </meta>
+        <language value="pt-BR"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-BR" lang="pt-BR" data-fhir="generated">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansão efectuada internamente com base em 
+              <a href="CodeSystem-BRJustificativaIndividuoNaoIdentificado.html">codesystem Justificativa da Impossibilidade de Identificação do Indivíduo (CodeSystem) v1.0.0-release (CodeSystem)</a>
+              <span class="copy-text-inline">
+                <button data-clipboard-text="http://www.saude.gov.br/fhir/r4/CodeSystem/BRJustificativaIndividuoNaoIdentificado|1.0.0-release" title="Clique para copiar o URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>Este conjunto de valores contém 6 conceitos</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>Sistema</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Código</b>
+                </td>
+                <td>
+                  <b>Ecrã (pt-BR)</b> - Portuguese (Brazil) (pt)
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://www.saude.gov.br/fhir/r4/CodeSystem/BRJustificativaIndividuoNaoIdentificado-01"> </a>
+                  <code>http://www.saude.gov.br/fhir/r4/CodeSystem/BRJustificativaIndividuoNaoIdentificado</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-BRJustificativaIndividuoNaoIdentificado.html#BRJustificativaIndividuoNaoIdentificado-01">01</a>
+                </td>
+                <td>Indivíduo acidentado grave</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://www.saude.gov.br/fhir/r4/CodeSystem/BRJustificativaIndividuoNaoIdentificado&quot;, &quot;version&quot;: &quot;1.0.0-release&quot;, &quot;code&quot;: &quot;01&quot;, &quot;display&quot;: &quot;Indivíduo acidentado grave&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://www.saude.gov.br/fhir/r4/CodeSystem/BRJustificativaIndividuoNaoIdentificado&quot;&gt;&lt;version value=&quot;1.0.0-release&quot;&gt;&lt;code value=&quot;01&quot;&gt;&lt;display value=&quot;Indivíduo acidentado grave&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://www.saude.gov.br/fhir/r4/CodeSystem/BRJustificativaIndividuoNaoIdentificado-02"> </a>
+                  <code>http://www.saude.gov.br/fhir/r4/CodeSystem/BRJustificativaIndividuoNaoIdentificado</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-BRJustificativaIndividuoNaoIdentificado.html#BRJustificativaIndividuoNaoIdentificado-02">02</a>
+                </td>
+                <td>Indivíduo em sofrimento mental encontrado em via pública</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://www.saude.gov.br/fhir/r4/CodeSystem/BRJustificativaIndividuoNaoIdentificado&quot;, &quot;version&quot;: &quot;1.0.0-release&quot;, &quot;code&quot;: &quot;02&quot;, &quot;display&quot;: &quot;Indivíduo em sofrimento mental encontrado em via pública&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://www.saude.gov.br/fhir/r4/CodeSystem/BRJustificativaIndividuoNaoIdentificado&quot;&gt;&lt;version value=&quot;1.0.0-release&quot;&gt;&lt;code value=&quot;02&quot;&gt;&lt;display value=&quot;Indivíduo em sofrimento mental encontrado em via pública&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://www.saude.gov.br/fhir/r4/CodeSystem/BRJustificativaIndividuoNaoIdentificado-03"> </a>
+                  <code>http://www.saude.gov.br/fhir/r4/CodeSystem/BRJustificativaIndividuoNaoIdentificado</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-BRJustificativaIndividuoNaoIdentificado.html#BRJustificativaIndividuoNaoIdentificado-03">03</a>
+                </td>
+                <td>Indivíduo com problema neurológico grave ou comatoso</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://www.saude.gov.br/fhir/r4/CodeSystem/BRJustificativaIndividuoNaoIdentificado&quot;, &quot;version&quot;: &quot;1.0.0-release&quot;, &quot;code&quot;: &quot;03&quot;, &quot;display&quot;: &quot;Indivíduo com problema neurológico grave ou comatoso&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://www.saude.gov.br/fhir/r4/CodeSystem/BRJustificativaIndividuoNaoIdentificado&quot;&gt;&lt;version value=&quot;1.0.0-release&quot;&gt;&lt;code value=&quot;03&quot;&gt;&lt;display value=&quot;Indivíduo com problema neurológico grave ou comatoso&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://www.saude.gov.br/fhir/r4/CodeSystem/BRJustificativaIndividuoNaoIdentificado-04"> </a>
+                  <code>http://www.saude.gov.br/fhir/r4/CodeSystem/BRJustificativaIndividuoNaoIdentificado</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-BRJustificativaIndividuoNaoIdentificado.html#BRJustificativaIndividuoNaoIdentificado-04">04</a>
+                </td>
+                <td>Indivíduo incapacitado por motivos sociais e/ou culturais</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://www.saude.gov.br/fhir/r4/CodeSystem/BRJustificativaIndividuoNaoIdentificado&quot;, &quot;version&quot;: &quot;1.0.0-release&quot;, &quot;code&quot;: &quot;04&quot;, &quot;display&quot;: &quot;Indivíduo incapacitado por motivos sociais e/ou culturais&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://www.saude.gov.br/fhir/r4/CodeSystem/BRJustificativaIndividuoNaoIdentificado&quot;&gt;&lt;version value=&quot;1.0.0-release&quot;&gt;&lt;code value=&quot;04&quot;&gt;&lt;display value=&quot;Indivíduo incapacitado por motivos sociais e/ou culturais&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://www.saude.gov.br/fhir/r4/CodeSystem/BRJustificativaIndividuoNaoIdentificado-05"> </a>
+                  <code>http://www.saude.gov.br/fhir/r4/CodeSystem/BRJustificativaIndividuoNaoIdentificado</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-BRJustificativaIndividuoNaoIdentificado.html#BRJustificativaIndividuoNaoIdentificado-05">05</a>
+                </td>
+                <td>Indivíduo doador de órgãos falecido</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://www.saude.gov.br/fhir/r4/CodeSystem/BRJustificativaIndividuoNaoIdentificado&quot;, &quot;version&quot;: &quot;1.0.0-release&quot;, &quot;code&quot;: &quot;05&quot;, &quot;display&quot;: &quot;Indivíduo doador de órgãos falecido&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://www.saude.gov.br/fhir/r4/CodeSystem/BRJustificativaIndividuoNaoIdentificado&quot;&gt;&lt;version value=&quot;1.0.0-release&quot;&gt;&lt;code value=&quot;05&quot;&gt;&lt;display value=&quot;Indivíduo doador de órgãos falecido&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://www.saude.gov.br/fhir/r4/CodeSystem/BRJustificativaIndividuoNaoIdentificado-99"> </a>
+                  <code>http://www.saude.gov.br/fhir/r4/CodeSystem/BRJustificativaIndividuoNaoIdentificado</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-BRJustificativaIndividuoNaoIdentificado.html#BRJustificativaIndividuoNaoIdentificado-99">99</a>
+                </td>
+                <td>Sem registro no modelo de informação de origem</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://www.saude.gov.br/fhir/r4/CodeSystem/BRJustificativaIndividuoNaoIdentificado&quot;, &quot;version&quot;: &quot;1.0.0-release&quot;, &quot;code&quot;: &quot;99&quot;, &quot;display&quot;: &quot;Sem registro no modelo de informação de origem&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://www.saude.gov.br/fhir/r4/CodeSystem/BRJustificativaIndividuoNaoIdentificado&quot;&gt;&lt;version value=&quot;1.0.0-release&quot;&gt;&lt;code value=&quot;99&quot;&gt;&lt;display value=&quot;Sem registro no modelo de informação de origem&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://www.saude.gov.br/fhir/r4/ValueSet/BRJustificativaIndividuoNaoIdentificado-1.0"/>
+        <version value="1.0.0-release"/>
+        <name value="BRJustificativaIndividuoNaoIdentificado"/>
+        <title value="Justificativa da Impossibilidade de Identificação do Indivíduo (ValueSet)"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2020-04-07T20:51:17.5349531+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="BR"/>
+          </coding>
+        </jurisdiction>
+        <immutable value="false"/>
+        <expansion>
+          <identifier value="urn:uuid:edb9bc97-ee84-46d4-baa6-3f298a4a182e"/>
+          <timestamp value="2026-09-25T17:23:13-03:00"/>
+          <total value="6"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://www.saude.gov.br/fhir/r4/CodeSystem/BRJustificativaIndividuoNaoIdentificado|1.0.0-release"/>
+          </parameter>
+          <contains>
+            <system value="http://www.saude.gov.br/fhir/r4/CodeSystem/BRJustificativaIndividuoNaoIdentificado"/>
+            <code value="01"/>
+            <display value="Indivíduo acidentado grave"/>
+          </contains>
+          <contains>
+            <system value="http://www.saude.gov.br/fhir/r4/CodeSystem/BRJustificativaIndividuoNaoIdentificado"/>
+            <code value="02"/>
+            <display value="Indivíduo em sofrimento mental encontrado em via pública"/>
+          </contains>
+          <contains>
+            <system value="http://www.saude.gov.br/fhir/r4/CodeSystem/BRJustificativaIndividuoNaoIdentificado"/>
+            <code value="03"/>
+            <display value="Indivíduo com problema neurológico grave ou comatoso"/>
+          </contains>
+          <contains>
+            <system value="http://www.saude.gov.br/fhir/r4/CodeSystem/BRJustificativaIndividuoNaoIdentificado"/>
+            <code value="04"/>
+            <display value="Indivíduo incapacitado por motivos sociais e/ou culturais"/>
+          </contains>
+          <contains>
+            <system value="http://www.saude.gov.br/fhir/r4/CodeSystem/BRJustificativaIndividuoNaoIdentificado"/>
+            <code value="05"/>
+            <display value="Indivíduo doador de órgãos falecido"/>
+          </contains>
+          <contains>
+            <system value="http://www.saude.gov.br/fhir/r4/CodeSystem/BRJustificativaIndividuoNaoIdentificado"/>
+            <code value="99"/>
+            <display value="Sem registro no modelo de informação de origem"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
     <fullUrl value="http://www.saude.gov.br/fhir/r4/ValueSet/BROcupacao-1.0"/>
     <resource>
       <ValueSet>
@@ -26354,8 +27956,8 @@
         </jurisdiction>
         <immutable value="false"/>
         <expansion>
-          <identifier value="urn:uuid:5af468c4-ea98-41e4-b5a6-a2b1f160e2cf"/>
-          <timestamp value="2026-06-30T10:10:56-03:00"/>
+          <identifier value="urn:uuid:8596ad3b-7b60-4a81-9bed-967df8c29843"/>
+          <timestamp value="2026-09-25T17:23:13-03:00"/>
           <total value="2714"/>
           <offset value="0"/>
           <parameter>
@@ -51434,8 +53036,8 @@
         </jurisdiction>
         <immutable value="false"/>
         <expansion>
-          <identifier value="urn:uuid:5af468c4-ea98-41e4-b5a6-a2b1f160e2cf"/>
-          <timestamp value="2026-06-30T10:10:56-03:00"/>
+          <identifier value="urn:uuid:1ffcffe0-399a-4bd1-9c40-2fc8262d0360"/>
+          <timestamp value="2026-09-25T17:23:13-03:00"/>
           <total value="2714"/>
           <offset value="0"/>
           <parameter>
@@ -57821,8 +59423,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:3305cb7a-d38c-4e4f-8ae8-ecfb475c0575"/>
-          <timestamp value="2026-06-30T10:10:55-03:00"/>
+          <identifier value="urn:uuid:f45431b2-8a06-4b3d-8990-0c099708fddc"/>
+          <timestamp value="2026-09-25T17:23:14-03:00"/>
           <total value="62"/>
           <offset value="0"/>
           <parameter>
@@ -59518,8 +61120,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:3305cb7a-d38c-4e4f-8ae8-ecfb475c0575"/>
-          <timestamp value="2026-06-30T10:10:55-03:00"/>
+          <identifier value="urn:uuid:8154f1eb-0537-4e8e-ab32-46dbd2827c58"/>
+          <timestamp value="2026-09-25T17:23:14-03:00"/>
           <total value="62"/>
           <offset value="0"/>
           <parameter>
@@ -79919,8 +81521,8 @@
         </jurisdiction>
         <immutable value="false"/>
         <expansion>
-          <identifier value="urn:uuid:3843fe38-acbe-45d6-90bd-2e18a5cdb5d9"/>
-          <timestamp value="2026-06-30T10:11:05-03:00"/>
+          <identifier value="urn:uuid:875a3361-9e4d-479a-8fcb-a560ca0a21c9"/>
+          <timestamp value="2026-09-25T17:23:14-03:00"/>
           <total value="14926"/>
           <offset value="0"/>
           <parameter>
@@ -105014,8 +106616,8 @@
         </jurisdiction>
         <immutable value="false"/>
         <expansion>
-          <identifier value="urn:uuid:3843fe38-acbe-45d6-90bd-2e18a5cdb5d9"/>
-          <timestamp value="2026-06-30T10:11:05-03:00"/>
+          <identifier value="urn:uuid:22654999-a89a-459f-a35f-0c967fb3dbcb"/>
+          <timestamp value="2026-09-25T17:23:14-03:00"/>
           <total value="14926"/>
           <offset value="0"/>
           <parameter>
@@ -110041,6 +111643,328 @@
             <system value="http://www.saude.gov.br/fhir/r4/CodeSystem/BRCID10"/>
             <code value="C162"/>
             <display value="Neoplasia maligna do corpo do estômago"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://www.saude.gov.br/fhir/r4/ValueSet/BRSexo-1.0"/>
+    <resource>
+      <ValueSet>
+        <language value="en"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" data-fhir="generated">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansão efectuada internamente com base em 
+              <a href="http://hl7.org/fhir/R4/codesystem-administrative-gender.html">codesystem AdministrativeGender v4.0.1 (CodeSystem)</a>
+              <span class="copy-text-inline">
+                <button data-clipboard-text="http://hl7.org/fhir/administrative-gender|4.0.1" title="Clique para copiar o URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>Este conjunto de valores contém 3 conceitos</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>Sistema</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Código</b>
+                </td>
+                <td>
+                  <b>Ecrã (en)</b>
+                </td>
+                <td>
+                  <b>Definição</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://hl7.org/fhir/administrative-gender-male"> </a>
+                  <code>http://hl7.org/fhir/administrative-gender</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://hl7.org/fhir/R4/codesystem-administrative-gender.html#administrative-gender-male">male</a>
+                </td>
+                <td>Male</td>
+                <td>Male.</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.org/fhir/administrative-gender&quot;, &quot;version&quot;: &quot;4.0.1&quot;, &quot;code&quot;: &quot;male&quot;, &quot;display&quot;: &quot;Male&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/administrative-gender&quot;&gt;&lt;version value=&quot;4.0.1&quot;&gt;&lt;code value=&quot;male&quot;&gt;&lt;display value=&quot;Male&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://hl7.org/fhir/administrative-gender-female"> </a>
+                  <code>http://hl7.org/fhir/administrative-gender</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://hl7.org/fhir/R4/codesystem-administrative-gender.html#administrative-gender-female">female</a>
+                </td>
+                <td>Female</td>
+                <td>Female.</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.org/fhir/administrative-gender&quot;, &quot;version&quot;: &quot;4.0.1&quot;, &quot;code&quot;: &quot;female&quot;, &quot;display&quot;: &quot;Female&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/administrative-gender&quot;&gt;&lt;version value=&quot;4.0.1&quot;&gt;&lt;code value=&quot;female&quot;&gt;&lt;display value=&quot;Female&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://hl7.org/fhir/administrative-gender-unknown"> </a>
+                  <code>http://hl7.org/fhir/administrative-gender</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://hl7.org/fhir/R4/codesystem-administrative-gender.html#administrative-gender-unknown">unknown</a>
+                </td>
+                <td>Unknown</td>
+                <td>Unknown.</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.org/fhir/administrative-gender&quot;, &quot;version&quot;: &quot;4.0.1&quot;, &quot;code&quot;: &quot;unknown&quot;, &quot;display&quot;: &quot;Unknown&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/administrative-gender&quot;&gt;&lt;version value=&quot;4.0.1&quot;&gt;&lt;code value=&quot;unknown&quot;&gt;&lt;display value=&quot;Unknown&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://www.saude.gov.br/fhir/r4/ValueSet/BRSexo-1.0"/>
+        <version value="1.0.0-release"/>
+        <name value="BRSexo"/>
+        <title value="Sexo"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2020-04-07T21:07:00.8812267+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="BR"/>
+          </coding>
+        </jurisdiction>
+        <immutable value="false"/>
+        <expansion>
+          <identifier value="urn:uuid:d1a464c4-c4db-4250-a8b8-d069b88d09a6"/>
+          <timestamp value="2026-09-25T17:23:14-03:00"/>
+          <total value="3"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://hl7.org/fhir/administrative-gender|4.0.1"/>
+          </parameter>
+          <contains>
+            <system value="http://hl7.org/fhir/administrative-gender"/>
+            <code value="male"/>
+            <display value="Male"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/administrative-gender"/>
+            <code value="female"/>
+            <display value="Female"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/administrative-gender"/>
+            <code value="unknown"/>
+            <display value="Unknown"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://www.saude.gov.br/fhir/r4/ValueSet/BRSexo-1.0"/>
+    <resource>
+      <ValueSet>
+        <language value="en"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" data-fhir="generated">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansão efectuada internamente com base em 
+              <a href="http://hl7.org/fhir/R4/codesystem-administrative-gender.html">codesystem AdministrativeGender v4.0.1 (CodeSystem)</a>
+              <span class="copy-text-inline">
+                <button data-clipboard-text="http://hl7.org/fhir/administrative-gender|4.0.1" title="Clique para copiar o URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>Este conjunto de valores contém 3 conceitos</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>Sistema</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Código</b>
+                </td>
+                <td>
+                  <b>Ecrã (en)</b>
+                </td>
+                <td>
+                  <b>Definição</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://hl7.org/fhir/administrative-gender-male"> </a>
+                  <code>http://hl7.org/fhir/administrative-gender</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://hl7.org/fhir/R4/codesystem-administrative-gender.html#administrative-gender-male">male</a>
+                </td>
+                <td>Male</td>
+                <td>Male.</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.org/fhir/administrative-gender&quot;, &quot;version&quot;: &quot;4.0.1&quot;, &quot;code&quot;: &quot;male&quot;, &quot;display&quot;: &quot;Male&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/administrative-gender&quot;&gt;&lt;version value=&quot;4.0.1&quot;&gt;&lt;code value=&quot;male&quot;&gt;&lt;display value=&quot;Male&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://hl7.org/fhir/administrative-gender-female"> </a>
+                  <code>http://hl7.org/fhir/administrative-gender</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://hl7.org/fhir/R4/codesystem-administrative-gender.html#administrative-gender-female">female</a>
+                </td>
+                <td>Female</td>
+                <td>Female.</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.org/fhir/administrative-gender&quot;, &quot;version&quot;: &quot;4.0.1&quot;, &quot;code&quot;: &quot;female&quot;, &quot;display&quot;: &quot;Female&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/administrative-gender&quot;&gt;&lt;version value=&quot;4.0.1&quot;&gt;&lt;code value=&quot;female&quot;&gt;&lt;display value=&quot;Female&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://hl7.org/fhir/administrative-gender-unknown"> </a>
+                  <code>http://hl7.org/fhir/administrative-gender</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://hl7.org/fhir/R4/codesystem-administrative-gender.html#administrative-gender-unknown">unknown</a>
+                </td>
+                <td>Unknown</td>
+                <td>Unknown.</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.org/fhir/administrative-gender&quot;, &quot;version&quot;: &quot;4.0.1&quot;, &quot;code&quot;: &quot;unknown&quot;, &quot;display&quot;: &quot;Unknown&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/administrative-gender&quot;&gt;&lt;version value=&quot;4.0.1&quot;&gt;&lt;code value=&quot;unknown&quot;&gt;&lt;display value=&quot;Unknown&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://www.saude.gov.br/fhir/r4/ValueSet/BRSexo-1.0"/>
+        <version value="1.0.0-release"/>
+        <name value="BRSexo"/>
+        <title value="Sexo"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2020-04-07T21:07:00.8812267+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="BR"/>
+          </coding>
+        </jurisdiction>
+        <immutable value="false"/>
+        <expansion>
+          <identifier value="urn:uuid:398ac396-a36c-4f89-992a-345b4fd1b53d"/>
+          <timestamp value="2026-09-25T17:23:14-03:00"/>
+          <total value="3"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://hl7.org/fhir/administrative-gender|4.0.1"/>
+          </parameter>
+          <contains>
+            <system value="http://hl7.org/fhir/administrative-gender"/>
+            <code value="male"/>
+            <display value="Male"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/administrative-gender"/>
+            <code value="female"/>
+            <display value="Female"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/administrative-gender"/>
+            <code value="unknown"/>
+            <display value="Unknown"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -130127,8 +132051,8 @@
         </jurisdiction>
         <immutable value="false"/>
         <expansion>
-          <identifier value="urn:uuid:8eedcb21-068b-474b-a49a-3759b56dd822"/>
-          <timestamp value="2026-06-30T10:11:05-03:00"/>
+          <identifier value="urn:uuid:48600fe5-f626-41b7-8c45-d1d75759e990"/>
+          <timestamp value="2026-09-25T17:23:14-03:00"/>
           <total value="85931"/>
           <offset value="0"/>
           <parameter>
@@ -155252,8 +157176,8 @@
         </jurisdiction>
         <immutable value="false"/>
         <expansion>
-          <identifier value="urn:uuid:8eedcb21-068b-474b-a49a-3759b56dd822"/>
-          <timestamp value="2026-06-30T10:11:05-03:00"/>
+          <identifier value="urn:uuid:133604fc-b263-467e-bd49-2bdd5a636025"/>
+          <timestamp value="2026-09-25T17:23:14-03:00"/>
           <total value="85931"/>
           <offset value="0"/>
           <parameter>
@@ -160430,8 +162354,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:62fa27ab-62f9-4b4a-bbf2-0868e58aa951"/>
-          <timestamp value="2026-06-30T10:11:05-03:00"/>
+          <identifier value="urn:uuid:6ba578c4-a184-4f07-b9b2-1ed72ee7d4fe"/>
+          <timestamp value="2026-09-25T17:23:14-03:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -160612,8 +162536,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:62fa27ab-62f9-4b4a-bbf2-0868e58aa951"/>
-          <timestamp value="2026-06-30T10:11:05-03:00"/>
+          <identifier value="urn:uuid:3f91feff-5aa2-4de8-8147-6db7698750be"/>
+          <timestamp value="2026-09-25T17:23:14-03:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -160946,8 +162870,8 @@
         </jurisdiction>
         <immutable value="false"/>
         <expansion>
-          <identifier value="urn:uuid:2c69ab52-5a4c-4fd5-aff1-1a20ea29c55b"/>
-          <timestamp value="2026-06-30T10:11:05-03:00"/>
+          <identifier value="urn:uuid:cd9cc0ad-825d-49b3-876a-6bc5a3d374a9"/>
+          <timestamp value="2026-09-25T17:23:14-03:00"/>
           <total value="11"/>
           <offset value="0"/>
           <parameter>
@@ -161315,8 +163239,8 @@
         </jurisdiction>
         <immutable value="false"/>
         <expansion>
-          <identifier value="urn:uuid:2c69ab52-5a4c-4fd5-aff1-1a20ea29c55b"/>
-          <timestamp value="2026-06-30T10:11:05-03:00"/>
+          <identifier value="urn:uuid:ef2c2563-ce94-4a2d-bdfb-06fdfaee7357"/>
+          <timestamp value="2026-09-25T17:23:14-03:00"/>
           <total value="11"/>
           <offset value="0"/>
           <parameter>
@@ -162970,8 +164894,8 @@
         </jurisdiction>
         <immutable value="false"/>
         <expansion>
-          <identifier value="urn:uuid:ea80c10e-35fd-496a-a9fd-d23a040edcc2"/>
-          <timestamp value="2026-06-30T10:11:06-03:00"/>
+          <identifier value="urn:uuid:fcf1a675-f7d7-43eb-ba49-d765c1062796"/>
+          <timestamp value="2026-09-25T17:23:14-03:00"/>
           <total value="76"/>
           <offset value="0"/>
           <parameter>
@@ -164950,8 +166874,8 @@
         </jurisdiction>
         <immutable value="false"/>
         <expansion>
-          <identifier value="urn:uuid:ea80c10e-35fd-496a-a9fd-d23a040edcc2"/>
-          <timestamp value="2026-06-30T10:11:06-03:00"/>
+          <identifier value="urn:uuid:0360cac8-4053-4f84-9035-418a7325a522"/>
+          <timestamp value="2026-09-25T17:23:14-03:00"/>
           <total value="76"/>
           <offset value="0"/>
           <parameter>
@@ -166810,8 +168734,8 @@
         </jurisdiction>
         <immutable value="false"/>
         <expansion>
-          <identifier value="urn:uuid:0b99e276-798f-4454-acb1-06e1f1eedd35"/>
-          <timestamp value="2026-06-30T10:11:06-03:00"/>
+          <identifier value="urn:uuid:5e59cdad-d7e0-4d13-b863-04104beb6770"/>
+          <timestamp value="2026-09-25T17:23:14-03:00"/>
           <total value="70"/>
           <offset value="0"/>
           <parameter>
@@ -168640,8 +170564,8 @@
         </jurisdiction>
         <immutable value="false"/>
         <expansion>
-          <identifier value="urn:uuid:0b99e276-798f-4454-acb1-06e1f1eedd35"/>
-          <timestamp value="2026-06-30T10:11:06-03:00"/>
+          <identifier value="urn:uuid:ce87639c-29ad-4f8d-8c63-ec3bd856793e"/>
+          <timestamp value="2026-09-25T17:23:14-03:00"/>
           <total value="70"/>
           <offset value="0"/>
           <parameter>

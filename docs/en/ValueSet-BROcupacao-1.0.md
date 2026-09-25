@@ -7,7 +7,7 @@ Classifica as profissões do mercado de trabalho brasileiro.
 
  **References** 
 
-* [Dispensação ou Fornecimento Eletrônico de Medicamento](StructureDefinition-RNDSMedicamentoDispensadoFornecido.md)
+* [RNDSLotacaoProfissional](StructureDefinition-RNDSLotacaoProfissional.md)
 * [BR Core Practitioner](StructureDefinition-br-core-practitioner.md)
 * [BR Core PractitionerRole](StructureDefinition-br-core-practitionerrole.md)
 
@@ -40,7 +40,7 @@ Classifica as profissões do mercado de trabalho brasileiro.
     "_valueInteger" : {
       "extension" : [{
         "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
-        "valueCanonical" : "https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0/ImplementationGuide/br.gov.saude.redfm.fhir"
+        "valueCanonical" : "https://fhir.saude.gov.br/redfm/ImplementationGuide/br.gov.saude.redfm.fhir"
       }]
     }
   },
@@ -50,7 +50,7 @@ Classifica as profissões do mercado de trabalho brasileiro.
     "_valueCode" : {
       "extension" : [{
         "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
-        "valueCanonical" : "https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0/ImplementationGuide/br.gov.saude.redfm.fhir"
+        "valueCanonical" : "https://fhir.saude.gov.br/redfm/ImplementationGuide/br.gov.saude.redfm.fhir"
       }]
     }
   },

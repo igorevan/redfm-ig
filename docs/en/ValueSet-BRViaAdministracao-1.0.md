@@ -7,8 +7,8 @@ Via de administração de um imunobiológico.
 
  **References** 
 
-* [Dispensação ou Fornecimento Eletrônico de Medicamento](StructureDefinition-RNDSMedicamentoDispensadoFornecido.md)
-* [Prescrição Eletrônica de Medicamento (Contida na Dispensação)](StructureDefinition-RNDSPrescricaoMedicamentoDispensado.md)
+* [Dispensação ou Fornecimento de Medicamento](StructureDefinition-RNDSDispensacaoMedicamento.md)
+* [Prescrição de Medicamento - RNDS](StructureDefinition-RNDSPrescricaoMedicamento.md)
 
 ### Logical Definition (CLD)
 
@@ -39,7 +39,7 @@ Via de administração de um imunobiológico.
     "_valueInteger" : {
       "extension" : [{
         "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
-        "valueCanonical" : "https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0/ImplementationGuide/br.gov.saude.redfm.fhir"
+        "valueCanonical" : "https://fhir.saude.gov.br/redfm/ImplementationGuide/br.gov.saude.redfm.fhir"
       }]
     }
   },
@@ -49,7 +49,7 @@ Via de administração de um imunobiológico.
     "_valueCode" : {
       "extension" : [{
         "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
-        "valueCanonical" : "https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0/ImplementationGuide/br.gov.saude.redfm.fhir"
+        "valueCanonical" : "https://fhir.saude.gov.br/redfm/ImplementationGuide/br.gov.saude.redfm.fhir"
       }]
     }
   },

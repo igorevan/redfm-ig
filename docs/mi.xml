@@ -41,42 +41,37 @@
     de dados a serem informados. Também são apresentadas as referências para o uso de recursos
     terminológicos, da seguinte maneira:
   </p>
+
   <ul>
     <li>
-      <b>Coluna 1</b> - Nível: apresenta o nível do elemento no modelo de informação;
+      <b>Nível</b>: indica a relação de dependência do elemento aos demais. Um número maior
+      significa que aquele item depende ou está subordinado ao de número menor e anterior
+      a ele no modelo. Assim, um elemento de nível 2 é subitem de um elemento de nível 1,
+      um de nível 3 é subitem de um de nível 2 e assim sucessivamente;
     </li>
     <li>
-      <p><b>Coluna 2</b> - Ocorrência: descreve o número de vezes (cardinalidade) que o elemento
-        deve/pode aparecer:</p>
-
+      <b>Seção/Item</b>: nome do bloco (seção) ou da informação a ser enviada;
+    </li>
+    <li>
+      <b>Tipo de dado</b>: descreve o tipo de dado a ser preenchido, ou seja, a forma de representar
+      o elemento;
+    </li>
+    <li>
+      <p><b>Ocorrência</b>: descreve o número mínimo e máximo de vezes que o elemento deve/pode
+        ocorrer. Demonstra a obrigatoriedade e a quantidade de ocorrências do elemento:</p>
       <pre><code>
-          [0..1] - O elemento é opcional e, se ocorrer, aparece uma vez
-          [1..1] - O elemento é obrigatório e deve estar presente uma única vez
-          [0..N] - O elemento é opcional e pode ocorrer várias vezes
-          [1..N] - O elemento é obrigatório e pode ocorrer várias vezes</code>
+          <b>[0..1]</b> - O elemento é opcional e, se ocorrer, aparece uma vez
+          <b>[1..1]</b> - O elemento é obrigatório e deve estar presente uma única vez
+          <b>[0..*]</b> - O elemento é opcional e pode ocorrer várias vezes
+          <b>[1..*]</b> - O elemento é obrigatório e pode ocorrer várias vezes</code>
         </pre>
-
     </li>
     <li>
-      <b>Coluna 3</b> - Seção/Item: nome do bloco ou da informação a ser enviada;
+      <b>Conceito/Observações</b>: conceitua ou esclarece a forma de utilizar o elemento;
     </li>
     <li>
-      <b>Coluna 4</b> - Tipo de dado: descreve o tipo de dado a ser preenchido;
-    </li>
-    <li>
-      <b>Coluna 5</b> - Conceito/Observações: apresenta as definições do elemento;
-    </li>
-    <li>
-      <b>Coluna 6</b> - Definição de uso do elemento: Observações e regras de negócio relacionadas
-      ao elemento;
-    </li>
-    <li>
-      <b>Coluna 7</b> - Conteúdo: apresenta, quando necessário, o grupo de códigos (<i>ValueSet</i>)
-      a ser utilizado para preenchimento do elemento;
-    </li>
-    <li>
-      <b>Coluna 8</b> - Recurso FHIR: relaciona o atributo do Modelo Informacional com o perfil do
-      Modelo Computacional em FHIR.
+      <b>Mapeamento Computacional - FHIR</b>: relaciona o atributo do Modelo Informacional com o
+      Modelo Computacional no padrão HL7 FHIR.
     </li>
   </ul>
 
@@ -92,383 +87,562 @@
 
   <table class="grid">
     <thead>
-      <tr style="background-color: #538ce9">
-        <th>Nível</th>
-        <th>Ocorrência</th>
-        <th>Seção/Item</th>
-        <th>Tipo de Dado</th>
-        <th>Conceito/Observações</th>
-      </tr>
-    </thead>
-    <thead>
-      <tr style="background-color: #4dbf4d">
-        <td>1</td>
-        <td>1..1</td>
-        <td>Identificação da dispensação ou fornecimento de medicamento</td>
-        <td>Seção</td>
-        <td></td>
+      <tr style="background-color: #538ce9;">
+        <th scope="col">Nível</th>
+        <th scope="col">Seção/Item</th>
+        <th scope="col">Tipo de Dados</th>
+        <th scope="col">Ocorrência</th>
+        <th scope="col">Conceito/Observações</th>
+        <th scope="col">Mapeamento Computacional - FHIR</th>
       </tr>
     </thead>
     <tbody>
+      <tr class="section" style="background-color: #4dbf4d;">
+        <td>1</td>
+        <td>Identificação da Dispensação ou Fornecimento</td>
+        <td>SECTION</td>
+        <td>1..1</td>
+        <td>Bloco de informações de identificação do registro enviado à RNDS</td>
+        <td>N/A</td>
+      </tr>
       <tr>
         <td>2</td>
+        <td>Identificação da Dispensação ou Fornecimento no Sistema de Origem</td>
+        <td>II</td>
         <td>1..1</td>
-        <td>Identificação do registro eletrônico da dispensação ou fornecimento de medicamento no sistema de origem</td>
-        <td>Texto</td>
-        <td>Id no sistema de origem</td>
+        <td>Id no sistema de origem.</td>
+        <td><code>Bundle.identifier.value</code></td>
       </tr>
-    </tbody>
-  </table>
-
-  <a name="identificacao-individuo"> </a>
-  <h4>Identificação do indivíduo</h4>
-
-  <table class="grid">
-    <thead>
-      <tr style="background-color: #538ce9;">
-        <th>Nível</th>
-        <th>Ocorrência</th>
-        <th>Seção/Item</th>
-        <th>Tipo de Dado</th>
-        <th>Conceito/Observações</th>
-      </tr>
-    </thead>
-    <thead>
-      <tr style="background-color: #4dbf4d">
+      <tr class="section" style="background-color: #4dbf4d;">
         <td>1</td>
+        <td>Identificação do Indivíduo da Dispensação ou Fornecimento</td>
+        <td>SECTION</td>
         <td>1..1</td>
-        <td>Identificação do indivíduo</td>
-        <td></td>
         <td>Bloco de informações referentes ao indivíduo ao qual o medicamento foi prescrito</td>
+        <td>N/A</td>
       </tr>
-    </thead>
-    <tbody>
       <tr>
         <td>2</td>
+        <td>Documento de Identificação do Indivíduo</td>
+        <td>II</td>
         <td>1..1</td>
-        <td>Identificação do indivíduo constante na prescrição</td>
-        <td>Número</td>
-        <td>Número do Cadastro de Pessoa Física - CPF ou Cartão Nacional de Saúde - CNS</td>
+        <td>Identificação unívoca do usuário das ações e serviços de saúde, mediante número único válido em todo o
+          território nacional, sendo:
+          <ul>
+            <li>Cartão Nacional de Saúde (CNS)</li>
+            <li>Cadastro de Pessoa Física (CPF)</li>
+          </ul>
+        </td>
+        <td>
+          <code>Composition.subject.identifier.value</code><br />
+          <code>MedicationDispense.subject.identifier.value</code><br />
+          <code>Condition.subject.identifier.value</code><br />
+          <code>MedicationRequest.subject.identifier.value</code>
+        </td>
       </tr>
-    </tbody>
-  </table>
-
-  <a name="identificacao-descricao"> </a>
-  <h4>Descrição da dispensação ou fornecimento de medicamento</h4>
-
-  <table class="grid">
-    <thead>
-      <tr style="background-color: #538ce9">
-        <th>Nível</th>
-        <th>Ocorrência</th>
-        <th>Seção/Item</th>
-        <th>Tipo de Dado</th>
-        <th>Conceito/Observações</th>
-      </tr>
-    </thead>
-    <thead>
-      <tr style="background-color: #4dbf4d">
+      <tr class="section" style="background-color: #4dbf4d;">
         <td>1</td>
+        <td>Detalhes da Dispensação ou Fornecimento de Medicamento</td>
+        <td>SECTION</td>
         <td>1..1</td>
-        <td>Descrição da dispensação ou fornecimento de medicamento</td>
-        <td>Seção</td>
-        <td>Bloco de informações referentes ao medicamento dispensado ou fornecido e
-          profissional responsável</td>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>2</td>
-        <td>1..1</td>
-        <td>Inscrição no Cadastro Nacional de Estabelecimento de Saúde</td>
-        <td>Número</td>
-        <td>Quando exigido por legislação, por meio do Número do Cadastro de Pessoa Física - CPF ou Cartão Nacional de
-          Saúde - CNS</td>
+        <td>Bloco de informações referentes ao profissional dispensador ou fornecedor e estabelecimento de saúde</td>
+        <td>N/A</td>
       </tr>
       <tr>
         <td>2</td>
+        <td>Inscrição no Cadastro Nacional de Estabelecimento de Saúde (CNES)</td>
+        <td>II</td>
         <td>1..1</td>
-        <td>Data e hora</td>
-        <td>Data</td>
-        <td>Data e hora da dispensação ou fornecimento do medicamento</td>
+        <td>Identificação unívoca do estabelecimento dispensador ou fornecedor, mediante número único válido em todo o
+          território nacional, sendo:
+          <ul>
+            <li>Cadastro Nacional de Estabelecimentos de Saúde (CNES)</li>
+          </ul>
+        </td>
+        <td><code>Organization.idetifier.value</code></td>
       </tr>
       <tr>
         <td>2</td>
-        <td>1..N</td>
-        <td>Medicamento dispensado ou fornecido</td>
-        <td>Codificado</td>
-        <td>Código do medicamento conforme Ontologia Brasileira de Medicamento- OBM</td>
-      </tr>
-      <tr>
-        <td>3</td>
+        <td>Data e Hora da Dispensação ou Fornecimento</td>
+        <td>TS</td>
         <td>1..1</td>
-        <td>Quantidade do medicamento dispensado ou fornecido</td>
-        <td>Número</td>
-        <td>Quantidade do medicamento dispensado ou fornecido</td>
+        <td>Data e hora em que a dispensação ou fornecimento de medicamento foi realizada, conforme ISO 8601.<br />
+          Ex.: <code>2026-07-21T14:50:50-03:00</code></td>
+        <td><code>MedicationDispense.whenHandedOver</code></td>
       </tr>
       <tr>
-        <td>4</td>
-        <td>1..1</td>
-        <td>Laboratorio ou fabricante do medicamento</td>
-        <td>Número</td>
-        <td>Identificação do laboratório ou fabricante do medicamento dispensado ou fornecido</td>
-      </tr>
-      <tr>
-        <td>5</td>
-        <td>1..1</td>
-        <td>Código do lote do medicamento</td>
-        <td>Texto</td>
-        <td>Código do lote do medicamento dispensado ou fornecido</td>
-      </tr>
-      <tr>
-        <td>6</td>
-        <td>1..1</td>
-        <td>Data de validade do medicamento</td>
-        <td>Data</td>
-        <td>Data de validade do medicamento dispensado ou fornecido</td>
-      </tr>
-      <tr>
-        <td>3</td>
+        <td>2</td>
+        <td>Profissional Responsável pela Dispensação</td>
+        <td>CONTAINER</td>
         <td>0..1</td>
-        <td>Indicação de registro de estorno</td>
-        <td>Codificado</td>
-        <td>Indicação de registro de estorno</td>
+        <td>N/A</td>
+        <td><code>MedicationDispense.performer.actor.reference</code></td>
       </tr>
       <tr>
         <td>3</td>
+        <td>Documento de Identificação do Profissional Responsável pela Dispensação</td>
+        <td>II</td>
+        <td>1..1</td>
+        <td>Identificação unívoca do profissional dispensador, mediante número único válido em todo o território
+          nacional, sendo:
+          <ul>
+            <li>Cartão Nacional de Saúde (CNS)</li>
+            <li>Cadastro de Pessoa Física (CPF)</li>
+          </ul>
+        </td>
+        <td><code>Practitioner.identifier:cpf.value</code><br />
+          <code>Practitioner.identifier:cns.value</code>
+        </td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Sigla do Conselho Profissional Responsável pela Dispensação</td>
+        <td>CD</td>
+        <td>1..1</td>
+        <td>Indica a entidade de conselho profissional do prescritor.</td>
+        <td><code>Practitioner.identifier.system</code></td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Unidade Federativa do Conselho Profissional Responsável pela Dispensação</td>
+        <td>CD</td>
+        <td>1..1</td>
+        <td>Sigla da Unidade Federativa onde o profissional possui registro.</td>
+        <td><code>Practitioner.identifier.system</code></td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Número do Conselho Profissional Responsável pela Dispensação</td>
+        <td>ST</td>
+        <td>1..1</td>
+        <td>Número do Conselho do profissional dispensador.</td>
+        <td><code>Practitioner.identifier.value</code></td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Ocupação do Profissional Responsável pela Dispensação</td>
+        <td>ST</td>
+        <td>1..1</td>
+        <td>Atividade desempenhada pelo profissional que realizou a dispensação, de acordo com a Classificação
+          Brasileira de Ocupações - CBO.</td>
+        <td><code>PractitionerRole.code.coding.code</code></td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Profissional Responsável pelo Fornecimento</td>
+        <td>CONTAINER</td>
         <td>0..1</td>
+        <td>N/A</td>
+        <td><code>MedicationDispense.performer.actor.reference</code></td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Documento de Identificação do Profissional Responsável pelo Fornecimento</td>
+        <td>II</td>
+        <td>1..1</td>
+        <td>Identificação unívoca do profissional dispensador, mediante número único válido em todo o território
+          nacional, sendo:
+          <ul>
+            <li>Cartão Nacional de Saúde (CNS)</li>
+            <li>Cadastro de Pessoa Física (CPF)</li>
+          </ul>
+        </td>
+        <td><code>Practitioner.identifier.value</code></td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Ocupação do Profissional Responsável pelo Fornecimento</td>
+        <td>CD</td>
+        <td>1..1</td>
+        <td>Atividade desempenhada pelo profissional que realizou a dispensação, de acordo com a Classificação
+          Brasileira de Ocupações - CBO.</td>
+        <td><code>PractitionerRole.code.coding.code</code></td>
+      </tr>
+      <tr class="section" style="background-color: #4dbf4d;">
+        <td>1</td>
+        <td>Medicamentos Dispensados ou Fornecidos</td>
+        <td>SECTION</td>
+        <td>1..1</td>
+        <td>Bloco de informações referentes ao medicamento dispensados ou fornecidos</td>
+        <td>N/A</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Entrada de Medicamentos Dispensados ou Fornecidos</td>
+        <td>N/A</td>
+        <td>1..*</td>
+        <td>N/A</td>
+        <td><code>Composition.section.entry</code></td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Medicamento Dispensado ou Fornecido</td>
+        <td>CD</td>
+        <td>1..1</td>
+        <td>Código do medicamento conforme Ontologia Brasileira de Medicamento - OBM.</td>
+        <td><code>Medication.code.coding.code</code></td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Terminologia do Medicamento</td>
+        <td>URI</td>
+        <td>1..1</td>
+        <td>Terminologia do Medicamento Dispensado ou Fornecido.</td>
+        <td><code>Medication.code.coding.system</code></td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Versão da Terminologia do Medicamento</td>
+        <td>ST</td>
+        <td>0..1</td>
+        <td>Versão da Terminologia do Medicamento Dispensado ou Fornecido.</td>
+        <td><code>Medication.code.coding.version</code></td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Quantidade do Medicamento Dispensado ou Fornecido</td>
+        <td>PQ</td>
+        <td>1..1</td>
+        <td>Quantidade da unidade de consumo do medicamento dispensado ou fornecido.</td>
+        <td><code>MedicationDispense.quantity</code></td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Laboratório ou Fabricante do Medicamento</td>
+        <td>II</td>
+        <td>1..1</td>
+        <td>Identificação do laboratório ou fabricante do medicamento dispensado ou fornecido.</td>
+        <td><code>Medication.manufacturer.identifier.value</code></td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Código do Lote do Medicamento</td>
+        <td>ST</td>
+        <td>1..1</td>
+        <td>Código do lote do medicamento dispensado ou fornecido.</td>
+        <td><code>Medication.batch.lotNumber</code></td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Data de Validade do Medicamento</td>
+        <td>TS</td>
+        <td>1..1</td>
+        <td>Data de validade do medicamento dispensado ou fornecido.</td>
+        <td><code>Medication.batch.expirationDate</code></td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Indicação de Registro de Estorno</td>
+        <td>CD</td>
+        <td>0..1</td>
+        <td>Indicação de registro de estorno.</td>
+        <td><code>MedicationDispense.type.coding.code</code></td>
+      </tr>
+      <tr>
+        <td>2</td>
         <td>Justificativa do não atendimento da prescrição</td>
-        <td>Texto</td>
-        <td>Na hipótese de não atendimento da prescrição, a justificativa que a motivou</td>
+        <td>CD</td>
+        <td>0..1</td>
+        <td>Na hipótese de não atendimento da prescrição, a justificativa que a motivou.</td>
+        <td><code>MedicationDispense.type.coding.code</code></td>
       </tr>
       <tr>
-        <td>3</td>
-        <td>0..1</td>
+        <td>2</td>
         <td>Justificativa do atendimento parcial da prescrição</td>
-        <td>Texto</td>
-        <td>Na hipótese de atendimento parcial da prescrição, a justificativa que a motivou</td>
-      </tr>
-      <tr>
-        <td>2</td>
+        <td>CD</td>
         <td>0..1</td>
-        <td>Identificação do profissional responsável pela dispensação</td>
-        <td>Número</td>
-        <td>Número do Cadastro de Pessoa Física - CPF ou Cartão Nacional de Saúde - CNS.<br />É necessário informar o
-          profissional responsável pela dispensação ou o profissional responsável pelo fornecimento</td>
+        <td>Na hipótese de atendimento parcial da prescrição, a justificativa que a motivou.</td>
+        <td><code>MedicationDispense.type.coding.code</code></td>
       </tr>
-      <tr>
-        <td>3</td>
-        <td>1..1</td>
-        <td>Unidade Federativa do conselho profissional</td>
-        <td>Texto</td>
-        <td>Sigla da Unidade Federativa onde o profissional possui registro</td>
-      </tr>
-      <tr>
-        <td>4</td>
-        <td>1..1</td>
-        <td>Número do registro no Conselho Regional de Farmácia</td>
-        <td>Número</td>
-        <td>Número de registro do profissional no respectivo conselho</td>
-      </tr>
-      <tr>
-        <td>3</td>
-        <td>1..1</td>
-        <td>Ocupação do profissional responsável pela dispensação</td>
-        <td>Codificado</td>
-        <td>Código referente à Ocupação do Profissional de acordo com a Classificação Brasileira de Ocupações - CBO</td>
-      </tr>
-      <tr>
-        <td>3</td>
-        <td>1..1</td>
-        <td>Assinatura eletrônica do responsável pela dispensação</td>
-        <td></td>
-        <td>Assinatura eletrônica conforme regras definidas pelo DATASUS</td>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td>0..1</td>
-        <td>Identificação do profissional responsável pelo fornecimento</td>
-        <td>Número</td>
-        <td>Número do Cadastro de Pessoa Física - CPF ou Cartão Nacional de Saúde - CNS.<br />É necessário informar o
-          profissional responsável pela dispensação ou o profissional responsável pelo fornecimento</td>
-      </tr>
-      <tr>
-        <td>3</td>
-        <td>1..1</td>
-        <td>Ocupação do profissional responsável pelo fornecimento</td>
-        <td>Codificado</td>
-        <td>Código referente à Ocupação do Profissional de acordo com a Classificação Brasileira de Ocupações - CBO</td>
-      </tr>
-      <tr>
-        <td>3</td>
-        <td>1..1</td>
-        <td>Assinatura eletrônica do responsável pelo fornecimento</td>
-        <td></td>
-        <td>Assinatura eletrônica conforme regras definidas pelo DATASUS</td>
-      </tr>
-    </tbody>
-  </table>
-
-  <a name="identificacao-2"> </a>
-  <h4>Identificação do individuo responsável pela retirada ou compra do medicamento</h4>
-
-  <table class="grid">
-    <thead>
-      <tr style="background-color: #538ce9;">
-        <th>Nível</th>
-        <th>Ocorrência</th>
-        <th>Seção/Item</th>
-        <th>Tipo de Dado</th>
-        <th>Conceito/Observações</th>
-      </tr>
-    </thead>
-    <thead>
-      <tr style="background-color: #4dbf4d">
+      <tr class="section" style="background-color: #4dbf4d;">
         <td>1</td>
+        <td>Identificação do Indivíduo Responsável pela Retirada ou Compra do Medicamento</td>
+        <td>SECTION</td>
         <td>1..1</td>
-        <td>Identificação do individuo responsável pela retirada ou compra do
+        <td>Bloco de informações referentes ao indivíduo responsável pela retirada ou compra do medicamento prescrito
+        </td>
+        <td>N/A</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Documento de Identificação do Indivíduo Responsável Pela Retirada ou Compra do Medicamento</td>
+        <td></td>
+        <td>1..1</td>
+        <td>Identificação unívoca do responsável pela retirada ou compra do medicamento, mediante número único válido em
+          todo o território nacional, sendo:
+          <ul>
+            <li>Cartão Nacional de Saúde (CNS)</li>
+            <li>Cadastro de Pessoa Física (CPF)</li>
+          </ul>
+        </td>
+        <td><code>MedicationDispense.receiver.identifier.value</code></td>
+      </tr>
+      <tr class="section" style="background-color: #4dbf4d;">
+        <td>1</td>
+        <td>Identificação da Prescrição</td>
+        <td>SECTION</td>
+        <td>1..1</td>
+        <td>Bloco de informações de identificação da prescrição que deu origem à dispensação ou fornecimento do
           medicamento</td>
-        <td>Seção</td>
-        <td>Bloco de informações referentes ao indivíduo responsável pela retirada ou
-          compra do medicamento prescrito</td>
+        <td>N/A</td>
       </tr>
-    </thead>
-    <tbody>
       <tr>
         <td>2</td>
-        <td>1..1</td>
-        <td>Identificação do indivíduo responsável pela retirada ou compra do medicamento</td>
-        <td>Número</td>
-        <td>Quando exigido por legislação, por meio do Número do Cadastro de Pessoa Física - CPF ou Cartão
-          Nacional de Saúde - CNS</td>
-      </tr>
-    </tbody>
-  </table>
-
-  <a name="identificacao-3"> </a>
-  <h4>Identificação da prescrição de medicamento</h4>
-
-  <table class="grid">
-    <thead>
-      <tr style="background-color: #538ce9;">
-        <th>Nível</th>
-        <th>Ocorrência</th>
-        <th>Seção/Item</th>
-        <th>Tipo de Dado</th>
-        <th>Conceito/Observações</th>
-      </tr>
-    </thead>
-    <thead>
-      <tr style="background-color: #4dbf4d">
-        <td>1</td>
-        <td>1..1</td>
-        <td>Identificação da prescrição de medicamento</td>
-        <td>Seção</td>
-        <td></td>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>2</td>
+        <td>Identificação da Prescrição na RNDS</td>
+        <td>II</td>
         <td>0..1</td>
-        <td>Identificação da prescrição na Rede Nacional de Dados em Saúde- RNDS</td>
-        <td>Texto</td>
-        <td>Identificação da prescrição gerada pela RNDS<br />É necessário informa o Número de Identificação da
-          Prescrição na RNDS ou os Dados da Prescrição</td>
+        <td>Identificador da prescrição na RNDS.</td>
+        <td><code>MedicationDispense.authorizingPrescription.identifier.value</code></td>
       </tr>
-      <tr>
+      <tr class="section" style="background-color: #4dbf4d;">
         <td>2</td>
+        <td>Informações da Prescrição de Medicamento</td>
+        <td>SECTION</td>
         <td>0..1</td>
-        <td>Identificação do profissional responsável pela prescrição</td>
-        <td>Número</td>
-        <td>Número do Cadastro de Pessoa Física - CPF ou Cartão Nacional de Saúde - CNS</td>
+        <td>Transcrição das informações da prescrição que está fora da RNDS.</td>
+        <td><code>Composition.section</code></td>
+      </tr>
+      <tr class="section" style="background-color: #4dbf4d;">
+        <td>3</td>
+        <td>Motivo de a Prescrição ser realizada</td>
+        <td>SECTION</td>
+        <td>1..1</td>
+        <td>Bloco de informações referentes ao motivo de a prescrição ser realizada</td>
+        <td><code>Composition.section.section</code></td>
       </tr>
       <tr>
         <td>3</td>
-        <td>1..1</td>
-        <td>Sigla do conselho profissional ou Registro Único emitido pelo Ministério da Saúde (RMS)</td>
-        <td>Texto</td>
-        <td>Registro Único do MInistério da Saúde para médico intercambista participante do Projeto Mais Médicos
-          para o Brasil</td>
+        <td>Entrada de Motivo da Prescrição</td>
+        <td>N/A</td>
+        <td>1..*</td>
+        <td>N/A</td>
+        <td><code>Composition.section.section.entry</code></td>
       </tr>
       <tr>
         <td>4</td>
+        <td>Motivo da Prescrição</td>
+        <td>CD</td>
         <td>1..1</td>
-        <td>Unidade Federativa do conselho profissional ou RMS</td>
-        <td>Texto</td>
-        <td>Sigla da Unidade Federativa onde o profissional possui registro</td>
+        <td>Conforme:
+          <ul>
+            <li>Classificação Internacional de Doenças - CID</li>
+            <li>Classificação Internacional de Atenção Primária - CIAP</li>
+          </ul>
+        </td>
+        <td><code>Condition.code.coding.code</code></td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Terminologia</td>
+        <td>URI</td>
+        <td>1..1</td>
+        <td>Terminologia do Motivo de a Prescrição ser realizada.</td>
+        <td><code>Condition.code.coding.system</code></td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Versão da Terminologia</td>
+        <td>ST</td>
+        <td>0..1</td>
+        <td>Versão da Terminologia do Motivo de a Prescrição ser realizada.</td>
+        <td><code>Condition.code.coding.version</code></td>
+      </tr>
+      <tr class="section" style="background-color: #4dbf4d;">
+        <td>3</td>
+        <td>Detalhes da Prescrição de Medicamento</td>
+        <td>SECTION</td>
+        <td>1..1</td>
+        <td>Bloco de informações referentes ao profissional prescritor e estabelecimento de saúde</td>
+        <td>N/A</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Inscrição no Cadastro Nacional de Estabelecimento de Saúde (CNES)</td>
+        <td>II</td>
+        <td>1..1</td>
+        <td>Identificação unívoca do estabelecimento prescritor, mediante número único válido em todo o território
+          nacional, sendo: - Cadastro Nacional de Estabelecimentos de Saúde (CNES).</td>
+        <td><code>Organization.idetifier.value</code></td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Data e Hora de Emissão da Prescrição</td>
+        <td>TS</td>
+        <td>1..1</td>
+        <td>Data e hora em que a prescrição de medicamento foi emitida, conforme ISO 8601. Ex.:
+          <code>2026-07-21T14:50:50-03:00</code>
+        </td>
+        <td><code>MedicationRequest.authoredOn</code></td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Profissional Responsável pela Prescrição</td>
+        <td>CONTAINER</td>
+        <td>1..1</td>
+        <td>N/A</td>
+        <td><code>MedicationRequest.requester.reference</code></td>
       </tr>
       <tr>
         <td>5</td>
+        <td>Documento de Identificação do Profissional</td>
+        <td>II</td>
         <td>1..1</td>
-        <td>Número do conselho profissional ou RMS</td>
-        <td>Número</td>
-        <td>Número de registro do profissional no respectivo conselho ou Ministério da Saúde</td>
+        <td>Identificação unívoca do profissional prescritor, mediante número único válido em todo o território
+          nacional, sendo:
+          <ul>
+            <li>Cartão Nacional de Saúde (CNS)</li>
+            <li>Cadastro de Pessoa Física (CPF)</li>
+          </ul>
+        </td>
+        <td><code>Practitioner.identifier:cpf.value</code><br />
+          <code>Practitioner.identifier:cns.value</code>
+        </td>
       </tr>
       <tr>
-        <td>6</td>
+        <td>5</td>
+        <td>Sigla do Conselho Profissional ou RMS</td>
+        <td>CD</td>
+        <td>1..1</td>
+        <td>Indica a entidade de conselho profissional do prescritor.</td>
+        <td><code>Practitioner.identifier.system</code></td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>Unidade Federativa do Conselho Profissional ou RMS</td>
+        <td>CD</td>
+        <td>1..1</td>
+        <td>Sigla da Unidade Federativa onde o profissional possui registro.</td>
+        <td><code>Practitioner.identifier.system</code></td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>Número do Conselho Profissional ou RMS</td>
+        <td>ST</td>
+        <td>1..1</td>
+        <td>Número do Conselho do profissional prescritor ou Registro Único do MInistério da Saúde para médico
+          intercambista participante do Projeto Mais Médicos para o Brasil.</td>
+        <td><code>Practitioner.identifier.value</code></td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>Número do Registro de Qualificação de Especialista (RQE)</td>
+        <td>ST</td>
         <td>0..1</td>
-        <td>Número de Registro de Qualificação de Especialista (RQE)</td>
-        <td>Número</td>
-        <td>Número do Registro de Qualificação de Especialista emitido pelo respectivo conselho</td>
+        <td>Número do Registro de Qualificação de Especialista emitido pelo respectivo conselho.</td>
+        <td><code>Practitioner.identifier.value</code></td>
       </tr>
       <tr>
-        <td>6</td>
-        <td>0..1</td>
-        <td>Especialidade profissional</td>
-        <td>Codificado</td>
-        <td>Código referente à Especialidade do Profissional de acordo com a Classificação Brasileira de Ocupações
-          - CBO</td>
-      </tr>
-      <tr>
-        <td>2</td>
+        <td>5</td>
+        <td>Especialidade do Profissional</td>
+        <td>CD</td>
         <td>1..1</td>
-        <td>Inscrição no Cadastro Nacional de Estabelecimento de Saúde</td>
-        <td>Número</td>
-        <td>Número do Cadastro Nacional de Estabelecimentos de Saúde - CNES</td>
+        <td>Atividade desempenhada pelo profissional que realizou a emissão da prescrição, de acordo com a Classificação
+          Brasileira de Ocupações - CBO.</td>
+        <td><code>PractitionerRole.code.coding.code</code></td>
       </tr>
-      <tr>
-        <td>2</td>
+      <tr class="section" style="background-color: #4dbf4d;">
+        <td>3</td>
+        <td>Medicamentos Prescritos</td>
+        <td>SECTION</td>
         <td>1..1</td>
-        <td>Data e hora da emissão da prescrição</td>
-        <td>Data</td>
-        <td>Data e hora em que a prescrição de medicamento foi emitida</td>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td>1..1</td>
-        <td>Motivo de a prescrição ser realizada</td>
-        <td>Codificado</td>
-        <td>Conforme Classificação Internacional de Doenças - CID ou Classificação Internacional de Atenção
-          Primária - CIAP</td>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td>0..1</td>
-        <td>Número da receita</td>
-        <td>Número</td>
-        <td>Número da receita emitido no Sistema Nacional de Controle de Receituários - SNCR</td>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td>1..N</td>
-        <td>Medicamento prescrito</td>
-        <td>Codificado</td>
-        <td>Código do medicamento conforme Ontologia Brasileira de Medicamento- OBM</td>
+        <td>Bloco de informações referentes ao medicamento prescrito e como deve ser consumido e/ou administrado</td>
+        <td><code>MedicationDispense.authorizingPrescription.reference</code></td>
       </tr>
       <tr>
         <td>3</td>
-        <td>1..1</td>
-        <td>Via de administração</td>
-        <td>Codificado</td>
-        <td>Via de Administração do Medicamento Prescrito</td>
+        <td>Entrada de Medicamentos Prescritos</td>
+        <td>N/A</td>
+        <td>1..*</td>
+        <td>N/A</td>
+        <td><code>Composition.section.section.entry</code></td>
       </tr>
       <tr>
-        <td>3</td>
+        <td>4</td>
+        <td>Número da Receita</td>
+        <td>II</td>
+        <td>0..1</td>
+        <td>Número da receita emitido no Sistema Nacional de Controle de Receituários - SNCR.</td>
+        <td><code>MedicationRequest.identifier:sncrNumber.value</code></td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Medicamento Prescrito</td>
+        <td>CD</td>
         <td>1..1</td>
-        <td>Quantidade da dose do medicamento</td>
-        <td>Número</td>
-        <td>Quantidade da dose do medicamento prescrito</td>
+        <td>Código do medicamento conforme Ontologia Brasileira de Medicamento - OBM.</td>
+        <td><code>Medication.code.coding.code</code></td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Terminologia do Medicamento</td>
+        <td>URI</td>
+        <td>1..1</td>
+        <td>Terminologia do Medicamento Prescrito.</td>
+        <td><code>Medication.code.coding.system</code></td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Versão da Terminologia</td>
+        <td>ST</td>
+        <td>0..1</td>
+        <td>Versão da Terminologia do Medicamento Prescrito.</td>
+        <td><code>Medication.code.coding.version</code></td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Via de Administração</td>
+        <td>CD</td>
+        <td>1..1</td>
+        <td>Via de Administração do Medicamento Prescrito.</td>
+        <td><code>MedicationRequest.dosageInstruction.route.coding.code</code></td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Quantidade da Dose do Medicamento</td>
+        <td>CD</td>
+        <td>1..1</td>
+        <td>Quantidade da unidade de consumo do medicamento prescrito a cada dose.</td>
+        <td><code>MedicationRequest.dosageInstruction.doseAndRate.doseQuantity</code></td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Duração do Tratamento Medicamentoso</td>
+        <td>PQ</td>
+        <td>1..1</td>
+        <td>Duração do tratamento medicamentoso.</td>
+        <td><code>MedicationRequest.dosageInstruction.timing.repeat</code></td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Frequência de Uso do Medicamento</td>
+        <td>PQ</td>
+        <td>1..1</td>
+        <td>Frequência de uso do medicamento prescrito.</td>
+        <td><code>MedicationRequest.dosageInstruction.timing.repeat.frequency</code></td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Instruções ou Orientações</td>
+        <td>ST</td>
+        <td>0..1</td>
+        <td>Instruções e orientações referentes ao uso do medicamento prescrito, quando necessário.</td>
+        <td><code>MedicationRequest.dosageInstruction.additionalInstruction</code></td>
+      </tr>
+      <tr class="section" style="background-color: #4dbf4d;">
+        <td>1</td>
+        <td>Assinatura Eletrônica</td>
+        <td>SECTION</td>
+        <td>1..1</td>
+        <td>N/A</td>
+        <td>N/A</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Assinatura Eletrônica do Profissional Responsável pela Dispensação ou Fornecimento de Medicamento</td>
+        <td>ED</td>
+        <td>1..1</td>
+        <td>Assinatura eletrônica conforme regras definidas pelo DATASUS.</td>
+        <td><code>Bundle.signature</code></td>
       </tr>
     </tbody>
   </table>

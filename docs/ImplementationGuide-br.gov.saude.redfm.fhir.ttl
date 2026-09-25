@@ -5,13 +5,13 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0/ImplementationGuide/br.gov.saude.redfm.fhir> a fhir:ImplementationGuide ;
+<https://fhir.saude.gov.br/redfm/ImplementationGuide/br.gov.saude.redfm.fhir> a fhir:ImplementationGuide ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:Resource.id [ fhir:value "br.gov.saude.redfm.fhir"] ;
   fhir:Resource.language [ fhir:value "en"] ;
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ] ;
-     fhir:Narrative.div "<div xml:lang=\"en\" xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"en\"><p class=\"res-header-id\"><b>Narrativa gerada: ImplementationGuide br.gov.saude.redfm.fhir</b></p><a name=\"br.gov.saude.redfm.fhir\"> </a><a name=\"hcbr.gov.saude.redfm.fhir\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Língua: en</p></div><h2>REDFMRNDSIG</h2><p>O URL oficial para este guia de implementação é: </p><pre>https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0/ImplementationGuide/br.gov.saude.redfm.fhir</pre><div><p>Guia de Implementação da Rede Nacional de Dados em Saúde (RNDS)</p>\n</div></div>"
+     fhir:Narrative.div "<div xml:lang=\"en\" xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"en\"><p class=\"res-header-id\"><b>Narrativa gerada: ImplementationGuide br.gov.saude.redfm.fhir</b></p><a name=\"br.gov.saude.redfm.fhir\"> </a><a name=\"hcbr.gov.saude.redfm.fhir\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Língua: en</p></div><h2>REDFMRNDSIG</h2><p>O URL oficial para este guia de implementação é: </p><pre>https://fhir.saude.gov.br/redfm/ImplementationGuide/br.gov.saude.redfm.fhir</pre><div><p>Guia de Implementação da Rede Nacional de Dados em Saúde (RNDS)</p>\n</div></div>"
   ] ;
   fhir:DomainResource.extension [
      fhir:index 0 ;
@@ -30,13 +30,13 @@
      fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version" ] ;
      fhir:Extension.valueCode [ fhir:value "4.0.1" ]
   ] ;
-  fhir:ImplementationGuide.url [ fhir:value "https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0/ImplementationGuide/br.gov.saude.redfm.fhir"] ;
+  fhir:ImplementationGuide.url [ fhir:value "https://fhir.saude.gov.br/redfm/ImplementationGuide/br.gov.saude.redfm.fhir"] ;
   fhir:ImplementationGuide.version [ fhir:value "1.0.0-release"] ;
   fhir:ImplementationGuide.name [ fhir:value "REDFMRNDSIG"] ;
   fhir:ImplementationGuide.title [ fhir:value "Guia de Implementação do Registro Eletrônico de Dispensação ou Fornecimento de Medicamento (REDFM) da RNDS"] ;
   fhir:ImplementationGuide.status [ fhir:value "active"] ;
   fhir:ImplementationGuide.experimental [ fhir:value "false"^^xsd:boolean] ;
-  fhir:ImplementationGuide.date [ fhir:value "2026-06-30T10:02:10-03:00"^^xsd:dateTime] ;
+  fhir:ImplementationGuide.date [ fhir:value "2026-09-25T17:16:20-03:00"^^xsd:dateTime] ;
   fhir:ImplementationGuide.publisher [ fhir:value "Ministério da Saúde do Brasil"] ;
   fhir:ImplementationGuide.contact [
      fhir:index 0 ;
@@ -79,7 +79,7 @@
        fhir:link <http://terminology.hl7.org/ImplementationGuide/hl7.terminology>
      ] ;
      fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "hl7.terminology.r4" ] ;
-     fhir:ImplementationGuide.dependsOn.version [ fhir:value "7.2.0" ]
+     fhir:ImplementationGuide.dependsOn.version [ fhir:value "7.4.0" ]
   ], [
      fhir:index 1 ;
      fhir:Element.id [ fhir:value "hl7ext" ] ;
@@ -341,7 +341,7 @@
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
-         fhir:Extension.valueString [ fhir:value "path-liquid" ]
+         fhir:Extension.valueString [ fhir:value "path-liquid-template" ]
        ], [
          fhir:index 1 ;
          fhir:Extension.url [ fhir:value "value" ] ;
@@ -353,7 +353,7 @@
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
-         fhir:Extension.valueString [ fhir:value "path-liquid" ]
+         fhir:Extension.valueString [ fhir:value "path-liquid-template" ]
        ], [
          fhir:index 1 ;
          fhir:Extension.url [ fhir:value "value" ] ;
@@ -417,7 +417,7 @@
        ], [
          fhir:index 1 ;
          fhir:Extension.url [ fhir:value "value" ] ;
-         fhir:Extension.valueString [ fhir:value "https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0/history.html" ]
+         fhir:Extension.valueString [ fhir:value "https://fhir.saude.gov.br/redfm/history.html" ]
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
@@ -861,7 +861,7 @@
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
-         fhir:Extension.valueCode [ fhir:value "path-liquid" ]
+         fhir:Extension.valueCode [ fhir:value "path-liquid-template" ]
        ], [
          fhir:index 1 ;
          fhir:Extension.url [ fhir:value "value" ] ;
@@ -873,7 +873,7 @@
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
-         fhir:Extension.valueCode [ fhir:value "path-liquid" ]
+         fhir:Extension.valueCode [ fhir:value "path-liquid-template" ]
        ], [
          fhir:index 1 ;
          fhir:Extension.url [ fhir:value "value" ] ;
@@ -937,7 +937,7 @@
        ], [
          fhir:index 1 ;
          fhir:Extension.url [ fhir:value "value" ] ;
-         fhir:Extension.valueString [ fhir:value "https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0/history.html" ]
+         fhir:Extension.valueString [ fhir:value "https://fhir.saude.gov.br/redfm/history.html" ]
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
@@ -1141,11 +1141,11 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0/StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamento> ;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamento" ]
+         fhir:link <https://fhir.saude.gov.br/redfm/StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Registro Eletrônico de Dispensação ou Fornecimento de Medicamento (REDFM)" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Registro Eletrônico de Dispensação ou Fornecimento de Medicamento (REDFM)" ]
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Documento público que coleta os dados das prescrições de medicamentos realizadas em qualquer estabelecimento de saúde do país, público ou privado." ]
      ], [
        fhir:index 1 ;
        fhir:Element.extension [
@@ -1154,14 +1154,14 @@
          fhir:Extension.valueString [ fhir:value "Bundle" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0/Bundle/01-redfm-completo-com-prescricao-dispensador-farmaceutico> ;
-         fhir:Reference.reference [ fhir:value "Bundle/01-redfm-completo-com-prescricao-dispensador-farmaceutico" ]
+         fhir:link <https://fhir.saude.gov.br/redfm/Bundle/example-redfm-01-prescricao-na-rnds> ;
+         fhir:Reference.reference [ fhir:value "Bundle/example-redfm-01-prescricao-na-rnds" ]
        ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Bundle de exemplo do REDFM (1)" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Bundle de exemplo do Registro Eletrônico de Dispensação ou Fornecimento de Medicamento     (REDFM)" ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Bundle 1 de exemplo do REDFM (Prescrição na RNDS)" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Bundle de exemplo do REDFM com prescrição realizada na RNDS" ] ;
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamento" ;
-         fhir:link <http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamento>
+         fhir:value "http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos" ;
+         fhir:link <http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos>
        ]
      ], [
        fhir:index 2 ;
@@ -1171,14 +1171,14 @@
          fhir:Extension.valueString [ fhir:value "Bundle" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0/Bundle/02-redfm-completo-substituicao> ;
-         fhir:Reference.reference [ fhir:value "Bundle/02-redfm-completo-substituicao" ]
+         fhir:link <https://fhir.saude.gov.br/redfm/Bundle/example-redfm-02-prescricao-fora-rnds> ;
+         fhir:Reference.reference [ fhir:value "Bundle/example-redfm-02-prescricao-fora-rnds" ]
        ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Bundle de exemplo do REDFM (2)" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Bundle de exemplo do Registro Eletrônico de Dispensação ou Fornecimento de Medicamento     (REDFM)" ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Bundle 2 de exemplo do REDFM (Prescrição fora da RNDS)" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Bundle de exemplo do REDFM com prescrição realizada fora da RNDS" ] ;
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamento" ;
-         fhir:link <http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamento>
+         fhir:value "http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos" ;
+         fhir:link <http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos>
        ]
      ], [
        fhir:index 3 ;
@@ -1188,14 +1188,14 @@
          fhir:Extension.valueString [ fhir:value "Bundle" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0/Bundle/03-redfm-completo-com-prescricao-fornecedor-nao-farmaceutico> ;
-         fhir:Reference.reference [ fhir:value "Bundle/03-redfm-completo-com-prescricao-fornecedor-nao-farmaceutico" ]
+         fhir:link <https://fhir.saude.gov.br/redfm/Bundle/example-redfm-03-fornecimento-sem-crf> ;
+         fhir:Reference.reference [ fhir:value "Bundle/example-redfm-03-fornecimento-sem-crf" ]
        ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Bundle de exemplo do REDFM (3)" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Bundle de exemplo do Registro Eletrônico de Dispensação ou Fornecimento de Medicamento     (REDFM)" ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Bundle 3 de exemplo do REDFM (Fornecimento sem CRF)" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Bundle de exemplo do REDFM com fornecimento realizado sem CRF" ] ;
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamento" ;
-         fhir:link <http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamento>
+         fhir:value "http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos" ;
+         fhir:link <http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos>
        ]
      ], [
        fhir:index 4 ;
@@ -1205,14 +1205,14 @@
          fhir:Extension.valueString [ fhir:value "Bundle" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0/Bundle/04-redfm-parcial-com-prescricao-fornecedor-nao-farmaceutico> ;
-         fhir:Reference.reference [ fhir:value "Bundle/04-redfm-parcial-com-prescricao-fornecedor-nao-farmaceutico" ]
+         fhir:link <https://fhir.saude.gov.br/redfm/Bundle/example-redfm-04-fornecedor-e-dispensador> ;
+         fhir:Reference.reference [ fhir:value "Bundle/example-redfm-04-fornecedor-e-dispensador" ]
        ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Bundle de exemplo do REDFM (4)" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Bundle de exemplo do Registro Eletrônico de Dispensação ou Fornecimento de Medicamento     (REDFM)" ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Bundle 4 de exemplo do REDFM (Fornecedor e Dispensador)" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Bundle de exemplo do REDFM com fornecedor e dispensador" ] ;
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamento" ;
-         fhir:link <http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamento>
+         fhir:value "http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos" ;
+         fhir:link <http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos>
        ]
      ], [
        fhir:index 5 ;
@@ -1222,14 +1222,14 @@
          fhir:Extension.valueString [ fhir:value "Bundle" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0/Bundle/05-redfm-nao-dispensado-com-prescricao> ;
-         fhir:Reference.reference [ fhir:value "Bundle/05-redfm-nao-dispensado-com-prescricao" ]
+         fhir:link <https://fhir.saude.gov.br/redfm/Bundle/example-redfm-05-nao-atendida-com-justificativa> ;
+         fhir:Reference.reference [ fhir:value "Bundle/example-redfm-05-nao-atendida-com-justificativa" ]
        ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Bundle de exemplo do REDFM (5)" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Bundle de exemplo do Registro Eletrônico de Dispensação ou Fornecimento de Medicamento     (REDFM)" ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Bundle 5 de exemplo do REDFM (Não Atendida com Justificativa)" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Bundle de exemplo do REDFM não atendido e com justificativa" ] ;
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamento" ;
-         fhir:link <http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamento>
+         fhir:value "http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos" ;
+         fhir:link <http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos>
        ]
      ], [
        fhir:index 6 ;
@@ -1239,14 +1239,14 @@
          fhir:Extension.valueString [ fhir:value "Bundle" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0/Bundle/06-redfm-nao-dispensado-e-dispensado-com-prescricao-dispensador-farmaceutico> ;
-         fhir:Reference.reference [ fhir:value "Bundle/06-redfm-nao-dispensado-e-dispensado-com-prescricao-dispensador-farmaceutico" ]
+         fhir:link <https://fhir.saude.gov.br/redfm/Bundle/example-redfm-06-parcial-com-justificativa> ;
+         fhir:Reference.reference [ fhir:value "Bundle/example-redfm-06-parcial-com-justificativa" ]
        ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Bundle de exemplo do REDFM (6)" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Bundle de exemplo do Registro Eletrônico de Dispensação ou Fornecimento de Medicamento     (REDFM)" ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Bundle 6 de exemplo do REDFM (Parcial com Justificativa)" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Bundle de exemplo do REDFM parcial e com justificativa" ] ;
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamento" ;
-         fhir:link <http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamento>
+         fhir:value "http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos" ;
+         fhir:link <http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos>
        ]
      ], [
        fhir:index 7 ;
@@ -1256,14 +1256,14 @@
          fhir:Extension.valueString [ fhir:value "Bundle" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0/Bundle/07-redfm-completo-sem-prescricao-fornecedor-nao-farmaceutico> ;
-         fhir:Reference.reference [ fhir:value "Bundle/07-redfm-completo-sem-prescricao-fornecedor-nao-farmaceutico" ]
+         fhir:link <https://fhir.saude.gov.br/redfm/Bundle/example-redfm-07-lote-validade> ;
+         fhir:Reference.reference [ fhir:value "Bundle/example-redfm-07-lote-validade" ]
        ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Bundle de exemplo do REDFM (7)" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Bundle de exemplo do Registro Eletrônico de Dispensação ou Fornecimento de Medicamento     (REDFM)" ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Bundle 7 de exemplo do REDFM (Lote e Validade)" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Bundle de exemplo do REDFM com lote e validade" ] ;
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamento" ;
-         fhir:link <http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamento>
+         fhir:value "http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos" ;
+         fhir:link <http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos>
        ]
      ], [
        fhir:index 8 ;
@@ -1273,41 +1273,49 @@
          fhir:Extension.valueString [ fhir:value "Bundle" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0/Bundle/08-redfm-completo-sem-prescricao-dispensador-farmaceutico> ;
-         fhir:Reference.reference [ fhir:value "Bundle/08-redfm-completo-sem-prescricao-dispensador-farmaceutico" ]
+         fhir:link <https://fhir.saude.gov.br/redfm/Bundle/example-redfm-08-author-valido-cnpj> ;
+         fhir:Reference.reference [ fhir:value "Bundle/example-redfm-08-author-valido-cnpj" ]
        ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Bundle de exemplo do REDFM (8)" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Bundle de exemplo do Registro Eletrônico de Dispensação ou Fornecimento de Medicamento     (REDFM)" ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Bundle 8 de exemplo do REDFM (Author válido - CNPJ)" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Bundle de exemplo do REDFM com author válido - CNPJ" ] ;
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamento" ;
-         fhir:link <http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamento>
+         fhir:value "http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos" ;
+         fhir:link <http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos>
        ]
      ], [
        fhir:index 9 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
-         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+         fhir:Extension.valueString [ fhir:value "Bundle" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0/CodeSystem/BRCBO> ;
-         fhir:Reference.reference [ fhir:value "CodeSystem/BRCBO" ]
+         fhir:link <https://fhir.saude.gov.br/redfm/Bundle/example-redfm-09-author-valido-cpf> ;
+         fhir:Reference.reference [ fhir:value "Bundle/example-redfm-09-author-valido-cpf" ]
        ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Classificação Brasileira de Ocupações - CBO (CodeSystem)" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Classifica as profissões do mercado de trabalho brasileiro." ]
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Bundle 9 de exemplo do REDFM (Author válido - CPF)" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Bundle de exemplo do REDFM com author válido - CPF" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos" ;
+         fhir:link <http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos>
+       ]
      ], [
        fhir:index 10 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
-         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+         fhir:Extension.valueString [ fhir:value "Bundle" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0/CodeSystem/BRCIAP2> ;
-         fhir:Reference.reference [ fhir:value "CodeSystem/BRCIAP2" ]
+         fhir:link <https://fhir.saude.gov.br/redfm/Bundle/example-redfm-10-ampp-sem-forma-fabricante> ;
+         fhir:Reference.reference [ fhir:value "Bundle/example-redfm-10-ampp-sem-forma-fabricante" ]
        ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Classificação Internacional de Atenção Primária - Segunda Edição (CIAP2)" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Classifica os problemas identificados no contato assistencial pelos profissionais de saúde, os motivos da contato assistencial e as respostas propostas pela equipe seguindo a sistematização SOAP." ]
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Bundle 10 de exemplo do REDFM (AMPP sem forma e com fabricante)" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Bundle de exemplo do REDFM com AMPP sem forma e com fabricante" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos" ;
+         fhir:link <http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos>
+       ]
      ], [
        fhir:index 11 ;
        fhir:Element.extension [
@@ -1316,11 +1324,11 @@
          fhir:Extension.valueString [ fhir:value "CodeSystem" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0/CodeSystem/BRCID10> ;
-         fhir:Reference.reference [ fhir:value "CodeSystem/BRCID10" ]
+         fhir:link <https://fhir.saude.gov.br/redfm/CodeSystem/BRCBO> ;
+         fhir:Reference.reference [ fhir:value "CodeSystem/BRCBO" ]
        ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Classificação Internacional de Doenças - Décima Revisão (CID-10)" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Classifica as doenças e outros problemas em saúde registrados em diversos tipos de documentos clínicos." ]
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Classificação Brasileira de Ocupações - CBO (CodeSystem)" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Classifica as profissões do mercado de trabalho brasileiro." ]
      ], [
        fhir:index 12 ;
        fhir:Element.extension [
@@ -1329,11 +1337,11 @@
          fhir:Extension.valueString [ fhir:value "CodeSystem" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0/CodeSystem/BRConselhoProfissional> ;
-         fhir:Reference.reference [ fhir:value "CodeSystem/BRConselhoProfissional" ]
+         fhir:link <https://fhir.saude.gov.br/redfm/CodeSystem/BRCIAP2> ;
+         fhir:Reference.reference [ fhir:value "CodeSystem/BRCIAP2" ]
        ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Conselhos profissionais de saúde do Brasil" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Esse CodeSystem inclui os conselhos profissionais de saúde do Brasil, conforme a Resolução CNS 251/1997." ]
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Classificação Internacional de Atenção Primária - Segunda Edição (CIAP2)" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Classifica os problemas identificados no contato assistencial pelos profissionais de saúde, os motivos da contato assistencial e as respostas propostas pela equipe seguindo a sistematização SOAP." ]
      ], [
        fhir:index 13 ;
        fhir:Element.extension [
@@ -1342,11 +1350,11 @@
          fhir:Extension.valueString [ fhir:value "CodeSystem" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0/CodeSystem/BRObmAMPP> ;
-         fhir:Reference.reference [ fhir:value "CodeSystem/BRObmAMPP" ]
+         fhir:link <https://fhir.saude.gov.br/redfm/CodeSystem/BRCID10> ;
+         fhir:Reference.reference [ fhir:value "CodeSystem/BRCID10" ]
        ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Terminologia de Produto Medicinal Comercial com Apresentação (AMPP) na Ontologia Brasileira de Medicamentos (OBM)" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Apresenta o Terminologia de Produto Medicinal Comercial com Apresentação (AMPP) e seu Código na Ontologia Brasileira de Medicamentos (OBM)" ]
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Classificação Internacional de Doenças - Décima Revisão (CID-10)" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Classifica as doenças e outros problemas em saúde registrados em diversos tipos de documentos clínicos." ]
      ], [
        fhir:index 14 ;
        fhir:Element.extension [
@@ -1355,11 +1363,11 @@
          fhir:Extension.valueString [ fhir:value "CodeSystem" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0/CodeSystem/BRObmANVISA> ;
-         fhir:Reference.reference [ fhir:value "CodeSystem/BRObmANVISA" ]
+         fhir:link <https://fhir.saude.gov.br/redfm/CodeSystem/BRConselhoProfissional> ;
+         fhir:Reference.reference [ fhir:value "CodeSystem/BRConselhoProfissional" ]
        ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Terminologia de Produto Medicinal Comercial com Apresentação (AMPP) na Agência Nacional de Vigilância Sanitária (Anvisa)" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Apresenta o Produto Medicinal Comercial com Apresentação (AMPP) e seu Código de Registro na Agência Nacional de Vigilância Sanitária (Anvisa)" ]
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Conselhos profissionais de saúde do Brasil" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Esse CodeSystem inclui os conselhos profissionais de saúde do Brasil, conforme a Resolução CNS 251/1997." ]
      ], [
        fhir:index 15 ;
        fhir:Element.extension [
@@ -1368,11 +1376,11 @@
          fhir:Extension.valueString [ fhir:value "CodeSystem" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0/CodeSystem/BRObmCATMAT> ;
-         fhir:Reference.reference [ fhir:value "CodeSystem/BRObmCATMAT" ]
+         fhir:link <https://fhir.saude.gov.br/redfm/CodeSystem/BRJustificativaIndividuoNaoIdentificado> ;
+         fhir:Reference.reference [ fhir:value "CodeSystem/BRJustificativaIndividuoNaoIdentificado" ]
        ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Terminologia de Produto Medicinal Virtual (VMP) no Catálogo de Materiais (CATMAT)" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Apresenta o Produto Medicinal Virtual (VMP) e seu código no Catálogo de Materiais (CATMAT)" ]
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Justificativa da Impossibilidade de Identificação do Indivíduo (CodeSystem)" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Classifica as razões pelo qual não foi possível obter os dados de identificação do indivíduo em um contato assistencial. (Port. nº 84/SAS/MS/1997 e Port. nº02/SAS/SGEP/MS/2012)" ]
      ], [
        fhir:index 16 ;
        fhir:Element.extension [
@@ -1381,11 +1389,11 @@
          fhir:Extension.valueString [ fhir:value "CodeSystem" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0/CodeSystem/BRObmEAN> ;
-         fhir:Reference.reference [ fhir:value "CodeSystem/BRObmEAN" ]
+         fhir:link <https://fhir.saude.gov.br/redfm/CodeSystem/BRObmAMPP> ;
+         fhir:Reference.reference [ fhir:value "CodeSystem/BRObmAMPP" ]
        ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Terminologia de Produto Medicinal Virtual (VMP) na GS1.org" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Apresenta o Produto Medicinal Virtual (VMP) e seu Número Europeu do Artigo (EAN) na GS1.org" ]
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Terminologia de Produto Medicinal Comercial com Apresentação (AMPP) na Ontologia Brasileira de Medicamentos (OBM)" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Apresenta o Terminologia de Produto Medicinal Comercial com Apresentação (AMPP) e seu Código na Ontologia Brasileira de Medicamentos (OBM)" ]
      ], [
        fhir:index 17 ;
        fhir:Element.extension [
@@ -1394,11 +1402,11 @@
          fhir:Extension.valueString [ fhir:value "CodeSystem" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0/CodeSystem/BRObmVMP> ;
-         fhir:Reference.reference [ fhir:value "CodeSystem/BRObmVMP" ]
+         fhir:link <https://fhir.saude.gov.br/redfm/CodeSystem/BRObmANVISA> ;
+         fhir:Reference.reference [ fhir:value "CodeSystem/BRObmANVISA" ]
        ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Terminologia de Produto Medicinal Virtual (VMP) na Ontologia Brasileira de Medicamentos (OBM)" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Apresenta o Produto Medicinal Virtual (VMP) e seu Código na Ontologia Brasileira de Medicamentos (OBM)" ]
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Terminologia de Produto Medicinal Comercial com Apresentação (AMPP) na Agência Nacional de Vigilância Sanitária (Anvisa)" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Apresenta o Produto Medicinal Comercial com Apresentação (AMPP) e seu Código de Registro na Agência Nacional de Vigilância Sanitária (Anvisa)" ]
      ], [
        fhir:index 18 ;
        fhir:Element.extension [
@@ -1407,11 +1415,11 @@
          fhir:Extension.valueString [ fhir:value "CodeSystem" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0/CodeSystem/BRTipoDispensacaoRealizada> ;
-         fhir:Reference.reference [ fhir:value "CodeSystem/BRTipoDispensacaoRealizada" ]
+         fhir:link <https://fhir.saude.gov.br/redfm/CodeSystem/BRObmCATMAT> ;
+         fhir:Reference.reference [ fhir:value "CodeSystem/BRObmCATMAT" ]
        ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Tipo de Dispensação Realizada (CodeSystem)" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Indica o tipo de dispensação que foi realizada" ]
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Terminologia de Produto Medicinal Virtual (VMP) no Catálogo de Materiais (CATMAT)" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Apresenta o Produto Medicinal Virtual (VMP) e seu código no Catálogo de Materiais (CATMAT)" ]
      ], [
        fhir:index 19 ;
        fhir:Element.extension [
@@ -1420,11 +1428,11 @@
          fhir:Extension.valueString [ fhir:value "CodeSystem" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0/CodeSystem/BRTipoDocumento> ;
-         fhir:Reference.reference [ fhir:value "CodeSystem/BRTipoDocumento" ]
+         fhir:link <https://fhir.saude.gov.br/redfm/CodeSystem/BRObmEAN> ;
+         fhir:Reference.reference [ fhir:value "CodeSystem/BRObmEAN" ]
        ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Tipo de Documento (CodeSystem)" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Classificação dos tipos de documentos compartilhados no Brasil." ]
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Terminologia de Produto Medicinal Virtual (VMP) na GS1.org" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Apresenta o Produto Medicinal Virtual (VMP) e seu Número Europeu do Artigo (EAN) na GS1.org" ]
      ], [
        fhir:index 20 ;
        fhir:Element.extension [
@@ -1433,11 +1441,11 @@
          fhir:Extension.valueString [ fhir:value "CodeSystem" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0/CodeSystem/BRUnidadeMedida> ;
-         fhir:Reference.reference [ fhir:value "CodeSystem/BRUnidadeMedida" ]
+         fhir:link <https://fhir.saude.gov.br/redfm/CodeSystem/BRObmVMP> ;
+         fhir:Reference.reference [ fhir:value "CodeSystem/BRObmVMP" ]
        ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Unidade de Medida" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "CodeSystem utilizado para definir a unidade de medida de um medicamento prescrito, para consumo ou especificação do fabricante." ]
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Terminologia de Produto Medicinal Virtual (VMP) na Ontologia Brasileira de Medicamentos (OBM)" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Apresenta o Produto Medicinal Virtual (VMP) e seu Código na Ontologia Brasileira de Medicamentos (OBM)" ]
      ], [
        fhir:index 21 ;
        fhir:Element.extension [
@@ -1446,50 +1454,50 @@
          fhir:Extension.valueString [ fhir:value "CodeSystem" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0/CodeSystem/BRViaAdministracao> ;
-         fhir:Reference.reference [ fhir:value "CodeSystem/BRViaAdministracao" ]
+         fhir:link <https://fhir.saude.gov.br/redfm/CodeSystem/BRTipoDispensacaoRealizada> ;
+         fhir:Reference.reference [ fhir:value "CodeSystem/BRTipoDispensacaoRealizada" ]
        ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Via de Administração (CodeSystem)" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Classifica a via na qual foi administrada uma substância em um indivíduo." ]
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Tipo de Dispensação Realizada (CodeSystem)" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Indica o tipo de dispensação que foi realizada" ]
      ], [
        fhir:index 22 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0/StructureDefinition/br-core-composition> ;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/br-core-composition" ]
+         fhir:link <https://fhir.saude.gov.br/redfm/CodeSystem/BRTipoDocumento> ;
+         fhir:Reference.reference [ fhir:value "CodeSystem/BRTipoDocumento" ]
        ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "BR Core Composition" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Este perfil representa as restrições aplicadas ao recurso br-core-composition" ]
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Tipo de Documento (CodeSystem)" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Classificação dos tipos de documentos compartilhados no Brasil." ]
      ], [
        fhir:index 23 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0/StructureDefinition/br-core-medication> ;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/br-core-medication" ]
+         fhir:link <https://fhir.saude.gov.br/redfm/CodeSystem/BRUnidadeMedida> ;
+         fhir:Reference.reference [ fhir:value "CodeSystem/BRUnidadeMedida" ]
        ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "BR Core Medication" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Medicamento BR Core" ]
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Unidade de Medida" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "CodeSystem utilizado para definir a unidade de medida de um medicamento prescrito, para consumo ou especificação do fabricante." ]
      ], [
        fhir:index 24 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0/StructureDefinition/br-core-organization> ;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/br-core-organization" ]
+         fhir:link <https://fhir.saude.gov.br/redfm/CodeSystem/BRViaAdministracao> ;
+         fhir:Reference.reference [ fhir:value "CodeSystem/BRViaAdministracao" ]
        ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "BR Core Organization" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Este perfil representa um agrupamento formal ou informal reconhecido de pessoas ou organizações com o propósito de alcançar alguma forma de ação coletiva. Inclui empresas, instituições, corporações, departamentos, grupos comunitários, grupos de práticas de saúde, planos de saúde, empresas fabricantes de produtos medicinais, entre outros." ]
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Via de Administração (CodeSystem)" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Classifica a via na qual foi administrada uma substância em um indivíduo." ]
      ], [
        fhir:index 25 ;
        fhir:Element.extension [
@@ -1498,11 +1506,11 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0/StructureDefinition/br-core-practitioner> ;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/br-core-practitioner" ]
+         fhir:link <https://fhir.saude.gov.br/redfm/StructureDefinition/br-core-composition> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/br-core-composition" ]
        ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "BR Core Practitioner" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "O Profissional é uma pessoa que está direta ou indiretamente envolvida na prestação de cuidados de saúde ou serviços relacionados ao paciente." ]
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "BR Core Composition" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Este perfil representa as restrições aplicadas ao recurso br-core-composition" ]
      ], [
        fhir:index 26 ;
        fhir:Element.extension [
@@ -1511,11 +1519,11 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0/StructureDefinition/br-core-practitionerrole> ;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/br-core-practitionerrole" ]
+         fhir:link <https://fhir.saude.gov.br/redfm/StructureDefinition/br-core-medication> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/br-core-medication" ]
        ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "BR Core PractitionerRole" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Este perfil restringe o recurso [PractitionerRole](https://hl7.org/fhir/R4/practitionerrole.html) que representa um conjunto específico de funções/locais/especialidades/serviços que um profissional pode desempenhar em uma organização por um período de tempo." ]
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "BR Core Medication" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Medicamento BR Core" ]
      ], [
        fhir:index 27 ;
        fhir:Element.extension [
@@ -1524,11 +1532,11 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0/StructureDefinition/RNDSEstabelecimentoSaude> ;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/RNDSEstabelecimentoSaude" ]
+         fhir:link <https://fhir.saude.gov.br/redfm/StructureDefinition/br-core-organization> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/br-core-organization" ]
        ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Estabelecimento de Saúde" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Estabelecimento de Saúde" ]
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "BR Core Organization" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Este perfil representa um agrupamento formal ou informal reconhecido de pessoas ou organizações com o propósito de alcançar alguma forma de ação coletiva. Inclui empresas, instituições, corporações, departamentos, grupos comunitários, grupos de práticas de saúde, planos de saúde, empresas fabricantes de produtos medicinais, entre outros." ]
      ], [
        fhir:index 28 ;
        fhir:Element.extension [
@@ -1537,11 +1545,11 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0/StructureDefinition/RNDSLotacaoProfissional> ;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/RNDSLotacaoProfissional" ]
+         fhir:link <https://fhir.saude.gov.br/redfm/StructureDefinition/br-core-practitioner> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/br-core-practitioner" ]
        ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Lotação Profissional" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Lotação Profissional" ]
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "BR Core Practitioner" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "O Profissional é uma pessoa que está direta ou indiretamente envolvida na prestação de cuidados de saúde ou serviços relacionados ao paciente." ]
      ], [
        fhir:index 29 ;
        fhir:Element.extension [
@@ -1550,24 +1558,24 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0/StructureDefinition/RNDSMedicamento> ;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/RNDSMedicamento" ]
+         fhir:link <https://fhir.saude.gov.br/redfm/StructureDefinition/br-core-practitionerrole> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/br-core-practitionerrole" ]
        ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Medicamento" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Medicamento" ]
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "BR Core PractitionerRole" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Este perfil restringe o recurso PractitionerRole que representa um conjunto específico de funções/locais/especialidades/serviços que um profissional pode desempenhar em uma organização por um período de tempo." ]
      ], [
        fhir:index 30 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0/StructureDefinition/RNDSMedicamentoDispensado> ;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/RNDSMedicamentoDispensado" ]
+         fhir:link <https://fhir.saude.gov.br/redfm/StructureDefinition/BRIndividuoNaoIdentificado-1.0> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/BRIndividuoNaoIdentificado-1.0" ]
        ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Medicamento Dispensado" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Medicamento Dispensado" ]
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Informações Complementares de Indivíduos Não Identificados" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Informações complementares necessárias ao Contato Assistencial na hipótese do indivíduo não poder ser identificado." ]
      ], [
        fhir:index 31 ;
        fhir:Element.extension [
@@ -1576,11 +1584,11 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0/StructureDefinition/RNDSMedicamentoDispensadoFornecido> ;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/RNDSMedicamentoDispensadoFornecido" ]
+         fhir:link <https://fhir.saude.gov.br/redfm/StructureDefinition/BRProblemaDiagnostico> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/BRProblemaDiagnostico" ]
        ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Dispensação ou Fornecimento Eletrônico de Medicamento" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Dispensação ou Fornecimento Eletrônico de Medicamento" ]
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ProblemaDiagnóstico" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Problema e/ou diagnóstico atribuído pelo profissional de saúde ao indivíduo no contato assistencial." ]
      ], [
        fhir:index 32 ;
        fhir:Element.extension [
@@ -1589,11 +1597,11 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0/StructureDefinition/RNDSPrescricaoMedicamentoDispensado> ;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/RNDSPrescricaoMedicamentoDispensado" ]
+         fhir:link <https://fhir.saude.gov.br/redfm/StructureDefinition/RNDSDispensacaoMedicamento> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/RNDSDispensacaoMedicamento" ]
        ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Prescrição Eletrônica de Medicamento (Contida na Dispensação)" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Dados da prescrição a serem informados durante a dispensação caso o registro não esteja na RNDS." ]
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Dispensação ou Fornecimento de Medicamento" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Este recurso Indica que um medicamento deve ser ou foi dispensado para uma pessoa/paciente. O recurso inclui a descrição do medicamento (suprimento) fornecido bem como as instruções para a sua administração. A dispensação do medicamento é o resultado de um  pedido de medicamentos feito por um sistema de informações" ]
      ], [
        fhir:index 33 ;
        fhir:Element.extension [
@@ -1602,11 +1610,11 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0/StructureDefinition/RNDSProfissional> ;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/RNDSProfissional" ]
+         fhir:link <https://fhir.saude.gov.br/redfm/StructureDefinition/RNDSEstabelecimentoSaude> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/RNDSEstabelecimentoSaude" ]
        ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Profissional" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Profissional" ]
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Estabelecimento de Saúde RNDS" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Este perfil representa um agrupamento formal ou informal reconhecido de pessoas ou organizações com o propósito de alcançar alguma forma de ação coletiva. Inclui estabelecimentos de saúde, empresas, instituições, corporações, departamentos, grupos comunitários, grupos de práticas de saúde, planos de saúde, empresas fabricantes de produtos medicinais, entre outros." ]
      ], [
        fhir:index 34 ;
        fhir:Element.extension [
@@ -1615,11 +1623,11 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0/StructureDefinition/br-core-healthcareservice> ;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/br-core-healthcareservice" ]
+         fhir:link <https://fhir.saude.gov.br/redfm/StructureDefinition/RNDSLotacaoProfissional> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/RNDSLotacaoProfissional" ]
        ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "br-core-healthcareservice" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "BR Core Healthcare Service" ]
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "RNDSLotacaoProfissional" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Este perfil restringe o recurso PractitionerRole que representa um conjunto específico de funções/locais/especialidades/serviços que um profissional pode desempenhar em uma organização por um período de tempo." ]
      ], [
        fhir:index 35 ;
        fhir:Element.extension [
@@ -1628,11 +1636,11 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0/StructureDefinition/br-core-location> ;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/br-core-location" ]
+         fhir:link <https://fhir.saude.gov.br/redfm/StructureDefinition/RNDSMedicamento> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/RNDSMedicamento" ]
        ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "br-core-location" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "BR Core Location" ]
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Medicamento" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Este recurso é utilizado principalmente para a identificação e definição de um medicamento para fins de prescrição, dispensação e administração, bem como para fazer declarações sobre o uso de medicamentos." ]
      ], [
        fhir:index 36 ;
        fhir:Element.extension [
@@ -1641,63 +1649,63 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0/StructureDefinition/br-core-relatedperson> ;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/br-core-relatedperson" ]
+         fhir:link <https://fhir.saude.gov.br/redfm/StructureDefinition/RNDSPrescricaoMedicamento> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/RNDSPrescricaoMedicamento" ]
        ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "BRCoreRelatedPerson" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "O recurso [br-core-relatedperson](https://saude.gov.br/fhir/StructureDefinition/br-core-relatedperson.html) contém as informações sobre uma pessoa envolvida no cuidado de um paciente, mas que não é alvo de cuidados de saúde nem tem responsabilidade formal no processo de cuidado. \n\nA pessoa representada pelo recurso [br-core-relatedperson](https://saude.gov.br/fhir/StructureDefinition/br-core-relatedperson.html) normalmente tem um relacionamento profissional pessoal ou não específico de cuidado em saúde com o paciente. O recurso [br-core-relatedperson](https://saude.gov.br/fhir/StructureDefinition/br-core-relatedperson.html) é usado principalmente para atribuição de informações, já que geralmente é uma fonte de informações sobre o paciente. Para manter informações sobre pessoas para fins de contato para um paciente, use um elemento br-core-patien.contact. Alguns indivíduos podem ser representados simultaneamente como  um patient.contact e [br-core-relatedperson](https://saude.gov.br/fhir/StructureDefinition/br-core-relatedperson.html).\n\nExemplos de pessoas que podem ser um [br-core-relatedperson](https://saude.gov.br/fhir/StructureDefinition/br-core-relatedperson.html):\n-	Esposa ou marido de um paciente\n-	Parentes ou amigos de um paciente\n-	Um vizinho que leva um paciente para o hospital\n-	O dono ou treinador de um cavalo\n-	Um advogado ou tutor do paciente\n-	Um cão-guia" ]
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Prescrição de Medicamento - RNDS" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Uma ordem ou solicitação para o fornecimento do medicamento e as instruções para sua administração a um paciente. O recurso é denominado \"MedicationRequest\" em vez de \"MedicationPrescription\" ou \"MedicationOrder\" para generalizar o uso em ambientes hospitalares e ambulatoriais, incluindo planos de cuidados, etc., e para harmonizar com os fluxos de trabalho." ]
      ], [
        fhir:index 37 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
-         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0/ValueSet/BRCOREN> ;
-         fhir:Reference.reference [ fhir:value "ValueSet/BRCOREN" ]
+         fhir:link <https://fhir.saude.gov.br/redfm/StructureDefinition/RNDSProfissional> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/RNDSProfissional" ]
        ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Conselhos regionais de Enfermagem do Brasil" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Conjunto de todos os conselhos regionais de enfermagem do Brasil" ]
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Profissional RNDS" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "O Profissional é uma pessoa que está direta ou indiretamente envolvida na prestação de cuidados de saúde ou serviços relacionados ao paciente." ]
      ], [
        fhir:index 38 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
-         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0/ValueSet/BRCRF> ;
-         fhir:Reference.reference [ fhir:value "ValueSet/BRCRF" ]
+         fhir:link <https://fhir.saude.gov.br/redfm/StructureDefinition/br-core-healthcareservice> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/br-core-healthcareservice" ]
        ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Conselhos regionais de Farmácia do Brasil" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Conjunto de todos os conselhos regionais de farmácia do Brasil" ]
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "br-core-healthcareservice" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "BR Core Healthcare Service" ]
      ], [
        fhir:index 39 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
-         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0/ValueSet/BRCRM> ;
-         fhir:Reference.reference [ fhir:value "ValueSet/BRCRM" ]
+         fhir:link <https://fhir.saude.gov.br/redfm/StructureDefinition/br-core-location> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/br-core-location" ]
        ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Conselhos regionais de Medicina do Brasil" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Conjunto de todos os conselhos regionais de medicina do Brasil" ]
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "br-core-location" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "BR Core Location" ]
      ], [
        fhir:index 40 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
-         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0/ValueSet/BRCRO> ;
-         fhir:Reference.reference [ fhir:value "ValueSet/BRCRO" ]
+         fhir:link <https://fhir.saude.gov.br/redfm/StructureDefinition/br-core-relatedperson> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/br-core-relatedperson" ]
        ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Conselhos regionais de Odontologia do Brasil" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Conjunto de todos os conselhos regionais de farmácia do Brasil" ]
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "BRCoreRelatedPerson" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "O recurso [br-core-relatedperson](https://saude.gov.br/fhir/StructureDefinition/br-core-relatedperson.html) contém as informações sobre uma pessoa envolvida no cuidado de um paciente, mas que não é alvo de cuidados de saúde nem tem responsabilidade formal no processo de cuidado. \n\nA pessoa representada pelo recurso [br-core-relatedperson](https://saude.gov.br/fhir/StructureDefinition/br-core-relatedperson.html) normalmente tem um relacionamento profissional pessoal ou não específico de cuidado em saúde com o paciente. O recurso [br-core-relatedperson](https://saude.gov.br/fhir/StructureDefinition/br-core-relatedperson.html) é usado principalmente para atribuição de informações, já que geralmente é uma fonte de informações sobre o paciente. Para manter informações sobre pessoas para fins de contato para um paciente, use um elemento br-core-patien.contact. Alguns indivíduos podem ser representados simultaneamente como  um patient.contact e [br-core-relatedperson](https://saude.gov.br/fhir/StructureDefinition/br-core-relatedperson.html).\n\nExemplos de pessoas que podem ser um [br-core-relatedperson](https://saude.gov.br/fhir/StructureDefinition/br-core-relatedperson.html):\n-	Esposa ou marido de um paciente\n-	Parentes ou amigos de um paciente\n-	Um vizinho que leva um paciente para o hospital\n-	O dono ou treinador de um cavalo\n-	Um advogado ou tutor do paciente\n-	Um cão-guia" ]
      ], [
        fhir:index 41 ;
        fhir:Element.extension [
@@ -1706,11 +1714,11 @@
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0/ValueSet/BROcupacao-1.0> ;
-         fhir:Reference.reference [ fhir:value "ValueSet/BROcupacao-1.0" ]
+         fhir:link <https://fhir.saude.gov.br/redfm/ValueSet/BRCOREN> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/BRCOREN" ]
        ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Classificação Brasileira de Ocupações - CBO (ValueSet)" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Classifica as profissões do mercado de trabalho brasileiro." ]
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Conselhos regionais de Enfermagem do Brasil" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Conjunto de todos os conselhos regionais de enfermagem do Brasil" ]
      ], [
        fhir:index 42 ;
        fhir:Element.extension [
@@ -1719,11 +1727,11 @@
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0/ValueSet/BROutrosProfissionais> ;
-         fhir:Reference.reference [ fhir:value "ValueSet/BROutrosProfissionais" ]
+         fhir:link <https://fhir.saude.gov.br/redfm/ValueSet/BRCRF> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/BRCRF" ]
        ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Conselhos regionais de outros profissionais da saúde do Brasil" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Conjunto de todos os conselhos regionais de outros profissionais da saúde do Brasil" ]
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Conselhos regionais de Farmácia do Brasil" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Conjunto de todos os conselhos regionais de farmácia do Brasil" ]
      ], [
        fhir:index 43 ;
        fhir:Element.extension [
@@ -1732,11 +1740,11 @@
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0/ValueSet/BRProblemaDiagnostico> ;
-         fhir:Reference.reference [ fhir:value "ValueSet/BRProblemaDiagnostico" ]
+         fhir:link <https://fhir.saude.gov.br/redfm/ValueSet/BRCRM> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/BRCRM" ]
        ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Classificação Internacional de Doenças (Atenção Primária)" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Código Internacional de Atenção Primária (CIAP2) e Classificação Internacional de Doenças (CID10)" ]
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Conselhos regionais de Medicina do Brasil" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Conjunto de todos os conselhos regionais de medicina do Brasil" ]
      ], [
        fhir:index 44 ;
        fhir:Element.extension [
@@ -1745,11 +1753,11 @@
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0/ValueSet/BRTerminologiaMedicamento> ;
-         fhir:Reference.reference [ fhir:value "ValueSet/BRTerminologiaMedicamento" ]
+         fhir:link <https://fhir.saude.gov.br/redfm/ValueSet/BRCRO> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/BRCRO" ]
        ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Terminologia dos medicamentos" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ValueSet utilizado para definir a terminologia de um dado medicamento." ]
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Conselhos regionais de Odontologia do Brasil" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Conjunto de todos os conselhos regionais de farmácia do Brasil" ]
      ], [
        fhir:index 45 ;
        fhir:Element.extension [
@@ -1758,11 +1766,11 @@
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0/ValueSet/BRTipoDispensacaoRealizada> ;
-         fhir:Reference.reference [ fhir:value "ValueSet/BRTipoDispensacaoRealizada" ]
+         fhir:link <https://fhir.saude.gov.br/redfm/ValueSet/BRCategoriaCondicao> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/BRCategoriaCondicao" ]
        ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Tipo de Dispensação Realizada (ValueSet)" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Indica o tipo de dispensação que foi realizada" ]
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Classificação de uma condição" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Tradução para o português do brasil da classificação de uma condição" ]
      ], [
        fhir:index 46 ;
        fhir:Element.extension [
@@ -1771,11 +1779,11 @@
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0/ValueSet/BRTipoDocumento-1.0> ;
-         fhir:Reference.reference [ fhir:value "ValueSet/BRTipoDocumento-1.0" ]
+         fhir:link <https://fhir.saude.gov.br/redfm/ValueSet/BREstadoDocumento-1.0> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/BREstadoDocumento-1.0" ]
        ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Tipo de Documento (ValueSet)" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Classifica o tipo de documento que está sendo trafegado." ]
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Estado do Documento" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Classifica o estado do documento que está sendo trafegado." ]
      ], [
        fhir:index 47 ;
        fhir:Element.extension [
@@ -1784,11 +1792,11 @@
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0/ValueSet/BRUnidadeMedidaMedicamento> ;
-         fhir:Reference.reference [ fhir:value "ValueSet/BRUnidadeMedidaMedicamento" ]
+         fhir:link <https://fhir.saude.gov.br/redfm/ValueSet/BREstadoResolucaoDiagnosticoProblema-1.0> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/BREstadoResolucaoDiagnosticoProblema-1.0" ]
        ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Unidade de Medida de Medicamento" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ValueSet utilizado para definir a unidade de medida de medicamentos sob informações do fabricante." ]
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Estado da Resolução de Diagnóstico ou Problema" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Estado da resolução de um diagnóstico ou problema." ]
      ], [
        fhir:index 48 ;
        fhir:Element.extension [
@@ -1797,11 +1805,141 @@
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0/ValueSet/BRViaAdministracao-1.0> ;
+         fhir:link <https://fhir.saude.gov.br/redfm/ValueSet/BRJustificativaIndividuoNaoIdentificado-1.0> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/BRJustificativaIndividuoNaoIdentificado-1.0" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Justificativa da Impossibilidade de Identificação do Indivíduo (ValueSet)" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Classifica as razões pelo qual não foi possível obter os dados de identificação do indivíduo em um contato assistencial. (Port. nº 84/SAS/MS/1997 e Port. nº02/SAS/SGEP/MS/2012)" ]
+     ], [
+       fhir:index 49 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://fhir.saude.gov.br/redfm/ValueSet/BROcupacao-1.0> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/BROcupacao-1.0" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Classificação Brasileira de Ocupações - CBO (ValueSet)" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Classifica as profissões do mercado de trabalho brasileiro." ]
+     ], [
+       fhir:index 50 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://fhir.saude.gov.br/redfm/ValueSet/BROutrosProfissionais> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/BROutrosProfissionais" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Conselhos regionais de outros profissionais da saúde do Brasil" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Conjunto de todos os conselhos regionais de outros profissionais da saúde do Brasil" ]
+     ], [
+       fhir:index 51 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://fhir.saude.gov.br/redfm/ValueSet/BRProblemaDiagnostico> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/BRProblemaDiagnostico" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Classificação Internacional de Doenças (Atenção Primária)" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Código Internacional de Atenção Primária (CIAP2) e Classificação Internacional de Doenças (CID10)" ]
+     ], [
+       fhir:index 52 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://fhir.saude.gov.br/redfm/ValueSet/BRSexo-1.0> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/BRSexo-1.0" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Sexo" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Sexo de um indivíduo." ]
+     ], [
+       fhir:index 53 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://fhir.saude.gov.br/redfm/ValueSet/BRTerminologiaMedicamento> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/BRTerminologiaMedicamento" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Terminologia dos medicamentos" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ValueSet utilizado para definir a terminologia de um dado medicamento." ]
+     ], [
+       fhir:index 54 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://fhir.saude.gov.br/redfm/ValueSet/BRTipoDispensacaoRealizada> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/BRTipoDispensacaoRealizada" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Tipo de Dispensação Realizada (ValueSet)" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Indica o tipo de dispensação que foi realizada" ]
+     ], [
+       fhir:index 55 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://fhir.saude.gov.br/redfm/ValueSet/BRTipoDocumento-1.0> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/BRTipoDocumento-1.0" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Tipo de Documento (ValueSet)" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Classifica o tipo de documento que está sendo trafegado." ]
+     ], [
+       fhir:index 56 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://fhir.saude.gov.br/redfm/ValueSet/BRUnidadeMedidaMedicamento> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/BRUnidadeMedidaMedicamento" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Unidade de Medida de Medicamento" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ValueSet utilizado para definir a unidade de medida de medicamentos sob informações do fabricante." ]
+     ], [
+       fhir:index 57 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://fhir.saude.gov.br/redfm/ValueSet/BRViaAdministracao-1.0> ;
          fhir:Reference.reference [ fhir:value "ValueSet/BRViaAdministracao-1.0" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Via de Administração (ValueSet)" ] ;
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Via de administração de um imunobiológico." ]
+     ], [
+       fhir:index 58 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://fhir.saude.gov.br/redfm/ValueSet/RNDSUnidadeMedida> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/RNDSUnidadeMedida" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Unidade de Medida RNDS" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ValueSet composto por códigos do CodeSystem BRUnidadeMedida e Unidades Comuns do UCUM." ]
      ] ;
      fhir:ImplementationGuide.definition.page [
        fhir:Element.extension [
@@ -1853,27 +1991,13 @@
          ], [
            fhir:index 1 ;
            fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
-           fhir:Extension.valueUrl [ fhir:value "lives.html" ]
-         ] ;
-         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "lives.html" ] ;
-         fhir:ImplementationGuide.definition.page.title [ fhir:value "Lives" ] ;
-         fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ]
-       ], [
-         fhir:index 3 ;
-         fhir:Element.extension [
-           fhir:index 0 ;
-           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status" ] ;
-           fhir:Extension.valueCode [ fhir:value "informative" ]
-         ], [
-           fhir:index 1 ;
-           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
            fhir:Extension.valueUrl [ fhir:value "credenciamento.html" ]
          ] ;
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "credenciamento.html" ] ;
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Credenciamento" ] ;
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ]
        ], [
-         fhir:index 4 ;
+         fhir:index 3 ;
          fhir:Element.extension [
            fhir:index 0 ;
            fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status" ] ;
@@ -1887,7 +2011,7 @@
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Integração" ] ;
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ]
        ], [
-         fhir:index 5 ;
+         fhir:index 4 ;
          fhir:Element.extension [
            fhir:index 0 ;
            fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status" ] ;
@@ -1901,7 +2025,7 @@
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Modelo de Informação" ] ;
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ]
        ], [
-         fhir:index 6 ;
+         fhir:index 5 ;
          fhir:Element.extension [
            fhir:index 0 ;
            fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status" ] ;
@@ -1915,7 +2039,7 @@
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Modelo Computacional" ] ;
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ]
        ], [
-         fhir:index 7 ;
+         fhir:index 6 ;
          fhir:Element.extension [
            fhir:index 0 ;
            fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status" ] ;
@@ -1929,7 +2053,7 @@
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Exemplos" ] ;
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ]
        ], [
-         fhir:index 8 ;
+         fhir:index 7 ;
          fhir:Element.extension [
            fhir:index 0 ;
            fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status" ] ;
@@ -1943,7 +2067,7 @@
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Histórico de mudanças" ] ;
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ]
        ], [
-         fhir:index 9 ;
+         fhir:index 8 ;
          fhir:Element.extension [
            fhir:index 0 ;
            fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status" ] ;
@@ -1957,7 +2081,7 @@
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Downloads" ] ;
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ]
        ], [
-         fhir:index 10 ;
+         fhir:index 9 ;
          fhir:Element.extension [
            fhir:index 0 ;
            fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status" ] ;
@@ -1971,7 +2095,7 @@
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Feedback" ] ;
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ]
        ], [
-         fhir:index 11 ;
+         fhir:index 10 ;
          fhir:Element.extension [
            fhir:index 0 ;
            fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status" ] ;
@@ -2059,7 +2183,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0/ImplementationGuide/br.gov.saude.redfm.fhir.ttl> a owl:Ontology ;
+<https://fhir.saude.gov.br/redfm/ImplementationGuide/br.gov.saude.redfm.fhir.ttl> a owl:Ontology ;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

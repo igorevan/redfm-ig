@@ -16,6 +16,18 @@ O diagrama abaixo apresenta o pacote *Bundle* no qual é condensado o REDFM, ref
 
 ### Recursos FHIR
 
+ O modelo computacional do REDFM é definido pelo perfil [ RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos](StructureDefinition-RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos.md) [`Composition`] e os demais Recursos FHIR apresentados abaixo.
+
+| | |
+| :--- | :--- |
+| Composition | `[RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos](StructureDefinition-RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos.md)` |
+| MedicationDispense | `[RNDSDispensacaoMedicamento](StructureDefinition-RNDSDispensacaoMedicamento.md)` |
+| Medication | `[RNDSMedicamento](StructureDefinition-RNDSMedicamento.md)` |
+| MedicationRequest | `[RNDSPrescricaoMedicamento](StructureDefinition-RNDSPrescricaoMedicamento.md)` |
+| Practitioner | `[RNDSProfissional](StructureDefinition-RNDSProfissional.md)` |
+| PractitionerRole | `[RNDSLotacaoProfissional](StructureDefinition-RNDSLotacaoProfissional.md)` |
+| Organization | `[RNDSEstabelecimentoSaude](StructureDefinition-RNDSEstabelecimentoSaude.md)` |
+
 Perfis dos tipos *ValueSet* e *CodeSystem* estão associados a recursos terminológicos. No contexto do REDFM e nos domínios utilizados, foram criados *CodeSystems* específicos definidos pelo [Comitê Gestor de Saúde Digital (CGSD)](https://www.gov.br/saude/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/cgsd).
 
 Vale destacar que os perfis terminológicos podem passar por atualizações e versionamentos com periodicidade específica de cada domínio, por isso é importante acompanhar a disponibilização dessas atualizações no projeto [RNDS no Simplifier](https://simplifier.net/redenacionaldedadosemsaude). 

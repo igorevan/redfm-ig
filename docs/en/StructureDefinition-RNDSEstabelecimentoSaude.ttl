@@ -5,9 +5,12 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0/StructureDefinition/RNDSEstabelecimentoSaude> a fhir:StructureDefinition ;
+<https://fhir.saude.gov.br/redfm/StructureDefinition/RNDSEstabelecimentoSaude> a fhir:StructureDefinition ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:Resource.id [ fhir:value "RNDSEstabelecimentoSaude"] ;
+  fhir:Resource.meta [
+     fhir:Meta.lastUpdated [ fhir:value "2026-06-22T17:00:00-03:00"^^xsd:dateTime ]
+  ] ;
   fhir:Resource.language [ fhir:value "en"] ;
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ]
@@ -25,8 +28,8 @@
          fhir:index -1 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom" ] ;
          fhir:Extension.valueCanonical [
-           fhir:value "https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0/ImplementationGuide/br.gov.saude.redfm.fhir" ;
-           fhir:link <https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0/ImplementationGuide/br.gov.saude.redfm.fhir>
+           fhir:value "https://fhir.saude.gov.br/redfm/ImplementationGuide/br.gov.saude.redfm.fhir" ;
+           fhir:link <https://fhir.saude.gov.br/redfm/ImplementationGuide/br.gov.saude.redfm.fhir>
          ]
        ]
      ]
@@ -39,8 +42,8 @@
          fhir:index -1 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom" ] ;
          fhir:Extension.valueCanonical [
-           fhir:value "https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0/ImplementationGuide/br.gov.saude.redfm.fhir" ;
-           fhir:link <https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0/ImplementationGuide/br.gov.saude.redfm.fhir>
+           fhir:value "https://fhir.saude.gov.br/redfm/ImplementationGuide/br.gov.saude.redfm.fhir" ;
+           fhir:link <https://fhir.saude.gov.br/redfm/ImplementationGuide/br.gov.saude.redfm.fhir>
          ]
        ]
      ]
@@ -52,9 +55,9 @@
   fhir:StructureDefinition.url [ fhir:value "http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSEstabelecimentoSaude"] ;
   fhir:StructureDefinition.version [ fhir:value "1.0.0-release"] ;
   fhir:StructureDefinition.name [ fhir:value "RNDSEstabelecimentoSaude"] ;
-  fhir:StructureDefinition.title [ fhir:value "Estabelecimento de Saúde"] ;
+  fhir:StructureDefinition.title [ fhir:value "Estabelecimento de Saúde RNDS"] ;
   fhir:StructureDefinition.status [ fhir:value "active"] ;
-  fhir:StructureDefinition.date [ fhir:value "2026-06-30T10:02:10-03:00"^^xsd:dateTime] ;
+  fhir:StructureDefinition.date [ fhir:value "2024-12-10"^^xsd:date] ;
   fhir:StructureDefinition.publisher [ fhir:value "Ministério da Saúde do Brasil"] ;
   fhir:StructureDefinition.contact [
      fhir:index -1 ;
@@ -69,7 +72,7 @@
        fhir:ContactPoint.value [ fhir:value "cgiis.datasus@saude.gov.br" ]
      ]
   ] ;
-  fhir:StructureDefinition.description [ fhir:value "Estabelecimento de Saúde"] ;
+  fhir:StructureDefinition.description [ fhir:value "Este perfil representa um agrupamento formal ou informal reconhecido de pessoas ou organizações com o propósito de alcançar alguma forma de ação coletiva. Inclui estabelecimentos de saúde, empresas, instituições, corporações, departamentos, grupos comunitários, grupos de práticas de saúde, planos de saúde, empresas fabricantes de produtos medicinais, entre outros."] ;
   fhir:StructureDefinition.jurisdiction [
      fhir:index -1 ;
      fhir:CodeableConcept.coding [
@@ -104,15 +107,15 @@
   fhir:StructureDefinition.abstract [ fhir:value "false"^^xsd:boolean] ;
   fhir:StructureDefinition.type [ fhir:value "Organization"] ;
   fhir:StructureDefinition.baseDefinition [
-     fhir:value "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-organization" ;
-     fhir:link <https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-organization>
+     fhir:value "http://hl7.org/fhir/StructureDefinition/Organization" ;
+     fhir:link <http://hl7.org/fhir/StructureDefinition/Organization>
   ] ;
   fhir:StructureDefinition.derivation [ fhir:value "constraint"] ;
   fhir:StructureDefinition.snapshot [
      fhir:Element.extension [
        fhir:index -1 ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version" ] ;
-       fhir:Extension.valueString [ fhir:value "1.0.0-release" ]
+       fhir:Extension.valueString [ fhir:value "4.0.1" ]
      ] ;
      fhir:StructureDefinition.snapshot.element [
        fhir:index -1 ;
@@ -226,8 +229,8 @@
        fhir:index -1 ;
        fhir:Element.id [ fhir:value "Organization.id" ] ;
        fhir:ElementDefinition.path [ fhir:value "Organization.id" ] ;
-       fhir:ElementDefinition.short [ fhir:value "ID lógico deste artefato" ] ;
-       fhir:ElementDefinition.definition [ fhir:value "ID lógico deste artefato" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Logical id of this artifact" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes." ] ;
        fhir:ElementDefinition.comment [ fhir:value "The only time that a resource does not have an id is when it is being submitted to the server using a create operation." ] ;
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
        fhir:ElementDefinition.max [ fhir:value "1" ] ;
@@ -252,7 +255,7 @@
        fhir:Element.id [ fhir:value "Organization.meta" ] ;
        fhir:ElementDefinition.path [ fhir:value "Organization.meta" ] ;
        fhir:ElementDefinition.short [ fhir:value "Metadados sobre o recurso" ] ;
-       fhir:ElementDefinition.definition [ fhir:value "Metadados sobre o recurso" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content might not always be associated with version changes to the resource." ] ;
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
        fhir:ElementDefinition.max [ fhir:value "1" ] ;
        fhir:ElementDefinition.base [
@@ -283,7 +286,7 @@
        fhir:Element.id [ fhir:value "Organization.implicitRules" ] ;
        fhir:ElementDefinition.path [ fhir:value "Organization.implicitRules" ] ;
        fhir:ElementDefinition.short [ fhir:value "Conjunto de regras sob as quais este conteúdo foi criado" ] ;
-       fhir:ElementDefinition.definition [ fhir:value "Conjunto de regras sob as quais este conteúdo foi criado" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "A reference to a set of rules that were followed when the resource was constructed, and which must be understood when processing the content. Often, this is a reference to an implementation guide that defines the special rules along with other profiles etc." ] ;
        fhir:ElementDefinition.comment [ fhir:value "Asserting this rule set restricts the content to be only understood by a limited set of trading partners. This inherently limits the usefulness of the data in the long term. However, the existing health eco-system is highly fractured, and not yet ready to define, collect, and exchange data in a generally computable sense. Wherever possible, implementers and/or specification writers should avoid using this element. Often, when used, the URL is a reference to an implementation guide that defines these special rules as part of it's narrative along with other profiles, value sets, etc." ] ;
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
        fhir:ElementDefinition.max [ fhir:value "1" ] ;
@@ -316,7 +319,7 @@
        fhir:Element.id [ fhir:value "Organization.language" ] ;
        fhir:ElementDefinition.path [ fhir:value "Organization.language" ] ;
        fhir:ElementDefinition.short [ fhir:value "Linguagem do recurso" ] ;
-       fhir:ElementDefinition.definition [ fhir:value "A linguagem humana natural do recurso" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "The base language in which the resource is written." ] ;
        fhir:ElementDefinition.comment [ fhir:value "Language is provided to support indexing and accessibility (typically, services such as text to speech use the language tag). The html language tag in the narrative applies  to the narrative. The language tag on the resource may be used to specify the language of other presentations generated from the data in the resource. Not all the content has to be in the base language. The Resource.language should not be assumed to apply to the narrative automatically. If a language is specified, it should it also be specified on the div element in the html (see rules in HTML5 for information about the relationship between xml:lang and the html lang attribute)." ] ;
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
        fhir:ElementDefinition.max [ fhir:value "1" ] ;
@@ -368,7 +371,7 @@
        fhir:Element.id [ fhir:value "Organization.text" ] ;
        fhir:ElementDefinition.path [ fhir:value "Organization.text" ] ;
        fhir:ElementDefinition.short [ fhir:value "Texto narrativo" ] ;
-       fhir:ElementDefinition.definition [ fhir:value "Um texto narrativo resumindo as informações do recurso" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "A human-readable narrative that contains a summary of the resource and can be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it \"clinically safe\" for a human to just read the narrative. Resource definitions may define what content should be represented in the narrative to ensure clinical safety." ] ;
        fhir:ElementDefinition.comment [ fhir:value "Contained resources do not have narrative. Resources that are not contained SHOULD have a narrative. In some cases, a resource may only have text with little or no additional discrete data (as long as all minOccurs=1 elements are satisfied).  This may be necessary for data from legacy systems where information is captured as a \"text blob\" or where text is additionally entered raw or narrated and encoded information is added later." ] ;
        fhir:ElementDefinition.alias [
          fhir:value "narrative" ;
@@ -418,7 +421,7 @@
        fhir:Element.id [ fhir:value "Organization.contained" ] ;
        fhir:ElementDefinition.path [ fhir:value "Organization.contained" ] ;
        fhir:ElementDefinition.short [ fhir:value "Recursos contidos" ] ;
-       fhir:ElementDefinition.definition [ fhir:value "Recursos contidos no recurso" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope." ] ;
        fhir:ElementDefinition.comment [ fhir:value "This should never be done when the content can be identified properly, as once identification is lost, it is extremely difficult (and context dependent) to restore it again. Contained resources may have profiles and tags In their meta elements, but SHALL NOT have security labels." ] ;
        fhir:ElementDefinition.alias [
          fhir:value "inline resources" ;
@@ -453,7 +456,7 @@
        fhir:Element.id [ fhir:value "Organization.extension" ] ;
        fhir:ElementDefinition.path [ fhir:value "Organization.extension" ] ;
        fhir:ElementDefinition.short [ fhir:value "Extenções adicionais" ] ;
-       fhir:ElementDefinition.definition [ fhir:value "Conteúdo adicional definido por implementações" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "An Extension" ] ;
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
        fhir:ElementDefinition.max [ fhir:value "*" ] ;
        fhir:ElementDefinition.base [
@@ -495,7 +498,7 @@
        fhir:Element.id [ fhir:value "Organization.modifierExtension" ] ;
        fhir:ElementDefinition.path [ fhir:value "Organization.modifierExtension" ] ;
        fhir:ElementDefinition.short [ fhir:value "Extensões adicionais" ] ;
-       fhir:ElementDefinition.definition [ fhir:value "Extensões que não podem ser ignoradas" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "An Extension" ] ;
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
        fhir:ElementDefinition.max [ fhir:value "*" ] ;
        fhir:ElementDefinition.base [
@@ -603,7 +606,7 @@
        fhir:ElementDefinition.short [ fhir:value "Identificador do estabelecimento" ] ;
        fhir:ElementDefinition.definition [ fhir:value "Identificador do estabelecimento" ] ;
        fhir:ElementDefinition.requirements [ fhir:value "Organizations are known by a variety of ids. Some institutions maintain several, and most collect identifiers for exchange with other organizations concerning the organization." ] ;
-       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
        fhir:ElementDefinition.max [ fhir:value "1" ] ;
        fhir:ElementDefinition.base [
          fhir:ElementDefinition.base.path [ fhir:value "Organization.identifier" ] ;
@@ -629,6 +632,12 @@
            fhir:value "http://hl7.org/fhir/StructureDefinition/Element" ;
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
+       ], [
+         fhir:index -1 ;
+         fhir:ElementDefinition.constraint.key [ fhir:value "estab-2" ] ;
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ] ;
+         fhir:ElementDefinition.constraint.human [ fhir:value "O número do CNES do estabelecimento de saúde é inválido (Organization.identifier.value). O número deve conter 7 dígitos e não pode conter letras ou caracteres especiais, apenas números." ] ;
+         fhir:ElementDefinition.constraint.expression [ fhir:value "value.matches('^(?!(\\\\d)\\\\1{6})\\\\d{7}$')" ]
        ] ;
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ] ;
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ] ;
@@ -657,8 +666,8 @@
          fhir:value "xmlAttr" ;
          fhir:index -1
        ] ;
-       fhir:ElementDefinition.short [ fhir:value "Id lógico do identificador do estabelecimento" ] ;
-       fhir:ElementDefinition.definition [ fhir:value "Id lógico do identificador do estabelecimento" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Unique id for inter-element referencing" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces." ] ;
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
        fhir:ElementDefinition.max [ fhir:value "1" ] ;
        fhir:ElementDefinition.base [
@@ -695,8 +704,16 @@
          fhir:ElementDefinition.slicing.description [ fhir:value "Extensions are always sliced by (at least) url" ] ;
          fhir:ElementDefinition.slicing.rules [ fhir:value "open" ]
        ] ;
-       fhir:ElementDefinition.short [ fhir:value "Extensões do identificador do estabelecimento" ] ;
-       fhir:ElementDefinition.definition [ fhir:value "Extensões incluídas no identificador do estabelecimento" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Additional content defined by implementations" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension." ] ;
+       fhir:ElementDefinition.comment [ fhir:value "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." ] ;
+       fhir:ElementDefinition.alias [
+         fhir:value "extensions" ;
+         fhir:index -1
+       ], [
+         fhir:value "user content" ;
+         fhir:index -1
+       ] ;
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
        fhir:ElementDefinition.max [ fhir:value "*" ] ;
        fhir:ElementDefinition.base [
@@ -732,7 +749,12 @@
          ]
        ] ;
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ] ;
-       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
+       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ] ;
+       fhir:ElementDefinition.mapping [
+         fhir:index -1 ;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ] ;
+         fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
+       ]
      ], [
        fhir:index -1 ;
        fhir:Element.id [ fhir:value "Organization.identifier:cnes.use" ] ;
@@ -824,8 +846,13 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ] ;
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ] ;
        fhir:ElementDefinition.binding [
-         fhir:ElementDefinition.binding.strength [ fhir:value "required" ] ;
-         fhir:ElementDefinition.binding.description [ fhir:value "Tipo do identificador do estabelecimento" ] ;
+         fhir:Element.extension [
+           fhir:index -1 ;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName" ] ;
+           fhir:Extension.valueString [ fhir:value "IdentifierType" ]
+         ] ;
+         fhir:ElementDefinition.binding.strength [ fhir:value "extensible" ] ;
+         fhir:ElementDefinition.binding.description [ fhir:value "A coded type for an identifier that can be used to determine which identifier to use for a specific purpose." ] ;
          fhir:ElementDefinition.binding.valueSet [
            fhir:value "http://hl7.org/fhir/ValueSet/identifier-type|4.0.1" ;
            fhir:link <http://hl7.org/fhir/ValueSet/identifier-type|4.0.1>
@@ -848,8 +875,8 @@
          fhir:value "xmlAttr" ;
          fhir:index -1
        ] ;
-       fhir:ElementDefinition.short [ fhir:value "Id lógico do tipo do identificador do estabelecimento" ] ;
-       fhir:ElementDefinition.definition [ fhir:value "Id lógico do tipo do identificador do estabelecimento" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Unique id for inter-element referencing" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces." ] ;
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
        fhir:ElementDefinition.max [ fhir:value "1" ] ;
        fhir:ElementDefinition.base [
@@ -886,8 +913,16 @@
          fhir:ElementDefinition.slicing.description [ fhir:value "Extensions are always sliced by (at least) url" ] ;
          fhir:ElementDefinition.slicing.rules [ fhir:value "open" ]
        ] ;
-       fhir:ElementDefinition.short [ fhir:value "Extensões do tipo do identificador do estabelecimento" ] ;
-       fhir:ElementDefinition.definition [ fhir:value "Extensões incluídas no tipo do identificador do estabelecimento" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Additional content defined by implementations" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension." ] ;
+       fhir:ElementDefinition.comment [ fhir:value "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." ] ;
+       fhir:ElementDefinition.alias [
+         fhir:value "extensions" ;
+         fhir:index -1
+       ], [
+         fhir:value "user content" ;
+         fhir:index -1
+       ] ;
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
        fhir:ElementDefinition.max [ fhir:value "*" ] ;
        fhir:ElementDefinition.base [
@@ -923,7 +958,12 @@
          ]
        ] ;
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ] ;
-       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
+       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ] ;
+       fhir:ElementDefinition.mapping [
+         fhir:index -1 ;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ] ;
+         fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
+       ]
      ], [
        fhir:index -1 ;
        fhir:Element.id [ fhir:value "Organization.identifier:cnes.type.coding" ] ;
@@ -978,8 +1018,8 @@
          fhir:value "xmlAttr" ;
          fhir:index -1
        ] ;
-       fhir:ElementDefinition.short [ fhir:value "Id lógico da codificação do tipo do identificador do estabelecimento" ] ;
-       fhir:ElementDefinition.definition [ fhir:value "Id lógico da codificação do tipo do identificador do estabelecimento" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Unique id for inter-element referencing" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces." ] ;
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
        fhir:ElementDefinition.max [ fhir:value "1" ] ;
        fhir:ElementDefinition.base [
@@ -1016,8 +1056,16 @@
          fhir:ElementDefinition.slicing.description [ fhir:value "Extensions are always sliced by (at least) url" ] ;
          fhir:ElementDefinition.slicing.rules [ fhir:value "open" ]
        ] ;
-       fhir:ElementDefinition.short [ fhir:value "Extensões da codificação do tipo do identificador do estabelecimento" ] ;
-       fhir:ElementDefinition.definition [ fhir:value "Extensões incluídas na codificação do tipo do identificador do estabelecimento" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Additional content defined by implementations" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension." ] ;
+       fhir:ElementDefinition.comment [ fhir:value "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." ] ;
+       fhir:ElementDefinition.alias [
+         fhir:value "extensions" ;
+         fhir:index -1
+       ], [
+         fhir:value "user content" ;
+         fhir:index -1
+       ] ;
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
        fhir:ElementDefinition.max [ fhir:value "*" ] ;
        fhir:ElementDefinition.base [
@@ -1053,13 +1101,18 @@
          ]
        ] ;
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ] ;
-       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
+       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ] ;
+       fhir:ElementDefinition.mapping [
+         fhir:index -1 ;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ] ;
+         fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
+       ]
      ], [
        fhir:index -1 ;
        fhir:Element.id [ fhir:value "Organization.identifier:cnes.type.coding.system" ] ;
        fhir:ElementDefinition.path [ fhir:value "Organization.identifier.type.coding.system" ] ;
        fhir:ElementDefinition.short [ fhir:value "Sistema da codificação do tipo do identificador do estabelecimento" ] ;
-       fhir:ElementDefinition.definition [ fhir:value "Sistema que identifica a codificação do tipo do identificador do estabelecimento" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "The identification of the code system that defines the meaning of the symbol in the code." ] ;
        fhir:ElementDefinition.comment [ fhir:value "The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should reference to some definition that establishes the system clearly and unambiguously." ] ;
        fhir:ElementDefinition.requirements [ fhir:value "Need to be unambiguous about the source of the definition of the symbol." ] ;
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
@@ -1073,7 +1126,6 @@
          fhir:index -1 ;
          fhir:ElementDefinition.type.code [ fhir:value "uri" ]
        ] ;
-       fhir:ElementDefinition.fixedUri [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0203" ] ;
        fhir:ElementDefinition.constraint [
          fhir:index -1 ;
          fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ] ;
@@ -1106,7 +1158,7 @@
        fhir:Element.id [ fhir:value "Organization.identifier:cnes.type.coding.version" ] ;
        fhir:ElementDefinition.path [ fhir:value "Organization.identifier.type.coding.version" ] ;
        fhir:ElementDefinition.short [ fhir:value "Versão da codificação do tipo do identificador do estabelecimento" ] ;
-       fhir:ElementDefinition.definition [ fhir:value "Versão da codificação do tipo do identificador do estabelecimento" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured, and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged." ] ;
        fhir:ElementDefinition.comment [ fhir:value "Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date." ] ;
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
        fhir:ElementDefinition.max [ fhir:value "1" ] ;
@@ -1151,7 +1203,7 @@
        fhir:Element.id [ fhir:value "Organization.identifier:cnes.type.coding.code" ] ;
        fhir:ElementDefinition.path [ fhir:value "Organization.identifier.type.coding.code" ] ;
        fhir:ElementDefinition.short [ fhir:value "Código da codificação do tipo do identificador do estabelecimento" ] ;
-       fhir:ElementDefinition.definition [ fhir:value "Código que representa a codificação do tipo do identificador do estabelecimento" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination)." ] ;
        fhir:ElementDefinition.requirements [ fhir:value "Need to refer to a particular code in the system." ] ;
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
        fhir:ElementDefinition.max [ fhir:value "1" ] ;
@@ -1164,7 +1216,6 @@
          fhir:index -1 ;
          fhir:ElementDefinition.type.code [ fhir:value "code" ]
        ] ;
-       fhir:ElementDefinition.fixedCode [ fhir:value "PPN" ] ;
        fhir:ElementDefinition.constraint [
          fhir:index -1 ;
          fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ] ;
@@ -1202,7 +1253,7 @@
        ] ;
        fhir:ElementDefinition.path [ fhir:value "Organization.identifier.type.coding.display" ] ;
        fhir:ElementDefinition.short [ fhir:value "Texto da codificação do tipo do identificador do estabelecimento" ] ;
-       fhir:ElementDefinition.definition [ fhir:value "Texto que representa a codificação do tipo do identificador do estabelecimento" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "A representation of the meaning of the code in the system, following the rules of the system." ] ;
        fhir:ElementDefinition.requirements [ fhir:value "Need to be able to carry a human-readable meaning of the code for readers that do not know  the system." ] ;
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
        fhir:ElementDefinition.max [ fhir:value "1" ] ;
@@ -1247,7 +1298,7 @@
        fhir:Element.id [ fhir:value "Organization.identifier:cnes.type.coding.userSelected" ] ;
        fhir:ElementDefinition.path [ fhir:value "Organization.identifier.type.coding.userSelected" ] ;
        fhir:ElementDefinition.short [ fhir:value "Seleção do usuário da codificação do tipo do identificador do estabelecimento" ] ;
-       fhir:ElementDefinition.definition [ fhir:value "Indica se a codificação do tipo do identificador do estabelecimento foi selecionada pelo usuário" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Indicates that this coding was chosen by a user directly - e.g. off a pick list of available items (codes or displays)." ] ;
        fhir:ElementDefinition.comment [ fhir:value "Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely." ] ;
        fhir:ElementDefinition.requirements [ fhir:value "This has been identified as a clinical safety criterium - that this exact system/code pair was chosen explicitly, rather than inferred by the system based on some rules or language processing." ] ;
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
@@ -1298,7 +1349,7 @@
        ] ;
        fhir:ElementDefinition.path [ fhir:value "Organization.identifier.type.text" ] ;
        fhir:ElementDefinition.short [ fhir:value "Texto do tipo do identificador do estabelecimento" ] ;
-       fhir:ElementDefinition.definition [ fhir:value "Texto que representa o tipo do identificador do estabelecimento" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user." ] ;
        fhir:ElementDefinition.comment [ fhir:value "Very often the text is the same as a displayName of one of the codings." ] ;
        fhir:ElementDefinition.requirements [ fhir:value "The codes from the terminologies do not always capture the correct meaning with all the nuances of the human using them, or sometimes there is no appropriate code at all. In these cases, the text is used to capture the full meaning of the source." ] ;
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
@@ -1344,7 +1395,7 @@
        fhir:Element.id [ fhir:value "Organization.identifier:cnes.system" ] ;
        fhir:ElementDefinition.path [ fhir:value "Organization.identifier.system" ] ;
        fhir:ElementDefinition.short [ fhir:value "Sistema do identificador do estabelecimento" ] ;
-       fhir:ElementDefinition.definition [ fhir:value "Sistema que identifica o tipo do identificador do estabelecimento" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Establishes the namespace for the value - that is, a URL that describes a set values that are unique." ] ;
        fhir:ElementDefinition.comment [ fhir:value "Identifier.system is always case sensitive." ] ;
        fhir:ElementDefinition.requirements [ fhir:value "There are many sets  of identifiers.  To perform matching of two identifiers, we need to know what set we're dealing with. The system identifies a particular set of unique identifiers." ] ;
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
@@ -1396,7 +1447,7 @@
        fhir:Element.id [ fhir:value "Organization.identifier:cnes.value" ] ;
        fhir:ElementDefinition.path [ fhir:value "Organization.identifier.value" ] ;
        fhir:ElementDefinition.short [ fhir:value "Valor do identificador do estabelecimento" ] ;
-       fhir:ElementDefinition.definition [ fhir:value "Valor do identificador do estabelecimento" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "The portion of the identifier typically relevant to the user and which is unique within the context of the system." ] ;
        fhir:ElementDefinition.comment [ fhir:value "If the value is a full URI, then the system SHALL be urn:ietf:rfc:3986.  The value's primary purpose is computational mapping.  As a result, it may be normalized for comparison purposes (e.g. removing non-significant whitespace, dashes, etc.)  A value formatted for human display can be conveyed using the [Rendered Value extension](http://hl7.org/fhir/R4/extension-rendered-value.html). Identifier.value is to be treated as case sensitive unless knowledge of the Identifier.system allows the processer to be confident that non-case-sensitive processing is safe." ] ;
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
        fhir:ElementDefinition.max [ fhir:value "1" ] ;
@@ -1446,7 +1497,7 @@
        fhir:Element.id [ fhir:value "Organization.identifier:cnes.period" ] ;
        fhir:ElementDefinition.path [ fhir:value "Organization.identifier.period" ] ;
        fhir:ElementDefinition.short [ fhir:value "Período de uso do identificador do estabelecimento" ] ;
-       fhir:ElementDefinition.definition [ fhir:value "Período de tempo durante o qual o identificador do estabelecimento foi utilizado" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Time period during which identifier is/was valid for use." ] ;
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
        fhir:ElementDefinition.max [ fhir:value "1" ] ;
        fhir:ElementDefinition.base [
@@ -1490,7 +1541,7 @@
        fhir:Element.id [ fhir:value "Organization.identifier:cnes.assigner" ] ;
        fhir:ElementDefinition.path [ fhir:value "Organization.identifier.assigner" ] ;
        fhir:ElementDefinition.short [ fhir:value "Entidade que atribuiu o identificador do estabelecimento" ] ;
-       fhir:ElementDefinition.definition [ fhir:value "Entidade que atribuiu o identificador do estabelecimento" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Organization that issued/manages the identifier." ] ;
        fhir:ElementDefinition.comment [ fhir:value "The Identifier.assigner may omit the .reference element and only contain a .display element reflecting the name or other textual information about the assigning organization." ] ;
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
        fhir:ElementDefinition.max [ fhir:value "1" ] ;
@@ -1503,9 +1554,9 @@
          fhir:index -1 ;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ] ;
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-organization" ;
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Organization|4.0.1" ;
            fhir:index -1 ;
-           fhir:link <https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-organization>
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Organization|4.0.1>
          ]
        ] ;
        fhir:ElementDefinition.constraint [
@@ -1808,7 +1859,7 @@
        fhir:ElementDefinition.path [ fhir:value "Organization.identifier" ] ;
        fhir:ElementDefinition.sliceName [ fhir:value "cpf" ] ;
        fhir:ElementDefinition.short [ fhir:value "Identificador do estabelecimento" ] ;
-       fhir:ElementDefinition.definition [ fhir:value "Identificador do estabelecimento" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Identifier for the organization that is used to identify the organization across multiple disparate systems." ] ;
        fhir:ElementDefinition.requirements [ fhir:value "Organizations are known by a variety of ids. Some institutions maintain several, and most collect identifiers for exchange with other organizations concerning the organization." ] ;
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
        fhir:ElementDefinition.max [ fhir:value "1" ] ;
@@ -1836,6 +1887,12 @@
            fhir:value "http://hl7.org/fhir/StructureDefinition/Element" ;
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
+       ], [
+         fhir:index -1 ;
+         fhir:ElementDefinition.constraint.key [ fhir:value "estab-3" ] ;
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ] ;
+         fhir:ElementDefinition.constraint.human [ fhir:value "O número do CPF do estabelecimento de saúde é inválido (Organization.identifier.value). O número deve conter 11 dígitos e não pode conter letras ou caracteres especiais, apenas números." ] ;
+         fhir:ElementDefinition.constraint.expression [ fhir:value "value.matches('^(?!(\\\\d)\\\\1{10})\\\\d{11}$')" ]
        ] ;
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ] ;
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ] ;
@@ -1864,8 +1921,8 @@
          fhir:value "xmlAttr" ;
          fhir:index -1
        ] ;
-       fhir:ElementDefinition.short [ fhir:value "Id lógico do identificador do estabelecimento" ] ;
-       fhir:ElementDefinition.definition [ fhir:value "Id lógico do identificador do estabelecimento" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Unique id for inter-element referencing" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces." ] ;
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
        fhir:ElementDefinition.max [ fhir:value "1" ] ;
        fhir:ElementDefinition.base [
@@ -1902,8 +1959,16 @@
          fhir:ElementDefinition.slicing.description [ fhir:value "Extensions are always sliced by (at least) url" ] ;
          fhir:ElementDefinition.slicing.rules [ fhir:value "open" ]
        ] ;
-       fhir:ElementDefinition.short [ fhir:value "Extensões do identificador do estabelecimento" ] ;
-       fhir:ElementDefinition.definition [ fhir:value "Extensões incluídas no identificador do estabelecimento" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Additional content defined by implementations" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension." ] ;
+       fhir:ElementDefinition.comment [ fhir:value "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." ] ;
+       fhir:ElementDefinition.alias [
+         fhir:value "extensions" ;
+         fhir:index -1
+       ], [
+         fhir:value "user content" ;
+         fhir:index -1
+       ] ;
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
        fhir:ElementDefinition.max [ fhir:value "*" ] ;
        fhir:ElementDefinition.base [
@@ -1939,7 +2004,12 @@
          ]
        ] ;
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ] ;
-       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
+       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ] ;
+       fhir:ElementDefinition.mapping [
+         fhir:index -1 ;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ] ;
+         fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
+       ]
      ], [
        fhir:index -1 ;
        fhir:Element.id [ fhir:value "Organization.identifier:cpf.use" ] ;
@@ -2002,7 +2072,7 @@
        fhir:Element.id [ fhir:value "Organization.identifier:cpf.type" ] ;
        fhir:ElementDefinition.path [ fhir:value "Organization.identifier.type" ] ;
        fhir:ElementDefinition.short [ fhir:value "Tipo do identificador do estabelecimento" ] ;
-       fhir:ElementDefinition.definition [ fhir:value "Código que representa o tipo do identificador do estabelecimento" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "A coded type for the identifier that can be used to determine which identifier to use for a specific purpose." ] ;
        fhir:ElementDefinition.comment [ fhir:value "This element deals only with general categories of identifiers.  It SHOULD not be used for codes that correspond 1..1 with the Identifier.system. Some identifiers may fall into multiple categories due to common usage.   Where the system is known, a type is unnecessary because the type is always part of the system definition. However systems often need to handle identifiers where the system is not known. There is not a 1:1 relationship between type and system, since many different systems have the same type." ] ;
        fhir:ElementDefinition.requirements [ fhir:value "Allows users to make use of identifiers when the identifier system is not known." ] ;
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
@@ -2031,8 +2101,13 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ] ;
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ] ;
        fhir:ElementDefinition.binding [
-         fhir:ElementDefinition.binding.strength [ fhir:value "required" ] ;
-         fhir:ElementDefinition.binding.description [ fhir:value "Tipo do identificador do estabelecimento" ] ;
+         fhir:Element.extension [
+           fhir:index -1 ;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName" ] ;
+           fhir:Extension.valueString [ fhir:value "IdentifierType" ]
+         ] ;
+         fhir:ElementDefinition.binding.strength [ fhir:value "extensible" ] ;
+         fhir:ElementDefinition.binding.description [ fhir:value "A coded type for an identifier that can be used to determine which identifier to use for a specific purpose." ] ;
          fhir:ElementDefinition.binding.valueSet [
            fhir:value "http://hl7.org/fhir/ValueSet/identifier-type|4.0.1" ;
            fhir:link <http://hl7.org/fhir/ValueSet/identifier-type|4.0.1>
@@ -2055,8 +2130,8 @@
          fhir:value "xmlAttr" ;
          fhir:index -1
        ] ;
-       fhir:ElementDefinition.short [ fhir:value "Id lógico do tipo do identificador do estabelecimento" ] ;
-       fhir:ElementDefinition.definition [ fhir:value "Id lógico do tipo do identificador do estabelecimento" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Unique id for inter-element referencing" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces." ] ;
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
        fhir:ElementDefinition.max [ fhir:value "1" ] ;
        fhir:ElementDefinition.base [
@@ -2093,8 +2168,16 @@
          fhir:ElementDefinition.slicing.description [ fhir:value "Extensions are always sliced by (at least) url" ] ;
          fhir:ElementDefinition.slicing.rules [ fhir:value "open" ]
        ] ;
-       fhir:ElementDefinition.short [ fhir:value "Extensões do tipo do identificador do estabelecimento" ] ;
-       fhir:ElementDefinition.definition [ fhir:value "Extensões incluídas no tipo do identificador do estabelecimento" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Additional content defined by implementations" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension." ] ;
+       fhir:ElementDefinition.comment [ fhir:value "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." ] ;
+       fhir:ElementDefinition.alias [
+         fhir:value "extensions" ;
+         fhir:index -1
+       ], [
+         fhir:value "user content" ;
+         fhir:index -1
+       ] ;
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
        fhir:ElementDefinition.max [ fhir:value "*" ] ;
        fhir:ElementDefinition.base [
@@ -2130,13 +2213,18 @@
          ]
        ] ;
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ] ;
-       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
+       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ] ;
+       fhir:ElementDefinition.mapping [
+         fhir:index -1 ;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ] ;
+         fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
+       ]
      ], [
        fhir:index -1 ;
        fhir:Element.id [ fhir:value "Organization.identifier:cpf.type.coding" ] ;
        fhir:ElementDefinition.path [ fhir:value "Organization.identifier.type.coding" ] ;
        fhir:ElementDefinition.short [ fhir:value "Codificação do tipo do identificador do estabelecimento" ] ;
-       fhir:ElementDefinition.definition [ fhir:value "Codificação que representa o tipo do identificador do estabelecimento" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "A reference to a code defined by a terminology system." ] ;
        fhir:ElementDefinition.comment [ fhir:value "Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true." ] ;
        fhir:ElementDefinition.requirements [ fhir:value "Allows for alternative encodings within a code system, and translations to other code systems." ] ;
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
@@ -2185,8 +2273,8 @@
          fhir:value "xmlAttr" ;
          fhir:index -1
        ] ;
-       fhir:ElementDefinition.short [ fhir:value "Id lógico da codificação do tipo do identificador do estabelecimento" ] ;
-       fhir:ElementDefinition.definition [ fhir:value "Id lógico da codificação do tipo do identificador do estabelecimento" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Unique id for inter-element referencing" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces." ] ;
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
        fhir:ElementDefinition.max [ fhir:value "1" ] ;
        fhir:ElementDefinition.base [
@@ -2223,8 +2311,16 @@
          fhir:ElementDefinition.slicing.description [ fhir:value "Extensions are always sliced by (at least) url" ] ;
          fhir:ElementDefinition.slicing.rules [ fhir:value "open" ]
        ] ;
-       fhir:ElementDefinition.short [ fhir:value "Extensões da codificação do tipo do identificador do estabelecimento" ] ;
-       fhir:ElementDefinition.definition [ fhir:value "Extensões incluídas na codificação do tipo do identificador do estabelecimento" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Additional content defined by implementations" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension." ] ;
+       fhir:ElementDefinition.comment [ fhir:value "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." ] ;
+       fhir:ElementDefinition.alias [
+         fhir:value "extensions" ;
+         fhir:index -1
+       ], [
+         fhir:value "user content" ;
+         fhir:index -1
+       ] ;
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
        fhir:ElementDefinition.max [ fhir:value "*" ] ;
        fhir:ElementDefinition.base [
@@ -2260,13 +2356,18 @@
          ]
        ] ;
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ] ;
-       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
+       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ] ;
+       fhir:ElementDefinition.mapping [
+         fhir:index -1 ;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ] ;
+         fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
+       ]
      ], [
        fhir:index -1 ;
        fhir:Element.id [ fhir:value "Organization.identifier:cpf.type.coding.system" ] ;
        fhir:ElementDefinition.path [ fhir:value "Organization.identifier.type.coding.system" ] ;
        fhir:ElementDefinition.short [ fhir:value "Sistema da codificação do tipo do identificador do estabelecimento" ] ;
-       fhir:ElementDefinition.definition [ fhir:value "Sistema que identifica a codificação do tipo do identificador do estabelecimento" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "The identification of the code system that defines the meaning of the symbol in the code." ] ;
        fhir:ElementDefinition.comment [ fhir:value "The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should reference to some definition that establishes the system clearly and unambiguously." ] ;
        fhir:ElementDefinition.requirements [ fhir:value "Need to be unambiguous about the source of the definition of the symbol." ] ;
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
@@ -2280,7 +2381,6 @@
          fhir:index -1 ;
          fhir:ElementDefinition.type.code [ fhir:value "uri" ]
        ] ;
-       fhir:ElementDefinition.fixedUri [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0203" ] ;
        fhir:ElementDefinition.constraint [
          fhir:index -1 ;
          fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ] ;
@@ -2313,7 +2413,7 @@
        fhir:Element.id [ fhir:value "Organization.identifier:cpf.type.coding.version" ] ;
        fhir:ElementDefinition.path [ fhir:value "Organization.identifier.type.coding.version" ] ;
        fhir:ElementDefinition.short [ fhir:value "Versão da codificação do tipo do identificador do estabelecimento" ] ;
-       fhir:ElementDefinition.definition [ fhir:value "Versão da codificação do tipo do identificador do estabelecimento" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured, and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged." ] ;
        fhir:ElementDefinition.comment [ fhir:value "Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date." ] ;
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
        fhir:ElementDefinition.max [ fhir:value "1" ] ;
@@ -2358,7 +2458,7 @@
        fhir:Element.id [ fhir:value "Organization.identifier:cpf.type.coding.code" ] ;
        fhir:ElementDefinition.path [ fhir:value "Organization.identifier.type.coding.code" ] ;
        fhir:ElementDefinition.short [ fhir:value "Código da codificação do tipo do identificador do estabelecimento" ] ;
-       fhir:ElementDefinition.definition [ fhir:value "Código que representa a codificação do tipo do identificador do estabelecimento" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination)." ] ;
        fhir:ElementDefinition.requirements [ fhir:value "Need to refer to a particular code in the system." ] ;
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
        fhir:ElementDefinition.max [ fhir:value "1" ] ;
@@ -2408,7 +2508,7 @@
        ] ;
        fhir:ElementDefinition.path [ fhir:value "Organization.identifier.type.coding.display" ] ;
        fhir:ElementDefinition.short [ fhir:value "Texto da codificação do tipo do identificador do estabelecimento" ] ;
-       fhir:ElementDefinition.definition [ fhir:value "Texto que representa a codificação do tipo do identificador do estabelecimento" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "A representation of the meaning of the code in the system, following the rules of the system." ] ;
        fhir:ElementDefinition.requirements [ fhir:value "Need to be able to carry a human-readable meaning of the code for readers that do not know  the system." ] ;
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
        fhir:ElementDefinition.max [ fhir:value "1" ] ;
@@ -2453,7 +2553,7 @@
        fhir:Element.id [ fhir:value "Organization.identifier:cpf.type.coding.userSelected" ] ;
        fhir:ElementDefinition.path [ fhir:value "Organization.identifier.type.coding.userSelected" ] ;
        fhir:ElementDefinition.short [ fhir:value "Seleção do usuário da codificação do tipo do identificador do estabelecimento" ] ;
-       fhir:ElementDefinition.definition [ fhir:value "Indica se a codificação do tipo do identificador do estabelecimento foi selecionada pelo usuário" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Indicates that this coding was chosen by a user directly - e.g. off a pick list of available items (codes or displays)." ] ;
        fhir:ElementDefinition.comment [ fhir:value "Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely." ] ;
        fhir:ElementDefinition.requirements [ fhir:value "This has been identified as a clinical safety criterium - that this exact system/code pair was chosen explicitly, rather than inferred by the system based on some rules or language processing." ] ;
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
@@ -2504,7 +2604,7 @@
        ] ;
        fhir:ElementDefinition.path [ fhir:value "Organization.identifier.type.text" ] ;
        fhir:ElementDefinition.short [ fhir:value "Texto do tipo do identificador do estabelecimento" ] ;
-       fhir:ElementDefinition.definition [ fhir:value "Texto que representa o tipo do identificador do estabelecimento" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user." ] ;
        fhir:ElementDefinition.comment [ fhir:value "Very often the text is the same as a displayName of one of the codings." ] ;
        fhir:ElementDefinition.requirements [ fhir:value "The codes from the terminologies do not always capture the correct meaning with all the nuances of the human using them, or sometimes there is no appropriate code at all. In these cases, the text is used to capture the full meaning of the source." ] ;
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
@@ -2550,7 +2650,7 @@
        fhir:Element.id [ fhir:value "Organization.identifier:cpf.system" ] ;
        fhir:ElementDefinition.path [ fhir:value "Organization.identifier.system" ] ;
        fhir:ElementDefinition.short [ fhir:value "Sistema do identificador do estabelecimento" ] ;
-       fhir:ElementDefinition.definition [ fhir:value "Sistema que identifica o tipo do identificador do estabelecimento" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Establishes the namespace for the value - that is, a URL that describes a set values that are unique." ] ;
        fhir:ElementDefinition.comment [ fhir:value "Identifier.system is always case sensitive." ] ;
        fhir:ElementDefinition.requirements [ fhir:value "There are many sets  of identifiers.  To perform matching of two identifiers, we need to know what set we're dealing with. The system identifies a particular set of unique identifiers." ] ;
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
@@ -2602,7 +2702,7 @@
        fhir:Element.id [ fhir:value "Organization.identifier:cpf.value" ] ;
        fhir:ElementDefinition.path [ fhir:value "Organization.identifier.value" ] ;
        fhir:ElementDefinition.short [ fhir:value "Valor do identificador do estabelecimento" ] ;
-       fhir:ElementDefinition.definition [ fhir:value "Valor do identificador do estabelecimento" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "The portion of the identifier typically relevant to the user and which is unique within the context of the system." ] ;
        fhir:ElementDefinition.comment [ fhir:value "If the value is a full URI, then the system SHALL be urn:ietf:rfc:3986.  The value's primary purpose is computational mapping.  As a result, it may be normalized for comparison purposes (e.g. removing non-significant whitespace, dashes, etc.)  A value formatted for human display can be conveyed using the [Rendered Value extension](http://hl7.org/fhir/R4/extension-rendered-value.html). Identifier.value is to be treated as case sensitive unless knowledge of the Identifier.system allows the processer to be confident that non-case-sensitive processing is safe." ] ;
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
        fhir:ElementDefinition.max [ fhir:value "1" ] ;
@@ -2652,7 +2752,7 @@
        fhir:Element.id [ fhir:value "Organization.identifier:cpf.period" ] ;
        fhir:ElementDefinition.path [ fhir:value "Organization.identifier.period" ] ;
        fhir:ElementDefinition.short [ fhir:value "Período de uso do identificador do estabelecimento" ] ;
-       fhir:ElementDefinition.definition [ fhir:value "Período de tempo durante o qual o identificador do estabelecimento foi utilizado" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Time period during which identifier is/was valid for use." ] ;
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
        fhir:ElementDefinition.max [ fhir:value "1" ] ;
        fhir:ElementDefinition.base [
@@ -2696,7 +2796,7 @@
        fhir:Element.id [ fhir:value "Organization.identifier:cpf.assigner" ] ;
        fhir:ElementDefinition.path [ fhir:value "Organization.identifier.assigner" ] ;
        fhir:ElementDefinition.short [ fhir:value "Entidade que atribuiu o identificador do estabelecimento" ] ;
-       fhir:ElementDefinition.definition [ fhir:value "Entidade que atribuiu o identificador do estabelecimento" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Organization that issued/manages the identifier." ] ;
        fhir:ElementDefinition.comment [ fhir:value "The Identifier.assigner may omit the .reference element and only contain a .display element reflecting the name or other textual information about the assigning organization." ] ;
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
        fhir:ElementDefinition.max [ fhir:value "1" ] ;
@@ -2709,9 +2809,9 @@
          fhir:index -1 ;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ] ;
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-organization" ;
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Organization|4.0.1" ;
            fhir:index -1 ;
-           fhir:link <https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-organization>
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Organization|4.0.1>
          ]
        ] ;
        fhir:ElementDefinition.constraint [
@@ -3014,7 +3114,7 @@
        fhir:ElementDefinition.path [ fhir:value "Organization.identifier" ] ;
        fhir:ElementDefinition.sliceName [ fhir:value "cnpj" ] ;
        fhir:ElementDefinition.short [ fhir:value "Identificador do estabelecimento" ] ;
-       fhir:ElementDefinition.definition [ fhir:value "Identificador do estabelecimento" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Identifier for the organization that is used to identify the organization across multiple disparate systems." ] ;
        fhir:ElementDefinition.requirements [ fhir:value "Organizations are known by a variety of ids. Some institutions maintain several, and most collect identifiers for exchange with other organizations concerning the organization." ] ;
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
        fhir:ElementDefinition.max [ fhir:value "1" ] ;
@@ -3042,6 +3142,12 @@
            fhir:value "http://hl7.org/fhir/StructureDefinition/Element" ;
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
+       ], [
+         fhir:index -1 ;
+         fhir:ElementDefinition.constraint.key [ fhir:value "estab-4" ] ;
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ] ;
+         fhir:ElementDefinition.constraint.human [ fhir:value "O número do CNPJ do estabelecimento de saúde é inválido (Organization.identifier.value). O número deve conter 14 caracteres e não pode conter caracteres especiais, apenas números e letras maiúsculas." ] ;
+         fhir:ElementDefinition.constraint.expression [ fhir:value "value.matches('^(?!(\\\\d)\\\\1{13})[A-Z0-9]{12}\\\\d{2}$')" ]
        ] ;
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ] ;
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ] ;
@@ -3070,8 +3176,8 @@
          fhir:value "xmlAttr" ;
          fhir:index -1
        ] ;
-       fhir:ElementDefinition.short [ fhir:value "Id lógico do identificador do estabelecimento" ] ;
-       fhir:ElementDefinition.definition [ fhir:value "Id lógico do identificador do estabelecimento" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Unique id for inter-element referencing" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces." ] ;
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
        fhir:ElementDefinition.max [ fhir:value "1" ] ;
        fhir:ElementDefinition.base [
@@ -3108,8 +3214,16 @@
          fhir:ElementDefinition.slicing.description [ fhir:value "Extensions are always sliced by (at least) url" ] ;
          fhir:ElementDefinition.slicing.rules [ fhir:value "open" ]
        ] ;
-       fhir:ElementDefinition.short [ fhir:value "Extensões do identificador do estabelecimento" ] ;
-       fhir:ElementDefinition.definition [ fhir:value "Extensões incluídas no identificador do estabelecimento" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Additional content defined by implementations" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension." ] ;
+       fhir:ElementDefinition.comment [ fhir:value "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." ] ;
+       fhir:ElementDefinition.alias [
+         fhir:value "extensions" ;
+         fhir:index -1
+       ], [
+         fhir:value "user content" ;
+         fhir:index -1
+       ] ;
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
        fhir:ElementDefinition.max [ fhir:value "*" ] ;
        fhir:ElementDefinition.base [
@@ -3145,7 +3259,12 @@
          ]
        ] ;
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ] ;
-       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
+       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ] ;
+       fhir:ElementDefinition.mapping [
+         fhir:index -1 ;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ] ;
+         fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
+       ]
      ], [
        fhir:index -1 ;
        fhir:Element.id [ fhir:value "Organization.identifier:cnpj.use" ] ;
@@ -3208,7 +3327,7 @@
        fhir:Element.id [ fhir:value "Organization.identifier:cnpj.type" ] ;
        fhir:ElementDefinition.path [ fhir:value "Organization.identifier.type" ] ;
        fhir:ElementDefinition.short [ fhir:value "Tipo do identificador do estabelecimento" ] ;
-       fhir:ElementDefinition.definition [ fhir:value "Código que representa o tipo do identificador do estabelecimento" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "A coded type for the identifier that can be used to determine which identifier to use for a specific purpose." ] ;
        fhir:ElementDefinition.comment [ fhir:value "This element deals only with general categories of identifiers.  It SHOULD not be used for codes that correspond 1..1 with the Identifier.system. Some identifiers may fall into multiple categories due to common usage.   Where the system is known, a type is unnecessary because the type is always part of the system definition. However systems often need to handle identifiers where the system is not known. There is not a 1:1 relationship between type and system, since many different systems have the same type." ] ;
        fhir:ElementDefinition.requirements [ fhir:value "Allows users to make use of identifiers when the identifier system is not known." ] ;
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
@@ -3237,8 +3356,13 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ] ;
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ] ;
        fhir:ElementDefinition.binding [
-         fhir:ElementDefinition.binding.strength [ fhir:value "required" ] ;
-         fhir:ElementDefinition.binding.description [ fhir:value "Tipo do identificador do estabelecimento" ] ;
+         fhir:Element.extension [
+           fhir:index -1 ;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName" ] ;
+           fhir:Extension.valueString [ fhir:value "IdentifierType" ]
+         ] ;
+         fhir:ElementDefinition.binding.strength [ fhir:value "extensible" ] ;
+         fhir:ElementDefinition.binding.description [ fhir:value "A coded type for an identifier that can be used to determine which identifier to use for a specific purpose." ] ;
          fhir:ElementDefinition.binding.valueSet [
            fhir:value "http://hl7.org/fhir/ValueSet/identifier-type|4.0.1" ;
            fhir:link <http://hl7.org/fhir/ValueSet/identifier-type|4.0.1>
@@ -3262,7 +3386,7 @@
          fhir:index -1
        ] ;
        fhir:ElementDefinition.short [ fhir:value "Id lógico do tipo do identificador do estabelecimento" ] ;
-       fhir:ElementDefinition.definition [ fhir:value "Id lógico do tipo do identificador do estabelecimento" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces." ] ;
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
        fhir:ElementDefinition.max [ fhir:value "1" ] ;
        fhir:ElementDefinition.base [
@@ -3300,7 +3424,7 @@
          fhir:ElementDefinition.slicing.rules [ fhir:value "open" ]
        ] ;
        fhir:ElementDefinition.short [ fhir:value "Extensões do tipo do identificador do estabelecimento" ] ;
-       fhir:ElementDefinition.definition [ fhir:value "Extensões incluídas no tipo do identificador do estabelecimento" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "An Extension" ] ;
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
        fhir:ElementDefinition.max [ fhir:value "*" ] ;
        fhir:ElementDefinition.base [
@@ -3342,7 +3466,7 @@
        fhir:Element.id [ fhir:value "Organization.identifier:cnpj.type.coding" ] ;
        fhir:ElementDefinition.path [ fhir:value "Organization.identifier.type.coding" ] ;
        fhir:ElementDefinition.short [ fhir:value "Codificação do tipo do identificador do estabelecimento" ] ;
-       fhir:ElementDefinition.definition [ fhir:value "Codificação que representa o tipo do identificador do estabelecimento" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "A reference to a code defined by a terminology system." ] ;
        fhir:ElementDefinition.comment [ fhir:value "Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true." ] ;
        fhir:ElementDefinition.requirements [ fhir:value "Allows for alternative encodings within a code system, and translations to other code systems." ] ;
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
@@ -3391,8 +3515,8 @@
          fhir:value "xmlAttr" ;
          fhir:index -1
        ] ;
-       fhir:ElementDefinition.short [ fhir:value "Id lógico da codificação do tipo do identificador do estabelecimento" ] ;
-       fhir:ElementDefinition.definition [ fhir:value "Id lógico da codificação do tipo do identificador do estabelecimento" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Unique id for inter-element referencing" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces." ] ;
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
        fhir:ElementDefinition.max [ fhir:value "1" ] ;
        fhir:ElementDefinition.base [
@@ -3429,8 +3553,16 @@
          fhir:ElementDefinition.slicing.description [ fhir:value "Extensions are always sliced by (at least) url" ] ;
          fhir:ElementDefinition.slicing.rules [ fhir:value "open" ]
        ] ;
-       fhir:ElementDefinition.short [ fhir:value "Extensões da codificação do tipo do identificador do estabelecimento" ] ;
-       fhir:ElementDefinition.definition [ fhir:value "Extensões incluídas na codificação do tipo do identificador do estabelecimento" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Additional content defined by implementations" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension." ] ;
+       fhir:ElementDefinition.comment [ fhir:value "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." ] ;
+       fhir:ElementDefinition.alias [
+         fhir:value "extensions" ;
+         fhir:index -1
+       ], [
+         fhir:value "user content" ;
+         fhir:index -1
+       ] ;
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
        fhir:ElementDefinition.max [ fhir:value "*" ] ;
        fhir:ElementDefinition.base [
@@ -3466,13 +3598,18 @@
          ]
        ] ;
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ] ;
-       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
+       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ] ;
+       fhir:ElementDefinition.mapping [
+         fhir:index -1 ;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ] ;
+         fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
+       ]
      ], [
        fhir:index -1 ;
        fhir:Element.id [ fhir:value "Organization.identifier:cnpj.type.coding.system" ] ;
        fhir:ElementDefinition.path [ fhir:value "Organization.identifier.type.coding.system" ] ;
        fhir:ElementDefinition.short [ fhir:value "Sistema da codificação do tipo do identificador do estabelecimento" ] ;
-       fhir:ElementDefinition.definition [ fhir:value "Sistema que identifica a codificação do tipo do identificador do estabelecimento" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "The identification of the code system that defines the meaning of the symbol in the code." ] ;
        fhir:ElementDefinition.comment [ fhir:value "The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should reference to some definition that establishes the system clearly and unambiguously." ] ;
        fhir:ElementDefinition.requirements [ fhir:value "Need to be unambiguous about the source of the definition of the symbol." ] ;
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
@@ -3486,7 +3623,6 @@
          fhir:index -1 ;
          fhir:ElementDefinition.type.code [ fhir:value "uri" ]
        ] ;
-       fhir:ElementDefinition.fixedUri [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0203" ] ;
        fhir:ElementDefinition.constraint [
          fhir:index -1 ;
          fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ] ;
@@ -3519,7 +3655,7 @@
        fhir:Element.id [ fhir:value "Organization.identifier:cnpj.type.coding.version" ] ;
        fhir:ElementDefinition.path [ fhir:value "Organization.identifier.type.coding.version" ] ;
        fhir:ElementDefinition.short [ fhir:value "Versão da codificação do tipo do identificador do estabelecimento" ] ;
-       fhir:ElementDefinition.definition [ fhir:value "Versão da codificação do tipo do identificador do estabelecimento" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured, and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged." ] ;
        fhir:ElementDefinition.comment [ fhir:value "Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date." ] ;
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
        fhir:ElementDefinition.max [ fhir:value "1" ] ;
@@ -3564,7 +3700,7 @@
        fhir:Element.id [ fhir:value "Organization.identifier:cnpj.type.coding.code" ] ;
        fhir:ElementDefinition.path [ fhir:value "Organization.identifier.type.coding.code" ] ;
        fhir:ElementDefinition.short [ fhir:value "Código da codificação do tipo do identificador do estabelecimento" ] ;
-       fhir:ElementDefinition.definition [ fhir:value "Código que representa a codificação do tipo do identificador do estabelecimento" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination)." ] ;
        fhir:ElementDefinition.requirements [ fhir:value "Need to refer to a particular code in the system." ] ;
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
        fhir:ElementDefinition.max [ fhir:value "1" ] ;
@@ -3614,7 +3750,7 @@
        ] ;
        fhir:ElementDefinition.path [ fhir:value "Organization.identifier.type.coding.display" ] ;
        fhir:ElementDefinition.short [ fhir:value "Texto da codificação do tipo do identificador do estabelecimento" ] ;
-       fhir:ElementDefinition.definition [ fhir:value "Texto que representa a codificação do tipo do identificador do estabelecimento" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "A representation of the meaning of the code in the system, following the rules of the system." ] ;
        fhir:ElementDefinition.requirements [ fhir:value "Need to be able to carry a human-readable meaning of the code for readers that do not know  the system." ] ;
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
        fhir:ElementDefinition.max [ fhir:value "1" ] ;
@@ -3659,7 +3795,7 @@
        fhir:Element.id [ fhir:value "Organization.identifier:cnpj.type.coding.userSelected" ] ;
        fhir:ElementDefinition.path [ fhir:value "Organization.identifier.type.coding.userSelected" ] ;
        fhir:ElementDefinition.short [ fhir:value "Seleção do usuário da codificação do tipo do identificador do estabelecimento" ] ;
-       fhir:ElementDefinition.definition [ fhir:value "Indica se a codificação do tipo do identificador do estabelecimento foi selecionada pelo usuário" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Indicates that this coding was chosen by a user directly - e.g. off a pick list of available items (codes or displays)." ] ;
        fhir:ElementDefinition.comment [ fhir:value "Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely." ] ;
        fhir:ElementDefinition.requirements [ fhir:value "This has been identified as a clinical safety criterium - that this exact system/code pair was chosen explicitly, rather than inferred by the system based on some rules or language processing." ] ;
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
@@ -3710,7 +3846,7 @@
        ] ;
        fhir:ElementDefinition.path [ fhir:value "Organization.identifier.type.text" ] ;
        fhir:ElementDefinition.short [ fhir:value "Texto do tipo do identificador do estabelecimento" ] ;
-       fhir:ElementDefinition.definition [ fhir:value "Texto que representa o tipo do identificador do estabelecimento" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user." ] ;
        fhir:ElementDefinition.comment [ fhir:value "Very often the text is the same as a displayName of one of the codings." ] ;
        fhir:ElementDefinition.requirements [ fhir:value "The codes from the terminologies do not always capture the correct meaning with all the nuances of the human using them, or sometimes there is no appropriate code at all. In these cases, the text is used to capture the full meaning of the source." ] ;
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
@@ -3756,7 +3892,7 @@
        fhir:Element.id [ fhir:value "Organization.identifier:cnpj.system" ] ;
        fhir:ElementDefinition.path [ fhir:value "Organization.identifier.system" ] ;
        fhir:ElementDefinition.short [ fhir:value "Sistema do identificador do estabelecimento" ] ;
-       fhir:ElementDefinition.definition [ fhir:value "Sistema que identifica o tipo do identificador do estabelecimento" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Establishes the namespace for the value - that is, a URL that describes a set values that are unique." ] ;
        fhir:ElementDefinition.comment [ fhir:value "Identifier.system is always case sensitive." ] ;
        fhir:ElementDefinition.requirements [ fhir:value "There are many sets  of identifiers.  To perform matching of two identifiers, we need to know what set we're dealing with. The system identifies a particular set of unique identifiers." ] ;
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
@@ -3808,7 +3944,7 @@
        fhir:Element.id [ fhir:value "Organization.identifier:cnpj.value" ] ;
        fhir:ElementDefinition.path [ fhir:value "Organization.identifier.value" ] ;
        fhir:ElementDefinition.short [ fhir:value "Valor do identificador do estabelecimento" ] ;
-       fhir:ElementDefinition.definition [ fhir:value "Valor do identificador do estabelecimento" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "The portion of the identifier typically relevant to the user and which is unique within the context of the system." ] ;
        fhir:ElementDefinition.comment [ fhir:value "If the value is a full URI, then the system SHALL be urn:ietf:rfc:3986.  The value's primary purpose is computational mapping.  As a result, it may be normalized for comparison purposes (e.g. removing non-significant whitespace, dashes, etc.)  A value formatted for human display can be conveyed using the [Rendered Value extension](http://hl7.org/fhir/R4/extension-rendered-value.html). Identifier.value is to be treated as case sensitive unless knowledge of the Identifier.system allows the processer to be confident that non-case-sensitive processing is safe." ] ;
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
        fhir:ElementDefinition.max [ fhir:value "1" ] ;
@@ -3858,7 +3994,7 @@
        fhir:Element.id [ fhir:value "Organization.identifier:cnpj.period" ] ;
        fhir:ElementDefinition.path [ fhir:value "Organization.identifier.period" ] ;
        fhir:ElementDefinition.short [ fhir:value "Período de uso do identificador do estabelecimento" ] ;
-       fhir:ElementDefinition.definition [ fhir:value "Período de tempo durante o qual o identificador do estabelecimento foi utilizado" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Time period during which identifier is/was valid for use." ] ;
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
        fhir:ElementDefinition.max [ fhir:value "1" ] ;
        fhir:ElementDefinition.base [
@@ -3902,7 +4038,7 @@
        fhir:Element.id [ fhir:value "Organization.identifier:cnpj.assigner" ] ;
        fhir:ElementDefinition.path [ fhir:value "Organization.identifier.assigner" ] ;
        fhir:ElementDefinition.short [ fhir:value "Entidade que atribuiu o identificador do estabelecimento" ] ;
-       fhir:ElementDefinition.definition [ fhir:value "Entidade que atribuiu o identificador do estabelecimento" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Organization that issued/manages the identifier." ] ;
        fhir:ElementDefinition.comment [ fhir:value "The Identifier.assigner may omit the .reference element and only contain a .display element reflecting the name or other textual information about the assigning organization." ] ;
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
        fhir:ElementDefinition.max [ fhir:value "1" ] ;
@@ -3915,9 +4051,9 @@
          fhir:index -1 ;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ] ;
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-organization" ;
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Organization|4.0.1" ;
            fhir:index -1 ;
-           fhir:link <https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-organization>
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Organization|4.0.1>
          ]
        ] ;
        fhir:ElementDefinition.constraint [
@@ -4219,7 +4355,7 @@
        fhir:Element.id [ fhir:value "Organization.active" ] ;
        fhir:ElementDefinition.path [ fhir:value "Organization.active" ] ;
        fhir:ElementDefinition.short [ fhir:value "Estabelecimento de Saúde ainda está em ativo." ] ;
-       fhir:ElementDefinition.definition [ fhir:value "Se o Estabelecimento de Saúde ainda está em ativo." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Whether the organization's record is still in active use." ] ;
        fhir:ElementDefinition.comment [ fhir:value "This active flag is not intended to be used to mark an organization as temporarily closed or under construction. Instead the Location(s) within the Organization should have the suspended status. If further details of the reason for the suspension are required, then an extension on this element should be used.\n\nThis element is labeled as a modifier because it may be used to mark that the resource was created in error." ] ;
        fhir:ElementDefinition.requirements [ fhir:value "Need a flag to indicate a record is no longer to be used and should generally be hidden for the user in the UI." ] ;
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
@@ -4271,11 +4407,11 @@
        fhir:Element.id [ fhir:value "Organization.type" ] ;
        fhir:ElementDefinition.path [ fhir:value "Organization.type" ] ;
        fhir:ElementDefinition.short [ fhir:value "Tipo do Estabelecimento de saúde" ] ;
-       fhir:ElementDefinition.definition [ fhir:value "Classificação do Estabelecimento de Saúde de acordo com um conjunto de dimensões." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "The kind(s) of organization that this is." ] ;
        fhir:ElementDefinition.comment [ fhir:value "Organizations can be corporations, wards, sections, clinical teams, government departments, etc. Note that code is generally a classifier of the type of organization; in many applications, codes are used to identity a particular organization (say, ward) as opposed to another of the same type - these are identifiers, not codes\n\nWhen considering if multiple types are appropriate, you should evaluate if child organizations would be a more appropriate use of the concept, as different types likely are in different sub-areas of the organization. This is most likely to be used where type values have orthogonal values, such as a religious, academic and medical center.\n\nWe expect that some jurisdictions will profile this optionality to be a single cardinality." ] ;
        fhir:ElementDefinition.requirements [ fhir:value "Need to be able to track the kind of organization that this is - different organization types have different uses." ] ;
-       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
-       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
        fhir:ElementDefinition.base [
          fhir:ElementDefinition.base.path [ fhir:value "Organization.type" ] ;
          fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
@@ -4334,7 +4470,7 @@
        fhir:Element.id [ fhir:value "Organization.name" ] ;
        fhir:ElementDefinition.path [ fhir:value "Organization.name" ] ;
        fhir:ElementDefinition.short [ fhir:value "Nome usado para a organização" ] ;
-       fhir:ElementDefinition.definition [ fhir:value "Nome do Estabelecimento de saúde" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "A name associated with the organization." ] ;
        fhir:ElementDefinition.comment [ fhir:value "If the name of an organization changes, consider putting the old name in the alias column so that it can still be located through searches." ] ;
        fhir:ElementDefinition.requirements [ fhir:value "Need to use the name as the label of the organization." ] ;
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
@@ -4384,7 +4520,7 @@
        fhir:Element.id [ fhir:value "Organization.alias" ] ;
        fhir:ElementDefinition.path [ fhir:value "Organization.alias" ] ;
        fhir:ElementDefinition.short [ fhir:value "Nome Empresarial" ] ;
-       fhir:ElementDefinition.definition [ fhir:value "Firma ou denominação adotada para o exercício da instituição/entidade/órgão/empresa." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "A list of alternate names that the organization is known as, or was known as in the past." ] ;
        fhir:ElementDefinition.comment [ fhir:value "There are no dates associated with the alias/historic names, as this is not intended to track when names were used, but to assist in searching so that older names can still result in identifying the organization." ] ;
        fhir:ElementDefinition.requirements [ fhir:value "Over time locations and organizations go through many changes and can be known by different names.\n\nFor searching knowing previous names that the organization was known by can be very useful." ] ;
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
@@ -4422,7 +4558,7 @@
        fhir:Element.id [ fhir:value "Organization.telecom" ] ;
        fhir:ElementDefinition.path [ fhir:value "Organization.telecom" ] ;
        fhir:ElementDefinition.short [ fhir:value "Meio de contato" ] ;
-       fhir:ElementDefinition.definition [ fhir:value "Informações do(s) meio(s) de contato com o Estabelecimento de Saúde." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "A contact detail for the organization." ] ;
        fhir:ElementDefinition.comment [ fhir:value "The use code 'home' is not to be used. Note that these contacts are not the contact details of people who are employed by or represent the organization, but official contacts for the organization itself." ] ;
        fhir:ElementDefinition.requirements [ fhir:value "Human contact for the organization." ] ;
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
@@ -4483,7 +4619,7 @@
        fhir:Element.id [ fhir:value "Organization.address" ] ;
        fhir:ElementDefinition.path [ fhir:value "Organization.address" ] ;
        fhir:ElementDefinition.short [ fhir:value "Dados de Endereçamento" ] ;
-       fhir:ElementDefinition.definition [ fhir:value "Dados do endereço onde o Estabelecimento de Saúde é localizado." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "An address for the organization." ] ;
        fhir:ElementDefinition.comment [ fhir:value "Organization may have multiple addresses with different uses or applicable periods. The use code 'home' is not to be used." ] ;
        fhir:ElementDefinition.requirements [ fhir:value "May need to keep track of the organization's addresses for contacting, billing or reporting requirements." ] ;
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
@@ -4546,7 +4682,7 @@
        fhir:ElementDefinition.short [ fhir:value "CPF/CNPJ do Estabelecimento/Mantenedora" ] ;
        fhir:ElementDefinition.definition [ fhir:value "Pessoa Física (CPF) ou Jurídica (CNPJ) proprietária do Estabelecimento de Saúde." ] ;
        fhir:ElementDefinition.requirements [ fhir:value "Need to be able to track the hierarchy of organizations within an organization." ] ;
-       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
        fhir:ElementDefinition.max [ fhir:value "1" ] ;
        fhir:ElementDefinition.base [
          fhir:ElementDefinition.base.path [ fhir:value "Organization.partOf" ] ;
@@ -4555,11 +4691,16 @@
        ] ;
        fhir:ElementDefinition.type [
          fhir:index -1 ;
+         fhir:Element.extension [
+           fhir:index -1 ;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy" ] ;
+           fhir:Extension.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+         ] ;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ] ;
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-organization" ;
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Organization|4.0.1" ;
            fhir:index -1 ;
-           fhir:link <https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-organization>
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Organization|4.0.1>
          ]
        ] ;
        fhir:ElementDefinition.constraint [
@@ -4830,7 +4971,7 @@
        fhir:Element.id [ fhir:value "Organization.contact.name" ] ;
        fhir:ElementDefinition.path [ fhir:value "Organization.contact.name" ] ;
        fhir:ElementDefinition.short [ fhir:value "Nome Associado ao contato" ] ;
-       fhir:ElementDefinition.definition [ fhir:value "Um nome associado ao contato" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "A name associated with the contact." ] ;
        fhir:ElementDefinition.requirements [ fhir:value "Need to be able to track the person by name." ] ;
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
        fhir:ElementDefinition.max [ fhir:value "1" ] ;
@@ -4912,7 +5053,7 @@
        fhir:Element.id [ fhir:value "Organization.contact.address" ] ;
        fhir:ElementDefinition.path [ fhir:value "Organization.contact.address" ] ;
        fhir:ElementDefinition.short [ fhir:value "Endereço para contato" ] ;
-       fhir:ElementDefinition.definition [ fhir:value "Dados do endereço para contato." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Visiting or postal addresses for the contact." ] ;
        fhir:ElementDefinition.requirements [ fhir:value "May need to keep track of a contact party's address for contacting, billing or reporting requirements." ] ;
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
        fhir:ElementDefinition.max [ fhir:value "1" ] ;
@@ -4953,7 +5094,7 @@
        fhir:Element.id [ fhir:value "Organization.endpoint" ] ;
        fhir:ElementDefinition.path [ fhir:value "Organization.endpoint" ] ;
        fhir:ElementDefinition.short [ fhir:value "APIs que disponibilizam acesso aos serviços da organização" ] ;
-       fhir:ElementDefinition.definition [ fhir:value "APIs que disponibilizam acesso aos serviços da organização" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Technical endpoints providing access to services operated for the organization." ] ;
        fhir:ElementDefinition.requirements [ fhir:value "Organizations have multiple systems that provide various services and need to be able to define the technical connection details for how to connect to them, and for what purpose." ] ;
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
        fhir:ElementDefinition.max [ fhir:value "*" ] ;
@@ -4997,12 +5138,425 @@
        fhir:index -1 ;
        fhir:Element.id [ fhir:value "Organization" ] ;
        fhir:ElementDefinition.path [ fhir:value "Organization" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "Organization.meta" ] ;
+       fhir:ElementDefinition.path [ fhir:value "Organization.meta" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Metadados sobre o recurso" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "Organization.implicitRules" ] ;
+       fhir:ElementDefinition.path [ fhir:value "Organization.implicitRules" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Conjunto de regras sob as quais este conteúdo foi criado" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "Organization.language" ] ;
+       fhir:ElementDefinition.path [ fhir:value "Organization.language" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Linguagem do recurso" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "Organization.text" ] ;
+       fhir:ElementDefinition.path [ fhir:value "Organization.text" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Texto narrativo" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "Organization.contained" ] ;
+       fhir:ElementDefinition.path [ fhir:value "Organization.contained" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Recursos contidos" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "Organization.extension" ] ;
+       fhir:ElementDefinition.path [ fhir:value "Organization.extension" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Extenções adicionais" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "Organization.modifierExtension" ] ;
+       fhir:ElementDefinition.path [ fhir:value "Organization.modifierExtension" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Extensões adicionais" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "Organization.identifier" ] ;
+       fhir:ElementDefinition.path [ fhir:value "Organization.identifier" ] ;
+       fhir:ElementDefinition.slicing [
+         fhir:ElementDefinition.slicing.discriminator [
+           fhir:index -1 ;
+           fhir:ElementDefinition.slicing.discriminator.type [ fhir:value "value" ] ;
+           fhir:ElementDefinition.slicing.discriminator.path [ fhir:value "system" ]
+         ] ;
+         fhir:ElementDefinition.slicing.description [ fhir:value "Identificadores nacionais do estabelecimento" ] ;
+         fhir:ElementDefinition.slicing.rules [ fhir:value "open" ]
+       ] ;
+       fhir:ElementDefinition.short [ fhir:value "Nome da organização nacional" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Identifica esta organização em vários sistemas" ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "Organization.identifier:cnes" ] ;
+       fhir:ElementDefinition.path [ fhir:value "Organization.identifier" ] ;
+       fhir:ElementDefinition.sliceName [ fhir:value "cnes" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Identificador do estabelecimento" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Identificador do estabelecimento" ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.constraint [
+         fhir:index -1 ;
+         fhir:ElementDefinition.constraint.key [ fhir:value "estab-2" ] ;
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ] ;
+         fhir:ElementDefinition.constraint.human [ fhir:value "O número do CNES do estabelecimento de saúde é inválido (Organization.identifier.value). O número deve conter 7 dígitos e não pode conter letras ou caracteres especiais, apenas números." ] ;
+         fhir:ElementDefinition.constraint.expression [ fhir:value "value.matches('^(?!(\\\\d)\\\\1{6})\\\\d{7}$')" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "Organization.identifier:cnes.use" ] ;
+       fhir:ElementDefinition.path [ fhir:value "Organization.identifier.use" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Uso do identificador do estabelecimento" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "usual: identificador usual do estabelecimento. official: identificador oficial do estabelecimento. temp: identificador temporário do estabelecimento. secondary: identificador secundário do estabelecimento." ] ;
+       fhir:ElementDefinition.fixedCode [ fhir:value "official" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "Organization.identifier:cnes.type" ] ;
+       fhir:ElementDefinition.path [ fhir:value "Organization.identifier.type" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Tipo do identificador do estabelecimento" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Código que representa o tipo do identificador do estabelecimento" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "Organization.identifier:cnes.type.coding" ] ;
+       fhir:ElementDefinition.path [ fhir:value "Organization.identifier.type.coding" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Codificação do tipo do identificador do estabelecimento" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Codificação que representa o tipo do identificador do estabelecimento" ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "Organization.identifier:cnes.type.coding.system" ] ;
+       fhir:ElementDefinition.path [ fhir:value "Organization.identifier.type.coding.system" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Sistema da codificação do tipo do identificador do estabelecimento" ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "Organization.identifier:cnes.type.coding.version" ] ;
+       fhir:ElementDefinition.path [ fhir:value "Organization.identifier.type.coding.version" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Versão da codificação do tipo do identificador do estabelecimento" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "Organization.identifier:cnes.type.coding.code" ] ;
+       fhir:ElementDefinition.path [ fhir:value "Organization.identifier.type.coding.code" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Código da codificação do tipo do identificador do estabelecimento" ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "Organization.identifier:cnes.type.coding.display" ] ;
+       fhir:ElementDefinition.path [ fhir:value "Organization.identifier.type.coding.display" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Texto da codificação do tipo do identificador do estabelecimento" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "Organization.identifier:cnes.type.coding.userSelected" ] ;
+       fhir:ElementDefinition.path [ fhir:value "Organization.identifier.type.coding.userSelected" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Seleção do usuário da codificação do tipo do identificador do estabelecimento" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "Organization.identifier:cnes.type.text" ] ;
+       fhir:ElementDefinition.path [ fhir:value "Organization.identifier.type.text" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Texto do tipo do identificador do estabelecimento" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "Organization.identifier:cnes.system" ] ;
+       fhir:ElementDefinition.path [ fhir:value "Organization.identifier.system" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Sistema do identificador do estabelecimento" ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.fixedUri [ fhir:value "https://saude.gov.br/sid/cnes" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "Organization.identifier:cnes.value" ] ;
+       fhir:ElementDefinition.path [ fhir:value "Organization.identifier.value" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Valor do identificador do estabelecimento" ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "Organization.identifier:cnes.period" ] ;
+       fhir:ElementDefinition.path [ fhir:value "Organization.identifier.period" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Período de uso do identificador do estabelecimento" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "Organization.identifier:cnes.assigner" ] ;
+       fhir:ElementDefinition.path [ fhir:value "Organization.identifier.assigner" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Entidade que atribuiu o identificador do estabelecimento" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "Organization.identifier:cnes.assigner.display" ] ;
+       fhir:ElementDefinition.path [ fhir:value "Organization.identifier.assigner.display" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Nome da entidade que atribuiu o identificador do estabelecimento" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "Organization.identifier:cpf" ] ;
+       fhir:ElementDefinition.path [ fhir:value "Organization.identifier" ] ;
+       fhir:ElementDefinition.sliceName [ fhir:value "cpf" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Identificador do estabelecimento" ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.constraint [
+         fhir:index -1 ;
+         fhir:ElementDefinition.constraint.key [ fhir:value "estab-3" ] ;
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ] ;
+         fhir:ElementDefinition.constraint.human [ fhir:value "O número do CPF do estabelecimento de saúde é inválido (Organization.identifier.value). O número deve conter 11 dígitos e não pode conter letras ou caracteres especiais, apenas números." ] ;
+         fhir:ElementDefinition.constraint.expression [ fhir:value "value.matches('^(?!(\\\\d)\\\\1{10})\\\\d{11}$')" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "Organization.identifier:cpf.use" ] ;
+       fhir:ElementDefinition.path [ fhir:value "Organization.identifier.use" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Uso do identificador do estabelecimento" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "usual: identificador usual do estabelecimento. official: identificador oficial do estabelecimento. temp: identificador temporário do estabelecimento. secondary: identificador secundário do estabelecimento." ] ;
+       fhir:ElementDefinition.fixedCode [ fhir:value "official" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "Organization.identifier:cpf.type" ] ;
+       fhir:ElementDefinition.path [ fhir:value "Organization.identifier.type" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Tipo do identificador do estabelecimento" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "Organization.identifier:cpf.type.coding" ] ;
+       fhir:ElementDefinition.path [ fhir:value "Organization.identifier.type.coding" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Codificação do tipo do identificador do estabelecimento" ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "Organization.identifier:cpf.type.coding.system" ] ;
+       fhir:ElementDefinition.path [ fhir:value "Organization.identifier.type.coding.system" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Sistema da codificação do tipo do identificador do estabelecimento" ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "Organization.identifier:cpf.type.coding.version" ] ;
+       fhir:ElementDefinition.path [ fhir:value "Organization.identifier.type.coding.version" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Versão da codificação do tipo do identificador do estabelecimento" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "Organization.identifier:cpf.type.coding.code" ] ;
+       fhir:ElementDefinition.path [ fhir:value "Organization.identifier.type.coding.code" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Código da codificação do tipo do identificador do estabelecimento" ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "Organization.identifier:cpf.type.coding.display" ] ;
+       fhir:ElementDefinition.path [ fhir:value "Organization.identifier.type.coding.display" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Texto da codificação do tipo do identificador do estabelecimento" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "Organization.identifier:cpf.type.coding.userSelected" ] ;
+       fhir:ElementDefinition.path [ fhir:value "Organization.identifier.type.coding.userSelected" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Seleção do usuário da codificação do tipo do identificador do estabelecimento" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "Organization.identifier:cpf.type.text" ] ;
+       fhir:ElementDefinition.path [ fhir:value "Organization.identifier.type.text" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Texto do tipo do identificador do estabelecimento" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "Organization.identifier:cpf.system" ] ;
+       fhir:ElementDefinition.path [ fhir:value "Organization.identifier.system" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Sistema do identificador do estabelecimento" ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.fixedUri [ fhir:value "https://saude.gov.br/sid/cpf" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "Organization.identifier:cpf.value" ] ;
+       fhir:ElementDefinition.path [ fhir:value "Organization.identifier.value" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Valor do identificador do estabelecimento" ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "Organization.identifier:cpf.period" ] ;
+       fhir:ElementDefinition.path [ fhir:value "Organization.identifier.period" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Período de uso do identificador do estabelecimento" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "Organization.identifier:cpf.assigner" ] ;
+       fhir:ElementDefinition.path [ fhir:value "Organization.identifier.assigner" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Entidade que atribuiu o identificador do estabelecimento" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "Organization.identifier:cpf.assigner.display" ] ;
+       fhir:ElementDefinition.path [ fhir:value "Organization.identifier.assigner.display" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Nome da entidade que atribuiu o identificador do estabelecimento" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "Organization.identifier:cnpj" ] ;
+       fhir:ElementDefinition.path [ fhir:value "Organization.identifier" ] ;
+       fhir:ElementDefinition.sliceName [ fhir:value "cnpj" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Identificador do estabelecimento" ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.constraint [
+         fhir:index -1 ;
+         fhir:ElementDefinition.constraint.key [ fhir:value "estab-4" ] ;
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ] ;
+         fhir:ElementDefinition.constraint.human [ fhir:value "O número do CNPJ do estabelecimento de saúde é inválido (Organization.identifier.value). O número deve conter 14 caracteres e não pode conter caracteres especiais, apenas números e letras maiúsculas." ] ;
+         fhir:ElementDefinition.constraint.expression [ fhir:value "value.matches('^(?!(\\\\d)\\\\1{13})[A-Z0-9]{12}\\\\d{2}$')" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "Organization.identifier:cnpj.use" ] ;
+       fhir:ElementDefinition.path [ fhir:value "Organization.identifier.use" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Uso do identificador do estabelecimento" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "usual: identificador usual do estabelecimento. official: identificador oficial do estabelecimento. temp: identificador temporário do estabelecimento. secondary: identificador secundário do estabelecimento." ] ;
+       fhir:ElementDefinition.fixedCode [ fhir:value "official" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "Organization.identifier:cnpj.type" ] ;
+       fhir:ElementDefinition.path [ fhir:value "Organization.identifier.type" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Tipo do identificador do estabelecimento" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "Organization.identifier:cnpj.type.id" ] ;
+       fhir:ElementDefinition.path [ fhir:value "Organization.identifier.type.id" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Id lógico do tipo do identificador do estabelecimento" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "Organization.identifier:cnpj.type.extension" ] ;
+       fhir:ElementDefinition.path [ fhir:value "Organization.identifier.type.extension" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Extensões do tipo do identificador do estabelecimento" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "Organization.identifier:cnpj.type.coding" ] ;
+       fhir:ElementDefinition.path [ fhir:value "Organization.identifier.type.coding" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Codificação do tipo do identificador do estabelecimento" ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "Organization.identifier:cnpj.type.coding.system" ] ;
+       fhir:ElementDefinition.path [ fhir:value "Organization.identifier.type.coding.system" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Sistema da codificação do tipo do identificador do estabelecimento" ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "Organization.identifier:cnpj.type.coding.version" ] ;
+       fhir:ElementDefinition.path [ fhir:value "Organization.identifier.type.coding.version" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Versão da codificação do tipo do identificador do estabelecimento" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "Organization.identifier:cnpj.type.coding.code" ] ;
+       fhir:ElementDefinition.path [ fhir:value "Organization.identifier.type.coding.code" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Código da codificação do tipo do identificador do estabelecimento" ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "Organization.identifier:cnpj.type.coding.display" ] ;
+       fhir:ElementDefinition.path [ fhir:value "Organization.identifier.type.coding.display" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Texto da codificação do tipo do identificador do estabelecimento" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "Organization.identifier:cnpj.type.coding.userSelected" ] ;
+       fhir:ElementDefinition.path [ fhir:value "Organization.identifier.type.coding.userSelected" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Seleção do usuário da codificação do tipo do identificador do estabelecimento" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "Organization.identifier:cnpj.type.text" ] ;
+       fhir:ElementDefinition.path [ fhir:value "Organization.identifier.type.text" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Texto do tipo do identificador do estabelecimento" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "Organization.identifier:cnpj.system" ] ;
+       fhir:ElementDefinition.path [ fhir:value "Organization.identifier.system" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Sistema do identificador do estabelecimento" ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.fixedUri [ fhir:value "https://saude.gov.br/sid/cnpj" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "Organization.identifier:cnpj.value" ] ;
+       fhir:ElementDefinition.path [ fhir:value "Organization.identifier.value" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Valor do identificador do estabelecimento" ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "Organization.identifier:cnpj.period" ] ;
+       fhir:ElementDefinition.path [ fhir:value "Organization.identifier.period" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Período de uso do identificador do estabelecimento" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "Organization.identifier:cnpj.assigner" ] ;
+       fhir:ElementDefinition.path [ fhir:value "Organization.identifier.assigner" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Entidade que atribuiu o identificador do estabelecimento" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "Organization.identifier:cnpj.assigner.display" ] ;
+       fhir:ElementDefinition.path [ fhir:value "Organization.identifier.assigner.display" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Nome da entidade que atribuiu o identificador do estabelecimento" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "Organization.active" ] ;
+       fhir:ElementDefinition.path [ fhir:value "Organization.active" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Estabelecimento de Saúde ainda está em ativo." ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "Organization.type" ] ;
+       fhir:ElementDefinition.path [ fhir:value "Organization.type" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Tipo do Estabelecimento de saúde" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "Organization.name" ] ;
+       fhir:ElementDefinition.path [ fhir:value "Organization.name" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Nome usado para a organização" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "Organization.alias" ] ;
+       fhir:ElementDefinition.path [ fhir:value "Organization.alias" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Nome Empresarial" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "Organization.telecom" ] ;
+       fhir:ElementDefinition.path [ fhir:value "Organization.telecom" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Meio de contato" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "Organization.address" ] ;
+       fhir:ElementDefinition.path [ fhir:value "Organization.address" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Dados de Endereçamento" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "Organization.partOf" ] ;
+       fhir:ElementDefinition.path [ fhir:value "Organization.partOf" ] ;
+       fhir:ElementDefinition.short [ fhir:value "CPF/CNPJ do Estabelecimento/Mantenedora" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Pessoa Física (CPF) ou Jurídica (CNPJ) proprietária do Estabelecimento de Saúde." ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "Organization.contact" ] ;
+       fhir:ElementDefinition.path [ fhir:value "Organization.contact" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Contato" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Contato para a organização para uma determinada finalidade" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "Organization.contact.purpose" ] ;
+       fhir:ElementDefinition.path [ fhir:value "Organization.contact.purpose" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Tipo de Contato" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "O tipo de contato Vinculação: ContactEntityType ( extensible ): A finalidade para a qual você entraria em contato com uma parte de contato." ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "Organization.contact.name" ] ;
+       fhir:ElementDefinition.path [ fhir:value "Organization.contact.name" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Nome Associado ao contato" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "Organization.contact.telecom" ] ;
+       fhir:ElementDefinition.path [ fhir:value "Organization.contact.telecom" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Meio de Contato" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Contato, Informação de Contato, Telefone, E-Mail, Correio Eletrônico, Celular, Recado" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "Organization.contact.address" ] ;
+       fhir:ElementDefinition.path [ fhir:value "Organization.contact.address" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Endereço para contato" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "Organization.endpoint" ] ;
+       fhir:ElementDefinition.path [ fhir:value "Organization.endpoint" ] ;
+       fhir:ElementDefinition.short [ fhir:value "APIs que disponibilizam acesso aos serviços da organização" ]
      ]
   ] .
 
 # - ontology header ------------------------------------------------------------
 
-<https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0/StructureDefinition/RNDSEstabelecimentoSaude.ttl> a owl:Ontology ;
+<https://fhir.saude.gov.br/redfm/StructureDefinition/RNDSEstabelecimentoSaude.ttl> a owl:Ontology ;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

@@ -7,7 +7,7 @@ Apresenta o Terminologia de Produto Medicinal Comercial com Apresentação (AMPP
 
 This Code system is referenced in the definition of the following value sets:
 
-* [BRTerminologiaMedicamento](ValueSet-BRTerminologiaMedicamento.md)
+* [Terminologia dos medicamentos](ValueSet-BRTerminologiaMedicamento.md)
 
 -------
 
@@ -32,7 +32,7 @@ This Code system is referenced in the definition of the following value sets:
     "_valueInteger" : {
       "extension" : [{
         "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
-        "valueCanonical" : "https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0/ImplementationGuide/br.gov.saude.redfm.fhir"
+        "valueCanonical" : "https://fhir.saude.gov.br/redfm/ImplementationGuide/br.gov.saude.redfm.fhir"
       }]
     }
   },
@@ -42,7 +42,7 @@ This Code system is referenced in the definition of the following value sets:
     "_valueCode" : {
       "extension" : [{
         "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
-        "valueCanonical" : "https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0/ImplementationGuide/br.gov.saude.redfm.fhir"
+        "valueCanonical" : "https://fhir.saude.gov.br/redfm/ImplementationGuide/br.gov.saude.redfm.fhir"
       }]
     }
   },

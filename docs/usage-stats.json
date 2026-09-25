@@ -3,8 +3,80 @@
   "version": "1.0.0-release",
   "fhirVersion": "4.0.1",
   "jurisdiction": "BR",
-  "extensions": [],
+  "extensions": [
+    {
+      "url": "http://www.saude.gov.br/fhir/r4/StructureDefinition/BRIndividuoNaoIdentificado-1.0",
+      "title": "Informações Complementares de Indivíduos Não Identificados",
+      "types": [
+        "code",
+        "date",
+        "CodeableConcept",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    }
+  ],
   "profiles": {
+    "Condition": [
+      {
+        "url": "http://www.saude.gov.br/fhir/r4/StructureDefinition/BRProblemaDiagnostico",
+        "title": "ProblemaDiagnóstico"
+      }
+    ],
+    "MedicationDispense": [
+      {
+        "url": "http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSDispensacaoMedicamento",
+        "title": "Dispensação ou Fornecimento de Medicamento"
+      }
+    ],
     "Organization": [
       {
         "url": "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-organization",
@@ -23,16 +95,10 @@
         "title": "BR Core Medication"
       }
     ],
-    "MedicationDispense": [
-      {
-        "url": "http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSMedicamentoDispensadoFornecido",
-        "title": "Dispensação ou Fornecimento Eletrônico de Medicamento"
-      }
-    ],
     "MedicationRequest": [
       {
-        "url": "http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSPrescricaoMedicamentoDispensado",
-        "title": "Prescrição Eletrônica de Medicamento (Contida na Dispensação)"
+        "url": "http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSPrescricaoMedicamento",
+        "title": "Prescrição de Medicamento - RNDS"
       }
     ],
     "Practitioner": [
@@ -43,8 +109,8 @@
     ],
     "Composition": [
       {
-        "url": "http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamento",
-        "title": "Registro Eletrônico de Dispensação ou Fornecimento de Medicamento (REDFM)"
+        "url": "http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos",
+        "title": "Registro Eletrônico de Dispensação ou Fornecimento de Medicamentos - REDFM"
       },
       {
         "url": "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-composition",
@@ -103,6 +169,8 @@
       "CodeSystem",
       "ImplementationGuide",
       "StructureDefinition",
+      "StructureDefinition.differential.element",
+      "StructureDefinition.snapshot.element",
       "ValueSet"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status": [
@@ -111,6 +179,8 @@
       "ImplementationGuide.definition.page",
       "ImplementationGuide.definition.page.page",
       "StructureDefinition",
+      "StructureDefinition.differential.element",
+      "StructureDefinition.snapshot.element",
       "ValueSet"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg": [
@@ -137,6 +207,9 @@
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version": [
       "StructureDefinition.snapshot"
+    ],
+    "http://www.saude.gov.br/fhir/r4/StructureDefinition/BRIndividuoNaoIdentificado-1.0": [
+      "Condition.subject"
     ]
   }
 }

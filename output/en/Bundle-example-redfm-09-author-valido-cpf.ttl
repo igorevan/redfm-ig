@@ -1,0 +1,552 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.saude.gov.br/redfm/Bundle/example-redfm-09-author-valido-cpf> a fhir:Bundle ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "example-redfm-09-author-valido-cpf"] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:Bundle.identifier [
+     fhir:Identifier.system [ fhir:value "http://www.saude.gov.br/fhir/r4/NamingSystem/BRRNDS-12334" ] ;
+     fhir:Identifier.value [ fhir:value "60eabcf4-27fe-4409-9e22-890d3d23ce7d" ]
+  ] ;
+  fhir:Bundle.type [ fhir:value "document"] ;
+  fhir:Bundle.timestamp [ fhir:value "2026-06-20T14:59:51.244-03:00"^^xsd:dateTime] ;
+  fhir:Bundle.entry [
+     fhir:index -1 ;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:58e54a1d-550e-48bc-9e09-6230c972078a" ] ;
+     fhir:Bundle.entry.resource <urn:uuid:58e54a1d-550e-48bc-9e09-6230c972078a>
+  ], [
+     fhir:index -1 ;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:a54219b8-f741-4c47-b662-e4f8dfa49ab6" ] ;
+     fhir:Bundle.entry.resource <urn:uuid:a54219b8-f741-4c47-b662-e4f8dfa49ab6>
+  ], [
+     fhir:index -1 ;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:c509592e-d4ec-45fd-8603-60daf58ae739" ] ;
+     fhir:Bundle.entry.resource <urn:uuid:c509592e-d4ec-45fd-8603-60daf58ae739>
+  ], [
+     fhir:index -1 ;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:1a9af1c7-1010-4b4d-9391-abf319c4fea9" ] ;
+     fhir:Bundle.entry.resource <urn:uuid:1a9af1c7-1010-4b4d-9391-abf319c4fea9>
+  ], [
+     fhir:index -1 ;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:05b1af54-94cd-4766-ad8f-d39bdb23eafe" ] ;
+     fhir:Bundle.entry.resource <urn:uuid:05b1af54-94cd-4766-ad8f-d39bdb23eafe>
+  ], [
+     fhir:index -1 ;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:8352374b-dd32-4091-b381-35c9b31a8e2d" ] ;
+     fhir:Bundle.entry.resource <urn:uuid:8352374b-dd32-4091-b381-35c9b31a8e2d>
+  ], [
+     fhir:index -1 ;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:053ecfcf-ba49-43e1-a0a3-442dfab3b6c1" ] ;
+     fhir:Bundle.entry.resource <urn:uuid:053ecfcf-ba49-43e1-a0a3-442dfab3b6c1>
+  ], [
+     fhir:index -1 ;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:f08edf47-df0b-41a9-8786-95dca79bb399" ] ;
+     fhir:Bundle.entry.resource <urn:uuid:f08edf47-df0b-41a9-8786-95dca79bb399>
+  ], [
+     fhir:index -1 ;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:a21d5e5b-9443-4b5f-8b6e-866317682293" ] ;
+     fhir:Bundle.entry.resource <urn:uuid:a21d5e5b-9443-4b5f-8b6e-866317682293>
+  ], [
+     fhir:index -1 ;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:1756fd72-7d86-496c-a2bd-8ecbb75daa75" ] ;
+     fhir:Bundle.entry.resource <urn:uuid:1756fd72-7d86-496c-a2bd-8ecbb75daa75>
+  ] .
+
+<urn:uuid:58e54a1d-550e-48bc-9e09-6230c972078a> a fhir:Composition ;
+  fhir:Resource.id [ fhir:value "58e54a1d-550e-48bc-9e09-6230c972078a"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos" ;
+       fhir:index -1 ;
+       fhir:link <http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos>
+     ]
+  ] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Composition_58e54a1d-550e-48bc-9e09-6230c972078a\"> </a><p class=\"res-header-id\"><b>Narrativa gerada: Composition 58e54a1d-550e-48bc-9e09-6230c972078a</b></p><a name=\"58e54a1d-550e-48bc-9e09-6230c972078a\"> </a><a name=\"hc58e54a1d-550e-48bc-9e09-6230c972078a\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Perfil: <a href=\"StructureDefinition-RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos.html\">Registro Eletrônico de Dispensação ou Fornecimento de Medicamentos - REDFM</a></p></div><p><b>status</b>: Final</p><p><b>type</b>: <span title=\"Códigos:{http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoDocumento REDFM}\">Registro Eletrônico de Dispensação ou Fornecimento de Medicamentos</span></p><p><b>date</b>: 2026-06-20</p><p><b>author</b>: Identifier: <code>http://www.saude.gov.br/fhir/r4/StructureDefinition/BREstabelecimentoSaude-1.0</code>/83588144000</p><p><b>title</b>: Registro Eletrônico de Dispensação ou Fornecimento de Medicamentos</p></div>"
+  ] ;
+  fhir:Composition.status [ fhir:value "final"] ;
+  fhir:Composition.type [
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       fhir:Coding.system [ fhir:value "http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoDocumento" ] ;
+       fhir:Coding.code [ fhir:value "REDFM" ]
+     ]
+  ] ;
+  fhir:Composition.subject [
+     fhir:Reference.identifier [
+       fhir:Identifier.system [ fhir:value "http://www.saude.gov.br/fhir/r4/StructureDefinition/BRIndividuo-1.0" ] ;
+       fhir:Identifier.value [ fhir:value "33839066808" ]
+     ]
+  ] ;
+  fhir:Composition.date [ fhir:value "2026-06-20"^^xsd:date] ;
+  fhir:Composition.author [
+     fhir:index -1 ;
+     fhir:Reference.identifier [
+       fhir:Identifier.system [ fhir:value "http://www.saude.gov.br/fhir/r4/StructureDefinition/BREstabelecimentoSaude-1.0" ] ;
+       fhir:Identifier.value [ fhir:value "83588144000" ]
+     ]
+  ] ;
+  fhir:Composition.title [ fhir:value "Registro Eletrônico de Dispensação ou Fornecimento de Medicamentos"] ;
+  fhir:Composition.section [
+     fhir:index -1 ;
+     fhir:Composition.section.title [ fhir:value "Medicamentos Dispensados" ] ;
+     fhir:Composition.section.code [
+       fhir:CodeableConcept.coding [
+         fhir:index -1 ;
+         a loinc:56445-0 ;
+         fhir:Coding.system [ fhir:value "http://loinc.org" ] ;
+         fhir:Coding.code [ fhir:value "56445-0" ]
+       ]
+     ] ;
+     fhir:Composition.section.entry [
+       fhir:index -1 ;
+       fhir:Reference.reference [ fhir:value "urn:uuid:a54219b8-f741-4c47-b662-e4f8dfa49ab6" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Reference.reference [ fhir:value "urn:uuid:1a9af1c7-1010-4b4d-9391-abf319c4fea9" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Reference.reference [ fhir:value "urn:uuid:8352374b-dd32-4091-b381-35c9b31a8e2d" ]
+     ]
+  ] .
+
+<urn:uuid:a54219b8-f741-4c47-b662-e4f8dfa49ab6> a fhir:MedicationDispense ;
+  fhir:Resource.id [ fhir:value "a54219b8-f741-4c47-b662-e4f8dfa49ab6"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSDispensacaoMedicamento" ;
+       fhir:index -1 ;
+       fhir:link <http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSDispensacaoMedicamento>
+     ]
+  ] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"MedicationDispense_a54219b8-f741-4c47-b662-e4f8dfa49ab6\"> </a><p class=\"res-header-id\"><b>Narrativa gerada: MedicationDispense a54219b8-f741-4c47-b662-e4f8dfa49ab6</b></p><a name=\"a54219b8-f741-4c47-b662-e4f8dfa49ab6\"> </a><a name=\"hca54219b8-f741-4c47-b662-e4f8dfa49ab6\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Perfil: <a href=\"StructureDefinition-RNDSDispensacaoMedicamento.html\">Dispensação ou Fornecimento de Medicamento</a></p></div><p><b>identifier</b>: <code>http://www.saude.gov.br/fhir/r4/NamingSystem/dispensed-item-id</code>/e6f89964-b218-4fb3-9603-e0897c5c2181</p><p><b>status</b>: Completed</p><p><b>category</b>: <span title=\"Códigos:{http://terminology.hl7.org/CodeSystem/medicationrequest-category community}\">Community</span></p><p><b>medication</b>: <a href=\"Bundle-example-redfm-01-prescricao-na-rnds.html#urn-uuid-c509592e-d4ec-45fd-8603-60daf58ae739\">Medication Dimesilato de Lisdexanfetamina 30mg Cápsula</a></p><p><b>subject</b>: Identifier: <code>http://www.saude.gov.br/fhir/r4/StructureDefinition/BRIndividuo-1.0</code>/33839066808</p><blockquote><p><b>performer</b></p><blockquote><p><b>id</b></p>pharmacist</blockquote><p><b>actor</b>: <a href=\"Bundle-example-redfm-01-prescricao-na-rnds.html#urn-uuid-f08edf47-df0b-41a9-8786-95dca79bb399\">PractitionerRole FARMACEUTICO</a></p></blockquote><p><b>authorizingPrescription</b>: Identifier: <code>http://www.saude.gov.br/fhir/r4/NamingSystem/prescription-item-id</code>/ec918ffe-23e1-42bc-8eb4-5f32fc6200d7</p><p><b>type</b>: <span title=\"Códigos:{http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoDispensacaoRealizada fully-dispensing}\">Fully Dispensing</span></p><p><b>quantity</b>: 10 Comprimido<span style=\"background: LightGoldenRodYellow\"> (Detalhes: Unidade de Medida código19 = 'Comprimido')</span></p><p><b>whenHandedOver</b>: 2026-06-20 14:59:51-0300</p><p><b>receiver</b>: Identifier: <code>http://www.saude.gov.br/fhir/r4/StructureDefinition/BRIndividuo-1.0</code>/700004841233002</p></div>"
+  ] ;
+  fhir:MedicationDispense.identifier [
+     fhir:index -1 ;
+     fhir:Identifier.system [ fhir:value "http://www.saude.gov.br/fhir/r4/NamingSystem/dispensed-item-id" ] ;
+     fhir:Identifier.value [ fhir:value "e6f89964-b218-4fb3-9603-e0897c5c2181" ]
+  ] ;
+  fhir:MedicationDispense.status [ fhir:value "completed"] ;
+  fhir:MedicationDispense.category [
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/medicationrequest-category" ] ;
+       fhir:Coding.code [ fhir:value "community" ]
+     ]
+  ] ;
+  fhir:MedicationDispense.medicationReference [
+     fhir:Reference.reference [ fhir:value "urn:uuid:c509592e-d4ec-45fd-8603-60daf58ae739" ]
+  ] ;
+  fhir:MedicationDispense.subject [
+     fhir:Reference.identifier [
+       fhir:Identifier.system [ fhir:value "http://www.saude.gov.br/fhir/r4/StructureDefinition/BRIndividuo-1.0" ] ;
+       fhir:Identifier.value [ fhir:value "33839066808" ]
+     ]
+  ] ;
+  fhir:MedicationDispense.performer [
+     fhir:index -1 ;
+     fhir:Element.id [ fhir:value "pharmacist" ] ;
+     fhir:MedicationDispense.performer.actor [
+       fhir:Reference.reference [ fhir:value "urn:uuid:f08edf47-df0b-41a9-8786-95dca79bb399" ]
+     ]
+  ] ;
+  fhir:MedicationDispense.authorizingPrescription [
+     fhir:index -1 ;
+     fhir:Element.id [ fhir:value "in-rnds" ] ;
+     fhir:Reference.identifier [
+       fhir:Identifier.system [ fhir:value "http://www.saude.gov.br/fhir/r4/NamingSystem/prescription-item-id" ] ;
+       fhir:Identifier.value [ fhir:value "ec918ffe-23e1-42bc-8eb4-5f32fc6200d7" ]
+     ]
+  ] ;
+  fhir:MedicationDispense.type [
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       fhir:Coding.system [ fhir:value "http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoDispensacaoRealizada" ] ;
+       fhir:Coding.code [ fhir:value "fully-dispensing" ]
+     ]
+  ] ;
+  fhir:MedicationDispense.quantity [
+     fhir:Quantity.value [ fhir:value "10"^^xsd:decimal ] ;
+     fhir:Quantity.unit [ fhir:value "Comprimido" ] ;
+     fhir:Quantity.system [ fhir:value "http://www.saude.gov.br/fhir/r4/CodeSystem/BRUnidadeMedida" ] ;
+     fhir:Quantity.code [ fhir:value "19" ]
+  ] ;
+  fhir:MedicationDispense.whenHandedOver [ fhir:value "2026-06-20T14:59:51.244-03:00"^^xsd:dateTime] ;
+  fhir:MedicationDispense.receiver [
+     fhir:index -1 ;
+     fhir:Reference.identifier [
+       fhir:Identifier.system [ fhir:value "http://www.saude.gov.br/fhir/r4/StructureDefinition/BRIndividuo-1.0" ] ;
+       fhir:Identifier.value [ fhir:value "700004841233002" ]
+     ]
+  ] .
+
+<urn:uuid:c509592e-d4ec-45fd-8603-60daf58ae739> a fhir:Medication ;
+  fhir:Resource.id [ fhir:value "c509592e-d4ec-45fd-8603-60daf58ae739"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSMedicamento" ;
+       fhir:index -1 ;
+       fhir:link <http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSMedicamento>
+     ]
+  ] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Medication_c509592e-d4ec-45fd-8603-60daf58ae739\"> </a><p class=\"res-header-id\"><b>Narrativa gerada: Medication c509592e-d4ec-45fd-8603-60daf58ae739</b></p><a name=\"c509592e-d4ec-45fd-8603-60daf58ae739\"> </a><a name=\"hcc509592e-d4ec-45fd-8603-60daf58ae739\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Perfil: <a href=\"StructureDefinition-RNDSMedicamento.html\">Medicamento</a></p></div><p><b>code</b>: <span title=\"Códigos:{http://www.saude.gov.br/fhir/r4/CodeSystem/BRObmVMP @brasil24441574805}\">Dimesilato de Lisdexanfetamina 30mg Cápsula</span></p><p><b>manufacturer</b>: Identifier: <code>https://saude.gov.br/sid/cnpj</code>/83588144000138</p><p><b>form</b>: <span title=\"Códigos:{http://www.saude.gov.br/fhir/r4/CodeSystem/BRUnidadeMedida 19}\">Comprimido</span></p><h3>Batches</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>LotNumber</b></td><td><b>ExpirationDate</b></td></tr><tr><td style=\"display: none\">*</td><td>587AT765H</td><td>2027-10-31</td></tr></table></div>"
+  ] ;
+  fhir:Medication.code [
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       fhir:Coding.system [ fhir:value "http://www.saude.gov.br/fhir/r4/CodeSystem/BRObmVMP" ] ;
+       fhir:Coding.code [ fhir:value "@brasil24441574805" ]
+     ]
+  ] ;
+  fhir:Medication.manufacturer [
+     fhir:Reference.identifier [
+       fhir:Identifier.system [ fhir:value "https://saude.gov.br/sid/cnpj" ] ;
+       fhir:Identifier.value [ fhir:value "83588144000138" ]
+     ]
+  ] ;
+  fhir:Medication.form [
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       fhir:Coding.system [ fhir:value "http://www.saude.gov.br/fhir/r4/CodeSystem/BRUnidadeMedida" ] ;
+       fhir:Coding.code [ fhir:value "19" ]
+     ]
+  ] ;
+  fhir:Medication.batch [
+     fhir:Medication.batch.lotNumber [ fhir:value "587AT765H" ] ;
+     fhir:Medication.batch.expirationDate [ fhir:value "2027-10-31"^^xsd:date ]
+  ] .
+
+<urn:uuid:1a9af1c7-1010-4b4d-9391-abf319c4fea9> a fhir:MedicationDispense ;
+  fhir:Resource.id [ fhir:value "1a9af1c7-1010-4b4d-9391-abf319c4fea9"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSDispensacaoMedicamento" ;
+       fhir:index -1 ;
+       fhir:link <http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSDispensacaoMedicamento>
+     ]
+  ] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"MedicationDispense_1a9af1c7-1010-4b4d-9391-abf319c4fea9\"> </a><p class=\"res-header-id\"><b>Narrativa gerada: MedicationDispense 1a9af1c7-1010-4b4d-9391-abf319c4fea9</b></p><a name=\"1a9af1c7-1010-4b4d-9391-abf319c4fea9\"> </a><a name=\"hc1a9af1c7-1010-4b4d-9391-abf319c4fea9\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Perfil: <a href=\"StructureDefinition-RNDSDispensacaoMedicamento.html\">Dispensação ou Fornecimento de Medicamento</a></p></div><p><b>identifier</b>: <code>http://www.saude.gov.br/fhir/r4/NamingSystem/dispensed-item-id</code>/e6f89964-b218-4fb3-9603-e0897c5c2181</p><p><b>status</b>: Completed</p><p><b>category</b>: <span title=\"Códigos:{http://terminology.hl7.org/CodeSystem/medicationrequest-category community}\">Community</span></p><p><b>medication</b>: <a href=\"Bundle-example-redfm-01-prescricao-na-rnds.html#urn-uuid-05b1af54-94cd-4766-ad8f-d39bdb23eafe\">Medication Acetilcisteína 600mg Comprimido efervescente</a></p><p><b>subject</b>: Identifier: <code>http://www.saude.gov.br/fhir/r4/StructureDefinition/BRIndividuo-1.0</code>/33839066808</p><h3>Performers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Actor</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Bundle-example-redfm-01-prescricao-na-rnds.html#urn-uuid-f08edf47-df0b-41a9-8786-95dca79bb399\">PractitionerRole FARMACEUTICO</a></td></tr></table><p><b>authorizingPrescription</b>: Identifier: <code>http://www.saude.gov.br/fhir/r4/NamingSystem/prescription-item-id</code>/5923026f-c64b-42b7-81b8-c282c7822828</p><p><b>type</b>: <span title=\"Códigos:{http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoDispensacaoRealizada fully-dispensing}\">Fully Dispensing</span></p><p><b>quantity</b>: 10 Comprimido<span style=\"background: LightGoldenRodYellow\"> (Detalhes: Unidade de Medida código19 = 'Comprimido')</span></p><p><b>whenHandedOver</b>: 2026-06-20 14:59:51-0300</p><p><b>receiver</b>: Identifier: <code>http://www.saude.gov.br/fhir/r4/StructureDefinition/BRIndividuo-1.0</code>/700004841233002</p></div>"
+  ] ;
+  fhir:MedicationDispense.identifier [
+     fhir:index -1 ;
+     fhir:Identifier.system [ fhir:value "http://www.saude.gov.br/fhir/r4/NamingSystem/dispensed-item-id" ] ;
+     fhir:Identifier.value [ fhir:value "e6f89964-b218-4fb3-9603-e0897c5c2181" ]
+  ] ;
+  fhir:MedicationDispense.status [ fhir:value "completed"] ;
+  fhir:MedicationDispense.category [
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/medicationrequest-category" ] ;
+       fhir:Coding.code [ fhir:value "community" ]
+     ]
+  ] ;
+  fhir:MedicationDispense.medicationReference [
+     fhir:Reference.reference [ fhir:value "urn:uuid:05b1af54-94cd-4766-ad8f-d39bdb23eafe" ]
+  ] ;
+  fhir:MedicationDispense.subject [
+     fhir:Reference.identifier [
+       fhir:Identifier.system [ fhir:value "http://www.saude.gov.br/fhir/r4/StructureDefinition/BRIndividuo-1.0" ] ;
+       fhir:Identifier.value [ fhir:value "33839066808" ]
+     ]
+  ] ;
+  fhir:MedicationDispense.performer [
+     fhir:index -1 ;
+     fhir:MedicationDispense.performer.actor [
+       fhir:Reference.reference [ fhir:value "urn:uuid:f08edf47-df0b-41a9-8786-95dca79bb399" ]
+     ]
+  ] ;
+  fhir:MedicationDispense.authorizingPrescription [
+     fhir:index -1 ;
+     fhir:Element.id [ fhir:value "in-rnds" ] ;
+     fhir:Reference.identifier [
+       fhir:Identifier.system [ fhir:value "http://www.saude.gov.br/fhir/r4/NamingSystem/prescription-item-id" ] ;
+       fhir:Identifier.value [ fhir:value "5923026f-c64b-42b7-81b8-c282c7822828" ]
+     ]
+  ] ;
+  fhir:MedicationDispense.type [
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       fhir:Coding.system [ fhir:value "http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoDispensacaoRealizada" ] ;
+       fhir:Coding.code [ fhir:value "fully-dispensing" ]
+     ]
+  ] ;
+  fhir:MedicationDispense.quantity [
+     fhir:Quantity.value [ fhir:value "10"^^xsd:decimal ] ;
+     fhir:Quantity.unit [ fhir:value "Comprimido" ] ;
+     fhir:Quantity.system [ fhir:value "http://www.saude.gov.br/fhir/r4/CodeSystem/BRUnidadeMedida" ] ;
+     fhir:Quantity.code [ fhir:value "19" ]
+  ] ;
+  fhir:MedicationDispense.whenHandedOver [ fhir:value "2026-06-20T14:59:51.244-03:00"^^xsd:dateTime] ;
+  fhir:MedicationDispense.receiver [
+     fhir:index -1 ;
+     fhir:Reference.identifier [
+       fhir:Identifier.system [ fhir:value "http://www.saude.gov.br/fhir/r4/StructureDefinition/BRIndividuo-1.0" ] ;
+       fhir:Identifier.value [ fhir:value "700004841233002" ]
+     ]
+  ] .
+
+<urn:uuid:05b1af54-94cd-4766-ad8f-d39bdb23eafe> a fhir:Medication ;
+  fhir:Resource.id [ fhir:value "05b1af54-94cd-4766-ad8f-d39bdb23eafe"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSMedicamento" ;
+       fhir:index -1 ;
+       fhir:link <http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSMedicamento>
+     ]
+  ] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Medication_05b1af54-94cd-4766-ad8f-d39bdb23eafe\"> </a><p class=\"res-header-id\"><b>Narrativa gerada: Medication 05b1af54-94cd-4766-ad8f-d39bdb23eafe</b></p><a name=\"05b1af54-94cd-4766-ad8f-d39bdb23eafe\"> </a><a name=\"hc05b1af54-94cd-4766-ad8f-d39bdb23eafe\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Perfil: <a href=\"StructureDefinition-RNDSMedicamento.html\">Medicamento</a></p></div><p><b>code</b>: <span title=\"Códigos:{http://www.saude.gov.br/fhir/r4/CodeSystem/BRObmVMP @brasil27983500460}\">Acetilcisteína 600mg Comprimido efervescente</span></p><p><b>manufacturer</b>: Identifier: <code>https://saude.gov.br/sid/cnpj</code>/83588144000138</p><p><b>form</b>: <span title=\"Códigos:{http://www.saude.gov.br/fhir/r4/CodeSystem/BRUnidadeMedida 19}\">Comprimido</span></p><h3>Batches</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>LotNumber</b></td><td><b>ExpirationDate</b></td></tr><tr><td style=\"display: none\">*</td><td>587AT76587687H</td><td>2026-11-20</td></tr></table></div>"
+  ] ;
+  fhir:Medication.code [
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       fhir:Coding.system [ fhir:value "http://www.saude.gov.br/fhir/r4/CodeSystem/BRObmVMP" ] ;
+       fhir:Coding.code [ fhir:value "@brasil27983500460" ]
+     ]
+  ] ;
+  fhir:Medication.manufacturer [
+     fhir:Reference.identifier [
+       fhir:Identifier.system [ fhir:value "https://saude.gov.br/sid/cnpj" ] ;
+       fhir:Identifier.value [ fhir:value "83588144000138" ]
+     ]
+  ] ;
+  fhir:Medication.form [
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       fhir:Coding.system [ fhir:value "http://www.saude.gov.br/fhir/r4/CodeSystem/BRUnidadeMedida" ] ;
+       fhir:Coding.code [ fhir:value "19" ]
+     ]
+  ] ;
+  fhir:Medication.batch [
+     fhir:Medication.batch.lotNumber [ fhir:value "587AT76587687H" ] ;
+     fhir:Medication.batch.expirationDate [ fhir:value "2026-11-20"^^xsd:date ]
+  ] .
+
+<urn:uuid:8352374b-dd32-4091-b381-35c9b31a8e2d> a fhir:MedicationDispense ;
+  fhir:Resource.id [ fhir:value "8352374b-dd32-4091-b381-35c9b31a8e2d"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSDispensacaoMedicamento" ;
+       fhir:index -1 ;
+       fhir:link <http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSDispensacaoMedicamento>
+     ]
+  ] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"MedicationDispense_8352374b-dd32-4091-b381-35c9b31a8e2d\"> </a><p class=\"res-header-id\"><b>Narrativa gerada: MedicationDispense 8352374b-dd32-4091-b381-35c9b31a8e2d</b></p><a name=\"8352374b-dd32-4091-b381-35c9b31a8e2d\"> </a><a name=\"hc8352374b-dd32-4091-b381-35c9b31a8e2d\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Perfil: <a href=\"StructureDefinition-RNDSDispensacaoMedicamento.html\">Dispensação ou Fornecimento de Medicamento</a></p></div><p><b>identifier</b>: <code>http://www.saude.gov.br/fhir/r4/NamingSystem/dispensed-item-id</code>/e6f89964-b218-4fb3-9603-e0897c5c2181</p><p><b>status</b>: Completed</p><p><b>category</b>: <span title=\"Códigos:{http://terminology.hl7.org/CodeSystem/medicationrequest-category community}\">Community</span></p><p><b>medication</b>: <a href=\"Bundle-example-redfm-01-prescricao-na-rnds.html#urn-uuid-053ecfcf-ba49-43e1-a0a3-442dfab3b6c1\">Medication Dipirona Monoidratada 500mg comprimido</a></p><p><b>subject</b>: Identifier: <code>http://www.saude.gov.br/fhir/r4/StructureDefinition/BRIndividuo-1.0</code>/33839066808</p><h3>Performers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Actor</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Bundle-example-redfm-01-prescricao-na-rnds.html#urn-uuid-f08edf47-df0b-41a9-8786-95dca79bb399\">PractitionerRole FARMACEUTICO</a></td></tr></table><p><b>authorizingPrescription</b>: Identifier: <code>http://www.saude.gov.br/fhir/r4/NamingSystem/prescription-item-id</code>/5923026f-c64b-42b7-81b8-c282c63546</p><p><b>type</b>: <span title=\"Códigos:{http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoDispensacaoRealizada fully-dispensing}\">Fully Dispensing</span></p><p><b>quantity</b>: 1.0 Comprimido<span style=\"background: LightGoldenRodYellow\"> (Detalhes: Unidade de Medida código19 = 'Comprimido')</span></p><p><b>whenHandedOver</b>: 2026-06-20 14:59:51-0300</p><p><b>receiver</b>: Identifier: <code>http://www.saude.gov.br/fhir/r4/StructureDefinition/BRIndividuo-1.0</code>/700004841233002</p></div>"
+  ] ;
+  fhir:MedicationDispense.identifier [
+     fhir:index -1 ;
+     fhir:Identifier.system [ fhir:value "http://www.saude.gov.br/fhir/r4/NamingSystem/dispensed-item-id" ] ;
+     fhir:Identifier.value [ fhir:value "e6f89964-b218-4fb3-9603-e0897c5c2181" ]
+  ] ;
+  fhir:MedicationDispense.status [ fhir:value "completed"] ;
+  fhir:MedicationDispense.category [
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/medicationrequest-category" ] ;
+       fhir:Coding.code [ fhir:value "community" ]
+     ]
+  ] ;
+  fhir:MedicationDispense.medicationReference [
+     fhir:Reference.reference [ fhir:value "urn:uuid:053ecfcf-ba49-43e1-a0a3-442dfab3b6c1" ]
+  ] ;
+  fhir:MedicationDispense.subject [
+     fhir:Reference.identifier [
+       fhir:Identifier.system [ fhir:value "http://www.saude.gov.br/fhir/r4/StructureDefinition/BRIndividuo-1.0" ] ;
+       fhir:Identifier.value [ fhir:value "33839066808" ]
+     ]
+  ] ;
+  fhir:MedicationDispense.performer [
+     fhir:index -1 ;
+     fhir:MedicationDispense.performer.actor [
+       fhir:Reference.reference [ fhir:value "urn:uuid:f08edf47-df0b-41a9-8786-95dca79bb399" ]
+     ]
+  ] ;
+  fhir:MedicationDispense.authorizingPrescription [
+     fhir:index -1 ;
+     fhir:Element.id [ fhir:value "in-rnds" ] ;
+     fhir:Reference.identifier [
+       fhir:Identifier.system [ fhir:value "http://www.saude.gov.br/fhir/r4/NamingSystem/prescription-item-id" ] ;
+       fhir:Identifier.value [ fhir:value "5923026f-c64b-42b7-81b8-c282c63546" ]
+     ]
+  ] ;
+  fhir:MedicationDispense.type [
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       fhir:Coding.system [ fhir:value "http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoDispensacaoRealizada" ] ;
+       fhir:Coding.code [ fhir:value "fully-dispensing" ]
+     ]
+  ] ;
+  fhir:MedicationDispense.quantity [
+     fhir:Quantity.value [ fhir:value "1.0"^^xsd:decimal ] ;
+     fhir:Quantity.unit [ fhir:value "Comprimido" ] ;
+     fhir:Quantity.system [ fhir:value "http://www.saude.gov.br/fhir/r4/CodeSystem/BRUnidadeMedida" ] ;
+     fhir:Quantity.code [ fhir:value "19" ]
+  ] ;
+  fhir:MedicationDispense.whenHandedOver [ fhir:value "2026-06-20T14:59:51.244-03:00"^^xsd:dateTime] ;
+  fhir:MedicationDispense.receiver [
+     fhir:index -1 ;
+     fhir:Reference.identifier [
+       fhir:Identifier.system [ fhir:value "http://www.saude.gov.br/fhir/r4/StructureDefinition/BRIndividuo-1.0" ] ;
+       fhir:Identifier.value [ fhir:value "700004841233002" ]
+     ]
+  ] .
+
+<urn:uuid:053ecfcf-ba49-43e1-a0a3-442dfab3b6c1> a fhir:Medication ;
+  fhir:Resource.id [ fhir:value "053ecfcf-ba49-43e1-a0a3-442dfab3b6c1"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSMedicamento" ;
+       fhir:index -1 ;
+       fhir:link <http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSMedicamento>
+     ]
+  ] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Medication_053ecfcf-ba49-43e1-a0a3-442dfab3b6c1\"> </a><p class=\"res-header-id\"><b>Narrativa gerada: Medication 053ecfcf-ba49-43e1-a0a3-442dfab3b6c1</b></p><a name=\"053ecfcf-ba49-43e1-a0a3-442dfab3b6c1\"> </a><a name=\"hc053ecfcf-ba49-43e1-a0a3-442dfab3b6c1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Perfil: <a href=\"StructureDefinition-RNDSMedicamento.html\">Medicamento</a></p></div><p><b>code</b>: <span title=\"Códigos:{http://www.saude.gov.br/fhir/r4/CodeSystem/BRObmVMP @brasil20832536006}\">Dipirona Monoidratada 500mg comprimido</span></p><p><b>manufacturer</b>: Identifier: <code>https://saude.gov.br/sid/cnpj</code>/83588144000138</p><p><b>form</b>: <span title=\"Códigos:{http://www.saude.gov.br/fhir/r4/CodeSystem/BRUnidadeMedida 19}\">Comprimido</span></p><h3>Batches</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>LotNumber</b></td><td><b>ExpirationDate</b></td></tr><tr><td style=\"display: none\">*</td><td>587AT7HJKJH6255765H</td><td>2026-09-27</td></tr></table></div>"
+  ] ;
+  fhir:Medication.code [
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       fhir:Coding.system [ fhir:value "http://www.saude.gov.br/fhir/r4/CodeSystem/BRObmVMP" ] ;
+       fhir:Coding.code [ fhir:value "@brasil20832536006" ]
+     ]
+  ] ;
+  fhir:Medication.manufacturer [
+     fhir:Reference.identifier [
+       fhir:Identifier.system [ fhir:value "https://saude.gov.br/sid/cnpj" ] ;
+       fhir:Identifier.value [ fhir:value "83588144000138" ]
+     ]
+  ] ;
+  fhir:Medication.form [
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       fhir:Coding.system [ fhir:value "http://www.saude.gov.br/fhir/r4/CodeSystem/BRUnidadeMedida" ] ;
+       fhir:Coding.code [ fhir:value "19" ]
+     ]
+  ] ;
+  fhir:Medication.batch [
+     fhir:Medication.batch.lotNumber [ fhir:value "587AT7HJKJH6255765H" ] ;
+     fhir:Medication.batch.expirationDate [ fhir:value "2026-09-27"^^xsd:date ]
+  ] .
+
+<urn:uuid:f08edf47-df0b-41a9-8786-95dca79bb399> a fhir:PractitionerRole ;
+  fhir:Resource.id [ fhir:value "f08edf47-df0b-41a9-8786-95dca79bb399"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSLotacaoProfissional" ;
+       fhir:index -1 ;
+       fhir:link <http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSLotacaoProfissional>
+     ]
+  ] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"PractitionerRole_f08edf47-df0b-41a9-8786-95dca79bb399\"> </a><p class=\"res-header-id\"><b>Narrativa gerada: PractitionerRole f08edf47-df0b-41a9-8786-95dca79bb399</b></p><a name=\"f08edf47-df0b-41a9-8786-95dca79bb399\"> </a><a name=\"hcf08edf47-df0b-41a9-8786-95dca79bb399\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Perfil: <a href=\"StructureDefinition-RNDSLotacaoProfissional.html\">RNDSLotacaoProfissional</a></p></div><p><b>active</b>: true</p><p><b>practitioner</b>: <a href=\"Bundle-example-redfm-01-prescricao-na-rnds.html#urn-uuid-a21d5e5b-9443-4b5f-8b6e-866317682293\">Practitioner: identifier = Tax ID number,Pharmacist license number (use: official, )</a></p><p><b>organization</b>: <a href=\"Bundle-example-redfm-01-prescricao-na-rnds.html#urn-uuid-1756fd72-7d86-496c-a2bd-8ecbb75daa75\">Organization: identifier = https://saude.gov.br/sid/cnes#5354072</a></p><p><b>code</b>: <span title=\"Códigos:{http://www.saude.gov.br/fhir/r4/CodeSystem/BRCBO 223405}\">FARMACEUTICO</span></p></div>"
+  ] ;
+  fhir:PractitionerRole.active [ fhir:value "true"^^xsd:boolean] ;
+  fhir:PractitionerRole.practitioner [
+     fhir:Reference.reference [ fhir:value "urn:uuid:a21d5e5b-9443-4b5f-8b6e-866317682293" ]
+  ] ;
+  fhir:PractitionerRole.organization [
+     fhir:Reference.reference [ fhir:value "urn:uuid:1756fd72-7d86-496c-a2bd-8ecbb75daa75" ]
+  ] ;
+  fhir:PractitionerRole.code [
+     fhir:index -1 ;
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       fhir:Coding.system [ fhir:value "http://www.saude.gov.br/fhir/r4/CodeSystem/BRCBO" ] ;
+       fhir:Coding.code [ fhir:value "223405" ]
+     ]
+  ] .
+
+<urn:uuid:a21d5e5b-9443-4b5f-8b6e-866317682293> a fhir:Practitioner ;
+  fhir:Resource.id [ fhir:value "a21d5e5b-9443-4b5f-8b6e-866317682293"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSProfissional" ;
+       fhir:index -1 ;
+       fhir:link <http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSProfissional>
+     ]
+  ] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Practitioner_a21d5e5b-9443-4b5f-8b6e-866317682293\"> </a><p class=\"res-header-id\"><b>Narrativa gerada: Practitioner a21d5e5b-9443-4b5f-8b6e-866317682293</b></p><a name=\"a21d5e5b-9443-4b5f-8b6e-866317682293\"> </a><a name=\"hca21d5e5b-9443-4b5f-8b6e-866317682293\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Perfil: <a href=\"StructureDefinition-RNDSProfissional.html\">Profissional RNDS</a></p></div><p><b>identifier</b>: Tax ID number/31687007039, Pharmacist license number/154735 (utilização: official, )</p><p><b>active</b>: true</p></div>"
+  ] ;
+  fhir:Practitioner.identifier [
+     fhir:index -1 ;
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index -1 ;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0203" ] ;
+         fhir:Coding.code [ fhir:value "TAX" ]
+       ]
+     ] ;
+     fhir:Identifier.system [ fhir:value "https://saude.gov.br/sid/cpf" ] ;
+     fhir:Identifier.value [ fhir:value "31687007039" ]
+  ], [
+     fhir:index -1 ;
+     fhir:Identifier.use [ fhir:value "official" ] ;
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index -1 ;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0203" ] ;
+         fhir:Coding.code [ fhir:value "RPH" ]
+       ]
+     ] ;
+     fhir:Identifier.system [ fhir:value "https://saude.gov.br/sid/crf-sp" ] ;
+     fhir:Identifier.value [ fhir:value "154735" ]
+  ] ;
+  fhir:Practitioner.active [ fhir:value "true"^^xsd:boolean] .
+
+<urn:uuid:1756fd72-7d86-496c-a2bd-8ecbb75daa75> a fhir:Organization ;
+  fhir:Resource.id [ fhir:value "1756fd72-7d86-496c-a2bd-8ecbb75daa75"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSEstabelecimentoSaude" ;
+       fhir:index -1 ;
+       fhir:link <http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSEstabelecimentoSaude>
+     ]
+  ] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Organization_1756fd72-7d86-496c-a2bd-8ecbb75daa75\"> </a><p class=\"res-header-id\"><b>Narrativa gerada: Organization 1756fd72-7d86-496c-a2bd-8ecbb75daa75</b></p><a name=\"1756fd72-7d86-496c-a2bd-8ecbb75daa75\"> </a><a name=\"hc1756fd72-7d86-496c-a2bd-8ecbb75daa75\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Perfil: <a href=\"StructureDefinition-RNDSEstabelecimentoSaude.html\">Estabelecimento de Saúde RNDS</a></p></div><p><b>identifier</b>: <code>https://saude.gov.br/sid/cnes</code>/5354072</p><p><b>active</b>: true</p></div>"
+  ] ;
+  fhir:Organization.identifier [
+     fhir:index -1 ;
+     fhir:Identifier.system [ fhir:value "https://saude.gov.br/sid/cnes" ] ;
+     fhir:Identifier.value [ fhir:value "5354072" ]
+  ] ;
+  fhir:Organization.active [ fhir:value "true"^^xsd:boolean] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhir.saude.gov.br/redfm/Bundle/example-redfm-09-author-valido-cpf.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

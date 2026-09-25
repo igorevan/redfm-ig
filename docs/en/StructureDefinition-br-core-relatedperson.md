@@ -36,6 +36,7 @@ Other representations of profile: [CSV](../StructureDefinition-br-core-relatedpe
 {
   "resourceType" : "StructureDefinition",
   "id" : "br-core-relatedperson",
+  "language" : "pt-BR",
   "extension" : [{
     "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
     "valueCode" : "ehr"
@@ -46,7 +47,7 @@ Other representations of profile: [CSV](../StructureDefinition-br-core-relatedpe
     "_valueInteger" : {
       "extension" : [{
         "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
-        "valueCanonical" : "https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0/ImplementationGuide/br.gov.saude.redfm.fhir"
+        "valueCanonical" : "https://fhir.saude.gov.br/redfm/ImplementationGuide/br.gov.saude.redfm.fhir"
       }]
     }
   },
@@ -56,7 +57,7 @@ Other representations of profile: [CSV](../StructureDefinition-br-core-relatedpe
     "_valueCode" : {
       "extension" : [{
         "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
-        "valueCanonical" : "https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0/ImplementationGuide/br.gov.saude.redfm.fhir"
+        "valueCanonical" : "https://fhir.saude.gov.br/redfm/ImplementationGuide/br.gov.saude.redfm.fhir"
       }]
     }
   },
@@ -68,7 +69,7 @@ Other representations of profile: [CSV](../StructureDefinition-br-core-relatedpe
   "version" : "1.0.0-release",
   "name" : "BRCoreRelatedPerson",
   "status" : "active",
-  "date" : "2026-06-30T10:02:10-03:00",
+  "date" : "2026-09-25T17:16:20-03:00",
   "publisher" : "Ministério da Saúde do Brasil",
   "contact" : [{
     "name" : "Ministério da Saúde do Brasil",

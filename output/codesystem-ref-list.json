@@ -1,5 +1,17 @@
 {
   "codeSystems" : [{
+    "url" : "http://hl7.org/fhir/administrative-gender",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "AdministrativeGender",
+    "title" : "AdministrativeGender",
+    "description" : "The gender of a person used for administrative purposes.",
+    "oids" : ["2.16.840.1.113883.4.642.4.2"],
+    "uses" : {
+    },
+    "ValueSet-BRSexo-1.0.html" : "Sexo"
+  },
+  {
     "url" : "http://hl7.org/fhir/composition-attestation-mode",
     "version" : "4.0.1",
     "status" : "draft",
@@ -21,6 +33,7 @@
     "oids" : ["2.16.840.1.113883.4.642.4.242"],
     "uses" : {
     },
+    "ValueSet-BREstadoDocumento-1.0.html" : "Estado do Documento",
     "http://hl7.org/fhir/R4/valueset-composition-status.html" : "CompositionStatus"
   },
   {
@@ -60,6 +73,30 @@
     "http://hl7.org/fhir/R4/valueset-list-mode.html" : "ListMode"
   },
   {
+    "url" : "http://terminology.hl7.org/CodeSystem/condition-category",
+    "version" : "2.0.0",
+    "status" : "active",
+    "name" : "ConditionCategoryCodes",
+    "title" : "Condition Category Codes",
+    "description" : "Preferred value set for Condition Categories.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1073"],
+    "uses" : {
+    },
+    "ValueSet-BRCategoriaCondicao.html" : "Classificação de uma condição"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
+    "version" : "3.0.0",
+    "status" : "active",
+    "name" : "ConditionClinicalStatusCodes",
+    "title" : "Condition Clinical Status Codes",
+    "description" : "Preferred value set for Condition Clinical Status.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1074"],
+    "uses" : {
+    },
+    "ValueSet-BREstadoResolucaoDiagnosticoProblema-1.0.html" : "Estado da Resolução de Diagnóstico ou Problema"
+  },
+  {
     "url" : "http://terminology.hl7.org/CodeSystem/list-empty-reason",
     "version" : "1.0.1",
     "status" : "active",
@@ -81,11 +118,11 @@
     "oids" : ["2.16.840.1.113883.18.108"],
     "uses" : {
     },
-    "http://terminology.hl7.org/7.2.0/ValueSet-v2-0203.html" : "hl7VS-identifierType"
+    "http://terminology.hl7.org/7.4.0/ValueSet-v2-0203.html" : "hl7VS-identifierType"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/v3-Confidentiality",
-    "version" : "4.0.0",
+    "version" : "5.0.0",
     "status" : "active",
     "name" : "Confidentiality",
     "title" : "Confidentiality",
@@ -94,6 +131,17 @@
     "uses" : {
     },
     "http://hl7.org/fhir/R4/v3/ConfidentialityClassification/vs.html" : "V3 Value SetConfidentialityClassification"
+  },
+  {
+    "url" : "http://unitsofmeasure.org",
+    "version" : "2.2",
+    "status" : "active",
+    "name" : "UCUM",
+    "title" : null,
+    "description" : "This is a place holder for the code system which is fully supported through internal means (not by this code system)",
+    "uses" : {
+    },
+    "ValueSet-RNDSUnidadeMedida.html" : "Unidade de Medida RNDS"
   },
   {
     "url" : "http://www.saude.gov.br/fhir/r4/CodeSystem/BRCBO",
@@ -127,6 +175,17 @@
     "uses" : {
     },
     "ValueSet-BRProblemaDiagnostico.html" : "Classificação Internacional de Doenças (Atenção Primária)"
+  },
+  {
+    "url" : "http://www.saude.gov.br/fhir/r4/CodeSystem/BRJustificativaIndividuoNaoIdentificado",
+    "version" : "1.0.0-release",
+    "status" : "active",
+    "name" : "BRJustificativaIndividuoNaoIdentificado",
+    "title" : "Justificativa da Impossibilidade de Identificação do Indivíduo (CodeSystem)",
+    "description" : "Classifica as razões pelo qual não foi possível obter os dados de identificação do indivíduo em um contato assistencial. (Port. nº 84/SAS/MS/1997 e Port. nº02/SAS/SGEP/MS/2012)",
+    "uses" : {
+    },
+    "ValueSet-BRJustificativaIndividuoNaoIdentificado-1.0.html" : "Justificativa da Impossibilidade de Identificação do Indivíduo (ValueSet)"
   },
   {
     "url" : "http://www.saude.gov.br/fhir/r4/CodeSystem/BRObmAMPP",
@@ -214,6 +273,7 @@
     "description" : "CodeSystem utilizado para definir a unidade de medida de um medicamento prescrito, para consumo ou especificação do fabricante.",
     "uses" : {
     },
+    "ValueSet-RNDSUnidadeMedida.html" : "Unidade de Medida RNDS",
     "ValueSet-BRUnidadeMedidaMedicamento.html" : "Unidade de Medida de Medicamento"
   },
   {
@@ -236,10 +296,10 @@
     "description" : "Esse CodeSystem inclui os conselhos profissionais de saúde do Brasil, conforme a Resolução CNS 251/1997.",
     "uses" : {
     },
-    "ValueSet-BRCOREN.html" : "Conselhos regionais de Enfermagem do Brasil",
     "ValueSet-BROutrosProfissionais.html" : "Conselhos regionais de outros profissionais da saúde do Brasil",
-    "ValueSet-BRCRM.html" : "Conselhos regionais de Medicina do Brasil",
     "ValueSet-BRCRF.html" : "Conselhos regionais de Farmácia do Brasil",
-    "ValueSet-BRCRO.html" : "Conselhos regionais de Odontologia do Brasil"
+    "ValueSet-BRCRO.html" : "Conselhos regionais de Odontologia do Brasil",
+    "ValueSet-BRCRM.html" : "Conselhos regionais de Medicina do Brasil",
+    "ValueSet-BRCOREN.html" : "Conselhos regionais de Enfermagem do Brasil"
   }]
 }

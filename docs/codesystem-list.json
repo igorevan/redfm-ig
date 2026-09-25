@@ -24,6 +24,14 @@
     "description" : "Classifica as doenças e outros problemas em saúde registrados em diversos tipos de documentos clínicos."
   },
   {
+    "url" : "http://www.saude.gov.br/fhir/r4/CodeSystem/BRJustificativaIndividuoNaoIdentificado",
+    "version" : "1.0.0-release",
+    "status" : "active",
+    "name" : "BRJustificativaIndividuoNaoIdentificado",
+    "title" : "Justificativa da Impossibilidade de Identificação do Indivíduo (CodeSystem)",
+    "description" : "Classifica as razões pelo qual não foi possível obter os dados de identificação do indivíduo em um contato assistencial. (Port. nº 84/SAS/MS/1997 e Port. nº02/SAS/SGEP/MS/2012)"
+  },
+  {
     "url" : "http://www.saude.gov.br/fhir/r4/CodeSystem/BRObmAMPP",
     "version" : "1.0.0-release",
     "status" : "active",

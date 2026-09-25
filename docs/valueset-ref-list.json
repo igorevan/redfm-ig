@@ -1,5 +1,19 @@
 {
   "codeSystems" : [{
+    "url" : "http://hl7.org/fhir/ValueSet/c80-doc-typecodes",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "DocumentTypeValueSet",
+    "title" : "Document Type Value Set",
+    "description" : "This is the code specifying the precise type of document (e.g. Pulmonary History and  Physical, Discharge Summary, Ultrasound Report, etc.). The Document Type value set includes all LOINC  values listed in HITSP C80 Table 2-144 Document Class Value Set Definition above used for Document Class,  and all LOINC values whose SCALE is DOC in the LOINC database.",
+    "systems" : ["http://loinc.org"],
+    "oids" : ["2.16.840.1.113883.3.88.12.80.47"],
+    "sources" : ["2.16.840.1.113883.3.88.12.80.47"],
+    "uses" : {
+    },
+    "StructureDefinition-RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos.html" : "Registro Eletrônico de Dispensação ou Fornecimento de Medicamentos - REDFM"
+  },
+  {
     "url" : "http://hl7.org/fhir/ValueSet/composition-attestation-mode",
     "version" : "4.0.1",
     "status" : "draft",
@@ -67,7 +81,7 @@
     "sources" : ["2.16.840.1.113883.3.88.12.80.46"],
     "uses" : {
     },
-    "StructureDefinition-RNDSRegistroEletronicoDispensacaoFornecimentoMedicamento.html" : "Registro Eletrônico de Dispensação ou Fornecimento de Medicamento (REDFM)",
+    "StructureDefinition-RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos.html" : "Registro Eletrônico de Dispensação ou Fornecimento de Medicamentos - REDFM",
     "StructureDefinition-br-core-composition.html" : "BR Core Composition"
   },
   {
@@ -138,8 +152,7 @@
     "sources" : ["2.16.840.1.113883.21.120"],
     "uses" : {
     },
-    "StructureDefinition-br-core-practitioner.html" : "BR Core Practitioner",
-    "StructureDefinition-RNDSProfissional.html" : "Profissional"
+    "StructureDefinition-br-core-practitioner.html" : "BR Core Practitioner"
   },
   {
     "url" : "http://terminology.hl7.org/ValueSet/v3-ConfidentialityClassification",
@@ -156,6 +169,54 @@
     "StructureDefinition-br-core-composition.html" : "BR Core Composition"
   },
   {
+    "url" : "http://www.saude.gov.br/fhir/r4/ValueSet/BRCategoriaCondicao",
+    "version" : "1.0.0-release",
+    "status" : "active",
+    "name" : "BRCategoriaCondicao",
+    "title" : "Classificação de uma condição",
+    "description" : "Tradução para o português do brasil da classificação de uma condição",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/condition-category"],
+    "uses" : {
+    },
+    "StructureDefinition-BRProblemaDiagnostico.html" : "ProblemaDiagnóstico"
+  },
+  {
+    "url" : "http://www.saude.gov.br/fhir/r4/ValueSet/BREstadoDocumento-1.0",
+    "version" : "1.0.0-release",
+    "status" : "active",
+    "name" : "BREstadoDocumento",
+    "title" : "Estado do Documento",
+    "description" : "Classifica o estado do documento que está sendo trafegado.",
+    "systems" : ["http://hl7.org/fhir/composition-status"],
+    "uses" : {
+    },
+    "StructureDefinition-RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos.html" : "Registro Eletrônico de Dispensação ou Fornecimento de Medicamentos - REDFM"
+  },
+  {
+    "url" : "http://www.saude.gov.br/fhir/r4/ValueSet/BREstadoResolucaoDiagnosticoProblema-1.0",
+    "version" : "1.0.0-release",
+    "status" : "active",
+    "name" : "BREstadoResolucaoDiagnosticoProblema",
+    "title" : "Estado da Resolução de Diagnóstico ou Problema",
+    "description" : "Estado da resolução de um diagnóstico ou problema.",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/condition-clinical"],
+    "uses" : {
+    },
+    "StructureDefinition-BRProblemaDiagnostico.html" : "ProblemaDiagnóstico"
+  },
+  {
+    "url" : "http://www.saude.gov.br/fhir/r4/ValueSet/BRJustificativaIndividuoNaoIdentificado-1.0",
+    "version" : "1.0.0-release",
+    "status" : "active",
+    "name" : "BRJustificativaIndividuoNaoIdentificado",
+    "title" : "Justificativa da Impossibilidade de Identificação do Indivíduo (ValueSet)",
+    "description" : "Classifica as razões pelo qual não foi possível obter os dados de identificação do indivíduo em um contato assistencial. (Port. nº 84/SAS/MS/1997 e Port. nº02/SAS/SGEP/MS/2012)",
+    "systems" : ["http://www.saude.gov.br/fhir/r4/CodeSystem/BRJustificativaIndividuoNaoIdentificado"],
+    "uses" : {
+    },
+    "StructureDefinition-BRIndividuoNaoIdentificado-1.0.html" : "Informações Complementares de Indivíduos Não Identificados"
+  },
+  {
     "url" : "http://www.saude.gov.br/fhir/r4/ValueSet/BROcupacao-1.0",
     "version" : "1.0.0-release",
     "status" : "active",
@@ -166,8 +227,8 @@
     "uses" : {
     },
     "StructureDefinition-br-core-practitionerrole.html" : "BR Core PractitionerRole",
-    "StructureDefinition-br-core-practitioner.html" : "BR Core Practitioner",
-    "StructureDefinition-RNDSMedicamentoDispensadoFornecido.html" : "Dispensação ou Fornecimento Eletrônico de Medicamento"
+    "StructureDefinition-RNDSLotacaoProfissional.html" : "RNDSLotacaoProfissional",
+    "StructureDefinition-br-core-practitioner.html" : "BR Core Practitioner"
   },
   {
     "url" : "http://www.saude.gov.br/fhir/r4/ValueSet/BRProblemaDiagnostico",
@@ -180,7 +241,20 @@
     "http://www.saude.gov.br/fhir/r4/CodeSystem/BRCIAP2"],
     "uses" : {
     },
-    "StructureDefinition-RNDSPrescricaoMedicamentoDispensado.html" : "Prescrição Eletrônica de Medicamento (Contida na Dispensação)"
+    "StructureDefinition-BRProblemaDiagnostico.html" : "ProblemaDiagnóstico",
+    "StructureDefinition-RNDSPrescricaoMedicamento.html" : "Prescrição de Medicamento - RNDS"
+  },
+  {
+    "url" : "http://www.saude.gov.br/fhir/r4/ValueSet/BRSexo-1.0",
+    "version" : "1.0.0-release",
+    "status" : "active",
+    "name" : "BRSexo",
+    "title" : "Sexo",
+    "description" : "Sexo de um indivíduo.",
+    "systems" : ["http://hl7.org/fhir/administrative-gender"],
+    "uses" : {
+    },
+    "StructureDefinition-BRIndividuoNaoIdentificado-1.0.html" : "Informações Complementares de Indivíduos Não Identificados"
   },
   {
     "url" : "http://www.saude.gov.br/fhir/r4/ValueSet/BRTerminologiaMedicamento",
@@ -196,9 +270,7 @@
     "http://www.saude.gov.br/fhir/r4/CodeSystem/BRObmEAN"],
     "uses" : {
     },
-    "StructureDefinition-RNDSPrescricaoMedicamentoDispensado.html" : "Prescrição Eletrônica de Medicamento (Contida na Dispensação)",
-    "StructureDefinition-RNDSMedicamento.html" : "Medicamento",
-    "StructureDefinition-RNDSMedicamentoDispensadoFornecido.html" : "Dispensação ou Fornecimento Eletrônico de Medicamento"
+    "StructureDefinition-RNDSMedicamento.html" : "Medicamento"
   },
   {
     "url" : "http://www.saude.gov.br/fhir/r4/ValueSet/BRTipoDispensacaoRealizada",
@@ -210,7 +282,7 @@
     "systems" : ["http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoDispensacaoRealizada"],
     "uses" : {
     },
-    "StructureDefinition-RNDSMedicamentoDispensadoFornecido.html" : "Dispensação ou Fornecimento Eletrônico de Medicamento"
+    "StructureDefinition-RNDSDispensacaoMedicamento.html" : "Dispensação ou Fornecimento de Medicamento"
   },
   {
     "url" : "http://www.saude.gov.br/fhir/r4/ValueSet/BRTipoDocumento-1.0",
@@ -222,7 +294,7 @@
     "systems" : ["http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoDocumento"],
     "uses" : {
     },
-    "StructureDefinition-RNDSRegistroEletronicoDispensacaoFornecimentoMedicamento.html" : "Registro Eletrônico de Dispensação ou Fornecimento de Medicamento (REDFM)"
+    "StructureDefinition-RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos.html" : "Registro Eletrônico de Dispensação ou Fornecimento de Medicamentos - REDFM"
   },
   {
     "url" : "http://www.saude.gov.br/fhir/r4/ValueSet/BRUnidadeMedidaMedicamento",
@@ -234,6 +306,8 @@
     "systems" : ["http://www.saude.gov.br/fhir/r4/CodeSystem/BRUnidadeMedida"],
     "uses" : {
     },
+    "StructureDefinition-RNDSDispensacaoMedicamento.html" : "Dispensação ou Fornecimento de Medicamento",
+    "StructureDefinition-RNDSPrescricaoMedicamento.html" : "Prescrição de Medicamento - RNDS",
     "StructureDefinition-RNDSMedicamento.html" : "Medicamento"
   },
   {
@@ -246,8 +320,18 @@
     "systems" : ["http://www.saude.gov.br/fhir/r4/CodeSystem/BRViaAdministracao"],
     "uses" : {
     },
-    "StructureDefinition-RNDSPrescricaoMedicamentoDispensado.html" : "Prescrição Eletrônica de Medicamento (Contida na Dispensação)",
-    "StructureDefinition-RNDSMedicamentoDispensadoFornecido.html" : "Dispensação ou Fornecimento Eletrônico de Medicamento"
+    "StructureDefinition-RNDSDispensacaoMedicamento.html" : "Dispensação ou Fornecimento de Medicamento",
+    "StructureDefinition-RNDSPrescricaoMedicamento.html" : "Prescrição de Medicamento - RNDS"
+  },
+  {
+    "url" : "http://www.saude.gov.br/fhir/r4/ValueSet/RNDSUnidadeMedida",
+    "version" : "1.0.0-release",
+    "status" : "active",
+    "name" : "Unidade de Medida RNDS",
+    "title" : null,
+    "description" : "ValueSet composto por códigos do CodeSystem BRUnidadeMedida e Unidades Comuns do UCUM.",
+    "systems" : ["http://www.saude.gov.br/fhir/r4/CodeSystem/BRUnidadeMedida",
+    "http://unitsofmeasure.org"]
   },
   {
     "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BRCOREN",
@@ -259,6 +343,7 @@
     "systems" : ["https://terminologia.saude.gov.br/fhir/CodeSystem/BRConselhoProfissional"],
     "uses" : {
     },
+    "StructureDefinition-RNDSProfissional.html" : "Profissional RNDS",
     "StructureDefinition-br-core-practitioner.html" : "BR Core Practitioner"
   },
   {
@@ -271,6 +356,7 @@
     "systems" : ["https://terminologia.saude.gov.br/fhir/CodeSystem/BRConselhoProfissional"],
     "uses" : {
     },
+    "StructureDefinition-RNDSProfissional.html" : "Profissional RNDS",
     "StructureDefinition-br-core-practitioner.html" : "BR Core Practitioner"
   },
   {
@@ -283,6 +369,7 @@
     "systems" : ["https://terminologia.saude.gov.br/fhir/CodeSystem/BRConselhoProfissional"],
     "uses" : {
     },
+    "StructureDefinition-RNDSProfissional.html" : "Profissional RNDS",
     "StructureDefinition-br-core-practitioner.html" : "BR Core Practitioner"
   },
   {
@@ -295,6 +382,7 @@
     "systems" : ["https://terminologia.saude.gov.br/fhir/CodeSystem/BRConselhoProfissional"],
     "uses" : {
     },
+    "StructureDefinition-RNDSProfissional.html" : "Profissional RNDS",
     "StructureDefinition-br-core-practitioner.html" : "BR Core Practitioner"
   },
   {
@@ -307,6 +395,7 @@
     "systems" : ["https://terminologia.saude.gov.br/fhir/CodeSystem/BRConselhoProfissional"],
     "uses" : {
     },
+    "StructureDefinition-RNDSProfissional.html" : "Profissional RNDS",
     "StructureDefinition-br-core-practitioner.html" : "BR Core Practitioner"
   }]
 }

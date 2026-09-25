@@ -7,7 +7,9 @@ ValueSet utilizado para definir a unidade de medida de medicamentos sob informa√
 
  **References** 
 
+* [Dispensa√ß√£o ou Fornecimento de Medicamento](StructureDefinition-RNDSDispensacaoMedicamento.md)
 * [Medicamento](StructureDefinition-RNDSMedicamento.md)
+* [Prescri√ß√£o de Medicamento - RNDS](StructureDefinition-RNDSPrescricaoMedicamento.md)
 
 ### Logical Definition (CLD)
 
@@ -38,7 +40,7 @@ ValueSet utilizado para definir a unidade de medida de medicamentos sob informa√
     "_valueInteger" : {
       "extension" : [{
         "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
-        "valueCanonical" : "https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0/ImplementationGuide/br.gov.saude.redfm.fhir"
+        "valueCanonical" : "https://fhir.saude.gov.br/redfm/ImplementationGuide/br.gov.saude.redfm.fhir"
       }]
     }
   },
@@ -48,7 +50,7 @@ ValueSet utilizado para definir a unidade de medida de medicamentos sob informa√
     "_valueCode" : {
       "extension" : [{
         "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
-        "valueCanonical" : "https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0/ImplementationGuide/br.gov.saude.redfm.fhir"
+        "valueCanonical" : "https://fhir.saude.gov.br/redfm/ImplementationGuide/br.gov.saude.redfm.fhir"
       }]
     }
   },

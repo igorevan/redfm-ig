@@ -7,7 +7,7 @@ Classifica o tipo de documento que está sendo trafegado.
 
  **References** 
 
-* [Registro Eletrônico de Dispensação ou Fornecimento de Medicamento (REDFM)](StructureDefinition-RNDSRegistroEletronicoDispensacaoFornecimentoMedicamento.md)
+* [Registro Eletrônico de Dispensação ou Fornecimento de Medicamentos - REDFM](StructureDefinition-RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos.md)
 
 ### Logical Definition (CLD)
 
@@ -38,7 +38,7 @@ Classifica o tipo de documento que está sendo trafegado.
     "_valueInteger" : {
       "extension" : [{
         "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
-        "valueCanonical" : "https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0/ImplementationGuide/br.gov.saude.redfm.fhir"
+        "valueCanonical" : "https://fhir.saude.gov.br/redfm/ImplementationGuide/br.gov.saude.redfm.fhir"
       }]
     }
   },
@@ -48,7 +48,7 @@ Classifica o tipo de documento que está sendo trafegado.
     "_valueCode" : {
       "extension" : [{
         "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
-        "valueCanonical" : "https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0/ImplementationGuide/br.gov.saude.redfm.fhir"
+        "valueCanonical" : "https://fhir.saude.gov.br/redfm/ImplementationGuide/br.gov.saude.redfm.fhir"
       }]
     }
   },

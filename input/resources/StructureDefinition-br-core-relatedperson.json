@@ -1,6 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "br-core-relatedperson",
+  "language": "pt-BR",
   "url": "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-relatedperson",
   "name": "BRCoreRelatedPerson",
   "status": "active",

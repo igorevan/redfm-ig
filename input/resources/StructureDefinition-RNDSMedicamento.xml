@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+    <id value="RNDSMedicamento" />
+    <meta xmlns="http://hl7.org/fhir">
+        <lastUpdated value="2026-06-20T17:00:00-03:00" />
+    </meta>
+    <language value="pt-BR" />
+    <url value="http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSMedicamento" />
+    <version value="1.0.0" />
+    <name value="RNDSMedicamento" />
+    <title value="Medicamento" />
+    <status value="active" />
+    <date value="2024-12-10" />
+    <publisher value="Ministério da Saúde do Brasil" />
+    <contact>
+        <name value="COPIS - Coordenação de Padrões de Informática em Saúde" />
+        <telecom>
+            <system value="url" />
+            <value value="https://webatendimento.saude.gov.br/faq/rnds" />
+        </telecom>
+    </contact>
+    <description
+        value="Este recurso é utilizado principalmente para a identificação e definição de um medicamento para fins de prescrição, dispensação e administração, bem como para fazer declarações sobre o uso de medicamentos." />
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166" />
+            <code value="BR" />
+            <display value="Brazil" />
+        </coding>
+    </jurisdiction>
+    <fhirVersion value="4.0.1" />
+    <kind value="resource" />
+    <abstract value="false" />
+    <type value="Medication" />
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Medication" />
+    <derivation value="constraint" />
+    <differential>
+        <element id="Medication">
+            <path value="Medication" />
+            <short value="Definição de um medicamento" />
+            <definition
+                value="Este recurso é utilizado principalmente para a identificação e definição de um medicamento para fins de prescrição, dispensação e administração, bem como para fazer declarações sobre o uso de medicamentos." />
+            <constraint>
+                <key value="obm-1" />
+                <severity value="error" />
+                <human
+                    value="A unidade de medida (Medication.form.coding.code) deve ser preenchida, exceto se o código do medicamento for um VMPP ou um AMPP, neste caso a unidade de medida não deve ser preenchida." />
+                <expression
+                    value="form.exists() xor (code.coding.system.contains('AMPP') or code.coding.system.contains('VMPP'))" />
+            </constraint>
+        </element>
+        <element id="Medication.meta">
+            <path value="Medication.meta" />
+            <short value="Metadados sobre o recurso" />
+        </element>
+        <element id="Medication.implicitRules">
+            <path value="Medication.implicitRules" />
+            <short value="Um conjunto de regras sob as quais este conteúdo foi criado" />
+        </element>
+        <element id="Medication.language">
+            <path value="Medication.language" />
+            <short value="Linguagem do recurso" />
+        </element>
+        <element id="Medication.text">
+            <path value="Medication.text" />
+            <short value="Resumo de texto para o recurso, para interpretação humana" />
+        </element>
+        <element id="Medication.contained">
+            <path value="Medication.contained" />
+            <short value="Recursos contidos" />
+        </element>
+        <element id="Medication.extension">
+            <path value="Medication.extension" />
+            <short value="Extensões adicionais" />
+            <max value="1" />
+        </element>
+        <element id="Medication.modifierExtension">
+            <path value="Medication.modifierExtension" />
+            <short value="Extensões que não podem ser ignoradas" />
+        </element>
+        <element id="Medication.identifier">
+            <path value="Medication.identifier" />
+            <short value="Identificador de negócios para este medicamento" />
+            <definition value="Identificador de negócios para este medicamento" />
+        </element>
+        <element id="Medication.code">
+            <path value="Medication.code" />
+            <min value="1" />
+            <mustSupport value="true" />
+            <binding>
+                <strength value="required" />
+                <valueSet value="http://www.saude.gov.br/fhir/r4/ValueSet/BRTerminologiaMedicamento" />
+            </binding>
+        </element>
+        <element id="Medication.code.coding">
+            <path value="Medication.code.coding" />
+            <min value="1" />
+        </element>
+        <element id="Medication.code.coding.system">
+            <path value="Medication.code.coding.system" />
+            <min value="1" />
+        </element>
+        <element id="Medication.code.coding.code">
+            <path value="Medication.code.coding.code" />
+            <min value="1" />
+        </element>
+        <element id="Medication.status">
+            <path value="Medication.status" />
+            <short value="ativo| inativo| entrado com erro" />
+            <mustSupport value="true" />
+        </element>
+        <element id="Medication.manufacturer">
+            <path value="Medication.manufacturer" />
+            <short value="Organização Fabricante" />
+            <definition value="Fabricante do item" />
+            <type>
+                <code value="Reference" />
+                <targetProfile
+                    value="http://www.saude.gov.br/fhir/r4/StructureDefinition/BRPessoaJuridicaProfissionalLiberal-1.0" />
+            </type>
+        </element>
+        <element id="Medication.form">
+            <path value="Medication.form" />
+            <short value="Unidade de medida do medicamento" />
+            <mustSupport value="true" />
+            <binding>
+                <strength value="required" />
+                <valueSet
+                    value="http://www.saude.gov.br/fhir/r4/ValueSet/BRUnidadeMedidaMedicamento" />
+            </binding>
+        </element>
+        <element id="Medication.form.coding">
+            <path value="Medication.form.coding" />
+            <min value="1" />
+        </element>
+        <element id="Medication.form.coding.system">
+            <path value="Medication.form.coding.system" />
+            <min value="1" />
+        </element>
+        <element id="Medication.form.coding.code">
+            <path value="Medication.form.coding.code" />
+            <min value="1" />
+        </element>
+        <element id="Medication.amount">
+            <path value="Medication.amount" />
+            <short value="Quantidade de medicamento na embalagem" />
+        </element>
+        <element id="Medication.ingredient">
+            <path value="Medication.ingredient" />
+            <short value="Ingrediente ativo ou inativo" />
+        </element>
+        <element id="Medication.batch">
+            <path value="Medication.batch" />
+            <short value="Detalhes sobre o medicamento." />
+            <definition value="Informação sobre lote e validade do medicamento." />
+            <mustSupport value="true" />
+        </element>
+        <element id="Medication.batch.lotNumber">
+            <path value="Medication.batch.lotNumber" />
+            <short value="Lote de medicamento." />
+        </element>
+        <element id="Medication.batch.expirationDate">
+            <path value="Medication.batch.expirationDate" />
+            <short value="Data de validade do medicamento." />
+        </element>
+    </differential>
+</StructureDefinition>

@@ -25,13 +25,13 @@
     "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
     "valueCode" : "4.0.1"
   }],
-  "url" : "https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0/ImplementationGuide/br.gov.saude.redfm.fhir",
+  "url" : "https://fhir.saude.gov.br/redfm/ImplementationGuide/br.gov.saude.redfm.fhir",
   "version" : "1.0.0-release",
   "name" : "REDFMRNDSIG",
   "title" : "Guia de Implementação do Registro Eletrônico de Dispensação ou Fornecimento de Medicamento (REDFM) da RNDS",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-06-30T10:02:10-03:00",
+  "date" : "2026-09-25T17:16:20-03:00",
   "publisher" : "Ministério da Saúde do Brasil",
   "contact" : [{
     "name" : "Ministério da Saúde do Brasil",
@@ -62,7 +62,7 @@
     }],
     "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
     "packageId" : "hl7.terminology.r4",
-    "version" : "7.2.0"
+    "version" : "7.4.0"
   },
   {
     "id" : "hl7ext",
@@ -298,7 +298,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "path-liquid"
+        "valueString" : "path-liquid-template"
       },
       {
         "url" : "value",
@@ -309,7 +309,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "path-liquid"
+        "valueString" : "path-liquid-template"
       },
       {
         "url" : "value",
@@ -368,7 +368,7 @@
       },
       {
         "url" : "value",
-        "valueString" : "https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0/history.html"
+        "valueString" : "https://fhir.saude.gov.br/redfm/history.html"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -775,7 +775,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueCode" : "path-liquid"
+        "valueCode" : "path-liquid-template"
       },
       {
         "url" : "value",
@@ -786,7 +786,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueCode" : "path-liquid"
+        "valueCode" : "path-liquid-template"
       },
       {
         "url" : "value",
@@ -845,7 +845,7 @@
       },
       {
         "url" : "value",
-        "valueString" : "https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0/history.html"
+        "valueString" : "https://fhir.saude.gov.br/redfm/history.html"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -1029,113 +1029,185 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos.html"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamento"
+        "reference" : "StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos"
       },
       "name" : "Registro Eletrônico de Dispensação ou Fornecimento de Medicamento (REDFM)",
-      "description" : "Registro Eletrônico de Dispensação ou Fornecimento de Medicamento (REDFM)"
+      "description" : "Documento público que coleta os dados das prescrições de medicamentos realizadas em qualquer estabelecimento de saúde do país, público ou privado."
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Bundle"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Bundle-example-redfm-01-prescricao-na-rnds.html"
       }],
       "reference" : {
-        "reference" : "Bundle/01-redfm-completo-com-prescricao-dispensador-farmaceutico"
+        "reference" : "Bundle/example-redfm-01-prescricao-na-rnds"
       },
-      "name" : "Bundle de exemplo do REDFM (1)",
-      "description" : "Bundle de exemplo do Registro Eletrônico de Dispensação ou Fornecimento de Medicamento     (REDFM)",
-      "exampleCanonical" : "http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamento"
+      "name" : "Bundle 1 de exemplo do REDFM (Prescrição na RNDS)",
+      "description" : "Bundle de exemplo do REDFM com prescrição realizada na RNDS",
+      "exampleCanonical" : "http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos"
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Bundle"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Bundle-example-redfm-02-prescricao-fora-rnds.html"
       }],
       "reference" : {
-        "reference" : "Bundle/02-redfm-completo-substituicao"
+        "reference" : "Bundle/example-redfm-02-prescricao-fora-rnds"
       },
-      "name" : "Bundle de exemplo do REDFM (2)",
-      "description" : "Bundle de exemplo do Registro Eletrônico de Dispensação ou Fornecimento de Medicamento     (REDFM)",
-      "exampleCanonical" : "http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamento"
+      "name" : "Bundle 2 de exemplo do REDFM (Prescrição fora da RNDS)",
+      "description" : "Bundle de exemplo do REDFM com prescrição realizada fora da RNDS",
+      "exampleCanonical" : "http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos"
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Bundle"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Bundle-example-redfm-03-fornecimento-sem-crf.html"
       }],
       "reference" : {
-        "reference" : "Bundle/03-redfm-completo-com-prescricao-fornecedor-nao-farmaceutico"
+        "reference" : "Bundle/example-redfm-03-fornecimento-sem-crf"
       },
-      "name" : "Bundle de exemplo do REDFM (3)",
-      "description" : "Bundle de exemplo do Registro Eletrônico de Dispensação ou Fornecimento de Medicamento     (REDFM)",
-      "exampleCanonical" : "http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamento"
+      "name" : "Bundle 3 de exemplo do REDFM (Fornecimento sem CRF)",
+      "description" : "Bundle de exemplo do REDFM com fornecimento realizado sem CRF",
+      "exampleCanonical" : "http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos"
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Bundle"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Bundle-example-redfm-04-fornecedor-e-dispensador.html"
       }],
       "reference" : {
-        "reference" : "Bundle/04-redfm-parcial-com-prescricao-fornecedor-nao-farmaceutico"
+        "reference" : "Bundle/example-redfm-04-fornecedor-e-dispensador"
       },
-      "name" : "Bundle de exemplo do REDFM (4)",
-      "description" : "Bundle de exemplo do Registro Eletrônico de Dispensação ou Fornecimento de Medicamento     (REDFM)",
-      "exampleCanonical" : "http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamento"
+      "name" : "Bundle 4 de exemplo do REDFM (Fornecedor e Dispensador)",
+      "description" : "Bundle de exemplo do REDFM com fornecedor e dispensador",
+      "exampleCanonical" : "http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos"
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Bundle"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Bundle-example-redfm-05-nao-atendida-com-justificativa.html"
       }],
       "reference" : {
-        "reference" : "Bundle/05-redfm-nao-dispensado-com-prescricao"
+        "reference" : "Bundle/example-redfm-05-nao-atendida-com-justificativa"
       },
-      "name" : "Bundle de exemplo do REDFM (5)",
-      "description" : "Bundle de exemplo do Registro Eletrônico de Dispensação ou Fornecimento de Medicamento     (REDFM)",
-      "exampleCanonical" : "http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamento"
+      "name" : "Bundle 5 de exemplo do REDFM (Não Atendida com Justificativa)",
+      "description" : "Bundle de exemplo do REDFM não atendido e com justificativa",
+      "exampleCanonical" : "http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos"
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Bundle"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Bundle-example-redfm-06-parcial-com-justificativa.html"
       }],
       "reference" : {
-        "reference" : "Bundle/06-redfm-nao-dispensado-e-dispensado-com-prescricao-dispensador-farmaceutico"
+        "reference" : "Bundle/example-redfm-06-parcial-com-justificativa"
       },
-      "name" : "Bundle de exemplo do REDFM (6)",
-      "description" : "Bundle de exemplo do Registro Eletrônico de Dispensação ou Fornecimento de Medicamento     (REDFM)",
-      "exampleCanonical" : "http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamento"
+      "name" : "Bundle 6 de exemplo do REDFM (Parcial com Justificativa)",
+      "description" : "Bundle de exemplo do REDFM parcial e com justificativa",
+      "exampleCanonical" : "http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos"
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Bundle"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Bundle-example-redfm-07-lote-validade.html"
       }],
       "reference" : {
-        "reference" : "Bundle/07-redfm-completo-sem-prescricao-fornecedor-nao-farmaceutico"
+        "reference" : "Bundle/example-redfm-07-lote-validade"
       },
-      "name" : "Bundle de exemplo do REDFM (7)",
-      "description" : "Bundle de exemplo do Registro Eletrônico de Dispensação ou Fornecimento de Medicamento     (REDFM)",
-      "exampleCanonical" : "http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamento"
+      "name" : "Bundle 7 de exemplo do REDFM (Lote e Validade)",
+      "description" : "Bundle de exemplo do REDFM com lote e validade",
+      "exampleCanonical" : "http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos"
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Bundle"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Bundle-example-redfm-08-author-valido-cnpj.html"
       }],
       "reference" : {
-        "reference" : "Bundle/08-redfm-completo-sem-prescricao-dispensador-farmaceutico"
+        "reference" : "Bundle/example-redfm-08-author-valido-cnpj"
       },
-      "name" : "Bundle de exemplo do REDFM (8)",
-      "description" : "Bundle de exemplo do Registro Eletrônico de Dispensação ou Fornecimento de Medicamento     (REDFM)",
-      "exampleCanonical" : "http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamento"
+      "name" : "Bundle 8 de exemplo do REDFM (Author válido - CNPJ)",
+      "description" : "Bundle de exemplo do REDFM com author válido - CNPJ",
+      "exampleCanonical" : "http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Bundle-example-redfm-09-author-valido-cpf.html"
+      }],
+      "reference" : {
+        "reference" : "Bundle/example-redfm-09-author-valido-cpf"
+      },
+      "name" : "Bundle 9 de exemplo do REDFM (Author válido - CPF)",
+      "description" : "Bundle de exemplo do REDFM com author válido - CPF",
+      "exampleCanonical" : "http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Bundle-example-redfm-10-ampp-sem-forma-fabricante.html"
+      }],
+      "reference" : {
+        "reference" : "Bundle/example-redfm-10-ampp-sem-forma-fabricante"
+      },
+      "name" : "Bundle 10 de exemplo do REDFM (AMPP sem forma e com fabricante)",
+      "description" : "Bundle de exemplo do REDFM com AMPP sem forma e com fabricante",
+      "exampleCanonical" : "http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos"
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-BRCBO.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/BRCBO"
@@ -1147,6 +1219,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-BRCIAP2.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/BRCIAP2"
@@ -1158,6 +1234,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-BRCID10.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/BRCID10"
@@ -1169,6 +1249,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-BRConselhoProfissional.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/BRConselhoProfissional"
@@ -1180,6 +1264,25 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-BRJustificativaIndividuoNaoIdentificado.html"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/BRJustificativaIndividuoNaoIdentificado"
+      },
+      "name" : "Justificativa da Impossibilidade de Identificação do Indivíduo (CodeSystem)",
+      "description" : "Classifica as razões pelo qual não foi possível obter os dados de identificação do indivíduo em um contato assistencial. (Port. nº 84/SAS/MS/1997 e Port. nº02/SAS/SGEP/MS/2012)"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-BRObmAMPP.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/BRObmAMPP"
@@ -1191,6 +1294,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-BRObmANVISA.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/BRObmANVISA"
@@ -1202,6 +1309,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-BRObmCATMAT.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/BRObmCATMAT"
@@ -1213,6 +1324,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-BRObmEAN.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/BRObmEAN"
@@ -1224,6 +1339,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-BRObmVMP.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/BRObmVMP"
@@ -1235,6 +1354,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-BRTipoDispensacaoRealizada.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/BRTipoDispensacaoRealizada"
@@ -1246,6 +1369,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-BRTipoDocumento.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/BRTipoDocumento"
@@ -1257,6 +1384,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-BRUnidadeMedida.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/BRUnidadeMedida"
@@ -1268,6 +1399,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-BRViaAdministracao.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/BRViaAdministracao"
@@ -1279,6 +1414,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-br-core-composition.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/br-core-composition"
@@ -1290,6 +1429,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-br-core-medication.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/br-core-medication"
@@ -1301,6 +1444,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-br-core-organization.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/br-core-organization"
@@ -1312,6 +1459,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-br-core-practitioner.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/br-core-practitioner"
@@ -1323,94 +1474,145 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-br-core-practitionerrole.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/br-core-practitionerrole"
       },
       "name" : "BR Core PractitionerRole",
-      "description" : "Este perfil restringe o recurso [PractitionerRole](https://hl7.org/fhir/R4/practitionerrole.html) que representa um conjunto específico de funções/locais/especialidades/serviços que um profissional pode desempenhar em uma organização por um período de tempo."
+      "description" : "Este perfil restringe o recurso PractitionerRole que representa um conjunto específico de funções/locais/especialidades/serviços que um profissional pode desempenhar em uma organização por um período de tempo."
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-BRIndividuoNaoIdentificado-1.0.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/BRIndividuoNaoIdentificado-1.0"
+      },
+      "name" : "Informações Complementares de Indivíduos Não Identificados",
+      "description" : "Informações complementares necessárias ao Contato Assistencial na hipótese do indivíduo não poder ser identificado."
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-BRProblemaDiagnostico.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/BRProblemaDiagnostico"
+      },
+      "name" : "ProblemaDiagnóstico",
+      "description" : "Problema e/ou diagnóstico atribuído pelo profissional de saúde ao indivíduo no contato assistencial."
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-RNDSDispensacaoMedicamento.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/RNDSDispensacaoMedicamento"
+      },
+      "name" : "Dispensação ou Fornecimento de Medicamento",
+      "description" : "Este recurso Indica que um medicamento deve ser ou foi dispensado para uma pessoa/paciente. O recurso inclui a descrição do medicamento (suprimento) fornecido bem como as instruções para a sua administração. A dispensação do medicamento é o resultado de um  pedido de medicamentos feito por um sistema de informações"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-RNDSEstabelecimentoSaude.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/RNDSEstabelecimentoSaude"
       },
-      "name" : "Estabelecimento de Saúde",
-      "description" : "Estabelecimento de Saúde"
+      "name" : "Estabelecimento de Saúde RNDS",
+      "description" : "Este perfil representa um agrupamento formal ou informal reconhecido de pessoas ou organizações com o propósito de alcançar alguma forma de ação coletiva. Inclui estabelecimentos de saúde, empresas, instituições, corporações, departamentos, grupos comunitários, grupos de práticas de saúde, planos de saúde, empresas fabricantes de produtos medicinais, entre outros."
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-RNDSLotacaoProfissional.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/RNDSLotacaoProfissional"
       },
-      "name" : "Lotação Profissional",
-      "description" : "Lotação Profissional"
+      "name" : "RNDSLotacaoProfissional",
+      "description" : "Este perfil restringe o recurso PractitionerRole que representa um conjunto específico de funções/locais/especialidades/serviços que um profissional pode desempenhar em uma organização por um período de tempo."
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-RNDSMedicamento.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/RNDSMedicamento"
       },
       "name" : "Medicamento",
-      "description" : "Medicamento"
+      "description" : "Este recurso é utilizado principalmente para a identificação e definição de um medicamento para fins de prescrição, dispensação e administração, bem como para fazer declarações sobre o uso de medicamentos."
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-RNDSPrescricaoMedicamento.html"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/RNDSMedicamentoDispensado"
+        "reference" : "StructureDefinition/RNDSPrescricaoMedicamento"
       },
-      "name" : "Medicamento Dispensado",
-      "description" : "Medicamento Dispensado"
+      "name" : "Prescrição de Medicamento - RNDS",
+      "description" : "Uma ordem ou solicitação para o fornecimento do medicamento e as instruções para sua administração a um paciente. O recurso é denominado \"MedicationRequest\" em vez de \"MedicationPrescription\" ou \"MedicationOrder\" para generalizar o uso em ambientes hospitalares e ambulatoriais, incluindo planos de cuidados, etc., e para harmonizar com os fluxos de trabalho."
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/RNDSMedicamentoDispensadoFornecido"
       },
-      "name" : "Dispensação ou Fornecimento Eletrônico de Medicamento",
-      "description" : "Dispensação ou Fornecimento Eletrônico de Medicamento"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/RNDSPrescricaoMedicamentoDispensado"
-      },
-      "name" : "Prescrição Eletrônica de Medicamento (Contida na Dispensação)",
-      "description" : "Dados da prescrição a serem informados durante a dispensação caso o registro não esteja na RNDS."
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-RNDSProfissional.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/RNDSProfissional"
       },
-      "name" : "Profissional",
-      "description" : "Profissional"
+      "name" : "Profissional RNDS",
+      "description" : "O Profissional é uma pessoa que está direta ou indiretamente envolvida na prestação de cuidados de saúde ou serviços relacionados ao paciente."
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-br-core-healthcareservice.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/br-core-healthcareservice"
@@ -1422,6 +1624,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-br-core-location.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/br-core-location"
@@ -1433,6 +1639,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-br-core-relatedperson.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/br-core-relatedperson"
@@ -1444,6 +1654,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-BRCOREN.html"
       }],
       "reference" : {
         "reference" : "ValueSet/BRCOREN"
@@ -1455,6 +1669,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-BRCRF.html"
       }],
       "reference" : {
         "reference" : "ValueSet/BRCRF"
@@ -1466,6 +1684,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-BRCRM.html"
       }],
       "reference" : {
         "reference" : "ValueSet/BRCRM"
@@ -1477,6 +1699,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-BRCRO.html"
       }],
       "reference" : {
         "reference" : "ValueSet/BRCRO"
@@ -1488,6 +1714,70 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-BRCategoriaCondicao.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/BRCategoriaCondicao"
+      },
+      "name" : "Classificação de uma condição",
+      "description" : "Tradução para o português do brasil da classificação de uma condição"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-BREstadoDocumento-1.0.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/BREstadoDocumento-1.0"
+      },
+      "name" : "Estado do Documento",
+      "description" : "Classifica o estado do documento que está sendo trafegado."
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-BREstadoResolucaoDiagnosticoProblema-1.0.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/BREstadoResolucaoDiagnosticoProblema-1.0"
+      },
+      "name" : "Estado da Resolução de Diagnóstico ou Problema",
+      "description" : "Estado da resolução de um diagnóstico ou problema."
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-BRJustificativaIndividuoNaoIdentificado-1.0.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/BRJustificativaIndividuoNaoIdentificado-1.0"
+      },
+      "name" : "Justificativa da Impossibilidade de Identificação do Indivíduo (ValueSet)",
+      "description" : "Classifica as razões pelo qual não foi possível obter os dados de identificação do indivíduo em um contato assistencial. (Port. nº 84/SAS/MS/1997 e Port. nº02/SAS/SGEP/MS/2012)"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-BROcupacao-1.0.html"
       }],
       "reference" : {
         "reference" : "ValueSet/BROcupacao-1.0"
@@ -1499,6 +1789,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-BROutrosProfissionais.html"
       }],
       "reference" : {
         "reference" : "ValueSet/BROutrosProfissionais"
@@ -1510,6 +1804,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-BRProblemaDiagnostico.html"
       }],
       "reference" : {
         "reference" : "ValueSet/BRProblemaDiagnostico"
@@ -1521,6 +1819,25 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-BRSexo-1.0.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/BRSexo-1.0"
+      },
+      "name" : "Sexo",
+      "description" : "Sexo de um indivíduo."
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-BRTerminologiaMedicamento.html"
       }],
       "reference" : {
         "reference" : "ValueSet/BRTerminologiaMedicamento"
@@ -1532,6 +1849,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-BRTipoDispensacaoRealizada.html"
       }],
       "reference" : {
         "reference" : "ValueSet/BRTipoDispensacaoRealizada"
@@ -1543,6 +1864,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-BRTipoDocumento-1.0.html"
       }],
       "reference" : {
         "reference" : "ValueSet/BRTipoDocumento-1.0"
@@ -1554,6 +1879,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-BRUnidadeMedidaMedicamento.html"
       }],
       "reference" : {
         "reference" : "ValueSet/BRUnidadeMedidaMedicamento"
@@ -1565,12 +1894,31 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-BRViaAdministracao-1.0.html"
       }],
       "reference" : {
         "reference" : "ValueSet/BRViaAdministracao-1.0"
       },
       "name" : "Via de Administração (ValueSet)",
       "description" : "Via de administração de um imunobiológico."
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-RNDSUnidadeMedida.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/RNDSUnidadeMedida"
+      },
+      "name" : "Unidade de Medida RNDS",
+      "description" : "ValueSet composto por códigos do CodeSystem BRUnidadeMedida e Unidades Comuns do UCUM."
     }],
     "page" : {
       "extension" : [{
@@ -1608,19 +1956,6 @@
         }],
         "nameUrl" : "abstract.html",
         "title" : "Abstract",
-        "generation" : "html"
-      },
-      {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-          "valueCode" : "informative"
-        },
-        {
-          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "lives.html"
-        }],
-        "nameUrl" : "lives.html",
-        "title" : "Lives",
         "generation" : "html"
       },
       {

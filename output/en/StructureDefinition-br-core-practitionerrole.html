@@ -49,8 +49,8 @@
 	  <script type="text/javascript" src="assets/js/prism-cql.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"13.6"}
-    h3,h4,h5,h6{--heading-prefix:"13.6"}</style>
+    <style type="text/css">h2{--heading-prefix:"12.6"}
+    h3,h4,h5,h6{--heading-prefix:"12.6"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -96,9 +96,9 @@
   <li>
     <a href="abstract.html">Abstract</a>
   </li>
-  <li>
+  <!-- <li>
     <a href="lives.html">Lives</a>
-  </li>
+  </li> -->
   <li>
     <a href="credenciamento.html">Credenciamento</a>
   </li>
@@ -199,7 +199,7 @@
 
 <!-- layouts\layout-profile -->
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Guia de Implementação do Registro Eletrônico de Dispensação ou Fornecimento de Medicamento (REDFM) da RNDS - Compilação de desenvolvimento local (v1.0.0-release) construída pelas ferramentas de compilação FHIR (HL7&reg; FHIR&reg; Standard). Veja o <a href='https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0/history.html'>Diretório de versões publicadas</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Guia de Implementação do Registro Eletrônico de Dispensação ou Fornecimento de Medicamento (REDFM) da RNDS - Compilação de desenvolvimento local (v1.0.0-release) construída pelas ferramentas de compilação FHIR (HL7&reg; FHIR&reg; Standard). Veja o <a href='https://fhir.saude.gov.br/redfm/history.html'>Diretório de versões publicadas</a></p><!--EndReleaseHeader-->
   
 
 
@@ -327,7 +327,7 @@ BR Core PractitionerRole
   </table>
 
 <p>
-<p>Este perfil restringe o recurso <a href="https://hl7.org/fhir/R4/practitionerrole.html">PractitionerRole</a> que representa um conjunto específico de funções/locais/especialidades/serviços que um profissional pode desempenhar em uma organização por um período de tempo.</p>
+<p>Este perfil restringe o recurso PractitionerRole que representa um conjunto específico de funções/locais/especialidades/serviços que um profissional pode desempenhar em uma organização por um período de tempo.</p>
 
 </p>
 
@@ -339,7 +339,6 @@ BR Core PractitionerRole
 
 <p><b>Usos:</b></p>
 <ul>
- <li>Derivado deste Perfil: <a href="StructureDefinition-RNDSLotacaoProfissional.html">Lotação Profissional</a></li>
  <li>Refere a este Perfil: <a href="StructureDefinition-br-core-composition.html">BR Core Composition</a></li>
 </ul>
 <p>You can also check for <a href="https://packages2.fhir.org/xig/resource/br.gov.saude.redfm.fhir|current/StructureDefinition/StructureDefinition-br-core-practitionerrole.json">usages in the FHIR IG Statistics</a></p>
@@ -578,7 +577,7 @@ BR Core PractitionerRole
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="http://hl7.org/fhir/R4/endpoint.html">Endpoint</a>)</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Endpoints que fornecem acesso a serviços operados para o profissional com esta função.<br/></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legenda para este formato"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentação para este formato</a></td></tr><script type="text/javascript">  // 8d59e6e2-c91d-4b5b-bbbc-ef6c6d499d3f
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legenda para este formato"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentação para este formato</a></td></tr><script type="text/javascript">  // 86d57588-bee6-4811-b882-9bad878de544
 document.getElementById('cbbr-core-practitionerroleK-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
 filterDesc(document.getElementById('br-core-practitionerroleK'), 'constraint', document.getElementById('cbbr-core-practitionerroleK-constraint').checked, document.getElementById('ppbr-core-practitionerroleK'));
 document.getElementById('cbbr-core-practitionerroleK-obligation').checked = 'false' != localStorage.getItem('ht-table-states-obligation');
@@ -996,7 +995,7 @@ filterDesc(document.getElementById('br-core-practitionerroleK'), 'binding', docu
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a style="opacity: 0.5; opacity: 0.5" href="http://hl7.org/fhir/R4/endpoint.html">Endpoint</a>)</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Endpoints que fornecem acesso a serviços operados para o profissional com esta função.</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legenda para este formato"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentação para este formato</a></td></tr><script type="text/javascript">  // 8d59e6e2-c91d-4b5b-bbbc-ef6c6d499d3f
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legenda para este formato"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentação para este formato</a></td></tr><script type="text/javascript">  // 86d57588-bee6-4811-b882-9bad878de544
 document.getElementById('cbbr-core-practitionerroleD-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
 filterDesc(document.getElementById('br-core-practitionerroleD'), 'constraint', document.getElementById('cbbr-core-practitionerroleD-constraint').checked, document.getElementById('ppbr-core-practitionerroleD'));
 document.getElementById('cbbr-core-practitionerroleD-obligation').checked = 'false' != localStorage.getItem('ht-table-states-obligation');
@@ -1346,7 +1345,7 @@ filterDesc(document.getElementById('br-core-practitionerroleD'), 'binding', docu
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="http://hl7.org/fhir/R4/endpoint.html">Endpoint</a>)</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Endpoints que fornecem acesso a serviços operados para o profissional com esta função.<br/></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legenda para este formato"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentação para este formato</a></td></tr><script type="text/javascript">  // 8d59e6e2-c91d-4b5b-bbbc-ef6c6d499d3f
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legenda para este formato"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentação para este formato</a></td></tr><script type="text/javascript">  // 86d57588-bee6-4811-b882-9bad878de544
 document.getElementById('cbbr-core-practitionerroleS-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
 filterDesc(document.getElementById('br-core-practitionerroleS'), 'constraint', document.getElementById('cbbr-core-practitionerroleS-constraint').checked, document.getElementById('ppbr-core-practitionerroleS'));
 document.getElementById('cbbr-core-practitionerroleS-obligation').checked = 'false' != localStorage.getItem('ht-table-states-obligation');
@@ -1880,7 +1879,7 @@ Resumo
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="http://hl7.org/fhir/R4/endpoint.html">Endpoint</a>)</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Endpoints que fornecem acesso a serviços operados para o profissional com esta função.<br/></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legenda para este formato"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentação para este formato</a></td></tr><script type="text/javascript">  // 8d59e6e2-c91d-4b5b-bbbc-ef6c6d499d3f
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legenda para este formato"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentação para este formato</a></td></tr><script type="text/javascript">  // 86d57588-bee6-4811-b882-9bad878de544
 document.getElementById('cbbr-core-practitionerroleKA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
 filterDesc(document.getElementById('br-core-practitionerroleKA'), 'constraint', document.getElementById('cbbr-core-practitionerroleKA-constraint').checked, document.getElementById('ppbr-core-practitionerroleKA'));
 document.getElementById('cbbr-core-practitionerroleKA-obligation').checked = 'false' != localStorage.getItem('ht-table-states-obligation');
@@ -2297,7 +2296,7 @@ filterDesc(document.getElementById('br-core-practitionerroleKA'), 'binding', doc
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a style="opacity: 0.5; opacity: 0.5" href="http://hl7.org/fhir/R4/endpoint.html">Endpoint</a>)</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Endpoints que fornecem acesso a serviços operados para o profissional com esta função.</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legenda para este formato"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentação para este formato</a></td></tr><script type="text/javascript">  // 8d59e6e2-c91d-4b5b-bbbc-ef6c6d499d3f
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legenda para este formato"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentação para este formato</a></td></tr><script type="text/javascript">  // 86d57588-bee6-4811-b882-9bad878de544
 document.getElementById('cbbr-core-practitionerroleDA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
 filterDesc(document.getElementById('br-core-practitionerroleDA'), 'constraint', document.getElementById('cbbr-core-practitionerroleDA-constraint').checked, document.getElementById('ppbr-core-practitionerroleDA'));
 document.getElementById('cbbr-core-practitionerroleDA-obligation').checked = 'false' != localStorage.getItem('ht-table-states-obligation');
@@ -2644,7 +2643,7 @@ filterDesc(document.getElementById('br-core-practitionerroleDA'), 'binding', doc
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="http://hl7.org/fhir/R4/endpoint.html">Endpoint</a>)</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Endpoints que fornecem acesso a serviços operados para o profissional com esta função.<br/></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legenda para este formato"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentação para este formato</a></td></tr><script type="text/javascript">  // 8d59e6e2-c91d-4b5b-bbbc-ef6c6d499d3f
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legenda para este formato"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentação para este formato</a></td></tr><script type="text/javascript">  // 86d57588-bee6-4811-b882-9bad878de544
 document.getElementById('cbbr-core-practitionerroleSA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
 filterDesc(document.getElementById('br-core-practitionerroleSA'), 'constraint', document.getElementById('cbbr-core-practitionerroleSA-constraint').checked, document.getElementById('ppbr-core-practitionerroleSA'));
 document.getElementById('cbbr-core-practitionerroleSA-obligation').checked = 'false' != localStorage.getItem('ht-table-states-obligation');
@@ -2960,7 +2959,6 @@ filterDesc(document.getElementById('br-core-practitionerroleSA'), 'binding', doc
 
       <div id="all-summ">
         <p></p>
-        </p>
         <div id="all-summ-inner">
           <a name="a-summary"> </a>
 <p><b>
@@ -3044,8 +3042,8 @@ Resumo
           IG © 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.saude.gov.br">Ministério da Saúde do Brasil</a>.  
           Package br.gov.saude.redfm.fhir#1.0.0-release based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Generated 
-  <span title="2026-06-30 10:02:00 -0300">
-    2026-06-30
+  <span title="2026-09-25 17:16:00 -0300">
+    2026-09-25
   </span>
 
           <br/>

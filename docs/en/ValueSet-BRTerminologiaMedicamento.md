@@ -8,8 +8,6 @@ ValueSet utilizado para definir a terminologia de um dado medicamento.
  **References** 
 
 * [Medicamento](StructureDefinition-RNDSMedicamento.md)
-* [Dispensação ou Fornecimento Eletrônico de Medicamento](StructureDefinition-RNDSMedicamentoDispensadoFornecido.md)
-* [Prescrição Eletrônica de Medicamento (Contida na Dispensação)](StructureDefinition-RNDSPrescricaoMedicamentoDispensado.md)
 
 ### Logical Definition (CLD)
 
@@ -40,7 +38,7 @@ ValueSet utilizado para definir a terminologia de um dado medicamento.
     "_valueInteger" : {
       "extension" : [{
         "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
-        "valueCanonical" : "https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0/ImplementationGuide/br.gov.saude.redfm.fhir"
+        "valueCanonical" : "https://fhir.saude.gov.br/redfm/ImplementationGuide/br.gov.saude.redfm.fhir"
       }]
     }
   },
@@ -50,7 +48,7 @@ ValueSet utilizado para definir a terminologia de um dado medicamento.
     "_valueCode" : {
       "extension" : [{
         "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
-        "valueCanonical" : "https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0/ImplementationGuide/br.gov.saude.redfm.fhir"
+        "valueCanonical" : "https://fhir.saude.gov.br/redfm/ImplementationGuide/br.gov.saude.redfm.fhir"
       }]
     }
   },

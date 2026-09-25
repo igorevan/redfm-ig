@@ -1,23 +1,26 @@
 REDFMRNDSIG : Validation Results
 =========================================
 
-err = 19, warn = 0, info = 0
-IG Publisher Version: 2.2.10
-Generated Tue Jun 30 10:13:51 BRT 2026. FHIR version 4.0.1 for br.gov.saude.redfm.fhir#1.0.0-release (canonical = https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0)
- Build Errors : 7 / 0 / 0
- /home/igor/redfm-ig/input/examples/01-redfm-completo-com-prescricao-dispensador-farmaceutico : 2 / 2 / 2
- /home/igor/redfm-ig/input/examples/02-redfm-completo-substituicao : 3 / 2 / 2
- /home/igor/redfm-ig/input/examples/03-redfm-completo-com-prescricao-fornecedor-nao-farmaceutico : 2 / 2 / 2
- /home/igor/redfm-ig/input/examples/04-redfm-parcial-com-prescricao-fornecedor-nao-farmaceutico : 2 / 2 / 2
- /home/igor/redfm-ig/input/examples/05-redfm-nao-dispensado-com-prescricao : 2 / 2 / 2
- /home/igor/redfm-ig/input/examples/06-redfm-nao-dispensado-e-dispensado-com-prescricao-dispensador-farmaceutico : 3 / 2 / 3
- /home/igor/redfm-ig/input/examples/07-redfm-completo-sem-prescricao-fornecedor-nao-farmaceutico : 2 / 2 / 2
- /home/igor/redfm-ig/input/examples/08-redfm-completo-sem-prescricao-dispensador-farmaceutico : 2 / 2 / 2
+err = 22, warn = 25, info = 34
+IG Publisher Version: 2.3.4
+Generated Fri Sep 25 17:25:48 BRT 2026. FHIR version 4.0.1 for br.gov.saude.redfm.fhir#1.0.0-release (canonical = https://fhir.saude.gov.br/redfm)
+ Build Errors : 1 / 0 / 0
+ /home/igor/redfm-ig/input/examples/example-redfm-01-prescricao-na-rnds : 0 / 2 / 2
+ /home/igor/redfm-ig/input/examples/example-redfm-02-prescricao-fora-rnds : 0 / 2 / 4
+ /home/igor/redfm-ig/input/examples/example-redfm-03-fornecimento-sem-crf : 0 / 2 / 4
+ /home/igor/redfm-ig/input/examples/example-redfm-04-fornecedor-e-dispensador : 0 / 2 / 4
+ /home/igor/redfm-ig/input/examples/example-redfm-05-nao-atendida-com-justificativa : 0 / 2 / 4
+ /home/igor/redfm-ig/input/examples/example-redfm-06-parcial-com-justificativa : 0 / 2 / 4
+ /home/igor/redfm-ig/input/examples/example-redfm-07-lote-validade : 0 / 2 / 2
+ /home/igor/redfm-ig/input/examples/example-redfm-08-author-valido-cnpj : 0 / 2 / 2
+ /home/igor/redfm-ig/input/examples/example-redfm-09-author-valido-cpf : 0 / 2 / 2
+ /home/igor/redfm-ig/input/examples/example-redfm-10-ampp-sem-forma-fabricante : 0 / 2 / 4
  /home/igor/redfm-ig/input/myig : 0 / 0 / 2
  /home/igor/redfm-ig/input/resources/CodeSystem-BRCBO : 0 / 1 / 3
  /home/igor/redfm-ig/input/resources/CodeSystem-BRCIAP2 : 0 / 1 / 1
  /home/igor/redfm-ig/input/resources/CodeSystem-BRCID10 : 0 / 1 / 1
  /home/igor/redfm-ig/input/resources/CodeSystem-BRConselhoProfissional : 0 / 1 / 1
+ /home/igor/redfm-ig/input/resources/CodeSystem-BRJustificativaIndividuoNaoIdentificado : 0 / 1 / 1
  /home/igor/redfm-ig/input/resources/CodeSystem-BRObmAMPP : 0 / 1 / 1
  /home/igor/redfm-ig/input/resources/CodeSystem-BRObmANVISA : 0 / 1 / 1
  /home/igor/redfm-ig/input/resources/CodeSystem-BRObmCATMAT : 0 / 1 / 1
@@ -32,69 +35,55 @@ Generated Tue Jun 30 10:13:51 BRT 2026. FHIR version 4.0.1 for br.gov.saude.redf
  /home/igor/redfm-ig/input/resources/StructureDefinition-BRCoreOrganization : 0 / 1 / 2
  /home/igor/redfm-ig/input/resources/StructureDefinition-BRCorePractitioner : 0 / 1 / 4
  /home/igor/redfm-ig/input/resources/StructureDefinition-BRCorePractitionerRole : 0 / 1 / 2
+ /home/igor/redfm-ig/input/resources/StructureDefinition-BRIndividuoNaoIdentificado-1.0 : 0 / 1 / 2
+ /home/igor/redfm-ig/input/resources/StructureDefinition-BRProblemaDiagnostico : 1 / 6 / 3
+ /home/igor/redfm-ig/input/resources/StructureDefinition-RNDSDispensacaoMedicamento : 0 / 13 / 3
  /home/igor/redfm-ig/input/resources/StructureDefinition-RNDSEstabelecimentoSaude : 0 / 1 / 2
- /home/igor/redfm-ig/input/resources/StructureDefinition-RNDSLotacaoProfissional : 0 / 11 / 2
- /home/igor/redfm-ig/input/resources/StructureDefinition-RNDSMedicamento : 0 / 1 / 2
- /home/igor/redfm-ig/input/resources/StructureDefinition-RNDSMedicamentoDispensado : 0 / 1 / 2
- /home/igor/redfm-ig/input/resources/StructureDefinition-RNDSMedicamentoDispensadoFornecido : 0 / 48 / 6
- /home/igor/redfm-ig/input/resources/StructureDefinition-RNDSPrescricaoMedicamentoDispensado : 0 / 16 / 2
- /home/igor/redfm-ig/input/resources/StructureDefinition-RNDSProfissional : 0 / 3 / 3
- /home/igor/redfm-ig/input/resources/StructureDefinition-RNDSRegistroEletronicoDispensacaoFornecimentoMedicamento : 1 / 23 / 2
+ /home/igor/redfm-ig/input/resources/StructureDefinition-RNDSLotacaoProfissional : 0 / 1 / 2
+ /home/igor/redfm-ig/input/resources/StructureDefinition-RNDSMedicamento : 0 / 6 / 2
+ /home/igor/redfm-ig/input/resources/StructureDefinition-RNDSPrescricaoMedicamento : 2 / 19 / 2
+ /home/igor/redfm-ig/input/resources/StructureDefinition-RNDSProfissional : 18 / 1 / 2
+ /home/igor/redfm-ig/input/resources/StructureDefinition-RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos : 0 / 18 / 2
  /home/igor/redfm-ig/input/resources/StructureDefinition-br-core-healthcareservice : 0 / 1 / 2
  /home/igor/redfm-ig/input/resources/StructureDefinition-br-core-location : 0 / 1 / 2
  /home/igor/redfm-ig/input/resources/StructureDefinition-br-core-relatedperson : 0 / 6 / 2
- /home/igor/redfm-ig/input/resources/ValueSet-BRCOREN : 0 / 1 / 28
- /home/igor/redfm-ig/input/resources/ValueSet-BRCRF : 0 / 1 / 28
- /home/igor/redfm-ig/input/resources/ValueSet-BRCRM : 0 / 1 / 28
- /home/igor/redfm-ig/input/resources/ValueSet-BRCRO : 0 / 1 / 28
+ /home/igor/redfm-ig/input/resources/ValueSet-BRCOREN : 0 / 1 / 1
+ /home/igor/redfm-ig/input/resources/ValueSet-BRCRF : 0 / 1 / 1
+ /home/igor/redfm-ig/input/resources/ValueSet-BRCRM : 0 / 1 / 1
+ /home/igor/redfm-ig/input/resources/ValueSet-BRCRO : 0 / 1 / 1
+ /home/igor/redfm-ig/input/resources/ValueSet-BRCategoriaCondicao : 0 / 1 / 1
+ /home/igor/redfm-ig/input/resources/ValueSet-BREstadoDocumento-1.0 : 0 / 1 / 5
+ /home/igor/redfm-ig/input/resources/ValueSet-BREstadoResolucaoDiagnosticoProblema-1.0 : 0 / 1 / 1
+ /home/igor/redfm-ig/input/resources/ValueSet-BRJustificativaIndividuoNaoIdentificado-1.0 : 0 / 1 / 1
  /home/igor/redfm-ig/input/resources/ValueSet-BROcupacao-1.0 : 0 / 1 / 3
- /home/igor/redfm-ig/input/resources/ValueSet-BROutrosProfissionais : 0 / 1 / 63
+ /home/igor/redfm-ig/input/resources/ValueSet-BROutrosProfissionais : 0 / 1 / 2
  /home/igor/redfm-ig/input/resources/ValueSet-BRProblemaDiagnostico : 0 / 1 / 3
+ /home/igor/redfm-ig/input/resources/ValueSet-BRSexo-1.0 : 0 / 1 / 1
  /home/igor/redfm-ig/input/resources/ValueSet-BRTerminologiaMedicamento : 0 / 1 / 3
  /home/igor/redfm-ig/input/resources/ValueSet-BRTipoDispensacaoRealizada : 0 / 1 / 1
  /home/igor/redfm-ig/input/resources/ValueSet-BRTipoDocumento-1.0 : 0 / 1 / 1
  /home/igor/redfm-ig/input/resources/ValueSet-BRUnidadeMedidaMedicamento : 0 / 1 / 1
  /home/igor/redfm-ig/input/resources/ValueSet-BRViaAdministracao-1.0 : 0 / 1 / 1
+ /home/igor/redfm-ig/input/resources/ValueSet-RNDSUnidadeMedida : 0 / 5 / 33
 </table>
 == n/a ==
-ERROR: en/downloads.html#/html/body/div/div/div/div/div/div/table/tbody/tr/td/a at Line 243, column 7: The link 'definitions.xml.zip' for "XML" cannot be resolved
-ERROR: en/downloads.html#/html/body/div/div/div/div/div/div/table/tbody/tr/td/a at Line 248, column 7: The link 'definitions.json.zip' for "JSON" cannot be resolved
-ERROR: en/downloads.html#/html/body/div/div/div/div/div/div/table/tbody/tr/td/a at Line 253, column 7: The link 'definitions.ttl.zip' for "Turtle" cannot be resolved
-ERROR: en/downloads.html#/html/body/div/div/div/div/div/div/table/tbody/tr/td/a at Line 261, column 7: The link 'examples.xml.zip' for "XML" cannot be resolved
-ERROR: en/downloads.html#/html/body/div/div/div/div/div/div/table/tbody/tr/td/a at Line 266, column 7: The link 'examples.json.zip' for "JSON" cannot be resolved
-ERROR: en/downloads.html#/html/body/div/div/div/div/div/div/table/tbody/tr/td/a at Line 271, column 7: The link 'examples.ttl.zip' for "Turtle" cannot be resolved
-ERROR: en/forms.html#/html/body/div/div/div/div/div/div/p/a at Line 235, column 88: The link 'link do formulário' for "aqui" cannot be resolved
-== input/examples/01-redfm-completo-com-prescricao-dispensador-farmaceutico.json ==
-ERROR: Bundle/01-redfm-completo-com-prescricao-dispensador-farmaceutico: Bundle.entry[0].resource.section[0].entry[0]: Não foi possível encontrar uma correspondência de perfil para urn:uuid:a54219b8-f741-4c47-b662-e4f8dfa49ab6 entre as opções: http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSMedicamentoDispensadoFornecido
-ERROR: Bundle/01-redfm-completo-com-prescricao-dispensador-farmaceutico: Bundle.entry[0].resource.section[0].code: Nenhuma das codificações fornecidas faz parte do conjunto de valores 'Document Section Codes' (http://hl7.org/fhir/ValueSet/doc-section-codes|4.0.1) e é necessária uma codificação deste conjunto de valores) (códigos = http://loinc.org#56445-0)
-== input/examples/02-redfm-completo-substituicao.json ==
-ERROR: Bundle/02-redfm-completo-substituicao: Bundle.entry[0].resource.relatesTo[0].target.ofType(Reference): Não é possível resolver o recurso com a referência 'Composition/3de5d264-fa69-4fc7-a661-07c916773f94-d1m4'
-ERROR: Bundle/02-redfm-completo-substituicao: Bundle.entry[0].resource.section[0].entry[0]: Não foi possível encontrar uma correspondência de perfil para urn:uuid:a54219b8-f741-4c47-b662-e4f8dfa49ab6 entre as opções: http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSMedicamentoDispensadoFornecido
-ERROR: Bundle/02-redfm-completo-substituicao: Bundle.entry[0].resource.section[0].code: Nenhuma das codificações fornecidas faz parte do conjunto de valores 'Document Section Codes' (http://hl7.org/fhir/ValueSet/doc-section-codes|4.0.1) e é necessária uma codificação deste conjunto de valores) (códigos = http://loinc.org#56445-0)
-== input/examples/03-redfm-completo-com-prescricao-fornecedor-nao-farmaceutico.json ==
-ERROR: Bundle/03-redfm-completo-com-prescricao-fornecedor-nao-farmaceutico: Bundle.entry[0].resource.section[0].entry[0]: Não foi possível encontrar uma correspondência de perfil para urn:uuid:a54219b8-f741-4c47-b662-e4f8dfa49ab6 entre as opções: http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSMedicamentoDispensadoFornecido
-ERROR: Bundle/03-redfm-completo-com-prescricao-fornecedor-nao-farmaceutico: Bundle.entry[0].resource.section[0].code: Nenhuma das codificações fornecidas faz parte do conjunto de valores 'Document Section Codes' (http://hl7.org/fhir/ValueSet/doc-section-codes|4.0.1) e é necessária uma codificação deste conjunto de valores) (códigos = http://loinc.org#56445-0)
-== input/examples/04-redfm-parcial-com-prescricao-fornecedor-nao-farmaceutico.json ==
-ERROR: Bundle/04-redfm-parcial-com-prescricao-fornecedor-nao-farmaceutico: Bundle.entry[0].resource.section[0].entry[0]: Não foi possível encontrar uma correspondência de perfil para urn:uuid:a54219b8-f741-4c47-b662-e4f8dfa49ab6 entre as opções: http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSMedicamentoDispensadoFornecido
-ERROR: Bundle/04-redfm-parcial-com-prescricao-fornecedor-nao-farmaceutico: Bundle.entry[0].resource.section[0].code: Nenhuma das codificações fornecidas faz parte do conjunto de valores 'Document Section Codes' (http://hl7.org/fhir/ValueSet/doc-section-codes|4.0.1) e é necessária uma codificação deste conjunto de valores) (códigos = http://loinc.org#56445-0)
-== input/examples/05-redfm-nao-dispensado-com-prescricao.json ==
-ERROR: Bundle/05-redfm-nao-dispensado-com-prescricao: Bundle.entry[0].resource.section[0].entry[0]: Não foi possível encontrar uma correspondência de perfil para urn:uuid:a54219b8-f741-4c47-b662-e4f8dfa49ab6 entre as opções: http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSMedicamentoDispensadoFornecido
-ERROR: Bundle/05-redfm-nao-dispensado-com-prescricao: Bundle.entry[0].resource.section[0].code: Nenhuma das codificações fornecidas faz parte do conjunto de valores 'Document Section Codes' (http://hl7.org/fhir/ValueSet/doc-section-codes|4.0.1) e é necessária uma codificação deste conjunto de valores) (códigos = http://loinc.org#56445-0)
-== input/examples/06-redfm-nao-dispensado-e-dispensado-com-prescricao-dispensador-farmaceutico.json ==
-ERROR: Bundle/06-redfm-nao-dispensado-e-dispensado-com-prescricao-dispensador-farmaceutico: Bundle.entry[0].resource.section[0].entry[0]: Não foi possível encontrar uma correspondência de perfil para urn:uuid:a54219b8-f741-4c47-b662-e4f8dfa49ab6 entre as opções: http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSMedicamentoDispensadoFornecido
-ERROR: Bundle/06-redfm-nao-dispensado-e-dispensado-com-prescricao-dispensador-farmaceutico: Bundle.entry[0].resource.section[0].entry[1]: Não foi possível encontrar uma correspondência de perfil para urn:uuid:e4aac17a-57e0-406d-b46d-f128f90044ec entre as opções: http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSMedicamentoDispensadoFornecido
-ERROR: Bundle/06-redfm-nao-dispensado-e-dispensado-com-prescricao-dispensador-farmaceutico: Bundle.entry[0].resource.section[0].code: Nenhuma das codificações fornecidas faz parte do conjunto de valores 'Document Section Codes' (http://hl7.org/fhir/ValueSet/doc-section-codes|4.0.1) e é necessária uma codificação deste conjunto de valores) (códigos = http://loinc.org#56445-0)
-== input/examples/07-redfm-completo-sem-prescricao-fornecedor-nao-farmaceutico.json ==
-ERROR: Bundle/07-redfm-completo-sem-prescricao-fornecedor-nao-farmaceutico: Bundle.entry[0].resource.section[0].entry[0]: Não foi possível encontrar uma correspondência de perfil para urn:uuid:a54219b8-f741-4c47-b662-e4f8dfa49ab6 entre as opções: http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSMedicamentoDispensadoFornecido
-ERROR: Bundle/07-redfm-completo-sem-prescricao-fornecedor-nao-farmaceutico: Bundle.entry[0].resource.section[0].code: Nenhuma das codificações fornecidas faz parte do conjunto de valores 'Document Section Codes' (http://hl7.org/fhir/ValueSet/doc-section-codes|4.0.1) e é necessária uma codificação deste conjunto de valores) (códigos = http://loinc.org#56445-0)
-== input/examples/08-redfm-completo-sem-prescricao-dispensador-farmaceutico.json ==
-ERROR: Bundle/08-redfm-completo-sem-prescricao-dispensador-farmaceutico: Bundle.entry[0].resource.section[0].entry[0]: Não foi possível encontrar uma correspondência de perfil para urn:uuid:a54219b8-f741-4c47-b662-e4f8dfa49ab6 entre as opções: http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSMedicamentoDispensadoFornecido
-ERROR: Bundle/08-redfm-completo-sem-prescricao-dispensador-farmaceutico: Bundle.entry[0].resource.section[0].code: Nenhuma das codificações fornecidas faz parte do conjunto de valores 'Document Section Codes' (http://hl7.org/fhir/ValueSet/doc-section-codes|4.0.1) e é necessária uma codificação deste conjunto de valores) (códigos = http://loinc.org#56445-0)
+ERROR: Practitioner.identifier.type: The reference http://hl7.org/fhir/ValueSet/namingsystem-identifier-system-type could not be resolved
+== input/examples/example-redfm-01-prescricao-na-rnds.json ==
+== input/examples/example-redfm-02-prescricao-fora-rnds.json ==
+== input/examples/example-redfm-03-fornecimento-sem-crf.json ==
+== input/examples/example-redfm-04-fornecedor-e-dispensador.json ==
+== input/examples/example-redfm-05-nao-atendida-com-justificativa.json ==
+== input/examples/example-redfm-06-parcial-com-justificativa.json ==
+== input/examples/example-redfm-07-lote-validade.json ==
+== input/examples/example-redfm-08-author-valido-cnpj.json ==
+== input/examples/example-redfm-09-author-valido-cpf.json ==
+== input/examples/example-redfm-10-ampp-sem-forma-fabricante.json ==
 == input/myig.xml ==
 == input/resources/CodeSystem-BRCBO.xml ==
 == input/resources/CodeSystem-BRCIAP2.xml ==
 == input/resources/CodeSystem-BRCID10.xml ==
 == input/resources/CodeSystem-BRConselhoProfissional.json ==
+== input/resources/CodeSystem-BRJustificativaIndividuoNaoIdentificado.json ==
 == input/resources/CodeSystem-BRObmAMPP.xml ==
 == input/resources/CodeSystem-BRObmANVISA.xml ==
 == input/resources/CodeSystem-BRObmCATMAT.xml ==
@@ -109,15 +98,61 @@ ERROR: Bundle/08-redfm-completo-sem-prescricao-dispensador-farmaceutico: Bundle.
 == input/resources/StructureDefinition-BRCoreOrganization.json ==
 == input/resources/StructureDefinition-BRCorePractitioner.json ==
 == input/resources/StructureDefinition-BRCorePractitionerRole.json ==
-== input/resources/StructureDefinition-RNDSEstabelecimentoSaude.json ==
-== input/resources/StructureDefinition-RNDSLotacaoProfissional.json ==
-== input/resources/StructureDefinition-RNDSMedicamento.json ==
-== input/resources/StructureDefinition-RNDSMedicamentoDispensado.json ==
-== input/resources/StructureDefinition-RNDSMedicamentoDispensadoFornecido.json ==
-== input/resources/StructureDefinition-RNDSPrescricaoMedicamentoDispensado.json ==
-== input/resources/StructureDefinition-RNDSProfissional.json ==
-== input/resources/StructureDefinition-RNDSRegistroEletronicoDispensacaoFornecimentoMedicamento.json ==
-ERROR: Registro Eletrônico de Dispensação ou Fornecimento de Medicamento (REDFM).section.Composition.section.code: Binding http://hl7.org/fhir/ValueSet/document-classcodes is not a subset of binding http://hl7.org/fhir/ValueSet/doc-section-codes because The codes '15508-5,47039-3,26441-6,34775-7,26442-4,34109-9,29752-3,29750-7,11543-6,29751-5,11485-0,27896-0,56445-0,18761-7,27895-2,28619-5,11486-8,34117-2,34133-9,34748-4,18842-5,27898-6,29749-9,56447-6,18748-4,57133-1,27897-8,57017-6,11488-4,57016-8,28570-0,47046-8,18726-0,53576-5,47045-0,47049-2,26436-6,47042-7,28634-4,11506-3,11504-8,34121-4,34122-2,34140-4' are not in the base valueset
+== input/resources/StructureDefinition-BRIndividuoNaoIdentificado-1.0.json ==
+== input/resources/StructureDefinition-BRProblemaDiagnostico.xml ==
+INFORMATION: StructureDefinition.snapshot.element[43]: The slice definition for Condition.subject.extension:unidentifiedPatient.extension has a maximum of 3 but the slices add up to a maximum of 6. Check that this is what is intended
+ERROR: StructureDefinition/BRProblemaDiagnostico: StructureDefinition.snapshot.element[43]: A restrição falhou: eld-2
+== input/resources/StructureDefinition-RNDSDispensacaoMedicamento.xml ==
+INFORMATION: StructureDefinition/RNDSDispensacaoMedicamento: StructureDefinition.snapshot.element[112].mapping[0].map: O valor da cadeia de caracteres contém texto que se assemelha a etiquetas HTML incorporadas. Se este conteúdo for transformado em HTML sem um pós-processamento adequado, pode constituir um risco para a segurança
+WARNING: StructureDefinition/RNDSDispensacaoMedicamento: StructureDefinition.snapshot: O corte 'prescriptionInRNDS' no caminho 'MedicationDispense.authorizingPrescription' não está marcado como 'must-support', o que não é consistente com o elemento que define o corte, em que 'must-support' é verdadeiro
+WARNING: StructureDefinition/RNDSDispensacaoMedicamento: StructureDefinition.snapshot: O corte 'prescriptionOutOfRNDS' no caminho 'MedicationDispense.authorizingPrescription' não está marcado como 'must-support', o que não é consistente com o elemento que define o corte, em que 'must-support' é verdadeiro
+== input/resources/StructureDefinition-RNDSEstabelecimentoSaude.xml ==
+== input/resources/StructureDefinition-RNDSLotacaoProfissional.xml ==
+== input/resources/StructureDefinition-RNDSMedicamento.xml ==
+WARNING: StructureDefinition.differential.element[14]: Cannot check whether the target profile http://www.saude.gov.br/fhir/r4/StructureDefinition/BRPessoaJuridicaProfissionalLiberal-1.0 on Medication.manufacturer is valid constraint on the base because it is not known
+WARNING: StructureDefinition/RNDSMedicamento: StructureDefinition.snapshot.element[23].type[0].targetProfile[0]: Não foi possível encontrar uma definição para o URL canónico 'http://www.saude.gov.br/fhir/r4/StructureDefinition/BRPessoaJuridicaProfissionalLiberal-1.0'
+WARNING: StructureDefinition/RNDSMedicamento: StructureDefinition.differential.element[14].type[0].targetProfile[0]: Não foi possível encontrar uma definição para o URL canónico 'http://www.saude.gov.br/fhir/r4/StructureDefinition/BRPessoaJuridicaProfissionalLiberal-1.0'
+WARNING: StructureDefinition/RNDSMedicamento: StructureDefinition.differential.element[14].type[0].targetProfile[0]: Não foi possível resolver o perfil http://www.saude.gov.br/fhir/r4/StructureDefinition/BRPessoaJuridicaProfissionalLiberal-1.0
+WARNING: StructureDefinition/RNDSMedicamento: StructureDefinition.snapshot.element[23].type[0].targetProfile[0]: Não foi possível resolver o perfil http://www.saude.gov.br/fhir/r4/StructureDefinition/BRPessoaJuridicaProfissionalLiberal-1.0
+== input/resources/StructureDefinition-RNDSPrescricaoMedicamento.xml ==
+WARNING: StructureDefinition.differential.element[27]: Cannot check whether the target profile http://www.saude.gov.br/fhir/r4/StructureDefinition/BRContatoAssistencial-1.0 on MedicationRequest.encounter is valid constraint on the base because it is not known
+WARNING: StructureDefinition/RNDSPrescricaoMedicamento: StructureDefinition.snapshot.element[58].type[0].targetProfile[0]: Não foi possível encontrar uma definição para o URL canónico 'http://www.saude.gov.br/fhir/r4/StructureDefinition/BRContatoAssistencial-1.0'
+WARNING: StructureDefinition/RNDSPrescricaoMedicamento: StructureDefinition.differential.element[27].type[0].targetProfile[0]: Não foi possível encontrar uma definição para o URL canónico 'http://www.saude.gov.br/fhir/r4/StructureDefinition/BRContatoAssistencial-1.0'
+WARNING: StructureDefinition/RNDSPrescricaoMedicamento: StructureDefinition.differential.element[27].type[0].targetProfile[0]: Não foi possível resolver o perfil http://www.saude.gov.br/fhir/r4/StructureDefinition/BRContatoAssistencial-1.0
+WARNING: StructureDefinition/RNDSPrescricaoMedicamento: StructureDefinition.snapshot.element[0].constraint[8]: pem-7: O lado esquerdo é inerentemente uma coleção, pelo que a expressão 'MedicationRequest.supportingInformation.identifier.value != MedicationRequest.subject.identifier.value' pode falhar ou devolver falso se houver mais do que um item no conteúdo que está a ser avaliado
+ERROR: StructureDefinition/RNDSPrescricaoMedicamento: StructureDefinition.snapshot.element[35]: Este elemento tem um Binding, mas os tipos [Reference] não tornam este tipo de restrição relevante
+ERROR: StructureDefinition/RNDSPrescricaoMedicamento: StructureDefinition.snapshot.element[35].binding: O elemento MedicationRequest.medication[x] tem uma ligação, mas não existem tipos ligáveis [Reference]
+WARNING: StructureDefinition/RNDSPrescricaoMedicamento: StructureDefinition.snapshot.element[58].type[0].targetProfile[0]: Não foi possível resolver o perfil http://www.saude.gov.br/fhir/r4/StructureDefinition/BRContatoAssistencial-1.0
+WARNING: StructureDefinition/RNDSPrescricaoMedicamento: StructureDefinition.snapshot: O corte 'medicationReference' no caminho 'MedicationRequest.medication[x]' não está marcado como 'must-support', o que não é consistente com o elemento que define o corte, em que 'must-support' é verdadeiro
+WARNING: StructureDefinition/RNDSPrescricaoMedicamento: StructureDefinition.snapshot: O corte 'responsibleForThePatient' no caminho 'MedicationRequest.supportingInformation' não está marcado como 'must-support', o que não é consistente com o elemento que define o corte, em que 'must-support' é verdadeiro
+== input/resources/StructureDefinition-RNDSProfissional.xml ==
+ERROR: StructureDefinition/RNDSProfissional: StructureDefinition.snapshot.element[14].binding.valueSet: Não foi possível encontrar uma definição para o URL canónico 'http://hl7.org/fhir/ValueSet/namingsystem-identifier-system-type'
+ERROR: StructureDefinition/RNDSProfissional: StructureDefinition.snapshot.element[40].binding.valueSet: Não foi possível encontrar uma definição para o URL canónico 'http://hl7.org/fhir/ValueSet/namingsystem-identifier-system-type'
+ERROR: StructureDefinition/RNDSProfissional: StructureDefinition.snapshot.element[66].binding.valueSet: Não foi possível encontrar uma definição para o URL canónico 'http://hl7.org/fhir/ValueSet/namingsystem-identifier-system-type'
+ERROR: StructureDefinition/RNDSProfissional: StructureDefinition.snapshot.element[92].binding.valueSet: Não foi possível encontrar uma definição para o URL canónico 'http://hl7.org/fhir/ValueSet/namingsystem-identifier-system-type'
+ERROR: StructureDefinition/RNDSProfissional: StructureDefinition.snapshot.element[118].binding.valueSet: Não foi possível encontrar uma definição para o URL canónico 'http://hl7.org/fhir/ValueSet/namingsystem-identifier-system-type'
+ERROR: StructureDefinition/RNDSProfissional: StructureDefinition.snapshot.element[138].binding.valueSet: Não foi possível encontrar uma definição para o URL canónico 'http://hl7.org/fhir/ValueSet/namingsystem-identifier-system-type'
+ERROR: StructureDefinition/RNDSProfissional: StructureDefinition.snapshot.element[164].binding.valueSet: Não foi possível encontrar uma definição para o URL canónico 'http://hl7.org/fhir/ValueSet/namingsystem-identifier-system-type'
+ERROR: StructureDefinition/RNDSProfissional: StructureDefinition.snapshot.element[190].binding.valueSet: Não foi possível encontrar uma definição para o URL canónico 'http://hl7.org/fhir/ValueSet/namingsystem-identifier-system-type'
+ERROR: StructureDefinition/RNDSProfissional: StructureDefinition.snapshot.element[216].binding.valueSet: Não foi possível encontrar uma definição para o URL canónico 'http://hl7.org/fhir/ValueSet/namingsystem-identifier-system-type'
+ERROR: StructureDefinition/RNDSProfissional: StructureDefinition.differential.element[11].binding.valueSet: Não foi possível encontrar uma definição para o URL canónico 'http://hl7.org/fhir/ValueSet/namingsystem-identifier-system-type'
+ERROR: StructureDefinition/RNDSProfissional: StructureDefinition.differential.element[26].binding.valueSet: Não foi possível encontrar uma definição para o URL canónico 'http://hl7.org/fhir/ValueSet/namingsystem-identifier-system-type'
+ERROR: StructureDefinition/RNDSProfissional: StructureDefinition.differential.element[41].binding.valueSet: Não foi possível encontrar uma definição para o URL canónico 'http://hl7.org/fhir/ValueSet/namingsystem-identifier-system-type'
+ERROR: StructureDefinition/RNDSProfissional: StructureDefinition.differential.element[56].binding.valueSet: Não foi possível encontrar uma definição para o URL canónico 'http://hl7.org/fhir/ValueSet/namingsystem-identifier-system-type'
+ERROR: StructureDefinition/RNDSProfissional: StructureDefinition.differential.element[70].binding.valueSet: Não foi possível encontrar uma definição para o URL canónico 'http://hl7.org/fhir/ValueSet/namingsystem-identifier-system-type'
+ERROR: StructureDefinition/RNDSProfissional: StructureDefinition.differential.element[78].binding.valueSet: Não foi possível encontrar uma definição para o URL canónico 'http://hl7.org/fhir/ValueSet/namingsystem-identifier-system-type'
+ERROR: StructureDefinition/RNDSProfissional: StructureDefinition.differential.element[93].binding.valueSet: Não foi possível encontrar uma definição para o URL canónico 'http://hl7.org/fhir/ValueSet/namingsystem-identifier-system-type'
+ERROR: StructureDefinition/RNDSProfissional: StructureDefinition.differential.element[108].binding.valueSet: Não foi possível encontrar uma definição para o URL canónico 'http://hl7.org/fhir/ValueSet/namingsystem-identifier-system-type'
+ERROR: StructureDefinition/RNDSProfissional: StructureDefinition.differential.element[125].binding.valueSet: Não foi possível encontrar uma definição para o URL canónico 'http://hl7.org/fhir/ValueSet/namingsystem-identifier-system-type'
+== input/resources/StructureDefinition-RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos.xml ==
+WARNING: StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos: StructureDefinition.snapshot.element[0].constraint[6]: ident-2: O lado esquerdo é inerentemente uma coleção, pelo que a expressão 'subject.identifier.value = %context.subject.identifier.value' pode falhar ou devolver falso se houver mais do que um item no conteúdo que está a ser avaliado
+WARNING: StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos: StructureDefinition.snapshot.element[0].constraint[7]: ident-3: O lado esquerdo é inerentemente uma coleção, pelo que a expressão 'subject.identifier.value = %context.subject.identifier.value' pode falhar ou devolver falso se houver mais do que um item no conteúdo que está a ser avaliado
+WARNING: StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos: StructureDefinition.snapshot: O corte 'dispensedMedications' no caminho 'Composition.section' não está marcado como 'must-support', o que não é consistente com o elemento que define o corte, em que 'must-support' é verdadeiro
+WARNING: StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos: StructureDefinition.snapshot: O corte 'prescriptionInformation' no caminho 'Composition.section' não está marcado como 'must-support', o que não é consistente com o elemento que define o corte, em que 'must-support' é verdadeiro
+WARNING: StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos: StructureDefinition.snapshot: O corte 'prescriptionReason' no caminho 'Composition.section.section' não está marcado como 'must-support', o que não é consistente com o elemento que define o corte, em que 'must-support' é verdadeiro
+WARNING: StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos: StructureDefinition.snapshot: O corte 'prescriptionReason' no caminho 'Composition.section.section' tem o tipo 'BackboneElement', o que não é consistente com o elemento que define o corte, que tem o(s) tipo(s) ''
+WARNING: StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos: StructureDefinition.snapshot: O corte 'prescriptionMedications' no caminho 'Composition.section.section' não está marcado como 'must-support', o que não é consistente com o elemento que define o corte, em que 'must-support' é verdadeiro
+WARNING: StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos: StructureDefinition.snapshot: O corte 'prescriptionMedications' no caminho 'Composition.section.section' tem o tipo 'BackboneElement', o que não é consistente com o elemento que define o corte, que tem o(s) tipo(s) ''
 == input/resources/StructureDefinition-br-core-healthcareservice.json ==
 == input/resources/StructureDefinition-br-core-location.json ==
 == input/resources/StructureDefinition-br-core-relatedperson.json ==
@@ -125,11 +160,51 @@ ERROR: Registro Eletrônico de Dispensação ou Fornecimento de Medicamento (RED
 == input/resources/ValueSet-BRCRF.json ==
 == input/resources/ValueSet-BRCRM.json ==
 == input/resources/ValueSet-BRCRO.json ==
+== input/resources/ValueSet-BRCategoriaCondicao.json ==
+== input/resources/ValueSet-BREstadoDocumento-1.0.json ==
+== input/resources/ValueSet-BREstadoResolucaoDiagnosticoProblema-1.0.json ==
+== input/resources/ValueSet-BRJustificativaIndividuoNaoIdentificado-1.0.json ==
 == input/resources/ValueSet-BROcupacao-1.0.xml ==
 == input/resources/ValueSet-BROutrosProfissionais.json ==
 == input/resources/ValueSet-BRProblemaDiagnostico.xml ==
+== input/resources/ValueSet-BRSexo-1.0.json ==
 == input/resources/ValueSet-BRTerminologiaMedicamento.xml ==
 == input/resources/ValueSet-BRTipoDispensacaoRealizada.json ==
 == input/resources/ValueSet-BRTipoDocumento-1.0.xml ==
 == input/resources/ValueSet-BRUnidadeMedidaMedicamento.xml ==
 == input/resources/ValueSet-BRViaAdministracao-1.0.xml ==
+== input/resources/ValueSet-RNDSUnidadeMedida.xml ==
+INFORMATION: ValueSet/RNDSUnidadeMedida: ValueSet.compose.include[1].concept[1]: Wrong Display Name 'percent / 100' for http://unitsofmeasure.org#%/100. Valid display is one of 2 choices: '%/100' (en) or '(percent) / 100' (en) (for the language(s) 'en'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
+INFORMATION: ValueSet/RNDSUnidadeMedida: ValueSet.compose.include[1].concept[4]: Wrong Display Name 'per 2 hour' for http://unitsofmeasure.org#/(2.h). Valid display is one of 2 choices: '/(2.h)' (en) or ' / 2 * (hour)' (en) (for the language(s) 'en'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
+INFORMATION: ValueSet/RNDSUnidadeMedida: ValueSet.compose.include[1].concept[8]: Wrong Display Name 'per 10 thousand' for http://unitsofmeasure.org#/10*4. Valid display is one of 2 choices: '/10*4' (en) or ' / (the number ten for arbitrary powers ^ 4)' (en) (for the language(s) 'en'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
+INFORMATION: ValueSet/RNDSUnidadeMedida: ValueSet.compose.include[1].concept[12]: Wrong Display Name 'per 100 gram' for http://unitsofmeasure.org#/100.g. Valid display is one of 2 choices: '/100.g' (en) or ' / 100 * (gram)' (en) (for the language(s) 'en'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
+INFORMATION: ValueSet/RNDSUnidadeMedida: ValueSet.compose.include[1].concept[16]: Wrong Display Name 'per hpf' for http://unitsofmeasure.org#/[HPF]. Valid display is one of 2 choices: '/[HPF]' (en) or ' / (high power field)' (en) (for the language(s) 'en'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
+INFORMATION: ValueSet/RNDSUnidadeMedida: ValueSet.compose.include[1].concept[19]: Wrong Display Name 'per LPF' for http://unitsofmeasure.org#/[LPF]. Valid display is one of 2 choices: '/[LPF]' (en) or ' / (low power field)' (en) (for the language(s) 'en'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
+INFORMATION: ValueSet/RNDSUnidadeMedida: ValueSet.compose.include[1].concept[34]: Wrong Display Name 'per minute per thousand' for http://unitsofmeasure.org#/min/10*3. Valid display is one of 2 choices: '/min/10*3' (en) or ' / (minute) / (the number ten for arbitrary powers ^ 3)' (en) (for the language(s) 'en'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
+INFORMATION: ValueSet/RNDSUnidadeMedida: ValueSet.compose.include[1].concept[48]: Wrong Display Name 'the number ten for arbitrary powers ^ -6' for http://unitsofmeasure.org#10*-6. Valid display is one of 2 choices: '10*-6' (en) or '(the number ten for arbitrary powers ^ -6)' (en) (for the language(s) 'en'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
+INFORMATION: ValueSet/RNDSUnidadeMedida: ValueSet.compose.include[1].concept[146]: Wrong Display Name 'enzyme unit per 10 gram' for http://unitsofmeasure.org#U/(10.g). Valid display is one of 2 choices: 'U/(10.g)' (en) or '(Unit) / 10 * (gram)' (en) (for the language(s) 'en'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
+INFORMATION: ValueSet/RNDSUnidadeMedida: ValueSet.compose.include[1].concept[162]: Wrong Display Name 'enzyme unit per kilogram' for http://unitsofmeasure.org#U/kg. Valid display is one of 2 choices: 'U/kg' (en) or '(Unit) / (kilogram)' (en) (for the language(s) 'en'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
+INFORMATION: ValueSet/RNDSUnidadeMedida: ValueSet.compose.include[1].concept[166]: Wrong Display Name 'enzyme unit per millimole' for http://unitsofmeasure.org#U/mmol. Valid display is one of 2 choices: 'U/mmol' (en) or '(Unit) / (millimole)' (en) (for the language(s) 'en'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
+INFORMATION: ValueSet/RNDSUnidadeMedida: ValueSet.compose.include[1].concept[201]: Wrong Display Name 'international unit per billion' for http://unitsofmeasure.org#[IU]/10*9. Valid display is one of 2 choices: '[IU]/10*9' (en) or '(international unit) / (the number ten for arbitrary powers ^ 9)' (en) (for the language(s) 'en'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
+INFORMATION: ValueSet/RNDSUnidadeMedida: ValueSet.compose.include[1].concept[255]: Wrong Display Name 'drop / HPF' for http://unitsofmeasure.org#[drp]/[HPF]. Valid display is one of 2 choices: '[drp]/[HPF]' (en) or '(drop) / (high power field)' (en) (for the language(s) 'en'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
+INFORMATION: ValueSet/RNDSUnidadeMedida: ValueSet.compose.include[1].concept[304]: Wrong Display Name 'HOMEOPATHIC POTENCY OF CENTESIMAL KORSAKOVIAN SERIES' for http://unitsofmeasure.org#[kp_C]. Valid display is one of 2 choices: '[kp_C]' (en) or '(homeopathic potency of centesimal korsakovian series)' (en) (for the language(s) 'en'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
+INFORMATION: ValueSet/RNDSUnidadeMedida: ValueSet.compose.include[1].concept[349]: Wrong Display Name 'part per trillion' for http://unitsofmeasure.org#[pptr]. Valid display is one of 2 choices: '[pptr]' (en) or '(parts per trillion)' (en) (for the language(s) 'en'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
+INFORMATION: ValueSet/RNDSUnidadeMedida: ValueSet.compose.include[1].concept[386]: Wrong Display Name 'attogram' for http://unitsofmeasure.org#ag. Valid display is one of 2 choices: 'ag' (en) or '(attogram)' (en) (for the language(s) 'en'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
+INFORMATION: ValueSet/RNDSUnidadeMedida: ValueSet.compose.include[1].concept[444]: Wrong Display Name 'femtomole per milligram' for http://unitsofmeasure.org#fmol/mg. Valid display is one of 2 choices: 'fmol/mg' (en) or '(femtomole) / (milligram)' (en) (for the language(s) 'en'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
+INFORMATION: ValueSet/RNDSUnidadeMedida: ValueSet.compose.include[1].concept[553]: Wrong Display Name 'milliliter per minute per 1.73 square meter' for http://unitsofmeasure.org#mL/min/1.73.m2. Valid display is one of 2 choices: 'mL/min/1.73.m2' (en) or '(milliliter) / (minute) / 1 * 73 * (meter ^ 2)' (en) (for the language(s) 'en'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
+INFORMATION: ValueSet/RNDSUnidadeMedida: ValueSet.compose.include[1].concept[566]: Wrong Display Name 'millienzyme Unit per millimole' for http://unitsofmeasure.org#mU/mmol. Valid display is one of 2 choices: 'mU/mmol' (en) or '(milliUnit) / (millimole)' (en) (for the language(s) 'en'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
+INFORMATION: ValueSet/RNDSUnidadeMedida: ValueSet.compose.include[1].concept[608]: Wrong Display Name 'milligram per day per 1.73 square meter' for http://unitsofmeasure.org#mg/d/1.73.m2. Valid display is one of 2 choices: 'mg/d/1.73.m2' (en) or '(milligram) / (day) / 1 * 73 * (meter ^ 2)' (en) (for the language(s) 'en'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
+INFORMATION: ValueSet/RNDSUnidadeMedida: ValueSet.compose.include[1].concept[649]: Wrong Display Name 'millimole per hour per milligram' for http://unitsofmeasure.org#mmol/h/mg. Valid display is one of 2 choices: 'mmol/h/mg' (en) or '(millimole) / (hour) / (milligram)' (en) (for the language(s) 'en'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
+INFORMATION: ValueSet/RNDSUnidadeMedida: ValueSet.compose.include[1].concept[681]: Wrong Display Name 'nanoenzyme unit' for http://unitsofmeasure.org#nU. Valid display is one of 2 choices: 'nU' (en) or '(nanoUnit)' (en) (for the language(s) 'en'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
+INFORMATION: ValueSet/RNDSUnidadeMedida: ValueSet.compose.include[1].concept[702]: Wrong Display Name 'nanogram per milliliter' for http://unitsofmeasure.org#ng/mL. Valid display is one of 2 choices: 'ng/mL' (en) or '(nanogram) / (milliliter)' (en) (for the language(s) 'en'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
+INFORMATION: ValueSet/RNDSUnidadeMedida: ValueSet.compose.include[1].concept[714]: Wrong Display Name 'nanomole per liter per millimole' for http://unitsofmeasure.org#nmol/L/mmol. Valid display is one of 2 choices: 'nmol/L/mmol' (en) or '(nanomole) / (liter) / (millimole)' (en) (for the language(s) 'en'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
+INFORMATION: ValueSet/RNDSUnidadeMedida: ValueSet.compose.include[1].concept[721]: Wrong Display Name 'nanomole per hour per milligram' for http://unitsofmeasure.org#nmol/h/mg. Valid display is one of 2 choices: 'nmol/h/mg' (en) or '(nanomole) / (hour) / (milligram)' (en) (for the language(s) 'en'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
+INFORMATION: ValueSet/RNDSUnidadeMedida: ValueSet.compose.include[1].concept[722]: Wrong Display Name 'nanomole per meter per milligram' for http://unitsofmeasure.org#nmol/m/mg. Valid display is one of 2 choices: 'nmol/m/mg' (en) or '(nanomole) / (meter) / (milligram)' (en) (for the language(s) 'en'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
+INFORMATION: ValueSet/RNDSUnidadeMedida: ValueSet.compose.include[1].concept[729]: Wrong Display Name 'nanomole per minute per million' for http://unitsofmeasure.org#nmol/min/10*6. Valid display is one of 2 choices: 'nmol/min/10*6' (en) or '(nanomole) / (minute) / (the number ten for arbitrary powers ^ 6)' (en) (for the language(s) 'en'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
+INFORMATION: ValueSet/RNDSUnidadeMedida: ValueSet.compose.include[1].concept[731]: Wrong Display Name 'nanomole per minute per milligram' for http://unitsofmeasure.org#nmol/min/mg. Valid display is one of 2 choices: 'nmol/min/mg' (en) or '(nanomole) / (minute) / (milligram)' (en) (for the language(s) 'en'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
+INFORMATION: ValueSet/RNDSUnidadeMedida: ValueSet.compose.include[1].concept[761]: Wrong Display Name 'picomole per hour per milligram' for http://unitsofmeasure.org#pmol/h/mg. Valid display is one of 2 choices: 'pmol/h/mg' (en) or '(picomole) / (hour) / (milligram)' (en) (for the language(s) 'en'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
+INFORMATION: ValueSet/RNDSUnidadeMedida: ValueSet.compose.include[1].concept[763]: Wrong Display Name 'picomole per milligram' for http://unitsofmeasure.org#pmol/mg. Valid display is one of 2 choices: 'pmol/mg' (en) or '(picomole) / (milligram)' (en) (for the language(s) 'en'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
+INFORMATION: ValueSet/RNDSUnidadeMedida: ValueSet.compose.include[1].concept[765]: Wrong Display Name 'picomole per minute per milligram' for http://unitsofmeasure.org#pmol/min/mg. Valid display is one of 2 choices: 'pmol/min/mg' (en) or '(picomole) / (minute) / (milligram)' (en) (for the language(s) 'en'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
+INFORMATION: ValueSet/RNDSUnidadeMedida: ValueSet.compose.include[1].concept[834]: Wrong Display Name 'micromole per hour per milligram' for http://unitsofmeasure.org#umol/h/mg. Valid display is one of 2 choices: 'umol/h/mg' (en) or '(micromole) / (hour) / (milligram)' (en) (for the language(s) 'en'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
+WARNING: ValueSet/RNDSUnidadeMedida: ValueSet: Os conjuntos de valores publicados DEVERÃO estar em conformidade com o perfil ShareableValueSet, que diz que o elemento ValueSet.title é obrigatório, mas não está presente
+WARNING: ValueSet.where(id = 'RNDSUnidadeMedida'): Error from https://tx.fhir.org/r4: Error: A definition for CodeSystem 'http://www.saude.gov.br/fhir/r4/CodeSystem/BRUnidadeMedida' version '*' could not be found, so the value set cannot be expanded. Valid versions: 1.0.0-release

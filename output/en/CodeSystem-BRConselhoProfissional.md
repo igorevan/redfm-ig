@@ -7,11 +7,11 @@ Esse CodeSystem inclui os conselhos profissionais de saúde do Brasil, conforme 
 
 This Code system is referenced in the definition of the following value sets:
 
-* [BRCOREN](ValueSet-BRCOREN.md)
-* [BRCRF](ValueSet-BRCRF.md)
-* [BRCRM](ValueSet-BRCRM.md)
-* [BRCRO](ValueSet-BRCRO.md)
-* [BROutrosProfissionais](ValueSet-BROutrosProfissionais.md)
+* [Conselhos regionais de Enfermagem do Brasil](ValueSet-BRCOREN.md)
+* [Conselhos regionais de Farmácia do Brasil](ValueSet-BRCRF.md)
+* [Conselhos regionais de Medicina do Brasil](ValueSet-BRCRM.md)
+* [Conselhos regionais de Odontologia do Brasil](ValueSet-BRCRO.md)
+* [Conselhos regionais de outros profissionais da saúde do Brasil](ValueSet-BROutrosProfissionais.md)
 
 -------
 
@@ -39,7 +39,7 @@ This Code system is referenced in the definition of the following value sets:
     "_valueInteger" : {
       "extension" : [{
         "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
-        "valueCanonical" : "https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0/ImplementationGuide/br.gov.saude.redfm.fhir"
+        "valueCanonical" : "https://fhir.saude.gov.br/redfm/ImplementationGuide/br.gov.saude.redfm.fhir"
       }]
     }
   },
@@ -49,7 +49,7 @@ This Code system is referenced in the definition of the following value sets:
     "_valueCode" : {
       "extension" : [{
         "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
-        "valueCanonical" : "https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0/ImplementationGuide/br.gov.saude.redfm.fhir"
+        "valueCanonical" : "https://fhir.saude.gov.br/redfm/ImplementationGuide/br.gov.saude.redfm.fhir"
       }]
     }
   },

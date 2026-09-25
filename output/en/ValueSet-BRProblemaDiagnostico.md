@@ -7,7 +7,8 @@ Código Internacional de Atenção Primária (CIAP2) e Classificação Internaci
 
  **References** 
 
-* [Prescrição Eletrônica de Medicamento (Contida na Dispensação)](StructureDefinition-RNDSPrescricaoMedicamentoDispensado.md)
+* [ProblemaDiagnóstico](StructureDefinition-BRProblemaDiagnostico.md)
+* [Prescrição de Medicamento - RNDS](StructureDefinition-RNDSPrescricaoMedicamento.md)
 
 ### Logical Definition (CLD)
 
@@ -38,7 +39,7 @@ Código Internacional de Atenção Primária (CIAP2) e Classificação Internaci
     "_valueInteger" : {
       "extension" : [{
         "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
-        "valueCanonical" : "https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0/ImplementationGuide/br.gov.saude.redfm.fhir"
+        "valueCanonical" : "https://fhir.saude.gov.br/redfm/ImplementationGuide/br.gov.saude.redfm.fhir"
       }]
     }
   },
@@ -48,7 +49,7 @@ Código Internacional de Atenção Primária (CIAP2) e Classificação Internaci
     "_valueCode" : {
       "extension" : [{
         "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
-        "valueCanonical" : "https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0/ImplementationGuide/br.gov.saude.redfm.fhir"
+        "valueCanonical" : "https://fhir.saude.gov.br/redfm/ImplementationGuide/br.gov.saude.redfm.fhir"
       }]
     }
   },

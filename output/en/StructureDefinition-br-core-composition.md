@@ -7,7 +7,6 @@ Este perfil representa as restrições aplicadas ao recurso br-core-composition
 
 **Usos:**
 
-* Derivado deste Perfil: [Registro Eletrônico de Dispensação ou Fornecimento de Medicamento (REDFM)](StructureDefinition-RNDSRegistroEletronicoDispensacaoFornecimentoMedicamento.md)
 * Refere a este Perfil: [BR Core Composition](StructureDefinition-br-core-composition.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/br.gov.saude.redfm.fhir|current/StructureDefinition/StructureDefinition-br-core-composition.json)
@@ -39,7 +38,7 @@ Other representations of profile: [CSV](../StructureDefinition-br-core-compositi
     "_valueInteger" : {
       "extension" : [{
         "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
-        "valueCanonical" : "https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0/ImplementationGuide/br.gov.saude.redfm.fhir"
+        "valueCanonical" : "https://fhir.saude.gov.br/redfm/ImplementationGuide/br.gov.saude.redfm.fhir"
       }]
     }
   },
@@ -49,7 +48,7 @@ Other representations of profile: [CSV](../StructureDefinition-br-core-compositi
     "_valueCode" : {
       "extension" : [{
         "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
-        "valueCanonical" : "https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0/ImplementationGuide/br.gov.saude.redfm.fhir"
+        "valueCanonical" : "https://fhir.saude.gov.br/redfm/ImplementationGuide/br.gov.saude.redfm.fhir"
       }]
     }
   },
@@ -62,7 +61,7 @@ Other representations of profile: [CSV](../StructureDefinition-br-core-compositi
   "name" : "BRCoreComposition",
   "title" : "BR Core Composition",
   "status" : "active",
-  "date" : "2026-06-30T10:02:10-03:00",
+  "date" : "2026-09-25T17:16:20-03:00",
   "publisher" : "Ministério da Saúde do Brasil",
   "contact" : [{
     "name" : "Ministério da Saúde do Brasil",

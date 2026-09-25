@@ -18,29 +18,88 @@
   <p>O diagrama abaixo apresenta o pacote <i>Bundle</i> no qual é condensado o REDFM, referenciando
     todos os dados relevantes para caracterizar um Registro Eletrônico de Dispensação ou
     Fornecimento de Medicamento.</p>
+
   <p>
     <b>Figura 1 - Diagrama do <i>Bundle</i> do REDFM</b>
   </p>
-
   <div>
-
-    <img height="650" src="redfmMC.png" alt="Diagrama do Bundle do REDFM" />
-
+    <img height="500" src="redfmMC.png" alt="Diagrama do Bundle do REDFM" />
   </div>
 
   <a name="recursos"> </a>
   <h3>Recursos FHIR</h3>
+  <p> O modelo computacional do REDFM é definido pelo perfil <a
+      href="StructureDefinition-RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos.html">
+      RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos</a> [<code>Composition</code>] e os
+    demais Recursos FHIR apresentados abaixo.</p>
+
+  <table class="grid">
+    <thead>
+      <tr style="background-color: #538ce9">
+        <th>Resource</th>
+        <th>Profile</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Composition</td>
+        <td>
+          <code><a
+  href="StructureDefinition-RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos.html">RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos</a></code>
+        </td>
+      </tr>
+      <tr>
+        <td>MedicationDispense</td>
+        <td>
+          <code><a
+  href="StructureDefinition-RNDSDispensacaoMedicamento.html">RNDSDispensacaoMedicamento</a></code>
+        </td>
+      </tr>
+      <tr>
+        <td>Medication</td>
+        <td>
+          <code><a
+  href="StructureDefinition-RNDSMedicamento.html">RNDSMedicamento</a></code>
+        </td>
+      </tr>
+      <tr>
+        <td>MedicationRequest</td>
+        <td>
+          <code><a
+  href="StructureDefinition-RNDSPrescricaoMedicamento.html">RNDSPrescricaoMedicamento</a></code>
+        </td>
+      </tr>
+      <tr>
+        <td>Practitioner</td>
+        <td>
+          <code><a href="StructureDefinition-RNDSProfissional.html">RNDSProfissional</a></code>
+        </td>
+      </tr>
+      <tr>
+        <td>PractitionerRole</td>
+        <td>
+          <code><a href="StructureDefinition-RNDSLotacaoProfissional.html">RNDSLotacaoProfissional</a></code>
+        </td>
+      </tr>
+      <tr>
+        <td>Organization</td>
+        <td>
+          <code><a href="StructureDefinition-RNDSEstabelecimentoSaude.html">RNDSEstabelecimentoSaude</a></code>
+        </td>
+      </tr>
+    </tbody>
+  </table>
 
   <p>Perfis dos tipos <i>ValueSet</i> e <i>CodeSystem</i> estão associados a recursos
-    terminológicos. No contexto do REDFM e nos domínios utilizados, foram criados <i>CodeSystems</i> específicos
-    definidos pelo <a
+    terminológicos. No contexto do REDFM e nos domínios utilizados, foram criados <i>CodeSystems</i>
+    específicos definidos pelo <a
       href="https://www.gov.br/saude/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/cgsd">Comitê
       Gestor de Saúde Digital (CGSD)</a>.</p>
 
   <p>Vale destacar que os perfis terminológicos podem passar por atualizações e versionamentos com
     periodicidade específica de cada domínio, por isso é importante acompanhar a disponibilização
-    dessas atualizações no projeto <a href="https://simplifier.net/redenacionaldedadosemsaude">RNDS no Simplifier</a>.
-  </p>
+    dessas atualizações no projeto <a href="https://simplifier.net/redenacionaldedadosemsaude">RNDS
+      no Simplifier</a>. </p>
 
   <p>Note que na estrutura dos perfis há elementos com bindings para <i>ValueSets</i> que apontam
     para <i>CodeSystems</i>. Já no JSON (<code>Bundle</code>), o elemento “<i>system</i>” sempre

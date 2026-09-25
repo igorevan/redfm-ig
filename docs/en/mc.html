@@ -47,8 +47,8 @@
 	  <script type="text/javascript" src="assets/js/prism-cql.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"7"}
-    h3,h4,h5,h6{--heading-prefix:"7"}</style>
+    <style type="text/css">h2{--heading-prefix:"6"}
+    h3,h4,h5,h6{--heading-prefix:"6"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -94,9 +94,9 @@
   <li>
     <a href="abstract.html">Abstract</a>
   </li>
-  <li>
+  <!-- <li>
     <a href="lives.html">Lives</a>
-  </li>
+  </li> -->
   <li>
     <a href="credenciamento.html">Credenciamento</a>
   </li>
@@ -203,7 +203,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Guia de Implementação do Registro Eletrônico de Dispensação ou Fornecimento de Medicamento (REDFM) da RNDS - Compilação de desenvolvimento local (v1.0.0-release) construída pelas ferramentas de compilação FHIR (HL7&reg; FHIR&reg; Standard). Veja o <a href='https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0/history.html'>Diretório de versões publicadas</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Guia de Implementação do Registro Eletrônico de Dispensação ou Fornecimento de Medicamento (REDFM) da RNDS - Compilação de desenvolvimento local (v1.0.0-release) construída pelas ferramentas de compilação FHIR (HL7&reg; FHIR&reg; Standard). Veja o <a href='https://fhir.saude.gov.br/redfm/history.html'>Diretório de versões publicadas</a></p><!--EndReleaseHeader-->
   <h2>Modelo Computacional</h2>
   
   
@@ -245,28 +245,82 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <p>O diagrama abaixo apresenta o pacote <i>Bundle</i> no qual é condensado o REDFM, referenciando
     todos os dados relevantes para caracterizar um Registro Eletrônico de Dispensação ou
     Fornecimento de Medicamento.</p>
+
   <p>
     <b>Figura 1 - Diagrama do <i>Bundle</i> do REDFM</b>
   </p>
-
   <div>
-
-    <img height="650" src="redfmMC.png" alt="Diagrama do Bundle do REDFM"/>
-
+    <img height="500" src="redfmMC.png" alt="Diagrama do Bundle do REDFM"/>
   </div>
 
   <a name="recursos">  </a>
   <h3>Recursos FHIR</h3>
+  <p> O modelo computacional do REDFM é definido pelo perfil <a href="StructureDefinition-RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos.html">
+      RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos</a> [<code>Composition</code>] e os
+    demais Recursos FHIR apresentados abaixo.</p>
+
+  <table class="grid">
+    <thead>
+      <tr style="background-color: #538ce9">
+        <th>Resource</th>
+        <th>Profile</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Composition</td>
+        <td>
+          <code><a href="StructureDefinition-RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos.html">RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos</a></code>
+        </td>
+      </tr>
+      <tr>
+        <td>MedicationDispense</td>
+        <td>
+          <code><a href="StructureDefinition-RNDSDispensacaoMedicamento.html">RNDSDispensacaoMedicamento</a></code>
+        </td>
+      </tr>
+      <tr>
+        <td>Medication</td>
+        <td>
+          <code><a href="StructureDefinition-RNDSMedicamento.html">RNDSMedicamento</a></code>
+        </td>
+      </tr>
+      <tr>
+        <td>MedicationRequest</td>
+        <td>
+          <code><a href="StructureDefinition-RNDSPrescricaoMedicamento.html">RNDSPrescricaoMedicamento</a></code>
+        </td>
+      </tr>
+      <tr>
+        <td>Practitioner</td>
+        <td>
+          <code><a href="StructureDefinition-RNDSProfissional.html">RNDSProfissional</a></code>
+        </td>
+      </tr>
+      <tr>
+        <td>PractitionerRole</td>
+        <td>
+          <code><a href="StructureDefinition-RNDSLotacaoProfissional.html">RNDSLotacaoProfissional</a></code>
+        </td>
+      </tr>
+      <tr>
+        <td>Organization</td>
+        <td>
+          <code><a href="StructureDefinition-RNDSEstabelecimentoSaude.html">RNDSEstabelecimentoSaude</a></code>
+        </td>
+      </tr>
+    </tbody>
+  </table>
 
   <p>Perfis dos tipos <i>ValueSet</i> e <i>CodeSystem</i> estão associados a recursos
-    terminológicos. No contexto do REDFM e nos domínios utilizados, foram criados <i>CodeSystems</i> específicos
-    definidos pelo <a href="https://www.gov.br/saude/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/cgsd">Comitê
+    terminológicos. No contexto do REDFM e nos domínios utilizados, foram criados <i>CodeSystems</i>
+    específicos definidos pelo <a href="https://www.gov.br/saude/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/cgsd">Comitê
       Gestor de Saúde Digital (CGSD)</a>.</p>
 
   <p>Vale destacar que os perfis terminológicos podem passar por atualizações e versionamentos com
     periodicidade específica de cada domínio, por isso é importante acompanhar a disponibilização
-    dessas atualizações no projeto <a href="https://simplifier.net/redenacionaldedadosemsaude">RNDS no Simplifier</a>.
-  </p>
+    dessas atualizações no projeto <a href="https://simplifier.net/redenacionaldedadosemsaude">RNDS
+      no Simplifier</a>. </p>
 
   <p>Note que na estrutura dos perfis há elementos com bindings para <i>ValueSets</i> que apontam
     para <i>CodeSystems</i>. Já no JSON (<code>Bundle</code>), o elemento “<i>system</i>” sempre
@@ -322,8 +376,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
           IG © 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.saude.gov.br">Ministério da Saúde do Brasil</a>.  
           Package br.gov.saude.redfm.fhir#1.0.0-release based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Generated 
-  <span title="2026-06-30 10:02:00 -0300">
-    2026-06-30
+  <span title="2026-09-25 17:16:00 -0300">
+    2026-09-25
   </span>
 
           <br/>

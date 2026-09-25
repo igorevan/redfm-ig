@@ -4,7 +4,7 @@
   <id value="br.gov.saude.redfm.fhir"/>
   <language value="en"/>
   <text>
-    <status value="generated"/><div xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en"><p class="res-header-id"><b>Narrativa gerada: ImplementationGuide br.gov.saude.redfm.fhir</b></p><a name="br.gov.saude.redfm.fhir"> </a><a name="hcbr.gov.saude.redfm.fhir"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Língua: en</p></div><h2>REDFMRNDSIG</h2><p>O URL oficial para este guia de implementação é: </p><pre>https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0/ImplementationGuide/br.gov.saude.redfm.fhir</pre><div><p>Guia de Implementação da Rede Nacional de Dados em Saúde (RNDS)</p>
+    <status value="generated"/><div xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en"><p class="res-header-id"><b>Narrativa gerada: ImplementationGuide br.gov.saude.redfm.fhir</b></p><a name="br.gov.saude.redfm.fhir"> </a><a name="hcbr.gov.saude.redfm.fhir"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Língua: en</p></div><h2>REDFMRNDSIG</h2><p>O URL oficial para este guia de implementação é: </p><pre>https://fhir.saude.gov.br/redfm/ImplementationGuide/br.gov.saude.redfm.fhir</pre><div><p>Guia de Implementação da Rede Nacional de Dados em Saúde (RNDS)</p>
 </div></div>
   </text>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
@@ -19,13 +19,13 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
     <valueCode value="4.0.1"/>
   </extension>
-  <url value="https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0/ImplementationGuide/br.gov.saude.redfm.fhir"/>
+  <url value="https://fhir.saude.gov.br/redfm/ImplementationGuide/br.gov.saude.redfm.fhir"/>
   <version value="1.0.0-release"/>
   <name value="REDFMRNDSIG"/>
   <title value="Guia de Implementação do Registro Eletrônico de Dispensação ou Fornecimento de Medicamento (REDFM) da RNDS"/>
   <status value="active"/>
   <experimental value="false"/>
-  <date value="2026-06-30T10:02:10-03:00"/>
+  <date value="2026-09-25T17:16:20-03:00"/>
   <publisher value="Ministério da Saúde do Brasil"/>
   <contact>
     <name value="Ministério da Saúde do Brasil"/>
@@ -54,7 +54,7 @@
     </extension>
     <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
     <packageId value="hl7.terminology.r4"/>
-    <version value="7.2.0"/>
+    <version value="7.4.0"/>
   </dependsOn>
   <dependsOn id="hl7ext">
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
@@ -227,7 +227,7 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueString value="path-liquid"/>
+        <valueString value="path-liquid-template"/>
       </extension>
       <extension url="value">
         <valueString value="template/liquid"/>
@@ -235,7 +235,7 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueString value="path-liquid"/>
+        <valueString value="path-liquid-template"/>
       </extension>
       <extension url="value">
         <valueString value="input/liquid"/>
@@ -278,7 +278,7 @@
         <valueString value="path-history"/>
       </extension>
       <extension url="value">
-        <valueString value="https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0/history.html"/>
+        <valueString value="https://fhir.saude.gov.br/redfm/history.html"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -574,7 +574,7 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueCode value="path-liquid"/>
+        <valueCode value="path-liquid-template"/>
       </extension>
       <extension url="value">
         <valueString value="template/liquid"/>
@@ -582,7 +582,7 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueCode value="path-liquid"/>
+        <valueCode value="path-liquid-template"/>
       </extension>
       <extension url="value">
         <valueString value="input/liquid"/>
@@ -625,7 +625,7 @@
         <valueCode value="path-history"/>
       </extension>
       <extension url="value">
-        <valueString value="https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0/history.html"/>
+        <valueString value="https://fhir.saude.gov.br/redfm/history.html"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -761,98 +761,120 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamento"/>
+        <reference value="StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos"/>
       </reference>
       <name value="Registro Eletrônico de Dispensação ou Fornecimento de Medicamento (REDFM)"/>
-      <description value="Registro Eletrônico de Dispensação ou Fornecimento de Medicamento (REDFM)"/>
+      <description value="Documento público que coleta os dados das prescrições de medicamentos realizadas em qualquer estabelecimento de saúde do país, público ou privado."/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Bundle"/>
       </extension>
       <reference>
-        <reference value="Bundle/01-redfm-completo-com-prescricao-dispensador-farmaceutico"/>
+        <reference value="Bundle/example-redfm-01-prescricao-na-rnds"/>
       </reference>
-      <name value="Bundle de exemplo do REDFM (1)"/>
-      <description value="Bundle de exemplo do Registro Eletrônico de Dispensação ou Fornecimento de Medicamento     (REDFM)"/>
-      <exampleCanonical value="http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamento"/>
+      <name value="Bundle 1 de exemplo do REDFM (Prescrição na RNDS)"/>
+      <description value="Bundle de exemplo do REDFM com prescrição realizada na RNDS"/>
+      <exampleCanonical value="http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Bundle"/>
       </extension>
       <reference>
-        <reference value="Bundle/02-redfm-completo-substituicao"/>
+        <reference value="Bundle/example-redfm-02-prescricao-fora-rnds"/>
       </reference>
-      <name value="Bundle de exemplo do REDFM (2)"/>
-      <description value="Bundle de exemplo do Registro Eletrônico de Dispensação ou Fornecimento de Medicamento     (REDFM)"/>
-      <exampleCanonical value="http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamento"/>
+      <name value="Bundle 2 de exemplo do REDFM (Prescrição fora da RNDS)"/>
+      <description value="Bundle de exemplo do REDFM com prescrição realizada fora da RNDS"/>
+      <exampleCanonical value="http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Bundle"/>
       </extension>
       <reference>
-        <reference value="Bundle/03-redfm-completo-com-prescricao-fornecedor-nao-farmaceutico"/>
+        <reference value="Bundle/example-redfm-03-fornecimento-sem-crf"/>
       </reference>
-      <name value="Bundle de exemplo do REDFM (3)"/>
-      <description value="Bundle de exemplo do Registro Eletrônico de Dispensação ou Fornecimento de Medicamento     (REDFM)"/>
-      <exampleCanonical value="http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamento"/>
+      <name value="Bundle 3 de exemplo do REDFM (Fornecimento sem CRF)"/>
+      <description value="Bundle de exemplo do REDFM com fornecimento realizado sem CRF"/>
+      <exampleCanonical value="http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Bundle"/>
       </extension>
       <reference>
-        <reference value="Bundle/04-redfm-parcial-com-prescricao-fornecedor-nao-farmaceutico"/>
+        <reference value="Bundle/example-redfm-04-fornecedor-e-dispensador"/>
       </reference>
-      <name value="Bundle de exemplo do REDFM (4)"/>
-      <description value="Bundle de exemplo do Registro Eletrônico de Dispensação ou Fornecimento de Medicamento     (REDFM)"/>
-      <exampleCanonical value="http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamento"/>
+      <name value="Bundle 4 de exemplo do REDFM (Fornecedor e Dispensador)"/>
+      <description value="Bundle de exemplo do REDFM com fornecedor e dispensador"/>
+      <exampleCanonical value="http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Bundle"/>
       </extension>
       <reference>
-        <reference value="Bundle/05-redfm-nao-dispensado-com-prescricao"/>
+        <reference value="Bundle/example-redfm-05-nao-atendida-com-justificativa"/>
       </reference>
-      <name value="Bundle de exemplo do REDFM (5)"/>
-      <description value="Bundle de exemplo do Registro Eletrônico de Dispensação ou Fornecimento de Medicamento     (REDFM)"/>
-      <exampleCanonical value="http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamento"/>
+      <name value="Bundle 5 de exemplo do REDFM (Não Atendida com Justificativa)"/>
+      <description value="Bundle de exemplo do REDFM não atendido e com justificativa"/>
+      <exampleCanonical value="http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Bundle"/>
       </extension>
       <reference>
-        <reference value="Bundle/06-redfm-nao-dispensado-e-dispensado-com-prescricao-dispensador-farmaceutico"/>
+        <reference value="Bundle/example-redfm-06-parcial-com-justificativa"/>
       </reference>
-      <name value="Bundle de exemplo do REDFM (6)"/>
-      <description value="Bundle de exemplo do Registro Eletrônico de Dispensação ou Fornecimento de Medicamento     (REDFM)"/>
-      <exampleCanonical value="http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamento"/>
+      <name value="Bundle 6 de exemplo do REDFM (Parcial com Justificativa)"/>
+      <description value="Bundle de exemplo do REDFM parcial e com justificativa"/>
+      <exampleCanonical value="http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Bundle"/>
       </extension>
       <reference>
-        <reference value="Bundle/07-redfm-completo-sem-prescricao-fornecedor-nao-farmaceutico"/>
+        <reference value="Bundle/example-redfm-07-lote-validade"/>
       </reference>
-      <name value="Bundle de exemplo do REDFM (7)"/>
-      <description value="Bundle de exemplo do Registro Eletrônico de Dispensação ou Fornecimento de Medicamento     (REDFM)"/>
-      <exampleCanonical value="http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamento"/>
+      <name value="Bundle 7 de exemplo do REDFM (Lote e Validade)"/>
+      <description value="Bundle de exemplo do REDFM com lote e validade"/>
+      <exampleCanonical value="http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Bundle"/>
       </extension>
       <reference>
-        <reference value="Bundle/08-redfm-completo-sem-prescricao-dispensador-farmaceutico"/>
+        <reference value="Bundle/example-redfm-08-author-valido-cnpj"/>
       </reference>
-      <name value="Bundle de exemplo do REDFM (8)"/>
-      <description value="Bundle de exemplo do Registro Eletrônico de Dispensação ou Fornecimento de Medicamento     (REDFM)"/>
-      <exampleCanonical value="http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamento"/>
+      <name value="Bundle 8 de exemplo do REDFM (Author válido - CNPJ)"/>
+      <description value="Bundle de exemplo do REDFM com author válido - CNPJ"/>
+      <exampleCanonical value="http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/example-redfm-09-author-valido-cpf"/>
+      </reference>
+      <name value="Bundle 9 de exemplo do REDFM (Author válido - CPF)"/>
+      <description value="Bundle de exemplo do REDFM com author válido - CPF"/>
+      <exampleCanonical value="http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/example-redfm-10-ampp-sem-forma-fabricante"/>
+      </reference>
+      <name value="Bundle 10 de exemplo do REDFM (AMPP sem forma e com fabricante)"/>
+      <description value="Bundle de exemplo do REDFM com AMPP sem forma e com fabricante"/>
+      <exampleCanonical value="http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -893,6 +915,16 @@
       </reference>
       <name value="Conselhos profissionais de saúde do Brasil"/>
       <description value="Esse CodeSystem inclui os conselhos profissionais de saúde do Brasil, conforme a Resolução CNS 251/1997."/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/BRJustificativaIndividuoNaoIdentificado"/>
+      </reference>
+      <name value="Justificativa da Impossibilidade de Identificação do Indivíduo (CodeSystem)"/>
+      <description value="Classifica as razões pelo qual não foi possível obter os dados de identificação do indivíduo em um contato assistencial. (Port. nº 84/SAS/MS/1997 e Port. nº02/SAS/SGEP/MS/2012)"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1032,7 +1064,37 @@
         <reference value="StructureDefinition/br-core-practitionerrole"/>
       </reference>
       <name value="BR Core PractitionerRole"/>
-      <description value="Este perfil restringe o recurso [PractitionerRole](https://hl7.org/fhir/R4/practitionerrole.html) que representa um conjunto específico de funções/locais/especialidades/serviços que um profissional pode desempenhar em uma organização por um período de tempo."/>
+      <description value="Este perfil restringe o recurso PractitionerRole que representa um conjunto específico de funções/locais/especialidades/serviços que um profissional pode desempenhar em uma organização por um período de tempo."/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/BRIndividuoNaoIdentificado-1.0"/>
+      </reference>
+      <name value="Informações Complementares de Indivíduos Não Identificados"/>
+      <description value="Informações complementares necessárias ao Contato Assistencial na hipótese do indivíduo não poder ser identificado."/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/BRProblemaDiagnostico"/>
+      </reference>
+      <name value="ProblemaDiagnóstico"/>
+      <description value="Problema e/ou diagnóstico atribuído pelo profissional de saúde ao indivíduo no contato assistencial."/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/RNDSDispensacaoMedicamento"/>
+      </reference>
+      <name value="Dispensação ou Fornecimento de Medicamento"/>
+      <description value="Este recurso Indica que um medicamento deve ser ou foi dispensado para uma pessoa/paciente. O recurso inclui a descrição do medicamento (suprimento) fornecido bem como as instruções para a sua administração. A dispensação do medicamento é o resultado de um  pedido de medicamentos feito por um sistema de informações"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1041,8 +1103,8 @@
       <reference>
         <reference value="StructureDefinition/RNDSEstabelecimentoSaude"/>
       </reference>
-      <name value="Estabelecimento de Saúde"/>
-      <description value="Estabelecimento de Saúde"/>
+      <name value="Estabelecimento de Saúde RNDS"/>
+      <description value="Este perfil representa um agrupamento formal ou informal reconhecido de pessoas ou organizações com o propósito de alcançar alguma forma de ação coletiva. Inclui estabelecimentos de saúde, empresas, instituições, corporações, departamentos, grupos comunitários, grupos de práticas de saúde, planos de saúde, empresas fabricantes de produtos medicinais, entre outros."/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1051,8 +1113,8 @@
       <reference>
         <reference value="StructureDefinition/RNDSLotacaoProfissional"/>
       </reference>
-      <name value="Lotação Profissional"/>
-      <description value="Lotação Profissional"/>
+      <name value="RNDSLotacaoProfissional"/>
+      <description value="Este perfil restringe o recurso PractitionerRole que representa um conjunto específico de funções/locais/especialidades/serviços que um profissional pode desempenhar em uma organização por um período de tempo."/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1062,37 +1124,17 @@
         <reference value="StructureDefinition/RNDSMedicamento"/>
       </reference>
       <name value="Medicamento"/>
-      <description value="Medicamento"/>
+      <description value="Este recurso é utilizado principalmente para a identificação e definição de um medicamento para fins de prescrição, dispensação e administração, bem como para fazer declarações sobre o uso de medicamentos."/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/RNDSMedicamentoDispensado"/>
+        <reference value="StructureDefinition/RNDSPrescricaoMedicamento"/>
       </reference>
-      <name value="Medicamento Dispensado"/>
-      <description value="Medicamento Dispensado"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/RNDSMedicamentoDispensadoFornecido"/>
-      </reference>
-      <name value="Dispensação ou Fornecimento Eletrônico de Medicamento"/>
-      <description value="Dispensação ou Fornecimento Eletrônico de Medicamento"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/RNDSPrescricaoMedicamentoDispensado"/>
-      </reference>
-      <name value="Prescrição Eletrônica de Medicamento (Contida na Dispensação)"/>
-      <description value="Dados da prescrição a serem informados durante a dispensação caso o registro não esteja na RNDS."/>
+      <name value="Prescrição de Medicamento - RNDS"/>
+      <description value="Uma ordem ou solicitação para o fornecimento do medicamento e as instruções para sua administração a um paciente. O recurso é denominado &quot;MedicationRequest&quot; em vez de &quot;MedicationPrescription&quot; ou &quot;MedicationOrder&quot; para generalizar o uso em ambientes hospitalares e ambulatoriais, incluindo planos de cuidados, etc., e para harmonizar com os fluxos de trabalho."/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1101,8 +1143,8 @@
       <reference>
         <reference value="StructureDefinition/RNDSProfissional"/>
       </reference>
-      <name value="Profissional"/>
-      <description value="Profissional"/>
+      <name value="Profissional RNDS"/>
+      <description value="O Profissional é uma pessoa que está direta ou indiretamente envolvida na prestação de cuidados de saúde ou serviços relacionados ao paciente."/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1179,6 +1221,46 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
+        <reference value="ValueSet/BRCategoriaCondicao"/>
+      </reference>
+      <name value="Classificação de uma condição"/>
+      <description value="Tradução para o português do brasil da classificação de uma condição"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/BREstadoDocumento-1.0"/>
+      </reference>
+      <name value="Estado do Documento"/>
+      <description value="Classifica o estado do documento que está sendo trafegado."/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/BREstadoResolucaoDiagnosticoProblema-1.0"/>
+      </reference>
+      <name value="Estado da Resolução de Diagnóstico ou Problema"/>
+      <description value="Estado da resolução de um diagnóstico ou problema."/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/BRJustificativaIndividuoNaoIdentificado-1.0"/>
+      </reference>
+      <name value="Justificativa da Impossibilidade de Identificação do Indivíduo (ValueSet)"/>
+      <description value="Classifica as razões pelo qual não foi possível obter os dados de identificação do indivíduo em um contato assistencial. (Port. nº 84/SAS/MS/1997 e Port. nº02/SAS/SGEP/MS/2012)"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
         <reference value="ValueSet/BROcupacao-1.0"/>
       </reference>
       <name value="Classificação Brasileira de Ocupações - CBO (ValueSet)"/>
@@ -1203,6 +1285,16 @@
       </reference>
       <name value="Classificação Internacional de Doenças (Atenção Primária)"/>
       <description value="Código Internacional de Atenção Primária (CIAP2) e Classificação Internacional de Doenças (CID10)"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/BRSexo-1.0"/>
+      </reference>
+      <name value="Sexo"/>
+      <description value="Sexo de um indivíduo."/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1254,6 +1346,16 @@
       <name value="Via de Administração (ValueSet)"/>
       <description value="Via de administração de um imunobiológico."/>
     </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/RNDSUnidadeMedida"/>
+      </reference>
+      <name value="Unidade de Medida RNDS"/>
+      <description value="ValueSet composto por códigos do CodeSystem BRUnidadeMedida e Unidades Comuns do UCUM."/>
+    </resource>
     <page>
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
         <valueCode value="informative"/>
@@ -1284,17 +1386,6 @@
         </extension>
         <nameUrl value="abstract.html"/>
         <title value="Abstract"/>
-        <generation value="html"/>
-      </page>
-      <page>
-        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-          <valueCode value="informative"/>
-        </extension>
-        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="lives.html"/>
-        </extension>
-        <nameUrl value="lives.html"/>
-        <title value="Lives"/>
         <generation value="html"/>
       </page>
       <page>

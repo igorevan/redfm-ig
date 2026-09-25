@@ -3,11 +3,10 @@
 ## Resource Profile: BR Core PractitionerRole 
 
  
-Este perfil restringe o recurso [PractitionerRole](https://hl7.org/fhir/R4/practitionerrole.html) que representa um conjunto específico de funções/locais/especialidades/serviços que um profissional pode desempenhar em uma organização por um período de tempo. 
+Este perfil restringe o recurso PractitionerRole que representa um conjunto específico de funções/locais/especialidades/serviços que um profissional pode desempenhar em uma organização por um período de tempo. 
 
 **Usos:**
 
-* Derivado deste Perfil: [Lotação Profissional](StructureDefinition-RNDSLotacaoProfissional.md)
 * Refere a este Perfil: [BR Core Composition](StructureDefinition-br-core-composition.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/br.gov.saude.redfm.fhir|current/StructureDefinition/StructureDefinition-br-core-practitionerrole.json)
@@ -39,7 +38,7 @@ Other representations of profile: [CSV](../StructureDefinition-br-core-practitio
     "_valueInteger" : {
       "extension" : [{
         "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
-        "valueCanonical" : "https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0/ImplementationGuide/br.gov.saude.redfm.fhir"
+        "valueCanonical" : "https://fhir.saude.gov.br/redfm/ImplementationGuide/br.gov.saude.redfm.fhir"
       }]
     }
   },
@@ -49,7 +48,7 @@ Other representations of profile: [CSV](../StructureDefinition-br-core-practitio
     "_valueCode" : {
       "extension" : [{
         "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
-        "valueCanonical" : "https://fhir.saude.gov.br/fhir/r4/redfm/1.0.0/ImplementationGuide/br.gov.saude.redfm.fhir"
+        "valueCanonical" : "https://fhir.saude.gov.br/redfm/ImplementationGuide/br.gov.saude.redfm.fhir"
       }]
     }
   },
@@ -62,7 +61,7 @@ Other representations of profile: [CSV](../StructureDefinition-br-core-practitio
   "name" : "BRCorePractitionerRole",
   "title" : "BR Core PractitionerRole",
   "status" : "active",
-  "date" : "2026-06-30T10:02:10-03:00",
+  "date" : "2026-09-25T17:16:20-03:00",
   "publisher" : "Ministério da Saúde do Brasil",
   "contact" : [{
     "name" : "Ministério da Saúde do Brasil",
@@ -75,7 +74,7 @@ Other representations of profile: [CSV](../StructureDefinition-br-core-practitio
       "value" : "cgiis.datasus@saude.gov.br"
     }]
   }],
-  "description" : "Este perfil restringe o recurso [PractitionerRole](https://hl7.org/fhir/R4/practitionerrole.html) que representa um conjunto específico de funções/locais/especialidades/serviços que um profissional pode desempenhar em uma organização por um período de tempo.",
+  "description" : "Este perfil restringe o recurso PractitionerRole que representa um conjunto específico de funções/locais/especialidades/serviços que um profissional pode desempenhar em uma organização por um período de tempo.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
