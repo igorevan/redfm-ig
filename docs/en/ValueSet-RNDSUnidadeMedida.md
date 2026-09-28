@@ -1,6 +1,6 @@
 # Unidade de Medida RNDS - Guia de Implementação do Registro Eletrônico de Dispensação ou Fornecimento de Medicamento (REDFM) da RNDS v1.0.0-release
 
-## ValueSet: 
+## ValueSet: Unidade de Medida RNDS 
 
  
 ValueSet composto por códigos do CodeSystem BRUnidadeMedida e Unidades Comuns do UCUM. 
@@ -14,8 +14,6 @@ Este conjunto de valores não é utilizado aqui; pode ser utilizado noutro local
  
 
 ### Expansion
-
-No Expansion for this valueset (Unsupported Code System Version)
 
 -------
 
@@ -63,7 +61,8 @@ No Expansion for this valueset (Unsupported Code System Version)
   }],
   "url" : "http://www.saude.gov.br/fhir/r4/ValueSet/RNDSUnidadeMedida",
   "version" : "1.0.0-release",
-  "name" : "Unidade de Medida RNDS",
+  "name" : "RNDSUnidadeMedida",
+  "title" : "Unidade de Medida RNDS",
   "status" : "active",
   "experimental" : false,
   "date" : "2026-08-30T13:16:09-03:00",
@@ -89,3402 +88,2553 @@ No Expansion for this valueset (Unsupported Code System Version)
   "immutable" : false,
   "compose" : {
     "include" : [{
-      "system" : "http://www.saude.gov.br/fhir/r4/CodeSystem/BRUnidadeMedida",
-      "version" : "*"
+      "system" : "http://www.saude.gov.br/fhir/r4/CodeSystem/BRUnidadeMedida"
     },
     {
       "system" : "http://unitsofmeasure.org",
       "concept" : [{
-        "code" : "%",
-        "display" : "percent"
+        "code" : "%"
       },
       {
-        "code" : "%/100",
-        "display" : "percent / 100"
+        "code" : "%/100"
       },
       {
-        "code" : "%[slope]",
-        "display" : "percent of slope"
+        "code" : "%[slope]"
       },
       {
-        "code" : "/(12.h)",
-        "display" : "per 12 * hour"
+        "code" : "/(12.h)"
       },
       {
-        "code" : "/(2.h)",
-        "display" : "per 2 hour"
+        "code" : "/(2.h)"
       },
       {
-        "code" : "/10*10",
-        "display" : "PerTenGiga"
+        "code" : "/10*10"
       },
       {
-        "code" : "/10*12",
-        "display" : "PerTrillion"
+        "code" : "/10*12"
       },
       {
-        "code" : "/10*3",
-        "display" : "per thousand"
+        "code" : "/10*3"
       },
       {
-        "code" : "/10*4",
-        "display" : "per 10 thousand"
+        "code" : "/10*4"
       },
       {
-        "code" : "/10*6",
-        "display" : "PerMillion"
+        "code" : "/10*6"
       },
       {
-        "code" : "/10*9",
-        "display" : "PerBillion"
+        "code" : "/10*9"
       },
       {
-        "code" : "/100",
-        "display" : "per 100"
+        "code" : "/100"
       },
       {
-        "code" : "/100.g",
-        "display" : "per 100 gram"
+        "code" : "/100.g"
       },
       {
-        "code" : "/L",
-        "display" : "per liter"
+        "code" : "/L"
       },
       {
-        "code" : "/U",
-        "display" : "per enzyme unit"
+        "code" : "/U"
       },
       {
-        "code" : "/[HPF]",
-        "display" : "per high power field"
+        "code" : "/[HPF]"
       },
       {
-        "code" : "/[HPF]",
-        "display" : "per hpf"
+        "code" : "/[HPF]"
       },
       {
-        "code" : "/[IU]",
-        "display" : "per international unit"
+        "code" : "/[IU]"
       },
       {
-        "code" : "/[LPF]",
-        "display" : "per low power field"
+        "code" : "/[LPF]"
       },
       {
-        "code" : "/[LPF]",
-        "display" : "per LPF"
+        "code" : "/[LPF]"
       },
       {
-        "code" : "/[arb'U]",
-        "display" : "per arbitrary unit"
+        "code" : "/[arb'U]"
       },
       {
-        "code" : "/[iU]",
-        "display" : "per international unit"
+        "code" : "/[iU]"
       },
       {
-        "code" : "/a",
-        "display" : "/ year"
+        "code" : "/a"
       },
       {
-        "code" : "/cm[H2O]",
-        "display" : "per centimeter of water"
+        "code" : "/cm[H2O]"
       },
       {
-        "code" : "/d",
-        "display" : "per day"
+        "code" : "/d"
       },
       {
-        "code" : "/dL",
-        "display" : "per deciliter"
+        "code" : "/dL"
       },
       {
-        "code" : "/g",
-        "display" : "per gram"
+        "code" : "/g"
       },
       {
-        "code" : "/h",
-        "display" : "per hour"
+        "code" : "/h"
       },
       {
-        "code" : "/kg",
-        "display" : "per kilogram"
+        "code" : "/kg"
       },
       {
-        "code" : "/m2",
-        "display" : "per square meter"
+        "code" : "/m2"
       },
       {
-        "code" : "/m3",
-        "display" : "per cubic meter"
+        "code" : "/m3"
       },
       {
-        "code" : "/mL",
-        "display" : "per milliliter"
+        "code" : "/mL"
       },
       {
-        "code" : "/mg",
-        "display" : "per milligram"
+        "code" : "/mg"
       },
       {
-        "code" : "/min",
-        "display" : "per minute"
+        "code" : "/min"
       },
       {
-        "code" : "/min/10*3",
-        "display" : "per minute per thousand"
+        "code" : "/min/10*3"
       },
       {
-        "code" : "/mm",
-        "display" : "per millimeter"
+        "code" : "/mm"
       },
       {
-        "code" : "/mm3",
-        "display" : "per cubic millimeter"
+        "code" : "/mm3"
       },
       {
-        "code" : "/mmol",
-        "display" : "per millimole"
+        "code" : "/mmol"
       },
       {
-        "code" : "/mo",
-        "display" : "per month"
+        "code" : "/mo"
       },
       {
-        "code" : "/s",
-        "display" : "per second"
+        "code" : "/s"
       },
       {
-        "code" : "/uL",
-        "display" : "per microliter"
+        "code" : "/uL"
       },
       {
-        "code" : "/ug",
-        "display" : "per microgram"
+        "code" : "/ug"
       },
       {
-        "code" : "/wk",
-        "display" : "per week"
+        "code" : "/wk"
       },
       {
-        "code" : "1",
-        "display" : "1*"
+        "code" : "1"
       },
       {
-        "code" : "1/d",
-        "display" : "one per day"
+        "code" : "1/d"
       },
       {
-        "code" : "1/min",
-        "display" : "one per minute"
+        "code" : "1/min"
       },
       {
-        "code" : "10*",
-        "display" : "the number ten for arbitrary powers"
+        "code" : "10*"
       },
       {
-        "code" : "10*-3",
-        "display" : "(the number ten for arbitrary powers ^ -3)"
+        "code" : "10*-3"
       },
       {
-        "code" : "10*-6",
-        "display" : "the number ten for arbitrary powers ^ -6"
+        "code" : "10*-6"
       },
       {
-        "code" : "10*12/L",
-        "display" : "trillion per liter"
+        "code" : "10*12/L"
       },
       {
-        "code" : "10*3",
-        "display" : "Thousand"
+        "code" : "10*3"
       },
       {
-        "code" : "10*3.U",
-        "display" : "Thousand Per * Unit"
+        "code" : "10*3.U"
       },
       {
-        "code" : "10*3/L",
-        "display" : "Thousand Per Liter"
+        "code" : "10*3/L"
       },
       {
-        "code" : "10*3/mL",
-        "display" : "Thousand Per MilliLiter"
+        "code" : "10*3/mL"
       },
       {
-        "code" : "10*3/uL",
-        "display" : "Thousands Per MicroLiter"
+        "code" : "10*3/uL"
       },
       {
-        "code" : "10*4/uL",
-        "display" : "10 thousand per microliter"
+        "code" : "10*4/uL"
       },
       {
-        "code" : "10*5",
-        "display" : "OneHundredThousand"
+        "code" : "10*5"
       },
       {
-        "code" : "10*6",
-        "display" : "Million"
+        "code" : "10*6"
       },
       {
-        "code" : "10*6.U",
-        "display" : "(the number ten for arbitrary powers ^ 6) * Unit"
+        "code" : "10*6.U"
       },
       {
-        "code" : "10*6.[CFU]/L",
-        "display" : "million colony forming unit per liter"
+        "code" : "10*6.[CFU]/L"
       },
       {
-        "code" : "10*6.[IU]",
-        "display" : "million international unit"
+        "code" : "10*6.[IU]"
       },
       {
-        "code" : "10*6.[iU]",
-        "display" : "MillionInternationalUnit"
+        "code" : "10*6.[iU]"
       },
       {
-        "code" : "10*6.eq/mL",
-        "display" : "MillionEquivalentsPerMilliLiter"
+        "code" : "10*6.eq/mL"
       },
       {
-        "code" : "10*6/(24.h)",
-        "display" : "million per 24 hour"
+        "code" : "10*6/(24.h)"
       },
       {
-        "code" : "10*6/L",
-        "display" : "million per liter"
+        "code" : "10*6/L"
       },
       {
-        "code" : "10*6/kg",
-        "display" : "million per kilogram"
+        "code" : "10*6/kg"
       },
       {
-        "code" : "10*6/mL",
-        "display" : "million per milliliter"
+        "code" : "10*6/mL"
       },
       {
-        "code" : "10*6/mm3",
-        "display" : "(the number ten for arbitrary powers ^ 6) / (millimeter ^ 3)"
+        "code" : "10*6/mm3"
       },
       {
-        "code" : "10*6/uL",
-        "display" : "million per microliter"
+        "code" : "10*6/uL"
       },
       {
-        "code" : "10*8",
-        "display" : "TenToEighth"
+        "code" : "10*8"
       },
       {
-        "code" : "10*9/L",
-        "display" : "billion per liter"
+        "code" : "10*9/L"
       },
       {
-        "code" : "10*9/mL",
-        "display" : "billion per milliliter"
+        "code" : "10*9/mL"
       },
       {
-        "code" : "10*9/uL",
-        "display" : "billion per microliter"
+        "code" : "10*9/uL"
       },
       {
-        "code" : "10.L/(min.m2)",
-        "display" : "10 liter per minute per square meter"
+        "code" : "10.L/(min.m2)"
       },
       {
-        "code" : "10.L/min",
-        "display" : "10 liter per minute"
+        "code" : "10.L/min"
       },
       {
-        "code" : "10.uN.s/(cm.m2)",
-        "display" : "10 * microNewton * second / centimeter * (meter ^ 2)"
+        "code" : "10.uN.s/(cm.m2)"
       },
       {
-        "code" : "10.uN.s/(cm5.m2)",
-        "display" : "10 micronewton second per centimeter to the fifth power per square meter"
+        "code" : "10.uN.s/(cm5.m2)"
       },
       {
-        "code" : "10.uN.s/cm",
-        "display" : "10 * microNewton * second / centimeter"
+        "code" : "10.uN.s/cm"
       },
       {
-        "code" : "10.uN.s/cm2",
-        "display" : "10 * microNewton * second / (centimeter ^ 2)"
+        "code" : "10.uN.s/cm2"
       },
       {
-        "code" : "10^",
-        "display" : "the number ten for arbitrary powers"
+        "code" : "10^"
       },
       {
-        "code" : "24.h",
-        "display" : "24 hour"
+        "code" : "24.h"
       },
       {
-        "code" : "A",
-        "display" : "Ampère"
+        "code" : "A"
       },
       {
-        "code" : "A/m",
-        "display" : "Ampère / meter"
+        "code" : "A/m"
       },
       {
-        "code" : "AU",
-        "display" : "astronomic unit"
+        "code" : "AU"
       },
       {
-        "code" : "Ao",
-        "display" : "Ångström"
+        "code" : "Ao"
       },
       {
-        "code" : "B",
-        "display" : "bel"
+        "code" : "B"
       },
       {
-        "code" : "B[SPL]",
-        "display" : "bel sound pressure"
+        "code" : "B[SPL]"
       },
       {
-        "code" : "B[V]",
-        "display" : "bel volt"
+        "code" : "B[V]"
       },
       {
-        "code" : "B[W]",
-        "display" : "bel watt"
+        "code" : "B[W]"
       },
       {
-        "code" : "B[kW]",
-        "display" : "bel kilowatt"
+        "code" : "B[kW]"
       },
       {
-        "code" : "B[mV]",
-        "display" : "bel millivolt"
+        "code" : "B[mV]"
       },
       {
-        "code" : "B[uV]",
-        "display" : "bel microvolt"
+        "code" : "B[uV]"
       },
       {
-        "code" : "Bd",
-        "display" : "baud"
+        "code" : "Bd"
       },
       {
-        "code" : "Bi",
-        "display" : "Biot"
+        "code" : "Bi"
       },
       {
-        "code" : "Bq",
-        "display" : "Becquerel"
+        "code" : "Bq"
       },
       {
-        "code" : "By",
-        "display" : "byte"
+        "code" : "By"
       },
       {
-        "code" : "C",
-        "display" : "Coulomb"
+        "code" : "C"
       },
       {
-        "code" : "Cel",
-        "display" : "degree Celsius"
+        "code" : "Cel"
       },
       {
-        "code" : "Ci",
-        "display" : "CURIE"
+        "code" : "Ci"
       },
       {
-        "code" : "F",
-        "display" : "Farad"
+        "code" : "F"
       },
       {
-        "code" : "G",
-        "display" : "Gauss"
+        "code" : "G"
       },
       {
-        "code" : "GBq",
-        "display" : "gigaBecquerel"
+        "code" : "GBq"
       },
       {
-        "code" : "Gal",
-        "display" : "Gal"
+        "code" : "Gal"
       },
       {
-        "code" : "Gb",
-        "display" : "Gilbert"
+        "code" : "Gb"
       },
       {
-        "code" : "Gy",
-        "display" : "Gray"
+        "code" : "Gy"
       },
       {
-        "code" : "H",
-        "display" : "Henry"
+        "code" : "H"
       },
       {
-        "code" : "Hz",
-        "display" : "Hertz"
+        "code" : "Hz"
       },
       {
-        "code" : "J",
-        "display" : "joule"
+        "code" : "J"
       },
       {
-        "code" : "J/L",
-        "display" : "joule per liter"
+        "code" : "J/L"
       },
       {
-        "code" : "K",
-        "display" : "Kelvin"
+        "code" : "K"
       },
       {
-        "code" : "K/W",
-        "display" : "Kelvin / Watt"
+        "code" : "K/W"
       },
       {
-        "code" : "Ky",
-        "display" : "Kayser"
+        "code" : "Ky"
       },
       {
-        "code" : "L",
-        "display" : "liter"
+        "code" : "L"
       },
       {
-        "code" : "L.s2/s",
-        "display" : "liter * (second ^ 2) / second"
+        "code" : "L.s2/s"
       },
       {
-        "code" : "L/(24.h)",
-        "display" : "liter per 24 hour"
+        "code" : "L/(24.h)"
       },
       {
-        "code" : "L/(8.h)",
-        "display" : "liter per 8 hour"
+        "code" : "L/(8.h)"
       },
       {
-        "code" : "L/(min.m2)",
-        "display" : "liter per minute per square meter"
+        "code" : "L/(min.m2)"
       },
       {
-        "code" : "L/L",
-        "display" : "liter per liter"
+        "code" : "L/L"
       },
       {
-        "code" : "L/d",
-        "display" : "liter per day"
+        "code" : "L/d"
       },
       {
-        "code" : "L/h",
-        "display" : "liter per hour"
+        "code" : "L/h"
       },
       {
-        "code" : "L/kg",
-        "display" : "liter per kilogram"
+        "code" : "L/kg"
       },
       {
-        "code" : "L/min",
-        "display" : "liter per minute"
+        "code" : "L/min"
       },
       {
-        "code" : "L/s",
-        "display" : "liter / second"
+        "code" : "L/s"
       },
       {
-        "code" : "L/s/s2",
-        "display" : "liter per second per square second"
+        "code" : "L/s/s2"
       },
       {
-        "code" : "Lmb",
-        "display" : "Lambert"
+        "code" : "Lmb"
       },
       {
-        "code" : "MBq",
-        "display" : "megaBecquerel"
+        "code" : "MBq"
       },
       {
-        "code" : "Ms",
-        "display" : "megasecond"
+        "code" : "Ms"
       },
       {
-        "code" : "Mx",
-        "display" : "Maxwell"
+        "code" : "Mx"
       },
       {
-        "code" : "N",
-        "display" : "Newton"
+        "code" : "N"
       },
       {
-        "code" : "N.cm",
-        "display" : "Newton centimeter"
+        "code" : "N.cm"
       },
       {
-        "code" : "N.s",
-        "display" : "Newton second"
+        "code" : "N.s"
       },
       {
-        "code" : "Np",
-        "display" : "neper"
+        "code" : "Np"
       },
       {
-        "code" : "Oe",
-        "display" : "Oersted"
+        "code" : "Oe"
       },
       {
-        "code" : "Ohm",
-        "display" : "Ohm"
+        "code" : "Ohm"
       },
       {
-        "code" : "Ohm.m",
-        "display" : "Ohm meter"
+        "code" : "Ohm.m"
       },
       {
-        "code" : "P",
-        "display" : "Poise"
+        "code" : "P"
       },
       {
-        "code" : "Pa",
-        "display" : "Pascal"
+        "code" : "Pa"
       },
       {
-        "code" : "R",
-        "display" : "Roentgen"
+        "code" : "R"
       },
       {
-        "code" : "RAD",
-        "display" : "radiation absorbed dose"
+        "code" : "RAD"
       },
       {
-        "code" : "REM",
-        "display" : "radiation equivalent man"
+        "code" : "REM"
       },
       {
-        "code" : "S",
-        "display" : "Siemens"
+        "code" : "S"
       },
       {
-        "code" : "St",
-        "display" : "Stokes"
+        "code" : "St"
       },
       {
-        "code" : "Sv",
-        "display" : "Sievert"
+        "code" : "Sv"
       },
       {
-        "code" : "T",
-        "display" : "Tesla"
+        "code" : "T"
       },
       {
-        "code" : "U",
-        "display" : "enzyme Unit"
+        "code" : "U"
       },
       {
-        "code" : "U/(1.h)",
-        "display" : "enzyme Unit per 1 hour"
+        "code" : "U/(1.h)"
       },
       {
-        "code" : "U/(10.g)",
-        "display" : "enzyme unit per 10 gram"
+        "code" : "U/(10.g)"
       },
       {
-        "code" : "U/(12.h)",
-        "display" : "enzyme unit per 12 hour"
+        "code" : "U/(12.h)"
       },
       {
-        "code" : "U/(18.h)",
-        "display" : "enzyme Unit per 18 hour"
+        "code" : "U/(18.h)"
       },
       {
-        "code" : "U/(2.h)",
-        "display" : "enzyme unit per 2 hour"
+        "code" : "U/(2.h)"
       },
       {
-        "code" : "U/(24.h)",
-        "display" : "enzyme unit per 24 hour"
+        "code" : "U/(24.h)"
       },
       {
-        "code" : "U/10",
-        "display" : "enzyme unit per 10"
+        "code" : "U/10"
       },
       {
-        "code" : "U/10*10",
-        "display" : "enzyme unit per 10 billion"
+        "code" : "U/10*10"
       },
       {
-        "code" : "U/10*12",
-        "display" : "enzyme unit per trillion"
+        "code" : "U/10*12"
       },
       {
-        "code" : "U/10*12",
-        "display" : "enzyme unit per trillion"
+        "code" : "U/10*12"
       },
       {
-        "code" : "U/10*6",
-        "display" : "enzyme unit per million"
+        "code" : "U/10*6"
       },
       {
-        "code" : "U/10*9",
-        "display" : "enzyme unit per billion"
+        "code" : "U/10*9"
       },
       {
-        "code" : "U/L",
-        "display" : "enzyme unit per liter"
+        "code" : "U/L"
       },
       {
-        "code" : "U/d",
-        "display" : "enzyme unit per day"
+        "code" : "U/d"
       },
       {
-        "code" : "U/dL",
-        "display" : "enzyme unit per deciliter"
+        "code" : "U/dL"
       },
       {
-        "code" : "U/g",
-        "display" : "enzyme unit per gram"
+        "code" : "U/g"
       },
       {
-        "code" : "U/h",
-        "display" : "enzyme unit per hour"
+        "code" : "U/h"
       },
       {
-        "code" : "U/kg",
-        "display" : "enzyme unit per kilogram"
+        "code" : "U/kg"
       },
       {
-        "code" : "U/kg/h",
-        "display" : "Unit / kilogram / hour"
+        "code" : "U/kg/h"
       },
       {
-        "code" : "U/mL",
-        "display" : "enzyme unit per milliliter"
+        "code" : "U/mL"
       },
       {
-        "code" : "U/min",
-        "display" : "enzyme unit per minute"
+        "code" : "U/min"
       },
       {
-        "code" : "U/mmol",
-        "display" : "enzyme unit per millimole"
+        "code" : "U/mmol"
       },
       {
-        "code" : "U/mol",
-        "display" : "enzyme Unit per mole"
+        "code" : "U/mol"
       },
       {
-        "code" : "U/s",
-        "display" : "enzyme unit per second"
+        "code" : "U/s"
       },
       {
-        "code" : "U/umol",
-        "display" : "enzyme Unit per micromole"
+        "code" : "U/umol"
       },
       {
-        "code" : "V",
-        "display" : "volt"
+        "code" : "V"
       },
       {
-        "code" : "W",
-        "display" : "Watt"
+        "code" : "W"
       },
       {
-        "code" : "Wb",
-        "display" : "Weber"
+        "code" : "Wb"
       },
       {
-        "code" : "[APL'U]",
-        "display" : "IgA anticardiolipin unit"
+        "code" : "[APL'U]"
       },
       {
-        "code" : "[APL'U]/mL",
-        "display" : "IgA anticardiolipin unit per milliliter"
+        "code" : "[APL'U]/mL"
       },
       {
-        "code" : "[AU]",
-        "display" : "allergy unit"
+        "code" : "[AU]"
       },
       {
-        "code" : "[Amb'a'1'U]",
-        "display" : "Amb a 1 units"
+        "code" : "[Amb'a'1'U]"
       },
       {
-        "code" : "[BAU]",
-        "display" : "bioequivalent allergen unit"
+        "code" : "[BAU]"
       },
       {
-        "code" : "[Btu]",
-        "display" : "British thermal unit"
+        "code" : "[Btu]"
       },
       {
-        "code" : "[Btu_39]",
-        "display" : "British thermal unit at 39 °F"
+        "code" : "[Btu_39]"
       },
       {
-        "code" : "[Btu_59]",
-        "display" : "British thermal unit at 59 °F"
+        "code" : "[Btu_59]"
       },
       {
-        "code" : "[Btu_60]",
-        "display" : "British thermal unit at 60 °F"
+        "code" : "[Btu_60]"
       },
       {
-        "code" : "[Btu_IT]",
-        "display" : "international table British thermal unit"
+        "code" : "[Btu_IT]"
       },
       {
-        "code" : "[Btu_m]",
-        "display" : "mean British thermal unit"
+        "code" : "[Btu_m]"
       },
       {
-        "code" : "[Btu_th]",
-        "display" : "thermochemical British thermal unit"
+        "code" : "[Btu_th]"
       },
       {
-        "code" : "[CCID_50]",
-        "display" : "CELL CULTURE INFECTIOUS DOSE 50%"
+        "code" : "[CCID_50]"
       },
       {
-        "code" : "[CFU]",
-        "display" : "colony forming unit"
+        "code" : "[CFU]"
       },
       {
-        "code" : "[CFU]/L",
-        "display" : "colony forming unit per liter"
+        "code" : "[CFU]/L"
       },
       {
-        "code" : "[CFU]/mL",
-        "display" : "colony forming unit per milliliter"
+        "code" : "[CFU]/mL"
       },
       {
-        "code" : "[Cal]",
-        "display" : "nutrition label Calories"
+        "code" : "[Cal]"
       },
       {
-        "code" : "[Ch]",
-        "display" : "French (catheter gauge)"
+        "code" : "[Ch]"
       },
       {
-        "code" : "[D'ag'U]",
-        "display" : "D-ANTIGEN UNITS"
+        "code" : "[D'ag'U]"
       },
       {
-        "code" : "[FFU]",
-        "display" : "FOCUS-FORMING UNITS"
+        "code" : "[FFU]"
       },
       {
-        "code" : "[GPL'U]",
-        "display" : "IgG anticardiolipin unit"
+        "code" : "[GPL'U]"
       },
       {
-        "code" : "[GPL'U]/mL",
-        "display" : "IgG anticardiolipin unit per milliliter**"
+        "code" : "[GPL'U]/mL"
       },
       {
-        "code" : "[G]",
-        "display" : "Newtonian constant of gravitation"
+        "code" : "[G]"
       },
       {
-        "code" : "[HPF]",
-        "display" : "high power field"
+        "code" : "[HPF]"
       },
       {
-        "code" : "[HP]",
-        "display" : "horsepower"
+        "code" : "[HP]"
       },
       {
-        "code" : "[IU]",
-        "display" : "international unit"
+        "code" : "[IU]"
       },
       {
-        "code" : "[IU]/(2.h)",
-        "display" : "international unit per 2 hour"
+        "code" : "[IU]/(2.h)"
       },
       {
-        "code" : "[IU]/(24.h)",
-        "display" : "international unit per 24 hour"
+        "code" : "[IU]/(24.h)"
       },
       {
-        "code" : "[IU]/10*9",
-        "display" : "international unit per billion"
+        "code" : "[IU]/10*9"
       },
       {
-        "code" : "[IU]/L",
-        "display" : "international unit per liter"
+        "code" : "[IU]/L"
       },
       {
-        "code" : "[IU]/d",
-        "display" : "international unit per day"
+        "code" : "[IU]/d"
       },
       {
-        "code" : "[IU]/dL",
-        "display" : "international unit per deciliter"
+        "code" : "[IU]/dL"
       },
       {
-        "code" : "[IU]/g",
-        "display" : "international unit per gram"
+        "code" : "[IU]/g"
       },
       {
-        "code" : "[IU]/h",
-        "display" : "international unit per hour"
+        "code" : "[IU]/h"
       },
       {
-        "code" : "[IU]/kg",
-        "display" : "international unit per kilogram"
+        "code" : "[IU]/kg"
       },
       {
-        "code" : "[IU]/kg/d",
-        "display" : "international unit per kilogram per day"
+        "code" : "[IU]/kg/d"
       },
       {
-        "code" : "[IU]/mL",
-        "display" : "international unit per milliliter"
+        "code" : "[IU]/mL"
       },
       {
-        "code" : "[IU]/min",
-        "display" : "international unit per minute"
+        "code" : "[IU]/min"
       },
       {
-        "code" : "[LPF]",
-        "display" : "low power field"
+        "code" : "[LPF]"
       },
       {
-        "code" : "[Lf]",
-        "display" : "LIMIT OF FLOCCULATION"
+        "code" : "[Lf]"
       },
       {
-        "code" : "[MET]",
-        "display" : "metabolic equivalent"
+        "code" : "[MET]"
       },
       {
-        "code" : "[MPL'U]",
-        "display" : "IgM anticardiolipin unit"
+        "code" : "[MPL'U]"
       },
       {
-        "code" : "[MPL'U]/mL",
-        "display" : "IgM anticardiolipin unit per milliliter**"
+        "code" : "[MPL'U]/mL"
       },
       {
-        "code" : "[PFU]",
-        "display" : "PLAQUE-FORMING UNITS"
+        "code" : "[PFU]"
       },
       {
-        "code" : "[PNU]",
-        "display" : "PROTEIN NITROGEN UNITS"
+        "code" : "[PNU]"
       },
       {
-        "code" : "[PRU]",
-        "display" : "peripheral vascular resistance unit"
+        "code" : "[PRU]"
       },
       {
-        "code" : "[S]",
-        "display" : "Svedberg unit"
+        "code" : "[S]"
       },
       {
-        "code" : "[TCID_50]",
-        "display" : "TISSUE CULTURE INFECTIOUS DOSE 50%"
+        "code" : "[TCID_50]"
       },
       {
-        "code" : "[USP'U]",
-        "display" : "UNITED STATES PHARMACOPEIA UNIT"
+        "code" : "[USP'U]"
       },
       {
-        "code" : "[acr_br]",
-        "display" : "acre"
+        "code" : "[acr_br]"
       },
       {
-        "code" : "[acr_us]",
-        "display" : "acre"
+        "code" : "[acr_us]"
       },
       {
-        "code" : "[arb'U]",
-        "display" : "arbitrary unit"
+        "code" : "[arb'U]"
       },
       {
-        "code" : "[arb'U]/L",
-        "display" : "arbitary unit / liter"
+        "code" : "[arb'U]/L"
       },
       {
-        "code" : "[arb'U]/mL",
-        "display" : "arbitrary unit per milliliter"
+        "code" : "[arb'U]/mL"
       },
       {
-        "code" : "[bbl_us]",
-        "display" : "barrel"
+        "code" : "[bbl_us]"
       },
       {
-        "code" : "[bdsk'U]",
-        "display" : "Bodansky unit"
+        "code" : "[bdsk'U]"
       },
       {
-        "code" : "[beth'U]",
-        "display" : "Bethesda unit"
+        "code" : "[beth'U]"
       },
       {
-        "code" : "[beth'U]",
-        "display" : "Bethesda unit"
+        "code" : "[beth'U]"
       },
       {
-        "code" : "[bf_i]",
-        "display" : "board foot"
+        "code" : "[bf_i]"
       },
       {
-        "code" : "[bu_br]",
-        "display" : "bushel"
+        "code" : "[bu_br]"
       },
       {
-        "code" : "[bu_us]",
-        "display" : "bushel"
+        "code" : "[bu_us]"
       },
       {
-        "code" : "[c]",
-        "display" : "velocity of light"
+        "code" : "[c]"
       },
       {
-        "code" : "[car_Au]",
-        "display" : "carat of gold alloys"
+        "code" : "[car_Au]"
       },
       {
-        "code" : "[car_m]",
-        "display" : "metric carat"
+        "code" : "[car_m]"
       },
       {
-        "code" : "[cft_i]",
-        "display" : "cubic foot"
+        "code" : "[cft_i]"
       },
       {
-        "code" : "[ch_br]",
-        "display" : "Gunter's chain"
+        "code" : "[ch_br]"
       },
       {
-        "code" : "[ch_us]",
-        "display" : "Gunter's chain Surveyor's chain"
+        "code" : "[ch_us]"
       },
       {
-        "code" : "[cicero]",
-        "display" : "cicero Didot's pica"
+        "code" : "[cicero]"
       },
       {
-        "code" : "[cin_i]",
-        "display" : "cubic inch"
+        "code" : "[cin_i]"
       },
       {
-        "code" : "[cml_i]",
-        "display" : "circular mil"
+        "code" : "[cml_i]"
       },
       {
-        "code" : "[cr_i]",
-        "display" : "cord"
+        "code" : "[cr_i]"
       },
       {
-        "code" : "[crd_us]",
-        "display" : "cord"
+        "code" : "[crd_us]"
       },
       {
-        "code" : "[cup_us]",
-        "display" : "cup"
+        "code" : "[cup_us]"
       },
       {
-        "code" : "[cyd_i]",
-        "display" : "cubic yard"
+        "code" : "[cyd_i]"
       },
       {
-        "code" : "[degF]",
-        "display" : "degree Fahrenheit"
+        "code" : "[degF]"
       },
       {
-        "code" : "[didot]",
-        "display" : "didot Didot's point"
+        "code" : "[didot]"
       },
       {
-        "code" : "[diop]",
-        "display" : "diopter"
+        "code" : "[diop]"
       },
       {
-        "code" : "[dpt_us]",
-        "display" : "dry pint"
+        "code" : "[dpt_us]"
       },
       {
-        "code" : "[dqt_us]",
-        "display" : "dry quart"
+        "code" : "[dqt_us]"
       },
       {
-        "code" : "[dr_ap]",
-        "display" : "dram drachm"
+        "code" : "[dr_ap]"
       },
       {
-        "code" : "[dr_av]",
-        "display" : "Dram (US and British)"
+        "code" : "[dr_av]"
       },
       {
-        "code" : "[drp]",
-        "display" : "drop"
+        "code" : "[drp]"
       },
       {
-        "code" : "[drp]/[HPF]",
-        "display" : "drop / HPF"
+        "code" : "[drp]/[HPF]"
       },
       {
-        "code" : "[drp]/h",
-        "display" : "drop / hour"
+        "code" : "[drp]/h"
       },
       {
-        "code" : "[drp]/mL",
-        "display" : "drop / milliliter"
+        "code" : "[drp]/mL"
       },
       {
-        "code" : "[drp]/min",
-        "display" : "drop / minute"
+        "code" : "[drp]/min"
       },
       {
-        "code" : "[drp]/s",
-        "display" : "drop / second"
+        "code" : "[drp]/s"
       },
       {
-        "code" : "[dye'U]",
-        "display" : "Dye unit"
+        "code" : "[dye'U]"
       },
       {
-        "code" : "[e]",
-        "display" : "elementary charge"
+        "code" : "[e]"
       },
       {
-        "code" : "[eps_0]",
-        "display" : "permittivity of vacuum"
+        "code" : "[eps_0]"
       },
       {
-        "code" : "[fdr_br]",
-        "display" : "fluid dram"
+        "code" : "[fdr_br]"
       },
       {
-        "code" : "[fdr_us]",
-        "display" : "fluid dram"
+        "code" : "[fdr_us]"
       },
       {
-        "code" : "[foz_br]",
-        "display" : "fluid ounce"
+        "code" : "[foz_br]"
       },
       {
-        "code" : "[foz_us]",
-        "display" : "fluid ounce"
+        "code" : "[foz_us]"
       },
       {
-        "code" : "[ft_br]",
-        "display" : "foot"
+        "code" : "[ft_br]"
       },
       {
-        "code" : "[ft_i]",
-        "display" : "Feet"
+        "code" : "[ft_i]"
       },
       {
-        "code" : "[ft_us]",
-        "display" : "foot"
+        "code" : "[ft_us]"
       },
       {
-        "code" : "[fth_br]",
-        "display" : "fathom"
+        "code" : "[fth_br]"
       },
       {
-        "code" : "[fth_i]",
-        "display" : "fathom"
+        "code" : "[fth_i]"
       },
       {
-        "code" : "[fth_us]",
-        "display" : "fathom"
+        "code" : "[fth_us]"
       },
       {
-        "code" : "[fur_us]",
-        "display" : "furlong"
+        "code" : "[fur_us]"
       },
       {
-        "code" : "[gal_br]",
-        "display" : "gallon"
+        "code" : "[gal_br]"
       },
       {
-        "code" : "[gal_us]",
-        "display" : "Queen Anne's wine gallon"
+        "code" : "[gal_us]"
       },
       {
-        "code" : "[gal_wi]",
-        "display" : "historical winchester gallon"
+        "code" : "[gal_wi]"
       },
       {
-        "code" : "[gil_br]",
-        "display" : "gill"
+        "code" : "[gil_br]"
       },
       {
-        "code" : "[gil_us]",
-        "display" : "gill"
+        "code" : "[gil_us]"
       },
       {
-        "code" : "[gr]",
-        "display" : "grain"
+        "code" : "[gr]"
       },
       {
-        "code" : "[h]",
-        "display" : "Planck constant"
+        "code" : "[h]"
       },
       {
-        "code" : "[hd_i]",
-        "display" : "hand"
+        "code" : "[hd_i]"
       },
       {
-        "code" : "[hnsf'U]",
-        "display" : "Hounsfield unit"
+        "code" : "[hnsf'U]"
       },
       {
-        "code" : "[hp_C]",
-        "display" : "HOMEOPATHIC POTENCY OF CENTESIMAL SERIES"
+        "code" : "[hp_C]"
       },
       {
-        "code" : "[hp_M]",
-        "display" : "HOMEOPATHIC POTENCY OF MILLESIMAL SERIES"
+        "code" : "[hp_M]"
       },
       {
-        "code" : "[hp_Q]",
-        "display" : "HOMEOPATHIC POTENCY OF QUINTAMILLESIMAL SERIES"
+        "code" : "[hp_Q]"
       },
       {
-        "code" : "[hp_X]",
-        "display" : "HOMEOPATHIC POTENCY OF DECIMAL SERIES"
+        "code" : "[hp_X]"
       },
       {
-        "code" : "[iU]",
-        "display" : "international unit"
+        "code" : "[iU]"
       },
       {
-        "code" : "[iU]",
-        "display" : "international unit"
+        "code" : "[iU]"
       },
       {
-        "code" : "[iU]/L",
-        "display" : "InternationalUnitsPerLiter"
+        "code" : "[iU]/L"
       },
       {
-        "code" : "[iU]/dL",
-        "display" : "InternationalUnitsPerDeciLiter"
+        "code" : "[iU]/dL"
       },
       {
-        "code" : "[iU]/g",
-        "display" : "InternationalUnitsPerGram"
+        "code" : "[iU]/g"
       },
       {
-        "code" : "[iU]/kg",
-        "display" : "InternationalUnitsPerKilogram"
+        "code" : "[iU]/kg"
       },
       {
-        "code" : "[iU]/mL",
-        "display" : "InternationalUnitsPerMilliLiter"
+        "code" : "[iU]/mL"
       },
       {
-        "code" : "[in_br]",
-        "display" : "inch"
+        "code" : "[in_br]"
       },
       {
-        "code" : "[in_i'H2O]",
-        "display" : "inch (international) of water"
+        "code" : "[in_i'H2O]"
       },
       {
-        "code" : "[in_i'Hg]",
-        "display" : "inch of mercury column"
+        "code" : "[in_i'Hg]"
       },
       {
-        "code" : "[in_i]",
-        "display" : "inch (international)"
+        "code" : "[in_i]"
       },
       {
-        "code" : "[in_us]",
-        "display" : "inch"
+        "code" : "[in_us]"
       },
       {
-        "code" : "[k]",
-        "display" : "Boltzmann constant"
+        "code" : "[k]"
       },
       {
-        "code" : "[ka'U]",
-        "display" : "King Armstrong unit"
+        "code" : "[ka'U]"
       },
       {
-        "code" : "[kn_br]",
-        "display" : "knot"
+        "code" : "[kn_br]"
       },
       {
-        "code" : "[kn_i]",
-        "display" : "knot"
+        "code" : "[kn_i]"
       },
       {
-        "code" : "[knk'U]",
-        "display" : "Kunkel unit"
+        "code" : "[knk'U]"
       },
       {
-        "code" : "[kp_C]",
-        "display" : "HOMEOPATHIC POTENCY OF CENTESIMAL KORSAKOVIAN SERIES"
+        "code" : "[kp_C]"
       },
       {
-        "code" : "[lb_ap]",
-        "display" : "pound"
+        "code" : "[lb_ap]"
       },
       {
-        "code" : "[lb_av]",
-        "display" : "pound (US and British)"
+        "code" : "[lb_av]"
       },
       {
-        "code" : "[lb_tr]",
-        "display" : "pound"
+        "code" : "[lb_tr]"
       },
       {
-        "code" : "[lbf_av]",
-        "display" : "pound force"
+        "code" : "[lbf_av]"
       },
       {
-        "code" : "[lcwt_av]",
-        "display" : "long hunderdweight British hundredweight"
+        "code" : "[lcwt_av]"
       },
       {
-        "code" : "[ligne]",
-        "display" : "ligne French line"
+        "code" : "[ligne]"
       },
       {
-        "code" : "[lk_br]",
-        "display" : "link for Gunter's chain"
+        "code" : "[lk_br]"
       },
       {
-        "code" : "[lk_us]",
-        "display" : "link for Gunter's chain"
+        "code" : "[lk_us]"
       },
       {
-        "code" : "[lne]",
-        "display" : "line"
+        "code" : "[lne]"
       },
       {
-        "code" : "[lton_av]",
-        "display" : "long ton British ton"
+        "code" : "[lton_av]"
       },
       {
-        "code" : "[ly]",
-        "display" : "light-year"
+        "code" : "[ly]"
       },
       {
-        "code" : "[m_e]",
-        "display" : "electron mass"
+        "code" : "[m_e]"
       },
       {
-        "code" : "[m_p]",
-        "display" : "proton mass"
+        "code" : "[m_p]"
       },
       {
-        "code" : "[mclg'U]",
-        "display" : "Mac Lagan unit"
+        "code" : "[mclg'U]"
       },
       {
-        "code" : "[mesh_i]",
-        "display" : "mesh"
+        "code" : "[mesh_i]"
       },
       {
-        "code" : "[mi_br]",
-        "display" : "mile"
+        "code" : "[mi_br]"
       },
       {
-        "code" : "[mi_i]",
-        "display" : "statute mile"
+        "code" : "[mi_i]"
       },
       {
-        "code" : "[mi_us]",
-        "display" : "mile"
+        "code" : "[mi_us]"
       },
       {
-        "code" : "[mil_i]",
-        "display" : "mil"
+        "code" : "[mil_i]"
       },
       {
-        "code" : "[mil_us]",
-        "display" : "mil"
+        "code" : "[mil_us]"
       },
       {
-        "code" : "[min_br]",
-        "display" : "minim"
+        "code" : "[min_br]"
       },
       {
-        "code" : "[min_us]",
-        "display" : "minim"
+        "code" : "[min_us]"
       },
       {
-        "code" : "[mu_0]",
-        "display" : "permeability of vacuum"
+        "code" : "[mu_0]"
       },
       {
-        "code" : "[nmi_br]",
-        "display" : "nautical mile"
+        "code" : "[nmi_br]"
       },
       {
-        "code" : "[nmi_i]",
-        "display" : "nautical mile"
+        "code" : "[nmi_i]"
       },
       {
-        "code" : "[oz_ap]",
-        "display" : "ounce (US and British)"
+        "code" : "[oz_ap]"
       },
       {
-        "code" : "[oz_av]",
-        "display" : "ounce (US and British)"
+        "code" : "[oz_av]"
       },
       {
-        "code" : "[oz_tr]",
-        "display" : "ounce"
+        "code" : "[oz_tr]"
       },
       {
-        "code" : "[p'diop]",
-        "display" : "prism diopter"
+        "code" : "[p'diop]"
       },
       {
-        "code" : "[pH]",
-        "display" : "pH"
+        "code" : "[pH]"
       },
       {
-        "code" : "[pc_br]",
-        "display" : "pace"
+        "code" : "[pc_br]"
       },
       {
-        "code" : "[pca]",
-        "display" : "pica"
+        "code" : "[pca]"
       },
       {
-        "code" : "[pca_pr]",
-        "display" : "Printer's pica"
+        "code" : "[pca_pr]"
       },
       {
-        "code" : "[pi]",
-        "display" : "the number pi"
+        "code" : "[pi]"
       },
       {
-        "code" : "[pi].rad/min",
-        "display" : "the number pi * radian / minute"
+        "code" : "[pi].rad/min"
       },
       {
-        "code" : "[pied]",
-        "display" : "pied French foot"
+        "code" : "[pied]"
       },
       {
-        "code" : "[pk_br]",
-        "display" : "peck"
+        "code" : "[pk_br]"
       },
       {
-        "code" : "[pk_us]",
-        "display" : "peck"
+        "code" : "[pk_us]"
       },
       {
-        "code" : "[pnt]",
-        "display" : "point"
+        "code" : "[pnt]"
       },
       {
-        "code" : "[pnt_pr]",
-        "display" : "Printer's point"
+        "code" : "[pnt_pr]"
       },
       {
-        "code" : "[pouce]",
-        "display" : "pouce French inch"
+        "code" : "[pouce]"
       },
       {
-        "code" : "[ppb]",
-        "display" : "part per billion"
+        "code" : "[ppb]"
       },
       {
-        "code" : "[ppm]",
-        "display" : "part per million"
+        "code" : "[ppm]"
       },
       {
-        "code" : "[ppth]",
-        "display" : "parts per thousand"
+        "code" : "[ppth]"
       },
       {
-        "code" : "[pptr]",
-        "display" : "part per trillion"
+        "code" : "[pptr]"
       },
       {
-        "code" : "[pptr]",
-        "display" : "parts per trillion"
+        "code" : "[pptr]"
       },
       {
-        "code" : "[psi]",
-        "display" : "pound per square inch"
+        "code" : "[psi]"
       },
       {
-        "code" : "[pt_br]",
-        "display" : "pint"
+        "code" : "[pt_br]"
       },
       {
-        "code" : "[pt_us]",
-        "display" : "pint"
+        "code" : "[pt_us]"
       },
       {
-        "code" : "[pwt_tr]",
-        "display" : "pennyweight"
+        "code" : "[pwt_tr]"
       },
       {
-        "code" : "[qt_br]",
-        "display" : "quart"
+        "code" : "[qt_br]"
       },
       {
-        "code" : "[qt_us]",
-        "display" : "quart"
+        "code" : "[qt_us]"
       },
       {
-        "code" : "[rch_us]",
-        "display" : "Ramden's chain Engineer's chain"
+        "code" : "[rch_us]"
       },
       {
-        "code" : "[rd_br]",
-        "display" : "rod"
+        "code" : "[rd_br]"
       },
       {
-        "code" : "[rd_us]",
-        "display" : "rod"
+        "code" : "[rd_us]"
       },
       {
-        "code" : "[rlk_us]",
-        "display" : "link for Ramden's chain"
+        "code" : "[rlk_us]"
       },
       {
-        "code" : "[sc_ap]",
-        "display" : "scruple"
+        "code" : "[sc_ap]"
       },
       {
-        "code" : "[sct]",
-        "display" : "section"
+        "code" : "[sct]"
       },
       {
-        "code" : "[scwt_av]",
-        "display" : "short hundredweight U.S. hundredweight"
+        "code" : "[scwt_av]"
       },
       {
-        "code" : "[sft_i]",
-        "display" : "square foot (international)"
+        "code" : "[sft_i]"
       },
       {
-        "code" : "[sin_i]",
-        "display" : "square inch (international)"
+        "code" : "[sin_i]"
       },
       {
-        "code" : "[smgy'U]",
-        "display" : "Somogyi unit"
+        "code" : "[smgy'U]"
       },
       {
-        "code" : "[smi_us]",
-        "display" : "square mile"
+        "code" : "[smi_us]"
       },
       {
-        "code" : "[smoot]",
-        "display" : "Smoot"
+        "code" : "[smoot]"
       },
       {
-        "code" : "[srd_us]",
-        "display" : "square rod"
+        "code" : "[srd_us]"
       },
       {
-        "code" : "[ston_av]",
-        "display" : "short ton U.S. ton"
+        "code" : "[ston_av]"
       },
       {
-        "code" : "[stone_av]",
-        "display" : "stone British stone"
+        "code" : "[stone_av]"
       },
       {
-        "code" : "[syd_i]",
-        "display" : "square yard"
+        "code" : "[syd_i]"
       },
       {
-        "code" : "[tb'U]",
-        "display" : "tuberculin unit"
+        "code" : "[tb'U]"
       },
       {
-        "code" : "[tbs_us]",
-        "display" : "tablespoon (US)"
+        "code" : "[tbs_us]"
       },
       {
-        "code" : "[todd'U]",
-        "display" : "Todd unit"
+        "code" : "[todd'U]"
       },
       {
-        "code" : "[todd'U]",
-        "display" : "Todd unit"
+        "code" : "[todd'U]"
       },
       {
-        "code" : "[tsp_us]",
-        "display" : "teaspoon"
+        "code" : "[tsp_us]"
       },
       {
-        "code" : "[twp]",
-        "display" : "township"
+        "code" : "[twp]"
       },
       {
-        "code" : "[yd_br]",
-        "display" : "yard"
+        "code" : "[yd_br]"
       },
       {
-        "code" : "[yd_i]",
-        "display" : "yard"
+        "code" : "[yd_i]"
       },
       {
-        "code" : "[yd_us]",
-        "display" : "yard"
+        "code" : "[yd_us]"
       },
       {
-        "code" : "a",
-        "display" : "year"
+        "code" : "a"
       },
       {
-        "code" : "a_g",
-        "display" : "mean Gregorian year"
+        "code" : "a_g"
       },
       {
-        "code" : "a_j",
-        "display" : "mean Julian year"
+        "code" : "a_j"
       },
       {
-        "code" : "a_t",
-        "display" : "tropical year"
+        "code" : "a_t"
       },
       {
-        "code" : "ag",
-        "display" : "attogram"
+        "code" : "ag"
       },
       {
-        "code" : "ar",
-        "display" : "are"
+        "code" : "ar"
       },
       {
-        "code" : "atm",
-        "display" : "standard atmosphere"
+        "code" : "atm"
       },
       {
-        "code" : "att",
-        "display" : "technical atmosphere"
+        "code" : "att"
       },
       {
-        "code" : "b",
-        "display" : "barn"
+        "code" : "b"
       },
       {
-        "code" : "bar",
-        "display" : "bar"
+        "code" : "bar"
       },
       {
-        "code" : "bit",
-        "display" : "bit"
+        "code" : "bit"
       },
       {
-        "code" : "bit_s",
-        "display" : "bit"
+        "code" : "bit_s"
       },
       {
-        "code" : "cL",
-        "display" : "centiliter"
+        "code" : "cL"
       },
       {
-        "code" : "cP",
-        "display" : "centiPoise"
+        "code" : "cP"
       },
       {
-        "code" : "cSt",
-        "display" : "centiStokes"
+        "code" : "cSt"
       },
       {
-        "code" : "cal",
-        "display" : "calorie"
+        "code" : "cal"
       },
       {
-        "code" : "cal_IT",
-        "display" : "international table calorie"
+        "code" : "cal_IT"
       },
       {
-        "code" : "cal_[15]",
-        "display" : "calorie at 15 °C"
+        "code" : "cal_[15]"
       },
       {
-        "code" : "cal_[20]",
-        "display" : "calorie at 20 °C"
+        "code" : "cal_[20]"
       },
       {
-        "code" : "cal_m",
-        "display" : "mean calorie"
+        "code" : "cal_m"
       },
       {
-        "code" : "cal_th",
-        "display" : "thermochemical calorie"
+        "code" : "cal_th"
       },
       {
-        "code" : "cd",
-        "display" : "candela"
+        "code" : "cd"
       },
       {
-        "code" : "cg",
-        "display" : "centigram"
+        "code" : "cg"
       },
       {
-        "code" : "circ",
-        "display" : "circle"
+        "code" : "circ"
       },
       {
-        "code" : "cm",
-        "display" : "centimeter"
+        "code" : "cm"
       },
       {
-        "code" : "cm2",
-        "display" : "square centimeter"
+        "code" : "cm2"
       },
       {
-        "code" : "cm2/s",
-        "display" : "square centimeter per second"
+        "code" : "cm2/s"
       },
       {
-        "code" : "cm3",
-        "display" : "cubic centimeter"
+        "code" : "cm3"
       },
       {
-        "code" : "cm[H2O]",
-        "display" : "centimeter of water"
+        "code" : "cm[H2O]"
       },
       {
-        "code" : "cm[H2O]/(s.m)",
-        "display" : "centimeter of water column / second * meter"
+        "code" : "cm[H2O]/(s.m)"
       },
       {
-        "code" : "cm[H2O]/L/s",
-        "display" : "centimeter of water per liter per second"
+        "code" : "cm[H2O]/L/s"
       },
       {
-        "code" : "cm[H2O]/s/m",
-        "display" : "centimeter of water per second per meter"
+        "code" : "cm[H2O]/s/m"
       },
       {
-        "code" : "cm[Hg]",
-        "display" : "centimeter of mercury"
+        "code" : "cm[Hg]"
       },
       {
-        "code" : "d",
-        "display" : "day"
+        "code" : "d"
       },
       {
-        "code" : "dB",
-        "display" : "decibel"
+        "code" : "dB"
       },
       {
-        "code" : "dL",
-        "display" : "deciliter"
+        "code" : "dL"
       },
       {
-        "code" : "daL/min",
-        "display" : "dekaliter per minute"
+        "code" : "daL/min"
       },
       {
-        "code" : "daL/min/m2",
-        "display" : "dekaliter per minute per square meter"
+        "code" : "daL/min/m2"
       },
       {
-        "code" : "deg",
-        "display" : "degree"
+        "code" : "deg"
       },
       {
-        "code" : "deg/s",
-        "display" : "degree per second"
+        "code" : "deg/s"
       },
       {
-        "code" : "dg",
-        "display" : "decigram"
+        "code" : "dg"
       },
       {
-        "code" : "dm",
-        "display" : "decimeter"
+        "code" : "dm"
       },
       {
-        "code" : "dm2/s2",
-        "display" : "square decimeter per square second"
+        "code" : "dm2/s2"
       },
       {
-        "code" : "dyn",
-        "display" : "dyne"
+        "code" : "dyn"
       },
       {
-        "code" : "dyn.s/(cm.m2)",
-        "display" : "dyne second per centimeter per square meter"
+        "code" : "dyn.s/(cm.m2)"
       },
       {
-        "code" : "dyn.s/cm",
-        "display" : "dyne second per centimeter"
+        "code" : "dyn.s/cm"
       },
       {
-        "code" : "eV",
-        "display" : "electronvolt"
+        "code" : "eV"
       },
       {
-        "code" : "eq",
-        "display" : "equivalents"
+        "code" : "eq"
       },
       {
-        "code" : "eq/L",
-        "display" : "equivalents / liter"
+        "code" : "eq/L"
       },
       {
-        "code" : "eq/mL",
-        "display" : "equivalents / milliliter"
+        "code" : "eq/mL"
       },
       {
-        "code" : "eq/mmol",
-        "display" : "equivalents / millimole"
+        "code" : "eq/mmol"
       },
       {
-        "code" : "eq/umol",
-        "display" : "equivalents / micromole"
+        "code" : "eq/umol"
       },
       {
-        "code" : "erg",
-        "display" : "erg"
+        "code" : "erg"
       },
       {
-        "code" : "fL",
-        "display" : "femtoliter"
+        "code" : "fL"
       },
       {
-        "code" : "fL/nL",
-        "display" : "femtoliter / nanoliter"
+        "code" : "fL/nL"
       },
       {
-        "code" : "fg",
-        "display" : "femtogram"
+        "code" : "fg"
       },
       {
-        "code" : "fm",
-        "display" : "femtometer"
+        "code" : "fm"
       },
       {
-        "code" : "fmol",
-        "display" : "femtomole"
+        "code" : "fmol"
       },
       {
-        "code" : "fmol/L",
-        "display" : "femtomole per liter"
+        "code" : "fmol/L"
       },
       {
-        "code" : "fmol/g",
-        "display" : "femtomole per gram"
+        "code" : "fmol/g"
       },
       {
-        "code" : "fmol/mL",
-        "display" : "femtomole / milliliter"
+        "code" : "fmol/mL"
       },
       {
-        "code" : "fmol/mg",
-        "display" : "femtomole / milligram"
+        "code" : "fmol/mg"
       },
       {
-        "code" : "fmol/mg",
-        "display" : "femtomole per milligram"
+        "code" : "fmol/mg"
       },
       {
-        "code" : "g",
-        "display" : "gram"
+        "code" : "g"
       },
       {
-        "code" : "g%",
-        "display" : "gram percent"
+        "code" : "g%"
       },
       {
-        "code" : "g.m",
-        "display" : "gram * meter"
+        "code" : "g.m"
       },
       {
-        "code" : "g/(100.g)",
-        "display" : "gram per 100 gram"
+        "code" : "g/(100.g)"
       },
       {
-        "code" : "g/(12.h)",
-        "display" : "gram per 12 hour"
+        "code" : "g/(12.h)"
       },
       {
-        "code" : "g/(24.h)",
-        "display" : "gram per 24 hour"
+        "code" : "g/(24.h)"
       },
       {
-        "code" : "g/(3.d)",
-        "display" : "gram per 3 days"
+        "code" : "g/(3.d)"
       },
       {
-        "code" : "g/(4.h)",
-        "display" : "gram per 4 hour"
+        "code" : "g/(4.h)"
       },
       {
-        "code" : "g/(48.h)",
-        "display" : "gram per 48 hour"
+        "code" : "g/(48.h)"
       },
       {
-        "code" : "g/(5.h)",
-        "display" : "gram per 5 hour"
+        "code" : "g/(5.h)"
       },
       {
-        "code" : "g/(6.h)",
-        "display" : "gram per 6 hour"
+        "code" : "g/(6.h)"
       },
       {
-        "code" : "g/(72.h)",
-        "display" : "gram per 72 hour"
+        "code" : "g/(72.h)"
       },
       {
-        "code" : "g/(8.h)",
-        "display" : "gram / 8 * hour"
+        "code" : "g/(8.h)"
       },
       {
-        "code" : "g/(8.kg.h)",
-        "display" : "gram / 8 * kilogram * hour"
+        "code" : "g/(8.kg.h)"
       },
       {
-        "code" : "g/(kg.h)",
-        "display" : "gram / kilogram * hour"
+        "code" : "g/(kg.h)"
       },
       {
-        "code" : "g/(kg.min)",
-        "display" : "gram / kilogram * minute"
+        "code" : "g/(kg.min)"
       },
       {
-        "code" : "g/L",
-        "display" : "gram per liter"
+        "code" : "g/L"
       },
       {
-        "code" : "g/cm3",
-        "display" : "gram per cubic centimeter"
+        "code" : "g/cm3"
       },
       {
-        "code" : "g/d",
-        "display" : "gram per day"
+        "code" : "g/d"
       },
       {
-        "code" : "g/dL",
-        "display" : "gram per deciliter"
+        "code" : "g/dL"
       },
       {
-        "code" : "g/g",
-        "display" : "gram per gram"
+        "code" : "g/g"
       },
       {
-        "code" : "g/h",
-        "display" : "gram per hour"
+        "code" : "g/h"
       },
       {
-        "code" : "g/h/m2",
-        "display" : "gram per hour per square meter"
+        "code" : "g/h/m2"
       },
       {
-        "code" : "g/kg",
-        "display" : "gram per kilogram"
+        "code" : "g/kg"
       },
       {
-        "code" : "g/kg/(8.h)",
-        "display" : "gram per  kilogram per 8 hour"
+        "code" : "g/kg/(8.h)"
       },
       {
-        "code" : "g/kg/d",
-        "display" : "gram per kilogram per day"
+        "code" : "g/kg/d"
       },
       {
-        "code" : "g/kg/h",
-        "display" : "gram per kilogram per hour"
+        "code" : "g/kg/h"
       },
       {
-        "code" : "g/kg/min",
-        "display" : "gram per kilogram per minute"
+        "code" : "g/kg/min"
       },
       {
-        "code" : "g/m2",
-        "display" : "grams Per Square Meter"
+        "code" : "g/m2"
       },
       {
-        "code" : "g/mL",
-        "display" : "gram per milliliter"
+        "code" : "g/mL"
       },
       {
-        "code" : "g/mg",
-        "display" : "gram per milligram"
+        "code" : "g/mg"
       },
       {
-        "code" : "g/min",
-        "display" : "gram per minute"
+        "code" : "g/min"
       },
       {
-        "code" : "g/mmol",
-        "display" : "gram per millimole"
+        "code" : "g/mmol"
       },
       {
-        "code" : "g/mol",
-        "display" : "gram per mole"
+        "code" : "g/mol"
       },
       {
-        "code" : "gf",
-        "display" : "gram-force"
+        "code" : "gf"
       },
       {
-        "code" : "gon",
-        "display" : "gon grade"
+        "code" : "gon"
       },
       {
-        "code" : "h",
-        "display" : "hour"
+        "code" : "h"
       },
       {
-        "code" : "hL",
-        "display" : "hectoliter"
+        "code" : "hL"
       },
       {
-        "code" : "kBq",
-        "display" : "kiloBecquerel"
+        "code" : "kBq"
       },
       {
-        "code" : "kL",
-        "display" : "kiloliter"
+        "code" : "kL"
       },
       {
-        "code" : "kPa",
-        "display" : "kiloPascal"
+        "code" : "kPa"
       },
       {
-        "code" : "kU",
-        "display" : "kilo enzyme unit"
+        "code" : "kU"
       },
       {
-        "code" : "kU/L",
-        "display" : "kiloenzyme Unit per liter"
+        "code" : "kU/L"
       },
       {
-        "code" : "kU/g",
-        "display" : "kiloenzyme Unit per gram"
+        "code" : "kU/g"
       },
       {
-        "code" : "kU/h",
-        "display" : "kiloUnit / hour"
+        "code" : "kU/h"
       },
       {
-        "code" : "kU/mL",
-        "display" : "kilo enzyme unit per milliliter"
+        "code" : "kU/mL"
       },
       {
-        "code" : "k[IU]/L",
-        "display" : "kilo international unit per liter"
+        "code" : "k[IU]/L"
       },
       {
-        "code" : "k[IU]/mL",
-        "display" : "kilo international unit per milliliter"
+        "code" : "k[IU]/mL"
       },
       {
-        "code" : "k[iU]/mL",
-        "display" : "KiloInternationalUnitsPerMilliLiter"
+        "code" : "k[iU]/mL"
       },
       {
-        "code" : "kat",
-        "display" : "katal"
+        "code" : "kat"
       },
       {
-        "code" : "kat/L",
-        "display" : "katal / liter"
+        "code" : "kat/L"
       },
       {
-        "code" : "kat/kg",
-        "display" : "katal / kilogram"
+        "code" : "kat/kg"
       },
       {
-        "code" : "kcal",
-        "display" : "kilocalorie"
+        "code" : "kcal"
       },
       {
-        "code" : "kcal/(8.h)",
-        "display" : "kilocalorie / 8 * hour"
+        "code" : "kcal/(8.h)"
       },
       {
-        "code" : "kcal/[oz_av]",
-        "display" : "kilocalorie per ounce (US & British)"
+        "code" : "kcal/[oz_av]"
       },
       {
-        "code" : "kcal/d",
-        "display" : "kilocalorie per day"
+        "code" : "kcal/d"
       },
       {
-        "code" : "kcal/h",
-        "display" : "kilocalorie per hour"
+        "code" : "kcal/h"
       },
       {
-        "code" : "kcal/kg/(24.h)",
-        "display" : "kilocalorie per kilogram per 24 hour"
+        "code" : "kcal/kg/(24.h)"
       },
       {
-        "code" : "kg",
-        "display" : "kilogram"
+        "code" : "kg"
       },
       {
-        "code" : "kg.m/s",
-        "display" : "kilogram meter per second"
+        "code" : "kg.m/s"
       },
       {
-        "code" : "kg/(s.m2)",
-        "display" : "kilogram per second per square meter"
+        "code" : "kg/(s.m2)"
       },
       {
-        "code" : "kg/L",
-        "display" : "kilogram per liter"
+        "code" : "kg/L"
       },
       {
-        "code" : "kg/h",
-        "display" : "kilogram per hour"
+        "code" : "kg/h"
       },
       {
-        "code" : "kg/m2",
-        "display" : "kilogram / (meter ^ 2)"
+        "code" : "kg/m2"
       },
       {
-        "code" : "kg/m3",
-        "display" : "kilogram / (meter ^ 3)"
+        "code" : "kg/m3"
       },
       {
-        "code" : "kg/min",
-        "display" : "kilogram / minute"
+        "code" : "kg/min"
       },
       {
-        "code" : "kg/mol",
-        "display" : "kilogram per mole"
+        "code" : "kg/mol"
       },
       {
-        "code" : "kg/s",
-        "display" : "kilogram / second"
+        "code" : "kg/s"
       },
       {
-        "code" : "km",
-        "display" : "kilometer"
+        "code" : "km"
       },
       {
-        "code" : "ks",
-        "display" : "kilosecond"
+        "code" : "ks"
       },
       {
-        "code" : "lm",
-        "display" : "lumen"
+        "code" : "lm"
       },
       {
-        "code" : "lm.m2",
-        "display" : "lumen square meter"
+        "code" : "lm.m2"
       },
       {
-        "code" : "lm/m2",
-        "display" : "lumen / (meter ^ 2)"
+        "code" : "lm/m2"
       },
       {
-        "code" : "lx",
-        "display" : "lux"
+        "code" : "lx"
       },
       {
-        "code" : "m",
-        "display" : "meter"
+        "code" : "m"
       },
       {
-        "code" : "m/s",
-        "display" : "meter per second"
+        "code" : "m/s"
       },
       {
-        "code" : "m/s2",
-        "display" : "meter per square second"
+        "code" : "m/s2"
       },
       {
-        "code" : "m2",
-        "display" : "square meter"
+        "code" : "m2"
       },
       {
-        "code" : "m2/s",
-        "display" : "square meter per second"
+        "code" : "m2/s"
       },
       {
-        "code" : "m3/s",
-        "display" : "cubic meter per second"
+        "code" : "m3/s"
       },
       {
-        "code" : "mA",
-        "display" : "milliAmpère"
+        "code" : "mA"
       },
       {
-        "code" : "mCi",
-        "display" : "milliCurie"
+        "code" : "mCi"
       },
       {
-        "code" : "mL",
-        "display" : "milliliter"
+        "code" : "mL"
       },
       {
-        "code" : "mL/(10.h)",
-        "display" : "milliliter per 10 hour"
+        "code" : "mL/(10.h)"
       },
       {
-        "code" : "mL/(12.h)",
-        "display" : "milliliter per 12 hour"
+        "code" : "mL/(12.h)"
       },
       {
-        "code" : "mL/(2.h)",
-        "display" : "milliliter per 2 hour"
+        "code" : "mL/(2.h)"
       },
       {
-        "code" : "mL/(24.h)",
-        "display" : "milliliter per 24 hour"
+        "code" : "mL/(24.h)"
       },
       {
-        "code" : "mL/(4.h)",
-        "display" : "milliliter per 4 hour"
+        "code" : "mL/(4.h)"
       },
       {
-        "code" : "mL/(5.h)",
-        "display" : "milliliter per 5 hour"
+        "code" : "mL/(5.h)"
       },
       {
-        "code" : "mL/(6.h)",
-        "display" : "milliliter per 6 hour"
+        "code" : "mL/(6.h)"
       },
       {
-        "code" : "mL/(72.h)",
-        "display" : "milliliter per 72 hour"
+        "code" : "mL/(72.h)"
       },
       {
-        "code" : "mL/(8.h)",
-        "display" : "milliliter per 8 hour"
+        "code" : "mL/(8.h)"
       },
       {
-        "code" : "mL/(kg.min)",
-        "display" : "milliliter / kilogram * minute"
+        "code" : "mL/(kg.min)"
       },
       {
-        "code" : "mL/L",
-        "display" : "milliliter per liter"
+        "code" : "mL/L"
       },
       {
-        "code" : "mL/[sin_i]",
-        "display" : "milliliter per square inch (international)"
+        "code" : "mL/[sin_i]"
       },
       {
-        "code" : "mL/cm[H2O]",
-        "display" : "milliliter / centimeter of water column"
+        "code" : "mL/cm[H2O]"
       },
       {
-        "code" : "mL/d",
-        "display" : "milliliter per day"
+        "code" : "mL/d"
       },
       {
-        "code" : "mL/dL",
-        "display" : "milliliter per deciliter"
+        "code" : "mL/dL"
       },
       {
-        "code" : "mL/h",
-        "display" : "milliliter per hour"
+        "code" : "mL/h"
       },
       {
-        "code" : "mL/kg",
-        "display" : "milliliter per kilogram"
+        "code" : "mL/kg"
       },
       {
-        "code" : "mL/kg/(8.h)",
-        "display" : "milliliter per kilogram per 8 hour"
+        "code" : "mL/kg/(8.h)"
       },
       {
-        "code" : "mL/kg/d",
-        "display" : "milliliter per kilogram per day"
+        "code" : "mL/kg/d"
       },
       {
-        "code" : "mL/kg/h",
-        "display" : "milliliter per kilogram per hour"
+        "code" : "mL/kg/h"
       },
       {
-        "code" : "mL/kg/min",
-        "display" : "milliliter per kilogram per minute"
+        "code" : "mL/kg/min"
       },
       {
-        "code" : "mL/m2",
-        "display" : "milliliter per square meter"
+        "code" : "mL/m2"
       },
       {
-        "code" : "mL/mbar",
-        "display" : "milliliter per millibar"
+        "code" : "mL/mbar"
       },
       {
-        "code" : "mL/min",
-        "display" : "milliliter per minute"
+        "code" : "mL/min"
       },
       {
-        "code" : "mL/min/(173.10*-2.m2)",
-        "display" : "milliliter / minute / 173 * (the number ten for arbitrary powers ^ -2) * (meter ^ 2)"
+        "code" : "mL/min/(173.10*-2.m2)"
       },
       {
-        "code" : "mL/min/1.73.m2",
-        "display" : "milliliter per minute per 1.73 square meter"
+        "code" : "mL/min/1.73.m2"
       },
       {
-        "code" : "mL/min/m2",
-        "display" : "milliliter per minute per square meter"
+        "code" : "mL/min/m2"
       },
       {
-        "code" : "mL/mm",
-        "display" : "milliliter per millimeter"
+        "code" : "mL/mm"
       },
       {
-        "code" : "mL/s",
-        "display" : "milliliter per second"
+        "code" : "mL/s"
       },
       {
-        "code" : "mPa",
-        "display" : "millipascal"
+        "code" : "mPa"
       },
       {
-        "code" : "mPa.s",
-        "display" : "millipascal second"
+        "code" : "mPa.s"
       },
       {
-        "code" : "mU",
-        "display" : "millienzyme Unit"
+        "code" : "mU"
       },
       {
-        "code" : "mU/L",
-        "display" : "millienzyme Unit per liter"
+        "code" : "mU/L"
       },
       {
-        "code" : "mU/g",
-        "display" : "millienzyme Unit per gram"
+        "code" : "mU/g"
       },
       {
-        "code" : "mU/mL",
-        "display" : "millienzyme Unit per milliliter"
+        "code" : "mU/mL"
       },
       {
-        "code" : "mU/mL/min",
-        "display" : "millienzyme Unit per milliliter per minute"
+        "code" : "mU/mL/min"
       },
       {
-        "code" : "mU/mg",
-        "display" : "milliUnit / milligram"
+        "code" : "mU/mg"
       },
       {
-        "code" : "mU/min",
-        "display" : "milliUnit / minute"
+        "code" : "mU/min"
       },
       {
-        "code" : "mU/mmol",
-        "display" : "millienzyme Unit per millimole"
+        "code" : "mU/mmol"
       },
       {
-        "code" : "mV",
-        "display" : "milliVolt"
+        "code" : "mV"
       },
       {
-        "code" : "m[H2O]",
-        "display" : "meter of water column"
+        "code" : "m[H2O]"
       },
       {
-        "code" : "m[Hg]",
-        "display" : "meter of mercury column"
+        "code" : "m[Hg]"
       },
       {
-        "code" : "m[IU]/L",
-        "display" : "milli international unit per liter"
+        "code" : "m[IU]/L"
       },
       {
-        "code" : "m[IU]/mL",
-        "display" : "milli international unit per milliliter"
+        "code" : "m[IU]/mL"
       },
       {
-        "code" : "m[iU]",
-        "display" : "milliinternational unit"
+        "code" : "m[iU]"
       },
       {
-        "code" : "mbar",
-        "display" : "millibar"
+        "code" : "mbar"
       },
       {
-        "code" : "mbar.s/L",
-        "display" : "millibar second per liter"
+        "code" : "mbar.s/L"
       },
       {
-        "code" : "mbar/L/s",
-        "display" : "millibar per liter per second"
+        "code" : "mbar/L/s"
       },
       {
-        "code" : "meq",
-        "display" : "milliequivalent"
+        "code" : "meq"
       },
       {
-        "code" : "meq/(12.h)",
-        "display" : "milliequivalent per 12 hour"
+        "code" : "meq/(12.h)"
       },
       {
-        "code" : "meq/(2.h)",
-        "display" : "milliequivalent per 2 hour"
+        "code" : "meq/(2.h)"
       },
       {
-        "code" : "meq/(24.h)",
-        "display" : "milliequivalent per 24 hour"
+        "code" : "meq/(24.h)"
       },
       {
-        "code" : "meq/(8.h)",
-        "display" : "milliequivalent per 8 hour"
+        "code" : "meq/(8.h)"
       },
       {
-        "code" : "meq/(8.h.kg)",
-        "display" : "milliequivalents / 8 * hour * kilogram"
+        "code" : "meq/(8.h.kg)"
       },
       {
-        "code" : "meq/(kg.d)",
-        "display" : "milliequivalents / kilogram * day"
+        "code" : "meq/(kg.d)"
       },
       {
-        "code" : "meq/L",
-        "display" : "milliequivalent per liter"
+        "code" : "meq/L"
       },
       {
-        "code" : "meq/d",
-        "display" : "milliequivalent per day"
+        "code" : "meq/d"
       },
       {
-        "code" : "meq/dL",
-        "display" : "milliequivalent per deciliter"
+        "code" : "meq/dL"
       },
       {
-        "code" : "meq/g",
-        "display" : "milliequivalent per gram"
+        "code" : "meq/g"
       },
       {
-        "code" : "meq/h",
-        "display" : "milliequivalent per hour"
+        "code" : "meq/h"
       },
       {
-        "code" : "meq/kg",
-        "display" : "milliequivalent per kilogram"
+        "code" : "meq/kg"
       },
       {
-        "code" : "meq/kg/h",
-        "display" : "milliequivalent per kilogram per hour"
+        "code" : "meq/kg/h"
       },
       {
-        "code" : "meq/kg/min",
-        "display" : "milliequivalents / kilogram / minute"
+        "code" : "meq/kg/min"
       },
       {
-        "code" : "meq/m2",
-        "display" : "milliequivalent per square meter"
+        "code" : "meq/m2"
       },
       {
-        "code" : "meq/mL",
-        "display" : "milliequivalent per milliliter"
+        "code" : "meq/mL"
       },
       {
-        "code" : "meq/min",
-        "display" : "milliequivalent per minute"
+        "code" : "meq/min"
       },
       {
-        "code" : "mg",
-        "display" : "milligram"
+        "code" : "mg"
       },
       {
-        "code" : "mg/(10.h)",
-        "display" : "milligram per 10 hour"
+        "code" : "mg/(10.h)"
       },
       {
-        "code" : "mg/(12.h)",
-        "display" : "milligram per 12 hour"
+        "code" : "mg/(12.h)"
       },
       {
-        "code" : "mg/(18.h)",
-        "display" : "milligram per 18 hour"
+        "code" : "mg/(18.h)"
       },
       {
-        "code" : "mg/(2.h)",
-        "display" : "milligram per 2 hour"
+        "code" : "mg/(2.h)"
       },
       {
-        "code" : "mg/(24.h)",
-        "display" : "milligram per 24 hour"
+        "code" : "mg/(24.h)"
       },
       {
-        "code" : "mg/(6.h)",
-        "display" : "milligram per 6 hour"
+        "code" : "mg/(6.h)"
       },
       {
-        "code" : "mg/(72.h)",
-        "display" : "milligram per 72 hour"
+        "code" : "mg/(72.h)"
       },
       {
-        "code" : "mg/(8.h)",
-        "display" : "milligram per 8 hour"
+        "code" : "mg/(8.h)"
       },
       {
-        "code" : "mg/(8.h.kg)",
-        "display" : "milligram / 8 * hour * kilogram"
+        "code" : "mg/(8.h.kg)"
       },
       {
-        "code" : "mg/(kg.h)",
-        "display" : "milligram / kilogram * hour"
+        "code" : "mg/(kg.h)"
       },
       {
-        "code" : "mg/L",
-        "display" : "milligram per liter"
+        "code" : "mg/L"
       },
       {
-        "code" : "mg/d",
-        "display" : "milligram per day"
+        "code" : "mg/d"
       },
       {
-        "code" : "mg/d/(173.10*-2.m2)",
-        "display" : "milligram / day / 173 * (the number ten for arbitrary powers ^ -2) * (meter ^ 2)"
+        "code" : "mg/d/(173.10*-2.m2)"
       },
       {
-        "code" : "mg/d/1.73.m2",
-        "display" : "milligram per day per 1.73 square meter"
+        "code" : "mg/d/1.73.m2"
       },
       {
-        "code" : "mg/dL",
-        "display" : "milligram per deciliter"
+        "code" : "mg/dL"
       },
       {
-        "code" : "mg/g",
-        "display" : "milligram per gram"
+        "code" : "mg/g"
       },
       {
-        "code" : "mg/h",
-        "display" : "milligram per hour"
+        "code" : "mg/h"
       },
       {
-        "code" : "mg/kg",
-        "display" : "milligram per kilogram"
+        "code" : "mg/kg"
       },
       {
-        "code" : "mg/kg/(24.h)",
-        "display" : "milligram / kilogram / 24 * hour"
+        "code" : "mg/kg/(24.h)"
       },
       {
-        "code" : "mg/kg/(8.h)",
-        "display" : "milligram per kilogram per 8 hour"
+        "code" : "mg/kg/(8.h)"
       },
       {
-        "code" : "mg/kg/d",
-        "display" : "milligram per kilogram per day"
+        "code" : "mg/kg/d"
       },
       {
-        "code" : "mg/kg/h",
-        "display" : "milligram per kilogram per hour"
+        "code" : "mg/kg/h"
       },
       {
-        "code" : "mg/kg/min",
-        "display" : "milligram per kilogram per minute"
+        "code" : "mg/kg/min"
       },
       {
-        "code" : "mg/m2",
-        "display" : "milligram per square meter"
+        "code" : "mg/m2"
       },
       {
-        "code" : "mg/m3",
-        "display" : "milligram per cubic meter"
+        "code" : "mg/m3"
       },
       {
-        "code" : "mg/mL",
-        "display" : "milligram per milliliter"
+        "code" : "mg/mL"
       },
       {
-        "code" : "mg/mg",
-        "display" : "milligram per milligram"
+        "code" : "mg/mg"
       },
       {
-        "code" : "mg/min",
-        "display" : "milligram per minute"
+        "code" : "mg/min"
       },
       {
-        "code" : "mg/mmol",
-        "display" : "milligram per millimole"
+        "code" : "mg/mmol"
       },
       {
-        "code" : "mg/wk",
-        "display" : "milligram per week"
+        "code" : "mg/wk"
       },
       {
-        "code" : "mho",
-        "display" : "mho"
+        "code" : "mho"
       },
       {
-        "code" : "min",
-        "display" : "minute"
+        "code" : "min"
       },
       {
-        "code" : "mm",
-        "display" : "millimeter"
+        "code" : "mm"
       },
       {
-        "code" : "mm/h",
-        "display" : "millimeter per hour"
+        "code" : "mm/h"
       },
       {
-        "code" : "mm/min",
-        "display" : "millimeter per minute"
+        "code" : "mm/min"
       },
       {
-        "code" : "mm2",
-        "display" : "square millimeter"
+        "code" : "mm2"
       },
       {
-        "code" : "mm3",
-        "display" : "cubic millimeter"
+        "code" : "mm3"
       },
       {
-        "code" : "mm[H2O]",
-        "display" : "millimeter of water"
+        "code" : "mm[H2O]"
       },
       {
-        "code" : "mm[Hg]",
-        "display" : "millimeter of mercury"
+        "code" : "mm[Hg]"
       },
       {
-        "code" : "mmol",
-        "display" : "millimole"
+        "code" : "mmol"
       },
       {
-        "code" : "mmol/(12.h)",
-        "display" : "millimole per 12 hour"
+        "code" : "mmol/(12.h)"
       },
       {
-        "code" : "mmol/(18.h)",
-        "display" : "millimole per 18 hour"
+        "code" : "mmol/(18.h)"
       },
       {
-        "code" : "mmol/(2.h)",
-        "display" : "millimole per 2 hour"
+        "code" : "mmol/(2.h)"
       },
       {
-        "code" : "mmol/(24.h)",
-        "display" : "millimole per 24 hour"
+        "code" : "mmol/(24.h)"
       },
       {
-        "code" : "mmol/(5.h)",
-        "display" : "millimole per 5 hour"
+        "code" : "mmol/(5.h)"
       },
       {
-        "code" : "mmol/(6.h)",
-        "display" : "millimole per 6 hour"
+        "code" : "mmol/(6.h)"
       },
       {
-        "code" : "mmol/(8.h)",
-        "display" : "millimole per 8 hour"
+        "code" : "mmol/(8.h)"
       },
       {
-        "code" : "mmol/(8.h.kg)",
-        "display" : "millimole / 8 * hour * kilogram"
+        "code" : "mmol/(8.h.kg)"
       },
       {
-        "code" : "mmol/L",
-        "display" : "millimole per liter"
+        "code" : "mmol/L"
       },
       {
-        "code" : "mmol/L/s",
-        "display" : "millimole per liter per second"
+        "code" : "mmol/L/s"
       },
       {
-        "code" : "mmol/d",
-        "display" : "millimole per day"
+        "code" : "mmol/d"
       },
       {
-        "code" : "mmol/dL",
-        "display" : "millimole per deciliter"
+        "code" : "mmol/dL"
       },
       {
-        "code" : "mmol/g",
-        "display" : "millimole per gram"
+        "code" : "mmol/g"
       },
       {
-        "code" : "mmol/h",
-        "display" : "millimole per hour"
+        "code" : "mmol/h"
       },
       {
-        "code" : "mmol/h/mg",
-        "display" : "millimole per hour per milligram"
+        "code" : "mmol/h/mg"
       },
       {
-        "code" : "mmol/kg",
-        "display" : "millimole per kilogram"
+        "code" : "mmol/kg"
       },
       {
-        "code" : "mmol/kg/(8.h)",
-        "display" : "millimole per kilogram per 8 hour"
+        "code" : "mmol/kg/(8.h)"
       },
       {
-        "code" : "mmol/kg/d",
-        "display" : "millimole per kilogram per day"
+        "code" : "mmol/kg/d"
       },
       {
-        "code" : "mmol/kg/h",
-        "display" : "millimole per kilogram per hour"
+        "code" : "mmol/kg/h"
       },
       {
-        "code" : "mmol/kg/min",
-        "display" : "millimole per kilogram per minute"
+        "code" : "mmol/kg/min"
       },
       {
-        "code" : "mmol/m",
-        "display" : "millimole / meter"
+        "code" : "mmol/m"
       },
       {
-        "code" : "mmol/m2",
-        "display" : "millimole per square meter"
+        "code" : "mmol/m2"
       },
       {
-        "code" : "mmol/min",
-        "display" : "millimole per minute"
+        "code" : "mmol/min"
       },
       {
-        "code" : "mmol/mmol",
-        "display" : "millimole per millimole"
+        "code" : "mmol/mmol"
       },
       {
-        "code" : "mmol/mol",
-        "display" : "millimole per mole"
+        "code" : "mmol/mol"
       },
       {
-        "code" : "mmol/s/L",
-        "display" : "millimole per second per liter"
+        "code" : "mmol/s/L"
       },
       {
-        "code" : "mo",
-        "display" : "month"
+        "code" : "mo"
       },
       {
-        "code" : "mo_g",
-        "display" : "mean Gregorian month"
+        "code" : "mo_g"
       },
       {
-        "code" : "mo_j",
-        "display" : "mean Julian month"
+        "code" : "mo_j"
       },
       {
-        "code" : "mo_s",
-        "display" : "synodal month"
+        "code" : "mo_s"
       },
       {
-        "code" : "mol",
-        "display" : "mole"
+        "code" : "mol"
       },
       {
-        "code" : "mol/L",
-        "display" : "mole per liter"
+        "code" : "mol/L"
       },
       {
-        "code" : "mol/d",
-        "display" : "mole per day"
+        "code" : "mol/d"
       },
       {
-        "code" : "mol/kg",
-        "display" : "mole per kilogram"
+        "code" : "mol/kg"
       },
       {
-        "code" : "mol/kg/s",
-        "display" : "mole per kilogram per second"
+        "code" : "mol/kg/s"
       },
       {
-        "code" : "mol/m3",
-        "display" : "mole per cubic meter"
+        "code" : "mol/m3"
       },
       {
-        "code" : "mol/mL",
-        "display" : "mole per milliliter"
+        "code" : "mol/mL"
       },
       {
-        "code" : "mol/mol",
-        "display" : "mole per mole"
+        "code" : "mol/mol"
       },
       {
-        "code" : "mol/s",
-        "display" : "mole per second"
+        "code" : "mol/s"
       },
       {
-        "code" : "mosm",
-        "display" : "milliosmole"
+        "code" : "mosm"
       },
       {
-        "code" : "mosm/L",
-        "display" : "milliosmole per liter"
+        "code" : "mosm/L"
       },
       {
-        "code" : "mosm/kg",
-        "display" : "milliosmole per kilogram"
+        "code" : "mosm/kg"
       },
       {
-        "code" : "ms",
-        "display" : "millisecond"
+        "code" : "ms"
       },
       {
-        "code" : "nCi",
-        "display" : "nanoCurie"
+        "code" : "nCi"
       },
       {
-        "code" : "nL",
-        "display" : "nanoliter"
+        "code" : "nL"
       },
       {
-        "code" : "nU/mL",
-        "display" : "nanoenzyme unit per milliliter"
+        "code" : "nU/mL"
       },
       {
-        "code" : "nU",
-        "display" : "nanoenzyme unit"
+        "code" : "nU"
       },
       {
-        "code" : "ng",
-        "display" : "nanogram"
+        "code" : "ng"
       },
       {
-        "code" : "ng/(24.h)",
-        "display" : "nanogram per 24 hour"
+        "code" : "ng/(24.h)"
       },
       {
-        "code" : "ng/(8.h)",
-        "display" : "nanogram per 8 hour"
+        "code" : "ng/(8.h)"
       },
       {
-        "code" : "ng/(8.h.kg)",
-        "display" : "nanogram / 8 * hour * kilogram"
+        "code" : "ng/(8.h.kg)"
       },
       {
-        "code" : "ng/(kg.d)",
-        "display" : "nanogram / kilogram * day"
+        "code" : "ng/(kg.d)"
       },
       {
-        "code" : "ng/(kg.h)",
-        "display" : "nanogram / kilogram * hour"
+        "code" : "ng/(kg.h)"
       },
       {
-        "code" : "ng/(kg.min)",
-        "display" : "nanogram / kilogram * minute"
+        "code" : "ng/(kg.min)"
       },
       {
-        "code" : "ng/10*6",
-        "display" : "nanogram per million"
+        "code" : "ng/10*6"
       },
       {
-        "code" : "ng/L",
-        "display" : "nanogram per liter"
+        "code" : "ng/L"
       },
       {
-        "code" : "ng/U",
-        "display" : "nanogram per enzyme unit"
+        "code" : "ng/U"
       },
       {
-        "code" : "ng/d",
-        "display" : "nanogram per day"
+        "code" : "ng/d"
       },
       {
-        "code" : "ng/dL",
-        "display" : "nanogram per deciliter"
+        "code" : "ng/dL"
       },
       {
-        "code" : "ng/dL/h",
-        "display" : "nanogram / deciliter / hour"
+        "code" : "ng/dL/h"
       },
       {
-        "code" : "ng/g",
-        "display" : "nanogram per gram"
+        "code" : "ng/g"
       },
       {
-        "code" : "ng/h",
-        "display" : "nanogram per hour"
+        "code" : "ng/h"
       },
       {
-        "code" : "ng/kg",
-        "display" : "nanogram per kilogram"
+        "code" : "ng/kg"
       },
       {
-        "code" : "ng/kg/(8.h)",
-        "display" : "nanogram per kilogram per 8 hour"
+        "code" : "ng/kg/(8.h)"
       },
       {
-        "code" : "ng/kg/h",
-        "display" : "nanogram per kilogram per hour"
+        "code" : "ng/kg/h"
       },
       {
-        "code" : "ng/kg/min",
-        "display" : "nanogram per kilogram per minute"
+        "code" : "ng/kg/min"
       },
       {
-        "code" : "ng/m2",
-        "display" : "nanogram per square meter"
+        "code" : "ng/m2"
       },
       {
-        "code" : "ng/mL",
-        "display" : "nanogram per milliliter"
+        "code" : "ng/mL"
       },
       {
-        "code" : "ng/mL/h",
-        "display" : "nanogram per milliliter per hour"
+        "code" : "ng/mL/h"
       },
       {
-        "code" : "ng/mg",
-        "display" : "nanogram per milligram"
+        "code" : "ng/mg"
       },
       {
-        "code" : "ng/mg/h",
-        "display" : "nanogram per milligram per hour"
+        "code" : "ng/mg/h"
       },
       {
-        "code" : "ng/min",
-        "display" : "nanogram per minute"
+        "code" : "ng/min"
       },
       {
-        "code" : "ng/s",
-        "display" : "nanogram per second"
+        "code" : "ng/s"
       },
       {
-        "code" : "nkat",
-        "display" : "nanokatal"
+        "code" : "nkat"
       },
       {
-        "code" : "nm",
-        "display" : "nanometer"
+        "code" : "nm"
       },
       {
-        "code" : "nm/s/L",
-        "display" : "nanometer per second per liter"
+        "code" : "nm/s/L"
       },
       {
-        "code" : "nmol",
-        "display" : "nanomole"
+        "code" : "nmol"
       },
       {
-        "code" : "nmol/(24.h)",
-        "display" : "nanomole per 24 hour"
+        "code" : "nmol/(24.h)"
       },
       {
-        "code" : "nmol/L",
-        "display" : "nanomole per liter"
+        "code" : "nmol/L"
       },
       {
-        "code" : "nmol/L/mmol",
-        "display" : "nanomole per liter per millimole"
+        "code" : "nmol/L/mmol"
       },
       {
-        "code" : "nmol/L/s",
-        "display" : "nanomole per liter per second"
+        "code" : "nmol/L/s"
       },
       {
-        "code" : "nmol/d",
-        "display" : "nanomole per day"
+        "code" : "nmol/d"
       },
       {
-        "code" : "nmol/dL",
-        "display" : "nanomole per deciliter"
+        "code" : "nmol/dL"
       },
       {
-        "code" : "nmol/g",
-        "display" : "nanomole per gram"
+        "code" : "nmol/g"
       },
       {
-        "code" : "nmol/h/L",
-        "display" : "nanomole per hour per liter"
+        "code" : "nmol/h/L"
       },
       {
-        "code" : "nmol/h/mL",
-        "display" : "nanomole per hour per milliliter"
+        "code" : "nmol/h/mL"
       },
       {
-        "code" : "nmol/h/mg",
-        "display" : "nanomole per hour per milligram"
+        "code" : "nmol/h/mg"
       },
       {
-        "code" : "nmol/m/mg",
-        "display" : "nanomole per meter per milligram"
+        "code" : "nmol/m/mg"
       },
       {
-        "code" : "nmol/mL",
-        "display" : "nanomole per milliliter"
+        "code" : "nmol/mL"
       },
       {
-        "code" : "nmol/mL/h",
-        "display" : "nanomole per milliliter per hour"
+        "code" : "nmol/mL/h"
       },
       {
-        "code" : "nmol/mL/min",
-        "display" : "nanomole per milliliter per minute"
+        "code" : "nmol/mL/min"
       },
       {
-        "code" : "nmol/mg",
-        "display" : "nanomole per milligram"
+        "code" : "nmol/mg"
       },
       {
-        "code" : "nmol/mg/h",
-        "display" : "nanomole per milligram per hour"
+        "code" : "nmol/mg/h"
       },
       {
-        "code" : "nmol/min",
-        "display" : "nanomole per minute"
+        "code" : "nmol/min"
       },
       {
-        "code" : "nmol/min/10*6",
-        "display" : "nanomole per minute per million"
+        "code" : "nmol/min/10*6"
       },
       {
-        "code" : "nmol/min/mL",
-        "display" : "nanomole per minute per milliliter"
+        "code" : "nmol/min/mL"
       },
       {
-        "code" : "nmol/min/mg",
-        "display" : "nanomole per minute per milligram"
+        "code" : "nmol/min/mg"
       },
       {
-        "code" : "nmol/mmol",
-        "display" : "nanomole per millimole"
+        "code" : "nmol/mmol"
       },
       {
-        "code" : "nmol/mol",
-        "display" : "nanomole per mole"
+        "code" : "nmol/mol"
       },
       {
-        "code" : "nmol/nmol",
-        "display" : "nanomole per nanomole"
+        "code" : "nmol/nmol"
       },
       {
-        "code" : "nmol/s",
-        "display" : "nanomole per second"
+        "code" : "nmol/s"
       },
       {
-        "code" : "nmol/s/L",
-        "display" : "nanomole per second per liter"
+        "code" : "nmol/s/L"
       },
       {
-        "code" : "ns",
-        "display" : "nanosecond"
+        "code" : "ns"
       },
       {
-        "code" : "osm",
-        "display" : "osmole"
+        "code" : "osm"
       },
       {
-        "code" : "osm/L",
-        "display" : "osmole per liter"
+        "code" : "osm/L"
       },
       {
-        "code" : "osm/kg",
-        "display" : "osmole per kilogram"
+        "code" : "osm/kg"
       },
       {
-        "code" : "pA",
-        "display" : "picoampere"
+        "code" : "pA"
       },
       {
-        "code" : "pL",
-        "display" : "picoliter"
+        "code" : "pL"
       },
       {
-        "code" : "pT",
-        "display" : "picotesla"
+        "code" : "pT"
       },
       {
-        "code" : "pc",
-        "display" : "parsec"
+        "code" : "pc"
       },
       {
-        "code" : "pg",
-        "display" : "picogram"
+        "code" : "pg"
       },
       {
-        "code" : "pg/L",
-        "display" : "picogram per liter"
+        "code" : "pg/L"
       },
       {
-        "code" : "pg/dL",
-        "display" : "picogram per deciliter"
+        "code" : "pg/dL"
       },
       {
-        "code" : "pg/mL",
-        "display" : "picogram per milliliter"
+        "code" : "pg/mL"
       },
       {
-        "code" : "pg/mg",
-        "display" : "picogram per milligram"
+        "code" : "pg/mg"
       },
       {
-        "code" : "pg/mm",
-        "display" : "picogram per millimeter"
+        "code" : "pg/mm"
       },
       {
-        "code" : "ph",
-        "display" : "phot"
+        "code" : "ph"
       },
       {
-        "code" : "pkat",
-        "display" : "picokatal"
+        "code" : "pkat"
       },
       {
-        "code" : "pm",
-        "display" : "picometer"
+        "code" : "pm"
       },
       {
-        "code" : "pmol",
-        "display" : "picomole"
+        "code" : "pmol"
       },
       {
-        "code" : "pmol/(24.h)",
-        "display" : "picomole per 24 hour"
+        "code" : "pmol/(24.h)"
       },
       {
-        "code" : "pmol/L",
-        "display" : "picomole per liter"
+        "code" : "pmol/L"
       },
       {
-        "code" : "pmol/d",
-        "display" : "picomole per day"
+        "code" : "pmol/d"
       },
       {
-        "code" : "pmol/dL",
-        "display" : "picomole per deciliter"
+        "code" : "pmol/dL"
       },
       {
-        "code" : "pmol/g",
-        "display" : "picomole per gram"
+        "code" : "pmol/g"
       },
       {
-        "code" : "pmol/h/mL",
-        "display" : "picomole per hour per milliliter"
+        "code" : "pmol/h/mL"
       },
       {
-        "code" : "pmol/h/mg",
-        "display" : "picomole per hour per milligram"
+        "code" : "pmol/h/mg"
       },
       {
-        "code" : "pmol/mL",
-        "display" : "picomole per milliliter"
+        "code" : "pmol/mL"
       },
       {
-        "code" : "pmol/mg",
-        "display" : "picomole per milligram"
+        "code" : "pmol/mg"
       },
       {
-        "code" : "pmol/min",
-        "display" : "picomole per minute"
+        "code" : "pmol/min"
       },
       {
-        "code" : "pmol/min/mg",
-        "display" : "picomole per minute per milligram"
+        "code" : "pmol/min/mg"
       },
       {
-        "code" : "pmol/mmol",
-        "display" : "picomole per millimole"
+        "code" : "pmol/mmol"
       },
       {
-        "code" : "pmol/mol",
-        "display" : "picomole per mole"
+        "code" : "pmol/mol"
       },
       {
-        "code" : "pmol/umol",
-        "display" : "picomole per micromole"
+        "code" : "pmol/umol"
       },
       {
-        "code" : "ps",
-        "display" : "picosecond"
+        "code" : "ps"
       },
       {
-        "code" : "rad",
-        "display" : "radian"
+        "code" : "rad"
       },
       {
-        "code" : "s",
-        "display" : "second"
+        "code" : "s"
       },
       {
-        "code" : "sb",
-        "display" : "stilb"
+        "code" : "sb"
       },
       {
-        "code" : "sph",
-        "display" : "spere"
+        "code" : "sph"
       },
       {
-        "code" : "sr",
-        "display" : "steradian"
+        "code" : "sr"
       },
       {
-        "code" : "st",
-        "display" : "stere"
+        "code" : "st"
       },
       {
-        "code" : "t",
-        "display" : "tonne"
+        "code" : "t"
       },
       {
-        "code" : "u",
-        "display" : "unified atomic mass unit"
+        "code" : "u"
       },
       {
-        "code" : "uCi",
-        "display" : "MICROCURIE"
+        "code" : "uCi"
       },
       {
-        "code" : "uL",
-        "display" : "microliter"
+        "code" : "uL"
       },
       {
-        "code" : "uL/(2.h)",
-        "display" : "microliter per 2 hour"
+        "code" : "uL/(2.h)"
       },
       {
-        "code" : "uL/h",
-        "display" : "microliter per hour"
+        "code" : "uL/h"
       },
       {
-        "code" : "uOhm",
-        "display" : "microOhm"
+        "code" : "uOhm"
       },
       {
-        "code" : "uU",
-        "display" : "microUnit"
+        "code" : "uU"
       },
       {
-        "code" : "uU/L",
-        "display" : "micro enzyme unit per liter"
+        "code" : "uU/L"
       },
       {
-        "code" : "uU/g",
-        "display" : "micro enzyme unit per gram"
+        "code" : "uU/g"
       },
       {
-        "code" : "uU/mL",
-        "display" : "micro enzyme unit per milliliter"
+        "code" : "uU/mL"
       },
       {
-        "code" : "uV",
-        "display" : "microvolt"
+        "code" : "uV"
       },
       {
-        "code" : "u[IU]",
-        "display" : "micro international unit"
+        "code" : "u[IU]"
       },
       {
-        "code" : "u[IU]/L",
-        "display" : "microinternational unit per liter"
+        "code" : "u[IU]/L"
       },
       {
-        "code" : "u[IU]/mL",
-        "display" : "micro international unit per milliliter"
+        "code" : "u[IU]/mL"
       },
       {
-        "code" : "ueq",
-        "display" : "microequivalents"
+        "code" : "ueq"
       },
       {
-        "code" : "ueq/L",
-        "display" : "microequivalent per liter"
+        "code" : "ueq/L"
       },
       {
-        "code" : "ueq/mL",
-        "display" : "microequivalent per milliliter"
+        "code" : "ueq/mL"
       },
       {
-        "code" : "ug",
-        "display" : "microgram"
+        "code" : "ug"
       },
       {
-        "code" : "ug/(100.g)",
-        "display" : "microgram per 100 gram"
+        "code" : "ug/(100.g)"
       },
       {
-        "code" : "ug/(24.h)",
-        "display" : "microgram per 24 hour"
+        "code" : "ug/(24.h)"
       },
       {
-        "code" : "ug/(8.h)",
-        "display" : "microgram per 8 hour"
+        "code" : "ug/(8.h)"
       },
       {
-        "code" : "ug/(kg.d)",
-        "display" : "microgram / kilogram * day"
+        "code" : "ug/(kg.d)"
       },
       {
-        "code" : "ug/(kg.h)",
-        "display" : "microgram / kilogram * hour"
+        "code" : "ug/(kg.h)"
       },
       {
-        "code" : "ug/L",
-        "display" : "microgram per liter"
+        "code" : "ug/L"
       },
       {
-        "code" : "ug/L/(24.h)",
-        "display" : "microgram per liter per 24 hour"
+        "code" : "ug/L/(24.h)"
       },
       {
-        "code" : "ug/[sft_i]",
-        "display" : "microgram per square foot (international)"
+        "code" : "ug/[sft_i]"
       },
       {
-        "code" : "ug/d",
-        "display" : "microgram per day"
+        "code" : "ug/d"
       },
       {
-        "code" : "ug/dL",
-        "display" : "microgram per deciliter"
+        "code" : "ug/dL"
       },
       {
-        "code" : "ug/g",
-        "display" : "microgram per gram"
+        "code" : "ug/g"
       },
       {
-        "code" : "ug/h",
-        "display" : "microgram per hour"
+        "code" : "ug/h"
       },
       {
-        "code" : "ug/kg",
-        "display" : "microgram per kilogram"
+        "code" : "ug/kg"
       },
       {
-        "code" : "ug/kg/(8.h)",
-        "display" : "microgram per kilogram per 8 hour"
+        "code" : "ug/kg/(8.h)"
       },
       {
-        "code" : "ug/kg/d",
-        "display" : "microgram per kilogram per day"
+        "code" : "ug/kg/d"
       },
       {
-        "code" : "ug/kg/h",
-        "display" : "microgram per kilogram per hour"
+        "code" : "ug/kg/h"
       },
       {
-        "code" : "ug/kg/min",
-        "display" : "microgram per kilogram per minute"
+        "code" : "ug/kg/min"
       },
       {
-        "code" : "ug/m2",
-        "display" : "microgram per square meter"
+        "code" : "ug/m2"
       },
       {
-        "code" : "ug/m3",
-        "display" : "microgram per cubic meter"
+        "code" : "ug/m3"
       },
       {
-        "code" : "ug/mL",
-        "display" : "microgram per milliliter"
+        "code" : "ug/mL"
       },
       {
-        "code" : "ug/mg",
-        "display" : "microgram per milligram"
+        "code" : "ug/mg"
       },
       {
-        "code" : "ug/min",
-        "display" : "microgram per minute"
+        "code" : "ug/min"
       },
       {
-        "code" : "ug/mmol",
-        "display" : "microgram per millimole"
+        "code" : "ug/mmol"
       },
       {
-        "code" : "ug/ng",
-        "display" : "microgram per nanogram"
+        "code" : "ug/ng"
       },
       {
-        "code" : "ukat",
-        "display" : "microkatal"
+        "code" : "ukat"
       },
       {
-        "code" : "um",
-        "display" : "micrometer"
+        "code" : "um"
       },
       {
-        "code" : "um/s",
-        "display" : "micrometer per second"
+        "code" : "um/s"
       },
       {
-        "code" : "umol",
-        "display" : "micromole"
+        "code" : "umol"
       },
       {
-        "code" : "umol/(2.h)",
-        "display" : "micromole per 2 hour"
+        "code" : "umol/(2.h)"
       },
       {
-        "code" : "umol/(24.h)",
-        "display" : "micromole per 24 hour"
+        "code" : "umol/(24.h)"
       },
       {
-        "code" : "umol/(8.h)",
-        "display" : "micromole per 8 hour"
+        "code" : "umol/(8.h)"
       },
       {
-        "code" : "umol/L",
-        "display" : "micromole per liter"
+        "code" : "umol/L"
       },
       {
-        "code" : "umol/L/h",
-        "display" : "micromole per liter per hour"
+        "code" : "umol/L/h"
       },
       {
-        "code" : "umol/d",
-        "display" : "micromole per day"
+        "code" : "umol/d"
       },
       {
-        "code" : "umol/dL",
-        "display" : "micromole per deciliter"
+        "code" : "umol/dL"
       },
       {
-        "code" : "umol/g",
-        "display" : "micromole per gram"
+        "code" : "umol/g"
       },
       {
-        "code" : "umol/h",
-        "display" : "micromole per hour"
+        "code" : "umol/h"
       },
       {
-        "code" : "umol/h/L",
-        "display" : "micromole per hour per liter"
+        "code" : "umol/h/L"
       },
       {
-        "code" : "umol/h/g",
-        "display" : "micromole / hour / gram"
+        "code" : "umol/h/g"
       },
       {
-        "code" : "umol/h/mg",
-        "display" : "micromole per hour per milligram"
+        "code" : "umol/h/mg"
       },
       {
-        "code" : "umol/kg",
-        "display" : "micromole per kilogram"
+        "code" : "umol/kg"
       },
       {
-        "code" : "umol/m",
-        "display" : "micromole / meter"
+        "code" : "umol/m"
       },
       {
-        "code" : "umol/mL",
-        "display" : "micromole per milliliter"
+        "code" : "umol/mL"
       },
       {
-        "code" : "umol/mL/min",
-        "display" : "micromole per milliliter per minute"
+        "code" : "umol/mL/min"
       },
       {
-        "code" : "umol/mg",
-        "display" : "micromole per milligram"
+        "code" : "umol/mg"
       },
       {
-        "code" : "umol/min",
-        "display" : "micromole per minute"
+        "code" : "umol/min"
       },
       {
-        "code" : "umol/min/L",
-        "display" : "micromole per minute per liter"
+        "code" : "umol/min/L"
       },
       {
-        "code" : "umol/min/g",
-        "display" : "micromole per minute per gram"
+        "code" : "umol/min/g"
       },
       {
-        "code" : "umol/mmol",
-        "display" : "micromole per millimole"
+        "code" : "umol/mmol"
       },
       {
-        "code" : "umol/mol",
-        "display" : "micromole per mole"
+        "code" : "umol/mol"
       },
       {
-        "code" : "umol/umol",
-        "display" : "micromole per micromole"
+        "code" : "umol/umol"
       },
       {
-        "code" : "us",
-        "display" : "microsecond"
+        "code" : "us"
       },
       {
-        "code" : "wk",
-        "display" : "week"
+        "code" : "wk"
       }]
     }]
   }

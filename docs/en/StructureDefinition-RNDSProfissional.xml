@@ -645,7 +645,7 @@
       <isSummary value="true"/>
       <binding>
         <strength value="required"/>
-        <valueSet value="http://hl7.org/fhir/ValueSet/namingsystem-identifier-system-type"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v2-0203"/>
       </binding>
       <mapping>
         <identity value="v2"/>
@@ -1646,7 +1646,7 @@
       <isSummary value="true"/>
       <binding>
         <strength value="required"/>
-        <valueSet value="http://hl7.org/fhir/ValueSet/namingsystem-identifier-system-type"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v2-0203"/>
       </binding>
       <mapping>
         <identity value="v2"/>
@@ -2641,7 +2641,7 @@
       <isSummary value="true"/>
       <binding>
         <strength value="required"/>
-        <valueSet value="http://hl7.org/fhir/ValueSet/namingsystem-identifier-system-type"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v2-0203"/>
       </binding>
       <mapping>
         <identity value="v2"/>
@@ -3640,7 +3640,7 @@
       <isSummary value="true"/>
       <binding>
         <strength value="required"/>
-        <valueSet value="http://hl7.org/fhir/ValueSet/namingsystem-identifier-system-type"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v2-0203"/>
       </binding>
       <mapping>
         <identity value="v2"/>
@@ -4635,7 +4635,7 @@
       <isSummary value="true"/>
       <binding>
         <strength value="required"/>
-        <valueSet value="http://hl7.org/fhir/ValueSet/namingsystem-identifier-system-type"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v2-0203"/>
       </binding>
       <mapping>
         <identity value="v2"/>
@@ -5425,7 +5425,7 @@
       <isSummary value="true"/>
       <binding>
         <strength value="required"/>
-        <valueSet value="http://hl7.org/fhir/ValueSet/namingsystem-identifier-system-type"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v2-0203"/>
       </binding>
       <mapping>
         <identity value="v2"/>
@@ -6425,7 +6425,7 @@
       <isSummary value="true"/>
       <binding>
         <strength value="required"/>
-        <valueSet value="http://hl7.org/fhir/ValueSet/namingsystem-identifier-system-type"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v2-0203"/>
       </binding>
       <mapping>
         <identity value="v2"/>
@@ -7425,7 +7425,7 @@
       <isSummary value="true"/>
       <binding>
         <strength value="required"/>
-        <valueSet value="http://hl7.org/fhir/ValueSet/namingsystem-identifier-system-type"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v2-0203"/>
       </binding>
       <mapping>
         <identity value="v2"/>
@@ -8417,7 +8417,7 @@
       <isSummary value="true"/>
       <binding>
         <strength value="required"/>
-        <valueSet value="http://hl7.org/fhir/ValueSet/namingsystem-identifier-system-type"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v2-0203"/>
       </binding>
       <mapping>
         <identity value="v2"/>
@@ -10668,7 +10668,7 @@
       </patternCodeableConcept>
       <binding>
         <strength value="required"/>
-        <valueSet value="http://hl7.org/fhir/ValueSet/namingsystem-identifier-system-type"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v2-0203"/>
       </binding>
     </element>
     <element id="Practitioner.identifier:cns.type.coding">
@@ -10760,7 +10760,7 @@
       </patternCodeableConcept>
       <binding>
         <strength value="required"/>
-        <valueSet value="http://hl7.org/fhir/ValueSet/namingsystem-identifier-system-type"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v2-0203"/>
       </binding>
     </element>
     <element id="Practitioner.identifier:cpf.type.coding">
@@ -10844,7 +10844,7 @@
       </patternCodeableConcept>
       <binding>
         <strength value="required"/>
-        <valueSet value="http://hl7.org/fhir/ValueSet/namingsystem-identifier-system-type"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v2-0203"/>
       </binding>
     </element>
     <element id="Practitioner.identifier:crm.type.coding">
@@ -10933,7 +10933,7 @@
       </patternCodeableConcept>
       <binding>
         <strength value="required"/>
-        <valueSet value="http://hl7.org/fhir/ValueSet/namingsystem-identifier-system-type"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v2-0203"/>
       </binding>
     </element>
     <element id="Practitioner.identifier:rms.type.coding">
@@ -11009,7 +11009,7 @@
       </patternCodeableConcept>
       <binding>
         <strength value="required"/>
-        <valueSet value="http://hl7.org/fhir/ValueSet/namingsystem-identifier-system-type"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v2-0203"/>
       </binding>
     </element>
     <element id="Practitioner.identifier:rqe.type.coding">
@@ -11059,7 +11059,7 @@
       </patternCodeableConcept>
       <binding>
         <strength value="required"/>
-        <valueSet value="http://hl7.org/fhir/ValueSet/namingsystem-identifier-system-type"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v2-0203"/>
       </binding>
     </element>
     <element id="Practitioner.identifier:crf.type.coding">
@@ -11147,7 +11147,7 @@
       </patternCodeableConcept>
       <binding>
         <strength value="required"/>
-        <valueSet value="http://hl7.org/fhir/ValueSet/namingsystem-identifier-system-type"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v2-0203"/>
       </binding>
     </element>
     <element id="Practitioner.identifier:cro.type.coding">
@@ -11235,7 +11235,7 @@
       </patternCodeableConcept>
       <binding>
         <strength value="required"/>
-        <valueSet value="http://hl7.org/fhir/ValueSet/namingsystem-identifier-system-type"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v2-0203"/>
       </binding>
     </element>
     <element id="Practitioner.identifier:coren.type.coding">
@@ -11329,7 +11329,7 @@
       </patternCodeableConcept>
       <binding>
         <strength value="required"/>
-        <valueSet value="http://hl7.org/fhir/ValueSet/namingsystem-identifier-system-type"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v2-0203"/>
       </binding>
     </element>
     <element id="Practitioner.identifier:identificadorOutrosProfissionais.type.coding">

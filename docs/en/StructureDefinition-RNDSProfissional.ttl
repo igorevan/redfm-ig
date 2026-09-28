@@ -834,8 +834,8 @@
        fhir:ElementDefinition.binding [
          fhir:ElementDefinition.binding.strength [ fhir:value "required" ] ;
          fhir:ElementDefinition.binding.valueSet [
-           fhir:value "http://hl7.org/fhir/ValueSet/namingsystem-identifier-system-type" ;
-           fhir:link <http://hl7.org/fhir/ValueSet/namingsystem-identifier-system-type>
+           fhir:value "http://terminology.hl7.org/ValueSet/v2-0203" ;
+           fhir:link <http://terminology.hl7.org/ValueSet/v2-0203>
          ]
        ] ;
        fhir:ElementDefinition.mapping [
@@ -2086,8 +2086,8 @@
        fhir:ElementDefinition.binding [
          fhir:ElementDefinition.binding.strength [ fhir:value "required" ] ;
          fhir:ElementDefinition.binding.valueSet [
-           fhir:value "http://hl7.org/fhir/ValueSet/namingsystem-identifier-system-type" ;
-           fhir:link <http://hl7.org/fhir/ValueSet/namingsystem-identifier-system-type>
+           fhir:value "http://terminology.hl7.org/ValueSet/v2-0203" ;
+           fhir:link <http://terminology.hl7.org/ValueSet/v2-0203>
          ]
        ] ;
        fhir:ElementDefinition.mapping [
@@ -3332,8 +3332,8 @@
        fhir:ElementDefinition.binding [
          fhir:ElementDefinition.binding.strength [ fhir:value "required" ] ;
          fhir:ElementDefinition.binding.valueSet [
-           fhir:value "http://hl7.org/fhir/ValueSet/namingsystem-identifier-system-type" ;
-           fhir:link <http://hl7.org/fhir/ValueSet/namingsystem-identifier-system-type>
+           fhir:value "http://terminology.hl7.org/ValueSet/v2-0203" ;
+           fhir:link <http://terminology.hl7.org/ValueSet/v2-0203>
          ]
        ] ;
        fhir:ElementDefinition.mapping [
@@ -4585,8 +4585,8 @@
        fhir:ElementDefinition.binding [
          fhir:ElementDefinition.binding.strength [ fhir:value "required" ] ;
          fhir:ElementDefinition.binding.valueSet [
-           fhir:value "http://hl7.org/fhir/ValueSet/namingsystem-identifier-system-type" ;
-           fhir:link <http://hl7.org/fhir/ValueSet/namingsystem-identifier-system-type>
+           fhir:value "http://terminology.hl7.org/ValueSet/v2-0203" ;
+           fhir:link <http://terminology.hl7.org/ValueSet/v2-0203>
          ]
        ] ;
        fhir:ElementDefinition.mapping [
@@ -5831,8 +5831,8 @@
        fhir:ElementDefinition.binding [
          fhir:ElementDefinition.binding.strength [ fhir:value "required" ] ;
          fhir:ElementDefinition.binding.valueSet [
-           fhir:value "http://hl7.org/fhir/ValueSet/namingsystem-identifier-system-type" ;
-           fhir:link <http://hl7.org/fhir/ValueSet/namingsystem-identifier-system-type>
+           fhir:value "http://terminology.hl7.org/ValueSet/v2-0203" ;
+           fhir:link <http://terminology.hl7.org/ValueSet/v2-0203>
          ]
        ] ;
        fhir:ElementDefinition.mapping [
@@ -6810,8 +6810,8 @@
        fhir:ElementDefinition.binding [
          fhir:ElementDefinition.binding.strength [ fhir:value "required" ] ;
          fhir:ElementDefinition.binding.valueSet [
-           fhir:value "http://hl7.org/fhir/ValueSet/namingsystem-identifier-system-type" ;
-           fhir:link <http://hl7.org/fhir/ValueSet/namingsystem-identifier-system-type>
+           fhir:value "http://terminology.hl7.org/ValueSet/v2-0203" ;
+           fhir:link <http://terminology.hl7.org/ValueSet/v2-0203>
          ]
        ] ;
        fhir:ElementDefinition.mapping [
@@ -8064,8 +8064,8 @@
        fhir:ElementDefinition.binding [
          fhir:ElementDefinition.binding.strength [ fhir:value "required" ] ;
          fhir:ElementDefinition.binding.valueSet [
-           fhir:value "http://hl7.org/fhir/ValueSet/namingsystem-identifier-system-type" ;
-           fhir:link <http://hl7.org/fhir/ValueSet/namingsystem-identifier-system-type>
+           fhir:value "http://terminology.hl7.org/ValueSet/v2-0203" ;
+           fhir:link <http://terminology.hl7.org/ValueSet/v2-0203>
          ]
        ] ;
        fhir:ElementDefinition.mapping [
@@ -9318,8 +9318,8 @@
        fhir:ElementDefinition.binding [
          fhir:ElementDefinition.binding.strength [ fhir:value "required" ] ;
          fhir:ElementDefinition.binding.valueSet [
-           fhir:value "http://hl7.org/fhir/ValueSet/namingsystem-identifier-system-type" ;
-           fhir:link <http://hl7.org/fhir/ValueSet/namingsystem-identifier-system-type>
+           fhir:value "http://terminology.hl7.org/ValueSet/v2-0203" ;
+           fhir:link <http://terminology.hl7.org/ValueSet/v2-0203>
          ]
        ] ;
        fhir:ElementDefinition.mapping [
@@ -10558,8 +10558,8 @@
        fhir:ElementDefinition.binding [
          fhir:ElementDefinition.binding.strength [ fhir:value "required" ] ;
          fhir:ElementDefinition.binding.valueSet [
-           fhir:value "http://hl7.org/fhir/ValueSet/namingsystem-identifier-system-type" ;
-           fhir:link <http://hl7.org/fhir/ValueSet/namingsystem-identifier-system-type>
+           fhir:value "http://terminology.hl7.org/ValueSet/v2-0203" ;
+           fhir:link <http://terminology.hl7.org/ValueSet/v2-0203>
          ]
        ] ;
        fhir:ElementDefinition.mapping [
@@ -13370,8 +13370,8 @@
        fhir:ElementDefinition.binding [
          fhir:ElementDefinition.binding.strength [ fhir:value "required" ] ;
          fhir:ElementDefinition.binding.valueSet [
-           fhir:value "http://hl7.org/fhir/ValueSet/namingsystem-identifier-system-type" ;
-           fhir:link <http://hl7.org/fhir/ValueSet/namingsystem-identifier-system-type>
+           fhir:value "http://terminology.hl7.org/ValueSet/v2-0203" ;
+           fhir:link <http://terminology.hl7.org/ValueSet/v2-0203>
          ]
        ]
      ], [
@@ -13482,8 +13482,8 @@
        fhir:ElementDefinition.binding [
          fhir:ElementDefinition.binding.strength [ fhir:value "required" ] ;
          fhir:ElementDefinition.binding.valueSet [
-           fhir:value "http://hl7.org/fhir/ValueSet/namingsystem-identifier-system-type" ;
-           fhir:link <http://hl7.org/fhir/ValueSet/namingsystem-identifier-system-type>
+           fhir:value "http://terminology.hl7.org/ValueSet/v2-0203" ;
+           fhir:link <http://terminology.hl7.org/ValueSet/v2-0203>
          ]
        ]
      ], [
@@ -13585,8 +13585,8 @@
        fhir:ElementDefinition.binding [
          fhir:ElementDefinition.binding.strength [ fhir:value "required" ] ;
          fhir:ElementDefinition.binding.valueSet [
-           fhir:value "http://hl7.org/fhir/ValueSet/namingsystem-identifier-system-type" ;
-           fhir:link <http://hl7.org/fhir/ValueSet/namingsystem-identifier-system-type>
+           fhir:value "http://terminology.hl7.org/ValueSet/v2-0203" ;
+           fhir:link <http://terminology.hl7.org/ValueSet/v2-0203>
          ]
        ]
      ], [
@@ -13696,8 +13696,8 @@
        fhir:ElementDefinition.binding [
          fhir:ElementDefinition.binding.strength [ fhir:value "required" ] ;
          fhir:ElementDefinition.binding.valueSet [
-           fhir:value "http://hl7.org/fhir/ValueSet/namingsystem-identifier-system-type" ;
-           fhir:link <http://hl7.org/fhir/ValueSet/namingsystem-identifier-system-type>
+           fhir:value "http://terminology.hl7.org/ValueSet/v2-0203" ;
+           fhir:link <http://terminology.hl7.org/ValueSet/v2-0203>
          ]
        ]
      ], [
@@ -13790,8 +13790,8 @@
        fhir:ElementDefinition.binding [
          fhir:ElementDefinition.binding.strength [ fhir:value "required" ] ;
          fhir:ElementDefinition.binding.valueSet [
-           fhir:value "http://hl7.org/fhir/ValueSet/namingsystem-identifier-system-type" ;
-           fhir:link <http://hl7.org/fhir/ValueSet/namingsystem-identifier-system-type>
+           fhir:value "http://terminology.hl7.org/ValueSet/v2-0203" ;
+           fhir:link <http://terminology.hl7.org/ValueSet/v2-0203>
          ]
        ]
      ], [
@@ -13852,8 +13852,8 @@
        fhir:ElementDefinition.binding [
          fhir:ElementDefinition.binding.strength [ fhir:value "required" ] ;
          fhir:ElementDefinition.binding.valueSet [
-           fhir:value "http://hl7.org/fhir/ValueSet/namingsystem-identifier-system-type" ;
-           fhir:link <http://hl7.org/fhir/ValueSet/namingsystem-identifier-system-type>
+           fhir:value "http://terminology.hl7.org/ValueSet/v2-0203" ;
+           fhir:link <http://terminology.hl7.org/ValueSet/v2-0203>
          ]
        ]
      ], [
@@ -13962,8 +13962,8 @@
        fhir:ElementDefinition.binding [
          fhir:ElementDefinition.binding.strength [ fhir:value "required" ] ;
          fhir:ElementDefinition.binding.valueSet [
-           fhir:value "http://hl7.org/fhir/ValueSet/namingsystem-identifier-system-type" ;
-           fhir:link <http://hl7.org/fhir/ValueSet/namingsystem-identifier-system-type>
+           fhir:value "http://terminology.hl7.org/ValueSet/v2-0203" ;
+           fhir:link <http://terminology.hl7.org/ValueSet/v2-0203>
          ]
        ]
      ], [
@@ -14072,8 +14072,8 @@
        fhir:ElementDefinition.binding [
          fhir:ElementDefinition.binding.strength [ fhir:value "required" ] ;
          fhir:ElementDefinition.binding.valueSet [
-           fhir:value "http://hl7.org/fhir/ValueSet/namingsystem-identifier-system-type" ;
-           fhir:link <http://hl7.org/fhir/ValueSet/namingsystem-identifier-system-type>
+           fhir:value "http://terminology.hl7.org/ValueSet/v2-0203" ;
+           fhir:link <http://terminology.hl7.org/ValueSet/v2-0203>
          ]
        ]
      ], [
@@ -14190,8 +14190,8 @@
        fhir:ElementDefinition.binding [
          fhir:ElementDefinition.binding.strength [ fhir:value "required" ] ;
          fhir:ElementDefinition.binding.valueSet [
-           fhir:value "http://hl7.org/fhir/ValueSet/namingsystem-identifier-system-type" ;
-           fhir:link <http://hl7.org/fhir/ValueSet/namingsystem-identifier-system-type>
+           fhir:value "http://terminology.hl7.org/ValueSet/v2-0203" ;
+           fhir:link <http://terminology.hl7.org/ValueSet/v2-0203>
          ]
        ]
      ], [

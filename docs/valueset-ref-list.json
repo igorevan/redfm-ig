@@ -81,8 +81,8 @@
     "sources" : ["2.16.840.1.113883.3.88.12.80.46"],
     "uses" : {
     },
-    "StructureDefinition-RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos.html" : "Registro Eletrônico de Dispensação ou Fornecimento de Medicamentos - REDFM",
-    "StructureDefinition-br-core-composition.html" : "BR Core Composition"
+    "StructureDefinition-br-core-composition.html" : "BR Core Composition",
+    "StructureDefinition-RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos.html" : "Registro Eletrônico de Dispensação ou Fornecimento de Medicamentos - REDFM"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/document-relationship-type",
@@ -152,7 +152,8 @@
     "sources" : ["2.16.840.1.113883.21.120"],
     "uses" : {
     },
-    "StructureDefinition-br-core-practitioner.html" : "BR Core Practitioner"
+    "StructureDefinition-br-core-practitioner.html" : "BR Core Practitioner",
+    "StructureDefinition-RNDSProfissional.html" : "Profissional RNDS"
   },
   {
     "url" : "http://terminology.hl7.org/ValueSet/v3-ConfidentialityClassification",
@@ -226,9 +227,9 @@
     "systems" : ["http://www.saude.gov.br/fhir/r4/CodeSystem/BRCBO"],
     "uses" : {
     },
-    "StructureDefinition-br-core-practitionerrole.html" : "BR Core PractitionerRole",
+    "StructureDefinition-br-core-practitioner.html" : "BR Core Practitioner",
     "StructureDefinition-RNDSLotacaoProfissional.html" : "RNDSLotacaoProfissional",
-    "StructureDefinition-br-core-practitioner.html" : "BR Core Practitioner"
+    "StructureDefinition-br-core-practitionerrole.html" : "BR Core PractitionerRole"
   },
   {
     "url" : "http://www.saude.gov.br/fhir/r4/ValueSet/BRProblemaDiagnostico",
@@ -241,8 +242,8 @@
     "http://www.saude.gov.br/fhir/r4/CodeSystem/BRCIAP2"],
     "uses" : {
     },
-    "StructureDefinition-BRProblemaDiagnostico.html" : "ProblemaDiagnóstico",
-    "StructureDefinition-RNDSPrescricaoMedicamento.html" : "Prescrição de Medicamento - RNDS"
+    "StructureDefinition-RNDSPrescricaoMedicamento.html" : "Prescrição de Medicamento - RNDS",
+    "StructureDefinition-BRProblemaDiagnostico.html" : "ProblemaDiagnóstico"
   },
   {
     "url" : "http://www.saude.gov.br/fhir/r4/ValueSet/BRSexo-1.0",
@@ -306,9 +307,9 @@
     "systems" : ["http://www.saude.gov.br/fhir/r4/CodeSystem/BRUnidadeMedida"],
     "uses" : {
     },
-    "StructureDefinition-RNDSDispensacaoMedicamento.html" : "Dispensação ou Fornecimento de Medicamento",
+    "StructureDefinition-RNDSMedicamento.html" : "Medicamento",
     "StructureDefinition-RNDSPrescricaoMedicamento.html" : "Prescrição de Medicamento - RNDS",
-    "StructureDefinition-RNDSMedicamento.html" : "Medicamento"
+    "StructureDefinition-RNDSDispensacaoMedicamento.html" : "Dispensação ou Fornecimento de Medicamento"
   },
   {
     "url" : "http://www.saude.gov.br/fhir/r4/ValueSet/BRViaAdministracao-1.0",
@@ -320,15 +321,15 @@
     "systems" : ["http://www.saude.gov.br/fhir/r4/CodeSystem/BRViaAdministracao"],
     "uses" : {
     },
-    "StructureDefinition-RNDSDispensacaoMedicamento.html" : "Dispensação ou Fornecimento de Medicamento",
-    "StructureDefinition-RNDSPrescricaoMedicamento.html" : "Prescrição de Medicamento - RNDS"
+    "StructureDefinition-RNDSPrescricaoMedicamento.html" : "Prescrição de Medicamento - RNDS",
+    "StructureDefinition-RNDSDispensacaoMedicamento.html" : "Dispensação ou Fornecimento de Medicamento"
   },
   {
     "url" : "http://www.saude.gov.br/fhir/r4/ValueSet/RNDSUnidadeMedida",
     "version" : "1.0.0-release",
     "status" : "active",
-    "name" : "Unidade de Medida RNDS",
-    "title" : null,
+    "name" : "RNDSUnidadeMedida",
+    "title" : "Unidade de Medida RNDS",
     "description" : "ValueSet composto por códigos do CodeSystem BRUnidadeMedida e Unidades Comuns do UCUM.",
     "systems" : ["http://www.saude.gov.br/fhir/r4/CodeSystem/BRUnidadeMedida",
     "http://unitsofmeasure.org"]
@@ -343,8 +344,8 @@
     "systems" : ["https://terminologia.saude.gov.br/fhir/CodeSystem/BRConselhoProfissional"],
     "uses" : {
     },
-    "StructureDefinition-RNDSProfissional.html" : "Profissional RNDS",
-    "StructureDefinition-br-core-practitioner.html" : "BR Core Practitioner"
+    "StructureDefinition-br-core-practitioner.html" : "BR Core Practitioner",
+    "StructureDefinition-RNDSProfissional.html" : "Profissional RNDS"
   },
   {
     "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BRCRF",
@@ -356,8 +357,8 @@
     "systems" : ["https://terminologia.saude.gov.br/fhir/CodeSystem/BRConselhoProfissional"],
     "uses" : {
     },
-    "StructureDefinition-RNDSProfissional.html" : "Profissional RNDS",
-    "StructureDefinition-br-core-practitioner.html" : "BR Core Practitioner"
+    "StructureDefinition-br-core-practitioner.html" : "BR Core Practitioner",
+    "StructureDefinition-RNDSProfissional.html" : "Profissional RNDS"
   },
   {
     "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BRCRM",
@@ -369,8 +370,8 @@
     "systems" : ["https://terminologia.saude.gov.br/fhir/CodeSystem/BRConselhoProfissional"],
     "uses" : {
     },
-    "StructureDefinition-RNDSProfissional.html" : "Profissional RNDS",
-    "StructureDefinition-br-core-practitioner.html" : "BR Core Practitioner"
+    "StructureDefinition-br-core-practitioner.html" : "BR Core Practitioner",
+    "StructureDefinition-RNDSProfissional.html" : "Profissional RNDS"
   },
   {
     "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BRCRO",
@@ -382,8 +383,8 @@
     "systems" : ["https://terminologia.saude.gov.br/fhir/CodeSystem/BRConselhoProfissional"],
     "uses" : {
     },
-    "StructureDefinition-RNDSProfissional.html" : "Profissional RNDS",
-    "StructureDefinition-br-core-practitioner.html" : "BR Core Practitioner"
+    "StructureDefinition-br-core-practitioner.html" : "BR Core Practitioner",
+    "StructureDefinition-RNDSProfissional.html" : "Profissional RNDS"
   },
   {
     "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BROutrosProfissionais",
@@ -395,7 +396,7 @@
     "systems" : ["https://terminologia.saude.gov.br/fhir/CodeSystem/BRConselhoProfissional"],
     "uses" : {
     },
-    "StructureDefinition-RNDSProfissional.html" : "Profissional RNDS",
-    "StructureDefinition-br-core-practitioner.html" : "BR Core Practitioner"
+    "StructureDefinition-br-core-practitioner.html" : "BR Core Practitioner",
+    "StructureDefinition-RNDSProfissional.html" : "Profissional RNDS"
   }]
 }

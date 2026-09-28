@@ -196,7 +196,7 @@ Other representations of profile: [CSV](../StructureDefinition-RNDSProfissional.
       },
       "binding" : {
         "strength" : "required",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/namingsystem-identifier-system-type"
+        "valueSet" : "http://terminology.hl7.org/ValueSet/v2-0203"
       }
     },
     {
@@ -303,7 +303,7 @@ Other representations of profile: [CSV](../StructureDefinition-RNDSProfissional.
       },
       "binding" : {
         "strength" : "required",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/namingsystem-identifier-system-type"
+        "valueSet" : "http://terminology.hl7.org/ValueSet/v2-0203"
       }
     },
     {
@@ -402,7 +402,7 @@ Other representations of profile: [CSV](../StructureDefinition-RNDSProfissional.
       },
       "binding" : {
         "strength" : "required",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/namingsystem-identifier-system-type"
+        "valueSet" : "http://terminology.hl7.org/ValueSet/v2-0203"
       }
     },
     {
@@ -506,7 +506,7 @@ Other representations of profile: [CSV](../StructureDefinition-RNDSProfissional.
       },
       "binding" : {
         "strength" : "required",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/namingsystem-identifier-system-type"
+        "valueSet" : "http://terminology.hl7.org/ValueSet/v2-0203"
       }
     },
     {
@@ -596,7 +596,7 @@ Other representations of profile: [CSV](../StructureDefinition-RNDSProfissional.
       },
       "binding" : {
         "strength" : "required",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/namingsystem-identifier-system-type"
+        "valueSet" : "http://terminology.hl7.org/ValueSet/v2-0203"
       }
     },
     {
@@ -654,7 +654,7 @@ Other representations of profile: [CSV](../StructureDefinition-RNDSProfissional.
       },
       "binding" : {
         "strength" : "required",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/namingsystem-identifier-system-type"
+        "valueSet" : "http://terminology.hl7.org/ValueSet/v2-0203"
       }
     },
     {
@@ -757,7 +757,7 @@ Other representations of profile: [CSV](../StructureDefinition-RNDSProfissional.
       },
       "binding" : {
         "strength" : "required",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/namingsystem-identifier-system-type"
+        "valueSet" : "http://terminology.hl7.org/ValueSet/v2-0203"
       }
     },
     {
@@ -860,7 +860,7 @@ Other representations of profile: [CSV](../StructureDefinition-RNDSProfissional.
       },
       "binding" : {
         "strength" : "required",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/namingsystem-identifier-system-type"
+        "valueSet" : "http://terminology.hl7.org/ValueSet/v2-0203"
       }
     },
     {
@@ -971,7 +971,7 @@ Other representations of profile: [CSV](../StructureDefinition-RNDSProfissional.
       },
       "binding" : {
         "strength" : "required",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/namingsystem-identifier-system-type"
+        "valueSet" : "http://terminology.hl7.org/ValueSet/v2-0203"
       }
     },
     {

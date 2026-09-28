@@ -49,7 +49,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
     <system value=""http://terminology.hl7.org/CodeSystem/v2-0203""/>
     <code value=""PHO""/>
   </coding>
-</valueCodeableConcept>","","","",,"required","","http://hl7.org/fhir/ValueSet/namingsystem-identifier-system-type","",,,,"Identifier.type",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+</valueCodeableConcept>","","","",,"required","","http://terminology.hl7.org/ValueSet/v2-0203","",,,,"Identifier.type",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","CX.5","Role.code or implied by context"
 "Practitioner.identifier:cns.type.id","Practitioner.identifier.type.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
@@ -145,7 +145,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
     <system value=""http://terminology.hl7.org/CodeSystem/v2-0203""/>
     <code value=""TAX""/>
   </coding>
-</valueCodeableConcept>","","","",,"required","","http://hl7.org/fhir/ValueSet/namingsystem-identifier-system-type","",,,,"Identifier.type",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+</valueCodeableConcept>","","","",,"required","","http://terminology.hl7.org/ValueSet/v2-0203","",,,,"Identifier.type",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","CX.5","Role.code or implied by context"
 "Practitioner.identifier:cpf.type.id","Practitioner.identifier.type.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
@@ -241,7 +241,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
     <system value=""http://terminology.hl7.org/CodeSystem/v2-0203""/>
     <code value=""MD""/>
   </coding>
-</valueCodeableConcept>","","","",,"required","","http://hl7.org/fhir/ValueSet/namingsystem-identifier-system-type","",,,,"Identifier.type",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+</valueCodeableConcept>","","","",,"required","","http://terminology.hl7.org/ValueSet/v2-0203","",,,,"Identifier.type",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","CX.5","Role.code or implied by context"
 "Practitioner.identifier:crm.type.id","Practitioner.identifier.type.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
@@ -337,7 +337,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
     <system value=""http://terminology.hl7.org/CodeSystem/v2-0203""/>
     <code value=""MRT""/>
   </coding>
-</valueCodeableConcept>","","","",,"required","","http://hl7.org/fhir/ValueSet/namingsystem-identifier-system-type","",,,,"Identifier.type",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+</valueCodeableConcept>","","","",,"required","","http://terminology.hl7.org/ValueSet/v2-0203","",,,,"Identifier.type",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","CX.5","Role.code or implied by context"
 "Practitioner.identifier:rms.type.id","Practitioner.identifier.type.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
@@ -433,7 +433,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
     <system value=""http://terminology.hl7.org/CodeSystem/v2-0203""/>
     <code value=""DN""/>
   </coding>
-</valueCodeableConcept>","","","",,"required","","http://hl7.org/fhir/ValueSet/namingsystem-identifier-system-type","",,,,"Identifier.type",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+</valueCodeableConcept>","","","",,"required","","http://terminology.hl7.org/ValueSet/v2-0203","",,,,"Identifier.type",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","CX.5","Role.code or implied by context"
 "Practitioner.identifier:rqe.type.id","Practitioner.identifier.type.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
@@ -501,7 +501,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
     <system value=""http://terminology.hl7.org/CodeSystem/v2-0203""/>
     <code value=""RPH""/>
   </coding>
-</valueCodeableConcept>","","","",,"required","","http://hl7.org/fhir/ValueSet/namingsystem-identifier-system-type","",,,,"Identifier.type",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+</valueCodeableConcept>","","","",,"required","","http://terminology.hl7.org/ValueSet/v2-0203","",,,,"Identifier.type",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","CX.5","Role.code or implied by context"
 "Practitioner.identifier:crf.type.id","Practitioner.identifier.type.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
@@ -597,7 +597,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
     <system value=""http://terminology.hl7.org/CodeSystem/v2-0203""/>
     <code value=""DDS""/>
   </coding>
-</valueCodeableConcept>","","","",,"required","","http://hl7.org/fhir/ValueSet/namingsystem-identifier-system-type","",,,,"Identifier.type",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+</valueCodeableConcept>","","","",,"required","","http://terminology.hl7.org/ValueSet/v2-0203","",,,,"Identifier.type",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","CX.5","Role.code or implied by context"
 "Practitioner.identifier:cro.type.id","Practitioner.identifier.type.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
@@ -693,7 +693,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
     <system value=""http://terminology.hl7.org/CodeSystem/v2-0203""/>
     <code value=""RN""/>
   </coding>
-</valueCodeableConcept>","","","",,"required","","http://hl7.org/fhir/ValueSet/namingsystem-identifier-system-type","",,,,"Identifier.type",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+</valueCodeableConcept>","","","",,"required","","http://terminology.hl7.org/ValueSet/v2-0203","",,,,"Identifier.type",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","CX.5","Role.code or implied by context"
 "Practitioner.identifier:coren.type.id","Practitioner.identifier.type.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
@@ -788,7 +788,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
     <system value=""http://terminology.hl7.org/CodeSystem/v2-0203""/>
     <code value=""LN""/>
   </coding>
-</valueCodeableConcept>","","","",,"required","","http://hl7.org/fhir/ValueSet/namingsystem-identifier-system-type","",,,,"Identifier.type",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+</valueCodeableConcept>","","","",,"required","","http://terminology.hl7.org/ValueSet/v2-0203","",,,,"Identifier.type",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","CX.5","Role.code or implied by context"
 "Practitioner.identifier:identificadorOutrosProfissionais.type.id","Practitioner.identifier.type.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"

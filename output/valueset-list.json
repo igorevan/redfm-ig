@@ -116,8 +116,8 @@
     "url" : "http://www.saude.gov.br/fhir/r4/ValueSet/RNDSUnidadeMedida",
     "version" : "1.0.0-release",
     "status" : "active",
-    "name" : "Unidade de Medida RNDS",
-    "title" : null,
+    "name" : "RNDSUnidadeMedida",
+    "title" : "Unidade de Medida RNDS",
     "description" : "ValueSet composto por códigos do CodeSystem BRUnidadeMedida e Unidades Comuns do UCUM.",
     "systems" : ["http://www.saude.gov.br/fhir/r4/CodeSystem/BRUnidadeMedida",
     "http://unitsofmeasure.org"]

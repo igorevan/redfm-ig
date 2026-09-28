@@ -241,7 +241,7 @@
   "type" : "ValueSet",
   "url" : "http://www.saude.gov.br/fhir/r4/ValueSet/RNDSUnidadeMedida",
   "version" : "1.0.0-release",
-  "name" : "Unidade de Medida RNDS"
+  "name" : "RNDSUnidadeMedida"
 },
 {
   "id" : "br-core-composition",
