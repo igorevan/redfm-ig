@@ -61,7 +61,7 @@ Other representations of profile: [CSV](../StructureDefinition-br-core-healthcar
   "name" : "BRCoreHealthcareService",
   "title" : "br-core-healthcareservice",
   "status" : "active",
-  "date" : "2026-09-28T11:57:19-03:00",
+  "date" : "2026-09-30T19:22:44-03:00",
   "publisher" : "Ministério da Saúde do Brasil",
   "contact" : [{
     "name" : "Ministério da Saúde do Brasil",

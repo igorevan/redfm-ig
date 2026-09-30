@@ -3,7 +3,7 @@ REDFMRNDSIG : Validation Results
 
 err = 3, warn = 10, info = 1
 IG Publisher Version: 2.3.4
-Generated Mon Sep 28 12:06:02 BRT 2026. FHIR version 4.0.1 for br.gov.saude.redfm.fhir#1.0.0-release (canonical = https://fhir.saude.gov.br/redfm)
+Generated Wed Sep 30 19:31:29 BRT 2026. FHIR version 4.0.1 for br.gov.saude.redfm.fhir#1.0.0-release (canonical = https://fhir.saude.gov.br/redfm)
  Build Errors : 0 / 0 / 0
  /home/igor/redfm-ig/input/examples/example-redfm-01-prescricao-na-rnds : 0 / 2 / 2
  /home/igor/redfm-ig/input/examples/example-redfm-02-prescricao-fora-rnds : 0 / 2 / 4

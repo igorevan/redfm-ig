@@ -31,7 +31,7 @@
   "title" : "Guia de Implementação do Registro Eletrônico de Dispensação ou Fornecimento de Medicamento (REDFM) da RNDS",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-28T11:57:19-03:00",
+  "date" : "2026-09-30T19:22:44-03:00",
   "publisher" : "Ministério da Saúde do Brasil",
   "contact" : [{
     "name" : "Ministério da Saúde do Brasil",

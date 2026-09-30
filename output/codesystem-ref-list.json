@@ -273,8 +273,8 @@
     "description" : "CodeSystem utilizado para definir a unidade de medida de um medicamento prescrito, para consumo ou especificação do fabricante.",
     "uses" : {
     },
-    "ValueSet-BRUnidadeMedidaMedicamento.html" : "Unidade de Medida de Medicamento",
-    "ValueSet-RNDSUnidadeMedida.html" : "Unidade de Medida RNDS"
+    "ValueSet-RNDSUnidadeMedida.html" : "Unidade de Medida RNDS",
+    "ValueSet-BRUnidadeMedidaMedicamento.html" : "Unidade de Medida de Medicamento"
   },
   {
     "url" : "http://www.saude.gov.br/fhir/r4/CodeSystem/BRViaAdministracao",
@@ -296,10 +296,10 @@
     "description" : "Esse CodeSystem inclui os conselhos profissionais de saúde do Brasil, conforme a Resolução CNS 251/1997.",
     "uses" : {
     },
-    "ValueSet-BRCOREN.html" : "Conselhos regionais de Enfermagem do Brasil",
-    "ValueSet-BROutrosProfissionais.html" : "Conselhos regionais de outros profissionais da saúde do Brasil",
-    "ValueSet-BRCRM.html" : "Conselhos regionais de Medicina do Brasil",
     "ValueSet-BRCRF.html" : "Conselhos regionais de Farmácia do Brasil",
+    "ValueSet-BRCOREN.html" : "Conselhos regionais de Enfermagem do Brasil",
+    "ValueSet-BRCRM.html" : "Conselhos regionais de Medicina do Brasil",
+    "ValueSet-BROutrosProfissionais.html" : "Conselhos regionais de outros profissionais da saúde do Brasil",
     "ValueSet-BRCRO.html" : "Conselhos regionais de Odontologia do Brasil"
   }]
 }
