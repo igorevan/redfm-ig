@@ -38,7 +38,7 @@
   "name" : "BRCoreMedication",
   "title" : "BR Core Medication",
   "status" : "active",
-  "date" : "2026-09-30T19:22:44-03:00",
+  "date" : "2026-10-08T21:08:49-03:00",
   "publisher" : "Ministério da Saúde do Brasil",
   "contact" : [{
     "name" : "Ministério da Saúde do Brasil",
@@ -812,7 +812,7 @@
           "path" : "$this"
         }],
         "ordered" : false,
-        "rules" : "open"
+        "rules" : "closed"
       },
       "short" : "Ingrediente",
       "definition" : "O ingrediente ou conteúdo real Vinculante: Substâncias ativas de medicamentos - IPS (preferencial): Substâncias medicamentosas SNOMED CT",
@@ -873,6 +873,50 @@
         "code" : "Reference",
         "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Substance",
         "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-medication"]
+      }],
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "xpath" : "@value|f:*|h:div",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      }],
+      "isModifier" : false,
+      "isSummary" : false,
+      "mapping" : [{
+        "identity" : "script10.6",
+        "map" : "coding.code = //element(*,MedicationType)/DrugCoded/ProductCode\r\rcoding.system = //element(*,MedicationType)/DrugCoded/ProductCodeQualifier\r\rcoding.display = //element(*,MedicationType)/DrugDescription"
+      },
+      {
+        "identity" : "v2",
+        "map" : "RXC-2-Component Code  if medication: RXO-1-Requested Give Code / RXE-2-Give Code / RXD-2-Dispense/Give Code / RXG-4-Give Code / RXA-5-Administered Code"
+      },
+      {
+        "identity" : "rim",
+        "map" : ".player"
+      }]
+    },
+    {
+      "id" : "Medication.ingredient.item[x]:itemCodeableConcept",
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implied-type-slice",
+        "valueBoolean" : true
+      }],
+      "path" : "Medication.ingredient.item[x]",
+      "sliceName" : "itemCodeableConcept",
+      "short" : "The actual ingredient or content",
+      "definition" : "The actual ingredient - either a substance (simple ingredient) or another medication of a medication.",
+      "requirements" : "The ingredient may reference a substance (for example, amoxicillin) or another medication (for example in the case of a compounded product, Glaxal Base).",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Medication.ingredient.item[x]",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "CodeableConcept"
       }],
       "constraint" : [{
         "key" : "ele-1",

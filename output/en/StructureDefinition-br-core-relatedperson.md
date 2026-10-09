@@ -2,18 +2,6 @@
 
 ## Resource Profile: BRCoreRelatedPerson 
 
- 
-O recurso [br-core-relatedperson](https://saude.gov.br/fhir/StructureDefinition/br-core-relatedperson.html) contém as informações sobre uma pessoa envolvida no cuidado de um paciente, mas que não é alvo de cuidados de saúde nem tem responsabilidade formal no processo de cuidado. 
-A pessoa representada pelo recurso [br-core-relatedperson](https://saude.gov.br/fhir/StructureDefinition/br-core-relatedperson.html) normalmente tem um relacionamento profissional pessoal ou não específico de cuidado em saúde com o paciente. O recurso [br-core-relatedperson](https://saude.gov.br/fhir/StructureDefinition/br-core-relatedperson.html) é usado principalmente para atribuição de informações, já que geralmente é uma fonte de informações sobre o paciente. Para manter informações sobre pessoas para fins de contato para um paciente, use um elemento br-core-patien.contact. Alguns indivíduos podem ser representados simultaneamente como um patient.contact e [br-core-relatedperson](https://saude.gov.br/fhir/StructureDefinition/br-core-relatedperson.html). 
-Exemplos de pessoas que podem ser um [br-core-relatedperson](https://saude.gov.br/fhir/StructureDefinition/br-core-relatedperson.html): 
-* Esposa ou marido de um paciente
-* Parentes ou amigos de um paciente
-* Um vizinho que leva um paciente para o hospital
-* O dono ou treinador de um cavalo
-* Um advogado ou tutor do paciente
-* Um cão-guia
- 
-
 **Usos:**
 
 * Refere a este Perfil: [BR Core Composition](StructureDefinition-br-core-composition.md)
@@ -69,7 +57,7 @@ Other representations of profile: [CSV](../StructureDefinition-br-core-relatedpe
   "version" : "1.0.0-release",
   "name" : "BRCoreRelatedPerson",
   "status" : "active",
-  "date" : "2026-09-30T19:22:44-03:00",
+  "date" : "2026-10-08T21:08:49-03:00",
   "publisher" : "Ministério da Saúde do Brasil",
   "contact" : [{
     "name" : "Ministério da Saúde do Brasil",

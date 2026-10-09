@@ -2,15 +2,12 @@
 
 ## ValueSet: Conselhos regionais de outros profissionais da saúde do Brasil 
 
- 
-Conjunto de todos os conselhos regionais de outros profissionais da saúde do Brasil 
-
  **References** 
 
 * [Profissional RNDS](StructureDefinition-RNDSProfissional.md)
 * [BR Core Practitioner](StructureDefinition-br-core-practitioner.md)
 
-### Logical Definition (CLD)
+### Definição lógica (CLD)
 
  
 

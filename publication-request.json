@@ -9,7 +9,7 @@
   "changes": "changes.html",
   "first": true,
   "title": "REDFM IG",
-  "ci-build": "https://igorevan.github.io/redfm-ig/",
+  "ci-build": "https://github.com/igorevan/redfm-ig",
   "registry-description": "Primeira versão do Guia de Implementação do Registro Eletrônico de Dispensação ou Fornecimento de Medicamento (REDFM) da RNDS",
   "registry-country": "BR",
   "registry-authority": "Ministério da Saúde do Brasil",

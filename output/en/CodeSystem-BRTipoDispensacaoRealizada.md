@@ -2,9 +2,6 @@
 
 ## CodeSystem: Tipo de Dispensação Realizada (CodeSystem) 
 
- 
-Indica o tipo de dispensação que foi realizada 
-
 This Code system is referenced in the definition of the following value sets:
 
 * [Tipo de Dispensação Realizada (ValueSet)](ValueSet-BRTipoDispensacaoRealizada.md)

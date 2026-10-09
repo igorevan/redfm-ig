@@ -2,9 +2,6 @@
 
 ## Resource Profile: Dispensação ou Fornecimento de Medicamento 
 
- 
-Este recurso Indica que um medicamento deve ser ou foi dispensado para uma pessoa/paciente. O recurso inclui a descrição do medicamento (suprimento) fornecido bem como as instruções para a sua administração. A dispensação do medicamento é o resultado de um pedido de medicamentos feito por um sistema de informações 
-
 **Usos:**
 
 * Refere a este Perfil: [Registro Eletrônico de Dispensação ou Fornecimento de Medicamentos - REDFM](StructureDefinition-RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos.md)

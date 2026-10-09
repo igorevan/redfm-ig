@@ -2,9 +2,6 @@
 
 ## Resource Profile: Prescrição de Medicamento - RNDS 
 
- 
-Uma ordem ou solicitação para o fornecimento do medicamento e as instruções para sua administração a um paciente. O recurso é denominado "MedicationRequest" em vez de "MedicationPrescription" ou "MedicationOrder" para generalizar o uso em ambientes hospitalares e ambulatoriais, incluindo planos de cuidados, etc., e para harmonizar com os fluxos de trabalho. 
-
 **Usos:**
 
 * Refere a este Perfil: [Dispensação ou Fornecimento de Medicamento](StructureDefinition-RNDSDispensacaoMedicamento.md) and [Registro Eletrônico de Dispensação ou Fornecimento de Medicamentos - REDFM](StructureDefinition-RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos.md)

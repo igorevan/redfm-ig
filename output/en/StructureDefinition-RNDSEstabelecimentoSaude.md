@@ -2,9 +2,6 @@
 
 ## Resource Profile: Estabelecimento de Saúde RNDS 
 
- 
-Este perfil representa um agrupamento formal ou informal reconhecido de pessoas ou organizações com o propósito de alcançar alguma forma de ação coletiva. Inclui estabelecimentos de saúde, empresas, instituições, corporações, departamentos, grupos comunitários, grupos de práticas de saúde, planos de saúde, empresas fabricantes de produtos medicinais, entre outros. 
-
 **Usos:**
 
 * Refere a este Perfil: [RNDSLotacaoProfissional](StructureDefinition-RNDSLotacaoProfissional.md)

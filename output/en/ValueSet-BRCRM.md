@@ -2,15 +2,12 @@
 
 ## ValueSet: Conselhos regionais de Medicina do Brasil 
 
- 
-Conjunto de todos os conselhos regionais de medicina do Brasil 
-
  **References** 
 
 * [Profissional RNDS](StructureDefinition-RNDSProfissional.md)
 * [BR Core Practitioner](StructureDefinition-br-core-practitioner.md)
 
-### Logical Definition (CLD)
+### Definição lógica (CLD)
 
  
 

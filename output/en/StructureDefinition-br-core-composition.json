@@ -38,7 +38,7 @@
   "name" : "BRCoreComposition",
   "title" : "BR Core Composition",
   "status" : "active",
-  "date" : "2026-09-30T19:22:44-03:00",
+  "date" : "2026-10-08T21:08:49-03:00",
   "publisher" : "Ministério da Saúde do Brasil",
   "contact" : [{
     "name" : "Ministério da Saúde do Brasil",
@@ -2028,7 +2028,7 @@
           "path" : "$this"
         }],
         "ordered" : false,
-        "rules" : "open"
+        "rules" : "closed"
       },
       "short" : "Relacionamento alvo",
       "definition" : "Relacionamento alvo",
@@ -2085,6 +2085,49 @@
       "type" : [{
         "code" : "Reference",
         "targetProfile" : ["https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-composition"]
+      }],
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "xpath" : "@value|f:*|h:div",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      }],
+      "isModifier" : false,
+      "isSummary" : false,
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : ".target[classCode=\"DOC\", moodCode=\"EVN\"].id"
+      },
+      {
+        "identity" : "cda",
+        "map" : ".relatedDocument.id"
+      },
+      {
+        "identity" : "fhirdocumentreference",
+        "map" : "DocumentReference.relatesTo.target"
+      }]
+    },
+    {
+      "id" : "Composition.relatesTo.target[x]:targetIdentifier",
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implied-type-slice",
+        "valueBoolean" : true
+      }],
+      "path" : "Composition.relatesTo.target[x]",
+      "sliceName" : "targetIdentifier",
+      "short" : "Target of the relationship",
+      "definition" : "The target composition/document of this relationship.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Composition.relatesTo.target[x]",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Identifier"
       }],
       "constraint" : [{
         "key" : "ele-1",

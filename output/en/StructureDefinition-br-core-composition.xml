@@ -31,7 +31,7 @@
   <name value="BRCoreComposition"/>
   <title value="BR Core Composition"/>
   <status value="active"/>
-  <date value="2026-09-30T19:22:44-03:00"/>
+  <date value="2026-10-08T21:08:49-03:00"/>
   <publisher value="Ministério da Saúde do Brasil"/>
   <contact>
     <name value="Ministério da Saúde do Brasil"/>
@@ -1956,7 +1956,7 @@
           <path value="$this"/>
         </discriminator>
         <ordered value="false"/>
-        <rules value="open"/>
+        <rules value="closed"/>
       </slicing>
       <short value="Relacionamento alvo"/>
       <definition value="Relacionamento alvo"/>
@@ -2012,6 +2012,47 @@
       <type>
         <code value="Reference"/>
         <targetProfile value="https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-composition"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value=".target[classCode=&quot;DOC&quot;, moodCode=&quot;EVN&quot;].id"/>
+      </mapping>
+      <mapping>
+        <identity value="cda"/>
+        <map value=".relatedDocument.id"/>
+      </mapping>
+      <mapping>
+        <identity value="fhirdocumentreference"/>
+        <map value="DocumentReference.relatesTo.target"/>
+      </mapping>
+    </element>
+    <element id="Composition.relatesTo.target[x]:targetIdentifier">
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/implied-type-slice">
+        <valueBoolean value="true"/>
+      </extension>
+      <path value="Composition.relatesTo.target[x]"/>
+      <sliceName value="targetIdentifier"/>
+      <short value="Target of the relationship"/>
+      <definition value="The target composition/document of this relationship."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Composition.relatesTo.target[x]"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Identifier"/>
       </type>
       <constraint>
         <key value="ele-1"/>

@@ -2,14 +2,11 @@
 
 ## ValueSet: Unidade de Medida RNDS 
 
- 
-ValueSet composto por códigos do CodeSystem BRUnidadeMedida e Unidades Comuns do UCUM. 
-
  **References** 
 
 Este conjunto de valores não é utilizado aqui; pode ser utilizado noutro local (por exemplo, especificações e/ou implementações que utilizem este conteúdo)
 
-### Logical Definition (CLD)
+### Definição lógica (CLD)
 
  
 

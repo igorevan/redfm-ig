@@ -2,9 +2,6 @@
 
 ## Resource Profile: Registro Eletrônico de Dispensação ou Fornecimento de Medicamento (REDFM) 
 
- 
-Documento público que coleta os dados das prescrições de medicamentos realizadas em qualquer estabelecimento de saúde do país, público ou privado. 
-
 **Usos:**
 
 * Refere a este Perfil: [Registro Eletrônico de Dispensação ou Fornecimento de Medicamentos - REDFM](StructureDefinition-RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos.md)

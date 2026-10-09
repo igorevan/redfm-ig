@@ -33,8 +33,8 @@
     "oids" : ["2.16.840.1.113883.4.642.4.242"],
     "uses" : {
     },
-    "ValueSet-BREstadoDocumento-1.0.html" : "Estado do Documento",
-    "http://hl7.org/fhir/R4/valueset-composition-status.html" : "CompositionStatus"
+    "http://hl7.org/fhir/R4/valueset-composition-status.html" : "CompositionStatus",
+    "ValueSet-BREstadoDocumento-1.0.html" : "Estado do Documento"
   },
   {
     "url" : "http://hl7.org/fhir/document-relationship-type",
@@ -296,10 +296,10 @@
     "description" : "Esse CodeSystem inclui os conselhos profissionais de saúde do Brasil, conforme a Resolução CNS 251/1997.",
     "uses" : {
     },
-    "ValueSet-BRCRF.html" : "Conselhos regionais de Farmácia do Brasil",
-    "ValueSet-BRCOREN.html" : "Conselhos regionais de Enfermagem do Brasil",
-    "ValueSet-BRCRM.html" : "Conselhos regionais de Medicina do Brasil",
     "ValueSet-BROutrosProfissionais.html" : "Conselhos regionais de outros profissionais da saúde do Brasil",
-    "ValueSet-BRCRO.html" : "Conselhos regionais de Odontologia do Brasil"
+    "ValueSet-BRCRO.html" : "Conselhos regionais de Odontologia do Brasil",
+    "ValueSet-BRCRM.html" : "Conselhos regionais de Medicina do Brasil",
+    "ValueSet-BRCOREN.html" : "Conselhos regionais de Enfermagem do Brasil",
+    "ValueSet-BRCRF.html" : "Conselhos regionais de Farmácia do Brasil"
   }]
 }

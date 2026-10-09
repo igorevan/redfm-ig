@@ -2,14 +2,11 @@
 
 ## ValueSet: Estado do Documento 
 
- 
-Classifica o estado do documento que está sendo trafegado. 
-
  **References** 
 
 * [Registro Eletrônico de Dispensação ou Fornecimento de Medicamentos - REDFM](StructureDefinition-RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos.md)
 
-### Logical Definition (CLD)
+### Definição lógica (CLD)
 
  
 

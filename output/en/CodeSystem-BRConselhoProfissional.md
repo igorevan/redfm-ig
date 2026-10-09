@@ -2,9 +2,6 @@
 
 ## CodeSystem: Conselhos profissionais de saúde do Brasil 
 
- 
-Esse CodeSystem inclui os conselhos profissionais de saúde do Brasil, conforme a Resolução CNS 251/1997. 
-
 This Code system is referenced in the definition of the following value sets:
 
 * [Conselhos regionais de Enfermagem do Brasil](ValueSet-BRCOREN.md)

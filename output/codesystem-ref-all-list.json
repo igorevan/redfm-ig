@@ -70,8 +70,8 @@
     "oids" : ["2.16.840.1.113883.4.642.4.242"],
     "uses" : {
     },
-    "ValueSet-BREstadoDocumento-1.0.html" : "Estado do Documento",
-    "http://hl7.org/fhir/R4/valueset-composition-status.html" : "CompositionStatus"
+    "http://hl7.org/fhir/R4/valueset-composition-status.html" : "CompositionStatus",
+    "ValueSet-BREstadoDocumento-1.0.html" : "Estado do Documento"
   },
   {
     "url" : "http://hl7.org/fhir/days-of-week",
@@ -214,18 +214,18 @@
     "oids" : ["2.16.840.1.113883.6.96"],
     "uses" : {
     },
-    "http://hl7.org/fhir/R4/valueset-c80-practice-codes.html" : "Practice Setting Code Value Set",
-    "http://hl7.org/fhir/R4/valueset-medication-codes.html" : "SNOMED CT Medication Codes",
     "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
-    "http://hl7.org/fhir/R4/valueset-medication-form-codes.html" : "SNOMED CT Form Codes",
-    "http://hl7.org/fhir/R4/valueset-condition-stage.html" : "Condition Stage",
-    "http://hl7.org/fhir/R4/valueset-condition-stage-type.html" : "Condition Stage Type",
-    "http://hl7.org/fhir/R4/valueset-condition-severity.html" : "Condition/Diagnosis Severity",
-    "http://hl7.org/fhir/R4/valueset-additional-instruction-codes.html" : "SNOMED CT Additional Dosage Instructions",
-    "http://hl7.org/fhir/R4/valueset-performer-role.html" : "Procedure Performer Role Codes",
-    "http://hl7.org/fhir/R4/valueset-approach-site-codes.html" : "SNOMED CT Anatomical Structure for Administration Site Codes",
     "http://hl7.org/fhir/R4/valueset-manifestation-or-symptom.html" : "Manifestation and Symptom Codes",
-    "http://hl7.org/fhir/R4/valueset-administration-method-codes.html" : "SNOMED CT Administration Method Codes"
+    "http://hl7.org/fhir/R4/valueset-condition-stage-type.html" : "Condition Stage Type",
+    "http://hl7.org/fhir/R4/valueset-additional-instruction-codes.html" : "SNOMED CT Additional Dosage Instructions",
+    "http://hl7.org/fhir/R4/valueset-administration-method-codes.html" : "SNOMED CT Administration Method Codes",
+    "http://hl7.org/fhir/R4/valueset-performer-role.html" : "Procedure Performer Role Codes",
+    "http://hl7.org/fhir/R4/valueset-condition-severity.html" : "Condition/Diagnosis Severity",
+    "http://hl7.org/fhir/R4/valueset-condition-stage.html" : "Condition Stage",
+    "http://hl7.org/fhir/R4/valueset-approach-site-codes.html" : "SNOMED CT Anatomical Structure for Administration Site Codes",
+    "http://hl7.org/fhir/R4/valueset-c80-practice-codes.html" : "Practice Setting Code Value Set",
+    "http://hl7.org/fhir/R4/valueset-medication-form-codes.html" : "SNOMED CT Form Codes",
+    "http://hl7.org/fhir/R4/valueset-medication-codes.html" : "SNOMED CT Medication Codes"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/condition-category",
@@ -550,8 +550,8 @@
     "oids" : ["2.16.840.1.113883.5.111"],
     "uses" : {
     },
-    "http://terminology.hl7.org/7.4.0/ValueSet-v3-ServiceDeliveryLocationRoleType.html" : "ServiceDeliveryLocationRoleType",
-    "http://hl7.org/fhir/R4/valueset-relatedperson-relationshiptype.html" : "Patient relationship type"
+    "http://hl7.org/fhir/R4/valueset-relatedperson-relationshiptype.html" : "Patient relationship type",
+    "http://terminology.hl7.org/7.4.0/ValueSet-v3-ServiceDeliveryLocationRoleType.html" : "ServiceDeliveryLocationRoleType"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/v3-TimingEvent",
@@ -766,10 +766,10 @@
     "description" : "Esse CodeSystem inclui os conselhos profissionais de saúde do Brasil, conforme a Resolução CNS 251/1997.",
     "uses" : {
     },
-    "ValueSet-BRCRF.html" : "Conselhos regionais de Farmácia do Brasil",
-    "ValueSet-BRCOREN.html" : "Conselhos regionais de Enfermagem do Brasil",
-    "ValueSet-BRCRM.html" : "Conselhos regionais de Medicina do Brasil",
     "ValueSet-BROutrosProfissionais.html" : "Conselhos regionais de outros profissionais da saúde do Brasil",
-    "ValueSet-BRCRO.html" : "Conselhos regionais de Odontologia do Brasil"
+    "ValueSet-BRCRO.html" : "Conselhos regionais de Odontologia do Brasil",
+    "ValueSet-BRCRM.html" : "Conselhos regionais de Medicina do Brasil",
+    "ValueSet-BRCOREN.html" : "Conselhos regionais de Enfermagem do Brasil",
+    "ValueSet-BRCRF.html" : "Conselhos regionais de Farmácia do Brasil"
   }]
 }

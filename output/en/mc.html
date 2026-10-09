@@ -20,9 +20,9 @@
     <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
     <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
   	<link href="assets/css/prism.css" rel="stylesheet" />
+    <link href="assets/css/liquid.css" rel="stylesheet" />
     <link href="assets/css/project.css" rel="stylesheet"/>
-  	<link href="assets/css/cqf.css" rel="stylesheet" />
-    <!-- Placeholder for child template CSS declarations -->
+  	<!-- Placeholder for child template CSS declarations -->
 
     <script type="text/javascript" src="fhir-table-scripts.js"> </script>
     <script type="text/javascript" src="assets/js/direction-management.js"> </script>
@@ -249,9 +249,166 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <p>
     <b>Figura 1 - Diagrama do <i>Bundle</i> do REDFM</b>
   </p>
-  <div>
-    <img height="500" src="redfmMC.png" alt="Diagrama do Bundle do REDFM"/>
-  </div>
+
+  <div><svg width="700" height="661" viewBox="0 0 1640 1940" style="max-width:100%; height:auto;" role="img" aria-labelledby="redfmc-title redfmc-desc">
+      <title id="redfmc-title">REDFM — estrutura dos recursos e referências</title>
+      <desc id="redfmc-desc">Estrutura do Bundle REDFM. Os blocos representam os recursos e seus perfis. As setas
+        indicam os paths de referência entre os recursos. Recursos do mesmo tipo possuem a mesma cor.</desc>
+      <defs>
+        <marker id="redfmc-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+          <path d="M1 1 L9 5 L1 9" fill="none" stroke="#334155" stroke-width="1.5"/>
+        </marker>
+      </defs>
+      <rect x="20" y="20" width="1600" height="1900" rx="25" fill="none" stroke="#526781" stroke-width="2.5" stroke-dasharray="10 7"/>
+      <g font-family="Arial, Helvetica, sans-serif" fill="#172b4d"><text x="65" y="75" font-size="34" font-weight="700">Bundle</text><text x="235" y="75" font-size="23">entry[*].resource</text></g>
+      <path d="M 500 320 L 380 450" fill="none" stroke="#334155" stroke-width="2.5" stroke-linejoin="round" marker-end="url(#redfmc-arrow)"/>
+      <g>
+        <rect x="162.75" y="365" width="384.5" height="40" rx="6" fill="#ffffff"/><text x="355" y="392" text-anchor="middle" font-family="Consolas, monospace" font-size="21" fill="#334155">section[0].entry[*].reference</text>
+      </g>
+      <path d="M 1100 320 L 1260 450" fill="none" stroke="#334155" stroke-width="2.5" stroke-linejoin="round" marker-end="url(#redfmc-arrow)"/>
+      <g>
+        <rect x="989.0" y="365" width="522.0" height="40" rx="6" fill="#ffffff"/><text x="1250" y="392" text-anchor="middle" font-family="Consolas, monospace" font-size="21" fill="#334155">section[1].section[1].entry[*].reference</text>
+      </g>
+      <path d="M 400 230 H 65 V 1790 H 600" fill="none" stroke="#334155" stroke-width="2.5" stroke-linejoin="round" marker-end="url(#redfmc-arrow)"/>
+      <g>
+        <rect x="89.0" y="1660" width="522.0" height="40" rx="6" fill="#ffffff"/><text x="350" y="1687" text-anchor="middle" font-family="Consolas, monospace" font-size="21" fill="#334155">section[1].section[0].entry[*].reference</text>
+      </g>
+      <path d="M 640 500 H 780 V 635 H 860 V 500 H 1000" fill="none" stroke="#334155" stroke-width="2.5" stroke-linejoin="round" marker-end="url(#redfmc-arrow)"/>
+      <g>
+        <rect x="584.0" y="655" width="472.0" height="40" rx="6" fill="#ffffff"/><text x="820" y="682" text-anchor="middle" font-family="Consolas, monospace" font-size="21" fill="#334155">authorizingPrescription[*].reference</text>
+      </g>
+      <path d="M 380 595 V 840" fill="none" stroke="#334155" stroke-width="2.5" stroke-linejoin="round" marker-end="url(#redfmc-arrow)"/>
+      <g>
+        <rect x="187.75" y="720" width="384.5" height="40" rx="6" fill="#ffffff"/><text x="380" y="747" text-anchor="middle" font-family="Consolas, monospace" font-size="21" fill="#334155">medicationReference.reference</text>
+      </g>
+      <path d="M 640 550 H 700 V 1215 H 640" fill="none" stroke="#334155" stroke-width="2.5" stroke-linejoin="round" marker-end="url(#redfmc-arrow)"/>
+      <g>
+        <rect x="554.0" y="1040" width="372.0" height="40" rx="6" fill="#ffffff"/><text x="740" y="1067" text-anchor="middle" font-family="Consolas, monospace" font-size="21" fill="#334155">performer[*].actor.reference</text>
+      </g>
+      <path d="M 280 1285 L 255 1450" fill="none" stroke="#334155" stroke-width="2.5" stroke-linejoin="round" marker-end="url(#redfmc-arrow)"/>
+      <g>
+        <rect x="91.5" y="1350" width="297.0" height="40" rx="6" fill="#ffffff"/><text x="240" y="1377" text-anchor="middle" font-family="Consolas, monospace" font-size="21" fill="#334155">practitioner.reference</text>
+      </g>
+      <path d="M 475 1285 L 550 1450" fill="none" stroke="#334155" stroke-width="2.5" stroke-linejoin="round" marker-end="url(#redfmc-arrow)"/>
+      <g>
+        <rect x="396.5" y="1380" width="297.0" height="40" rx="6" fill="#ffffff"/><text x="545" y="1407" text-anchor="middle" font-family="Consolas, monospace" font-size="21" fill="#334155">organization.reference</text>
+      </g>
+      <path d="M 1260 595 V 840" fill="none" stroke="#334155" stroke-width="2.5" stroke-linejoin="round" marker-end="url(#redfmc-arrow)"/>
+      <g>
+        <rect x="1067.75" y="720" width="384.5" height="40" rx="6" fill="#ffffff"/><text x="1260" y="747" text-anchor="middle" font-family="Consolas, monospace" font-size="21" fill="#334155">medicationReference.reference</text>
+      </g>
+      <path d="M 1520 550 H 1570 V 1215 H 1520" fill="none" stroke="#334155" stroke-width="2.5" stroke-linejoin="round" marker-end="url(#redfmc-arrow)"/>
+      <g>
+        <rect x="1320.25" y="1040" width="259.5" height="40" rx="6" fill="#ffffff"/><text x="1450" y="1067" text-anchor="middle" font-family="Consolas, monospace" font-size="21" fill="#334155">requester.reference</text>
+      </g>
+      <path d="M 1160 1285 L 1125 1450" fill="none" stroke="#334155" stroke-width="2.5" stroke-linejoin="round" marker-end="url(#redfmc-arrow)"/>
+      <g>
+        <rect x="976.5" y="1350" width="297.0" height="40" rx="6" fill="#ffffff"/><text x="1125" y="1377" text-anchor="middle" font-family="Consolas, monospace" font-size="21" fill="#334155">practitioner.reference</text>
+      </g>
+      <path d="M 1355 1285 L 1430 1450" fill="none" stroke="#334155" stroke-width="2.5" stroke-linejoin="round" marker-end="url(#redfmc-arrow)"/>
+      <g>
+        <rect x="1281.5" y="1380" width="297.0" height="40" rx="6" fill="#ffffff"/><text x="1430" y="1407" text-anchor="middle" font-family="Consolas, monospace" font-size="21" fill="#334155">organization.reference</text>
+      </g>
+      <a href="StructureDefinition-RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos.html" aria-label="Abrir perfil RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos">
+        <title>Abrir perfil RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos</title>
+        <g font-family="Arial, Helvetica, sans-serif" text-anchor="middle" fill="#172b4d">
+          <rect x="400" y="155" width="850" height="165" rx="16" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5"/>
+          <text x="825.0" y="198" font-size="29" font-weight="700">Composition</text>
+          <text x="825.0" y="234" font-size="24">RNDSRegistroEletronicoDispensacao</text>
+          <text x="825.0" y="263" font-size="24">FornecimentoMedicamentos</text>
+        </g>
+      </a>
+      <a href="StructureDefinition-RNDSDispensacaoMedicamento.html" aria-label="Abrir perfil RNDSDispensacaoMedicamento">
+        <title>Abrir perfil RNDSDispensacaoMedicamento</title>
+        <g font-family="Arial, Helvetica, sans-serif" text-anchor="middle" fill="#172b4d">
+          <rect x="120" y="450" width="520" height="145" rx="16" fill="#fce7f3" stroke="#db2777" stroke-width="2.5"/>
+          <text x="380.0" y="493" font-size="29" font-weight="700">MedicationDispense</text>
+          <text x="380.0" y="529" font-size="24">RNDSDispensacaoMedicamento</text>
+        </g>
+      </a>
+      <a href="StructureDefinition-RNDSPrescricaoMedicamento.html" aria-label="Abrir perfil RNDSPrescricaoMedicamento">
+        <title>Abrir perfil RNDSPrescricaoMedicamento</title>
+        <g font-family="Arial, Helvetica, sans-serif" text-anchor="middle" fill="#172b4d">
+          <rect x="1000" y="450" width="520" height="145" rx="16" fill="#e0e7ff" stroke="#4f46e5" stroke-width="2.5"/>
+          <text x="1260.0" y="493" font-size="29" font-weight="700">MedicationRequest</text>
+          <text x="1260.0" y="529" font-size="24">RNDSPrescricaoMedicamento</text>
+        </g>
+      </a>
+      <a href="StructureDefinition-RNDSMedicamento.html" aria-label="Abrir perfil RNDSMedicamento">
+        <title>Abrir perfil RNDSMedicamento</title>
+        <g font-family="Arial, Helvetica, sans-serif" text-anchor="middle" fill="#172b4d">
+          <rect x="120" y="840" width="520" height="145" rx="16" fill="#ccfbf1" stroke="#0d9488" stroke-width="2.5"/>
+          <text x="380.0" y="883" font-size="29" font-weight="700">Medication</text>
+          <text x="380.0" y="919" font-size="24">RNDSMedicamento</text>
+        </g>
+      </a>
+      <a href="StructureDefinition-RNDSLotacaoProfissional.html" aria-label="Abrir perfil RNDSLotacaoProfissional">
+        <title>Abrir perfil RNDSLotacaoProfissional</title>
+        <g font-family="Arial, Helvetica, sans-serif" text-anchor="middle" fill="#172b4d">
+          <rect x="120" y="1140" width="520" height="145" rx="16" fill="#ede9fe" stroke="#7c3aed" stroke-width="2.5"/>
+          <text x="380.0" y="1183" font-size="29" font-weight="700">PractitionerRole</text>
+          <text x="380.0" y="1219" font-size="24">RNDSLotacaoProfissional</text>
+        </g>
+      </a>
+      <a href="StructureDefinition-RNDSMedicamento.html" aria-label="Abrir perfil RNDSMedicamento">
+        <title>Abrir perfil RNDSMedicamento</title>
+        <g font-family="Arial, Helvetica, sans-serif" text-anchor="middle" fill="#172b4d">
+          <rect x="1000" y="840" width="520" height="145" rx="16" fill="#ccfbf1" stroke="#0d9488" stroke-width="2.5"/>
+          <text x="1260.0" y="883" font-size="29" font-weight="700">Medication</text>
+          <text x="1260.0" y="919" font-size="24">RNDSMedicamento</text>
+        </g>
+      </a>
+      <a href="StructureDefinition-RNDSLotacaoProfissional.html" aria-label="Abrir perfil RNDSLotacaoProfissional">
+        <title>Abrir perfil RNDSLotacaoProfissional</title>
+        <g font-family="Arial, Helvetica, sans-serif" text-anchor="middle" fill="#172b4d">
+          <rect x="1000" y="1140" width="520" height="145" rx="16" fill="#ede9fe" stroke="#7c3aed" stroke-width="2.5"/>
+          <text x="1260.0" y="1183" font-size="29" font-weight="700">PractitionerRole</text>
+          <text x="1260.0" y="1219" font-size="24">RNDSLotacaoProfissional</text>
+        </g>
+      </a>
+      <a href="StructureDefinition-RNDSProfissional.html" aria-label="Abrir perfil RNDSProfissional">
+        <title>Abrir perfil RNDSProfissional</title>
+        <g font-family="Arial, Helvetica, sans-serif" text-anchor="middle" fill="#172b4d">
+          <rect x="100" y="1450" width="310" height="145" rx="16" fill="#ffedd5" stroke="#d97706" stroke-width="2.5"/>
+          <text x="255.0" y="1493" font-size="29" font-weight="700">Practitioner</text>
+          <text x="255.0" y="1529" font-size="24">RNDSProfissional</text>
+        </g>
+      </a>
+      <a href="StructureDefinition-RNDSEstabelecimentoSaude.html" aria-label="Abrir perfil RNDSEstabelecimentoSaude">
+        <title>Abrir perfil RNDSEstabelecimentoSaude</title>
+        <g font-family="Arial, Helvetica, sans-serif" text-anchor="middle" fill="#172b4d">
+          <rect x="425" y="1450" width="330" height="165" rx="16" fill="#dcfce7" stroke="#16a34a" stroke-width="2.5"/>
+          <text x="590.0" y="1493" font-size="29" font-weight="700">Organization</text>
+          <text x="590.0" y="1529" font-size="24">RNDSEstabelecimento</text>
+          <text x="590.0" y="1558" font-size="24">Saude</text>
+        </g>
+      </a>
+      <a href="StructureDefinition-RNDSProfissional.html" aria-label="Abrir perfil RNDSProfissional">
+        <title>Abrir perfil RNDSProfissional</title>
+        <g font-family="Arial, Helvetica, sans-serif" text-anchor="middle" fill="#172b4d">
+          <rect x="970" y="1450" width="310" height="145" rx="16" fill="#ffedd5" stroke="#d97706" stroke-width="2.5"/>
+          <text x="1125.0" y="1493" font-size="29" font-weight="700">Practitioner</text>
+          <text x="1125.0" y="1529" font-size="24">RNDSProfissional</text>
+        </g>
+      </a>
+      <a href="StructureDefinition-RNDSEstabelecimentoSaude.html" aria-label="Abrir perfil RNDSEstabelecimentoSaude">
+        <title>Abrir perfil RNDSEstabelecimentoSaude</title>
+        <g font-family="Arial, Helvetica, sans-serif" text-anchor="middle" fill="#172b4d">
+          <rect x="1295" y="1450" width="300" height="165" rx="16" fill="#dcfce7" stroke="#16a34a" stroke-width="2.5"/>
+          <text x="1445.0" y="1493" font-size="29" font-weight="700">Organization</text>
+          <text x="1445.0" y="1529" font-size="24">RNDSEstabelecimento</text>
+          <text x="1445.0" y="1558" font-size="24">Saude</text>
+        </g>
+      </a>
+      <a href="StructureDefinition-BRProblemaDiagnostico.html" aria-label="Abrir perfil BRProblemaDiagnostico">
+        <title>Abrir perfil BRProblemaDiagnostico</title>
+        <g font-family="Arial, Helvetica, sans-serif" text-anchor="middle" fill="#172b4d">
+          <rect x="600" y="1740" width="550" height="145" rx="16" fill="#fee2e2" stroke="#dc2626" stroke-width="2.5"/>
+          <text x="875.0" y="1783" font-size="29" font-weight="700">Condition</text>
+          <text x="875.0" y="1819" font-size="24">BRProblemaDiagnostico</text>
+        </g>
+      </a>
+    </svg></div>
 
   <a name="recursos">  </a>
   <h3>Recursos FHIR</h3>
@@ -307,6 +464,12 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
         <td>Organization</td>
         <td>
           <code><a href="StructureDefinition-RNDSEstabelecimentoSaude.html">RNDSEstabelecimentoSaude</a></code>
+        </td>
+      </tr>
+      <tr>
+        <td>Condition</td>
+        <td>
+          <code><a href="StructureDefinition-BRProblemaDiagnostico.html">BRProblemaDiagnostico</a></code>
         </td>
       </tr>
     </tbody>
@@ -376,8 +539,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
           IG © 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.saude.gov.br">Ministério da Saúde do Brasil</a>.  
           Package br.gov.saude.redfm.fhir#1.0.0-release based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Generated 
-  <span title="2026-09-30 19:22:00 -0300">
-    2026-09-30
+  <span title="2026-10-08 21:08:00 -0300">
+    2026-10-08
   </span>
 
           <br/>

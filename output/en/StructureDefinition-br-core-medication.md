@@ -2,9 +2,6 @@
 
 ## Resource Profile: BR Core Medication 
 
- 
-Medicamento BR Core 
-
 **Usos:**
 
 * Refere a este Perfil: [BR Core Medication](StructureDefinition-br-core-medication.md)
@@ -61,7 +58,7 @@ Other representations of profile: [CSV](../StructureDefinition-br-core-medicatio
   "name" : "BRCoreMedication",
   "title" : "BR Core Medication",
   "status" : "active",
-  "date" : "2026-09-30T19:22:44-03:00",
+  "date" : "2026-10-08T21:08:49-03:00",
   "publisher" : "Ministério da Saúde do Brasil",
   "contact" : [{
     "name" : "Ministério da Saúde do Brasil",

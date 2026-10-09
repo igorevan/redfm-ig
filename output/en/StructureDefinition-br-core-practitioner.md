@@ -2,9 +2,6 @@
 
 ## Resource Profile: BR Core Practitioner 
 
- 
-O Profissional é uma pessoa que está direta ou indiretamente envolvida na prestação de cuidados de saúde ou serviços relacionados ao paciente. 
-
 **Usos:**
 
 * Refere a este Perfil: [BR Core Composition](StructureDefinition-br-core-composition.md) and [BR Core PractitionerRole](StructureDefinition-br-core-practitionerrole.md)
@@ -61,7 +58,7 @@ Other representations of profile: [CSV](../StructureDefinition-br-core-practitio
   "name" : "BRCorePractitioner",
   "title" : "BR Core Practitioner",
   "status" : "active",
-  "date" : "2026-09-30T19:22:44-03:00",
+  "date" : "2026-10-08T21:08:49-03:00",
   "publisher" : "Ministério da Saúde do Brasil",
   "contact" : [{
     "name" : "Ministério da Saúde do Brasil",

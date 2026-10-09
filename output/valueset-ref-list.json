@@ -81,8 +81,8 @@
     "sources" : ["2.16.840.1.113883.3.88.12.80.46"],
     "uses" : {
     },
-    "StructureDefinition-br-core-composition.html" : "BR Core Composition",
-    "StructureDefinition-RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos.html" : "Registro Eletrônico de Dispensação ou Fornecimento de Medicamentos - REDFM"
+    "StructureDefinition-RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos.html" : "Registro Eletrônico de Dispensação ou Fornecimento de Medicamentos - REDFM",
+    "StructureDefinition-br-core-composition.html" : "BR Core Composition"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/document-relationship-type",
@@ -227,9 +227,9 @@
     "systems" : ["http://www.saude.gov.br/fhir/r4/CodeSystem/BRCBO"],
     "uses" : {
     },
+    "StructureDefinition-br-core-practitionerrole.html" : "BR Core PractitionerRole",
     "StructureDefinition-br-core-practitioner.html" : "BR Core Practitioner",
-    "StructureDefinition-RNDSLotacaoProfissional.html" : "RNDSLotacaoProfissional",
-    "StructureDefinition-br-core-practitionerrole.html" : "BR Core PractitionerRole"
+    "StructureDefinition-RNDSLotacaoProfissional.html" : "RNDSLotacaoProfissional"
   },
   {
     "url" : "http://www.saude.gov.br/fhir/r4/ValueSet/BRProblemaDiagnostico",
@@ -307,8 +307,8 @@
     "systems" : ["http://www.saude.gov.br/fhir/r4/CodeSystem/BRUnidadeMedida"],
     "uses" : {
     },
-    "StructureDefinition-RNDSMedicamento.html" : "Medicamento",
     "StructureDefinition-RNDSPrescricaoMedicamento.html" : "Prescrição de Medicamento - RNDS",
+    "StructureDefinition-RNDSMedicamento.html" : "Medicamento",
     "StructureDefinition-RNDSDispensacaoMedicamento.html" : "Dispensação ou Fornecimento de Medicamento"
   },
   {

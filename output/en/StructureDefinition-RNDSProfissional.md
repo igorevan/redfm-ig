@@ -2,9 +2,6 @@
 
 ## Resource Profile: Profissional RNDS 
 
- 
-O Profissional é uma pessoa que está direta ou indiretamente envolvida na prestação de cuidados de saúde ou serviços relacionados ao paciente. 
-
 **Usos:**
 
 * Refere a este Perfil: [RNDSLotacaoProfissional](StructureDefinition-RNDSLotacaoProfissional.md)

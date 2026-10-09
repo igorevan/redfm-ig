@@ -26,9 +26,9 @@
     <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
     <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
   	<link href="assets/css/prism.css" rel="stylesheet" />
+    <link href="assets/css/liquid.css" rel="stylesheet" />
     <link href="assets/css/project.css" rel="stylesheet"/>
-  	<link href="assets/css/cqf.css" rel="stylesheet" />
-    <!-- Placeholder for child template CSS declarations -->
+  	<!-- Placeholder for child template CSS declarations -->
 
     <script type="text/javascript" src="fhir-table-scripts.js"> </script>
     <script type="text/javascript" src="assets/js/direction-management.js"> </script>
@@ -314,7 +314,7 @@ TTL Profile
 
 &lt;http://hl7.org/fhir/StructureDefinition/br-core-medication&gt; a fhir:StructureDefinition ;
   <a href="http://hl7.org/fhir/R4/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot ;
-  <a href="http://hl7.org/fhir/R4/resource.html#StructureDefinition.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;br-core-medication&quot;] ;
+  <a href="http://hl7.org/fhir/R4/resource.html#StructureDefinition.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:value</a> &quot;br-core-medication&quot;] ;
   <a href="http://hl7.org/fhir/R4/resource.html#StructureDefinition.language">fhir:Resource.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en&quot;] ;
   <a href="http://hl7.org/fhir/R4/domainresource.html#StructureDefinition.text">fhir:DomainResource.text</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;extensions&quot; ]
@@ -361,7 +361,7 @@ TTL Profile
   <a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.name">fhir:StructureDefinition.name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;BRCoreMedication&quot;] ;
   <a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.title">fhir:StructureDefinition.title</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;BR Core Medication&quot;] ;
   <a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.status">fhir:StructureDefinition.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;active&quot;] ;
-  <a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.date">fhir:StructureDefinition.date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:value</a> &quot;2026-09-30T19:22:44-03:00&quot;^^xsd:dateTime] ;
+  <a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.date">fhir:StructureDefinition.date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:value</a> &quot;2026-10-08T21:08:49-03:00&quot;^^xsd:dateTime] ;
   <a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.publisher">fhir:StructureDefinition.publisher</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Ministério da Saúde do Brasil&quot;] ;
   <a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.contact">fhir:StructureDefinition.contact</a> [
      <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
@@ -1322,7 +1322,7 @@ TTL Profile
            <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.slicing.discriminator.path">fhir:ElementDefinition.slicing.discriminator.path</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;$this&quot; ]
          ] ;
          <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.slicing.ordered">fhir:ElementDefinition.slicing.ordered</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:value</a> &quot;false&quot;^^xsd:boolean ] ;
-         <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.slicing.rules">fhir:ElementDefinition.slicing.rules</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;open&quot; ]
+         <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.slicing.rules">fhir:ElementDefinition.slicing.rules</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;closed&quot; ]
        ] ;
        <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.short">fhir:ElementDefinition.short</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Ingrediente&quot; ] ;
        <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.definition">fhir:ElementDefinition.definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">fhir:value</a> &quot;O ingrediente ou conteúdo real Vinculante: Substâncias ativas de medicamentos - IPS (preferencial): Substâncias medicamentosas SNOMED CT&quot; ] ;
@@ -1404,6 +1404,57 @@ TTL Profile
            <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
            <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-medication&gt;
          ]
+       ] ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint">fhir:ElementDefinition.constraint</a> [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">fhir:ElementDefinition.constraint.key</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:value</a> &quot;ele-1&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.severity">fhir:ElementDefinition.constraint.severity</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;error&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.human">fhir:ElementDefinition.constraint.human</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;All FHIR elements must have a @value or children&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">fhir:ElementDefinition.constraint.expression</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;hasValue() or (children().count() &gt; id.count())&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.xpath">fhir:ElementDefinition.constraint.xpath</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;@value|f:*|h:div&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">fhir:ElementDefinition.constraint.source</a> [
+           <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;http://hl7.org/fhir/StructureDefinition/Element&quot; ;
+           <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/StructureDefinition/Element&gt;
+         ]
+       ] ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">fhir:ElementDefinition.isModifier</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:value</a> &quot;false&quot;^^xsd:boolean ] ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">fhir:ElementDefinition.isSummary</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:value</a> &quot;false&quot;^^xsd:boolean ] ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">fhir:ElementDefinition.mapping</a> [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">fhir:ElementDefinition.mapping.identity</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:value</a> &quot;script10.6&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">fhir:ElementDefinition.mapping.map</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;coding.code = //element(*,MedicationType)/DrugCoded/ProductCode\r\rcoding.system = //element(*,MedicationType)/DrugCoded/ProductCodeQualifier\r\rcoding.display = //element(*,MedicationType)/DrugDescription&quot; ]
+       ], [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">fhir:ElementDefinition.mapping.identity</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:value</a> &quot;v2&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">fhir:ElementDefinition.mapping.map</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;RXC-2-Component Code  if medication: RXO-1-Requested Give Code / RXE-2-Give Code / RXD-2-Dispense/Give Code / RXG-4-Give Code / RXA-5-Administered Code&quot; ]
+       ], [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">fhir:ElementDefinition.mapping.identity</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:value</a> &quot;rim&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">fhir:ElementDefinition.mapping.map</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;.player&quot; ]
+       ]
+     ], [
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Element#ElementDefinition.id">fhir:Element.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Medication.ingredient.item[x]:itemCodeableConcept&quot; ] ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Element#ElementDefinition.extension">fhir:Element.extension</a> [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
+         <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://hl7.org/fhir/tools/StructureDefinition/implied-type-slice&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">fhir:Extension.valueBoolean</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:value</a> &quot;true&quot;^^xsd:boolean ]
+       ] ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.path">fhir:ElementDefinition.path</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Medication.ingredient.item[x]&quot; ] ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.sliceName">fhir:ElementDefinition.sliceName</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;itemCodeableConcept&quot; ] ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.short">fhir:ElementDefinition.short</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;The actual ingredient or content&quot; ] ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.definition">fhir:ElementDefinition.definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">fhir:value</a> &quot;The actual ingredient - either a substance (simple ingredient) or another medication of a medication.&quot; ] ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.requirements">fhir:ElementDefinition.requirements</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">fhir:value</a> &quot;The ingredient may reference a substance (for example, amoxicillin) or another medication (for example in the case of a compounded product, Glaxal Base).&quot; ] ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.min">fhir:ElementDefinition.min</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#unsignedInt">fhir:value</a> &quot;0&quot;^^xsd:nonNegativeInteger ] ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.max">fhir:ElementDefinition.max</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;1&quot; ] ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.base">fhir:ElementDefinition.base</a> [
+         <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.base.path">fhir:ElementDefinition.base.path</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Medication.ingredient.item[x]&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.base.min">fhir:ElementDefinition.base.min</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#unsignedInt">fhir:value</a> &quot;1&quot;^^xsd:nonNegativeInteger ] ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.base.max">fhir:ElementDefinition.base.max</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;1&quot; ]
+       ] ;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type">fhir:ElementDefinition.type</a> [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.code">fhir:ElementDefinition.type.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;CodeableConcept&quot; ]
        ] ;
        <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint">fhir:ElementDefinition.constraint</a> [
          <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
@@ -2027,8 +2078,8 @@ TTL Profile
           IG © 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.saude.gov.br">Ministério da Saúde do Brasil</a>.  
           Package br.gov.saude.redfm.fhir#1.0.0-release based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Generated 
-  <span title="2026-09-30 19:22:00 -0300">
-    2026-09-30
+  <span title="2026-10-08 21:08:00 -0300">
+    2026-10-08
   </span>
 
           <br/>

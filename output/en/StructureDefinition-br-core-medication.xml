@@ -31,7 +31,7 @@
   <name value="BRCoreMedication"/>
   <title value="BR Core Medication"/>
   <status value="active"/>
-  <date value="2026-09-30T19:22:44-03:00"/>
+  <date value="2026-10-08T21:08:49-03:00"/>
   <publisher value="Ministério da Saúde do Brasil"/>
   <contact>
     <name value="Ministério da Saúde do Brasil"/>
@@ -775,7 +775,7 @@
           <path value="$this"/>
         </discriminator>
         <ordered value="false"/>
-        <rules value="open"/>
+        <rules value="closed"/>
       </slicing>
       <short value="Ingrediente"/>
       <definition value="O ingrediente ou conteúdo real Vinculante: Substâncias ativas de medicamentos - IPS (preferencial): Substâncias medicamentosas SNOMED CT"/>
@@ -835,6 +835,48 @@
         <code value="Reference"/>
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Substance"/>
         <targetProfile value="https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-medication"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+      <mapping>
+        <identity value="script10.6"/>
+        <map value="coding.code = //element(*,MedicationType)/DrugCoded/ProductCode&#xD;&#xD;coding.system = //element(*,MedicationType)/DrugCoded/ProductCodeQualifier&#xD;&#xD;coding.display = //element(*,MedicationType)/DrugDescription"/>
+      </mapping>
+      <mapping>
+        <identity value="v2"/>
+        <map value="RXC-2-Component Code  if medication: RXO-1-Requested Give Code / RXE-2-Give Code / RXD-2-Dispense/Give Code / RXG-4-Give Code / RXA-5-Administered Code"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value=".player"/>
+      </mapping>
+    </element>
+    <element id="Medication.ingredient.item[x]:itemCodeableConcept">
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/implied-type-slice">
+        <valueBoolean value="true"/>
+      </extension>
+      <path value="Medication.ingredient.item[x]"/>
+      <sliceName value="itemCodeableConcept"/>
+      <short value="The actual ingredient or content"/>
+      <definition value="The actual ingredient - either a substance (simple ingredient) or another medication of a medication."/>
+      <requirements value="The ingredient may reference a substance (for example, amoxicillin) or another medication (for example in the case of a compounded product, Glaxal Base)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Medication.ingredient.item[x]"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
       </type>
       <constraint>
         <key value="ele-1"/>

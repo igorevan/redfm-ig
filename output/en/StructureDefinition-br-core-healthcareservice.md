@@ -2,9 +2,6 @@
 
 ## Resource Profile: br-core-healthcareservice 
 
- 
-BR Core Healthcare Service 
-
 **Usos:**
 
 * Refere a este Perfil: [BR Core PractitionerRole](StructureDefinition-br-core-practitionerrole.md)
@@ -61,7 +58,7 @@ Other representations of profile: [CSV](../StructureDefinition-br-core-healthcar
   "name" : "BRCoreHealthcareService",
   "title" : "br-core-healthcareservice",
   "status" : "active",
-  "date" : "2026-09-30T19:22:44-03:00",
+  "date" : "2026-10-08T21:08:49-03:00",
   "publisher" : "Ministério da Saúde do Brasil",
   "contact" : [{
     "name" : "Ministério da Saúde do Brasil",

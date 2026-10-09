@@ -2,14 +2,11 @@
 
 ## ValueSet: Tipo de Documento (ValueSet) 
 
- 
-Classifica o tipo de documento que está sendo trafegado. 
-
  **References** 
 
 * [Registro Eletrônico de Dispensação ou Fornecimento de Medicamentos - REDFM](StructureDefinition-RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos.md)
 
-### Logical Definition (CLD)
+### Definição lógica (CLD)
 
  
 

@@ -1,9 +1,9 @@
 REDFMRNDSIG : Validation Results
 =========================================
 
-err = 3, warn = 10, info = 1
-IG Publisher Version: 2.3.4
-Generated Wed Sep 30 19:31:29 BRT 2026. FHIR version 4.0.1 for br.gov.saude.redfm.fhir#1.0.0-release (canonical = https://fhir.saude.gov.br/redfm)
+err = 6, warn = 0, info = 0, broken links = 0
+IG Publisher Version: 3.0.0
+Generated Thu Oct 08 21:22:48 BRT 2026. FHIR version 4.0.1 for br.gov.saude.redfm.fhir#1.0.0-release (canonical = https://fhir.saude.gov.br/redfm)
  Build Errors : 0 / 0 / 0
  /home/igor/redfm-ig/input/examples/example-redfm-01-prescricao-na-rnds : 0 / 2 / 2
  /home/igor/redfm-ig/input/examples/example-redfm-02-prescricao-fora-rnds : 0 / 2 / 4
@@ -36,14 +36,14 @@ Generated Wed Sep 30 19:31:29 BRT 2026. FHIR version 4.0.1 for br.gov.saude.redf
  /home/igor/redfm-ig/input/resources/StructureDefinition-BRCorePractitioner : 0 / 1 / 4
  /home/igor/redfm-ig/input/resources/StructureDefinition-BRCorePractitionerRole : 0 / 1 / 2
  /home/igor/redfm-ig/input/resources/StructureDefinition-BRIndividuoNaoIdentificado-1.0 : 0 / 1 / 2
- /home/igor/redfm-ig/input/resources/StructureDefinition-BRProblemaDiagnostico : 1 / 6 / 3
- /home/igor/redfm-ig/input/resources/StructureDefinition-RNDSDispensacaoMedicamento : 0 / 13 / 3
+ /home/igor/redfm-ig/input/resources/StructureDefinition-BRProblemaDiagnostico : 3 / 6 / 3
+ /home/igor/redfm-ig/input/resources/StructureDefinition-RNDSDispensacaoMedicamento : 0 / 11 / 3
  /home/igor/redfm-ig/input/resources/StructureDefinition-RNDSEstabelecimentoSaude : 0 / 1 / 2
  /home/igor/redfm-ig/input/resources/StructureDefinition-RNDSLotacaoProfissional : 0 / 1 / 2
  /home/igor/redfm-ig/input/resources/StructureDefinition-RNDSMedicamento : 0 / 6 / 2
- /home/igor/redfm-ig/input/resources/StructureDefinition-RNDSPrescricaoMedicamento : 2 / 19 / 2
+ /home/igor/redfm-ig/input/resources/StructureDefinition-RNDSPrescricaoMedicamento : 2 / 17 / 2
  /home/igor/redfm-ig/input/resources/StructureDefinition-RNDSProfissional : 0 / 1 / 2
- /home/igor/redfm-ig/input/resources/StructureDefinition-RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos : 0 / 18 / 2
+ /home/igor/redfm-ig/input/resources/StructureDefinition-RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos : 1 / 12 / 2
  /home/igor/redfm-ig/input/resources/StructureDefinition-br-core-healthcareservice : 0 / 1 / 2
  /home/igor/redfm-ig/input/resources/StructureDefinition-br-core-location : 0 / 1 / 2
  /home/igor/redfm-ig/input/resources/StructureDefinition-br-core-relatedperson : 0 / 6 / 2
@@ -99,27 +99,19 @@ Generated Wed Sep 30 19:31:29 BRT 2026. FHIR version 4.0.1 for br.gov.saude.redf
 == input/resources/StructureDefinition-BRCorePractitionerRole.json ==
 == input/resources/StructureDefinition-BRIndividuoNaoIdentificado-1.0.json ==
 == input/resources/StructureDefinition-BRProblemaDiagnostico.xml ==
-INFORMATION: StructureDefinition.snapshot.element[43]: The slice definition for Condition.subject.extension:unidentifiedPatient.extension has a maximum of 3 but the slices add up to a maximum of 6. Check that this is what is intended
-ERROR: StructureDefinition/BRProblemaDiagnostico: StructureDefinition.snapshot.element[43]: A restrição falhou: eld-2
+ERROR: StructureDefinition.differential.element[29]: The extension slice 'Condition.subject.extension:unidentifiedPatient.extension:operator' is not one of the extensions defined by the extension 'http://www.saude.gov.br/fhir/r4/StructureDefinition/BRIndividuoNaoIdentificado-1.0|1.0.0-release'
+ERROR: StructureDefinition/BRProblemaDiagnostico: StructureDefinition.snapshot.element[43]: Constraint failed: eld-2: 'Min <= Max (min.empty() or max.empty() or (max = '*') or iif(max != '*', min <= max.toInteger()))' at Condition.subject.extension.extension
+ERROR: StructureDefinition/BRProblemaDiagnostico: StructureDefinition.snapshot: No instance can meet the cardinality rules for Condition.subject.extension:unidentifiedPatient.extension: the minimum 4 (from Condition.subject.extension:unidentifiedPatient.extension) is greater than the maximum 3 (from Condition.subject.extension:unidentifiedPatient.extension)
 == input/resources/StructureDefinition-RNDSDispensacaoMedicamento.xml ==
-WARNING: StructureDefinition/RNDSDispensacaoMedicamento: StructureDefinition.snapshot: O corte 'prescriptionInRNDS' no caminho 'MedicationDispense.authorizingPrescription' não está marcado como 'must-support', o que não é consistente com o elemento que define o corte, em que 'must-support' é verdadeiro
-WARNING: StructureDefinition/RNDSDispensacaoMedicamento: StructureDefinition.snapshot: O corte 'prescriptionOutOfRNDS' no caminho 'MedicationDispense.authorizingPrescription' não está marcado como 'must-support', o que não é consistente com o elemento que define o corte, em que 'must-support' é verdadeiro
 == input/resources/StructureDefinition-RNDSEstabelecimentoSaude.xml ==
 == input/resources/StructureDefinition-RNDSLotacaoProfissional.xml ==
 == input/resources/StructureDefinition-RNDSMedicamento.xml ==
 == input/resources/StructureDefinition-RNDSPrescricaoMedicamento.xml ==
 ERROR: StructureDefinition/RNDSPrescricaoMedicamento: StructureDefinition.snapshot.element[35]: Este elemento tem um Binding, mas os tipos [Reference] não tornam este tipo de restrição relevante
 ERROR: StructureDefinition/RNDSPrescricaoMedicamento: StructureDefinition.snapshot.element[35].binding: O elemento MedicationRequest.medication[x] tem uma ligação, mas não existem tipos ligáveis [Reference]
-WARNING: StructureDefinition/RNDSPrescricaoMedicamento: StructureDefinition.snapshot: O corte 'medicationReference' no caminho 'MedicationRequest.medication[x]' não está marcado como 'must-support', o que não é consistente com o elemento que define o corte, em que 'must-support' é verdadeiro
-WARNING: StructureDefinition/RNDSPrescricaoMedicamento: StructureDefinition.snapshot: O corte 'responsibleForThePatient' no caminho 'MedicationRequest.supportingInformation' não está marcado como 'must-support', o que não é consistente com o elemento que define o corte, em que 'must-support' é verdadeiro
 == input/resources/StructureDefinition-RNDSProfissional.xml ==
 == input/resources/StructureDefinition-RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos.xml ==
-WARNING: StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos: StructureDefinition.snapshot: O corte 'dispensedMedications' no caminho 'Composition.section' não está marcado como 'must-support', o que não é consistente com o elemento que define o corte, em que 'must-support' é verdadeiro
-WARNING: StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos: StructureDefinition.snapshot: O corte 'prescriptionInformation' no caminho 'Composition.section' não está marcado como 'must-support', o que não é consistente com o elemento que define o corte, em que 'must-support' é verdadeiro
-WARNING: StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos: StructureDefinition.snapshot: O corte 'prescriptionReason' no caminho 'Composition.section.section' não está marcado como 'must-support', o que não é consistente com o elemento que define o corte, em que 'must-support' é verdadeiro
-WARNING: StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos: StructureDefinition.snapshot: O corte 'prescriptionReason' no caminho 'Composition.section.section' tem o tipo 'BackboneElement', o que não é consistente com o elemento que define o corte, que tem o(s) tipo(s) ''
-WARNING: StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos: StructureDefinition.snapshot: O corte 'prescriptionMedications' no caminho 'Composition.section.section' não está marcado como 'must-support', o que não é consistente com o elemento que define o corte, em que 'must-support' é verdadeiro
-WARNING: StructureDefinition/RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos: StructureDefinition.snapshot: O corte 'prescriptionMedications' no caminho 'Composition.section.section' tem o tipo 'BackboneElement', o que não é consistente com o elemento que define o corte, que tem o(s) tipo(s) ''
+ERROR: StructureDefinition.snapshot.element[154]: The slice definition for Composition.section:prescriptionInformation.section has a minimum of 1 but the slices add up to a minimum of 2
 == input/resources/StructureDefinition-br-core-healthcareservice.json ==
 == input/resources/StructureDefinition-br-core-location.json ==
 == input/resources/StructureDefinition-br-core-relatedperson.json ==

@@ -27,6 +27,7 @@ O diagrama abaixo apresenta o pacote *Bundle* no qual é condensado o REDFM, ref
 | Practitioner | `[RNDSProfissional](StructureDefinition-RNDSProfissional.md)` |
 | PractitionerRole | `[RNDSLotacaoProfissional](StructureDefinition-RNDSLotacaoProfissional.md)` |
 | Organization | `[RNDSEstabelecimentoSaude](StructureDefinition-RNDSEstabelecimentoSaude.md)` |
+| Condition | `[BRProblemaDiagnostico](StructureDefinition-BRProblemaDiagnostico.md)` |
 
 Perfis dos tipos *ValueSet* e *CodeSystem* estão associados a recursos terminológicos. No contexto do REDFM e nos domínios utilizados, foram criados *CodeSystems* específicos definidos pelo [Comitê Gestor de Saúde Digital (CGSD)](https://www.gov.br/saude/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/cgsd).
 

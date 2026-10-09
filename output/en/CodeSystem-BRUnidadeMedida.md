@@ -2,9 +2,6 @@
 
 ## CodeSystem: Unidade de Medida 
 
- 
-CodeSystem utilizado para definir a unidade de medida de um medicamento prescrito, para consumo ou especificação do fabricante. 
-
 This Code system is referenced in the definition of the following value sets:
 
 * [Unidade de Medida de Medicamento](ValueSet-BRUnidadeMedidaMedicamento.md)

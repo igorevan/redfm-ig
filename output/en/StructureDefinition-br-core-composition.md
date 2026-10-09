@@ -2,9 +2,6 @@
 
 ## Resource Profile: BR Core Composition 
 
- 
-Este perfil representa as restrições aplicadas ao recurso br-core-composition 
-
 **Usos:**
 
 * Refere a este Perfil: [BR Core Composition](StructureDefinition-br-core-composition.md)
@@ -61,7 +58,7 @@ Other representations of profile: [CSV](../StructureDefinition-br-core-compositi
   "name" : "BRCoreComposition",
   "title" : "BR Core Composition",
   "status" : "active",
-  "date" : "2026-09-30T19:22:44-03:00",
+  "date" : "2026-10-08T21:08:49-03:00",
   "publisher" : "Ministério da Saúde do Brasil",
   "contact" : [{
     "name" : "Ministério da Saúde do Brasil",

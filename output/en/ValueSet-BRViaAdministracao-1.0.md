@@ -2,15 +2,12 @@
 
 ## ValueSet: Via de Administração (ValueSet) 
 
- 
-Via de administração de um imunobiológico. 
-
  **References** 
 
 * [Dispensação ou Fornecimento de Medicamento](StructureDefinition-RNDSDispensacaoMedicamento.md)
 * [Prescrição de Medicamento - RNDS](StructureDefinition-RNDSPrescricaoMedicamento.md)
 
-### Logical Definition (CLD)
+### Definição lógica (CLD)
 
  
 

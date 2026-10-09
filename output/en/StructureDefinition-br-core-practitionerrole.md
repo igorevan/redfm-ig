@@ -2,9 +2,6 @@
 
 ## Resource Profile: BR Core PractitionerRole 
 
- 
-Este perfil restringe o recurso PractitionerRole que representa um conjunto específico de funções/locais/especialidades/serviços que um profissional pode desempenhar em uma organização por um período de tempo. 
-
 **Usos:**
 
 * Refere a este Perfil: [BR Core Composition](StructureDefinition-br-core-composition.md)
@@ -61,7 +58,7 @@ Other representations of profile: [CSV](../StructureDefinition-br-core-practitio
   "name" : "BRCorePractitionerRole",
   "title" : "BR Core PractitionerRole",
   "status" : "active",
-  "date" : "2026-09-30T19:22:44-03:00",
+  "date" : "2026-10-08T21:08:49-03:00",
   "publisher" : "Ministério da Saúde do Brasil",
   "contact" : [{
     "name" : "Ministério da Saúde do Brasil",

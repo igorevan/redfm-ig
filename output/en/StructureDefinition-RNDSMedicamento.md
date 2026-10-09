@@ -2,9 +2,6 @@
 
 ## Resource Profile: Medicamento 
 
- 
-Este recurso é utilizado principalmente para a identificação e definição de um medicamento para fins de prescrição, dispensação e administração, bem como para fazer declarações sobre o uso de medicamentos. 
-
 **Usos:**
 
 * Refere a este Perfil: [Dispensação ou Fornecimento de Medicamento](StructureDefinition-RNDSDispensacaoMedicamento.md) and [Prescrição de Medicamento - RNDS](StructureDefinition-RNDSPrescricaoMedicamento.md)

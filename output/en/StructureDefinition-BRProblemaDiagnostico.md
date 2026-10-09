@@ -2,9 +2,6 @@
 
 ## Resource Profile: ProblemaDiagnóstico 
 
- 
-Problema e/ou diagnóstico atribuído pelo profissional de saúde ao indivíduo no contato assistencial. 
-
 **Usos:**
 
 * Refere a este Perfil: [Registro Eletrônico de Dispensação ou Fornecimento de Medicamentos - REDFM](StructureDefinition-RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos.md)

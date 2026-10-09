@@ -2,14 +2,11 @@
 
 ## ValueSet: Tipo de Dispensação Realizada (ValueSet) 
 
- 
-Indica o tipo de dispensação que foi realizada 
-
  **References** 
 
 * [Dispensação ou Fornecimento de Medicamento](StructureDefinition-RNDSDispensacaoMedicamento.md)
 
-### Logical Definition (CLD)
+### Definição lógica (CLD)
 
  
 
