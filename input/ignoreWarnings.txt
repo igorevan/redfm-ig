@@ -38,4 +38,3 @@ An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xh
 
 # Erros relacionados a versão do validador da RNDS
 %é inerentemente uma coleção, pelo que a expressão%
-%Constraint failed%

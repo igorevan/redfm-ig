@@ -1,0 +1,2611 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="RNDSUnidadeMedida"/>
+  <meta>
+    <lastUpdated value="2026-08-30T13:16:09-03:00"/>
+  </meta>
+  <language value="pt-BR"/>
+  <text>
+    <status value="generated"/>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="ehr"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="1">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://fhir.saude.gov.br/redfm/ImplementationGuide/br.gov.saude.redfm.fhir"/>
+      </extension>
+    </valueInteger>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="normative">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="https://fhir.saude.gov.br/redfm/ImplementationGuide/br.gov.saude.redfm.fhir"/>
+      </extension>
+    </valueCode>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+    <valueCode value="4.0.1"/>
+  </extension>
+  <url value="http://www.saude.gov.br/fhir/r4/ValueSet/RNDSUnidadeMedida"/>
+  <version value="1.0.0-release"/>
+  <name value="RNDSUnidadeMedida"/>
+  <title value="Unidade de Medida RNDS"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-08-30T13:16:09-03:00"/>
+  <publisher value="Ministério da Saúde do Brasil"/>
+  <contact>
+    <name value="Ministério da Saúde do Brasil"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.saude.gov.br"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="cgiis.datasus@saude.gov.br"/>
+    </telecom>
+  </contact>
+  <description value="ValueSet composto por códigos do CodeSystem BRUnidadeMedida e Unidades Comuns do UCUM."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BR"/>
+    </coding>
+  </jurisdiction>
+  <immutable value="false"/>
+  <compose>
+    <include>
+      <system value="http://www.saude.gov.br/fhir/r4/CodeSystem/BRUnidadeMedida"/>
+    </include>
+    <include>
+      <system value="http://unitsofmeasure.org"/>
+      <concept>
+        <code value="%"/>
+      </concept>
+      <concept>
+        <code value="%/100"/>
+      </concept>
+      <concept>
+        <code value="%[slope]"/>
+      </concept>
+      <concept>
+        <code value="/(12.h)"/>
+      </concept>
+      <concept>
+        <code value="/(2.h)"/>
+      </concept>
+      <concept>
+        <code value="/10*10"/>
+      </concept>
+      <concept>
+        <code value="/10*12"/>
+      </concept>
+      <concept>
+        <code value="/10*3"/>
+      </concept>
+      <concept>
+        <code value="/10*4"/>
+      </concept>
+      <concept>
+        <code value="/10*6"/>
+      </concept>
+      <concept>
+        <code value="/10*9"/>
+      </concept>
+      <concept>
+        <code value="/100"/>
+      </concept>
+      <concept>
+        <code value="/100.g"/>
+      </concept>
+      <concept>
+        <code value="/L"/>
+      </concept>
+      <concept>
+        <code value="/U"/>
+      </concept>
+      <concept>
+        <code value="/[HPF]"/>
+      </concept>
+      <concept>
+        <code value="/[HPF]"/>
+      </concept>
+      <concept>
+        <code value="/[IU]"/>
+      </concept>
+      <concept>
+        <code value="/[LPF]"/>
+      </concept>
+      <concept>
+        <code value="/[LPF]"/>
+      </concept>
+      <concept>
+        <code value="/[arb'U]"/>
+      </concept>
+      <concept>
+        <code value="/[iU]"/>
+      </concept>
+      <concept>
+        <code value="/a"/>
+      </concept>
+      <concept>
+        <code value="/cm[H2O]"/>
+      </concept>
+      <concept>
+        <code value="/d"/>
+      </concept>
+      <concept>
+        <code value="/dL"/>
+      </concept>
+      <concept>
+        <code value="/g"/>
+      </concept>
+      <concept>
+        <code value="/h"/>
+      </concept>
+      <concept>
+        <code value="/kg"/>
+      </concept>
+      <concept>
+        <code value="/m2"/>
+      </concept>
+      <concept>
+        <code value="/m3"/>
+      </concept>
+      <concept>
+        <code value="/mL"/>
+      </concept>
+      <concept>
+        <code value="/mg"/>
+      </concept>
+      <concept>
+        <code value="/min"/>
+      </concept>
+      <concept>
+        <code value="/min/10*3"/>
+      </concept>
+      <concept>
+        <code value="/mm"/>
+      </concept>
+      <concept>
+        <code value="/mm3"/>
+      </concept>
+      <concept>
+        <code value="/mmol"/>
+      </concept>
+      <concept>
+        <code value="/mo"/>
+      </concept>
+      <concept>
+        <code value="/s"/>
+      </concept>
+      <concept>
+        <code value="/uL"/>
+      </concept>
+      <concept>
+        <code value="/ug"/>
+      </concept>
+      <concept>
+        <code value="/wk"/>
+      </concept>
+      <concept>
+        <code value="1"/>
+      </concept>
+      <concept>
+        <code value="1/d"/>
+      </concept>
+      <concept>
+        <code value="1/min"/>
+      </concept>
+      <concept>
+        <code value="10*"/>
+      </concept>
+      <concept>
+        <code value="10*-3"/>
+      </concept>
+      <concept>
+        <code value="10*-6"/>
+      </concept>
+      <concept>
+        <code value="10*12/L"/>
+      </concept>
+      <concept>
+        <code value="10*3"/>
+      </concept>
+      <concept>
+        <code value="10*3.U"/>
+      </concept>
+      <concept>
+        <code value="10*3/L"/>
+      </concept>
+      <concept>
+        <code value="10*3/mL"/>
+      </concept>
+      <concept>
+        <code value="10*3/uL"/>
+      </concept>
+      <concept>
+        <code value="10*4/uL"/>
+      </concept>
+      <concept>
+        <code value="10*5"/>
+      </concept>
+      <concept>
+        <code value="10*6"/>
+      </concept>
+      <concept>
+        <code value="10*6.U"/>
+      </concept>
+      <concept>
+        <code value="10*6.[CFU]/L"/>
+      </concept>
+      <concept>
+        <code value="10*6.[IU]"/>
+      </concept>
+      <concept>
+        <code value="10*6.[iU]"/>
+      </concept>
+      <concept>
+        <code value="10*6.eq/mL"/>
+      </concept>
+      <concept>
+        <code value="10*6/(24.h)"/>
+      </concept>
+      <concept>
+        <code value="10*6/L"/>
+      </concept>
+      <concept>
+        <code value="10*6/kg"/>
+      </concept>
+      <concept>
+        <code value="10*6/mL"/>
+      </concept>
+      <concept>
+        <code value="10*6/mm3"/>
+      </concept>
+      <concept>
+        <code value="10*6/uL"/>
+      </concept>
+      <concept>
+        <code value="10*8"/>
+      </concept>
+      <concept>
+        <code value="10*9/L"/>
+      </concept>
+      <concept>
+        <code value="10*9/mL"/>
+      </concept>
+      <concept>
+        <code value="10*9/uL"/>
+      </concept>
+      <concept>
+        <code value="10.L/(min.m2)"/>
+      </concept>
+      <concept>
+        <code value="10.L/min"/>
+      </concept>
+      <concept>
+        <code value="10.uN.s/(cm.m2)"/>
+      </concept>
+      <concept>
+        <code value="10.uN.s/(cm5.m2)"/>
+      </concept>
+      <concept>
+        <code value="10.uN.s/cm"/>
+      </concept>
+      <concept>
+        <code value="10.uN.s/cm2"/>
+      </concept>
+      <concept>
+        <code value="10^"/>
+      </concept>
+      <concept>
+        <code value="24.h"/>
+      </concept>
+      <concept>
+        <code value="A"/>
+      </concept>
+      <concept>
+        <code value="A/m"/>
+      </concept>
+      <concept>
+        <code value="AU"/>
+      </concept>
+      <concept>
+        <code value="Ao"/>
+      </concept>
+      <concept>
+        <code value="B"/>
+      </concept>
+      <concept>
+        <code value="B[SPL]"/>
+      </concept>
+      <concept>
+        <code value="B[V]"/>
+      </concept>
+      <concept>
+        <code value="B[W]"/>
+      </concept>
+      <concept>
+        <code value="B[kW]"/>
+      </concept>
+      <concept>
+        <code value="B[mV]"/>
+      </concept>
+      <concept>
+        <code value="B[uV]"/>
+      </concept>
+      <concept>
+        <code value="Bd"/>
+      </concept>
+      <concept>
+        <code value="Bi"/>
+      </concept>
+      <concept>
+        <code value="Bq"/>
+      </concept>
+      <concept>
+        <code value="By"/>
+      </concept>
+      <concept>
+        <code value="C"/>
+      </concept>
+      <concept>
+        <code value="Cel"/>
+      </concept>
+      <concept>
+        <code value="Ci"/>
+      </concept>
+      <concept>
+        <code value="F"/>
+      </concept>
+      <concept>
+        <code value="G"/>
+      </concept>
+      <concept>
+        <code value="GBq"/>
+      </concept>
+      <concept>
+        <code value="Gal"/>
+      </concept>
+      <concept>
+        <code value="Gb"/>
+      </concept>
+      <concept>
+        <code value="Gy"/>
+      </concept>
+      <concept>
+        <code value="H"/>
+      </concept>
+      <concept>
+        <code value="Hz"/>
+      </concept>
+      <concept>
+        <code value="J"/>
+      </concept>
+      <concept>
+        <code value="J/L"/>
+      </concept>
+      <concept>
+        <code value="K"/>
+      </concept>
+      <concept>
+        <code value="K/W"/>
+      </concept>
+      <concept>
+        <code value="Ky"/>
+      </concept>
+      <concept>
+        <code value="L"/>
+      </concept>
+      <concept>
+        <code value="L.s2/s"/>
+      </concept>
+      <concept>
+        <code value="L/(24.h)"/>
+      </concept>
+      <concept>
+        <code value="L/(8.h)"/>
+      </concept>
+      <concept>
+        <code value="L/(min.m2)"/>
+      </concept>
+      <concept>
+        <code value="L/L"/>
+      </concept>
+      <concept>
+        <code value="L/d"/>
+      </concept>
+      <concept>
+        <code value="L/h"/>
+      </concept>
+      <concept>
+        <code value="L/kg"/>
+      </concept>
+      <concept>
+        <code value="L/min"/>
+      </concept>
+      <concept>
+        <code value="L/s"/>
+      </concept>
+      <concept>
+        <code value="L/s/s2"/>
+      </concept>
+      <concept>
+        <code value="Lmb"/>
+      </concept>
+      <concept>
+        <code value="MBq"/>
+      </concept>
+      <concept>
+        <code value="Ms"/>
+      </concept>
+      <concept>
+        <code value="Mx"/>
+      </concept>
+      <concept>
+        <code value="N"/>
+      </concept>
+      <concept>
+        <code value="N.cm"/>
+      </concept>
+      <concept>
+        <code value="N.s"/>
+      </concept>
+      <concept>
+        <code value="Np"/>
+      </concept>
+      <concept>
+        <code value="Oe"/>
+      </concept>
+      <concept>
+        <code value="Ohm"/>
+      </concept>
+      <concept>
+        <code value="Ohm.m"/>
+      </concept>
+      <concept>
+        <code value="P"/>
+      </concept>
+      <concept>
+        <code value="Pa"/>
+      </concept>
+      <concept>
+        <code value="R"/>
+      </concept>
+      <concept>
+        <code value="RAD"/>
+      </concept>
+      <concept>
+        <code value="REM"/>
+      </concept>
+      <concept>
+        <code value="S"/>
+      </concept>
+      <concept>
+        <code value="St"/>
+      </concept>
+      <concept>
+        <code value="Sv"/>
+      </concept>
+      <concept>
+        <code value="T"/>
+      </concept>
+      <concept>
+        <code value="U"/>
+      </concept>
+      <concept>
+        <code value="U/(1.h)"/>
+      </concept>
+      <concept>
+        <code value="U/(10.g)"/>
+      </concept>
+      <concept>
+        <code value="U/(12.h)"/>
+      </concept>
+      <concept>
+        <code value="U/(18.h)"/>
+      </concept>
+      <concept>
+        <code value="U/(2.h)"/>
+      </concept>
+      <concept>
+        <code value="U/(24.h)"/>
+      </concept>
+      <concept>
+        <code value="U/10"/>
+      </concept>
+      <concept>
+        <code value="U/10*10"/>
+      </concept>
+      <concept>
+        <code value="U/10*12"/>
+      </concept>
+      <concept>
+        <code value="U/10*12"/>
+      </concept>
+      <concept>
+        <code value="U/10*6"/>
+      </concept>
+      <concept>
+        <code value="U/10*9"/>
+      </concept>
+      <concept>
+        <code value="U/L"/>
+      </concept>
+      <concept>
+        <code value="U/d"/>
+      </concept>
+      <concept>
+        <code value="U/dL"/>
+      </concept>
+      <concept>
+        <code value="U/g"/>
+      </concept>
+      <concept>
+        <code value="U/h"/>
+      </concept>
+      <concept>
+        <code value="U/kg"/>
+      </concept>
+      <concept>
+        <code value="U/kg/h"/>
+      </concept>
+      <concept>
+        <code value="U/mL"/>
+      </concept>
+      <concept>
+        <code value="U/min"/>
+      </concept>
+      <concept>
+        <code value="U/mmol"/>
+      </concept>
+      <concept>
+        <code value="U/mol"/>
+      </concept>
+      <concept>
+        <code value="U/s"/>
+      </concept>
+      <concept>
+        <code value="U/umol"/>
+      </concept>
+      <concept>
+        <code value="V"/>
+      </concept>
+      <concept>
+        <code value="W"/>
+      </concept>
+      <concept>
+        <code value="Wb"/>
+      </concept>
+      <concept>
+        <code value="[APL'U]"/>
+      </concept>
+      <concept>
+        <code value="[APL'U]/mL"/>
+      </concept>
+      <concept>
+        <code value="[AU]"/>
+      </concept>
+      <concept>
+        <code value="[Amb'a'1'U]"/>
+      </concept>
+      <concept>
+        <code value="[BAU]"/>
+      </concept>
+      <concept>
+        <code value="[Btu]"/>
+      </concept>
+      <concept>
+        <code value="[Btu_39]"/>
+      </concept>
+      <concept>
+        <code value="[Btu_59]"/>
+      </concept>
+      <concept>
+        <code value="[Btu_60]"/>
+      </concept>
+      <concept>
+        <code value="[Btu_IT]"/>
+      </concept>
+      <concept>
+        <code value="[Btu_m]"/>
+      </concept>
+      <concept>
+        <code value="[Btu_th]"/>
+      </concept>
+      <concept>
+        <code value="[CCID_50]"/>
+      </concept>
+      <concept>
+        <code value="[CFU]"/>
+      </concept>
+      <concept>
+        <code value="[CFU]/L"/>
+      </concept>
+      <concept>
+        <code value="[CFU]/mL"/>
+      </concept>
+      <concept>
+        <code value="[Cal]"/>
+      </concept>
+      <concept>
+        <code value="[Ch]"/>
+      </concept>
+      <concept>
+        <code value="[D'ag'U]"/>
+      </concept>
+      <concept>
+        <code value="[FFU]"/>
+      </concept>
+      <concept>
+        <code value="[GPL'U]"/>
+      </concept>
+      <concept>
+        <code value="[GPL'U]/mL"/>
+      </concept>
+      <concept>
+        <code value="[G]"/>
+      </concept>
+      <concept>
+        <code value="[HPF]"/>
+      </concept>
+      <concept>
+        <code value="[HP]"/>
+      </concept>
+      <concept>
+        <code value="[IU]"/>
+      </concept>
+      <concept>
+        <code value="[IU]/(2.h)"/>
+      </concept>
+      <concept>
+        <code value="[IU]/(24.h)"/>
+      </concept>
+      <concept>
+        <code value="[IU]/10*9"/>
+      </concept>
+      <concept>
+        <code value="[IU]/L"/>
+      </concept>
+      <concept>
+        <code value="[IU]/d"/>
+      </concept>
+      <concept>
+        <code value="[IU]/dL"/>
+      </concept>
+      <concept>
+        <code value="[IU]/g"/>
+      </concept>
+      <concept>
+        <code value="[IU]/h"/>
+      </concept>
+      <concept>
+        <code value="[IU]/kg"/>
+      </concept>
+      <concept>
+        <code value="[IU]/kg/d"/>
+      </concept>
+      <concept>
+        <code value="[IU]/mL"/>
+      </concept>
+      <concept>
+        <code value="[IU]/min"/>
+      </concept>
+      <concept>
+        <code value="[LPF]"/>
+      </concept>
+      <concept>
+        <code value="[Lf]"/>
+      </concept>
+      <concept>
+        <code value="[MET]"/>
+      </concept>
+      <concept>
+        <code value="[MPL'U]"/>
+      </concept>
+      <concept>
+        <code value="[MPL'U]/mL"/>
+      </concept>
+      <concept>
+        <code value="[PFU]"/>
+      </concept>
+      <concept>
+        <code value="[PNU]"/>
+      </concept>
+      <concept>
+        <code value="[PRU]"/>
+      </concept>
+      <concept>
+        <code value="[S]"/>
+      </concept>
+      <concept>
+        <code value="[TCID_50]"/>
+      </concept>
+      <concept>
+        <code value="[USP'U]"/>
+      </concept>
+      <concept>
+        <code value="[acr_br]"/>
+      </concept>
+      <concept>
+        <code value="[acr_us]"/>
+      </concept>
+      <concept>
+        <code value="[arb'U]"/>
+      </concept>
+      <concept>
+        <code value="[arb'U]/L"/>
+      </concept>
+      <concept>
+        <code value="[arb'U]/mL"/>
+      </concept>
+      <concept>
+        <code value="[bbl_us]"/>
+      </concept>
+      <concept>
+        <code value="[bdsk'U]"/>
+      </concept>
+      <concept>
+        <code value="[beth'U]"/>
+      </concept>
+      <concept>
+        <code value="[beth'U]"/>
+      </concept>
+      <concept>
+        <code value="[bf_i]"/>
+      </concept>
+      <concept>
+        <code value="[bu_br]"/>
+      </concept>
+      <concept>
+        <code value="[bu_us]"/>
+      </concept>
+      <concept>
+        <code value="[c]"/>
+      </concept>
+      <concept>
+        <code value="[car_Au]"/>
+      </concept>
+      <concept>
+        <code value="[car_m]"/>
+      </concept>
+      <concept>
+        <code value="[cft_i]"/>
+      </concept>
+      <concept>
+        <code value="[ch_br]"/>
+      </concept>
+      <concept>
+        <code value="[ch_us]"/>
+      </concept>
+      <concept>
+        <code value="[cicero]"/>
+      </concept>
+      <concept>
+        <code value="[cin_i]"/>
+      </concept>
+      <concept>
+        <code value="[cml_i]"/>
+      </concept>
+      <concept>
+        <code value="[cr_i]"/>
+      </concept>
+      <concept>
+        <code value="[crd_us]"/>
+      </concept>
+      <concept>
+        <code value="[cup_us]"/>
+      </concept>
+      <concept>
+        <code value="[cyd_i]"/>
+      </concept>
+      <concept>
+        <code value="[degF]"/>
+      </concept>
+      <concept>
+        <code value="[didot]"/>
+      </concept>
+      <concept>
+        <code value="[diop]"/>
+      </concept>
+      <concept>
+        <code value="[dpt_us]"/>
+      </concept>
+      <concept>
+        <code value="[dqt_us]"/>
+      </concept>
+      <concept>
+        <code value="[dr_ap]"/>
+      </concept>
+      <concept>
+        <code value="[dr_av]"/>
+      </concept>
+      <concept>
+        <code value="[drp]"/>
+      </concept>
+      <concept>
+        <code value="[drp]/[HPF]"/>
+      </concept>
+      <concept>
+        <code value="[drp]/h"/>
+      </concept>
+      <concept>
+        <code value="[drp]/mL"/>
+      </concept>
+      <concept>
+        <code value="[drp]/min"/>
+      </concept>
+      <concept>
+        <code value="[drp]/s"/>
+      </concept>
+      <concept>
+        <code value="[dye'U]"/>
+      </concept>
+      <concept>
+        <code value="[e]"/>
+      </concept>
+      <concept>
+        <code value="[eps_0]"/>
+      </concept>
+      <concept>
+        <code value="[fdr_br]"/>
+      </concept>
+      <concept>
+        <code value="[fdr_us]"/>
+      </concept>
+      <concept>
+        <code value="[foz_br]"/>
+      </concept>
+      <concept>
+        <code value="[foz_us]"/>
+      </concept>
+      <concept>
+        <code value="[ft_br]"/>
+      </concept>
+      <concept>
+        <code value="[ft_i]"/>
+      </concept>
+      <concept>
+        <code value="[ft_us]"/>
+      </concept>
+      <concept>
+        <code value="[fth_br]"/>
+      </concept>
+      <concept>
+        <code value="[fth_i]"/>
+      </concept>
+      <concept>
+        <code value="[fth_us]"/>
+      </concept>
+      <concept>
+        <code value="[fur_us]"/>
+      </concept>
+      <concept>
+        <code value="[gal_br]"/>
+      </concept>
+      <concept>
+        <code value="[gal_us]"/>
+      </concept>
+      <concept>
+        <code value="[gal_wi]"/>
+      </concept>
+      <concept>
+        <code value="[gil_br]"/>
+      </concept>
+      <concept>
+        <code value="[gil_us]"/>
+      </concept>
+      <concept>
+        <code value="[gr]"/>
+      </concept>
+      <concept>
+        <code value="[h]"/>
+      </concept>
+      <concept>
+        <code value="[hd_i]"/>
+      </concept>
+      <concept>
+        <code value="[hnsf'U]"/>
+      </concept>
+      <concept>
+        <code value="[hp_C]"/>
+      </concept>
+      <concept>
+        <code value="[hp_M]"/>
+      </concept>
+      <concept>
+        <code value="[hp_Q]"/>
+      </concept>
+      <concept>
+        <code value="[hp_X]"/>
+      </concept>
+      <concept>
+        <code value="[iU]"/>
+      </concept>
+      <concept>
+        <code value="[iU]"/>
+      </concept>
+      <concept>
+        <code value="[iU]/L"/>
+      </concept>
+      <concept>
+        <code value="[iU]/dL"/>
+      </concept>
+      <concept>
+        <code value="[iU]/g"/>
+      </concept>
+      <concept>
+        <code value="[iU]/kg"/>
+      </concept>
+      <concept>
+        <code value="[iU]/mL"/>
+      </concept>
+      <concept>
+        <code value="[in_br]"/>
+      </concept>
+      <concept>
+        <code value="[in_i'H2O]"/>
+      </concept>
+      <concept>
+        <code value="[in_i'Hg]"/>
+      </concept>
+      <concept>
+        <code value="[in_i]"/>
+      </concept>
+      <concept>
+        <code value="[in_us]"/>
+      </concept>
+      <concept>
+        <code value="[k]"/>
+      </concept>
+      <concept>
+        <code value="[ka'U]"/>
+      </concept>
+      <concept>
+        <code value="[kn_br]"/>
+      </concept>
+      <concept>
+        <code value="[kn_i]"/>
+      </concept>
+      <concept>
+        <code value="[knk'U]"/>
+      </concept>
+      <concept>
+        <code value="[kp_C]"/>
+      </concept>
+      <concept>
+        <code value="[lb_ap]"/>
+      </concept>
+      <concept>
+        <code value="[lb_av]"/>
+      </concept>
+      <concept>
+        <code value="[lb_tr]"/>
+      </concept>
+      <concept>
+        <code value="[lbf_av]"/>
+      </concept>
+      <concept>
+        <code value="[lcwt_av]"/>
+      </concept>
+      <concept>
+        <code value="[ligne]"/>
+      </concept>
+      <concept>
+        <code value="[lk_br]"/>
+      </concept>
+      <concept>
+        <code value="[lk_us]"/>
+      </concept>
+      <concept>
+        <code value="[lne]"/>
+      </concept>
+      <concept>
+        <code value="[lton_av]"/>
+      </concept>
+      <concept>
+        <code value="[ly]"/>
+      </concept>
+      <concept>
+        <code value="[m_e]"/>
+      </concept>
+      <concept>
+        <code value="[m_p]"/>
+      </concept>
+      <concept>
+        <code value="[mclg'U]"/>
+      </concept>
+      <concept>
+        <code value="[mesh_i]"/>
+      </concept>
+      <concept>
+        <code value="[mi_br]"/>
+      </concept>
+      <concept>
+        <code value="[mi_i]"/>
+      </concept>
+      <concept>
+        <code value="[mi_us]"/>
+      </concept>
+      <concept>
+        <code value="[mil_i]"/>
+      </concept>
+      <concept>
+        <code value="[mil_us]"/>
+      </concept>
+      <concept>
+        <code value="[min_br]"/>
+      </concept>
+      <concept>
+        <code value="[min_us]"/>
+      </concept>
+      <concept>
+        <code value="[mu_0]"/>
+      </concept>
+      <concept>
+        <code value="[nmi_br]"/>
+      </concept>
+      <concept>
+        <code value="[nmi_i]"/>
+      </concept>
+      <concept>
+        <code value="[oz_ap]"/>
+      </concept>
+      <concept>
+        <code value="[oz_av]"/>
+      </concept>
+      <concept>
+        <code value="[oz_tr]"/>
+      </concept>
+      <concept>
+        <code value="[p'diop]"/>
+      </concept>
+      <concept>
+        <code value="[pH]"/>
+      </concept>
+      <concept>
+        <code value="[pc_br]"/>
+      </concept>
+      <concept>
+        <code value="[pca]"/>
+      </concept>
+      <concept>
+        <code value="[pca_pr]"/>
+      </concept>
+      <concept>
+        <code value="[pi]"/>
+      </concept>
+      <concept>
+        <code value="[pi].rad/min"/>
+      </concept>
+      <concept>
+        <code value="[pied]"/>
+      </concept>
+      <concept>
+        <code value="[pk_br]"/>
+      </concept>
+      <concept>
+        <code value="[pk_us]"/>
+      </concept>
+      <concept>
+        <code value="[pnt]"/>
+      </concept>
+      <concept>
+        <code value="[pnt_pr]"/>
+      </concept>
+      <concept>
+        <code value="[pouce]"/>
+      </concept>
+      <concept>
+        <code value="[ppb]"/>
+      </concept>
+      <concept>
+        <code value="[ppm]"/>
+      </concept>
+      <concept>
+        <code value="[ppth]"/>
+      </concept>
+      <concept>
+        <code value="[pptr]"/>
+      </concept>
+      <concept>
+        <code value="[pptr]"/>
+      </concept>
+      <concept>
+        <code value="[psi]"/>
+      </concept>
+      <concept>
+        <code value="[pt_br]"/>
+      </concept>
+      <concept>
+        <code value="[pt_us]"/>
+      </concept>
+      <concept>
+        <code value="[pwt_tr]"/>
+      </concept>
+      <concept>
+        <code value="[qt_br]"/>
+      </concept>
+      <concept>
+        <code value="[qt_us]"/>
+      </concept>
+      <concept>
+        <code value="[rch_us]"/>
+      </concept>
+      <concept>
+        <code value="[rd_br]"/>
+      </concept>
+      <concept>
+        <code value="[rd_us]"/>
+      </concept>
+      <concept>
+        <code value="[rlk_us]"/>
+      </concept>
+      <concept>
+        <code value="[sc_ap]"/>
+      </concept>
+      <concept>
+        <code value="[sct]"/>
+      </concept>
+      <concept>
+        <code value="[scwt_av]"/>
+      </concept>
+      <concept>
+        <code value="[sft_i]"/>
+      </concept>
+      <concept>
+        <code value="[sin_i]"/>
+      </concept>
+      <concept>
+        <code value="[smgy'U]"/>
+      </concept>
+      <concept>
+        <code value="[smi_us]"/>
+      </concept>
+      <concept>
+        <code value="[smoot]"/>
+      </concept>
+      <concept>
+        <code value="[srd_us]"/>
+      </concept>
+      <concept>
+        <code value="[ston_av]"/>
+      </concept>
+      <concept>
+        <code value="[stone_av]"/>
+      </concept>
+      <concept>
+        <code value="[syd_i]"/>
+      </concept>
+      <concept>
+        <code value="[tb'U]"/>
+      </concept>
+      <concept>
+        <code value="[tbs_us]"/>
+      </concept>
+      <concept>
+        <code value="[todd'U]"/>
+      </concept>
+      <concept>
+        <code value="[todd'U]"/>
+      </concept>
+      <concept>
+        <code value="[tsp_us]"/>
+      </concept>
+      <concept>
+        <code value="[twp]"/>
+      </concept>
+      <concept>
+        <code value="[yd_br]"/>
+      </concept>
+      <concept>
+        <code value="[yd_i]"/>
+      </concept>
+      <concept>
+        <code value="[yd_us]"/>
+      </concept>
+      <concept>
+        <code value="a"/>
+      </concept>
+      <concept>
+        <code value="a_g"/>
+      </concept>
+      <concept>
+        <code value="a_j"/>
+      </concept>
+      <concept>
+        <code value="a_t"/>
+      </concept>
+      <concept>
+        <code value="ag"/>
+      </concept>
+      <concept>
+        <code value="ar"/>
+      </concept>
+      <concept>
+        <code value="atm"/>
+      </concept>
+      <concept>
+        <code value="att"/>
+      </concept>
+      <concept>
+        <code value="b"/>
+      </concept>
+      <concept>
+        <code value="bar"/>
+      </concept>
+      <concept>
+        <code value="bit"/>
+      </concept>
+      <concept>
+        <code value="bit_s"/>
+      </concept>
+      <concept>
+        <code value="cL"/>
+      </concept>
+      <concept>
+        <code value="cP"/>
+      </concept>
+      <concept>
+        <code value="cSt"/>
+      </concept>
+      <concept>
+        <code value="cal"/>
+      </concept>
+      <concept>
+        <code value="cal_IT"/>
+      </concept>
+      <concept>
+        <code value="cal_[15]"/>
+      </concept>
+      <concept>
+        <code value="cal_[20]"/>
+      </concept>
+      <concept>
+        <code value="cal_m"/>
+      </concept>
+      <concept>
+        <code value="cal_th"/>
+      </concept>
+      <concept>
+        <code value="cd"/>
+      </concept>
+      <concept>
+        <code value="cg"/>
+      </concept>
+      <concept>
+        <code value="circ"/>
+      </concept>
+      <concept>
+        <code value="cm"/>
+      </concept>
+      <concept>
+        <code value="cm2"/>
+      </concept>
+      <concept>
+        <code value="cm2/s"/>
+      </concept>
+      <concept>
+        <code value="cm3"/>
+      </concept>
+      <concept>
+        <code value="cm[H2O]"/>
+      </concept>
+      <concept>
+        <code value="cm[H2O]/(s.m)"/>
+      </concept>
+      <concept>
+        <code value="cm[H2O]/L/s"/>
+      </concept>
+      <concept>
+        <code value="cm[H2O]/s/m"/>
+      </concept>
+      <concept>
+        <code value="cm[Hg]"/>
+      </concept>
+      <concept>
+        <code value="d"/>
+      </concept>
+      <concept>
+        <code value="dB"/>
+      </concept>
+      <concept>
+        <code value="dL"/>
+      </concept>
+      <concept>
+        <code value="daL/min"/>
+      </concept>
+      <concept>
+        <code value="daL/min/m2"/>
+      </concept>
+      <concept>
+        <code value="deg"/>
+      </concept>
+      <concept>
+        <code value="deg/s"/>
+      </concept>
+      <concept>
+        <code value="dg"/>
+      </concept>
+      <concept>
+        <code value="dm"/>
+      </concept>
+      <concept>
+        <code value="dm2/s2"/>
+      </concept>
+      <concept>
+        <code value="dyn"/>
+      </concept>
+      <concept>
+        <code value="dyn.s/(cm.m2)"/>
+      </concept>
+      <concept>
+        <code value="dyn.s/cm"/>
+      </concept>
+      <concept>
+        <code value="eV"/>
+      </concept>
+      <concept>
+        <code value="eq"/>
+      </concept>
+      <concept>
+        <code value="eq/L"/>
+      </concept>
+      <concept>
+        <code value="eq/mL"/>
+      </concept>
+      <concept>
+        <code value="eq/mmol"/>
+      </concept>
+      <concept>
+        <code value="eq/umol"/>
+      </concept>
+      <concept>
+        <code value="erg"/>
+      </concept>
+      <concept>
+        <code value="fL"/>
+      </concept>
+      <concept>
+        <code value="fL/nL"/>
+      </concept>
+      <concept>
+        <code value="fg"/>
+      </concept>
+      <concept>
+        <code value="fm"/>
+      </concept>
+      <concept>
+        <code value="fmol"/>
+      </concept>
+      <concept>
+        <code value="fmol/L"/>
+      </concept>
+      <concept>
+        <code value="fmol/g"/>
+      </concept>
+      <concept>
+        <code value="fmol/mL"/>
+      </concept>
+      <concept>
+        <code value="fmol/mg"/>
+      </concept>
+      <concept>
+        <code value="fmol/mg"/>
+      </concept>
+      <concept>
+        <code value="g"/>
+      </concept>
+      <concept>
+        <code value="g%"/>
+      </concept>
+      <concept>
+        <code value="g.m"/>
+      </concept>
+      <concept>
+        <code value="g/(100.g)"/>
+      </concept>
+      <concept>
+        <code value="g/(12.h)"/>
+      </concept>
+      <concept>
+        <code value="g/(24.h)"/>
+      </concept>
+      <concept>
+        <code value="g/(3.d)"/>
+      </concept>
+      <concept>
+        <code value="g/(4.h)"/>
+      </concept>
+      <concept>
+        <code value="g/(48.h)"/>
+      </concept>
+      <concept>
+        <code value="g/(5.h)"/>
+      </concept>
+      <concept>
+        <code value="g/(6.h)"/>
+      </concept>
+      <concept>
+        <code value="g/(72.h)"/>
+      </concept>
+      <concept>
+        <code value="g/(8.h)"/>
+      </concept>
+      <concept>
+        <code value="g/(8.kg.h)"/>
+      </concept>
+      <concept>
+        <code value="g/(kg.h)"/>
+      </concept>
+      <concept>
+        <code value="g/(kg.min)"/>
+      </concept>
+      <concept>
+        <code value="g/L"/>
+      </concept>
+      <concept>
+        <code value="g/cm3"/>
+      </concept>
+      <concept>
+        <code value="g/d"/>
+      </concept>
+      <concept>
+        <code value="g/dL"/>
+      </concept>
+      <concept>
+        <code value="g/g"/>
+      </concept>
+      <concept>
+        <code value="g/h"/>
+      </concept>
+      <concept>
+        <code value="g/h/m2"/>
+      </concept>
+      <concept>
+        <code value="g/kg"/>
+      </concept>
+      <concept>
+        <code value="g/kg/(8.h)"/>
+      </concept>
+      <concept>
+        <code value="g/kg/d"/>
+      </concept>
+      <concept>
+        <code value="g/kg/h"/>
+      </concept>
+      <concept>
+        <code value="g/kg/min"/>
+      </concept>
+      <concept>
+        <code value="g/m2"/>
+      </concept>
+      <concept>
+        <code value="g/mL"/>
+      </concept>
+      <concept>
+        <code value="g/mg"/>
+      </concept>
+      <concept>
+        <code value="g/min"/>
+      </concept>
+      <concept>
+        <code value="g/mmol"/>
+      </concept>
+      <concept>
+        <code value="g/mol"/>
+      </concept>
+      <concept>
+        <code value="gf"/>
+      </concept>
+      <concept>
+        <code value="gon"/>
+      </concept>
+      <concept>
+        <code value="h"/>
+      </concept>
+      <concept>
+        <code value="hL"/>
+      </concept>
+      <concept>
+        <code value="kBq"/>
+      </concept>
+      <concept>
+        <code value="kL"/>
+      </concept>
+      <concept>
+        <code value="kPa"/>
+      </concept>
+      <concept>
+        <code value="kU"/>
+      </concept>
+      <concept>
+        <code value="kU/L"/>
+      </concept>
+      <concept>
+        <code value="kU/g"/>
+      </concept>
+      <concept>
+        <code value="kU/h"/>
+      </concept>
+      <concept>
+        <code value="kU/mL"/>
+      </concept>
+      <concept>
+        <code value="k[IU]/L"/>
+      </concept>
+      <concept>
+        <code value="k[IU]/mL"/>
+      </concept>
+      <concept>
+        <code value="k[iU]/mL"/>
+      </concept>
+      <concept>
+        <code value="kat"/>
+      </concept>
+      <concept>
+        <code value="kat/L"/>
+      </concept>
+      <concept>
+        <code value="kat/kg"/>
+      </concept>
+      <concept>
+        <code value="kcal"/>
+      </concept>
+      <concept>
+        <code value="kcal/(8.h)"/>
+      </concept>
+      <concept>
+        <code value="kcal/[oz_av]"/>
+      </concept>
+      <concept>
+        <code value="kcal/d"/>
+      </concept>
+      <concept>
+        <code value="kcal/h"/>
+      </concept>
+      <concept>
+        <code value="kcal/kg/(24.h)"/>
+      </concept>
+      <concept>
+        <code value="kg"/>
+      </concept>
+      <concept>
+        <code value="kg.m/s"/>
+      </concept>
+      <concept>
+        <code value="kg/(s.m2)"/>
+      </concept>
+      <concept>
+        <code value="kg/L"/>
+      </concept>
+      <concept>
+        <code value="kg/h"/>
+      </concept>
+      <concept>
+        <code value="kg/m2"/>
+      </concept>
+      <concept>
+        <code value="kg/m3"/>
+      </concept>
+      <concept>
+        <code value="kg/min"/>
+      </concept>
+      <concept>
+        <code value="kg/mol"/>
+      </concept>
+      <concept>
+        <code value="kg/s"/>
+      </concept>
+      <concept>
+        <code value="km"/>
+      </concept>
+      <concept>
+        <code value="ks"/>
+      </concept>
+      <concept>
+        <code value="lm"/>
+      </concept>
+      <concept>
+        <code value="lm.m2"/>
+      </concept>
+      <concept>
+        <code value="lm/m2"/>
+      </concept>
+      <concept>
+        <code value="lx"/>
+      </concept>
+      <concept>
+        <code value="m"/>
+      </concept>
+      <concept>
+        <code value="m/s"/>
+      </concept>
+      <concept>
+        <code value="m/s2"/>
+      </concept>
+      <concept>
+        <code value="m2"/>
+      </concept>
+      <concept>
+        <code value="m2/s"/>
+      </concept>
+      <concept>
+        <code value="m3/s"/>
+      </concept>
+      <concept>
+        <code value="mA"/>
+      </concept>
+      <concept>
+        <code value="mCi"/>
+      </concept>
+      <concept>
+        <code value="mL"/>
+      </concept>
+      <concept>
+        <code value="mL/(10.h)"/>
+      </concept>
+      <concept>
+        <code value="mL/(12.h)"/>
+      </concept>
+      <concept>
+        <code value="mL/(2.h)"/>
+      </concept>
+      <concept>
+        <code value="mL/(24.h)"/>
+      </concept>
+      <concept>
+        <code value="mL/(4.h)"/>
+      </concept>
+      <concept>
+        <code value="mL/(5.h)"/>
+      </concept>
+      <concept>
+        <code value="mL/(6.h)"/>
+      </concept>
+      <concept>
+        <code value="mL/(72.h)"/>
+      </concept>
+      <concept>
+        <code value="mL/(8.h)"/>
+      </concept>
+      <concept>
+        <code value="mL/(kg.min)"/>
+      </concept>
+      <concept>
+        <code value="mL/L"/>
+      </concept>
+      <concept>
+        <code value="mL/[sin_i]"/>
+      </concept>
+      <concept>
+        <code value="mL/cm[H2O]"/>
+      </concept>
+      <concept>
+        <code value="mL/d"/>
+      </concept>
+      <concept>
+        <code value="mL/dL"/>
+      </concept>
+      <concept>
+        <code value="mL/h"/>
+      </concept>
+      <concept>
+        <code value="mL/kg"/>
+      </concept>
+      <concept>
+        <code value="mL/kg/(8.h)"/>
+      </concept>
+      <concept>
+        <code value="mL/kg/d"/>
+      </concept>
+      <concept>
+        <code value="mL/kg/h"/>
+      </concept>
+      <concept>
+        <code value="mL/kg/min"/>
+      </concept>
+      <concept>
+        <code value="mL/m2"/>
+      </concept>
+      <concept>
+        <code value="mL/mbar"/>
+      </concept>
+      <concept>
+        <code value="mL/min"/>
+      </concept>
+      <concept>
+        <code value="mL/min/(173.10*-2.m2)"/>
+      </concept>
+      <concept>
+        <code value="mL/min/1.73.m2"/>
+      </concept>
+      <concept>
+        <code value="mL/min/m2"/>
+      </concept>
+      <concept>
+        <code value="mL/mm"/>
+      </concept>
+      <concept>
+        <code value="mL/s"/>
+      </concept>
+      <concept>
+        <code value="mPa"/>
+      </concept>
+      <concept>
+        <code value="mPa.s"/>
+      </concept>
+      <concept>
+        <code value="mU"/>
+      </concept>
+      <concept>
+        <code value="mU/L"/>
+      </concept>
+      <concept>
+        <code value="mU/g"/>
+      </concept>
+      <concept>
+        <code value="mU/mL"/>
+      </concept>
+      <concept>
+        <code value="mU/mL/min"/>
+      </concept>
+      <concept>
+        <code value="mU/mg"/>
+      </concept>
+      <concept>
+        <code value="mU/min"/>
+      </concept>
+      <concept>
+        <code value="mU/mmol"/>
+      </concept>
+      <concept>
+        <code value="mV"/>
+      </concept>
+      <concept>
+        <code value="m[H2O]"/>
+      </concept>
+      <concept>
+        <code value="m[Hg]"/>
+      </concept>
+      <concept>
+        <code value="m[IU]/L"/>
+      </concept>
+      <concept>
+        <code value="m[IU]/mL"/>
+      </concept>
+      <concept>
+        <code value="m[iU]"/>
+      </concept>
+      <concept>
+        <code value="mbar"/>
+      </concept>
+      <concept>
+        <code value="mbar.s/L"/>
+      </concept>
+      <concept>
+        <code value="mbar/L/s"/>
+      </concept>
+      <concept>
+        <code value="meq"/>
+      </concept>
+      <concept>
+        <code value="meq/(12.h)"/>
+      </concept>
+      <concept>
+        <code value="meq/(2.h)"/>
+      </concept>
+      <concept>
+        <code value="meq/(24.h)"/>
+      </concept>
+      <concept>
+        <code value="meq/(8.h)"/>
+      </concept>
+      <concept>
+        <code value="meq/(8.h.kg)"/>
+      </concept>
+      <concept>
+        <code value="meq/(kg.d)"/>
+      </concept>
+      <concept>
+        <code value="meq/L"/>
+      </concept>
+      <concept>
+        <code value="meq/d"/>
+      </concept>
+      <concept>
+        <code value="meq/dL"/>
+      </concept>
+      <concept>
+        <code value="meq/g"/>
+      </concept>
+      <concept>
+        <code value="meq/h"/>
+      </concept>
+      <concept>
+        <code value="meq/kg"/>
+      </concept>
+      <concept>
+        <code value="meq/kg/h"/>
+      </concept>
+      <concept>
+        <code value="meq/kg/min"/>
+      </concept>
+      <concept>
+        <code value="meq/m2"/>
+      </concept>
+      <concept>
+        <code value="meq/mL"/>
+      </concept>
+      <concept>
+        <code value="meq/min"/>
+      </concept>
+      <concept>
+        <code value="mg"/>
+      </concept>
+      <concept>
+        <code value="mg/(10.h)"/>
+      </concept>
+      <concept>
+        <code value="mg/(12.h)"/>
+      </concept>
+      <concept>
+        <code value="mg/(18.h)"/>
+      </concept>
+      <concept>
+        <code value="mg/(2.h)"/>
+      </concept>
+      <concept>
+        <code value="mg/(24.h)"/>
+      </concept>
+      <concept>
+        <code value="mg/(6.h)"/>
+      </concept>
+      <concept>
+        <code value="mg/(72.h)"/>
+      </concept>
+      <concept>
+        <code value="mg/(8.h)"/>
+      </concept>
+      <concept>
+        <code value="mg/(8.h.kg)"/>
+      </concept>
+      <concept>
+        <code value="mg/(kg.h)"/>
+      </concept>
+      <concept>
+        <code value="mg/L"/>
+      </concept>
+      <concept>
+        <code value="mg/d"/>
+      </concept>
+      <concept>
+        <code value="mg/d/(173.10*-2.m2)"/>
+      </concept>
+      <concept>
+        <code value="mg/d/1.73.m2"/>
+      </concept>
+      <concept>
+        <code value="mg/dL"/>
+      </concept>
+      <concept>
+        <code value="mg/g"/>
+      </concept>
+      <concept>
+        <code value="mg/h"/>
+      </concept>
+      <concept>
+        <code value="mg/kg"/>
+      </concept>
+      <concept>
+        <code value="mg/kg/(24.h)"/>
+      </concept>
+      <concept>
+        <code value="mg/kg/(8.h)"/>
+      </concept>
+      <concept>
+        <code value="mg/kg/d"/>
+      </concept>
+      <concept>
+        <code value="mg/kg/h"/>
+      </concept>
+      <concept>
+        <code value="mg/kg/min"/>
+      </concept>
+      <concept>
+        <code value="mg/m2"/>
+      </concept>
+      <concept>
+        <code value="mg/m3"/>
+      </concept>
+      <concept>
+        <code value="mg/mL"/>
+      </concept>
+      <concept>
+        <code value="mg/mg"/>
+      </concept>
+      <concept>
+        <code value="mg/min"/>
+      </concept>
+      <concept>
+        <code value="mg/mmol"/>
+      </concept>
+      <concept>
+        <code value="mg/wk"/>
+      </concept>
+      <concept>
+        <code value="mho"/>
+      </concept>
+      <concept>
+        <code value="min"/>
+      </concept>
+      <concept>
+        <code value="mm"/>
+      </concept>
+      <concept>
+        <code value="mm/h"/>
+      </concept>
+      <concept>
+        <code value="mm/min"/>
+      </concept>
+      <concept>
+        <code value="mm2"/>
+      </concept>
+      <concept>
+        <code value="mm3"/>
+      </concept>
+      <concept>
+        <code value="mm[H2O]"/>
+      </concept>
+      <concept>
+        <code value="mm[Hg]"/>
+      </concept>
+      <concept>
+        <code value="mmol"/>
+      </concept>
+      <concept>
+        <code value="mmol/(12.h)"/>
+      </concept>
+      <concept>
+        <code value="mmol/(18.h)"/>
+      </concept>
+      <concept>
+        <code value="mmol/(2.h)"/>
+      </concept>
+      <concept>
+        <code value="mmol/(24.h)"/>
+      </concept>
+      <concept>
+        <code value="mmol/(5.h)"/>
+      </concept>
+      <concept>
+        <code value="mmol/(6.h)"/>
+      </concept>
+      <concept>
+        <code value="mmol/(8.h)"/>
+      </concept>
+      <concept>
+        <code value="mmol/(8.h.kg)"/>
+      </concept>
+      <concept>
+        <code value="mmol/L"/>
+      </concept>
+      <concept>
+        <code value="mmol/L/s"/>
+      </concept>
+      <concept>
+        <code value="mmol/d"/>
+      </concept>
+      <concept>
+        <code value="mmol/dL"/>
+      </concept>
+      <concept>
+        <code value="mmol/g"/>
+      </concept>
+      <concept>
+        <code value="mmol/h"/>
+      </concept>
+      <concept>
+        <code value="mmol/h/mg"/>
+      </concept>
+      <concept>
+        <code value="mmol/kg"/>
+      </concept>
+      <concept>
+        <code value="mmol/kg/(8.h)"/>
+      </concept>
+      <concept>
+        <code value="mmol/kg/d"/>
+      </concept>
+      <concept>
+        <code value="mmol/kg/h"/>
+      </concept>
+      <concept>
+        <code value="mmol/kg/min"/>
+      </concept>
+      <concept>
+        <code value="mmol/m"/>
+      </concept>
+      <concept>
+        <code value="mmol/m2"/>
+      </concept>
+      <concept>
+        <code value="mmol/min"/>
+      </concept>
+      <concept>
+        <code value="mmol/mmol"/>
+      </concept>
+      <concept>
+        <code value="mmol/mol"/>
+      </concept>
+      <concept>
+        <code value="mmol/s/L"/>
+      </concept>
+      <concept>
+        <code value="mo"/>
+      </concept>
+      <concept>
+        <code value="mo_g"/>
+      </concept>
+      <concept>
+        <code value="mo_j"/>
+      </concept>
+      <concept>
+        <code value="mo_s"/>
+      </concept>
+      <concept>
+        <code value="mol"/>
+      </concept>
+      <concept>
+        <code value="mol/L"/>
+      </concept>
+      <concept>
+        <code value="mol/d"/>
+      </concept>
+      <concept>
+        <code value="mol/kg"/>
+      </concept>
+      <concept>
+        <code value="mol/kg/s"/>
+      </concept>
+      <concept>
+        <code value="mol/m3"/>
+      </concept>
+      <concept>
+        <code value="mol/mL"/>
+      </concept>
+      <concept>
+        <code value="mol/mol"/>
+      </concept>
+      <concept>
+        <code value="mol/s"/>
+      </concept>
+      <concept>
+        <code value="mosm"/>
+      </concept>
+      <concept>
+        <code value="mosm/L"/>
+      </concept>
+      <concept>
+        <code value="mosm/kg"/>
+      </concept>
+      <concept>
+        <code value="ms"/>
+      </concept>
+      <concept>
+        <code value="nCi"/>
+      </concept>
+      <concept>
+        <code value="nL"/>
+      </concept>
+      <concept>
+        <code value="nU/mL"/>
+      </concept>
+      <concept>
+        <code value="nU"/>
+      </concept>
+      <concept>
+        <code value="ng"/>
+      </concept>
+      <concept>
+        <code value="ng/(24.h)"/>
+      </concept>
+      <concept>
+        <code value="ng/(8.h)"/>
+      </concept>
+      <concept>
+        <code value="ng/(8.h.kg)"/>
+      </concept>
+      <concept>
+        <code value="ng/(kg.d)"/>
+      </concept>
+      <concept>
+        <code value="ng/(kg.h)"/>
+      </concept>
+      <concept>
+        <code value="ng/(kg.min)"/>
+      </concept>
+      <concept>
+        <code value="ng/10*6"/>
+      </concept>
+      <concept>
+        <code value="ng/L"/>
+      </concept>
+      <concept>
+        <code value="ng/U"/>
+      </concept>
+      <concept>
+        <code value="ng/d"/>
+      </concept>
+      <concept>
+        <code value="ng/dL"/>
+      </concept>
+      <concept>
+        <code value="ng/dL/h"/>
+      </concept>
+      <concept>
+        <code value="ng/g"/>
+      </concept>
+      <concept>
+        <code value="ng/h"/>
+      </concept>
+      <concept>
+        <code value="ng/kg"/>
+      </concept>
+      <concept>
+        <code value="ng/kg/(8.h)"/>
+      </concept>
+      <concept>
+        <code value="ng/kg/h"/>
+      </concept>
+      <concept>
+        <code value="ng/kg/min"/>
+      </concept>
+      <concept>
+        <code value="ng/m2"/>
+      </concept>
+      <concept>
+        <code value="ng/mL"/>
+      </concept>
+      <concept>
+        <code value="ng/mL/h"/>
+      </concept>
+      <concept>
+        <code value="ng/mg"/>
+      </concept>
+      <concept>
+        <code value="ng/mg/h"/>
+      </concept>
+      <concept>
+        <code value="ng/min"/>
+      </concept>
+      <concept>
+        <code value="ng/s"/>
+      </concept>
+      <concept>
+        <code value="nkat"/>
+      </concept>
+      <concept>
+        <code value="nm"/>
+      </concept>
+      <concept>
+        <code value="nm/s/L"/>
+      </concept>
+      <concept>
+        <code value="nmol"/>
+      </concept>
+      <concept>
+        <code value="nmol/(24.h)"/>
+      </concept>
+      <concept>
+        <code value="nmol/L"/>
+      </concept>
+      <concept>
+        <code value="nmol/L/mmol"/>
+      </concept>
+      <concept>
+        <code value="nmol/L/s"/>
+      </concept>
+      <concept>
+        <code value="nmol/d"/>
+      </concept>
+      <concept>
+        <code value="nmol/dL"/>
+      </concept>
+      <concept>
+        <code value="nmol/g"/>
+      </concept>
+      <concept>
+        <code value="nmol/h/L"/>
+      </concept>
+      <concept>
+        <code value="nmol/h/mL"/>
+      </concept>
+      <concept>
+        <code value="nmol/h/mg"/>
+      </concept>
+      <concept>
+        <code value="nmol/m/mg"/>
+      </concept>
+      <concept>
+        <code value="nmol/mL"/>
+      </concept>
+      <concept>
+        <code value="nmol/mL/h"/>
+      </concept>
+      <concept>
+        <code value="nmol/mL/min"/>
+      </concept>
+      <concept>
+        <code value="nmol/mg"/>
+      </concept>
+      <concept>
+        <code value="nmol/mg/h"/>
+      </concept>
+      <concept>
+        <code value="nmol/min"/>
+      </concept>
+      <concept>
+        <code value="nmol/min/10*6"/>
+      </concept>
+      <concept>
+        <code value="nmol/min/mL"/>
+      </concept>
+      <concept>
+        <code value="nmol/min/mg"/>
+      </concept>
+      <concept>
+        <code value="nmol/mmol"/>
+      </concept>
+      <concept>
+        <code value="nmol/mol"/>
+      </concept>
+      <concept>
+        <code value="nmol/nmol"/>
+      </concept>
+      <concept>
+        <code value="nmol/s"/>
+      </concept>
+      <concept>
+        <code value="nmol/s/L"/>
+      </concept>
+      <concept>
+        <code value="ns"/>
+      </concept>
+      <concept>
+        <code value="osm"/>
+      </concept>
+      <concept>
+        <code value="osm/L"/>
+      </concept>
+      <concept>
+        <code value="osm/kg"/>
+      </concept>
+      <concept>
+        <code value="pA"/>
+      </concept>
+      <concept>
+        <code value="pL"/>
+      </concept>
+      <concept>
+        <code value="pT"/>
+      </concept>
+      <concept>
+        <code value="pc"/>
+      </concept>
+      <concept>
+        <code value="pg"/>
+      </concept>
+      <concept>
+        <code value="pg/L"/>
+      </concept>
+      <concept>
+        <code value="pg/dL"/>
+      </concept>
+      <concept>
+        <code value="pg/mL"/>
+      </concept>
+      <concept>
+        <code value="pg/mg"/>
+      </concept>
+      <concept>
+        <code value="pg/mm"/>
+      </concept>
+      <concept>
+        <code value="ph"/>
+      </concept>
+      <concept>
+        <code value="pkat"/>
+      </concept>
+      <concept>
+        <code value="pm"/>
+      </concept>
+      <concept>
+        <code value="pmol"/>
+      </concept>
+      <concept>
+        <code value="pmol/(24.h)"/>
+      </concept>
+      <concept>
+        <code value="pmol/L"/>
+      </concept>
+      <concept>
+        <code value="pmol/d"/>
+      </concept>
+      <concept>
+        <code value="pmol/dL"/>
+      </concept>
+      <concept>
+        <code value="pmol/g"/>
+      </concept>
+      <concept>
+        <code value="pmol/h/mL"/>
+      </concept>
+      <concept>
+        <code value="pmol/h/mg"/>
+      </concept>
+      <concept>
+        <code value="pmol/mL"/>
+      </concept>
+      <concept>
+        <code value="pmol/mg"/>
+      </concept>
+      <concept>
+        <code value="pmol/min"/>
+      </concept>
+      <concept>
+        <code value="pmol/min/mg"/>
+      </concept>
+      <concept>
+        <code value="pmol/mmol"/>
+      </concept>
+      <concept>
+        <code value="pmol/mol"/>
+      </concept>
+      <concept>
+        <code value="pmol/umol"/>
+      </concept>
+      <concept>
+        <code value="ps"/>
+      </concept>
+      <concept>
+        <code value="rad"/>
+      </concept>
+      <concept>
+        <code value="s"/>
+      </concept>
+      <concept>
+        <code value="sb"/>
+      </concept>
+      <concept>
+        <code value="sph"/>
+      </concept>
+      <concept>
+        <code value="sr"/>
+      </concept>
+      <concept>
+        <code value="st"/>
+      </concept>
+      <concept>
+        <code value="t"/>
+      </concept>
+      <concept>
+        <code value="u"/>
+      </concept>
+      <concept>
+        <code value="uCi"/>
+      </concept>
+      <concept>
+        <code value="uL"/>
+      </concept>
+      <concept>
+        <code value="uL/(2.h)"/>
+      </concept>
+      <concept>
+        <code value="uL/h"/>
+      </concept>
+      <concept>
+        <code value="uOhm"/>
+      </concept>
+      <concept>
+        <code value="uU"/>
+      </concept>
+      <concept>
+        <code value="uU/L"/>
+      </concept>
+      <concept>
+        <code value="uU/g"/>
+      </concept>
+      <concept>
+        <code value="uU/mL"/>
+      </concept>
+      <concept>
+        <code value="uV"/>
+      </concept>
+      <concept>
+        <code value="u[IU]"/>
+      </concept>
+      <concept>
+        <code value="u[IU]/L"/>
+      </concept>
+      <concept>
+        <code value="u[IU]/mL"/>
+      </concept>
+      <concept>
+        <code value="ueq"/>
+      </concept>
+      <concept>
+        <code value="ueq/L"/>
+      </concept>
+      <concept>
+        <code value="ueq/mL"/>
+      </concept>
+      <concept>
+        <code value="ug"/>
+      </concept>
+      <concept>
+        <code value="ug/(100.g)"/>
+      </concept>
+      <concept>
+        <code value="ug/(24.h)"/>
+      </concept>
+      <concept>
+        <code value="ug/(8.h)"/>
+      </concept>
+      <concept>
+        <code value="ug/(kg.d)"/>
+      </concept>
+      <concept>
+        <code value="ug/(kg.h)"/>
+      </concept>
+      <concept>
+        <code value="ug/L"/>
+      </concept>
+      <concept>
+        <code value="ug/L/(24.h)"/>
+      </concept>
+      <concept>
+        <code value="ug/[sft_i]"/>
+      </concept>
+      <concept>
+        <code value="ug/d"/>
+      </concept>
+      <concept>
+        <code value="ug/dL"/>
+      </concept>
+      <concept>
+        <code value="ug/g"/>
+      </concept>
+      <concept>
+        <code value="ug/h"/>
+      </concept>
+      <concept>
+        <code value="ug/kg"/>
+      </concept>
+      <concept>
+        <code value="ug/kg/(8.h)"/>
+      </concept>
+      <concept>
+        <code value="ug/kg/d"/>
+      </concept>
+      <concept>
+        <code value="ug/kg/h"/>
+      </concept>
+      <concept>
+        <code value="ug/kg/min"/>
+      </concept>
+      <concept>
+        <code value="ug/m2"/>
+      </concept>
+      <concept>
+        <code value="ug/m3"/>
+      </concept>
+      <concept>
+        <code value="ug/mL"/>
+      </concept>
+      <concept>
+        <code value="ug/mg"/>
+      </concept>
+      <concept>
+        <code value="ug/min"/>
+      </concept>
+      <concept>
+        <code value="ug/mmol"/>
+      </concept>
+      <concept>
+        <code value="ug/ng"/>
+      </concept>
+      <concept>
+        <code value="ukat"/>
+      </concept>
+      <concept>
+        <code value="um"/>
+      </concept>
+      <concept>
+        <code value="um/s"/>
+      </concept>
+      <concept>
+        <code value="umol"/>
+      </concept>
+      <concept>
+        <code value="umol/(2.h)"/>
+      </concept>
+      <concept>
+        <code value="umol/(24.h)"/>
+      </concept>
+      <concept>
+        <code value="umol/(8.h)"/>
+      </concept>
+      <concept>
+        <code value="umol/L"/>
+      </concept>
+      <concept>
+        <code value="umol/L/h"/>
+      </concept>
+      <concept>
+        <code value="umol/d"/>
+      </concept>
+      <concept>
+        <code value="umol/dL"/>
+      </concept>
+      <concept>
+        <code value="umol/g"/>
+      </concept>
+      <concept>
+        <code value="umol/h"/>
+      </concept>
+      <concept>
+        <code value="umol/h/L"/>
+      </concept>
+      <concept>
+        <code value="umol/h/g"/>
+      </concept>
+      <concept>
+        <code value="umol/h/mg"/>
+      </concept>
+      <concept>
+        <code value="umol/kg"/>
+      </concept>
+      <concept>
+        <code value="umol/m"/>
+      </concept>
+      <concept>
+        <code value="umol/mL"/>
+      </concept>
+      <concept>
+        <code value="umol/mL/min"/>
+      </concept>
+      <concept>
+        <code value="umol/mg"/>
+      </concept>
+      <concept>
+        <code value="umol/min"/>
+      </concept>
+      <concept>
+        <code value="umol/min/L"/>
+      </concept>
+      <concept>
+        <code value="umol/min/g"/>
+      </concept>
+      <concept>
+        <code value="umol/mmol"/>
+      </concept>
+      <concept>
+        <code value="umol/mol"/>
+      </concept>
+      <concept>
+        <code value="umol/umol"/>
+      </concept>
+      <concept>
+        <code value="us"/>
+      </concept>
+      <concept>
+        <code value="wk"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

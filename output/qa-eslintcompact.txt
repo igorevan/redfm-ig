@@ -2,11 +2,11 @@ REDFMRNDSIG
 =========================================
 
 /home/igor/redfm-ig/input/resources/StructureDefinition-BRProblemaDiagnostico.xml: line 0, col 0, Error - The extension slice 'Condition.subject.extension:unidentifiedPatient.extension:operator' is not one of the extensions defined by the extension 'http://www.saude.gov.br/fhir/r4/StructureDefinition/BRIndividuoNaoIdentificado-1.0|1.0.0-release' (BUSINESSRULE)
-/home/igor/redfm-ig/input/resources/StructureDefinition-BRProblemaDiagnostico.xml: line 1, col 198292, Error - Constraint failed: eld-2: 'Min <= Max (min.empty() or max.empty() or (max = '*') or iif(max != '*', min <= max.toInteger()))' at Condition.subject.extension.extension (INVARIANT)
-/home/igor/redfm-ig/input/resources/StructureDefinition-BRProblemaDiagnostico.xml: line 1, col 266453, Error - No instance can meet the cardinality rules for Condition.subject.extension:unidentifiedPatient.extension: the minimum 4 (from Condition.subject.extension:unidentifiedPatient.extension) is greater than the maximum 3 (from Condition.subject.extension:unidentifiedPatient.extension) (BUSINESSRULE)
+/home/igor/redfm-ig/input/resources/StructureDefinition-BRProblemaDiagnostico.xml: line 1, col 163184, Error - Constraint failed: eld-2: 'Min <= Max (min.empty() or max.empty() or (max = '*') or iif(max != '*', min <= max.toInteger()))' at Condition.subject.extension:unidentifiedPatient.extension (INVARIANT)
+/home/igor/redfm-ig/input/resources/StructureDefinition-BRProblemaDiagnostico.xml: line 1, col 231345, Error - No instance can meet the cardinality rules for Condition.subject.extension:unidentifiedPatient.extension: the minimum 4 (from Condition.subject.extension:unidentifiedPatient.extension) is greater than the maximum 3 (from Condition.subject.extension:unidentifiedPatient.extension) (BUSINESSRULE)
 /home/igor/redfm-ig/input/resources/StructureDefinition-RNDSPrescricaoMedicamento.xml: line 0, col 0, Error - Este elemento tem um Binding, mas os tipos [Reference] não tornam este tipo de restrição relevante (BUSINESSRULE)
 /home/igor/redfm-ig/input/resources/StructureDefinition-RNDSPrescricaoMedicamento.xml: line 0, col 0, Error - O elemento MedicationRequest.medication[x] tem uma ligação, mas não existem tipos ligáveis [Reference] (BUSINESSRULE)
 /home/igor/redfm-ig/input/resources/StructureDefinition-RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos.xml: line 0, col 0, Error - The slice definition for Composition.section:prescriptionInformation.section has a minimum of 1 but the slices add up to a minimum of 2 (VALUE)
 
 err = 6, warn = 0, info = 0, broken links = 0
-IG Publisher Version: 3.0.0
+IG Publisher Version: 3.0.1
