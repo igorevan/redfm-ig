@@ -55,7 +55,7 @@
   fhir:StructureDefinition.name [ fhir:value "BRCoreComposition"] ;
   fhir:StructureDefinition.title [ fhir:value "BR Core Composition"] ;
   fhir:StructureDefinition.status [ fhir:value "active"] ;
-  fhir:StructureDefinition.date [ fhir:value "2026-10-16T11:47:57-03:00"^^xsd:dateTime] ;
+  fhir:StructureDefinition.date [ fhir:value "2026-10-19T17:00:57-03:00"^^xsd:dateTime] ;
   fhir:StructureDefinition.publisher [ fhir:value "Ministério da Saúde do Brasil"] ;
   fhir:StructureDefinition.contact [
      fhir:index -1 ;

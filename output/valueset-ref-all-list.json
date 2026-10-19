@@ -11,8 +11,8 @@
     "sources" : ["2.16.840.1.113883.4.642.3.95"],
     "uses" : {
     },
-    "StructureDefinition-RNDSDispensacaoMedicamento.html" : "Dispensação ou Fornecimento de Medicamento",
-    "StructureDefinition-RNDSPrescricaoMedicamento.html" : "Prescrição de Medicamento - RNDS"
+    "StructureDefinition-RNDSPrescricaoMedicamento.html" : "Prescrição de Medicamento - RNDS",
+    "StructureDefinition-RNDSDispensacaoMedicamento.html" : "Dispensação ou Fornecimento de Medicamento"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/administration-method-codes",
@@ -26,8 +26,8 @@
     "sources" : ["2.16.840.1.113883.4.642.3.97"],
     "uses" : {
     },
-    "StructureDefinition-RNDSDispensacaoMedicamento.html" : "Dispensação ou Fornecimento de Medicamento",
-    "StructureDefinition-RNDSPrescricaoMedicamento.html" : "Prescrição de Medicamento - RNDS"
+    "StructureDefinition-RNDSPrescricaoMedicamento.html" : "Prescrição de Medicamento - RNDS",
+    "StructureDefinition-RNDSDispensacaoMedicamento.html" : "Dispensação ou Fornecimento de Medicamento"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/administrative-gender",
@@ -41,9 +41,9 @@
     "sources" : ["2.16.840.1.113883.4.642.3.1"],
     "uses" : {
     },
-    "StructureDefinition-br-core-practitioner.html" : "BR Core Practitioner",
+    "StructureDefinition-RNDSProfissional.html" : "Profissional RNDS",
     "StructureDefinition-br-core-relatedperson.html" : "BRCoreRelatedPerson",
-    "StructureDefinition-RNDSProfissional.html" : "Profissional RNDS"
+    "StructureDefinition-br-core-practitioner.html" : "BR Core Practitioner"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/approach-site-codes",
@@ -57,8 +57,8 @@
     "sources" : ["2.16.840.1.113883.4.642.3.346"],
     "uses" : {
     },
-    "StructureDefinition-RNDSDispensacaoMedicamento.html" : "Dispensação ou Fornecimento de Medicamento",
-    "StructureDefinition-RNDSPrescricaoMedicamento.html" : "Prescrição de Medicamento - RNDS"
+    "StructureDefinition-RNDSPrescricaoMedicamento.html" : "Prescrição de Medicamento - RNDS",
+    "StructureDefinition-RNDSDispensacaoMedicamento.html" : "Dispensação ou Fornecimento de Medicamento"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/body-site",
@@ -101,8 +101,8 @@
     "uses" : {
     },
     "StructureDefinition-br-core-healthcareservice.html" : "br-core-healthcareservice",
-    "StructureDefinition-RNDSLotacaoProfissional.html" : "RNDSLotacaoProfissional",
-    "StructureDefinition-br-core-practitionerrole.html" : "BR Core PractitionerRole"
+    "StructureDefinition-br-core-practitionerrole.html" : "BR Core PractitionerRole",
+    "StructureDefinition-RNDSLotacaoProfissional.html" : "RNDSLotacaoProfissional"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/composition-attestation-mode",
@@ -116,8 +116,8 @@
     "sources" : ["2.16.840.1.113883.4.642.3.238"],
     "uses" : {
     },
-    "StructureDefinition-br-core-composition.html" : "BR Core Composition",
-    "StructureDefinition-RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos.html" : "Registro Eletrônico de Dispensação ou Fornecimento de Medicamentos - REDFM"
+    "StructureDefinition-RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos.html" : "Registro Eletrônico de Dispensação ou Fornecimento de Medicamentos - REDFM",
+    "StructureDefinition-br-core-composition.html" : "BR Core Composition"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/composition-status",
@@ -201,8 +201,8 @@
     "sources" : ["2.16.840.1.113883.4.642.3.416"],
     "uses" : {
     },
-    "StructureDefinition-br-core-organization.html" : "BR Core Organization",
-    "StructureDefinition-RNDSEstabelecimentoSaude.html" : "Estabelecimento de Saúde RNDS"
+    "StructureDefinition-RNDSEstabelecimentoSaude.html" : "Estabelecimento de Saúde RNDS",
+    "StructureDefinition-br-core-organization.html" : "BR Core Organization"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/days-of-week",
@@ -217,11 +217,11 @@
     "uses" : {
     },
     "StructureDefinition-br-core-healthcareservice.html" : "br-core-healthcareservice",
-    "StructureDefinition-br-core-location.html" : "br-core-location",
-    "StructureDefinition-RNDSLotacaoProfissional.html" : "RNDSLotacaoProfissional",
     "StructureDefinition-br-core-practitionerrole.html" : "BR Core PractitionerRole",
+    "StructureDefinition-RNDSPrescricaoMedicamento.html" : "Prescrição de Medicamento - RNDS",
     "StructureDefinition-RNDSDispensacaoMedicamento.html" : "Dispensação ou Fornecimento de Medicamento",
-    "StructureDefinition-RNDSPrescricaoMedicamento.html" : "Prescrição de Medicamento - RNDS"
+    "StructureDefinition-br-core-location.html" : "br-core-location",
+    "StructureDefinition-RNDSLotacaoProfissional.html" : "RNDSLotacaoProfissional"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/doc-section-codes",
@@ -235,8 +235,8 @@
     "sources" : ["2.16.840.1.113883.4.642.3.237"],
     "uses" : {
     },
-    "StructureDefinition-br-core-composition.html" : "BR Core Composition",
-    "StructureDefinition-RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos.html" : "Registro Eletrônico de Dispensação ou Fornecimento de Medicamentos - REDFM"
+    "StructureDefinition-RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos.html" : "Registro Eletrônico de Dispensação ou Fornecimento de Medicamentos - REDFM",
+    "StructureDefinition-br-core-composition.html" : "BR Core Composition"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/doc-typecodes",
@@ -264,8 +264,8 @@
     "sources" : ["2.16.840.1.113883.3.88.12.80.46"],
     "uses" : {
     },
-    "StructureDefinition-br-core-composition.html" : "BR Core Composition",
-    "StructureDefinition-RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos.html" : "Registro Eletrônico de Dispensação ou Fornecimento de Medicamentos - REDFM"
+    "StructureDefinition-RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos.html" : "Registro Eletrônico de Dispensação ou Fornecimento de Medicamentos - REDFM",
+    "StructureDefinition-br-core-composition.html" : "BR Core Composition"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/document-relationship-type",
@@ -279,8 +279,8 @@
     "sources" : ["2.16.840.1.113883.4.642.3.244"],
     "uses" : {
     },
-    "StructureDefinition-br-core-composition.html" : "BR Core Composition",
-    "StructureDefinition-RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos.html" : "Registro Eletrônico de Dispensação ou Fornecimento de Medicamentos - REDFM"
+    "StructureDefinition-RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos.html" : "Registro Eletrônico de Dispensação ou Fornecimento de Medicamentos - REDFM",
+    "StructureDefinition-br-core-composition.html" : "BR Core Composition"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/dose-rate-type",
@@ -294,8 +294,8 @@
     "sources" : ["2.16.840.1.113883.4.642.3.981"],
     "uses" : {
     },
-    "StructureDefinition-RNDSDispensacaoMedicamento.html" : "Dispensação ou Fornecimento de Medicamento",
-    "StructureDefinition-RNDSPrescricaoMedicamento.html" : "Prescrição de Medicamento - RNDS"
+    "StructureDefinition-RNDSPrescricaoMedicamento.html" : "Prescrição de Medicamento - RNDS",
+    "StructureDefinition-RNDSDispensacaoMedicamento.html" : "Dispensação ou Fornecimento de Medicamento"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/event-timing",
@@ -310,8 +310,8 @@
     "sources" : ["2.16.840.1.113883.4.642.3.75"],
     "uses" : {
     },
-    "StructureDefinition-RNDSDispensacaoMedicamento.html" : "Dispensação ou Fornecimento de Medicamento",
-    "StructureDefinition-RNDSPrescricaoMedicamento.html" : "Prescrição de Medicamento - RNDS"
+    "StructureDefinition-RNDSPrescricaoMedicamento.html" : "Prescrição de Medicamento - RNDS",
+    "StructureDefinition-RNDSDispensacaoMedicamento.html" : "Dispensação ou Fornecimento de Medicamento"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/identifier-type",
@@ -325,13 +325,13 @@
     "sources" : ["2.16.840.1.113883.4.642.3.45"],
     "uses" : {
     },
-    "StructureDefinition-br-core-organization.html" : "BR Core Organization",
+    "StructureDefinition-RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos.html" : "Registro Eletrônico de Dispensação ou Fornecimento de Medicamentos - REDFM",
     "StructureDefinition-RNDSEstabelecimentoSaude.html" : "Estabelecimento de Saúde RNDS",
+    "StructureDefinition-br-core-organization.html" : "BR Core Organization",
     "StructureDefinition-br-core-practitionerrole.html" : "BR Core PractitionerRole",
-    "StructureDefinition-RNDSDispensacaoMedicamento.html" : "Dispensação ou Fornecimento de Medicamento",
     "StructureDefinition-RNDSPrescricaoMedicamento.html" : "Prescrição de Medicamento - RNDS",
-    "StructureDefinition-BRProblemaDiagnostico.html" : "ProblemaDiagnóstico",
-    "StructureDefinition-RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos.html" : "Registro Eletrônico de Dispensação ou Fornecimento de Medicamentos - REDFM"
+    "StructureDefinition-RNDSDispensacaoMedicamento.html" : "Dispensação ou Fornecimento de Medicamento",
+    "StructureDefinition-BRProblemaDiagnostico.html" : "ProblemaDiagnóstico"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/identifier-use",
@@ -345,15 +345,15 @@
     "sources" : ["2.16.840.1.113883.4.642.3.57"],
     "uses" : {
     },
-    "StructureDefinition-br-core-organization.html" : "BR Core Organization",
+    "StructureDefinition-RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos.html" : "Registro Eletrônico de Dispensação ou Fornecimento de Medicamentos - REDFM",
     "StructureDefinition-RNDSEstabelecimentoSaude.html" : "Estabelecimento de Saúde RNDS",
-    "StructureDefinition-br-core-practitioner.html" : "BR Core Practitioner",
     "StructureDefinition-br-core-practitionerrole.html" : "BR Core PractitionerRole",
-    "StructureDefinition-RNDSProfissional.html" : "Profissional RNDS",
-    "StructureDefinition-RNDSDispensacaoMedicamento.html" : "Dispensação ou Fornecimento de Medicamento",
+    "StructureDefinition-br-core-organization.html" : "BR Core Organization",
     "StructureDefinition-RNDSPrescricaoMedicamento.html" : "Prescrição de Medicamento - RNDS",
-    "StructureDefinition-BRProblemaDiagnostico.html" : "ProblemaDiagnóstico",
-    "StructureDefinition-RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos.html" : "Registro Eletrônico de Dispensação ou Fornecimento de Medicamentos - REDFM"
+    "StructureDefinition-RNDSDispensacaoMedicamento.html" : "Dispensação ou Fornecimento de Medicamento",
+    "StructureDefinition-RNDSProfissional.html" : "Profissional RNDS",
+    "StructureDefinition-br-core-practitioner.html" : "BR Core Practitioner",
+    "StructureDefinition-BRProblemaDiagnostico.html" : "ProblemaDiagnóstico"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/languages",
@@ -367,22 +367,22 @@
     "sources" : ["2.16.840.1.113883.4.642.3.20"],
     "uses" : {
     },
-    "StructureDefinition-br-core-medication.html" : "BR Core Medication",
-    "StructureDefinition-br-core-organization.html" : "BR Core Organization",
+    "StructureDefinition-RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos.html" : "Registro Eletrônico de Dispensação ou Fornecimento de Medicamentos - REDFM",
     "StructureDefinition-RNDSEstabelecimentoSaude.html" : "Estabelecimento de Saúde RNDS",
-    "StructureDefinition-br-core-location.html" : "br-core-location",
+    "StructureDefinition-br-core-organization.html" : "BR Core Organization",
+    "StructureDefinition-br-core-practitionerrole.html" : "BR Core PractitionerRole",
     "StructureDefinition-RNDSLotacaoProfissional.html" : "RNDSLotacaoProfissional",
-    "StructureDefinition-br-core-relatedperson.html" : "BRCoreRelatedPerson",
-    "StructureDefinition-RNDSProfissional.html" : "Profissional RNDS",
-    "StructureDefinition-RNDSDispensacaoMedicamento.html" : "Dispensação ou Fornecimento de Medicamento",
-    "StructureDefinition-RNDSPrescricaoMedicamento.html" : "Prescrição de Medicamento - RNDS",
-    "StructureDefinition-br-core-composition.html" : "BR Core Composition",
-    "StructureDefinition-BRProblemaDiagnostico.html" : "ProblemaDiagnóstico",
-    "StructureDefinition-br-core-healthcareservice.html" : "br-core-healthcareservice",
     "StructureDefinition-br-core-practitioner.html" : "BR Core Practitioner",
     "StructureDefinition-RNDSMedicamento.html" : "Medicamento",
-    "StructureDefinition-br-core-practitionerrole.html" : "BR Core PractitionerRole",
-    "StructureDefinition-RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos.html" : "Registro Eletrônico de Dispensação ou Fornecimento de Medicamentos - REDFM"
+    "StructureDefinition-br-core-healthcareservice.html" : "br-core-healthcareservice",
+    "StructureDefinition-br-core-composition.html" : "BR Core Composition",
+    "StructureDefinition-br-core-medication.html" : "BR Core Medication",
+    "StructureDefinition-RNDSPrescricaoMedicamento.html" : "Prescrição de Medicamento - RNDS",
+    "StructureDefinition-RNDSDispensacaoMedicamento.html" : "Dispensação ou Fornecimento de Medicamento",
+    "StructureDefinition-RNDSProfissional.html" : "Profissional RNDS",
+    "StructureDefinition-br-core-location.html" : "br-core-location",
+    "StructureDefinition-br-core-relatedperson.html" : "BRCoreRelatedPerson",
+    "StructureDefinition-BRProblemaDiagnostico.html" : "ProblemaDiagnóstico"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/list-empty-reason",
@@ -396,8 +396,8 @@
     "sources" : ["2.16.840.1.113883.4.642.3.322"],
     "uses" : {
     },
-    "StructureDefinition-br-core-composition.html" : "BR Core Composition",
-    "StructureDefinition-RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos.html" : "Registro Eletrônico de Dispensação ou Fornecimento de Medicamentos - REDFM"
+    "StructureDefinition-RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos.html" : "Registro Eletrônico de Dispensação ou Fornecimento de Medicamentos - REDFM",
+    "StructureDefinition-br-core-composition.html" : "BR Core Composition"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/list-mode",
@@ -411,8 +411,8 @@
     "sources" : ["2.16.840.1.113883.4.642.3.318"],
     "uses" : {
     },
-    "StructureDefinition-br-core-composition.html" : "BR Core Composition",
-    "StructureDefinition-RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos.html" : "Registro Eletrônico de Dispensação ou Fornecimento de Medicamentos - REDFM"
+    "StructureDefinition-RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos.html" : "Registro Eletrônico de Dispensação ou Fornecimento de Medicamentos - REDFM",
+    "StructureDefinition-br-core-composition.html" : "BR Core Composition"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/list-order",
@@ -525,8 +525,8 @@
     "sources" : ["2.16.840.1.113883.4.642.3.376"],
     "uses" : {
     },
-    "StructureDefinition-br-core-medication.html" : "BR Core Medication",
-    "StructureDefinition-RNDSMedicamento.html" : "Medicamento"
+    "StructureDefinition-RNDSMedicamento.html" : "Medicamento",
+    "StructureDefinition-br-core-medication.html" : "BR Core Medication"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/medicationdispense-category",
@@ -666,8 +666,8 @@
     "sources" : ["2.16.840.1.113883.4.642.3.65"],
     "uses" : {
     },
-    "StructureDefinition-br-core-practitioner.html" : "BR Core Practitioner",
-    "StructureDefinition-RNDSProfissional.html" : "Profissional RNDS"
+    "StructureDefinition-RNDSProfissional.html" : "Profissional RNDS",
+    "StructureDefinition-br-core-practitioner.html" : "BR Core Practitioner"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/organization-type",
@@ -681,8 +681,8 @@
     "sources" : ["2.16.840.1.113883.4.642.3.414"],
     "uses" : {
     },
-    "StructureDefinition-br-core-organization.html" : "BR Core Organization",
-    "StructureDefinition-RNDSEstabelecimentoSaude.html" : "Estabelecimento de Saúde RNDS"
+    "StructureDefinition-RNDSEstabelecimentoSaude.html" : "Estabelecimento de Saúde RNDS",
+    "StructureDefinition-br-core-organization.html" : "BR Core Organization"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/performer-role",
@@ -724,8 +724,8 @@
     "sources" : ["2.16.840.1.113883.4.642.3.59"],
     "uses" : {
     },
-    "StructureDefinition-RNDSDispensacaoMedicamento.html" : "Dispensação ou Fornecimento de Medicamento",
-    "StructureDefinition-RNDSPrescricaoMedicamento.html" : "Prescrição de Medicamento - RNDS"
+    "StructureDefinition-RNDSPrescricaoMedicamento.html" : "Prescrição de Medicamento - RNDS",
+    "StructureDefinition-RNDSDispensacaoMedicamento.html" : "Dispensação ou Fornecimento de Medicamento"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/relatedperson-relationshiptype",
@@ -768,15 +768,15 @@
     "sources" : ["2.16.840.1.113883.4.642.3.27"],
     "uses" : {
     },
-    "StructureDefinition-br-core-organization.html" : "BR Core Organization",
-    "StructureDefinition-RNDSEstabelecimentoSaude.html" : "Estabelecimento de Saúde RNDS",
-    "StructureDefinition-br-core-practitioner.html" : "BR Core Practitioner",
-    "StructureDefinition-RNDSProfissional.html" : "Profissional RNDS",
-    "StructureDefinition-RNDSDispensacaoMedicamento.html" : "Dispensação ou Fornecimento de Medicamento",
-    "StructureDefinition-RNDSPrescricaoMedicamento.html" : "Prescrição de Medicamento - RNDS",
+    "StructureDefinition-RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos.html" : "Registro Eletrônico de Dispensação ou Fornecimento de Medicamentos - REDFM",
     "StructureDefinition-br-core-composition.html" : "BR Core Composition",
-    "StructureDefinition-BRProblemaDiagnostico.html" : "ProblemaDiagnóstico",
-    "StructureDefinition-RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos.html" : "Registro Eletrônico de Dispensação ou Fornecimento de Medicamentos - REDFM"
+    "StructureDefinition-RNDSEstabelecimentoSaude.html" : "Estabelecimento de Saúde RNDS",
+    "StructureDefinition-br-core-organization.html" : "BR Core Organization",
+    "StructureDefinition-RNDSPrescricaoMedicamento.html" : "Prescrição de Medicamento - RNDS",
+    "StructureDefinition-RNDSDispensacaoMedicamento.html" : "Dispensação ou Fornecimento de Medicamento",
+    "StructureDefinition-RNDSProfissional.html" : "Profissional RNDS",
+    "StructureDefinition-br-core-practitioner.html" : "BR Core Practitioner",
+    "StructureDefinition-BRProblemaDiagnostico.html" : "ProblemaDiagnóstico"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/service-category",
@@ -846,8 +846,8 @@
     "sources" : ["2.16.840.1.113883.4.642.3.78"],
     "uses" : {
     },
-    "StructureDefinition-RNDSDispensacaoMedicamento.html" : "Dispensação ou Fornecimento de Medicamento",
-    "StructureDefinition-RNDSPrescricaoMedicamento.html" : "Prescrição de Medicamento - RNDS"
+    "StructureDefinition-RNDSPrescricaoMedicamento.html" : "Prescrição de Medicamento - RNDS",
+    "StructureDefinition-RNDSDispensacaoMedicamento.html" : "Dispensação ou Fornecimento de Medicamento"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/units-of-time",
@@ -861,8 +861,8 @@
     "sources" : ["2.16.840.1.113883.4.642.3.77"],
     "uses" : {
     },
-    "StructureDefinition-RNDSDispensacaoMedicamento.html" : "Dispensação ou Fornecimento de Medicamento",
-    "StructureDefinition-RNDSPrescricaoMedicamento.html" : "Prescrição de Medicamento - RNDS"
+    "StructureDefinition-RNDSPrescricaoMedicamento.html" : "Prescrição de Medicamento - RNDS",
+    "StructureDefinition-RNDSDispensacaoMedicamento.html" : "Dispensação ou Fornecimento de Medicamento"
   },
   {
     "url" : "http://terminology.hl7.org/ValueSet/v2-0116",
@@ -890,8 +890,8 @@
     "sources" : ["2.16.840.1.113883.21.120"],
     "uses" : {
     },
-    "StructureDefinition-br-core-practitioner.html" : "BR Core Practitioner",
-    "StructureDefinition-RNDSProfissional.html" : "Profissional RNDS"
+    "StructureDefinition-RNDSProfissional.html" : "Profissional RNDS",
+    "StructureDefinition-br-core-practitioner.html" : "BR Core Practitioner"
   },
   {
     "url" : "http://terminology.hl7.org/ValueSet/v2-2.7-0360",
@@ -915,8 +915,8 @@
     "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActCode"],
     "uses" : {
     },
-    "StructureDefinition-br-core-composition.html" : "BR Core Composition",
-    "StructureDefinition-RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos.html" : "Registro Eletrônico de Dispensação ou Fornecimento de Medicamentos - REDFM"
+    "StructureDefinition-RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos.html" : "Registro Eletrônico de Dispensação ou Fornecimento de Medicamentos - REDFM",
+    "StructureDefinition-br-core-composition.html" : "BR Core Composition"
   },
   {
     "url" : "http://terminology.hl7.org/ValueSet/v3-ActSubstanceAdminSubstitutionCode",
@@ -930,8 +930,8 @@
     "sources" : ["2.16.840.1.113883.1.11.16621"],
     "uses" : {
     },
-    "StructureDefinition-RNDSDispensacaoMedicamento.html" : "Dispensação ou Fornecimento de Medicamento",
-    "StructureDefinition-RNDSPrescricaoMedicamento.html" : "Prescrição de Medicamento - RNDS"
+    "StructureDefinition-RNDSPrescricaoMedicamento.html" : "Prescrição de Medicamento - RNDS",
+    "StructureDefinition-RNDSDispensacaoMedicamento.html" : "Dispensação ou Fornecimento de Medicamento"
   },
   {
     "url" : "http://terminology.hl7.org/ValueSet/v3-ConfidentialityClassification",
@@ -945,8 +945,8 @@
     "sources" : ["2.16.840.1.113883.1.11.10228"],
     "uses" : {
     },
-    "StructureDefinition-br-core-composition.html" : "BR Core Composition",
-    "StructureDefinition-RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos.html" : "Registro Eletrônico de Dispensação ou Fornecimento de Medicamentos - REDFM"
+    "StructureDefinition-RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos.html" : "Registro Eletrônico de Dispensação ou Fornecimento de Medicamentos - REDFM",
+    "StructureDefinition-br-core-composition.html" : "BR Core Composition"
   },
   {
     "url" : "http://terminology.hl7.org/ValueSet/v3-ServiceDeliveryLocationRoleType",
@@ -974,8 +974,8 @@
     "sources" : ["2.16.840.1.113883.1.11.19377"],
     "uses" : {
     },
-    "StructureDefinition-RNDSDispensacaoMedicamento.html" : "Dispensação ou Fornecimento de Medicamento",
-    "StructureDefinition-RNDSPrescricaoMedicamento.html" : "Prescrição de Medicamento - RNDS"
+    "StructureDefinition-RNDSPrescricaoMedicamento.html" : "Prescrição de Medicamento - RNDS",
+    "StructureDefinition-RNDSDispensacaoMedicamento.html" : "Dispensação ou Fornecimento de Medicamento"
   },
   {
     "url" : "http://www.saude.gov.br/fhir/r4/ValueSet/BRCategoriaCondicao",
@@ -1023,8 +1023,8 @@
     "systems" : ["http://www.saude.gov.br/fhir/r4/CodeSystem/BRJustificativaIndividuoNaoIdentificado"],
     "uses" : {
     },
-    "StructureDefinition-BRProblemaDiagnostico.html" : "ProblemaDiagnóstico",
-    "StructureDefinition-BRIndividuoNaoIdentificado-1.0.html" : "Informações Complementares de Indivíduos Não Identificados"
+    "StructureDefinition-BRIndividuoNaoIdentificado-1.0.html" : "Informações Complementares de Indivíduos Não Identificados",
+    "StructureDefinition-BRProblemaDiagnostico.html" : "ProblemaDiagnóstico"
   },
   {
     "url" : "http://www.saude.gov.br/fhir/r4/ValueSet/BROcupacao-1.0",
@@ -1036,9 +1036,9 @@
     "systems" : ["http://www.saude.gov.br/fhir/r4/CodeSystem/BRCBO"],
     "uses" : {
     },
-    "StructureDefinition-br-core-practitioner.html" : "BR Core Practitioner",
+    "StructureDefinition-br-core-practitionerrole.html" : "BR Core PractitionerRole",
     "StructureDefinition-RNDSLotacaoProfissional.html" : "RNDSLotacaoProfissional",
-    "StructureDefinition-br-core-practitionerrole.html" : "BR Core PractitionerRole"
+    "StructureDefinition-br-core-practitioner.html" : "BR Core Practitioner"
   },
   {
     "url" : "http://www.saude.gov.br/fhir/r4/ValueSet/BRProblemaDiagnostico",
@@ -1064,8 +1064,8 @@
     "systems" : ["http://hl7.org/fhir/administrative-gender"],
     "uses" : {
     },
-    "StructureDefinition-BRProblemaDiagnostico.html" : "ProblemaDiagnóstico",
-    "StructureDefinition-BRIndividuoNaoIdentificado-1.0.html" : "Informações Complementares de Indivíduos Não Identificados"
+    "StructureDefinition-BRIndividuoNaoIdentificado-1.0.html" : "Informações Complementares de Indivíduos Não Identificados",
+    "StructureDefinition-BRProblemaDiagnostico.html" : "ProblemaDiagnóstico"
   },
   {
     "url" : "http://www.saude.gov.br/fhir/r4/ValueSet/BRTerminologiaMedicamento",
@@ -1118,8 +1118,8 @@
     "uses" : {
     },
     "StructureDefinition-RNDSMedicamento.html" : "Medicamento",
-    "StructureDefinition-RNDSDispensacaoMedicamento.html" : "Dispensação ou Fornecimento de Medicamento",
-    "StructureDefinition-RNDSPrescricaoMedicamento.html" : "Prescrição de Medicamento - RNDS"
+    "StructureDefinition-RNDSPrescricaoMedicamento.html" : "Prescrição de Medicamento - RNDS",
+    "StructureDefinition-RNDSDispensacaoMedicamento.html" : "Dispensação ou Fornecimento de Medicamento"
   },
   {
     "url" : "http://www.saude.gov.br/fhir/r4/ValueSet/BRViaAdministracao-1.0",
@@ -1131,8 +1131,8 @@
     "systems" : ["http://www.saude.gov.br/fhir/r4/CodeSystem/BRViaAdministracao"],
     "uses" : {
     },
-    "StructureDefinition-RNDSDispensacaoMedicamento.html" : "Dispensação ou Fornecimento de Medicamento",
-    "StructureDefinition-RNDSPrescricaoMedicamento.html" : "Prescrição de Medicamento - RNDS"
+    "StructureDefinition-RNDSPrescricaoMedicamento.html" : "Prescrição de Medicamento - RNDS",
+    "StructureDefinition-RNDSDispensacaoMedicamento.html" : "Dispensação ou Fornecimento de Medicamento"
   },
   {
     "url" : "http://www.saude.gov.br/fhir/r4/ValueSet/RNDSUnidadeMedida",
@@ -1154,8 +1154,8 @@
     "systems" : ["https://terminologia.saude.gov.br/fhir/CodeSystem/BRConselhoProfissional"],
     "uses" : {
     },
-    "StructureDefinition-br-core-practitioner.html" : "BR Core Practitioner",
-    "StructureDefinition-RNDSProfissional.html" : "Profissional RNDS"
+    "StructureDefinition-RNDSProfissional.html" : "Profissional RNDS",
+    "StructureDefinition-br-core-practitioner.html" : "BR Core Practitioner"
   },
   {
     "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BRCRF",
@@ -1167,8 +1167,8 @@
     "systems" : ["https://terminologia.saude.gov.br/fhir/CodeSystem/BRConselhoProfissional"],
     "uses" : {
     },
-    "StructureDefinition-br-core-practitioner.html" : "BR Core Practitioner",
-    "StructureDefinition-RNDSProfissional.html" : "Profissional RNDS"
+    "StructureDefinition-RNDSProfissional.html" : "Profissional RNDS",
+    "StructureDefinition-br-core-practitioner.html" : "BR Core Practitioner"
   },
   {
     "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BRCRM",
@@ -1180,8 +1180,8 @@
     "systems" : ["https://terminologia.saude.gov.br/fhir/CodeSystem/BRConselhoProfissional"],
     "uses" : {
     },
-    "StructureDefinition-br-core-practitioner.html" : "BR Core Practitioner",
-    "StructureDefinition-RNDSProfissional.html" : "Profissional RNDS"
+    "StructureDefinition-RNDSProfissional.html" : "Profissional RNDS",
+    "StructureDefinition-br-core-practitioner.html" : "BR Core Practitioner"
   },
   {
     "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BRCRO",
@@ -1193,8 +1193,8 @@
     "systems" : ["https://terminologia.saude.gov.br/fhir/CodeSystem/BRConselhoProfissional"],
     "uses" : {
     },
-    "StructureDefinition-br-core-practitioner.html" : "BR Core Practitioner",
-    "StructureDefinition-RNDSProfissional.html" : "Profissional RNDS"
+    "StructureDefinition-RNDSProfissional.html" : "Profissional RNDS",
+    "StructureDefinition-br-core-practitioner.html" : "BR Core Practitioner"
   },
   {
     "url" : "https://terminologia.saude.gov.br/fhir/ValueSet/BROutrosProfissionais",
@@ -1206,7 +1206,7 @@
     "systems" : ["https://terminologia.saude.gov.br/fhir/CodeSystem/BRConselhoProfissional"],
     "uses" : {
     },
-    "StructureDefinition-br-core-practitioner.html" : "BR Core Practitioner",
-    "StructureDefinition-RNDSProfissional.html" : "Profissional RNDS"
+    "StructureDefinition-RNDSProfissional.html" : "Profissional RNDS",
+    "StructureDefinition-br-core-practitioner.html" : "BR Core Practitioner"
   }]
 }

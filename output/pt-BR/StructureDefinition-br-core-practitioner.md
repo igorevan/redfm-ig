@@ -98,7 +98,7 @@ Outras representações do perfil: [CSV](../StructureDefinition-br-core-practiti
   "name" : "BRCorePractitioner",
   "title" : "BR Core Practitioner",
   "status" : "active",
-  "date" : "2026-10-16T11:47:57-03:00",
+  "date" : "2026-10-19T17:00:57-03:00",
   "publisher" : "Ministério da Saúde do Brasil",
   "contact" : [{
     "name" : "Ministério da Saúde do Brasil",
