@@ -9,4 +9,4 @@ REDFMRNDSIG
 /home/igor/redfm-ig/input/resources/StructureDefinition-RNDSRegistroEletronicoDispensacaoFornecimentoMedicamentos.xml: line 0, col 0, Error - The slice definition for Composition.section:prescriptionInformation.section has a minimum of 1 but the slices add up to a minimum of 2 (VALUE)
 
 err = 6, warn = 0, info = 0, broken links = 0
-IG Publisher Version: 3.0.1
+IG Publisher Version: 3.0.4

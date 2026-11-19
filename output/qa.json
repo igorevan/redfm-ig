@@ -6,8 +6,8 @@
   "status" : "active",
   "package-id" : "br.gov.saude.redfm.fhir",
   "ig-ver" : "1.0.0-release",
-  "date" : "Mon, 19 Oct, 2026 17:00:57 -0300",
-  "dateISO8601" : "2026-10-19T17:00:57-03:00",
+  "date" : "Thu, 19 Nov, 2026 16:45:51 -0300",
+  "dateISO8601" : "2026-11-19T16:45:51-03:00",
   "errs" : 6,
   "warnings" : 0,
   "hints" : 0,
@@ -16,5 +16,5 @@
   "suppressed-warnings" : 149,
   "version" : "4.0.1",
   "tool" : "6.0.0-snapshot1 (3)",
-  "maxMemory" : 4494754992
+  "maxMemory" : 4163471568
 }
