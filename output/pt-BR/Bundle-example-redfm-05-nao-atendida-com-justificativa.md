@@ -1,4 +1,4 @@
-# Bundle 5 de exemplo do REDFM (Não Atendida com Justificativa) - Guia de Implementação do Registro Eletrônico de Dispensação ou Fornecimento de Medicamento (REDFM) da RNDS v1.0.0-release
+# Bundle 5 de exemplo do REDFM (Não Atendida com Justificativa) - Guia de Implementação do Registro Eletrônico de Dispensação ou Fornecimento de Medicamento (REDFM) da RNDS v1.0.0
 
 ## Exemplo Bundle: Bundle 5 de exemplo do REDFM (Não Atendida com Justificativa)
 

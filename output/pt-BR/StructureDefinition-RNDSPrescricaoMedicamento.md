@@ -1,4 +1,4 @@
-# Prescrição de Medicamento - RNDS - Guia de Implementação do Registro Eletrônico de Dispensação ou Fornecimento de Medicamento (REDFM) da RNDS v1.0.0-release
+# Prescrição de Medicamento - RNDS - Guia de Implementação do Registro Eletrônico de Dispensação ou Fornecimento de Medicamento (REDFM) da RNDS v1.0.0
 
 ## Perfil de recurso: Prescrição de Medicamento - RNDS 
 
@@ -48,7 +48,7 @@ Esta estrutura deriva de [MedicationRequest](http://hl7.org/fhir/R4/medicationre
 
 #### Restrições
 
- **Visão TotalView** 
+ **Visão CompletaView** 
 
 #### Terminologia Ligações
 
@@ -72,36 +72,8 @@ Outras representações do perfil: [CSV](../StructureDefinition-RNDSPrescricaoMe
     "lastUpdated" : "2026-06-12T17:00:00-03:00"
   },
   "language" : "pt-BR",
-  "extension" : [{
-    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
-    "valueCode" : "ehr"
-  },
-  {
-    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
-    "valueInteger" : 1,
-    "_valueInteger" : {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
-        "valueCanonical" : "https://fhir.saude.gov.br/redfm/ImplementationGuide/br.gov.saude.redfm.fhir"
-      }]
-    }
-  },
-  {
-    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-    "valueCode" : "normative",
-    "_valueCode" : {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
-        "valueCanonical" : "https://fhir.saude.gov.br/redfm/ImplementationGuide/br.gov.saude.redfm.fhir"
-      }]
-    }
-  },
-  {
-    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
-    "valueCode" : "4.0.1"
-  }],
   "url" : "http://www.saude.gov.br/fhir/r4/StructureDefinition/RNDSPrescricaoMedicamento",
-  "version" : "1.0.0-release",
+  "version" : "1.0.0",
   "name" : "RNDSPrescricaoMedicamento",
   "title" : "Prescrição de Medicamento - RNDS",
   "status" : "active",

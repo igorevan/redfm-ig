@@ -1,4 +1,4 @@
-# Bundle 4 de exemplo do REDFM (Fornecedor e Dispensador) - Guia de Implementação do Registro Eletrônico de Dispensação ou Fornecimento de Medicamento (REDFM) da RNDS v1.0.0-release
+# Bundle 4 de exemplo do REDFM (Fornecedor e Dispensador) - Guia de Implementação do Registro Eletrônico de Dispensação ou Fornecimento de Medicamento (REDFM) da RNDS v1.0.0
 
 ## Exemplo Bundle: Bundle 4 de exemplo do REDFM (Fornecedor e Dispensador)
 

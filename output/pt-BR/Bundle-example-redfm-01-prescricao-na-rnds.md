@@ -1,4 +1,4 @@
-# Bundle 1 de exemplo do REDFM (Prescrição na RNDS) - Guia de Implementação do Registro Eletrônico de Dispensação ou Fornecimento de Medicamento (REDFM) da RNDS v1.0.0-release
+# Bundle 1 de exemplo do REDFM (Prescrição na RNDS) - Guia de Implementação do Registro Eletrônico de Dispensação ou Fornecimento de Medicamento (REDFM) da RNDS v1.0.0
 
 ## Exemplo Bundle: Bundle 1 de exemplo do REDFM (Prescrição na RNDS)
 

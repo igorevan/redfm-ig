@@ -6,29 +6,13 @@
     "status" : "generated",
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"pt-BR\" lang=\"pt-BR\"><p class=\"res-header-id\"><b>Narrativa gerada: ImplementationGuide br.gov.saude.redfm.fhir</b></p><a name=\"br.gov.saude.redfm.fhir\"> </a><a name=\"hcbr.gov.saude.redfm.fhir\"> </a><div style=\"display: inline-block; background-color: #fbffeb; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Língua: pt-BR</p></div><h2>REDFMRNDSIG</h2><p>O URL oficial para este guia de implementação é: </p><pre>https://fhir.saude.gov.br/redfm/ImplementationGuide/br.gov.saude.redfm.fhir</pre><div><p>Guia de Implementação da Rede Nacional de Dados em Saúde (RNDS)</p>\n</div></div>"
   },
-  "extension" : [{
-    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-    "valueCode" : "normative"
-  },
-  {
-    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
-    "valueInteger" : 1
-  },
-  {
-    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
-    "valueCode" : "ehr"
-  },
-  {
-    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
-    "valueCode" : "4.0.1"
-  }],
   "url" : "https://fhir.saude.gov.br/redfm/ImplementationGuide/br.gov.saude.redfm.fhir",
-  "version" : "1.0.0-release",
+  "version" : "1.0.0",
   "name" : "REDFMRNDSIG",
   "title" : "Guia de Implementação do Registro Eletrônico de Dispensação ou Fornecimento de Medicamento (REDFM) da RNDS",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-11-23T11:37:48-03:00",
+  "date" : "2026-11-24T16:50:01-03:00",
   "publisher" : "Ministério da Saúde do Brasil",
   "contact" : [{
     "name" : "Ministério da Saúde do Brasil",
@@ -94,7 +78,7 @@
       },
       {
         "url" : "value",
-        "valueString" : "STU1"
+        "valueString" : "Release 1.0.0"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -1210,10 +1194,6 @@
     }],
     "page" : {
       "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-        "valueCode" : "informative"
-      },
-      {
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
         "valueUrl" : "toc.html"
       }],
@@ -1222,10 +1202,6 @@
       "generation" : "html",
       "page" : [{
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-          "valueCode" : "informative"
-        },
-        {
           "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
           "valueUrl" : "index.html"
         }],
@@ -1235,10 +1211,6 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-          "valueCode" : "informative"
-        },
-        {
           "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
           "valueUrl" : "abstract.html"
         }],
@@ -1248,10 +1220,6 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-          "valueCode" : "informative"
-        },
-        {
           "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
           "valueUrl" : "credenciamento.html"
         }],
@@ -1261,10 +1229,6 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-          "valueCode" : "informative"
-        },
-        {
           "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
           "valueUrl" : "integracao.html"
         }],
@@ -1274,10 +1238,6 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-          "valueCode" : "informative"
-        },
-        {
           "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
           "valueUrl" : "mi.html"
         }],
@@ -1287,10 +1247,6 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-          "valueCode" : "informative"
-        },
-        {
           "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
           "valueUrl" : "mc.html"
         }],
@@ -1300,10 +1256,6 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-          "valueCode" : "informative"
-        },
-        {
           "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
           "valueUrl" : "exemplos.html"
         }],
@@ -1313,10 +1265,6 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-          "valueCode" : "informative"
-        },
-        {
           "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
           "valueUrl" : "changes.html"
         }],
@@ -1326,10 +1274,6 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-          "valueCode" : "informative"
-        },
-        {
           "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
           "valueUrl" : "downloads.html"
         }],
@@ -1339,10 +1283,6 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-          "valueCode" : "informative"
-        },
-        {
           "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
           "valueUrl" : "forms.html"
         }],
@@ -1352,10 +1292,6 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-          "valueCode" : "informative"
-        },
-        {
           "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
           "valueUrl" : "suporte.html"
         }],
@@ -1366,7 +1302,7 @@
     },
     "parameter" : [{
       "code" : "path-resource",
-      "value" : "input\\history"
+      "value" : "input/history"
     },
     {
       "code" : "path-resource",
@@ -1407,10 +1343,6 @@
     {
       "code" : "path-resource",
       "value" : "input/testing"
-    },
-    {
-      "code" : "path-resource",
-      "value" : "input/history"
     },
     {
       "code" : "path-resource",

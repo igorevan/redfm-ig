@@ -8,7 +8,7 @@
 <html xml:lang="pt-BR" xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>BR Core Practitioner - Guia de Implementação do Registro Eletrônico de Dispensação ou Fornecimento de Medicamento (REDFM) da RNDS v1.0.0-release</title>
+    <title>BR Core Practitioner - Guia de Implementação do Registro Eletrônico de Dispensação ou Fornecimento de Medicamento (REDFM) da RNDS v1.0.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -47,7 +47,6 @@
 	  <script type="text/javascript" src="assets/js/prism.js"></script>
 	  <script type="text/javascript" src="assets/js/prism-fhirpath.js"></script>
 	  <script type="text/javascript" src="assets/js/prism-cql.js"></script>
-    <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
     <style type="text/css">h2{--heading-prefix:"12.5"}
     h3,h4,h5,h6{--heading-prefix:"12.5"}</style>
@@ -60,7 +59,7 @@
         <div id="ig-status" data-fhir="generated">
           <p><span style="font-size:12pt;font-weight:bold">Guia de Implementação do Registro Eletrônico de Dispensação ou Fornecimento de Medicamento (REDFM) da RNDS</span>
             <br/>
-            <span style="display:inline-block;">1.0.0-release - STU1
+            <span style="display:inline-block;">1.0.0 - Release 1.0.0
 
 
 
@@ -175,7 +174,7 @@
     <div id="segment-breadcrumb" class="segment" data-fhir="generated">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Índice</b></a></li><li><a href='artifacts.html'><b>Artefatos</b></a></li><li><b>BR Core Practitioner</b></li>
+          <li><a href='toc.html'><b>Índice</b></a></li><li><a href='artifacts.html'><b>Resumo de Artefatos</b></a></li><li><b>BR Core Practitioner</b></li>
 
           <span style="float: var(--ig-right);">
 
@@ -199,7 +198,7 @@
 
 <!-- layouts\layout-profile -->
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Guia de Implementação do Registro Eletrônico de Dispensação ou Fornecimento de Medicamento (REDFM) da RNDS - Compilação de desenvolvimento local (v1.0.0-release) construída pelas ferramentas de compilação FHIR (HL7&reg; FHIR&reg; Standard). Veja o <a href='https://fhir.saude.gov.br/redfm/history.html'>Diretório de versões publicadas</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Guia de Implementação do Registro Eletrônico de Dispensação ou Fornecimento de Medicamento (REDFM) da RNDS - Compilação de desenvolvimento local (v1.0.0) construída pelas ferramentas de compilação FHIR (HL7&reg; FHIR&reg; Standard). Veja o <a href='https://fhir.saude.gov.br/redfm/history.html'>Diretório de versões publicadas</a></p><!--EndReleaseHeader-->
   
 
 
@@ -275,13 +274,13 @@ BR Core Practitioner
 
   </h2>
 
-  <table class="colsn" data-fhir="generated">
+  <table class="colsi" data-fhir="generated">
 
     <tr>
       <td colspan="4"><i>URL oficial</i>: <span class="copy-text">https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-practitioner<button title="Clique para copiar o URL" class="btn-copy" data-clipboard-text="https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-practitioner"/></span>
       </td>
       <td><i>Versão</i>:
-      <span class="copy-text">1.0.0-release<button title="Clique para copiar o URL com versão" class="btn-copy" data-clipboard-text="https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-practitioner|1.0.0-release"/></span>
+      <span class="copy-text">1.0.0<button title="Clique para copiar o URL com versão" class="btn-copy" data-clipboard-text="https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-practitioner|1.0.0"/></span>
       </td>
       <td style="text-align: right;border-left-style: hidden" title="Ative isto para ver as alterações desde a última versão oficial.">
         <span id="toggle-change-display"><label style="margin:0;font-weight:normal" for="showChanges">Destacar alterações no texto?</label>
@@ -300,21 +299,15 @@ BR Core Practitioner
 
 
 
-      <td colspan="4">
+      <td colspan="5">
         
-          <i>
-            
-            Standards status:
-          </i> <a href="http://hl7.org/fhir/R4/versions.html#std-process" title="Status dos padrões">Normative</a>
+          Active
           
-          
-        
-      </td>
 
-      <td>
-        <a href="http://hl7.org/fhir/versions.html#maturity">Nível de maturidade</a>: 1
-        
-          <span title="Inherited from , CanonicalType[https://fhir.saude.gov.br/redfm/ImplementationGuide/br.gov.saude.redfm.fhir]">*</span>
+            a partir de 
+2026-11-24
+
+          
         
       </td>
 
@@ -1390,7 +1383,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <table class="binding grid"><tr><td style="font-size: 11px"><b>Vínculos adicionais</b></td><td style="font-size: 11px">Objetivo</td></tr>
 <tr><td style="font-size: 11px"><a href="http://hl7.org/fhir/R4/valueset-all-languages.html" title="http://hl7.org/fhir/ValueSet/all-languages">AllLanguages</a></td>
 <td style="font-size: 11px"><a href="http://hl7.org/fhir/R4/extension-elementdefinition-maxvalueset.html" title="Um vínculo obrigatório, para utilização quando a força do vínculo é 'extensível' ou 'preferido'">Vínculo máximo</a></td></tr></table><br/></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legenda para este formato"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentação para este formato</a></td></tr><script type="text/javascript">  // 0c8d657c-9eed-4daf-93e2-9cbc729c0c56
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legenda para este formato"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentação para este formato</a></td></tr><script type="text/javascript">  // 6db3f38c-9752-4d43-a44e-82964551dc4f
 document.getElementById('cbbr-core-practitionerK-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
 filterDesc(document.getElementById('br-core-practitionerK'), 'constraint', document.getElementById('cbbr-core-practitionerK-constraint').checked, document.getElementById('ppbr-core-practitionerK'));
 document.getElementById('cbbr-core-practitionerK-obligation').checked = 'false' != localStorage.getItem('ht-table-states-obligation');
@@ -1572,7 +1565,7 @@ filterDesc(document.getElementById('br-core-practitionerK'), 'binding', document
       <a href="ValueSet-BRCRM.html">Conselhos regionais de Medicina do Brasil</a>
       <button data-clipboard-text="https://terminologia.saude.gov.br/fhir/ValueSet/BRCRM" title="Clicar para copiar o URL" class="btn-copy" aria-label="copy"></button>
     </td>
-    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;1.0.0-release</td>
+    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;1.0.0</td>
     <td>este IG</td>
     <td>
       <div>
@@ -1630,7 +1623,7 @@ filterDesc(document.getElementById('br-core-practitionerK'), 'binding', document
       <a href="ValueSet-BRCRF.html">Conselhos regionais de Farmácia do Brasil</a>
       <button data-clipboard-text="https://terminologia.saude.gov.br/fhir/ValueSet/BRCRF" title="Clicar para copiar o URL" class="btn-copy" aria-label="copy"></button>
     </td>
-    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;1.0.0-release</td>
+    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;1.0.0</td>
     <td>este IG</td>
     <td>
       <div>
@@ -1688,7 +1681,7 @@ filterDesc(document.getElementById('br-core-practitionerK'), 'binding', document
       <a href="ValueSet-BRCRO.html">Conselhos regionais de Odontologia do Brasil</a>
       <button data-clipboard-text="https://terminologia.saude.gov.br/fhir/ValueSet/BRCRO" title="Clicar para copiar o URL" class="btn-copy" aria-label="copy"></button>
     </td>
-    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;1.0.0-release</td>
+    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;1.0.0</td>
     <td>este IG</td>
     <td>
       <div>
@@ -1746,7 +1739,7 @@ filterDesc(document.getElementById('br-core-practitionerK'), 'binding', document
       <a href="ValueSet-BRCOREN.html">Conselhos regionais de Enfermagem do Brasil</a>
       <button data-clipboard-text="https://terminologia.saude.gov.br/fhir/ValueSet/BRCOREN" title="Clicar para copiar o URL" class="btn-copy" aria-label="copy"></button>
     </td>
-    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;1.0.0-release</td>
+    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;1.0.0</td>
     <td>este IG</td>
     <td>
       <div>
@@ -1804,7 +1797,7 @@ filterDesc(document.getElementById('br-core-practitionerK'), 'binding', document
       <a href="ValueSet-BROutrosProfissionais.html">Conselhos regionais de outros profissionais da saúde do Brasil</a>
       <button data-clipboard-text="https://terminologia.saude.gov.br/fhir/ValueSet/BROutrosProfissionais" title="Clicar para copiar o URL" class="btn-copy" aria-label="copy"></button>
     </td>
-    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;1.0.0-release</td>
+    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;1.0.0</td>
     <td>este IG</td>
     <td>
       <div>
@@ -1868,7 +1861,7 @@ filterDesc(document.getElementById('br-core-practitionerK'), 'binding', document
       <a href="ValueSet-BROcupacao-1.0.html">Classificação Brasileira de Ocupações - CBO (ValueSet)</a>
       <button data-clipboard-text="http://www.saude.gov.br/fhir/r4/ValueSet/BROcupacao-1.0" title="Clicar para copiar o URL" class="btn-copy" aria-label="copy"></button>
     </td>
-    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;1.0.0-release</td>
+    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;1.0.0</td>
     <td>este IG</td>
     <td></td>
   </tr>
@@ -2984,7 +2977,7 @@ filterDesc(document.getElementById('br-core-practitionerK'), 'binding', document
 <td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">0</span><span class="xhtPieceDeEmphasized">..</span><span class="xhtPieceDeEmphasized">*</span></td>
 <td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept" class="xhtPieceDeEmphasized">CodeableConcept</a></td>
 <td style="" class="hierarchy xhtCellBorder0">Idiomas que o profissional domina</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legenda para este formato"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentação para este formato</a></td></tr><script type="text/javascript">  // 0c8d657c-9eed-4daf-93e2-9cbc729c0c56
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legenda para este formato"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentação para este formato</a></td></tr><script type="text/javascript">  // 6db3f38c-9752-4d43-a44e-82964551dc4f
 document.getElementById('cbbr-core-practitionerD-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
 filterDesc(document.getElementById('br-core-practitionerD'), 'constraint', document.getElementById('cbbr-core-practitionerD-constraint').checked, document.getElementById('ppbr-core-practitionerD'));
 document.getElementById('cbbr-core-practitionerD-obligation').checked = 'false' != localStorage.getItem('ht-table-states-obligation');
@@ -3080,7 +3073,7 @@ filterDesc(document.getElementById('br-core-practitionerD'), 'binding', document
       <a href="ValueSet-BRCRM.html" class="unchangedStyle">Conselhos regionais de Medicina do Brasil</a>
       <button data-clipboard-text="https://terminologia.saude.gov.br/fhir/ValueSet/BRCRM" title="Clicar para copiar o URL" class="btn-copy" aria-label="copy"></button>
     </td>
-    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;1.0.0-release</td>
+    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;1.0.0</td>
     <td>este IG</td>
     <td>
       <div>
@@ -3116,7 +3109,7 @@ filterDesc(document.getElementById('br-core-practitionerD'), 'binding', document
       <a href="ValueSet-BRCRF.html" class="unchangedStyle">Conselhos regionais de Farmácia do Brasil</a>
       <button data-clipboard-text="https://terminologia.saude.gov.br/fhir/ValueSet/BRCRF" title="Clicar para copiar o URL" class="btn-copy" aria-label="copy"></button>
     </td>
-    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;1.0.0-release</td>
+    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;1.0.0</td>
     <td>este IG</td>
     <td>
       <div>
@@ -3152,7 +3145,7 @@ filterDesc(document.getElementById('br-core-practitionerD'), 'binding', document
       <a href="ValueSet-BRCRO.html" class="unchangedStyle">Conselhos regionais de Odontologia do Brasil</a>
       <button data-clipboard-text="https://terminologia.saude.gov.br/fhir/ValueSet/BRCRO" title="Clicar para copiar o URL" class="btn-copy" aria-label="copy"></button>
     </td>
-    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;1.0.0-release</td>
+    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;1.0.0</td>
     <td>este IG</td>
     <td>
       <div>
@@ -3188,7 +3181,7 @@ filterDesc(document.getElementById('br-core-practitionerD'), 'binding', document
       <a href="ValueSet-BRCOREN.html" class="unchangedStyle">Conselhos regionais de Enfermagem do Brasil</a>
       <button data-clipboard-text="https://terminologia.saude.gov.br/fhir/ValueSet/BRCOREN" title="Clicar para copiar o URL" class="btn-copy" aria-label="copy"></button>
     </td>
-    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;1.0.0-release</td>
+    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;1.0.0</td>
     <td>este IG</td>
     <td>
       <div>
@@ -3224,7 +3217,7 @@ filterDesc(document.getElementById('br-core-practitionerD'), 'binding', document
       <a href="ValueSet-BROutrosProfissionais.html" class="unchangedStyle">Conselhos regionais de outros profissionais da saúde do Brasil</a>
       <button data-clipboard-text="https://terminologia.saude.gov.br/fhir/ValueSet/BROutrosProfissionais" title="Clicar para copiar o URL" class="btn-copy" aria-label="copy"></button>
     </td>
-    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;1.0.0-release</td>
+    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;1.0.0</td>
     <td>este IG</td>
     <td>
       <div>
@@ -3244,7 +3237,7 @@ filterDesc(document.getElementById('br-core-practitionerD'), 'binding', document
       <a href="ValueSet-BROcupacao-1.0.html" class="unchangedStyle">Classificação Brasileira de Ocupações - CBO (ValueSet)</a>
       <button data-clipboard-text="http://www.saude.gov.br/fhir/r4/ValueSet/BROcupacao-1.0" title="Clicar para copiar o URL" class="btn-copy" aria-label="copy"></button>
     </td>
-    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;1.0.0-release</td>
+    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;1.0.0</td>
     <td>este IG</td>
     <td></td>
   </tr>
@@ -4480,7 +4473,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <table class="binding grid"><tr><td style="font-size: 11px"><b>Vínculos adicionais</b></td><td style="font-size: 11px">Objetivo</td></tr>
 <tr><td style="font-size: 11px"><a href="http://hl7.org/fhir/R4/valueset-all-languages.html" title="http://hl7.org/fhir/ValueSet/all-languages">AllLanguages</a></td>
 <td style="font-size: 11px"><a href="http://hl7.org/fhir/R4/extension-elementdefinition-maxvalueset.html" title="Um vínculo obrigatório, para utilização quando a força do vínculo é 'extensível' ou 'preferido'">Vínculo máximo</a></td></tr></table><br/></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legenda para este formato"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentação para este formato</a></td></tr><script type="text/javascript">  // 0c8d657c-9eed-4daf-93e2-9cbc729c0c56
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legenda para este formato"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentação para este formato</a></td></tr><script type="text/javascript">  // 6db3f38c-9752-4d43-a44e-82964551dc4f
 document.getElementById('cbbr-core-practitionerS-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
 filterDesc(document.getElementById('br-core-practitionerS'), 'constraint', document.getElementById('cbbr-core-practitionerS-constraint').checked, document.getElementById('ppbr-core-practitionerS'));
 document.getElementById('cbbr-core-practitionerS-obligation').checked = 'false' != localStorage.getItem('ht-table-states-obligation');
@@ -4707,7 +4700,7 @@ filterDesc(document.getElementById('br-core-practitionerS'), 'binding', document
       <a href="ValueSet-BRCRM.html">Conselhos regionais de Medicina do Brasil</a>
       <button data-clipboard-text="https://terminologia.saude.gov.br/fhir/ValueSet/BRCRM" title="Clicar para copiar o URL" class="btn-copy" aria-label="copy"></button>
     </td>
-    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;1.0.0-release</td>
+    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;1.0.0</td>
     <td>este IG</td>
     <td>
       <div>
@@ -4787,7 +4780,7 @@ filterDesc(document.getElementById('br-core-practitionerS'), 'binding', document
       <a href="ValueSet-BRCRF.html">Conselhos regionais de Farmácia do Brasil</a>
       <button data-clipboard-text="https://terminologia.saude.gov.br/fhir/ValueSet/BRCRF" title="Clicar para copiar o URL" class="btn-copy" aria-label="copy"></button>
     </td>
-    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;1.0.0-release</td>
+    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;1.0.0</td>
     <td>este IG</td>
     <td>
       <div>
@@ -4867,7 +4860,7 @@ filterDesc(document.getElementById('br-core-practitionerS'), 'binding', document
       <a href="ValueSet-BRCRO.html">Conselhos regionais de Odontologia do Brasil</a>
       <button data-clipboard-text="https://terminologia.saude.gov.br/fhir/ValueSet/BRCRO" title="Clicar para copiar o URL" class="btn-copy" aria-label="copy"></button>
     </td>
-    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;1.0.0-release</td>
+    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;1.0.0</td>
     <td>este IG</td>
     <td>
       <div>
@@ -4947,7 +4940,7 @@ filterDesc(document.getElementById('br-core-practitionerS'), 'binding', document
       <a href="ValueSet-BRCOREN.html">Conselhos regionais de Enfermagem do Brasil</a>
       <button data-clipboard-text="https://terminologia.saude.gov.br/fhir/ValueSet/BRCOREN" title="Clicar para copiar o URL" class="btn-copy" aria-label="copy"></button>
     </td>
-    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;1.0.0-release</td>
+    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;1.0.0</td>
     <td>este IG</td>
     <td>
       <div>
@@ -5027,7 +5020,7 @@ filterDesc(document.getElementById('br-core-practitionerS'), 'binding', document
       <a href="ValueSet-BROutrosProfissionais.html">Conselhos regionais de outros profissionais da saúde do Brasil</a>
       <button data-clipboard-text="https://terminologia.saude.gov.br/fhir/ValueSet/BROutrosProfissionais" title="Clicar para copiar o URL" class="btn-copy" aria-label="copy"></button>
     </td>
-    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;1.0.0-release</td>
+    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;1.0.0</td>
     <td>este IG</td>
     <td>
       <div>
@@ -5113,7 +5106,7 @@ filterDesc(document.getElementById('br-core-practitionerS'), 'binding', document
       <a href="ValueSet-BROcupacao-1.0.html">Classificação Brasileira de Ocupações - CBO (ValueSet)</a>
       <button data-clipboard-text="http://www.saude.gov.br/fhir/r4/ValueSet/BROcupacao-1.0" title="Clicar para copiar o URL" class="btn-copy" aria-label="copy"></button>
     </td>
-    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;1.0.0-release</td>
+    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;1.0.0</td>
     <td>este IG</td>
     <td></td>
   </tr>
@@ -5577,7 +5570,6 @@ Resumo
 
 </ul>
 
-<p><b><a class="fmm" href="http://hl7.org/fhir/versions.html#maturity" title="Maturity Level">Maturidade</a></b>: 1</p>
 </div>
         </div>
       </div>
@@ -6585,7 +6577,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <table class="binding grid"><tr><td style="font-size: 11px"><b>Vínculos adicionais</b></td><td style="font-size: 11px">Objetivo</td></tr>
 <tr><td style="font-size: 11px"><a href="http://hl7.org/fhir/R4/valueset-all-languages.html" title="http://hl7.org/fhir/ValueSet/all-languages">AllLanguages</a></td>
 <td style="font-size: 11px"><a href="http://hl7.org/fhir/R4/extension-elementdefinition-maxvalueset.html" title="Um vínculo obrigatório, para utilização quando a força do vínculo é 'extensível' ou 'preferido'">Vínculo máximo</a></td></tr></table><br/></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legenda para este formato"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentação para este formato</a></td></tr><script type="text/javascript">  // 0c8d657c-9eed-4daf-93e2-9cbc729c0c56
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legenda para este formato"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentação para este formato</a></td></tr><script type="text/javascript">  // 6db3f38c-9752-4d43-a44e-82964551dc4f
 document.getElementById('cbbr-core-practitionerKA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
 filterDesc(document.getElementById('br-core-practitionerKA'), 'constraint', document.getElementById('cbbr-core-practitionerKA-constraint').checked, document.getElementById('ppbr-core-practitionerKA'));
 document.getElementById('cbbr-core-practitionerKA-obligation').checked = 'false' != localStorage.getItem('ht-table-states-obligation');
@@ -6766,7 +6758,7 @@ filterDesc(document.getElementById('br-core-practitionerKA'), 'binding', documen
       <a href="ValueSet-BRCRM.html">Conselhos regionais de Medicina do Brasil</a>
       <button data-clipboard-text="https://terminologia.saude.gov.br/fhir/ValueSet/BRCRM" title="Clicar para copiar o URL" class="btn-copy" aria-label="copy"></button>
     </td>
-    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;1.0.0-release</td>
+    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;1.0.0</td>
     <td>este IG</td>
     <td>
       <div>
@@ -6824,7 +6816,7 @@ filterDesc(document.getElementById('br-core-practitionerKA'), 'binding', documen
       <a href="ValueSet-BRCRF.html">Conselhos regionais de Farmácia do Brasil</a>
       <button data-clipboard-text="https://terminologia.saude.gov.br/fhir/ValueSet/BRCRF" title="Clicar para copiar o URL" class="btn-copy" aria-label="copy"></button>
     </td>
-    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;1.0.0-release</td>
+    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;1.0.0</td>
     <td>este IG</td>
     <td>
       <div>
@@ -6882,7 +6874,7 @@ filterDesc(document.getElementById('br-core-practitionerKA'), 'binding', documen
       <a href="ValueSet-BRCRO.html">Conselhos regionais de Odontologia do Brasil</a>
       <button data-clipboard-text="https://terminologia.saude.gov.br/fhir/ValueSet/BRCRO" title="Clicar para copiar o URL" class="btn-copy" aria-label="copy"></button>
     </td>
-    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;1.0.0-release</td>
+    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;1.0.0</td>
     <td>este IG</td>
     <td>
       <div>
@@ -6940,7 +6932,7 @@ filterDesc(document.getElementById('br-core-practitionerKA'), 'binding', documen
       <a href="ValueSet-BRCOREN.html">Conselhos regionais de Enfermagem do Brasil</a>
       <button data-clipboard-text="https://terminologia.saude.gov.br/fhir/ValueSet/BRCOREN" title="Clicar para copiar o URL" class="btn-copy" aria-label="copy"></button>
     </td>
-    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;1.0.0-release</td>
+    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;1.0.0</td>
     <td>este IG</td>
     <td>
       <div>
@@ -6998,7 +6990,7 @@ filterDesc(document.getElementById('br-core-practitionerKA'), 'binding', documen
       <a href="ValueSet-BROutrosProfissionais.html">Conselhos regionais de outros profissionais da saúde do Brasil</a>
       <button data-clipboard-text="https://terminologia.saude.gov.br/fhir/ValueSet/BROutrosProfissionais" title="Clicar para copiar o URL" class="btn-copy" aria-label="copy"></button>
     </td>
-    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;1.0.0-release</td>
+    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;1.0.0</td>
     <td>este IG</td>
     <td>
       <div>
@@ -7062,7 +7054,7 @@ filterDesc(document.getElementById('br-core-practitionerKA'), 'binding', documen
       <a href="ValueSet-BROcupacao-1.0.html">Classificação Brasileira de Ocupações - CBO (ValueSet)</a>
       <button data-clipboard-text="http://www.saude.gov.br/fhir/r4/ValueSet/BROcupacao-1.0" title="Clicar para copiar o URL" class="btn-copy" aria-label="copy"></button>
     </td>
-    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;1.0.0-release</td>
+    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;1.0.0</td>
     <td>este IG</td>
     <td></td>
   </tr>
@@ -8178,7 +8170,7 @@ filterDesc(document.getElementById('br-core-practitionerKA'), 'binding', documen
 <td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">0</span><span class="xhtPieceDeEmphasized">..</span><span class="xhtPieceDeEmphasized">*</span></td>
 <td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept" class="xhtPieceDeEmphasized">CodeableConcept</a></td>
 <td style="" class="hierarchy xhtCellBorder0">Idiomas que o profissional domina</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legenda para este formato"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentação para este formato</a></td></tr><script type="text/javascript">  // 0c8d657c-9eed-4daf-93e2-9cbc729c0c56
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legenda para este formato"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentação para este formato</a></td></tr><script type="text/javascript">  // 6db3f38c-9752-4d43-a44e-82964551dc4f
 document.getElementById('cbbr-core-practitionerDA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
 filterDesc(document.getElementById('br-core-practitionerDA'), 'constraint', document.getElementById('cbbr-core-practitionerDA-constraint').checked, document.getElementById('ppbr-core-practitionerDA'));
 document.getElementById('cbbr-core-practitionerDA-obligation').checked = 'false' != localStorage.getItem('ht-table-states-obligation');
@@ -8271,7 +8263,7 @@ filterDesc(document.getElementById('br-core-practitionerDA'), 'binding', documen
       <a href="ValueSet-BRCRM.html" class="unchangedStyle">Conselhos regionais de Medicina do Brasil</a>
       <button data-clipboard-text="https://terminologia.saude.gov.br/fhir/ValueSet/BRCRM" title="Clicar para copiar o URL" class="btn-copy" aria-label="copy"></button>
     </td>
-    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;1.0.0-release</td>
+    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;1.0.0</td>
     <td>este IG</td>
     <td>
       <div>
@@ -8307,7 +8299,7 @@ filterDesc(document.getElementById('br-core-practitionerDA'), 'binding', documen
       <a href="ValueSet-BRCRF.html" class="unchangedStyle">Conselhos regionais de Farmácia do Brasil</a>
       <button data-clipboard-text="https://terminologia.saude.gov.br/fhir/ValueSet/BRCRF" title="Clicar para copiar o URL" class="btn-copy" aria-label="copy"></button>
     </td>
-    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;1.0.0-release</td>
+    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;1.0.0</td>
     <td>este IG</td>
     <td>
       <div>
@@ -8343,7 +8335,7 @@ filterDesc(document.getElementById('br-core-practitionerDA'), 'binding', documen
       <a href="ValueSet-BRCRO.html" class="unchangedStyle">Conselhos regionais de Odontologia do Brasil</a>
       <button data-clipboard-text="https://terminologia.saude.gov.br/fhir/ValueSet/BRCRO" title="Clicar para copiar o URL" class="btn-copy" aria-label="copy"></button>
     </td>
-    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;1.0.0-release</td>
+    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;1.0.0</td>
     <td>este IG</td>
     <td>
       <div>
@@ -8379,7 +8371,7 @@ filterDesc(document.getElementById('br-core-practitionerDA'), 'binding', documen
       <a href="ValueSet-BRCOREN.html" class="unchangedStyle">Conselhos regionais de Enfermagem do Brasil</a>
       <button data-clipboard-text="https://terminologia.saude.gov.br/fhir/ValueSet/BRCOREN" title="Clicar para copiar o URL" class="btn-copy" aria-label="copy"></button>
     </td>
-    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;1.0.0-release</td>
+    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;1.0.0</td>
     <td>este IG</td>
     <td>
       <div>
@@ -8415,7 +8407,7 @@ filterDesc(document.getElementById('br-core-practitionerDA'), 'binding', documen
       <a href="ValueSet-BROutrosProfissionais.html" class="unchangedStyle">Conselhos regionais de outros profissionais da saúde do Brasil</a>
       <button data-clipboard-text="https://terminologia.saude.gov.br/fhir/ValueSet/BROutrosProfissionais" title="Clicar para copiar o URL" class="btn-copy" aria-label="copy"></button>
     </td>
-    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;1.0.0-release</td>
+    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;1.0.0</td>
     <td>este IG</td>
     <td>
       <div>
@@ -8435,7 +8427,7 @@ filterDesc(document.getElementById('br-core-practitionerDA'), 'binding', documen
       <a href="ValueSet-BROcupacao-1.0.html" class="unchangedStyle">Classificação Brasileira de Ocupações - CBO (ValueSet)</a>
       <button data-clipboard-text="http://www.saude.gov.br/fhir/r4/ValueSet/BROcupacao-1.0" title="Clicar para copiar o URL" class="btn-copy" aria-label="copy"></button>
     </td>
-    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;1.0.0-release</td>
+    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;1.0.0</td>
     <td>este IG</td>
     <td></td>
   </tr>
@@ -8449,7 +8441,7 @@ filterDesc(document.getElementById('br-core-practitionerDA'), 'binding', documen
       </div>
       <div id="all-tbl-snap">
         <p>
-          <b>Visão TotalView</b>
+          <b>Visão CompletaView</b>
         </p>
         <div id="all-tbl-snap-inner">
           <table border="0" fhir="generated-heirarchy" cellpadding="0" cellspacing="0" id="br-core-practitionerSA" class="xhtTableBorder0" data-fhir="generated-heirarchy"><tr fhir="generated-heirarchy" class="xhtRowBorder1" data-fhir="generated-heirarchy"><th scope="col" style="" class="hierarchy xhtCellBorder0"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="O nome lógico do elemento" data-no-external="true">Nome</a></th><th scope="col" style="" class="hierarchy xhtCellBorder0"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Informações sobre a utilização do elemento" data-no-external="true">Bandeiras</a></th><th scope="col" style="" class="hierarchy xhtCellBorder0"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Número mínimo e máximo de vezes que o elemento pode aparecer na instância" data-no-external="true">Card.</a></th><th scope="col" style="; width: 100px" class="hierarchy xhtCellBorder0"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Referência ao tipo do elemento" data-no-external="true">Tipo</a></th><th scope="col" style="" class="hierarchy xhtCellBorder0"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Informações adicionais sobre o elemento" data-no-external="true">Descrição e condicionalismos</a>&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">Filter: <input size="10" name="filter" style="border: 1px #F0F0F0 solid; background-color: rgb(254, 254, 231);" onInput="filterTree(document.getElementById('br-core-practitionerSA'), event.target.value)" type="text" aria-label="Filter"/> <button onClick="showPanel(this, document.getElementById('br-core-practitionerSA'), document.getElementById('ppbr-core-practitionerSA'))" aria-controls="ppbr-core-practitionerSA" style="background: none; border: 0; padding: 0; margin: 0; cursor: pointer" type="button" title="Filters" aria-label="Filters"><img src="tree-filter.png" alt=""/></button><div style="display: none; position: fixed; opacity : 1.0; background-color: rgb(254, 254, 231); border: 1px solid #ccc; padding: 10px; boxShadow: 0 2px 5px rgba(0,0,0,0.2); zIndex: 1000; borderRadius: 4px" id="ppbr-core-practitionerSA"><label>Condicionantes <input onClick="filterDesc(document.getElementById('br-core-practitionerSA'), 'constraint',event.target.checked, document.getElementById('ppbr-core-practitionerSA'))" size="1" name="constraint" checked="true" id="cbbr-core-practitionerSA-constraint" type="checkbox" aria-label="constraint"/></label><br/><label>Obrigações <input onClick="filterDesc(document.getElementById('br-core-practitionerSA'), 'obligation',event.target.checked, document.getElementById('ppbr-core-practitionerSA'))" size="1" name="obligation" checked="true" id="cbbr-core-practitionerSA-obligation" type="checkbox" aria-label="obligation"/></label><br/><label>Vínculos <input onClick="filterDesc(document.getElementById('br-core-practitionerSA'), 'binding',event.target.checked, document.getElementById('ppbr-core-practitionerSA'))" size="1" name="binding" checked="true" id="cbbr-core-practitionerSA-binding" type="checkbox" aria-label="binding"/></label><br/></div></span><span style="float: right"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format" data-no-external="true"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" onLoad="fhirTableInit(this)" style="background-color: inherit"/></a></span></th></tr>
@@ -9671,7 +9663,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <table class="binding grid"><tr><td style="font-size: 11px"><b>Vínculos adicionais</b></td><td style="font-size: 11px">Objetivo</td></tr>
 <tr><td style="font-size: 11px"><a href="http://hl7.org/fhir/R4/valueset-all-languages.html" title="http://hl7.org/fhir/ValueSet/all-languages">AllLanguages</a></td>
 <td style="font-size: 11px"><a href="http://hl7.org/fhir/R4/extension-elementdefinition-maxvalueset.html" title="Um vínculo obrigatório, para utilização quando a força do vínculo é 'extensível' ou 'preferido'">Vínculo máximo</a></td></tr></table><br/></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legenda para este formato"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentação para este formato</a></td></tr><script type="text/javascript">  // 0c8d657c-9eed-4daf-93e2-9cbc729c0c56
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legenda para este formato"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentação para este formato</a></td></tr><script type="text/javascript">  // 6db3f38c-9752-4d43-a44e-82964551dc4f
 document.getElementById('cbbr-core-practitionerSA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
 filterDesc(document.getElementById('br-core-practitionerSA'), 'constraint', document.getElementById('cbbr-core-practitionerSA-constraint').checked, document.getElementById('ppbr-core-practitionerSA'));
 document.getElementById('cbbr-core-practitionerSA-obligation').checked = 'false' != localStorage.getItem('ht-table-states-obligation');
@@ -9896,7 +9888,7 @@ filterDesc(document.getElementById('br-core-practitionerSA'), 'binding', documen
       <a href="ValueSet-BRCRM.html">Conselhos regionais de Medicina do Brasil</a>
       <button data-clipboard-text="https://terminologia.saude.gov.br/fhir/ValueSet/BRCRM" title="Clicar para copiar o URL" class="btn-copy" aria-label="copy"></button>
     </td>
-    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;1.0.0-release</td>
+    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;1.0.0</td>
     <td>este IG</td>
     <td>
       <div>
@@ -9976,7 +9968,7 @@ filterDesc(document.getElementById('br-core-practitionerSA'), 'binding', documen
       <a href="ValueSet-BRCRF.html">Conselhos regionais de Farmácia do Brasil</a>
       <button data-clipboard-text="https://terminologia.saude.gov.br/fhir/ValueSet/BRCRF" title="Clicar para copiar o URL" class="btn-copy" aria-label="copy"></button>
     </td>
-    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;1.0.0-release</td>
+    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;1.0.0</td>
     <td>este IG</td>
     <td>
       <div>
@@ -10056,7 +10048,7 @@ filterDesc(document.getElementById('br-core-practitionerSA'), 'binding', documen
       <a href="ValueSet-BRCRO.html">Conselhos regionais de Odontologia do Brasil</a>
       <button data-clipboard-text="https://terminologia.saude.gov.br/fhir/ValueSet/BRCRO" title="Clicar para copiar o URL" class="btn-copy" aria-label="copy"></button>
     </td>
-    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;1.0.0-release</td>
+    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;1.0.0</td>
     <td>este IG</td>
     <td>
       <div>
@@ -10136,7 +10128,7 @@ filterDesc(document.getElementById('br-core-practitionerSA'), 'binding', documen
       <a href="ValueSet-BRCOREN.html">Conselhos regionais de Enfermagem do Brasil</a>
       <button data-clipboard-text="https://terminologia.saude.gov.br/fhir/ValueSet/BRCOREN" title="Clicar para copiar o URL" class="btn-copy" aria-label="copy"></button>
     </td>
-    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;1.0.0-release</td>
+    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;1.0.0</td>
     <td>este IG</td>
     <td>
       <div>
@@ -10216,7 +10208,7 @@ filterDesc(document.getElementById('br-core-practitionerSA'), 'binding', documen
       <a href="ValueSet-BROutrosProfissionais.html">Conselhos regionais de outros profissionais da saúde do Brasil</a>
       <button data-clipboard-text="https://terminologia.saude.gov.br/fhir/ValueSet/BROutrosProfissionais" title="Clicar para copiar o URL" class="btn-copy" aria-label="copy"></button>
     </td>
-    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;1.0.0-release</td>
+    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;1.0.0</td>
     <td>este IG</td>
     <td>
       <div>
@@ -10302,7 +10294,7 @@ filterDesc(document.getElementById('br-core-practitionerSA'), 'binding', documen
       <a href="ValueSet-BROcupacao-1.0.html">Classificação Brasileira de Ocupações - CBO (ValueSet)</a>
       <button data-clipboard-text="http://www.saude.gov.br/fhir/r4/ValueSet/BROcupacao-1.0" title="Clicar para copiar o URL" class="btn-copy" aria-label="copy"></button>
     </td>
-    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;1.0.0-release</td>
+    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;1.0.0</td>
     <td>este IG</td>
     <td></td>
   </tr>
@@ -10762,7 +10754,6 @@ Resumo
 
 </ul>
 
-<p><b><a class="fmm" href="http://hl7.org/fhir/versions.html#maturity" title="Maturity Level">Maturidade</a></b>: 1</p>
 </div>
         </div>
       </div>
@@ -10814,7 +10805,7 @@ Resumo
               </td>
               <td style="text-align:var(--ig-right);">&#xA0;
 
-                <a href="StructureDefinition-br-core-practitioner-definitions.html">seguinte ></a>
+                <a href="StructureDefinition-br-core-practitioner-definitions.html">seguinte &gt;</a>
 
               </td>
             </tr>
@@ -10828,10 +10819,10 @@ Resumo
 
 
           IG © 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.saude.gov.br">Ministério da Saúde do Brasil</a>.  
-          Pacote br.gov.saude.redfm.fhir#1.0.0-release baseado em <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Gerado em 
-  <span title="2026-11-23 11:37:00 -0300">
-    2026-11-23
+          Pacote br.gov.saude.redfm.fhir#1.0.0 baseado em <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Gerado 
+  <span title="2026-11-24 16:50:00 -0300">
+    2026-11-24
   </span>
 
           <br/>

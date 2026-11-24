@@ -3,7 +3,7 @@ REDFMRNDSIG : Validation Results
 
 err = 6, warn = 0, info = 0, broken links = 0
 IG Publisher Version: 3.0.5
-Generated Mon Nov 23 11:40:17 BRT 2026. FHIR version 4.0.1 for br.gov.saude.redfm.fhir#1.0.0-release (canonical = https://fhir.saude.gov.br/redfm)
+Generated Tue Nov 24 16:53:00 BRT 2026. FHIR version 4.0.1 for br.gov.saude.redfm.fhir#1.0.0 (canonical = https://fhir.saude.gov.br/redfm)
  Build Errors : 0 / 0 / 0
  /home/igor/redfm-ig/input/examples/example-redfm-01-prescricao-na-rnds : 0 / 2 / 2
  /home/igor/redfm-ig/input/examples/example-redfm-02-prescricao-fora-rnds : 0 / 2 / 4
@@ -164,7 +164,7 @@ Generated Mon Nov 23 11:40:17 BRT 2026. FHIR version 4.0.1 for br.gov.saude.redf
 
 
 == input/resources/StructureDefinition-BRProblemaDiagnostico.xml ==
-ERROR: StructureDefinition.differential.element[29]: The extension slice 'Condition.subject.extension:unidentifiedPatient.extension:operator' is not one of the extensions defined by the extension 'http://www.saude.gov.br/fhir/r4/StructureDefinition/BRIndividuoNaoIdentificado-1.0|1.0.0-release'
+ERROR: StructureDefinition.differential.element[29]: The extension slice 'Condition.subject.extension:unidentifiedPatient.extension:operator' is not one of the extensions defined by the extension 'http://www.saude.gov.br/fhir/r4/StructureDefinition/BRIndividuoNaoIdentificado-1.0|1.0.0'
 ERROR: StructureDefinition/BRProblemaDiagnostico: StructureDefinition.snapshot.element[43]: Constraint failed: eld-2: 'Min <= Max (min.empty() or max.empty() or (max = '*') or iif(max != '*', min <= max.toInteger()))' at Condition.subject.extension:unidentifiedPatient.extension
 ERROR: StructureDefinition/BRProblemaDiagnostico: StructureDefinition.snapshot: No instance can meet the cardinality rules for Condition.subject.extension:unidentifiedPatient.extension: the minimum 4 (from Condition.subject.extension:unidentifiedPatient.extension) is greater than the maximum 3 (from Condition.subject.extension:unidentifiedPatient.extension)
 

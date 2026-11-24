@@ -1,4 +1,4 @@
-# Bundle 7 de exemplo do REDFM (Lote e Validade) - Guia de Implementação do Registro Eletrônico de Dispensação ou Fornecimento de Medicamento (REDFM) da RNDS v1.0.0-release
+# Bundle 7 de exemplo do REDFM (Lote e Validade) - Guia de Implementação do Registro Eletrônico de Dispensação ou Fornecimento de Medicamento (REDFM) da RNDS v1.0.0
 
 ## Exemplo Bundle: Bundle 7 de exemplo do REDFM (Lote e Validade)
 

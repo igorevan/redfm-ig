@@ -1,4 +1,4 @@
-# br-core-location - Guia de Implementação do Registro Eletrônico de Dispensação ou Fornecimento de Medicamento (REDFM) da RNDS v1.0.0-release
+# br-core-location - Guia de Implementação do Registro Eletrônico de Dispensação ou Fornecimento de Medicamento (REDFM) da RNDS v1.0.0
 
 ## Perfil de recurso: br-core-location 
 
@@ -40,7 +40,7 @@ Esta estrutura deriva de [Location](http://hl7.org/fhir/R4/location.html)
 
 Esta estrutura deriva de [Location](http://hl7.org/fhir/R4/location.html) 
 
- **Visão TotalView** 
+ **Visão CompletaView** 
 
 #### Terminologia Ligações
 
@@ -61,40 +61,12 @@ Outras representações do perfil: [CSV](../StructureDefinition-br-core-location
   "resourceType" : "StructureDefinition",
   "id" : "br-core-location",
   "language" : "pt-BR",
-  "extension" : [{
-    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
-    "valueCode" : "ehr"
-  },
-  {
-    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
-    "valueInteger" : 1,
-    "_valueInteger" : {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
-        "valueCanonical" : "https://fhir.saude.gov.br/redfm/ImplementationGuide/br.gov.saude.redfm.fhir"
-      }]
-    }
-  },
-  {
-    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-    "valueCode" : "normative",
-    "_valueCode" : {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
-        "valueCanonical" : "https://fhir.saude.gov.br/redfm/ImplementationGuide/br.gov.saude.redfm.fhir"
-      }]
-    }
-  },
-  {
-    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
-    "valueCode" : "4.0.1"
-  }],
   "url" : "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-location",
-  "version" : "1.0.0-release",
+  "version" : "1.0.0",
   "name" : "BRCoreLocation",
   "title" : "br-core-location",
   "status" : "active",
-  "date" : "2026-11-23T11:37:48-03:00",
+  "date" : "2026-11-24T16:50:01-03:00",
   "publisher" : "Ministério da Saúde do Brasil",
   "contact" : [{
     "name" : "Ministério da Saúde do Brasil",

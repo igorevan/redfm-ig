@@ -1,4 +1,4 @@
-# Terminologia de Produto Medicinal Virtual (VMP) na Ontologia Brasileira de Medicamentos (OBM) - Guia de Implementação do Registro Eletrônico de Dispensação ou Fornecimento de Medicamento (REDFM) da RNDS v1.0.0-release
+# Terminologia de Produto Medicinal Virtual (VMP) na Ontologia Brasileira de Medicamentos (OBM) - Guia de Implementação do Registro Eletrônico de Dispensação ou Fornecimento de Medicamento (REDFM) da RNDS v1.0.0
 
 ## CodeSystem: Terminologia de Produto Medicinal Virtual (VMP) na Ontologia Brasileira de Medicamentos (OBM) 
 
@@ -19,36 +19,8 @@ Este sistema de códigos é referenciado na definição dos seguintes conjuntos 
   "resourceType" : "CodeSystem",
   "id" : "BRObmVMP",
   "language" : "pt-BR",
-  "extension" : [{
-    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
-    "valueCode" : "ehr"
-  },
-  {
-    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
-    "valueInteger" : 1,
-    "_valueInteger" : {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
-        "valueCanonical" : "https://fhir.saude.gov.br/redfm/ImplementationGuide/br.gov.saude.redfm.fhir"
-      }]
-    }
-  },
-  {
-    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-    "valueCode" : "normative",
-    "_valueCode" : {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
-        "valueCanonical" : "https://fhir.saude.gov.br/redfm/ImplementationGuide/br.gov.saude.redfm.fhir"
-      }]
-    }
-  },
-  {
-    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
-    "valueCode" : "4.0.1"
-  }],
   "url" : "http://www.saude.gov.br/fhir/r4/CodeSystem/BRObmVMP",
-  "version" : "1.0.0-release",
+  "version" : "1.0.0",
   "name" : "BRObmVMP",
   "title" : "Terminologia de Produto Medicinal Virtual (VMP) na Ontologia Brasileira de Medicamentos (OBM)",
   "status" : "active",

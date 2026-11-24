@@ -1,4 +1,4 @@
-# Bundle 10 de exemplo do REDFM (AMPP sem forma e com fabricante) - Guia de Implementação do Registro Eletrônico de Dispensação ou Fornecimento de Medicamento (REDFM) da RNDS v1.0.0-release
+# Bundle 10 de exemplo do REDFM (AMPP sem forma e com fabricante) - Guia de Implementação do Registro Eletrônico de Dispensação ou Fornecimento de Medicamento (REDFM) da RNDS v1.0.0
 
 ## Exemplo Bundle: Bundle 10 de exemplo do REDFM (AMPP sem forma e com fabricante)
 

@@ -8,7 +8,7 @@
 <html xml:lang="pt-BR" xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>BR Core Organization - Guia de Implementação do Registro Eletrônico de Dispensação ou Fornecimento de Medicamento (REDFM) da RNDS v1.0.0-release</title>
+    <title>BR Core Organization - Guia de Implementação do Registro Eletrônico de Dispensação ou Fornecimento de Medicamento (REDFM) da RNDS v1.0.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -47,7 +47,6 @@
 	  <script type="text/javascript" src="assets/js/prism.js"></script>
 	  <script type="text/javascript" src="assets/js/prism-fhirpath.js"></script>
 	  <script type="text/javascript" src="assets/js/prism-cql.js"></script>
-    <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
     <style type="text/css">h2{--heading-prefix:"12.4"}
     h3,h4,h5,h6{--heading-prefix:"12.4"}</style>
@@ -60,7 +59,7 @@
         <div id="ig-status" data-fhir="generated">
           <p><span style="font-size:12pt;font-weight:bold">Guia de Implementação do Registro Eletrônico de Dispensação ou Fornecimento de Medicamento (REDFM) da RNDS</span>
             <br/>
-            <span style="display:inline-block;">1.0.0-release - STU1
+            <span style="display:inline-block;">1.0.0 - Release 1.0.0
 
 
 
@@ -175,7 +174,7 @@
     <div id="segment-breadcrumb" class="segment" data-fhir="generated">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Índice</b></a></li><li><a href='artifacts.html'><b>Artefatos</b></a></li><li><b>BR Core Organization</b></li>
+          <li><a href='toc.html'><b>Índice</b></a></li><li><a href='artifacts.html'><b>Resumo de Artefatos</b></a></li><li><b>BR Core Organization</b></li>
 
           <span style="float: var(--ig-right);">
 
@@ -199,7 +198,7 @@
 
 <!-- layouts\layout-profile -->
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Guia de Implementação do Registro Eletrônico de Dispensação ou Fornecimento de Medicamento (REDFM) da RNDS - Compilação de desenvolvimento local (v1.0.0-release) construída pelas ferramentas de compilação FHIR (HL7&reg; FHIR&reg; Standard). Veja o <a href='https://fhir.saude.gov.br/redfm/history.html'>Diretório de versões publicadas</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Guia de Implementação do Registro Eletrônico de Dispensação ou Fornecimento de Medicamento (REDFM) da RNDS - Compilação de desenvolvimento local (v1.0.0) construída pelas ferramentas de compilação FHIR (HL7&reg; FHIR&reg; Standard). Veja o <a href='https://fhir.saude.gov.br/redfm/history.html'>Diretório de versões publicadas</a></p><!--EndReleaseHeader-->
   
 
 
@@ -275,13 +274,13 @@ BR Core Organization
 
   </h2>
 
-  <table class="colsn" data-fhir="generated">
+  <table class="colsi" data-fhir="generated">
 
     <tr>
       <td colspan="4"><i>URL oficial</i>: <span class="copy-text">https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-organization<button title="Clique para copiar o URL" class="btn-copy" data-clipboard-text="https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-organization"/></span>
       </td>
       <td><i>Versão</i>:
-      <span class="copy-text">1.0.0-release<button title="Clique para copiar o URL com versão" class="btn-copy" data-clipboard-text="https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-organization|1.0.0-release"/></span>
+      <span class="copy-text">1.0.0<button title="Clique para copiar o URL com versão" class="btn-copy" data-clipboard-text="https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-organization|1.0.0"/></span>
       </td>
       <td style="text-align: right;border-left-style: hidden" title="Ative isto para ver as alterações desde a última versão oficial.">
         <span id="toggle-change-display"><label style="margin:0;font-weight:normal" for="showChanges">Destacar alterações no texto?</label>
@@ -300,21 +299,15 @@ BR Core Organization
 
 
 
-      <td colspan="4">
+      <td colspan="5">
         
-          <i>
-            
-            Standards status:
-          </i> <a href="http://hl7.org/fhir/R4/versions.html#std-process" title="Status dos padrões">Normative</a>
+          Active
           
-          
-        
-      </td>
 
-      <td>
-        <a href="http://hl7.org/fhir/versions.html#maturity">Nível de maturidade</a>: 1
-        
-          <span title="Inherited from , CanonicalType[https://fhir.saude.gov.br/redfm/ImplementationGuide/br.gov.saude.redfm.fhir]">*</span>
+            a partir de 
+2026-11-24
+
+          
         
       </td>
 
@@ -836,7 +829,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="" class="hierarchy xhtCellBorder0">0..*</td>
 <td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="http://hl7.org/fhir/R4/endpoint.html">Endpoint</a>)</td>
 <td style="" class="hierarchy xhtCellBorder0">APIs que disponibilizam acesso aos serviços da organização<br/></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legenda para este formato"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentação para este formato</a></td></tr><script type="text/javascript">  // 0c8d657c-9eed-4daf-93e2-9cbc729c0c56
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legenda para este formato"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentação para este formato</a></td></tr><script type="text/javascript">  // 6db3f38c-9752-4d43-a44e-82964551dc4f
 document.getElementById('cbbr-core-organizationK-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
 filterDesc(document.getElementById('br-core-organizationK'), 'constraint', document.getElementById('cbbr-core-organizationK-constraint').checked, document.getElementById('ppbr-core-organizationK'));
 document.getElementById('cbbr-core-organizationK-obligation').checked = 'false' != localStorage.getItem('ht-table-states-obligation');
@@ -1636,7 +1629,7 @@ filterDesc(document.getElementById('br-core-organizationK'), 'binding', document
 <td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">0</span><span class="xhtPieceDeEmphasized">..</span><span class="xhtPieceDeEmphasized">*</span></td>
 <td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="http://hl7.org/fhir/R4/endpoint.html" class="xhtPieceDeEmphasized">Endpoint</a>)</td>
 <td style="" class="hierarchy xhtCellBorder0">APIs que disponibilizam acesso aos serviços da organização</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legenda para este formato"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentação para este formato</a></td></tr><script type="text/javascript">  // 0c8d657c-9eed-4daf-93e2-9cbc729c0c56
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legenda para este formato"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentação para este formato</a></td></tr><script type="text/javascript">  // 6db3f38c-9752-4d43-a44e-82964551dc4f
 document.getElementById('cbbr-core-organizationD-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
 filterDesc(document.getElementById('br-core-organizationD'), 'constraint', document.getElementById('cbbr-core-organizationD-constraint').checked, document.getElementById('ppbr-core-organizationD'));
 document.getElementById('cbbr-core-organizationD-obligation').checked = 'false' != localStorage.getItem('ht-table-states-obligation');
@@ -2270,7 +2263,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="" class="hierarchy xhtCellBorder0">0..*</td>
 <td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="http://hl7.org/fhir/R4/endpoint.html">Endpoint</a>)</td>
 <td style="" class="hierarchy xhtCellBorder0">APIs que disponibilizam acesso aos serviços da organização<br/></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legenda para este formato"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentação para este formato</a></td></tr><script type="text/javascript">  // 0c8d657c-9eed-4daf-93e2-9cbc729c0c56
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legenda para este formato"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentação para este formato</a></td></tr><script type="text/javascript">  // 6db3f38c-9752-4d43-a44e-82964551dc4f
 document.getElementById('cbbr-core-organizationS-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
 filterDesc(document.getElementById('br-core-organizationS'), 'constraint', document.getElementById('cbbr-core-organizationS-constraint').checked, document.getElementById('ppbr-core-organizationS'));
 document.getElementById('cbbr-core-organizationS-obligation').checked = 'false' != localStorage.getItem('ht-table-states-obligation');
@@ -2885,7 +2878,6 @@ Resumo
 
 </ul>
 
-<p><b><a class="fmm" href="http://hl7.org/fhir/versions.html#maturity" title="Maturity Level">Maturidade</a></b>: 1</p>
 </div>
         </div>
       </div>
@@ -3339,7 +3331,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="" class="hierarchy xhtCellBorder0">0..*</td>
 <td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="http://hl7.org/fhir/R4/endpoint.html">Endpoint</a>)</td>
 <td style="" class="hierarchy xhtCellBorder0">APIs que disponibilizam acesso aos serviços da organização<br/></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legenda para este formato"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentação para este formato</a></td></tr><script type="text/javascript">  // 0c8d657c-9eed-4daf-93e2-9cbc729c0c56
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legenda para este formato"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentação para este formato</a></td></tr><script type="text/javascript">  // 6db3f38c-9752-4d43-a44e-82964551dc4f
 document.getElementById('cbbr-core-organizationKA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
 filterDesc(document.getElementById('br-core-organizationKA'), 'constraint', document.getElementById('cbbr-core-organizationKA-constraint').checked, document.getElementById('ppbr-core-organizationKA'));
 document.getElementById('cbbr-core-organizationKA-obligation').checked = 'false' != localStorage.getItem('ht-table-states-obligation');
@@ -4138,7 +4130,7 @@ filterDesc(document.getElementById('br-core-organizationKA'), 'binding', documen
 <td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">0</span><span class="xhtPieceDeEmphasized">..</span><span class="xhtPieceDeEmphasized">*</span></td>
 <td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="http://hl7.org/fhir/R4/endpoint.html" class="xhtPieceDeEmphasized">Endpoint</a>)</td>
 <td style="" class="hierarchy xhtCellBorder0">APIs que disponibilizam acesso aos serviços da organização</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legenda para este formato"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentação para este formato</a></td></tr><script type="text/javascript">  // 0c8d657c-9eed-4daf-93e2-9cbc729c0c56
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legenda para este formato"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentação para este formato</a></td></tr><script type="text/javascript">  // 6db3f38c-9752-4d43-a44e-82964551dc4f
 document.getElementById('cbbr-core-organizationDA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
 filterDesc(document.getElementById('br-core-organizationDA'), 'constraint', document.getElementById('cbbr-core-organizationDA-constraint').checked, document.getElementById('ppbr-core-organizationDA'));
 document.getElementById('cbbr-core-organizationDA-obligation').checked = 'false' != localStorage.getItem('ht-table-states-obligation');
@@ -4234,7 +4226,7 @@ filterDesc(document.getElementById('br-core-organizationDA'), 'binding', documen
       </div>
       <div id="all-tbl-snap">
         <p>
-          <b>Visão TotalView</b>
+          <b>Visão CompletaView</b>
         </p>
         <div id="all-tbl-snap-inner">
           <table border="0" fhir="generated-heirarchy" cellpadding="0" cellspacing="0" id="br-core-organizationSA" class="xhtTableBorder0" data-fhir="generated-heirarchy"><tr fhir="generated-heirarchy" class="xhtRowBorder1" data-fhir="generated-heirarchy"><th scope="col" style="" class="hierarchy xhtCellBorder0"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="O nome lógico do elemento" data-no-external="true">Nome</a></th><th scope="col" style="" class="hierarchy xhtCellBorder0"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Informações sobre a utilização do elemento" data-no-external="true">Bandeiras</a></th><th scope="col" style="" class="hierarchy xhtCellBorder0"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Número mínimo e máximo de vezes que o elemento pode aparecer na instância" data-no-external="true">Card.</a></th><th scope="col" style="; width: 100px" class="hierarchy xhtCellBorder0"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Referência ao tipo do elemento" data-no-external="true">Tipo</a></th><th scope="col" style="" class="hierarchy xhtCellBorder0"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Informações adicionais sobre o elemento" data-no-external="true">Descrição e condicionalismos</a>&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">Filter: <input size="10" name="filter" style="border: 1px #F0F0F0 solid; background-color: rgb(254, 254, 231);" onInput="filterTree(document.getElementById('br-core-organizationSA'), event.target.value)" type="text" aria-label="Filter"/> <button onClick="showPanel(this, document.getElementById('br-core-organizationSA'), document.getElementById('ppbr-core-organizationSA'))" aria-controls="ppbr-core-organizationSA" style="background: none; border: 0; padding: 0; margin: 0; cursor: pointer" type="button" title="Filters" aria-label="Filters"><img src="tree-filter.png" alt=""/></button><div style="display: none; position: fixed; opacity : 1.0; background-color: rgb(254, 254, 231); border: 1px solid #ccc; padding: 10px; boxShadow: 0 2px 5px rgba(0,0,0,0.2); zIndex: 1000; borderRadius: 4px" id="ppbr-core-organizationSA"><label>Condicionantes <input onClick="filterDesc(document.getElementById('br-core-organizationSA'), 'constraint',event.target.checked, document.getElementById('ppbr-core-organizationSA'))" size="1" name="constraint" checked="true" id="cbbr-core-organizationSA-constraint" type="checkbox" aria-label="constraint"/></label><br/><label>Obrigações <input onClick="filterDesc(document.getElementById('br-core-organizationSA'), 'obligation',event.target.checked, document.getElementById('ppbr-core-organizationSA'))" size="1" name="obligation" checked="true" id="cbbr-core-organizationSA-obligation" type="checkbox" aria-label="obligation"/></label><br/><label>Vínculos <input onClick="filterDesc(document.getElementById('br-core-organizationSA'), 'binding',event.target.checked, document.getElementById('ppbr-core-organizationSA'))" size="1" name="binding" checked="true" id="cbbr-core-organizationSA-binding" type="checkbox" aria-label="binding"/></label><br/></div></span><span style="float: right"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format" data-no-external="true"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" onLoad="fhirTableInit(this)" style="background-color: inherit"/></a></span></th></tr>
@@ -4769,7 +4761,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="" class="hierarchy xhtCellBorder0">0..*</td>
 <td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="http://hl7.org/fhir/R4/endpoint.html">Endpoint</a>)</td>
 <td style="" class="hierarchy xhtCellBorder0">APIs que disponibilizam acesso aos serviços da organização<br/></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legenda para este formato"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentação para este formato</a></td></tr><script type="text/javascript">  // 0c8d657c-9eed-4daf-93e2-9cbc729c0c56
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legenda para este formato"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentação para este formato</a></td></tr><script type="text/javascript">  // 6db3f38c-9752-4d43-a44e-82964551dc4f
 document.getElementById('cbbr-core-organizationSA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
 filterDesc(document.getElementById('br-core-organizationSA'), 'constraint', document.getElementById('cbbr-core-organizationSA-constraint').checked, document.getElementById('ppbr-core-organizationSA'));
 document.getElementById('cbbr-core-organizationSA-obligation').checked = 'false' != localStorage.getItem('ht-table-states-obligation');
@@ -5378,7 +5370,6 @@ Resumo
 
 </ul>
 
-<p><b><a class="fmm" href="http://hl7.org/fhir/versions.html#maturity" title="Maturity Level">Maturidade</a></b>: 1</p>
 </div>
         </div>
       </div>
@@ -5430,7 +5421,7 @@ Resumo
               </td>
               <td style="text-align:var(--ig-right);">&#xA0;
 
-                <a href="StructureDefinition-br-core-organization-definitions.html">seguinte ></a>
+                <a href="StructureDefinition-br-core-organization-definitions.html">seguinte &gt;</a>
 
               </td>
             </tr>
@@ -5444,10 +5435,10 @@ Resumo
 
 
           IG © 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.saude.gov.br">Ministério da Saúde do Brasil</a>.  
-          Pacote br.gov.saude.redfm.fhir#1.0.0-release baseado em <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Gerado em 
-  <span title="2026-11-23 11:37:00 -0300">
-    2026-11-23
+          Pacote br.gov.saude.redfm.fhir#1.0.0 baseado em <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Gerado 
+  <span title="2026-11-24 16:50:00 -0300">
+    2026-11-24
   </span>
 
           <br/>

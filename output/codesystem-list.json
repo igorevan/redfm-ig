@@ -1,7 +1,7 @@
 {
   "codeSystems" : [{
     "url" : "http://www.saude.gov.br/fhir/r4/CodeSystem/BRCBO",
-    "version" : "1.0.0-release",
+    "version" : "1.0.0",
     "status" : "active",
     "name" : "BRCBO",
     "title" : "Classificação Brasileira de Ocupações - CBO (CodeSystem)",
@@ -9,7 +9,7 @@
   },
   {
     "url" : "http://www.saude.gov.br/fhir/r4/CodeSystem/BRCIAP2",
-    "version" : "1.0.0-release",
+    "version" : "1.0.0",
     "status" : "active",
     "name" : "BRCIAP2",
     "title" : "Classificação Internacional de Atenção Primária - Segunda Edição (CIAP2)",
@@ -17,7 +17,7 @@
   },
   {
     "url" : "http://www.saude.gov.br/fhir/r4/CodeSystem/BRCID10",
-    "version" : "1.0.0-release",
+    "version" : "1.0.0",
     "status" : "active",
     "name" : "BRCID10",
     "title" : "Classificação Internacional de Doenças - Décima Revisão (CID-10)",
@@ -25,7 +25,7 @@
   },
   {
     "url" : "http://www.saude.gov.br/fhir/r4/CodeSystem/BRJustificativaIndividuoNaoIdentificado",
-    "version" : "1.0.0-release",
+    "version" : "1.0.0",
     "status" : "active",
     "name" : "BRJustificativaIndividuoNaoIdentificado",
     "title" : "Justificativa da Impossibilidade de Identificação do Indivíduo (CodeSystem)",
@@ -33,7 +33,7 @@
   },
   {
     "url" : "http://www.saude.gov.br/fhir/r4/CodeSystem/BRObmAMPP",
-    "version" : "1.0.0-release",
+    "version" : "1.0.0",
     "status" : "active",
     "name" : "BRObmAMPP",
     "title" : "Terminologia de Produto Medicinal Comercial com Apresentação (AMPP) na Ontologia Brasileira de Medicamentos (OBM)",
@@ -41,7 +41,7 @@
   },
   {
     "url" : "http://www.saude.gov.br/fhir/r4/CodeSystem/BRObmANVISA",
-    "version" : "1.0.0-release",
+    "version" : "1.0.0",
     "status" : "active",
     "name" : "BRObmANVISA",
     "title" : "Terminologia de Produto Medicinal Comercial com Apresentação (AMPP) na Agência Nacional de Vigilância Sanitária (Anvisa)",
@@ -49,7 +49,7 @@
   },
   {
     "url" : "http://www.saude.gov.br/fhir/r4/CodeSystem/BRObmCATMAT",
-    "version" : "1.0.0-release",
+    "version" : "1.0.0",
     "status" : "active",
     "name" : "BRObmCATMAT",
     "title" : "Terminologia de Produto Medicinal Virtual (VMP) no Catálogo de Materiais (CATMAT)",
@@ -57,7 +57,7 @@
   },
   {
     "url" : "http://www.saude.gov.br/fhir/r4/CodeSystem/BRObmEAN",
-    "version" : "1.0.0-release",
+    "version" : "1.0.0",
     "status" : "active",
     "name" : "BRObmEAN",
     "title" : "Terminologia de Produto Medicinal Virtual (VMP) na GS1.org",
@@ -65,7 +65,7 @@
   },
   {
     "url" : "http://www.saude.gov.br/fhir/r4/CodeSystem/BRObmVMP",
-    "version" : "1.0.0-release",
+    "version" : "1.0.0",
     "status" : "active",
     "name" : "BRObmVMP",
     "title" : "Terminologia de Produto Medicinal Virtual (VMP) na Ontologia Brasileira de Medicamentos (OBM)",
@@ -73,7 +73,7 @@
   },
   {
     "url" : "http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoDispensacaoRealizada",
-    "version" : "1.0.0-release",
+    "version" : "1.0.0",
     "status" : "active",
     "name" : "BRTipoDispensacaoRealizada",
     "title" : "Tipo de Dispensação Realizada (CodeSystem)",
@@ -81,7 +81,7 @@
   },
   {
     "url" : "http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoDocumento",
-    "version" : "1.0.0-release",
+    "version" : "1.0.0",
     "status" : "active",
     "name" : "BRTipoDocumento",
     "title" : "Tipo de Documento (CodeSystem)",
@@ -89,7 +89,7 @@
   },
   {
     "url" : "http://www.saude.gov.br/fhir/r4/CodeSystem/BRUnidadeMedida",
-    "version" : "1.0.0-release",
+    "version" : "1.0.0",
     "status" : "active",
     "name" : "BRUnidadeMedida",
     "title" : "Unidade de Medida",
@@ -97,7 +97,7 @@
   },
   {
     "url" : "http://www.saude.gov.br/fhir/r4/CodeSystem/BRViaAdministracao",
-    "version" : "1.0.0-release",
+    "version" : "1.0.0",
     "status" : "active",
     "name" : "BRViaAdministracao",
     "title" : "Via de Administração (CodeSystem)",
@@ -105,7 +105,7 @@
   },
   {
     "url" : "https://terminologia.saude.gov.br/fhir/CodeSystem/BRConselhoProfissional",
-    "version" : "1.0.0-release",
+    "version" : "1.0.0",
     "status" : "active",
     "name" : "BRConselhoProfissional",
     "title" : "Conselhos profissionais de saúde do Brasil",

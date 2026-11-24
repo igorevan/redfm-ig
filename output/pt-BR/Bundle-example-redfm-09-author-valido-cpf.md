@@ -1,4 +1,4 @@
-# Bundle 9 de exemplo do REDFM (Author válido - CPF) - Guia de Implementação do Registro Eletrônico de Dispensação ou Fornecimento de Medicamento (REDFM) da RNDS v1.0.0-release
+# Bundle 9 de exemplo do REDFM (Author válido - CPF) - Guia de Implementação do Registro Eletrônico de Dispensação ou Fornecimento de Medicamento (REDFM) da RNDS v1.0.0
 
 ## Exemplo Bundle: Bundle 9 de exemplo do REDFM (Author válido - CPF)
 

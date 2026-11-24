@@ -45,8 +45,8 @@
     "oids" : ["2.16.840.1.113883.4.642.4.2"],
     "uses" : {
     },
-    "ValueSet-BRSexo-1.0.html" : "Sexo",
-    "http://hl7.org/fhir/R4/valueset-administrative-gender.html" : "AdministrativeGender"
+    "http://hl7.org/fhir/R4/valueset-administrative-gender.html" : "AdministrativeGender",
+    "ValueSet-BRSexo-1.0.html" : "Sexo"
   },
   {
     "url" : "http://hl7.org/fhir/composition-attestation-mode",
@@ -214,18 +214,18 @@
     "oids" : ["2.16.840.1.113883.6.96"],
     "uses" : {
     },
-    "http://hl7.org/fhir/R4/valueset-condition-severity.html" : "Condition/Diagnosis Severity",
-    "http://hl7.org/fhir/R4/valueset-condition-stage.html" : "Condition Stage",
-    "http://hl7.org/fhir/R4/valueset-condition-stage-type.html" : "Condition Stage Type",
-    "http://hl7.org/fhir/R4/valueset-medication-form-codes.html" : "SNOMED CT Form Codes",
-    "http://hl7.org/fhir/R4/valueset-performer-role.html" : "Procedure Performer Role Codes",
-    "http://hl7.org/fhir/R4/valueset-manifestation-or-symptom.html" : "Manifestation and Symptom Codes",
-    "http://hl7.org/fhir/R4/valueset-approach-site-codes.html" : "SNOMED CT Anatomical Structure for Administration Site Codes",
-    "http://hl7.org/fhir/R4/valueset-administration-method-codes.html" : "SNOMED CT Administration Method Codes",
     "http://hl7.org/fhir/R4/valueset-c80-practice-codes.html" : "Practice Setting Code Value Set",
-    "http://hl7.org/fhir/R4/valueset-additional-instruction-codes.html" : "SNOMED CT Additional Dosage Instructions",
+    "http://hl7.org/fhir/R4/valueset-administration-method-codes.html" : "SNOMED CT Administration Method Codes",
+    "http://hl7.org/fhir/R4/valueset-condition-severity.html" : "Condition/Diagnosis Severity",
+    "http://hl7.org/fhir/R4/valueset-medication-form-codes.html" : "SNOMED CT Form Codes",
+    "http://hl7.org/fhir/R4/valueset-manifestation-or-symptom.html" : "Manifestation and Symptom Codes",
+    "http://hl7.org/fhir/R4/valueset-performer-role.html" : "Procedure Performer Role Codes",
     "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
-    "http://hl7.org/fhir/R4/valueset-medication-codes.html" : "SNOMED CT Medication Codes"
+    "http://hl7.org/fhir/R4/valueset-approach-site-codes.html" : "SNOMED CT Anatomical Structure for Administration Site Codes",
+    "http://hl7.org/fhir/R4/valueset-medication-codes.html" : "SNOMED CT Medication Codes",
+    "http://hl7.org/fhir/R4/valueset-additional-instruction-codes.html" : "SNOMED CT Additional Dosage Instructions",
+    "http://hl7.org/fhir/R4/valueset-condition-stage.html" : "Condition Stage",
+    "http://hl7.org/fhir/R4/valueset-condition-stage-type.html" : "Condition Stage Type"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/condition-category",
@@ -550,8 +550,8 @@
     "oids" : ["2.16.840.1.113883.5.111"],
     "uses" : {
     },
-    "http://terminology.hl7.org/7.5.0/ValueSet-v3-ServiceDeliveryLocationRoleType.html" : "ServiceDeliveryLocationRoleType",
-    "http://hl7.org/fhir/R4/valueset-relatedperson-relationshiptype.html" : "Patient relationship type"
+    "http://hl7.org/fhir/R4/valueset-relatedperson-relationshiptype.html" : "Patient relationship type",
+    "http://terminology.hl7.org/7.5.0/ValueSet-v3-ServiceDeliveryLocationRoleType.html" : "ServiceDeliveryLocationRoleType"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/v3-TimingEvent",
@@ -610,12 +610,12 @@
     "description" : "This is a place holder for the code system which is fully supported through internal means (not by this code system)",
     "uses" : {
     },
-    "ValueSet-RNDSUnidadeMedida.html" : "Unidade de Medida RNDS",
-    "http://hl7.org/fhir/R4/valueset-units-of-time.html" : "UnitsOfTime"
+    "http://hl7.org/fhir/R4/valueset-units-of-time.html" : "UnitsOfTime",
+    "ValueSet-RNDSUnidadeMedida.html" : "Unidade de Medida RNDS"
   },
   {
     "url" : "http://www.saude.gov.br/fhir/r4/CodeSystem/BRCBO",
-    "version" : "1.0.0-release",
+    "version" : "1.0.0",
     "status" : "active",
     "name" : "BRCBO",
     "title" : "Classificação Brasileira de Ocupações - CBO (CodeSystem)",
@@ -626,7 +626,7 @@
   },
   {
     "url" : "http://www.saude.gov.br/fhir/r4/CodeSystem/BRCIAP2",
-    "version" : "1.0.0-release",
+    "version" : "1.0.0",
     "status" : "active",
     "name" : "BRCIAP2",
     "title" : "Classificação Internacional de Atenção Primária - Segunda Edição (CIAP2)",
@@ -637,7 +637,7 @@
   },
   {
     "url" : "http://www.saude.gov.br/fhir/r4/CodeSystem/BRCID10",
-    "version" : "1.0.0-release",
+    "version" : "1.0.0",
     "status" : "active",
     "name" : "BRCID10",
     "title" : "Classificação Internacional de Doenças - Décima Revisão (CID-10)",
@@ -648,7 +648,7 @@
   },
   {
     "url" : "http://www.saude.gov.br/fhir/r4/CodeSystem/BRJustificativaIndividuoNaoIdentificado",
-    "version" : "1.0.0-release",
+    "version" : "1.0.0",
     "status" : "active",
     "name" : "BRJustificativaIndividuoNaoIdentificado",
     "title" : "Justificativa da Impossibilidade de Identificação do Indivíduo (CodeSystem)",
@@ -659,7 +659,7 @@
   },
   {
     "url" : "http://www.saude.gov.br/fhir/r4/CodeSystem/BRObmAMPP",
-    "version" : "1.0.0-release",
+    "version" : "1.0.0",
     "status" : "active",
     "name" : "BRObmAMPP",
     "title" : "Terminologia de Produto Medicinal Comercial com Apresentação (AMPP) na Ontologia Brasileira de Medicamentos (OBM)",
@@ -670,7 +670,7 @@
   },
   {
     "url" : "http://www.saude.gov.br/fhir/r4/CodeSystem/BRObmANVISA",
-    "version" : "1.0.0-release",
+    "version" : "1.0.0",
     "status" : "active",
     "name" : "BRObmANVISA",
     "title" : "Terminologia de Produto Medicinal Comercial com Apresentação (AMPP) na Agência Nacional de Vigilância Sanitária (Anvisa)",
@@ -681,7 +681,7 @@
   },
   {
     "url" : "http://www.saude.gov.br/fhir/r4/CodeSystem/BRObmCATMAT",
-    "version" : "1.0.0-release",
+    "version" : "1.0.0",
     "status" : "active",
     "name" : "BRObmCATMAT",
     "title" : "Terminologia de Produto Medicinal Virtual (VMP) no Catálogo de Materiais (CATMAT)",
@@ -692,7 +692,7 @@
   },
   {
     "url" : "http://www.saude.gov.br/fhir/r4/CodeSystem/BRObmEAN",
-    "version" : "1.0.0-release",
+    "version" : "1.0.0",
     "status" : "active",
     "name" : "BRObmEAN",
     "title" : "Terminologia de Produto Medicinal Virtual (VMP) na GS1.org",
@@ -703,7 +703,7 @@
   },
   {
     "url" : "http://www.saude.gov.br/fhir/r4/CodeSystem/BRObmVMP",
-    "version" : "1.0.0-release",
+    "version" : "1.0.0",
     "status" : "active",
     "name" : "BRObmVMP",
     "title" : "Terminologia de Produto Medicinal Virtual (VMP) na Ontologia Brasileira de Medicamentos (OBM)",
@@ -714,7 +714,7 @@
   },
   {
     "url" : "http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoDispensacaoRealizada",
-    "version" : "1.0.0-release",
+    "version" : "1.0.0",
     "status" : "active",
     "name" : "BRTipoDispensacaoRealizada",
     "title" : "Tipo de Dispensação Realizada (CodeSystem)",
@@ -725,7 +725,7 @@
   },
   {
     "url" : "http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoDocumento",
-    "version" : "1.0.0-release",
+    "version" : "1.0.0",
     "status" : "active",
     "name" : "BRTipoDocumento",
     "title" : "Tipo de Documento (CodeSystem)",
@@ -736,7 +736,7 @@
   },
   {
     "url" : "http://www.saude.gov.br/fhir/r4/CodeSystem/BRUnidadeMedida",
-    "version" : "1.0.0-release",
+    "version" : "1.0.0",
     "status" : "active",
     "name" : "BRUnidadeMedida",
     "title" : "Unidade de Medida",
@@ -748,7 +748,7 @@
   },
   {
     "url" : "http://www.saude.gov.br/fhir/r4/CodeSystem/BRViaAdministracao",
-    "version" : "1.0.0-release",
+    "version" : "1.0.0",
     "status" : "active",
     "name" : "BRViaAdministracao",
     "title" : "Via de Administração (CodeSystem)",
@@ -759,17 +759,17 @@
   },
   {
     "url" : "https://terminologia.saude.gov.br/fhir/CodeSystem/BRConselhoProfissional",
-    "version" : "1.0.0-release",
+    "version" : "1.0.0",
     "status" : "active",
     "name" : "BRConselhoProfissional",
     "title" : "Conselhos profissionais de saúde do Brasil",
     "description" : "Esse CodeSystem inclui os conselhos profissionais de saúde do Brasil, conforme a Resolução CNS 251/1997.",
     "uses" : {
     },
+    "ValueSet-BRCRM.html" : "Conselhos regionais de Medicina do Brasil",
     "ValueSet-BRCRF.html" : "Conselhos regionais de Farmácia do Brasil",
     "ValueSet-BRCRO.html" : "Conselhos regionais de Odontologia do Brasil",
-    "ValueSet-BRCOREN.html" : "Conselhos regionais de Enfermagem do Brasil",
     "ValueSet-BROutrosProfissionais.html" : "Conselhos regionais de outros profissionais da saúde do Brasil",
-    "ValueSet-BRCRM.html" : "Conselhos regionais de Medicina do Brasil"
+    "ValueSet-BRCOREN.html" : "Conselhos regionais de Enfermagem do Brasil"
   }]
 }

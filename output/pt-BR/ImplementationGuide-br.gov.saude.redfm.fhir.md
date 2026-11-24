@@ -9,29 +9,13 @@
   "resourceType" : "ImplementationGuide",
   "id" : "br.gov.saude.redfm.fhir",
   "language" : "pt-BR",
-  "extension" : [{
-    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-    "valueCode" : "normative"
-  },
-  {
-    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
-    "valueInteger" : 1
-  },
-  {
-    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
-    "valueCode" : "ehr"
-  },
-  {
-    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
-    "valueCode" : "4.0.1"
-  }],
   "url" : "https://fhir.saude.gov.br/redfm/ImplementationGuide/br.gov.saude.redfm.fhir",
-  "version" : "1.0.0-release",
+  "version" : "1.0.0",
   "name" : "REDFMRNDSIG",
   "title" : "Guia de Implementação do Registro Eletrônico de Dispensação ou Fornecimento de Medicamento (REDFM) da RNDS",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-11-23T11:37:48-03:00",
+  "date" : "2026-11-24T16:50:01-03:00",
   "publisher" : "Ministério da Saúde do Brasil",
   "contact" : [{
     "name" : "Ministério da Saúde do Brasil",
@@ -97,7 +81,7 @@
       },
       {
         "url" : "value",
-        "valueString" : "STU1"
+        "valueString" : "Release 1.0.0"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -1449,10 +1433,6 @@
     }],
     "page" : {
       "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-        "valueCode" : "informative"
-      },
-      {
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
         "valueUrl" : "toc.html"
       }],
@@ -1461,10 +1441,6 @@
       "generation" : "html",
       "page" : [{
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-          "valueCode" : "informative"
-        },
-        {
           "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
           "valueUrl" : "index.html"
         }],
@@ -1474,10 +1450,6 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-          "valueCode" : "informative"
-        },
-        {
           "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
           "valueUrl" : "abstract.html"
         }],
@@ -1487,10 +1459,6 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-          "valueCode" : "informative"
-        },
-        {
           "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
           "valueUrl" : "credenciamento.html"
         }],
@@ -1500,10 +1468,6 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-          "valueCode" : "informative"
-        },
-        {
           "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
           "valueUrl" : "integracao.html"
         }],
@@ -1513,10 +1477,6 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-          "valueCode" : "informative"
-        },
-        {
           "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
           "valueUrl" : "mi.html"
         }],
@@ -1526,10 +1486,6 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-          "valueCode" : "informative"
-        },
-        {
           "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
           "valueUrl" : "mc.html"
         }],
@@ -1539,10 +1495,6 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-          "valueCode" : "informative"
-        },
-        {
           "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
           "valueUrl" : "exemplos.html"
         }],
@@ -1552,10 +1504,6 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-          "valueCode" : "informative"
-        },
-        {
           "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
           "valueUrl" : "changes.html"
         }],
@@ -1565,10 +1513,6 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-          "valueCode" : "informative"
-        },
-        {
           "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
           "valueUrl" : "downloads.html"
         }],
@@ -1578,10 +1522,6 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-          "valueCode" : "informative"
-        },
-        {
           "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
           "valueUrl" : "forms.html"
         }],
@@ -1591,10 +1531,6 @@
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-          "valueCode" : "informative"
-        },
-        {
           "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
           "valueUrl" : "suporte.html"
         }],
@@ -1605,7 +1541,7 @@
     },
     "parameter" : [{
       "code" : "path-resource",
-      "value" : "input\\history"
+      "value" : "input/history"
     },
     {
       "code" : "path-resource",
@@ -1646,10 +1582,6 @@
     {
       "code" : "path-resource",
       "value" : "input/testing"
-    },
-    {
-      "code" : "path-resource",
-      "value" : "input/history"
     },
     {
       "code" : "path-resource",

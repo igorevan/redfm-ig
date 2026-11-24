@@ -1,4 +1,4 @@
-# Tipo de Dispensação Realizada (CodeSystem) - Guia de Implementação do Registro Eletrônico de Dispensação ou Fornecimento de Medicamento (REDFM) da RNDS v1.0.0-release
+# Tipo de Dispensação Realizada (CodeSystem) - Guia de Implementação do Registro Eletrônico de Dispensação ou Fornecimento de Medicamento (REDFM) da RNDS v1.0.0
 
 ## CodeSystem: Tipo de Dispensação Realizada (CodeSystem) 
 
@@ -22,36 +22,8 @@ Este sistema de códigos é referenciado na definição dos seguintes conjuntos 
     "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablecodesystem"]
   },
   "language" : "en",
-  "extension" : [{
-    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
-    "valueCode" : "ehr"
-  },
-  {
-    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
-    "valueInteger" : 1,
-    "_valueInteger" : {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
-        "valueCanonical" : "https://fhir.saude.gov.br/redfm/ImplementationGuide/br.gov.saude.redfm.fhir"
-      }]
-    }
-  },
-  {
-    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-    "valueCode" : "normative",
-    "_valueCode" : {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
-        "valueCanonical" : "https://fhir.saude.gov.br/redfm/ImplementationGuide/br.gov.saude.redfm.fhir"
-      }]
-    }
-  },
-  {
-    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
-    "valueCode" : "4.0.1"
-  }],
   "url" : "http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoDispensacaoRealizada",
-  "version" : "1.0.0-release",
+  "version" : "1.0.0",
   "name" : "BRTipoDispensacaoRealizada",
   "title" : "Tipo de Dispensação Realizada (CodeSystem)",
   "status" : "active",

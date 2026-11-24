@@ -1,4 +1,4 @@
-# Conselhos profissionais de saúde do Brasil - Guia de Implementação do Registro Eletrônico de Dispensação ou Fornecimento de Medicamento (REDFM) da RNDS v1.0.0-release
+# Conselhos profissionais de saúde do Brasil - Guia de Implementação do Registro Eletrônico de Dispensação ou Fornecimento de Medicamento (REDFM) da RNDS v1.0.0
 
 ## CodeSystem: Conselhos profissionais de saúde do Brasil 
 
@@ -26,36 +26,8 @@ Este sistema de códigos é referenciado na definição dos seguintes conjuntos 
     "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablecodesystem"]
   },
   "language" : "pt-BR",
-  "extension" : [{
-    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
-    "valueCode" : "ehr"
-  },
-  {
-    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
-    "valueInteger" : 1,
-    "_valueInteger" : {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
-        "valueCanonical" : "https://fhir.saude.gov.br/redfm/ImplementationGuide/br.gov.saude.redfm.fhir"
-      }]
-    }
-  },
-  {
-    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-    "valueCode" : "normative",
-    "_valueCode" : {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
-        "valueCanonical" : "https://fhir.saude.gov.br/redfm/ImplementationGuide/br.gov.saude.redfm.fhir"
-      }]
-    }
-  },
-  {
-    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
-    "valueCode" : "4.0.1"
-  }],
   "url" : "https://terminologia.saude.gov.br/fhir/CodeSystem/BRConselhoProfissional",
-  "version" : "1.0.0-release",
+  "version" : "1.0.0",
   "name" : "BRConselhoProfissional",
   "title" : "Conselhos profissionais de saúde do Brasil",
   "status" : "active",

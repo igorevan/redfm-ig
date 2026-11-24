@@ -1,18 +1,17 @@
 {
   "package-id": "br.gov.saude.redfm.fhir",
-  "version": "1.0.0-release",
+  "version": "1.0.0",
   "path": "https://fhir.saude.gov.br/redfm/",
-  "mode": "working",
+  "mode": "milestone",
   "status": "release",
   "sequence": "Releases",
-  "desc": "1.0.0 Release",
+  "desc": "Primeira versão estável (1.0.0) do Guia de Implementação do REDFM.",
   "changes": "changes.html",
   "first": true,
-  "title": "REDFM IG",
-  "ci-build": "https://github.com/igorevan/redfm-ig",
+  "title": "Guia de Implementação do Registro Eletrônico de Dispensação ou Fornecimento de Medicamento (REDFM) da RNDS",
   "registry-description": "Primeira versão do Guia de Implementação do Registro Eletrônico de Dispensação ou Fornecimento de Medicamento (REDFM) da RNDS",
   "registry-country": "BR",
   "registry-authority": "Ministério da Saúde do Brasil",
   "category": "base",
-  "introduction": "Guia de Implementação do Registro Eletrônico de Dispensação ou Fornecimento de Medicamento (REDFM) da RNDS"
+  "introduction": "Guia de Implementação do Registro Eletrônico de Dispensação ou Fornecimento de Medicamento (REDFM) da RNDS, desenvolvido pelo Ministério da Saúde do Brasil."
 }
