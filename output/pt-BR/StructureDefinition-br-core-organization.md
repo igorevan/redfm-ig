@@ -70,7 +70,7 @@ Outras representações do perfil: [CSV](../StructureDefinition-br-core-organiza
   "name" : "BRCoreOrganization",
   "title" : "BR Core Organization",
   "status" : "active",
-  "date" : "2026-11-24T16:50:01-03:00",
+  "date" : "2026-11-25T10:23:02-03:00",
   "publisher" : "Ministério da Saúde do Brasil",
   "contact" : [{
     "name" : "Ministério da Saúde do Brasil",
